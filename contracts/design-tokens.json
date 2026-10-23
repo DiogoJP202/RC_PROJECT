@@ -1,0 +1,29 @@
+{
+  "color": {
+    "void": "#060B12",
+    "panel": "#111D28",
+    "panelRaised": "#182733",
+    "textPrimary": "#E8F0F5",
+    "textSecondary": "#9CB1BF",
+    "line": "#28404A",
+    "rc": "#DC4B5B",
+    "diagnostic": "#66D5D0",
+    "hypothesis": "#E0B46A"
+  },
+  "radius": {
+    "sm": 4,
+    "md": 8,
+    "lg": 12
+  },
+  "motion": {
+    "cameraFocusMs": 900,
+    "revealMs": 350,
+    "reducedMotionMs": 0
+  },
+  "layout": {
+    "leftPanelWidth": 244,
+    "rightPanelWidth": 316,
+    "timelineHeight": 88,
+    "minInteractiveStageHeight": 440
+  }
+}

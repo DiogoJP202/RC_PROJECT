@@ -1,0 +1,565 @@
+{
+  "date": "2026-10-23T19:44:10.814Z",
+  "method": "Reviewed staged Git blobs, filename exclusions, local documentation links, exact input hashes, file sizes and pattern-based secret/path scan. No external credential scanner installed; this is not a universal certification.",
+  "stagedFileCount": 99,
+  "stagedBytes": 1943866,
+  "largestFiles": [
+    {
+      "path": "artifacts/gates/G1-focus.png",
+      "bytes": 255523,
+      "sha256": "0c9e913c221b5f2be550ef0dacb49d6ba60c174fe6f5b5b6c293b18d3bb036ed"
+    },
+    {
+      "path": "artifacts/gates/G1-scan-20.png",
+      "bytes": 191573,
+      "sha256": "3b6a681bf6bbb47290686ccc1d5d5301db8d3e1052dc2028854d603ea5bcd975"
+    },
+    {
+      "path": "artifacts/gates/G1-desktop.png",
+      "bytes": 191434,
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667"
+    },
+    {
+      "path": "artifacts/gates/G1-scan-75.png",
+      "bytes": 191352,
+      "sha256": "3d539f2e04a5baf9b160c42ffc9ec7892b11602b1313ca58d9ad6962b8a0ee45"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 129872,
+      "sha256": "d235539f8c9f665d31c195621f14b63c24a11f72958946c53536eb4d21328d59"
+    }
+  ],
+  "filesOver10MiB": [],
+  "secretOrPersonalPathFindings": [],
+  "prohibitedPaths": [],
+  "missingRequired": [],
+  "missingLocalDocLinks": [],
+  "inputHashChecks": [
+    {
+      "path": "research/Anatomia e fisiologia dos ghouls em Tokyo Ghoul.md",
+      "expected": "5360bf58168343e595a62111f9a6dc20fc3dfd09ba327d1897c021c7a93b6c9d",
+      "actual": "5360bf58168343e595a62111f9a6dc20fc3dfd09ba327d1897c021c7a93b6c9d",
+      "ok": true
+    },
+    {
+      "path": "research/Atlas Anatômico Interativo de Tokyo Ghoul.md",
+      "expected": "543f6556ac31e0db7dc380b6a4b934125edbfcbd8305849cd570b6c7499d7389",
+      "actual": "543f6556ac31e0db7dc380b6a4b934125edbfcbd8305849cd570b6c7499d7389",
+      "ok": true
+    },
+    {
+      "path": "contracts/seed-catalog.json",
+      "expected": "c853df0d95994ded4f301dec5092f3e67ca0346600a3eb94ca203f48140a55da",
+      "actual": "c853df0d95994ded4f301dec5092f3e67ca0346600a3eb94ca203f48140a55da",
+      "ok": true
+    }
+  ],
+  "whitespaceReview": {
+    "exitCode": 2,
+    "files": [
+      "artifacts/checkpoint/local-validation.txt",
+      "research/Anatomia e fisiologia dos ghouls em Tokyo Ghoul.md",
+      "research/Atlas Anatômico Interativo de Tokyo Ghoul.md"
+    ],
+    "decision": "Existing research uses intentional Markdown hard breaks and is preserved byte for byte. Captured validation stdout retains reporter whitespace and final blank line. No source/config whitespace findings."
+  },
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 91,
+      "sha256": "776a65f926035d0655857d0c988d8883e5c51fb9b958e8db77d746747693e73a"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 164,
+      "sha256": "6800a675e7873a98876f59eb88e7251c9d4a5e2c9338b399244a7457aff31057"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 875,
+      "sha256": "a328207df97cd64417ac992f0b23bd6280a7b5d0b260178b4c0ee75308faa39c"
+    },
+    {
+      "path": ".nvmrc",
+      "bytes": 8,
+      "sha256": "7e8a2fa94951112b894a3dbe3d05efef5e9263741fa49125f0a70f40fedab4cc"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 4347,
+      "sha256": "7590772ea8279c93d9e6c4847a61198b14ad1eb19393c78b0b58a223013b3413"
+    },
+    {
+      "path": "FILE_MANIFEST_SHA256.txt",
+      "bytes": 2921,
+      "sha256": "ad80cce27b48f42c4a0116609ff661a98b5c4d33976ccb0a6654f52455766d48"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7748,
+      "sha256": "dee92306bdb2d5f661be7ac7fb04aa28749b75d2d4c2a92dad006dde477cd36a"
+    },
+    {
+      "path": "START_CODEX.txt",
+      "bytes": 1752,
+      "sha256": "c127b7401887e6ab6b3bba1760b861570cce7a4e08aedcb1bca4888a6b71eb6b"
+    },
+    {
+      "path": "artifacts/checkpoint/gates/G0-repository-audit.json",
+      "bytes": 17074,
+      "sha256": "47bb79dad41da2b8b763a8f8d2a3a89e94224ef0424cb52ba55167a4f931052d"
+    },
+    {
+      "path": "artifacts/checkpoint/gates/G0-validation.txt",
+      "bytes": 1907,
+      "sha256": "cb1fb1f041225e1aaa9b3730848e56b3d23683a83f4dc2d4cc455323b0f521b1"
+    },
+    {
+      "path": "artifacts/checkpoint/gates/G1-bundle-audit.json",
+      "bytes": 1662,
+      "sha256": "d33349339680e2872ca032a4731b0e2408cad385c818b5f4272ab1cd774265c1"
+    },
+    {
+      "path": "artifacts/checkpoint/gates/G1-production-metrics.json",
+      "bytes": 22693,
+      "sha256": "a54b084557274d3c896b8e97287e185dd30a827879409ac9d28143787fd985e6"
+    },
+    {
+      "path": "artifacts/checkpoint/gates/G1-repository-audit.json",
+      "bytes": 11373,
+      "sha256": "600bfb763c3af6db60d36450e1ec147ef6a4d3c9e1ee9210271923c3abb0cc0f"
+    },
+    {
+      "path": "artifacts/checkpoint/gates/G1-runtime-smoke.json",
+      "bytes": 4912,
+      "sha256": "784b644ca7e2bb6d157f6aca32942d058fa77c6c8559855548c4b85fc6c266f4"
+    },
+    {
+      "path": "artifacts/checkpoint/local-validation.json",
+      "bytes": 3719,
+      "sha256": "8c34ae8fa92bdb04e19d33270e1e0f9e45cd4a32c1cc1bf4b87fcd3f56f4d29d"
+    },
+    {
+      "path": "artifacts/checkpoint/local-validation.txt",
+      "bytes": 10533,
+      "sha256": "5f0cb792fe7b386c49f26ed3c86ae34733a0fbb92648bca020151a09dee9dd78"
+    },
+    {
+      "path": "artifacts/checkpoint/preservation-index.json",
+      "bytes": 5032,
+      "sha256": "a9f7b0a056e84658d384c09bf401d8dd7f965ca4e1f175791e7f37d0abca82c3"
+    },
+    {
+      "path": "artifacts/gates/G1-desktop.png",
+      "bytes": 191434,
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667"
+    },
+    {
+      "path": "artifacts/gates/G1-focus.png",
+      "bytes": 255523,
+      "sha256": "0c9e913c221b5f2be550ef0dacb49d6ba60c174fe6f5b5b6c293b18d3bb036ed"
+    },
+    {
+      "path": "artifacts/gates/G1-mobile-full.png",
+      "bytes": 114798,
+      "sha256": "6c9774b8fb42fd5d001a9dc964c3482ff3a6d4850962c167adea627fd9d9491a"
+    },
+    {
+      "path": "artifacts/gates/G1-mobile-selection.png",
+      "bytes": 37499,
+      "sha256": "d51107d7671445f0aa90598b0c30e4d73e3a6018dd5025816c4c5dc514b2aaed"
+    },
+    {
+      "path": "artifacts/gates/G1-mobile.png",
+      "bytes": 76745,
+      "sha256": "a2ef4d4c7d51996c7eb2aedcdf33933648ffa42389b85245ad6152d682ea02e1"
+    },
+    {
+      "path": "artifacts/gates/G1-scan-20.png",
+      "bytes": 191573,
+      "sha256": "3b6a681bf6bbb47290686ccc1d5d5301db8d3e1052dc2028854d603ea5bcd975"
+    },
+    {
+      "path": "artifacts/gates/G1-scan-75.png",
+      "bytes": 191352,
+      "sha256": "3d539f2e04a5baf9b160c42ffc9ec7892b11602b1313ca58d9ad6962b8a0ee45"
+    },
+    {
+      "path": "artifacts/gates/G1-silhouette.png",
+      "bytes": 122752,
+      "sha256": "9178e8b7eade285e3b1200b06eedc87799471cdc4bebaa0ccebb5096b852c830"
+    },
+    {
+      "path": "contracts/atlas-schema.ts",
+      "bytes": 4857,
+      "sha256": "5284a6539b7b19dc4cbc2986af0e80193cfaf5efd689514307fc5157cb6b1e46"
+    },
+    {
+      "path": "contracts/design-tokens.json",
+      "bytes": 547,
+      "sha256": "adb06b64d1fd831a1c5e8a3f5976f3261d210599eea23b60ed829b5d4c183e34"
+    },
+    {
+      "path": "contracts/seed-catalog.json",
+      "bytes": 6897,
+      "sha256": "c853df0d95994ded4f301dec5092f3e67ca0346600a3eb94ca203f48140a55da"
+    },
+    {
+      "path": "docs/00_NORTH_STAR.md",
+      "bytes": 3897,
+      "sha256": "35b69c61bfc6aefd12e2a82047ac35de15a682f6d405cbfd4ec3a9dbde505dbb"
+    },
+    {
+      "path": "docs/01_ROADMAP_AND_GATES.md",
+      "bytes": 14040,
+      "sha256": "13ec7d835f89f8ed8ab08a6ab6cfcb9230d11d8b1af2d6cfa60cbb6b268b5af1"
+    },
+    {
+      "path": "docs/02_EXPERIENCE_STORYBOARD.md",
+      "bytes": 6146,
+      "sha256": "7938499ca21fe37fe17ead05b1cf80fb03e7cda1343b681a7a9fe431be2e255c"
+    },
+    {
+      "path": "docs/03_TECHNICAL_ARCHITECTURE.md",
+      "bytes": 7274,
+      "sha256": "63ae46d85d51572deecdce36e1ba03d66eb7c1a3391e3fd285b48c247fdd17c0"
+    },
+    {
+      "path": "docs/04_SIMULATION_SPEC.md",
+      "bytes": 7433,
+      "sha256": "6717ec611c51f2945f8680c1360045242b54362b217f11812e45dd0e1a50056c"
+    },
+    {
+      "path": "docs/05_VISUAL_ART_DIRECTION.md",
+      "bytes": 4464,
+      "sha256": "0ff9e587586bfeff75dfbae6ec587d2bf386f0048321f1824fd2df02d1b056c0"
+    },
+    {
+      "path": "docs/06_CANON_AND_DATA_RULES.md",
+      "bytes": 4153,
+      "sha256": "23efc6956d5bb47b5f511fd73ed1dcc0c9fa360db26b8e8da042fad80af343d7"
+    },
+    {
+      "path": "docs/07_ASSET_PIPELINE.md",
+      "bytes": 4739,
+      "sha256": "132273de01c1e75700384a366c20ea282735a0a4afb528d6a3c8a64957a8e771"
+    },
+    {
+      "path": "docs/08_QUALITY_ASSURANCE.md",
+      "bytes": 4466,
+      "sha256": "4ba9454a2e777edd9f2f2b0175d7b7f08d4100678940f6f8bd5c6b96623a63ee"
+    },
+    {
+      "path": "docs/09_NEXT_MODULES.md",
+      "bytes": 2169,
+      "sha256": "47227fd98de5e36660c013d07ab4431cc012a19cff1aa90c53b9372ca621515d"
+    },
+    {
+      "path": "docs/ASSET_INVENTORY.md",
+      "bytes": 21193,
+      "sha256": "5a9277ae5715fe8cf9c443d36fed0f6685fcae5fa8b56d3cb082215b1f096617"
+    },
+    {
+      "path": "docs/CONTENT_AUDIT.md",
+      "bytes": 23802,
+      "sha256": "438904c9e6c216cead24dbe64fc7ee207f7470052b77dfd7405656919f7a8744"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "bytes": 14495,
+      "sha256": "f66473cb56e0e0f545d994094789d75ac9d42ba963c5b139d96bb6de5547a777"
+    },
+    {
+      "path": "docs/G1_ACCEPTANCE.md",
+      "bytes": 9934,
+      "sha256": "5f3c7a7e10147da68442e5d8c2d8cab26857fb4c242a3b9d19dd7326fca297fe"
+    },
+    {
+      "path": "docs/G1_CATALOG_MIGRATION.md",
+      "bytes": 3985,
+      "sha256": "a5c6d42aa1ac2af413f09202e338769118d93076fdc2d2e481f62ac9fc90ba53"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_LOG.md",
+      "bytes": 26030,
+      "sha256": "cd73ce93d411f0448021e533478abc648020eb47751e4110604cbeeaab990e2c"
+    },
+    {
+      "path": "docs/PROJECT_HANDOFF.md",
+      "bytes": 28833,
+      "sha256": "c7d0991004f3ef341a287682ff936f7ef674fb1e48ce9130d822cc0f6a815c33"
+    },
+    {
+      "path": "docs/RESEARCH_INDEX.md",
+      "bytes": 10668,
+      "sha256": "a1776c4b1af91b2240a0143f49cc929a1b1d3344a976d7854c616adc908e0334"
+    },
+    {
+      "path": "docs/RESUME_ON_NEW_PC.md",
+      "bytes": 6047,
+      "sha256": "e2cdbaf19be28d4af873759512029031366c82174b008da3bbdc3654b439cfb5"
+    },
+    {
+      "path": "docs/SOURCE_REFERENCES.md",
+      "bytes": 4123,
+      "sha256": "6388d8e44d763e17792c5e8f8bfc0d352224b25b5871df6569721e0e74920f90"
+    },
+    {
+      "path": "eslint.config.js",
+      "bytes": 809,
+      "sha256": "15bb9bc2d26ac7198ec3ef4f985c0a5fbf199c2f0e9d646e144fe1ac6afdd779"
+    },
+    {
+      "path": "index.html",
+      "bytes": 633,
+      "sha256": "f1bf86c1098577d6f73301ce7d9885be38127d8c7afff4f0753bcaa125eb27d4"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 129872,
+      "sha256": "d235539f8c9f665d31c195621f14b63c24a11f72958946c53536eb4d21328d59"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1276,
+      "sha256": "894574068097ab2d37fdeb0cee8c3ed5ade02ac867b4514531af4cefd9e2e604"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 2029,
+      "sha256": "698f6111ded1c2db87b99c181aa0f84ef9f2efa820e4181224e870fd9cf31b58"
+    },
+    {
+      "path": "prompts/00_AUDITAR_PESQUISAS.md",
+      "bytes": 1556,
+      "sha256": "d89c4adb314af4205e2b84e2767295d60d5bc7f272e32542fefaa52fd5c8e147"
+    },
+    {
+      "path": "prompts/01_SHELL_VISUAL.md",
+      "bytes": 1586,
+      "sha256": "d3df01ce4a32ee90650c9159530dbaa91a0af7f02f5df2a37fd7e59b2fb00efa"
+    },
+    {
+      "path": "prompts/02_CORPO_E_KAKUHOU.md",
+      "bytes": 1248,
+      "sha256": "4e0042fa4feb0856d7724ff61c7c5e3ee155fe0a8f3e58fc47ece2e1db0782cd"
+    },
+    {
+      "path": "prompts/03_RINKAKU_MANIFESTACAO.md",
+      "bytes": 1104,
+      "sha256": "22a91fcf3b99f97912959a1ff2c2a51164505de7632cbc461c120811dbeed5fa"
+    },
+    {
+      "path": "prompts/04_CORRENTE_SANGUINEA_RC.md",
+      "bytes": 1014,
+      "sha256": "cc76f7067def5306e7b932e00c4296d14694a54c10f68f181b2c71a1536740c2"
+    },
+    {
+      "path": "prompts/05_ESTADO_E_CONTEUDO.md",
+      "bytes": 1143,
+      "sha256": "1c0f9f1f79a092a82bd5d9fad7bc15ff5bff748a4c423709a365ef88cc4e0e6c"
+    },
+    {
+      "path": "prompts/06_POLIMENTO_RELEASE.md",
+      "bytes": 984,
+      "sha256": "c7b7e3a8b86f8d675ae65847d6b8b7663599a1c26daac089edee2608df5e7c9e"
+    },
+    {
+      "path": "prompts/G1_RECOMENDADO_APOS_G0.md",
+      "bytes": 4725,
+      "sha256": "c5ad72b9299ae29f62a7d16fda27bbef8a92ba9b74b9533bf06ad7953bf2e51f"
+    },
+    {
+      "path": "prompts/G2A_INTEGRACAO_GLB.md",
+      "bytes": 2460,
+      "sha256": "cee951c16e40e7bf9aa34c2838fa9c7461942c90a124752d43bdc51ac7ca3805"
+    },
+    {
+      "path": "public/ASSET_LICENSES.md",
+      "bytes": 1832,
+      "sha256": "ca133d371cc57242a6e93b1f0466f8030dbe2ca4baad688f4d72dc16f6b97e60"
+    },
+    {
+      "path": "public/atlas-mark.svg",
+      "bytes": 390,
+      "sha256": "419c6bc6179d58d6efaf39eb873d591d108685010029aef4fd140bd08461eb6a"
+    },
+    {
+      "path": "public/catalog.json",
+      "bytes": 18763,
+      "sha256": "d032e5e03a1aea6c9c147cf83617b2d9486e0e7b4cbec1ada21c33f38451383e"
+    },
+    {
+      "path": "references/LEIA_PRIMEIRO.md",
+      "bytes": 694,
+      "sha256": "e9823ff36944fb72126af456e873736f1c1812f1a2fa919c4d713268657354f2"
+    },
+    {
+      "path": "research/Anatomia e fisiologia dos ghouls em Tokyo Ghoul.md",
+      "bytes": 71002,
+      "sha256": "5360bf58168343e595a62111f9a6dc20fc3dfd09ba327d1897c021c7a93b6c9d"
+    },
+    {
+      "path": "research/Atlas Anatômico Interativo de Tokyo Ghoul.md",
+      "bytes": 37377,
+      "sha256": "543f6556ac31e0db7dc380b6a4b934125edbfcbd8305849cd570b6c7499d7389"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "bytes": 11868,
+      "sha256": "364974f67af4c57eb3544f5c782c89d3e010ab78d5673a914656461b4152cb92"
+    },
+    {
+      "path": "src/app/SceneBoundary.tsx",
+      "bytes": 481,
+      "sha256": "121e925543b29732d1f5879dd44f89cab5c25fc1b76be3f11d6e003e12b52b51"
+    },
+    {
+      "path": "src/app/types.ts",
+      "bytes": 665,
+      "sha256": "2a2cb4922861d1b8e2774e246120f4359cb9407d9a438bc3332d9152ced78412"
+    },
+    {
+      "path": "src/content/catalog.test.ts",
+      "bytes": 5698,
+      "sha256": "26a7b14b528881d5ef205d16d55bd58ca65d8fbad4b1f195103b2326e1c3fe3c"
+    },
+    {
+      "path": "src/content/catalog.ts",
+      "bytes": 12532,
+      "sha256": "525445c531715b94b7a1fc9c9579f7396feb20db399a5855d896d4a2facec8fd"
+    },
+    {
+      "path": "src/main.tsx",
+      "bytes": 226,
+      "sha256": "3f23c960398eb46e033859018021da343726abf28607f8dafc72a7b8d1c5e3ca"
+    },
+    {
+      "path": "src/scene/AssetSlot.tsx",
+      "bytes": 4532,
+      "sha256": "1b83e5e3c9d3cac1fdc517759a965c840ed4ff20a31fe7b295e09676c1c6d781"
+    },
+    {
+      "path": "src/scene/ObservatoryScene.tsx",
+      "bytes": 13295,
+      "sha256": "5d332c4485ca1aa20d1013a1fad2ccbdc32017b127fcb1b6b86d3705e67c0379"
+    },
+    {
+      "path": "src/scene/camera.test.ts",
+      "bytes": 1075,
+      "sha256": "b05e4580bdadb7ac8556183f6741735181cb47679f29f45583fa88cc495bb762"
+    },
+    {
+      "path": "src/scene/camera.ts",
+      "bytes": 1566,
+      "sha256": "5de39b98fa13989bea4cf7537085ff892ced09fbd30d920f48287563539873ab"
+    },
+    {
+      "path": "src/scene/proxy-manifest.json",
+      "bytes": 1848,
+      "sha256": "a40368f1dca451f893388964c47b12d3126c55ab35f9230d51b228d8a6dac554"
+    },
+    {
+      "path": "src/scene/proxyGeometry.test.ts",
+      "bytes": 1250,
+      "sha256": "16154cafa16b161602fe5a9e0b6e1f999fd0fa8bef977ef1e51b9a6b2f2f41ab"
+    },
+    {
+      "path": "src/scene/proxyGeometry.ts",
+      "bytes": 10883,
+      "sha256": "fbfe1af5275243552cf76f205a22cfd12aa0676b429790ba8f74ae3dd5100d5d"
+    },
+    {
+      "path": "src/state/observatory.test.ts",
+      "bytes": 2718,
+      "sha256": "6ff81c9311b2309c5bce0233ebad258fd16a9a4bfbe21bac47bdeac2edbfe5cd"
+    },
+    {
+      "path": "src/state/observatory.ts",
+      "bytes": 3565,
+      "sha256": "3d2d2e4ee9802fa4ed0f3a50e9a7542a4fa62d6d143c91b2b2930dab4ac618b7"
+    },
+    {
+      "path": "src/state/scanClock.ts",
+      "bytes": 131,
+      "sha256": "6e6064385aede68ca0353060f9bade8b55492b32bc5c643e200aa2758ba237f8"
+    },
+    {
+      "path": "src/ui/EvidenceInspector.tsx",
+      "bytes": 6001,
+      "sha256": "28f5717f03a3a82c30a0f60536b229fbd3eba7dd8ab7ce01fb54088b651c362d"
+    },
+    {
+      "path": "src/ui/Fallback.tsx",
+      "bytes": 1051,
+      "sha256": "467708e4134fe2203662593172f9e56f35968c09e23d0a214e18fc02206c135f"
+    },
+    {
+      "path": "src/ui/Icon.tsx",
+      "bytes": 1212,
+      "sha256": "c047d269c47eb5df2aad84b6aff35f15798e73d2d38ce7f0ac70ab31ac1c043f"
+    },
+    {
+      "path": "src/ui/SystemsIndex.tsx",
+      "bytes": 3116,
+      "sha256": "8484989f2eeb09ef4023cb9433aa3228127785653ec574a50230706835797f0e"
+    },
+    {
+      "path": "src/ui/Timeline.tsx",
+      "bytes": 2115,
+      "sha256": "1559812863790ccac4169664820b377667d49a70ffdc4a13facbd8134207fa21"
+    },
+    {
+      "path": "src/ui/styles.css",
+      "bytes": 26620,
+      "sha256": "993a6fe2b43ad2b7ae234b3241d30c158867e71b0b052d8cf903f70a6d49cf5f"
+    },
+    {
+      "path": "src/visuals/assets/gltfResource.test.ts",
+      "bytes": 3040,
+      "sha256": "225805187a03c7de44db1b7418983bee990999139ecb9ad218d0be7772b82da4"
+    },
+    {
+      "path": "src/visuals/assets/gltfResource.ts",
+      "bytes": 3074,
+      "sha256": "5c97f6aa4ccaa5d410a2e1592362c67bd33e6f2757e0e80a8da6152779d0fec2"
+    },
+    {
+      "path": "tests/e2e/observatory.spec.ts",
+      "bytes": 15872,
+      "sha256": "0c55d601532ab32c93b5044f50121ec0fe98a8f15d10ae57306b18ffcffc3bc2"
+    },
+    {
+      "path": "tests/e2e/production-profile.js",
+      "bytes": 8658,
+      "sha256": "10c0b5effd3f79b50b19a0a13443da9e131c5721550021da51d4e66ac4c5126e"
+    },
+    {
+      "path": "tools/python.mjs",
+      "bytes": 1199,
+      "sha256": "4641bf3ef178f032b2e7a9410e61457b63294843a9ccf3d1deccf26aba7f3767"
+    },
+    {
+      "path": "tools/test_validate_catalog.py",
+      "bytes": 6953,
+      "sha256": "1c369a19d5aaf625b8b1691209adf2a0f80fb0b48dcda82348b2d56f45742066"
+    },
+    {
+      "path": "tools/validate_catalog.py",
+      "bytes": 12642,
+      "sha256": "2970248550e27dbac68a0c894278b6d3eb0d45c1264be43a35f58c55a4f7b404"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 492,
+      "sha256": "cc3a302d91f08fdb019c5e989beccce6c99c018fdec86117e7a93927508dc1ad"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 312,
+      "sha256": "78e18b680064df835e46f5662cf3b17e83e05b8a8a7fedc0f38e83b4ac24e5ab"
+    }
+  ],
+  "inventoryNote": "This report excludes its own later addition and future documentation-only metadata commits to avoid recursive hashes."
+}

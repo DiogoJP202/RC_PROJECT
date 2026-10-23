@@ -1,0 +1,28 @@
+{
+  "id": "asset.body.procedural.g1",
+  "generator": "src/scene/proxyGeometry.ts",
+  "sourcePath": "src/scene/proxyGeometry.ts",
+  "nodeNames": ["HUMAN_SURFACE", "HUMAN_HEAD", "HUMAN_MUSCULAR", "HUMAN_SKELETAL", "HUMAN_THORAX", "KAKUHOU_RINKAKU"],
+  "generatorExport": "createProxyGeometries",
+  "status": "proxy",
+  "modelStatus": "conceptual_proxy",
+  "author": "Ghoul Atlas — original procedural geometry authored for this project",
+  "license": "PROJECT_ORIGINAL",
+  "licenseNote": "Original project code and generated geometry; no third-party meshes, textures or private reference images embedded.",
+  "version": "G1.1",
+  "units": "metres (proxy design convention)",
+  "up": "+Y",
+  "forward": "+Z",
+  "origin": "ground between feet",
+  "disclosure": "PROXY / CONCEPTUAL MODEL — proporções, órgãos e posição interna esquemáticos; não são um atlas humano validado nem anatomia ghoul oficial.",
+  "approximateBounds": { "min": [-0.41, 0.02, -0.15], "max": [0.41, 1.85, 0.19] },
+  "nodes": [
+    { "anatomyId": "human.surface", "nodeName": "HUMAN_SURFACE", "layer": "surface" },
+    { "anatomyId": "human.head", "nodeName": "HUMAN_HEAD", "layer": "surface" },
+    { "anatomyId": "human.muscular", "nodeName": "HUMAN_MUSCULAR", "layer": "muscular" },
+    { "anatomyId": "human.skeletal", "nodeName": "HUMAN_SKELETAL", "layer": "skeletal" },
+    { "anatomyId": "human.thorax", "nodeName": "HUMAN_THORAX", "layer": "internal" },
+    { "anatomyId": "ghoul.kakuhou.rinkaku", "nodeName": "KAKUHOU_RINKAKU", "layer": "internal", "anchor": [0, 0.976, -0.112], "locationPrecision": "approximate_conceptual" }
+  ],
+  "replacementContract": "GLB/glTF with matching anatomy IDs/node mapping, declared orientation/units/bounds, licensed geometry/textures and verified import. A source license and a model's factual status remain independent."
+}

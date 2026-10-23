@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "citations": [
+    {
+      "id": "src.youngjump.intro",
+      "title": "Tokyo Ghoul — dados oficiais",
+      "url": "https://youngjump.jp/tokyoghoul/tg/data/",
+      "sourceType": "publisher",
+      "verifiedAt": null,
+      "note": "Verificar integralmente antes de assinalar como revisado no projeto"
+    },
+    {
+      "id": "src.youngjump.kagune",
+      "title": "Tokyo Ghoul — Kagune",
+      "url": "https://youngjump.jp/tokyoghoul/tg/data/index02.html",
+      "sourceType": "publisher",
+      "verifiedAt": null
+    },
+    {
+      "id": "src.youngjump.types",
+      "title": "Tokyo Ghoul — Quatro tipos de Kagune",
+      "url": "https://youngjump.jp/tokyoghoul/tg/data/index03.html",
+      "sourceType": "publisher",
+      "verifiedAt": null
+    },
+    {
+      "id": "src.openstax.blood",
+      "title": "OpenStax — Circulatory Pathways",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+      "sourceType": "textbook",
+      "verifiedAt": null
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim.kakuhou.stores.rc",
+      "text": "O kakuhou armazena células RC e está relacionado à formação do kagune.",
+      "kind": "official",
+      "citationIds": [
+        "src.youngjump.intro"
+      ],
+      "isLoreClaim": true,
+      "relatedAnatomyIds": [
+        "ghoul.kakuhou.rinkaku"
+      ]
+    },
+    {
+      "id": "claim.kagune.liquid.muscle",
+      "text": "O kagune é descrito como um tipo de músculo líquido capaz de endurecer e amolecer.",
+      "kind": "official",
+      "citationIds": [
+        "src.youngjump.kagune"
+      ],
+      "isLoreClaim": true,
+      "relatedAnatomyIds": [
+        "ghoul.kagune.rinkaku"
+      ]
+    },
+    {
+      "id": "claim.kakuhou.render.internal",
+      "text": "Câmaras internas pulsáteis são um artifício para visualizar a reserva RC.",
+      "kind": "hypothetical_model",
+      "citationIds": [],
+      "disclaimer": "A morfologia interna detalhada do kakuhou não é estabelecida nesta documentação canônica.",
+      "isLoreClaim": false,
+      "relatedAnatomyIds": [
+        "ghoul.kakuhou.rinkaku"
+      ]
+    },
+    {
+      "id": "claim.blood.illustrated",
+      "text": "As hemácias percorrem vasos e capilares na circulação humana.",
+      "kind": "real_anatomy",
+      "citationIds": [
+        "src.openstax.blood"
+      ],
+      "isLoreClaim": false,
+      "relatedAnatomyIds": [
+        "human.vascular.major"
+      ]
+    },
+    {
+      "id": "claim.rc.organelles.unknown",
+      "text": "A arquitetura interna de organelas de uma célula RC não é estabelecida de maneira detalhada aqui.",
+      "kind": "unknown",
+      "citationIds": [],
+      "isLoreClaim": false,
+      "relatedAnatomyIds": [
+        "ghoul.rc.cell"
+      ]
+    }
+  ],
+  "anatomy": [
+    {
+      "id": "ghoul.kakuhou.rinkaku",
+      "label": "Kakuhou (Rinkaku)",
+      "system": "kakuhou",
+      "scale": "organ",
+      "specimenKinds": [
+        "ghoul",
+        "one_eyed",
+        "quinx"
+      ],
+      "evidenceKind": "official",
+      "claimIds": [
+        "claim.kakuhou.stores.rc",
+        "claim.kakuhou.render.internal"
+      ],
+      "modelStatus": "conceptual_proxy",
+      "locationNote": "Região lombar — representação espacial aproximada do tipo rinkaku",
+      "locationPrecision": "documented_region",
+      "assetId": "asset.kakuhou.rinkaku",
+      "nodeName": "KAKUHOU_RINKAKU",
+      "cameraBookmarkId": "camera.lumbar",
+      "interactions": [
+        "select",
+        "focus",
+        "isolate",
+        "manifest"
+      ],
+      "visibilityDefault": "hidden"
+    },
+    {
+      "id": "ghoul.kagune.rinkaku",
+      "label": "Kagune (Rinkaku)",
+      "system": "kagune",
+      "scale": "organ",
+      "specimenKinds": [
+        "ghoul",
+        "one_eyed",
+        "quinx"
+      ],
+      "evidenceKind": "official",
+      "claimIds": [
+        "claim.kagune.liquid.muscle"
+      ],
+      "modelStatus": "conceptual_proxy",
+      "locationNote": "Extensão exterior da raiz na região lombar",
+      "locationPrecision": "approximate",
+      "assetId": "asset.kagune.rinkaku",
+      "nodeName": "KAGUNE_ROOT",
+      "cameraBookmarkId": "camera.lumbar",
+      "interactions": [
+        "select",
+        "focus",
+        "manifest"
+      ],
+      "visibilityDefault": "hidden"
+    },
+    {
+      "id": "ghoul.rc.cell",
+      "label": "Célula RC",
+      "system": "rc",
+      "scale": "cell",
+      "specimenKinds": [
+        "human",
+        "ghoul",
+        "one_eyed",
+        "quinx",
+        "half_human"
+      ],
+      "evidenceKind": "hypothetical_model",
+      "claimIds": [
+        "claim.rc.organelles.unknown"
+      ],
+      "modelStatus": "conceptual_proxy",
+      "locationNote": "Circulação estilizada, sem localização de organelas detalhadas comprovadas",
+      "locationPrecision": "unknown",
+      "assetId": "asset.rc.schematic",
+      "nodeName": "RC_CELL_SCHEMATIC",
+      "interactions": [
+        "select",
+        "focus",
+        "follow"
+      ],
+      "visibilityDefault": "solid"
+    },
+    {
+      "id": "human.vascular.major",
+      "label": "Vasos principais",
+      "system": "vascular",
+      "scale": "system",
+      "specimenKinds": [
+        "human",
+        "ghoul",
+        "one_eyed",
+        "quinx",
+        "half_human"
+      ],
+      "evidenceKind": "real_anatomy",
+      "claimIds": [
+        "claim.blood.illustrated"
+      ],
+      "modelStatus": "conceptual_proxy",
+      "locationNote": "Rede vascular humana didática",
+      "locationPrecision": "approximate",
+      "assetId": "asset.vascular.major",
+      "nodeName": "VASCULAR_MAJOR",
+      "interactions": [
+        "select",
+        "focus",
+        "isolate"
+      ],
+      "visibilityDefault": "hidden"
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset.kakuhou.rinkaku",
+      "kind": "glb",
+      "status": "proxy",
+      "authorship": "original",
+      "nodeNames": [
+        "KAKUHOU_RINKAKU"
+      ],
+      "note": "Modelo conceitual original pendente de arte final"
+    },
+    {
+      "id": "asset.kagune.rinkaku",
+      "kind": "glb",
+      "status": "proxy",
+      "authorship": "original",
+      "nodeNames": [
+        "KAGUNE_ROOT",
+        "APPENDAGE_01"
+      ],
+      "note": "Rig/esquema inicial, não asset final"
+    },
+    {
+      "id": "asset.rc.schematic",
+      "kind": "glb",
+      "status": "proxy",
+      "authorship": "original",
+      "nodeNames": [
+        "RC_CELL_SCHEMATIC"
+      ]
+    },
+    {
+      "id": "asset.vascular.major",
+      "kind": "glb",
+      "status": "proxy",
+      "authorship": "original",
+      "nodeNames": [
+        "VASCULAR_MAJOR"
+      ]
+    }
+  ],
+  "cameraBookmarks": [
+    {
+      "id": "camera.lumbar",
+      "focusAnatomyId": "ghoul.kakuhou.rinkaku",
+      "azimuthDeg": 155,
+      "elevationDeg": 12,
+      "distanceMultiplier": 1.8,
+      "transitionMs": 900
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-23T19:40:32.481Z",
+  "scope": "G0-G1 backup, no new features",
+  "note": "Original reports remain ignored and untouched locally. Historical report inventories describe their original gate, not current hashes. Screenshots renewed by checkpoint E2E; final hashes below.",
+  "reports": [
+    {
+      "source": "artifacts\\gates\\G0-repository-audit.json",
+      "destination": "artifacts/checkpoint/gates/G0-repository-audit.json",
+      "originalSha256": "8ef900e42fa783c4e67069cf37c04795b06364f1b7d2fa2cf6bc22b4facdaa3a",
+      "preservedSha256": "47bb79dad41da2b8b763a8f8d2a3a89e94224ef0424cb52ba55167a4f931052d",
+      "originalBytes": 17569,
+      "preservedBytes": 17074,
+      "transformation": "Personal absolute paths replaced by <WORKSPACE>/<USER_PROFILE>; JSON reserialized; results unchanged."
+    },
+    {
+      "source": "artifacts\\gates\\G0-validation.txt",
+      "destination": "artifacts/checkpoint/gates/G0-validation.txt",
+      "originalSha256": "6901cd0e320bb69e237ade2eca1169172ea290b00d723cc461792a27a6c01c18",
+      "preservedSha256": "cb1fb1f041225e1aaa9b3730848e56b3d23683a83f4dc2d4cc455323b0f521b1",
+      "originalBytes": 1911,
+      "preservedBytes": 1907,
+      "transformation": "Personal absolute paths replaced by <WORKSPACE>/<USER_PROFILE>; JSON reserialized; results unchanged."
+    },
+    {
+      "source": "artifacts\\gates\\G1-bundle-audit.json",
+      "destination": "artifacts/checkpoint/gates/G1-bundle-audit.json",
+      "originalSha256": "ccde41438e65e3416607ef05e924d4e71c89f644db203f60e0c23daa5b7c819f",
+      "preservedSha256": "d33349339680e2872ca032a4731b0e2408cad385c818b5f4272ab1cd774265c1",
+      "originalBytes": 1716,
+      "preservedBytes": 1662,
+      "transformation": "Personal absolute paths replaced by <WORKSPACE>/<USER_PROFILE>; JSON reserialized; results unchanged."
+    },
+    {
+      "source": "artifacts\\gates\\G1-production-metrics.json",
+      "destination": "artifacts/checkpoint/gates/G1-production-metrics.json",
+      "originalSha256": "a54b084557274d3c896b8e97287e185dd30a827879409ac9d28143787fd985e6",
+      "preservedSha256": "a54b084557274d3c896b8e97287e185dd30a827879409ac9d28143787fd985e6",
+      "originalBytes": 22693,
+      "preservedBytes": 22693,
+      "transformation": "Personal absolute paths replaced by <WORKSPACE>/<USER_PROFILE>; JSON reserialized; results unchanged."
+    },
+    {
+      "source": "artifacts\\gates\\G1-repository-audit.json",
+      "destination": "artifacts/checkpoint/gates/G1-repository-audit.json",
+      "originalSha256": "32db88326b32734df96c786d0d0e3ed20c57f08ce6bf887a479843edee5e6280",
+      "preservedSha256": "600bfb763c3af6db60d36450e1ec147ef6a4d3c9e1ee9210271923c3abb0cc0f",
+      "originalBytes": 11762,
+      "preservedBytes": 11373,
+      "transformation": "Personal absolute paths replaced by <WORKSPACE>/<USER_PROFILE>; JSON reserialized; results unchanged."
+    },
+    {
+      "source": "artifacts\\gates\\G1-runtime-smoke.json",
+      "destination": "artifacts/checkpoint/gates/G1-runtime-smoke.json",
+      "originalSha256": "6c54f8d7016e3d071831c4d8f3a320a86ed1677b22449622fb6a642bdd3f14c0",
+      "preservedSha256": "784b644ca7e2bb6d157f6aca32942d058fa77c6c8559855548c4b85fc6c266f4",
+      "originalBytes": 4911,
+      "preservedBytes": 4912,
+      "transformation": "Personal absolute paths replaced by <WORKSPACE>/<USER_PROFILE>; JSON reserialized; results unchanged."
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "artifacts/gates/G1-desktop.png",
+      "bytes": 191434,
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667"
+    },
+    {
+      "path": "artifacts/gates/G1-focus.png",
+      "bytes": 255523,
+      "sha256": "0c9e913c221b5f2be550ef0dacb49d6ba60c174fe6f5b5b6c293b18d3bb036ed"
+    },
+    {
+      "path": "artifacts/gates/G1-mobile-full.png",
+      "bytes": 114798,
+      "sha256": "6c9774b8fb42fd5d001a9dc964c3482ff3a6d4850962c167adea627fd9d9491a"
+    },
+    {
+      "path": "artifacts/gates/G1-mobile-selection.png",
+      "bytes": 37499,
+      "sha256": "d51107d7671445f0aa90598b0c30e4d73e3a6018dd5025816c4c5dc514b2aaed"
+    },
+    {
+      "path": "artifacts/gates/G1-mobile.png",
+      "bytes": 76745,
+      "sha256": "a2ef4d4c7d51996c7eb2aedcdf33933648ffa42389b85245ad6152d682ea02e1"
+    },
+    {
+      "path": "artifacts/gates/G1-scan-20.png",
+      "bytes": 191573,
+      "sha256": "3b6a681bf6bbb47290686ccc1d5d5301db8d3e1052dc2028854d603ea5bcd975"
+    },
+    {
+      "path": "artifacts/gates/G1-scan-75.png",
+      "bytes": 191352,
+      "sha256": "3d539f2e04a5baf9b160c42ffc9ec7892b11602b1313ca58d9ad6962b8a0ee45"
+    },
+    {
+      "path": "artifacts/gates/G1-silhouette.png",
+      "bytes": 122752,
+      "sha256": "9178e8b7eade285e3b1200b06eedc87799471cdc4bebaa0ccebb5096b852c830"
+    }
+  ],
+  "excluded": [
+    "references/private/",
+    "node_modules/",
+    "dist/",
+    "playwright-report/",
+    "test-results/",
+    ".env and credentials",
+    "original artifacts/gates JSON/TXT and local pre-checkpoint log copy"
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 2,
+  "citations": [
+    {
+      "id": "src.youngjump.intro",
+      "title": "Young Jump — Tokyo Ghoul / dados de ghoul",
+      "url": "https://youngjump.jp/tokyoghoul/tg/data/",
+      "sourceType": "publisher",
+      "verifiedAt": "2026-10-23",
+      "locator": "Seção 喰種 — texto sobre RC e kakuhou",
+      "note": "Conferência textual registrada em docs/CONTENT_AUDIT.md, S1. Suporta acúmulo RC e papel do kakuhou. Não foram inspecionadas imagens nem painéis; não autentica forma, dimensões ou histologia."
+    },
+    {
+      "id": "src.youngjump.kagune",
+      "title": "Young Jump — Tokyo Ghoul / Kagune",
+      "url": "https://youngjump.jp/tokyoghoul/tg/data/index02.html",
+      "sourceType": "publisher",
+      "verifiedAt": "2026-10-23",
+      "locator": "Seção 赫子 — descrição qualitativa de músculo líquido",
+      "note": "Conferência textual G0, CONTENT_AUDIT S2: endurecimento e amolecimento qualitativos. Sem constantes materiais, duração ou rig comprovados. Nenhuma manifestação é simulada no G1."
+    },
+    {
+      "id": "src.youngjump.types",
+      "title": "Young Jump — Tokyo Ghoul / tipos de kagune",
+      "url": "https://youngjump.jp/tokyoghoul/tg/data/index03.html",
+      "sourceType": "publisher",
+      "verifiedAt": "2026-10-23",
+      "locator": "Rc type — seção 鱗赫 (Rinkaku)",
+      "note": "Conferência textual G0, CONTENT_AUDIT S3: região aproximada da cintura/lombar de manifestação. Não fornece vértebra, posição profunda do órgão ou coordenadas médicas."
+    },
+    {
+      "id": "src.openstax.blood",
+      "title": "OpenStax — Circulatory Pathways, 20.5",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways",
+      "sourceType": "textbook",
+      "verifiedAt": "2026-10-23",
+      "locator": "Pulmonary Circulation / Overview of Systemic Arteries",
+      "note": "Conferência G0, CONTENT_AUDIT S7: circuitos humanos pulmonar e sistêmico. Fonte contextual humana; não confirma transporte RC. ID legado preservado; complemento de composição em src.openstax.blood.composition."
+    },
+    {
+      "id": "src.openstax.blood.composition",
+      "title": "OpenStax — An Overview of Blood, 18.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-1-an-overview-of-blood",
+      "sourceType": "textbook",
+      "verifiedAt": "2026-10-23",
+      "locator": "Composição sanguínea / elementos figurados",
+      "note": "Conferência G0, CONTENT_AUDIT S6: composição e circulação dos elementos sanguíneos humanos. Não se utiliza imagem nem mesh da fonte."
+    },
+    {
+      "id": "src.openstax.tissues",
+      "title": "OpenStax — Types of Tissues, 4.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-1-types-of-tissues",
+      "sourceType": "textbook",
+      "verifiedAt": "2026-10-23",
+      "locator": "The Four Types of Tissues — parágrafo de tecido muscular",
+      "note": "Conferência textual G1: tecido muscular responde a estímulos e contrai para produzir movimento. Resumo autoral factual; nenhuma figura, trecho extenso ou modelo foi reproduzido. Não autentica feixes do proxy."
+    },
+    {
+      "id": "src.openstax.skin",
+      "title": "OpenStax — Layers of the Skin, 5.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/5-1-layers-of-the-skin",
+      "sourceType": "textbook",
+      "verifiedAt": "2026-10-23",
+      "locator": "Abertura — função de proteção do sistema tegumentar",
+      "note": "Conferência textual G1: pele e anexos participam da proteção corporal humana. Resumo autoral factual; não se reproduzem imagens ou texto do livro, nem se atribui a ele a geometria autoral."
+    },
+    {
+      "id": "src.openstax.skeleton",
+      "title": "OpenStax — Divisions of the Skeletal System, 7.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-1-divisions-of-the-skeletal-system",
+      "sourceType": "textbook",
+      "verifiedAt": "2026-10-23",
+      "locator": "Abertura e The Axial Skeleton — suporte e proteção",
+      "note": "Conferência textual G1: esqueleto dá suporte, participa do movimento e protege órgãos; esqueleto axial inclui cabeça, pescoço, tórax e dorso. Sem reprodução de figuras, medidas ou contagem óssea no proxy."
+    },
+    {
+      "id": "src.openstax.respiratory",
+      "title": "OpenStax — Organs and Structures of the Respiratory System, 22.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system",
+      "sourceType": "textbook",
+      "verifiedAt": "2026-10-23",
+      "locator": "Introdução e zonas condutora/respiratória",
+      "note": "Conferência textual G0, CONTENT_AUDIT S8: funções gerais respiratórias humanas. Não comprova fisiologia ghoul e não autentica as massas torácicas esquemáticas."
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim.kakuhou.stores.rc",
+      "text": "O kakuhou acumula células RC e participa da formação do kagune.",
+      "kind": "official",
+      "citationIds": ["src.youngjump.intro"],
+      "isLoreClaim": true,
+      "relatedAnatomyIds": ["ghoul.kakuhou.rinkaku"],
+      "confidence": "high",
+      "scope": "Função qualitativa segundo o texto oficial; não determina morfologia interna."
+    },
+    {
+      "id": "claim.kagune.liquid.muscle",
+      "text": "O kagune é descrito como músculo líquido capaz de endurecer e amolecer.",
+      "kind": "official",
+      "citationIds": ["src.youngjump.kagune"],
+      "isLoreClaim": true,
+      "relatedAnatomyIds": ["ghoul.kakuhou.rinkaku"],
+      "confidence": "high",
+      "scope": "Contexto da função do kakuhou. Não há kagune, rig ou manifestação implementados no G1."
+    },
+    {
+      "id": "claim.kakuhou.render.internal",
+      "text": "A forma e a organização interna exibidas para o kakuhou são reconstruções conceituais do projeto.",
+      "kind": "hypothetical_model",
+      "citationIds": [],
+      "disclaimer": "A morfologia interna detalhada do kakuhou não foi estabelecida nas fontes consultadas. A malha não é anatomia oficial.",
+      "isLoreClaim": false,
+      "relatedAnatomyIds": ["ghoul.kakuhou.rinkaku"],
+      "confidence": "high",
+      "scope": "Autoria da representação espacial; confiança na rotulagem, sem validade biológica atribuída."
+    },
+    {
+      "id": "claim.blood.illustrated",
+      "text": "Na circulação humana, hemácias circulam pelo sistema de vasos sanguíneos.",
+      "kind": "real_anatomy",
+      "citationIds": ["src.openstax.blood", "src.openstax.blood.composition"],
+      "isLoreClaim": false,
+      "relatedAnatomyIds": ["human.thorax"],
+      "confidence": "high",
+      "scope": "Base humana de comparação; circulação não é simulada no G1 e esta afirmação não descreve transporte RC."
+    },
+    {
+      "id": "claim.rc.organelles.unknown",
+      "text": "A arquitetura detalhada de organelas de uma célula RC não foi estabelecida nas fontes consultadas.",
+      "kind": "unknown",
+      "citationIds": [],
+      "isLoreClaim": false,
+      "relatedAnatomyIds": ["ghoul.kakuhou.rinkaku"],
+      "confidence": "medium",
+      "scope": "Limite da pesquisa do projeto; sem célula RC, organela ou escala microscópica renderizada no G1."
+    },
+    {
+      "id": "claim.rinkaku.region",
+      "text": "A manifestação do Rinkaku é associada aproximadamente à região da cintura/lombar.",
+      "kind": "official",
+      "citationIds": ["src.youngjump.types"],
+      "isLoreClaim": true,
+      "relatedAnatomyIds": ["ghoul.kakuhou.rinkaku"],
+      "confidence": "high",
+      "scope": "Região de manifestação descrita pelo guia; profundidade e posição interna do órgão continuam aproximadas."
+    },
+    {
+      "id": "claim.human.skin",
+      "text": "A pele e seus anexos participam da proteção do corpo humano.",
+      "kind": "real_anatomy",
+      "citationIds": ["src.openstax.skin"],
+      "isLoreClaim": false,
+      "relatedAnatomyIds": ["human.surface"],
+      "confidence": "high",
+      "scope": "Referência humana geral; não comprova resistência da pele ghoul nem detalhes da malha."
+    },
+    {
+      "id": "claim.human.muscle",
+      "text": "O tecido muscular humano responde a estímulos e contrai para produzir movimento.",
+      "kind": "real_anatomy",
+      "citationIds": ["src.openstax.tissues"],
+      "isLoreClaim": false,
+      "relatedAnatomyIds": ["human.muscular"],
+      "confidence": "high",
+      "scope": "Função geral de tecido humano; feixes, inserções e desempenho do proxy não estão validados."
+    },
+    {
+      "id": "claim.human.skeleton",
+      "text": "O esqueleto humano sustenta o corpo, participa do movimento e protege órgãos internos.",
+      "kind": "real_anatomy",
+      "citationIds": ["src.openstax.skeleton"],
+      "isLoreClaim": false,
+      "relatedAnatomyIds": ["human.skeletal", "human.head"],
+      "confidence": "high",
+      "scope": "Base humana; as formas esquemáticas exibidas não equivalem a ossos clínicos segmentados."
+    },
+    {
+      "id": "claim.human.respiration",
+      "text": "O sistema respiratório humano participa das trocas gasosas entre o organismo e o ambiente.",
+      "kind": "real_anatomy",
+      "citationIds": ["src.openstax.respiratory"],
+      "isLoreClaim": false,
+      "relatedAnatomyIds": ["human.thorax"],
+      "confidence": "high",
+      "scope": "Base humana didática; não extrapola exigências metabólicas ou fisiologia ghoul."
+    },
+    {
+      "id": "claim.proxy.form",
+      "text": "O manequim e suas camadas são formas tridimensionais autorais simplificadas para testar navegação.",
+      "kind": "hypothetical_model",
+      "citationIds": [],
+      "disclaimer": "PROXY / CONCEPTUAL MODEL — proporções, superfícies, feixes, ossos e massas internas não foram validados como atlas anatômico. Arte final pendente.",
+      "isLoreClaim": false,
+      "relatedAnatomyIds": ["human.surface", "human.head", "human.muscular", "human.skeletal", "human.thorax", "ghoul.kakuhou.rinkaku"],
+      "confidence": "high",
+      "scope": "Classificação da representação, independente da evidência das funções descritas."
+    }
+  ],
+  "anatomy": [
+    {
+      "id": "human.surface", "label": "Superfície corporal", "system": "surface", "scale": "body", "layer": "surface",
+      "specimenKinds": ["human", "ghoul"], "evidenceKind": "real_anatomy",
+      "claimIds": ["claim.human.skin", "claim.proxy.form"], "modelStatus": "conceptual_proxy",
+      "function": "Referência humana: proteção e limite externo do corpo.",
+      "locationNote": "Envoltório externo do manequim; proporções aproximadas.", "locationPrecision": "approximate",
+      "description": "Superfície contínua de estudo que situa as camadas independentes. A transparência é um recurso de inspeção visual; não representa tecido translúcido real.",
+      "modelDisclosure": "PROXY / CONCEPTUAL MODEL — manequim autoral; pele, proporções e detalhes anatômicos aguardam arte e revisão.",
+      "assetId": "asset.observatory.proxy", "nodeName": "HUMAN_SURFACE", "cameraBookmarkId": "camera.overview",
+      "interactions": ["select", "focus", "isolate"], "visibilityDefault": "ghost"
+    },
+    {
+      "id": "human.head", "label": "Região cefálica", "system": "skeletal", "scale": "organ", "layer": "surface", "parentId": "human.surface",
+      "specimenKinds": ["human", "ghoul"], "evidenceKind": "real_anatomy",
+      "claimIds": ["claim.human.skeleton", "claim.proxy.form"], "modelStatus": "conceptual_proxy",
+      "function": "Referência humana: suporte e proteção pelo crânio; a seleção delimita a região.",
+      "locationNote": "Extremidade superior do manequim, em posição ilustrativa.", "locationPrecision": "approximate",
+      "description": "Volume regional selecionável para testar foco e orientação. Não há segmentação clínica do crânio, cérebro ou histologia ocular, nem kakugan implementado.",
+      "modelDisclosure": "PROXY / CONCEPTUAL MODEL — forma regional simplificada; não representa anatomia craniana de alta fidelidade.",
+      "assetId": "asset.observatory.proxy", "nodeName": "HUMAN_HEAD", "cameraBookmarkId": "camera.head",
+      "interactions": ["select", "focus", "isolate"], "visibilityDefault": "solid"
+    },
+    {
+      "id": "human.muscular", "label": "Camada muscular", "system": "muscular", "scale": "system", "layer": "muscular", "parentId": "human.surface",
+      "specimenKinds": ["human", "ghoul"], "evidenceKind": "real_anatomy",
+      "claimIds": ["claim.human.muscle", "claim.proxy.form"], "modelStatus": "conceptual_proxy",
+      "function": "Referência humana: contração e produção de movimento.",
+      "locationNote": "Massas independentes entre superfície e armação interna; sem inserções clínicas.", "locationPrecision": "approximate",
+      "description": "Feixes esquemáticos com geometria própria. A camada demonstra revelação e isolamento; não valida disposição, quantidade ou potência de músculos ghoul.",
+      "modelDisclosure": "PROXY / CONCEPTUAL MODEL — feixes autorais sem revisão de inserções, fáscias ou proporções musculares.",
+      "assetId": "asset.observatory.proxy", "nodeName": "HUMAN_MUSCULAR", "cameraBookmarkId": "camera.muscular",
+      "interactions": ["select", "focus", "isolate"], "visibilityDefault": "hidden"
+    },
+    {
+      "id": "human.skeletal", "label": "Armação esquelética", "system": "skeletal", "scale": "system", "layer": "skeletal", "parentId": "human.surface",
+      "specimenKinds": ["human", "ghoul"], "evidenceKind": "real_anatomy",
+      "claimIds": ["claim.human.skeleton", "claim.proxy.form"], "modelStatus": "conceptual_proxy",
+      "function": "Referência humana: suporte, movimento e proteção.",
+      "locationNote": "Eixo interno e membros; marcos espaciais esquemáticos.", "locationPrecision": "approximate",
+      "description": "Armação de geometria independente para ensaiar camadas e foco. Não são segmentados todos os ossos; contagens, articulações e vértebras não devem ser inferidas da forma.",
+      "modelDisclosure": "PROXY / CONCEPTUAL MODEL — armação regional autoral, sem uso clínico ou validação osteológica.",
+      "assetId": "asset.observatory.proxy", "nodeName": "HUMAN_SKELETAL", "cameraBookmarkId": "camera.skeletal",
+      "interactions": ["select", "focus", "isolate"], "visibilityDefault": "hidden"
+    },
+    {
+      "id": "human.thorax", "label": "Compartimento torácico", "system": "other", "scale": "system", "layer": "internal", "parentId": "human.surface",
+      "specimenKinds": ["human", "ghoul"], "evidenceKind": "real_anatomy",
+      "claimIds": ["claim.human.respiration", "claim.blood.illustrated", "claim.proxy.form"], "modelStatus": "conceptual_proxy",
+      "function": "Base humana de comparação para respiração e circulação; processos ainda não simulados.",
+      "locationNote": "Região torácica, anterior ao eixo dorsal do manequim.", "locationPrecision": "approximate",
+      "description": "Massas internas didáticas com geometria própria situam a inspeção do tórax. Vasos, fluxo, alvéolos e fisiologia ghoul não são reconstruídos no G1.",
+      "modelDisclosure": "PROXY / CONCEPTUAL MODEL — volumes internos simplificados; não autenticados como coração ou pulmões de alta fidelidade.",
+      "assetId": "asset.observatory.proxy", "nodeName": "HUMAN_THORAX", "cameraBookmarkId": "camera.thorax",
+      "interactions": ["select", "focus", "isolate"], "visibilityDefault": "solid"
+    },
+    {
+      "id": "ghoul.kakuhou.rinkaku", "label": "Kakuhou · Rinkaku", "system": "kakuhou", "scale": "organ", "layer": "internal", "parentId": "human.surface",
+      "specimenKinds": ["ghoul"], "evidenceKind": "official",
+      "claimIds": ["claim.kakuhou.stores.rc", "claim.rinkaku.region", "claim.kagune.liquid.muscle", "claim.kakuhou.render.internal", "claim.rc.organelles.unknown", "claim.proxy.form"], "modelStatus": "conceptual_proxy",
+      "function": "Acúmulo RC e participação na formação do kagune, segundo o texto oficial.",
+      "locationNote": "Anchor aproximado na região lombar posterior; profundidade inventada para composição.", "locationPrecision": "approximate",
+      "description": "A função tem suporte oficial; esta malha e seu posicionamento interno são autorais. O guia situa a manifestação do Rinkaku regionalmente, sem estabelecer histologia, forma ou coordenadas médicas do órgão.",
+      "modelDisclosure": "PROXY / CONCEPTUAL MODEL — forma, profundidade e detalhe interno hipotéticos. Função oficial não autentica a malha.",
+      "assetId": "asset.observatory.proxy", "nodeName": "KAKUHOU_RINKAKU", "cameraBookmarkId": "camera.lumbar",
+      "interactions": ["select", "focus", "isolate"], "visibilityDefault": "solid"
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset.observatory.proxy", "kind": "procedural", "status": "proxy", "authorship": "original",
+      "sourcePath": "src/scene/proxyGeometry.ts", "manifestPath": "src/scene/proxy-manifest.json",
+      "nodeNames": ["HUMAN_SURFACE", "HUMAN_HEAD", "HUMAN_MUSCULAR", "HUMAN_SKELETAL", "HUMAN_THORAX", "KAKUHOU_RINKAKU"],
+      "license": "Project-original — generated specifically for Ghoul Atlas; no third-party mesh or texture",
+      "attribution": "Ghoul Atlas — original procedural preview, G1 / 2026-10-23",
+      "note": "Gerador autoral real, não GLB. Status proxy descreve a qualidade de representação; disponível para navegação após importação do módulo. Arte anatômica final e licença de distribuição pública definitiva pendentes. Nenhuma referência privada é recurso de runtime."
+    }
+  ],
+  "cameraBookmarks": [
+    {"id": "camera.overview", "focusAnatomyId": "human.surface", "azimuthDeg": 22, "elevationDeg": 4, "distanceMultiplier": 1, "transitionMs": 900},
+    {"id": "camera.head", "focusAnatomyId": "human.head", "azimuthDeg": 18, "elevationDeg": 3, "distanceMultiplier": 0.6, "transitionMs": 900},
+    {"id": "camera.muscular", "focusAnatomyId": "human.muscular", "azimuthDeg": 22, "elevationDeg": 4, "distanceMultiplier": 1, "transitionMs": 900},
+    {"id": "camera.skeletal", "focusAnatomyId": "human.skeletal", "azimuthDeg": 22, "elevationDeg": 4, "distanceMultiplier": 1, "transitionMs": 900},
+    {"id": "camera.thorax", "focusAnatomyId": "human.thorax", "azimuthDeg": 20, "elevationDeg": 4, "distanceMultiplier": 0.65, "transitionMs": 900},
+    {"id": "camera.lumbar", "focusAnatomyId": "ghoul.kakuhou.rinkaku", "azimuthDeg": 155, "elevationDeg": 10, "distanceMultiplier": 0.6, "transitionMs": 900}
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "timestamp": "2026-10-23T18:44:32.116Z",
+  "browser": "155.0.8059.86",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "dpr": 1,
+  "checks": "Desktop normal runtime, selection, future-mode return, manual scan and evidence sources. Deliberate failure routes covered separately by 14 Playwright E2Es.",
+  "errors": [],
+  "warnings": [
+    "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+  ],
+  "failedRequests": [],
+  "httpErrors": [],
+  "timing": {
+    "interactive": [
+      2576.599999997765
+    ],
+    "resourceCount": 42,
+    "transferredBytes": 23225230
+  },
+  "snapshot": {
+    "ready": true,
+    "selectedId": "ghoul.kakuhou.rinkaku",
+    "lastHit": null,
+    "layers": {
+      "surface": true,
+      "muscular": false,
+      "skeletal": false,
+      "internal": true
+    },
+    "visibleNodes": [
+      "HUMAN_SURFACE",
+      "HUMAN_HEAD",
+      "HUMAN_THORAX",
+      "KAKUHOU_RINKAKU"
+    ],
+    "nodes": [
+      {
+        "name": "HUMAN_SURFACE",
+        "anatomyId": "human.surface",
+        "visible": true,
+        "vertices": 101472,
+        "bounds": [
+          [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          [
+            0.39881572127342224,
+            1.6200000047683716,
+            0.1810000091791153
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_HEAD",
+        "anatomyId": "human.head",
+        "visible": true,
+        "vertices": 28272,
+        "bounds": [
+          [
+            -0.08699999749660492,
+            1.5759999752044678,
+            -0.08445589989423752
+          ],
+          [
+            0.08699999749660492,
+            1.850000023841858,
+            0.09389623254537582
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_MUSCULAR",
+        "anatomyId": "human.muscular",
+        "visible": false,
+        "vertices": 110208,
+        "bounds": [
+          [
+            -0.35249319672584534,
+            0.13817860186100006,
+            -0.10999999940395355
+          ],
+          [
+            0.35249319672584534,
+            1.5107470750808716,
+            0.11800000071525574
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_SKELETAL",
+        "anatomyId": "human.skeletal",
+        "visible": false,
+        "vertices": 158088,
+        "bounds": [
+          [
+            -0.3664235472679138,
+            0.039000000804662704,
+            -0.07462053000926971
+          ],
+          [
+            0.3664235472679138,
+            1.8320000171661377,
+            0.15600000321865082
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_THORAX",
+        "anatomyId": "human.thorax",
+        "visible": true,
+        "vertices": 12264,
+        "bounds": [
+          [
+            -0.1334308236837387,
+            1.1996310949325562,
+            -0.050999999046325684
+          ],
+          [
+            0.1334308236837387,
+            1.4900007247924805,
+            0.08100000023841858
+          ]
+        ]
+      },
+      {
+        "name": "KAKUHOU_RINKAKU",
+        "anatomyId": "ghoul.kakuhou.rinkaku",
+        "visible": true,
+        "vertices": 15960,
+        "bounds": [
+          [
+            -0.10146593302488327,
+            0.917545735836029,
+            -0.1469999998807907
+          ],
+          [
+            0.10146593302488327,
+            1.034000039100647,
+            -0.07500000298023224
+          ]
+        ]
+      }
+    ],
+    "surfaceOpacity": 0.2,
+    "paused": true,
+    "reducedMotion": true,
+    "scanT": 0.41,
+    "scanRevision": 1,
+    "camera": {
+      "position": [
+        -0.53,
+        1.0999999999999999,
+        -1.17
+      ],
+      "target": [
+        0,
+        0.98,
+        -0.12
+      ],
+      "moving": false
+    },
+    "bounds": {
+      "min": [
+        -0.39881572127342224,
+        0.019999997690320015,
+        -0.10774065554141998
+      ],
+      "max": [
+        0.39881572127342224,
+        1.850000023841858,
+        0.1810000091791153
+      ],
+      "projected": {
+        "top": 2.8194293023582953,
+        "bottom": -2.691094334506273,
+        "left": -0.6293213092738259,
+        "right": 0.9582616094241039
+      },
+      "heightFraction": 2.755261818432284
+    },
+    "metrics": {
+      "fpsP50": 60,
+      "fpsP10": 18,
+      "calls": 19,
+      "triangles": 131050,
+      "geometries": 13,
+      "textures": 3,
+      "samples": 65,
+      "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+    },
+    "frames": 176,
+    "viewport": {
+      "width": 876,
+      "height": 656,
+      "dpr": 1
+    },
+    "modelStatus": "conceptual_proxy"
+  },
+  "note": "Smoke measurement only; not the ADR-011 10s warm-up + 30s profile; desktop hardware rendering is not a mobile performance certification."
+}

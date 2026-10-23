@@ -1,0 +1,47 @@
+# Node/build
+node_modules/
+dist/
+.next/
+coverage/
+.playwright/
+playwright-report/
+test-results/
+
+# local screenshots of proprietary third-party UI — references only
+references/private/
+
+# Only original G1 captures and reviewed checkpoint reports are shared.
+artifacts/*
+!artifacts/gates/
+artifacts/gates/*
+!artifacts/gates/G1-*.png
+!artifacts/checkpoint/
+artifacts/checkpoint/*
+!artifacts/checkpoint/*.md
+!artifacts/checkpoint/*.json
+!artifacts/checkpoint/*.txt
+!artifacts/checkpoint/gates/
+artifacts/checkpoint/gates/*
+!artifacts/checkpoint/gates/*.json
+!artifacts/checkpoint/gates/*.txt
+
+# Secrets and private machine configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+
+# raw research PDFs may be large or licensed; track metadata/notes only by default
+research/*.pdf
+research/*.zip
+
+# system
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+__pycache__/
+*.py[cod]

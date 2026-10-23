@@ -1,0 +1,106 @@
+{
+  "started_at_utc": "2026-10-23T19:31:17.908Z",
+  "completed_at_utc": "2026-10-23T19:33:32.675Z",
+  "complete": true,
+  "scope": "G0-G1 checkpoint; no feature or test changes",
+  "versions": {
+    "node": "v24.19.0",
+    "npm": "11.17.0",
+    "python": "Python 3.12.14"
+  },
+  "commands": [
+    {
+      "command": "npm run typecheck",
+      "started_at_utc": "2026-10-23T19:31:18.633Z",
+      "exit_code": 0,
+      "duration_seconds": 5.033
+    },
+    {
+      "command": "npm run lint",
+      "started_at_utc": "2026-10-23T19:31:23.714Z",
+      "exit_code": 0,
+      "duration_seconds": 4.652
+    },
+    {
+      "command": "npm test",
+      "started_at_utc": "2026-10-23T19:31:28.369Z",
+      "exit_code": 0,
+      "duration_seconds": 1.808
+    },
+    {
+      "command": "npm run test:catalog",
+      "started_at_utc": "2026-10-23T19:31:30.181Z",
+      "exit_code": 0,
+      "duration_seconds": 1.372
+    },
+    {
+      "command": "npm run validate:catalog",
+      "started_at_utc": "2026-10-23T19:31:31.555Z",
+      "exit_code": 0,
+      "duration_seconds": 0.844
+    },
+    {
+      "command": "npm run build",
+      "started_at_utc": "2026-10-23T19:31:32.401Z",
+      "exit_code": 0,
+      "duration_seconds": 8.21
+    },
+    {
+      "command": "npm run test:e2e",
+      "started_at_utc": "2026-10-23T19:31:40.615Z",
+      "exit_code": 0,
+      "duration_seconds": 66.356
+    }
+  ],
+  "notes": [
+    "All seven requested commands exited 0; no feature or test implementation was changed.",
+    "E2E exercised browser loading, raycast, layers/isolation, camera, scan/pause, keyboard/reduced motion, catalog/asset/WebGL fallbacks, desktop and mobile layout.",
+    "Production FPS and slow-network metrics were not repeated in this checkpoint; prior G1 profile artifacts remain historical evidence.",
+    "Local machine paths were replaced with <workspace> / <user-profile> in the text log."
+  ],
+  "output_log": "artifacts/checkpoint/local-validation.txt",
+  "result_counts": {
+    "vitest_files_passed": 5,
+    "vitest_tests_passed": 41,
+    "python_tests_passed": 22,
+    "e2e_tests_passed": 14,
+    "e2e_failed": 0,
+    "e2e_skipped": 0,
+    "runtime_catalog_version": 2
+  },
+  "legacy_diagnostic": {
+    "command": "node tools/python.mjs tools/validate_catalog.py contracts/seed-catalog.json",
+    "started_at_utc": "2026-10-23T19:33:31.984Z",
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "issues_reported": 46,
+    "meaning": "Historical schema-v1 seed retained unchanged; active runtime catalog is public/catalog.json v2."
+  },
+  "browser": {
+    "engine": "system Google Chrome",
+    "version": "155.0.8059.86",
+    "matching_playwright_browser_installed": false,
+    "selected_by": "Existing playwright.config.ts fallback; no configuration or tests changed.",
+    "physical_mobile_tested": false
+  },
+  "warnings": [
+    "Build: lazy ObservatoryScene chunk 947.39 kB minified / 253.11 kB gzip exceeds configured 900 kB notice.",
+    "Runtime: THREE.Clock deprecation from current R3F/Three stack.",
+    "Runner: NO_COLOR ignored because FORCE_COLOR is set.",
+    "WebGL loss recovery test emitted WEBGL_lose_context extension not supported during teardown/recovery; test passed."
+  ],
+  "screenshots_regenerated": [
+    "artifacts/gates/G1-desktop.png",
+    "artifacts/gates/G1-scan-20.png",
+    "artifacts/gates/G1-scan-75.png",
+    "artifacts/gates/G1-focus.png",
+    "artifacts/gates/G1-silhouette.png",
+    "artifacts/gates/G1-mobile.png",
+    "artifacts/gates/G1-mobile-full.png",
+    "artifacts/gates/G1-mobile-selection.png"
+  ],
+  "server_cleanup": {
+    "workspace_vite_processes_remaining": 0,
+    "action": "Playwright stopped its own webServer; no manual process termination needed."
+  }
+}

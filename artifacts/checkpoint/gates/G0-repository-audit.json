@@ -1,0 +1,455 @@
+{
+  "auditDateLocal": "2026-10-23",
+  "timeZone": "America/Sao_Paulo",
+  "gate": "G0",
+  "root": "<WORKSPACE>",
+  "initialAfterUserResearchFileCount": 33,
+  "finalFileCountIncludingThisSnapshot": 41,
+  "gitInitialized": false,
+  "applicationPresent": false,
+  "modelsPresent": [],
+  "originalManifestBeforeG0": {
+    "entries": 31,
+    "match": 30,
+    "missing": [
+      "research/README_ADICIONE_SEUS_ARQUIVOS.md"
+    ]
+  },
+  "originalManifestAfterG0": {
+    "summary": {
+      "match": 29,
+      "changed": 1,
+      "missing": 1
+    },
+    "entries": [
+      {
+        "path": ".gitignore",
+        "expectedSha256": "c21840717598c83c2165910432d02edb8ea56eb7a8fc1a02ea5bf7e98b1ffbb8",
+        "actualSha256": "c21840717598c83c2165910432d02edb8ea56eb7a8fc1a02ea5bf7e98b1ffbb8",
+        "status": "match"
+      },
+      {
+        "path": "AGENTS.md",
+        "expectedSha256": "7590772ea8279c93d9e6c4847a61198b14ad1eb19393c78b0b58a223013b3413",
+        "actualSha256": "7590772ea8279c93d9e6c4847a61198b14ad1eb19393c78b0b58a223013b3413",
+        "status": "match"
+      },
+      {
+        "path": "README.md",
+        "expectedSha256": "42a7ad033ebba0a4542a011ab3558e64f04e4c9401fbfd8a293f64b2f37da4ea",
+        "actualSha256": "42a7ad033ebba0a4542a011ab3558e64f04e4c9401fbfd8a293f64b2f37da4ea",
+        "status": "match"
+      },
+      {
+        "path": "START_CODEX.txt",
+        "expectedSha256": "c127b7401887e6ab6b3bba1760b861570cce7a4e08aedcb1bca4888a6b71eb6b",
+        "actualSha256": "c127b7401887e6ab6b3bba1760b861570cce7a4e08aedcb1bca4888a6b71eb6b",
+        "status": "match"
+      },
+      {
+        "path": "contracts/atlas-schema.ts",
+        "expectedSha256": "b0437327dc480982428c220f59630e65fbb3d16411d864635e204a9a0696ae69",
+        "actualSha256": "b0437327dc480982428c220f59630e65fbb3d16411d864635e204a9a0696ae69",
+        "status": "match"
+      },
+      {
+        "path": "contracts/design-tokens.json",
+        "expectedSha256": "adb06b64d1fd831a1c5e8a3f5976f3261d210599eea23b60ed829b5d4c183e34",
+        "actualSha256": "adb06b64d1fd831a1c5e8a3f5976f3261d210599eea23b60ed829b5d4c183e34",
+        "status": "match"
+      },
+      {
+        "path": "contracts/seed-catalog.json",
+        "expectedSha256": "c853df0d95994ded4f301dec5092f3e67ca0346600a3eb94ca203f48140a55da",
+        "actualSha256": "c853df0d95994ded4f301dec5092f3e67ca0346600a3eb94ca203f48140a55da",
+        "status": "match"
+      },
+      {
+        "path": "docs/00_NORTH_STAR.md",
+        "expectedSha256": "35b69c61bfc6aefd12e2a82047ac35de15a682f6d405cbfd4ec3a9dbde505dbb",
+        "actualSha256": "35b69c61bfc6aefd12e2a82047ac35de15a682f6d405cbfd4ec3a9dbde505dbb",
+        "status": "match"
+      },
+      {
+        "path": "docs/01_ROADMAP_AND_GATES.md",
+        "expectedSha256": "7f100309505331fe367f05bb96edd04ff378a5b30441ec53c0aa3f6502ed86c1",
+        "actualSha256": "b6c455c177d26894dd34b00eca8ec7cf40612e1e4909bfd0cc6473899485f572",
+        "status": "changed"
+      },
+      {
+        "path": "docs/02_EXPERIENCE_STORYBOARD.md",
+        "expectedSha256": "7938499ca21fe37fe17ead05b1cf80fb03e7cda1343b681a7a9fe431be2e255c",
+        "actualSha256": "7938499ca21fe37fe17ead05b1cf80fb03e7cda1343b681a7a9fe431be2e255c",
+        "status": "match"
+      },
+      {
+        "path": "docs/03_TECHNICAL_ARCHITECTURE.md",
+        "expectedSha256": "63ae46d85d51572deecdce36e1ba03d66eb7c1a3391e3fd285b48c247fdd17c0",
+        "actualSha256": "63ae46d85d51572deecdce36e1ba03d66eb7c1a3391e3fd285b48c247fdd17c0",
+        "status": "match"
+      },
+      {
+        "path": "docs/04_SIMULATION_SPEC.md",
+        "expectedSha256": "6717ec611c51f2945f8680c1360045242b54362b217f11812e45dd0e1a50056c",
+        "actualSha256": "6717ec611c51f2945f8680c1360045242b54362b217f11812e45dd0e1a50056c",
+        "status": "match"
+      },
+      {
+        "path": "docs/05_VISUAL_ART_DIRECTION.md",
+        "expectedSha256": "0ff9e587586bfeff75dfbae6ec587d2bf386f0048321f1824fd2df02d1b056c0",
+        "actualSha256": "0ff9e587586bfeff75dfbae6ec587d2bf386f0048321f1824fd2df02d1b056c0",
+        "status": "match"
+      },
+      {
+        "path": "docs/06_CANON_AND_DATA_RULES.md",
+        "expectedSha256": "23efc6956d5bb47b5f511fd73ed1dcc0c9fa360db26b8e8da042fad80af343d7",
+        "actualSha256": "23efc6956d5bb47b5f511fd73ed1dcc0c9fa360db26b8e8da042fad80af343d7",
+        "status": "match"
+      },
+      {
+        "path": "docs/07_ASSET_PIPELINE.md",
+        "expectedSha256": "132273de01c1e75700384a366c20ea282735a0a4afb528d6a3c8a64957a8e771",
+        "actualSha256": "132273de01c1e75700384a366c20ea282735a0a4afb528d6a3c8a64957a8e771",
+        "status": "match"
+      },
+      {
+        "path": "docs/08_QUALITY_ASSURANCE.md",
+        "expectedSha256": "4ba9454a2e777edd9f2f2b0175d7b7f08d4100678940f6f8bd5c6b96623a63ee",
+        "actualSha256": "4ba9454a2e777edd9f2f2b0175d7b7f08d4100678940f6f8bd5c6b96623a63ee",
+        "status": "match"
+      },
+      {
+        "path": "docs/09_NEXT_MODULES.md",
+        "expectedSha256": "47227fd98de5e36660c013d07ab4431cc012a19cff1aa90c53b9372ca621515d",
+        "actualSha256": "47227fd98de5e36660c013d07ab4431cc012a19cff1aa90c53b9372ca621515d",
+        "status": "match"
+      },
+      {
+        "path": "docs/SOURCE_REFERENCES.md",
+        "expectedSha256": "6388d8e44d763e17792c5e8f8bfc0d352224b25b5871df6569721e0e74920f90",
+        "actualSha256": "6388d8e44d763e17792c5e8f8bfc0d352224b25b5871df6569721e0e74920f90",
+        "status": "match"
+      },
+      {
+        "path": "prompts/00_AUDITAR_PESQUISAS.md",
+        "expectedSha256": "d89c4adb314af4205e2b84e2767295d60d5bc7f272e32542fefaa52fd5c8e147",
+        "actualSha256": "d89c4adb314af4205e2b84e2767295d60d5bc7f272e32542fefaa52fd5c8e147",
+        "status": "match"
+      },
+      {
+        "path": "prompts/01_SHELL_VISUAL.md",
+        "expectedSha256": "d3df01ce4a32ee90650c9159530dbaa91a0af7f02f5df2a37fd7e59b2fb00efa",
+        "actualSha256": "d3df01ce4a32ee90650c9159530dbaa91a0af7f02f5df2a37fd7e59b2fb00efa",
+        "status": "match"
+      },
+      {
+        "path": "prompts/02_CORPO_E_KAKUHOU.md",
+        "expectedSha256": "4e0042fa4feb0856d7724ff61c7c5e3ee155fe0a8f3e58fc47ece2e1db0782cd",
+        "actualSha256": "4e0042fa4feb0856d7724ff61c7c5e3ee155fe0a8f3e58fc47ece2e1db0782cd",
+        "status": "match"
+      },
+      {
+        "path": "prompts/03_RINKAKU_MANIFESTACAO.md",
+        "expectedSha256": "22a91fcf3b99f97912959a1ff2c2a51164505de7632cbc461c120811dbeed5fa",
+        "actualSha256": "22a91fcf3b99f97912959a1ff2c2a51164505de7632cbc461c120811dbeed5fa",
+        "status": "match"
+      },
+      {
+        "path": "prompts/04_CORRENTE_SANGUINEA_RC.md",
+        "expectedSha256": "cc76f7067def5306e7b932e00c4296d14694a54c10f68f181b2c71a1536740c2",
+        "actualSha256": "cc76f7067def5306e7b932e00c4296d14694a54c10f68f181b2c71a1536740c2",
+        "status": "match"
+      },
+      {
+        "path": "prompts/05_ESTADO_E_CONTEUDO.md",
+        "expectedSha256": "1c0f9f1f79a092a82bd5d9fad7bc15ff5bff748a4c423709a365ef88cc4e0e6c",
+        "actualSha256": "1c0f9f1f79a092a82bd5d9fad7bc15ff5bff748a4c423709a365ef88cc4e0e6c",
+        "status": "match"
+      },
+      {
+        "path": "prompts/06_POLIMENTO_RELEASE.md",
+        "expectedSha256": "c7b7e3a8b86f8d675ae65847d6b8b7663599a1c26daac089edee2608df5e7c9e",
+        "actualSha256": "c7b7e3a8b86f8d675ae65847d6b8b7663599a1c26daac089edee2608df5e7c9e",
+        "status": "match"
+      },
+      {
+        "path": "references/LEIA_PRIMEIRO.md",
+        "expectedSha256": "e9823ff36944fb72126af456e873736f1c1812f1a2fa919c4d713268657354f2",
+        "actualSha256": "e9823ff36944fb72126af456e873736f1c1812f1a2fa919c4d713268657354f2",
+        "status": "match"
+      },
+      {
+        "path": "references/private/cyberware-large.png",
+        "expectedSha256": "ab661ba47647fedb32ca2d26ece3829fac20c6d8d883afe81ad4ac63d4507e48",
+        "actualSha256": "ab661ba47647fedb32ca2d26ece3829fac20c6d8d883afe81ad4ac63d4507e48",
+        "status": "match"
+      },
+      {
+        "path": "references/private/cyberware-small.png",
+        "expectedSha256": "2887b96155d962b35fd262d437154a0922bf02e76c8246ff9c6bfc70a168b110",
+        "actualSha256": "2887b96155d962b35fd262d437154a0922bf02e76c8246ff9c6bfc70a168b110",
+        "status": "match"
+      },
+      {
+        "path": "references/private/perk-tree.png",
+        "expectedSha256": "e956d8eb1af5e67b8be32cc09f26ff262ecf362aca81f559d8030fc8ebc6cdad",
+        "actualSha256": "e956d8eb1af5e67b8be32cc09f26ff262ecf362aca81f559d8030fc8ebc6cdad",
+        "status": "match"
+      },
+      {
+        "path": "research/README_ADICIONE_SEUS_ARQUIVOS.md",
+        "expectedSha256": "69ee5cd7ec2ecca0caf33f298b8d98c57ee6fa0ac438d3d5dc5b0bf12426d6bb",
+        "actualSha256": null,
+        "status": "missing"
+      },
+      {
+        "path": "tools/validate_catalog.py",
+        "expectedSha256": "fc0e89a80a19e2fe04a7b1a12d700b2d779ba8ffbcbd3abb5ecc97acbb6db8f8",
+        "actualSha256": "fc0e89a80a19e2fe04a7b1a12d700b2d779ba8ffbcbd3abb5ecc97acbb6db8f8",
+        "status": "match"
+      }
+    ]
+  },
+  "researchReadAndUnchanged": [
+    {
+      "path": "research/Anatomia e fisiologia dos ghouls em Tokyo Ghoul.md",
+      "bytes": 71002,
+      "lines": 876,
+      "sha256": "5360bf58168343e595a62111f9a6dc20fc3dfd09ba327d1897c021c7a93b6c9d"
+    },
+    {
+      "path": "research/Atlas Anatômico Interativo de Tokyo Ghoul.md",
+      "bytes": 37377,
+      "lines": 1179,
+      "sha256": "543f6556ac31e0db7dc380b6a4b934125edbfcbd8305849cd570b6c7499d7389"
+    }
+  ],
+  "essentialClaims": 25,
+  "localMarkdownLinksChecked": 17,
+  "brokenLocalLinks": [],
+  "deliverables": [
+    "docs/RESEARCH_INDEX.md",
+    "docs/DECISIONS.md",
+    "docs/CONTENT_AUDIT.md",
+    "docs/ASSET_INVENTORY.md",
+    "docs/IMPLEMENTATION_LOG.md",
+    "docs/01_ROADMAP_AND_GATES.md",
+    "prompts/G1_RECOMENDADO_APOS_G0.md",
+    "artifacts/gates/G0-validation.txt",
+    "artifacts/gates/G0-repository-audit.json"
+  ],
+  "catalogValidation": {
+    "command": "tools/validate_catalog.py contracts/seed-catalog.json",
+    "runtime": "Python 3.12.14 bundled",
+    "exitCode": 0,
+    "evidence": "artifacts/gates/G0-validation.txt",
+    "scope": "minimal structural rules; not source or asset approval"
+  },
+  "fileInventoryExcludingThisSnapshot": [
+    {
+      "path": ".gitignore",
+      "bytes": 413,
+      "sha256": "c21840717598c83c2165910432d02edb8ea56eb7a8fc1a02ea5bf7e98b1ffbb8"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 4347,
+      "sha256": "7590772ea8279c93d9e6c4847a61198b14ad1eb19393c78b0b58a223013b3413"
+    },
+    {
+      "path": "artifacts/gates/G0-validation.txt",
+      "bytes": 1911,
+      "sha256": "6901cd0e320bb69e237ade2eca1169172ea290b00d723cc461792a27a6c01c18"
+    },
+    {
+      "path": "contracts/atlas-schema.ts",
+      "bytes": 4285,
+      "sha256": "b0437327dc480982428c220f59630e65fbb3d16411d864635e204a9a0696ae69"
+    },
+    {
+      "path": "contracts/design-tokens.json",
+      "bytes": 547,
+      "sha256": "adb06b64d1fd831a1c5e8a3f5976f3261d210599eea23b60ed829b5d4c183e34"
+    },
+    {
+      "path": "contracts/seed-catalog.json",
+      "bytes": 6897,
+      "sha256": "c853df0d95994ded4f301dec5092f3e67ca0346600a3eb94ca203f48140a55da"
+    },
+    {
+      "path": "docs/00_NORTH_STAR.md",
+      "bytes": 3897,
+      "sha256": "35b69c61bfc6aefd12e2a82047ac35de15a682f6d405cbfd4ec3a9dbde505dbb"
+    },
+    {
+      "path": "docs/01_ROADMAP_AND_GATES.md",
+      "bytes": 13540,
+      "sha256": "b6c455c177d26894dd34b00eca8ec7cf40612e1e4909bfd0cc6473899485f572"
+    },
+    {
+      "path": "docs/02_EXPERIENCE_STORYBOARD.md",
+      "bytes": 6146,
+      "sha256": "7938499ca21fe37fe17ead05b1cf80fb03e7cda1343b681a7a9fe431be2e255c"
+    },
+    {
+      "path": "docs/03_TECHNICAL_ARCHITECTURE.md",
+      "bytes": 7274,
+      "sha256": "63ae46d85d51572deecdce36e1ba03d66eb7c1a3391e3fd285b48c247fdd17c0"
+    },
+    {
+      "path": "docs/04_SIMULATION_SPEC.md",
+      "bytes": 7433,
+      "sha256": "6717ec611c51f2945f8680c1360045242b54362b217f11812e45dd0e1a50056c"
+    },
+    {
+      "path": "docs/05_VISUAL_ART_DIRECTION.md",
+      "bytes": 4464,
+      "sha256": "0ff9e587586bfeff75dfbae6ec587d2bf386f0048321f1824fd2df02d1b056c0"
+    },
+    {
+      "path": "docs/06_CANON_AND_DATA_RULES.md",
+      "bytes": 4153,
+      "sha256": "23efc6956d5bb47b5f511fd73ed1dcc0c9fa360db26b8e8da042fad80af343d7"
+    },
+    {
+      "path": "docs/07_ASSET_PIPELINE.md",
+      "bytes": 4739,
+      "sha256": "132273de01c1e75700384a366c20ea282735a0a4afb528d6a3c8a64957a8e771"
+    },
+    {
+      "path": "docs/08_QUALITY_ASSURANCE.md",
+      "bytes": 4466,
+      "sha256": "4ba9454a2e777edd9f2f2b0175d7b7f08d4100678940f6f8bd5c6b96623a63ee"
+    },
+    {
+      "path": "docs/09_NEXT_MODULES.md",
+      "bytes": 2169,
+      "sha256": "47227fd98de5e36660c013d07ab4431cc012a19cff1aa90c53b9372ca621515d"
+    },
+    {
+      "path": "docs/ASSET_INVENTORY.md",
+      "bytes": 21193,
+      "sha256": "5a9277ae5715fe8cf9c443d36fed0f6685fcae5fa8b56d3cb082215b1f096617"
+    },
+    {
+      "path": "docs/CONTENT_AUDIT.md",
+      "bytes": 23802,
+      "sha256": "438904c9e6c216cead24dbe64fc7ee207f7470052b77dfd7405656919f7a8744"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "bytes": 14495,
+      "sha256": "f66473cb56e0e0f545d994094789d75ac9d42ba963c5b139d96bb6de5547a777"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_LOG.md",
+      "bytes": 11174,
+      "sha256": "acf8e586d08170f1d5971bbf6fbe7ae44f090f1598d15916a340cfeb7da86dc7"
+    },
+    {
+      "path": "docs/RESEARCH_INDEX.md",
+      "bytes": 10531,
+      "sha256": "593aa6dfd6f173701e729546a3f9f0d2616db70cb1fdd0429c13a646087e4320"
+    },
+    {
+      "path": "docs/SOURCE_REFERENCES.md",
+      "bytes": 4123,
+      "sha256": "6388d8e44d763e17792c5e8f8bfc0d352224b25b5871df6569721e0e74920f90"
+    },
+    {
+      "path": "FILE_MANIFEST_SHA256.txt",
+      "bytes": 2921,
+      "sha256": "ad80cce27b48f42c4a0116609ff661a98b5c4d33976ccb0a6654f52455766d48"
+    },
+    {
+      "path": "prompts/00_AUDITAR_PESQUISAS.md",
+      "bytes": 1556,
+      "sha256": "d89c4adb314af4205e2b84e2767295d60d5bc7f272e32542fefaa52fd5c8e147"
+    },
+    {
+      "path": "prompts/01_SHELL_VISUAL.md",
+      "bytes": 1586,
+      "sha256": "d3df01ce4a32ee90650c9159530dbaa91a0af7f02f5df2a37fd7e59b2fb00efa"
+    },
+    {
+      "path": "prompts/02_CORPO_E_KAKUHOU.md",
+      "bytes": 1248,
+      "sha256": "4e0042fa4feb0856d7724ff61c7c5e3ee155fe0a8f3e58fc47ece2e1db0782cd"
+    },
+    {
+      "path": "prompts/03_RINKAKU_MANIFESTACAO.md",
+      "bytes": 1104,
+      "sha256": "22a91fcf3b99f97912959a1ff2c2a51164505de7632cbc461c120811dbeed5fa"
+    },
+    {
+      "path": "prompts/04_CORRENTE_SANGUINEA_RC.md",
+      "bytes": 1014,
+      "sha256": "cc76f7067def5306e7b932e00c4296d14694a54c10f68f181b2c71a1536740c2"
+    },
+    {
+      "path": "prompts/05_ESTADO_E_CONTEUDO.md",
+      "bytes": 1143,
+      "sha256": "1c0f9f1f79a092a82bd5d9fad7bc15ff5bff748a4c423709a365ef88cc4e0e6c"
+    },
+    {
+      "path": "prompts/06_POLIMENTO_RELEASE.md",
+      "bytes": 984,
+      "sha256": "c7b7e3a8b86f8d675ae65847d6b8b7663599a1c26daac089edee2608df5e7c9e"
+    },
+    {
+      "path": "prompts/G1_RECOMENDADO_APOS_G0.md",
+      "bytes": 4725,
+      "sha256": "c5ad72b9299ae29f62a7d16fda27bbef8a92ba9b74b9533bf06ad7953bf2e51f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4363,
+      "sha256": "42a7ad033ebba0a4542a011ab3558e64f04e4c9401fbfd8a293f64b2f37da4ea"
+    },
+    {
+      "path": "references/LEIA_PRIMEIRO.md",
+      "bytes": 694,
+      "sha256": "e9823ff36944fb72126af456e873736f1c1812f1a2fa919c4d713268657354f2"
+    },
+    {
+      "path": "references/private/cyberware-large.png",
+      "bytes": 1622391,
+      "sha256": "ab661ba47647fedb32ca2d26ece3829fac20c6d8d883afe81ad4ac63d4507e48"
+    },
+    {
+      "path": "references/private/cyberware-small.png",
+      "bytes": 68593,
+      "sha256": "2887b96155d962b35fd262d437154a0922bf02e76c8246ff9c6bfc70a168b110"
+    },
+    {
+      "path": "references/private/perk-tree.png",
+      "bytes": 347694,
+      "sha256": "e956d8eb1af5e67b8be32cc09f26ff262ecf362aca81f559d8030fc8ebc6cdad"
+    },
+    {
+      "path": "research/Anatomia e fisiologia dos ghouls em Tokyo Ghoul.md",
+      "bytes": 71002,
+      "sha256": "5360bf58168343e595a62111f9a6dc20fc3dfd09ba327d1897c021c7a93b6c9d"
+    },
+    {
+      "path": "research/Atlas Anatômico Interativo de Tokyo Ghoul.md",
+      "bytes": 37377,
+      "sha256": "543f6556ac31e0db7dc380b6a4b934125edbfcbd8305849cd570b6c7499d7389"
+    },
+    {
+      "path": "START_CODEX.txt",
+      "bytes": 1752,
+      "sha256": "c127b7401887e6ab6b3bba1760b861570cce7a4e08aedcb1bca4888a6b71eb6b"
+    },
+    {
+      "path": "tools/validate_catalog.py",
+      "bytes": 2178,
+      "sha256": "fc0e89a80a19e2fe04a7b1a12d700b2d779ba8ffbcbd3abb5ecc97acbb6db8f8"
+    }
+  ],
+  "notes": [
+    "Original distribution manifest preserved. Roadmap is the only original pack file intentionally revised.",
+    "No application checks/screenshots/performance were claimed.",
+    "Snapshot excludes its own hash to avoid self-reference."
+  ]
+}

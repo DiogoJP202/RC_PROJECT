@@ -1,0 +1,202 @@
+GHOUL ATLAS checkpoint — local verification
+Started UTC: 2026-10-23T19:31:17.9080503+00:00
+Versions: {"node":"v24.19.0","npm":"11.17.0","python":"Python 3.12.14"}
+Working directory: <workspace>
+
+COMMAND: npm run typecheck
+Started UTC: 2026-10-23T19:31:18.6337207+00:00
+
+> ghoul-atlas@0.1.0 typecheck
+> tsc -b --pretty false
+
+
+Exit code: 0
+Duration seconds: 5.033
+
+COMMAND: npm run lint
+Started UTC: 2026-10-23T19:31:23.7143935+00:00
+
+> ghoul-atlas@0.1.0 lint
+> eslint .
+
+
+Exit code: 0
+Duration seconds: 4.652
+
+COMMAND: npm test
+Started UTC: 2026-10-23T19:31:28.3692888+00:00
+
+> ghoul-atlas@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 <workspace>
+
+
+ Test Files  5 passed (5)
+      Tests  41 passed (41)
+   Start at  16:31:29
+   Duration  763ms (tests 60%, import 23%, transform 12%, worker 5%)
+
+
+Exit code: 0
+Duration seconds: 1.808
+
+COMMAND: npm run test:catalog
+Started UTC: 2026-10-23T19:31:30.1811485+00:00
+
+> ghoul-atlas@0.1.0 test:catalog
+> node tools/python.mjs -m unittest discover -s tools -p test_validate_catalog.py
+
+......................
+----------------------------------------------------------------------
+Ran 22 tests in 0.194s
+
+OK
+
+Exit code: 0
+Duration seconds: 1.372
+
+COMMAND: npm run validate:catalog
+Started UTC: 2026-10-23T19:31:31.5551437+00:00
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.
+
+Exit code: 0
+Duration seconds: 0.844
+
+COMMAND: npm run build
+Started UTC: 2026-10-23T19:31:32.4014299+00:00
+
+> ghoul-atlas@0.1.0 build
+> npm run validate:catalog && tsc -b && vite build
+
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 585 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                             0.73 kB │ gzip:   0.45 kB
+dist/assets/index-CQwYT3IL.css             26.56 kB │ gzip:   6.59 kB
+dist/assets/index-scr43KiT.js             255.43 kB │ gzip:  80.99 kB
+dist/assets/ObservatoryScene-qThp9QXW.js  947.39 kB │ gzip: 253.11 kB
+
+✓ built in 650ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 900 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+Exit code: 0
+Duration seconds: 8.21
+
+COMMAND: npm run test:e2e
+Started UTC: 2026-10-23T19:31:40.6151779+00:00
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test
+
+[WebServer] (node:13724) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 14 tests using 1 worker
+
+(node:2020) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 16:31:49 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok  1 [chromium] › tests\e2e\observatory.spec.ts:46:1 › catalog loading is real and delays anatomy UI until data arrives (5.0s)
+[WebServer] 16:31:52 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok  2 [chromium] › tests\e2e\observatory.spec.ts:63:1 › 3D click raycasts an actual scene structure and synchronizes the inspector (3.3s)
+[WebServer] 16:31:56 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok  3 [chromium] › tests\e2e\observatory.spec.ts:83:1 › independent scene layers can be toggled and isolation restores the prior combination (3.5s)
+[WebServer] 16:31:59 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok  4 [chromium] › tests\e2e\observatory.spec.ts:105:1 › mouse orbit and wheel zoom change the real camera (3.1s)
+[WebServer] 16:32:03 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok  5 [chromium] › tests\e2e\observatory.spec.ts:124:1 › camera focus changes its actual pose and reset restores an overview (3.2s)
+[WebServer] 16:32:06 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok  6 [chromium] › tests\e2e\observatory.spec.ts:136:1 › opacity and scan controls affect the renderer; pausing and scrub are stable (5.2s)
+[WebServer] 16:32:11 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok  7 [chromium] › tests\e2e\observatory.spec.ts:163:1 › future modes preserve context and canon filter never hides the reconstruction disclosure (5.0s)
+[WebServer] 16:32:17 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok  8 [chromium] › tests\e2e\observatory.spec.ts:187:1 › keyboard alternatives work, range keys stay local and reduced motion pauses scan (4.3s)
+[WebServer] 16:32:21 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok  9 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?webgl=off preserves content and selection without WebGL (3.8s)
+[WebServer] 16:32:24 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok 10 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?asset=missing preserves content and selection without WebGL (3.1s)
+[WebServer] 16:32:27 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:32:28 [vite] (client) [console.warn] THREE.WebGLRenderer: WEBGL_lose_context extension not supported.
+  ok 11 [chromium] › tests\e2e\observatory.spec.ts:231:1 › a lost real WebGL context opens an accessible fallback (3.5s)
+[WebServer] 16:32:32 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok 12 [chromium] › tests\e2e\observatory.spec.ts:245:1 › catalog errors have a visible recovery action (4.9s)
+[WebServer] 16:32:37 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:32:40 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok 13 [chromium] › tests\e2e\observatory.spec.ts:254:1 › desktop and silhouette gate captures include the real rendered scene (6.9s)
+[WebServer] 16:32:43 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+  ok 14 [chromium] › tests\e2e\observatory.spec.ts:277:1 › touch-sized mobile remains usable without hover or horizontal overflow (4.1s)
+
+  14 passed (1.1m)
+
+Exit code: 0
+Duration seconds: 66.356
+
+EXPECTED-REJECTION DIAGNOSTIC (historical seed only): node tools/python.mjs tools/validate_catalog.py contracts/seed-catalog.json
+Started UTC: 2026-10-23T19:33:31.9844318+00:00
+FAILED contracts/seed-catalog.json (46 problema(s)):
+- schemaVersion: esperado 2; seed v1 é legado, migre conforme docs/G1_CATALOG_MIGRATION.md
+- claim.kakuhou.stores.rc.scope: texto não vazio obrigatório
+- claim.kakuhou.stores.rc.confidence: enum inválido None
+- claim.kakuhou.stores.rc: fonte direta exige verifiedAt, locator e note de conferência
+- claim.kagune.liquid.muscle.scope: texto não vazio obrigatório
+- claim.kagune.liquid.muscle.confidence: enum inválido None
+- claim.kagune.liquid.muscle: fonte direta exige verifiedAt, locator e note de conferência
+- claim.kakuhou.render.internal.scope: texto não vazio obrigatório
+- claim.kakuhou.render.internal.confidence: enum inválido None
+- claim.blood.illustrated.scope: texto não vazio obrigatório
+- claim.blood.illustrated.confidence: enum inválido None
+- claim.blood.illustrated: fonte direta exige verifiedAt, locator e note de conferência
+- claim.rc.organelles.unknown.scope: texto não vazio obrigatório
+- claim.rc.organelles.unknown.confidence: enum inválido None
+- asset.kakuhou.rinkaku.license: texto não vazio obrigatório
+- asset.kakuhou.rinkaku.attribution: texto não vazio obrigatório
+- asset.kakuhou.rinkaku.path: caminho real obrigatório
+- asset.kagune.rinkaku.license: texto não vazio obrigatório
+- asset.kagune.rinkaku.attribution: texto não vazio obrigatório
+- asset.kagune.rinkaku.path: caminho real obrigatório
+- asset.rc.schematic.license: texto não vazio obrigatório
+- asset.rc.schematic.attribution: texto não vazio obrigatório
+- asset.rc.schematic.path: caminho real obrigatório
+- asset.vascular.major.license: texto não vazio obrigatório
+- asset.vascular.major.attribution: texto não vazio obrigatório
+- asset.vascular.major.path: caminho real obrigatório
+- ghoul.kakuhou.rinkaku.function: texto não vazio obrigatório
+- ghoul.kakuhou.rinkaku.description: texto não vazio obrigatório
+- ghoul.kakuhou.rinkaku.modelDisclosure: texto não vazio obrigatório
+- ghoul.kakuhou.rinkaku.layer: enum inválido None
+- ghoul.kagune.rinkaku.function: texto não vazio obrigatório
+- ghoul.kagune.rinkaku.description: texto não vazio obrigatório
+- ghoul.kagune.rinkaku.modelDisclosure: texto não vazio obrigatório
+- ghoul.kagune.rinkaku.layer: enum inválido None
+- ghoul.rc.cell.function: texto não vazio obrigatório
+- ghoul.rc.cell.description: texto não vazio obrigatório
+- ghoul.rc.cell.modelDisclosure: texto não vazio obrigatório
+- ghoul.rc.cell.cameraBookmarkId: texto não vazio obrigatório
+- ghoul.rc.cell.layer: enum inválido None
+- ghoul.rc.cell.cameraBookmarkId: câmera inexistente
+- human.vascular.major.function: texto não vazio obrigatório
+- human.vascular.major.description: texto não vazio obrigatório
+- human.vascular.major.modelDisclosure: texto não vazio obrigatório
+- human.vascular.major.cameraBookmarkId: texto não vazio obrigatório
+- human.vascular.major.layer: enum inválido None
+- human.vascular.major.cameraBookmarkId: câmera inexistente
+
+Exit code: 1 (expected 1; historical v1 fixture is not runtime data)
+

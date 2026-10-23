@@ -1,0 +1,39 @@
+GHOUL ATLAS — G0 — 2026-10-23 (America/Sao_Paulo)
+Registro das saídas observadas; não é screenshot ou execução de aplicativo.
+
+Comando solicitado, pelo PATH inicial:
+python tools/validate_catalog.py contracts/seed-catalog.json
+Resultado: falha; python.exe aponta para alias Microsoft Store.
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+
+Runtime disponível localizado pela ferramenta de dependências do workspace:
+<USER_PROFILE>\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+Versão: Python 3.12.14
+
+Comando equivalente executado no mesmo diretório, sem alterar o validador/seed:
+& '<USER_PROFILE>\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' tools/validate_catalog.py contracts/seed-catalog.json
+Exit code: 0
+stdout:
+Catalog OK: sources, claims, anatomy IDs, asset refs and disclaimers.
+
+Revisão adversarial adicional, por agente de contratos:
+Python -B; runpy.run_path(); TemporaryDirectory; sem alterações no repositório.
+schemaVersion_999: ACCEPTED
+duplicate_anatomy_id: ACCEPTED
+missing_camera_ref: ACCEPTED
+camera_missing_focus: ACCEPTED
+camera_negative_range: ACCEPTED
+invalid_system: ACCEPTED
+missing_mesh_node: ACCEPTED
+missing_asset_path: ACCEPTED
+ready_thirdparty_no_license: ACCEPTED
+orphan_parent: ACCEPTED
+official_secondary_only: ACCEPTED
+seed citations unverified: 4
+seed assets without path: 4
+
+Interpretação: o catálogo recebido passa nas regras mínimas implementadas.
+ACCEPTED acima é um achado de insuficiência, não aprovação dos dados inválidos.
+Não prova fonte/painel conferido, licença, arquivo, node real ou contrato completo.
+Não foram executados typecheck/lint/test/build/smoke/browser do app: scaffold ausente.
+Não há capturas de aplicativo G0 ou FPS medido.

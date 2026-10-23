@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Preserve received research and the legacy seed byte for byte across clones.
+research/*.md -text
+contracts/seed-catalog.json -text
+*.png binary

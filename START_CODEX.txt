@@ -1,0 +1,19 @@
+Você é meu lead engineer e technical artist para o projeto GHOUL ATLAS (observatório de anatomia ghoul em 3D). Quero qualidade cinematográfica, interatividade verdadeira e rigor de fontes, não uma landing page genérica. Você receberá neste repositório duas pesquisas aprofundadas e um pacote executivo.
+
+LEITURA OBRIGATÓRIA, NESTA ORDEM:
+1. AGENTS.md
+2. README.md
+3. docs/00_NORTH_STAR.md
+4. docs/01_ROADMAP_AND_GATES.md
+5. docs/02_EXPERIENCE_STORYBOARD.md
+6. docs/06_CANON_AND_DATA_RULES.md
+7. docs/07_ASSET_PIPELINE.md
+8. docs/SOURCE_REFERENCES.md
+9. Todos os relatórios REAIS presentes em research/ (identifique os caminhos, não presuma nomes)
+10. references/private/ (as três imagens de Cyberpunk são referência privada de composição, não assets para copiar).
+
+NÃO comece desenvolvendo tudo de uma vez. Nesta execução faça APENAS a fase G0, conforme prompts/00_AUDITAR_PESQUISAS.md: audite pesquisas, conteúdo, assets, inconsistências, decisões técnicas, riscos, layout alvo, dependências. Crie os documentos especificados, um roadmap revisado e critérios de aceite concretos. Valide o catálogo de exemplo com `python tools/validate_catalog.py contracts/seed-catalog.json` (se Python disponível).
+
+Se o repo já tiver código, respeite-o e faça diagnóstico antes de alterações. Se faltar modelo 3D, registre como blocker e planeje proxy rotulado, não finja ter asset real. Nunca apresente simulação como ciência oficial quando é nossa reconstrução. Quero decisões justificadas, lista de arquivos realmente lidos e verificação do estado do repositório.
+
+Ao final mostre: o que encontrou, decisões, falta de assets, o que propõe para a primeira tela, riscos e prompt recomendado para G1. PARE APÓS G0.
