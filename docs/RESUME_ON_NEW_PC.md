@@ -7,7 +7,7 @@ Comece por `AGENTS.md`, depois [PROJECT_HANDOFF](PROJECT_HANDOFF.md), este guia 
 - Repositório privado: [DiogoJP202/RC_PROJECT](https://github.com/DiogoJP202/RC_PROJECT).
 - Branch: `main`.
 - Referência imutável da baseline G0/G1: tag `ghoul-atlas-g1-checkpoint`.
-- SHA da baseline: consultar `git rev-parse ghoul-atlas-g1-checkpoint` (será registrado por extenso ao criar o commit inicial).
+- SHA da baseline: [`8fac8f7bba9a6891d5306cc14d6e86abbd4ea699`](https://github.com/DiogoJP202/RC_PROJECT/commit/8fac8f7bba9a6891d5306cc14d6e86abbd4ea699).
 
 A tag identifica o código validado. `main` também recebe a documentação de transferência e seus registros de verificação. O SHA de um commit não pode constar dentro do próprio commit; por isso a documentação registra a baseline anterior e permite conferir o HEAD publicado com os comandos abaixo.
 
@@ -22,6 +22,7 @@ git status --short --branch
 git rev-parse HEAD
 git rev-parse origin/main
 git rev-parse ghoul-atlas-g1-checkpoint
+git merge-base --is-ancestor 8fac8f7bba9a6891d5306cc14d6e86abbd4ea699 HEAD
 node --version
 npm --version
 python --version
