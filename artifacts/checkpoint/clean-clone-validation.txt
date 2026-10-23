@@ -1,0 +1,152 @@
+GHOUL ATLAS — Remote clean-clone restore verification
+Clone: <clean-clone>
+
+COMMAND: npm ci
+Started: 2026-10-23T19:46:09.248Z
+
+added 234 packages, and audited 235 packages in 41s
+
+49 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Exit code: 0
+
+COMMAND: npm run typecheck
+Started: 2026-10-23T19:46:50.977Z
+
+> ghoul-atlas@0.1.0 typecheck
+> tsc -b --pretty false
+
+
+Exit code: 0
+
+COMMAND: npm run lint
+Started: 2026-10-23T19:46:56.626Z
+
+> ghoul-atlas@0.1.0 lint
+> eslint .
+
+
+Exit code: 0
+
+COMMAND: npm test
+Started: 2026-10-23T19:47:01.347Z
+
+> ghoul-atlas@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/dsoares/AppData/Local/Temp/ghoul-atlas-restore-20261023-164531
+
+
+ Test Files  5 passed (5)
+      Tests  41 passed (41)
+   Start at  16:47:02
+   Duration  822ms (transform 46%, tests 36%, import 15%, worker 3%)
+
+
+Exit code: 0
+
+COMMAND: npm run test:catalog
+Started: 2026-10-23T19:47:03.190Z
+
+> ghoul-atlas@0.1.0 test:catalog
+> node tools/python.mjs -m unittest discover -s tools -p test_validate_catalog.py
+
+......................
+----------------------------------------------------------------------
+Ran 22 tests in 0.223s
+
+OK
+
+Exit code: 0
+
+COMMAND: npm run validate:catalog
+Started: 2026-10-23T19:47:04.398Z
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.
+
+Exit code: 0
+
+COMMAND: npm run build
+Started: 2026-10-23T19:47:05.341Z
+
+> ghoul-atlas@0.1.0 build
+> npm run validate:catalog && tsc -b && vite build
+
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 585 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                             0.73 kB │ gzip:   0.45 kB
+dist/assets/index-CQwYT3IL.css             26.56 kB │ gzip:   6.59 kB
+dist/assets/index-scr43KiT.js             255.43 kB │ gzip:  80.99 kB
+dist/assets/ObservatoryScene-qThp9QXW.js  947.39 kB │ gzip: 253.11 kB
+
+✓ built in 588ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 900 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+Exit code: 0
+
+COMMAND: npm run test:e2e
+Started: 2026-10-23T19:47:12.135Z
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test
+
+
+Running 14 tests using 1 worker
+
+  ok  1 [chromium] › tests\e2e\observatory.spec.ts:46:1 › catalog loading is real and delays anatomy UI until data arrives (3.3s)
+  ok  2 [chromium] › tests\e2e\observatory.spec.ts:63:1 › 3D click raycasts an actual scene structure and synchronizes the inspector (2.6s)
+  ok  3 [chromium] › tests\e2e\observatory.spec.ts:83:1 › independent scene layers can be toggled and isolation restores the prior combination (2.4s)
+  ok  4 [chromium] › tests\e2e\observatory.spec.ts:105:1 › mouse orbit and wheel zoom change the real camera (2.6s)
+  ok  5 [chromium] › tests\e2e\observatory.spec.ts:124:1 › camera focus changes its actual pose and reset restores an overview (2.2s)
+  ok  6 [chromium] › tests\e2e\observatory.spec.ts:136:1 › opacity and scan controls affect the renderer; pausing and scrub are stable (3.5s)
+  ok  7 [chromium] › tests\e2e\observatory.spec.ts:163:1 › future modes preserve context and canon filter never hides the reconstruction disclosure (2.8s)
+  ok  8 [chromium] › tests\e2e\observatory.spec.ts:187:1 › keyboard alternatives work, range keys stay local and reduced motion pauses scan (2.6s)
+  ok  9 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?webgl=off preserves content and selection without WebGL (2.3s)
+  ok 10 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?asset=missing preserves content and selection without WebGL (2.3s)
+  ok 11 [chromium] › tests\e2e\observatory.spec.ts:231:1 › a lost real WebGL context opens an accessible fallback (2.3s)
+  ok 12 [chromium] › tests\e2e\observatory.spec.ts:245:1 › catalog errors have a visible recovery action (2.1s)
+  ok 13 [chromium] › tests\e2e\observatory.spec.ts:254:1 › desktop and silhouette gate captures include the real rendered scene (4.1s)
+  ok 14 [chromium] › tests\e2e\observatory.spec.ts:277:1 › touch-sized mobile remains usable without hover or horizontal overflow (2.6s)
+
+  14 passed (41.6s)
+[WebServer] (node:21312) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:25268) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 16:47:17 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:20 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:23 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:25 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:28 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:30 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:34 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:37 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:39 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:42 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:44 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:45 [vite] (client) [console.warn] THREE.WebGLRenderer: WEBGL_lose_context extension not supported.
+[WebServer] 16:47:46 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:48 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:50 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[WebServer] 16:47:53 [vite] (client) [console.warn] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+
+Exit code: 0

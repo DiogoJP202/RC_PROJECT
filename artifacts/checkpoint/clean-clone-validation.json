@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-23T19:45:33.551Z",
+  "remote": "https://github.com/DiogoJP202/RC_PROJECT.git",
+  "branch": "main",
+  "testedCommit": "2b64744a0065031b3c7f70ee70291a10a1671fac",
+  "cloneDirectory": "<clean-clone-in-system-temp>",
+  "initialIgnoredInputs": {
+    "nodeModules": false,
+    "dist": false,
+    "privateReferences": false,
+    "env": false
+  },
+  "commands": [
+    {
+      "command": "npm ci",
+      "startedAt": "2026-10-23T19:46:09.248Z",
+      "exitCode": 0,
+      "durationSeconds": 41.724
+    },
+    {
+      "command": "npm run typecheck",
+      "startedAt": "2026-10-23T19:46:50.977Z",
+      "exitCode": 0,
+      "durationSeconds": 5.647
+    },
+    {
+      "command": "npm run lint",
+      "startedAt": "2026-10-23T19:46:56.626Z",
+      "exitCode": 0,
+      "durationSeconds": 4.719
+    },
+    {
+      "command": "npm test",
+      "startedAt": "2026-10-23T19:47:01.347Z",
+      "exitCode": 0,
+      "durationSeconds": 1.841
+    },
+    {
+      "command": "npm run test:catalog",
+      "startedAt": "2026-10-23T19:47:03.190Z",
+      "exitCode": 0,
+      "durationSeconds": 1.206
+    },
+    {
+      "command": "npm run validate:catalog",
+      "startedAt": "2026-10-23T19:47:04.398Z",
+      "exitCode": 0,
+      "durationSeconds": 0.941
+    },
+    {
+      "command": "npm run build",
+      "startedAt": "2026-10-23T19:47:05.341Z",
+      "exitCode": 0,
+      "durationSeconds": 6.792
+    },
+    {
+      "command": "npm run test:e2e",
+      "startedAt": "2026-10-23T19:47:12.135Z",
+      "exitCode": 0,
+      "durationSeconds": 42.773
+    }
+  ],
+  "complete": true,
+  "inputHashes": [
+    {
+      "path": "research/Anatomia e fisiologia dos ghouls em Tokyo Ghoul.md",
+      "sha256": "5360bf58168343e595a62111f9a6dc20fc3dfd09ba327d1897c021c7a93b6c9d",
+      "matchesOriginal": true
+    },
+    {
+      "path": "research/Atlas Anatômico Interativo de Tokyo Ghoul.md",
+      "sha256": "543f6556ac31e0db7dc380b6a4b934125edbfcbd8305849cd570b6c7499d7389",
+      "matchesOriginal": true
+    },
+    {
+      "path": "contracts/seed-catalog.json",
+      "sha256": "c853df0d95994ded4f301dec5092f3e67ca0346600a3eb94ca203f48140a55da",
+      "matchesOriginal": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d235539f8c9f665d31c195621f14b63c24a11f72958946c53536eb4d21328d59",
+      "matchesOriginal": true
+    }
+  ],
+  "initiallyAbsentPrivateReferencesRemainAbsent": true,
+  "trackedChangesAfterE2E": [],
+  "onlyExpectedCaptureChanges": true,
+  "testCounts": {
+    "vitest": 41,
+    "vitestFiles": 5,
+    "python": 22,
+    "e2e": 14
+  },
+  "completedAt": "2026-10-23T19:47:54.998Z",
+  "notes": [
+    "Cloned from GitHub; no original workspace ignored files copied or linked. npm ci created clone-local node_modules; build created clone-local dist.",
+    "Host Node/npm/Python/browser are prerequisites, not versioned runtime binaries. Python helper used available Python 3.12.14; browser used configured installed Chrome 155 fallback.",
+    "E2E may regenerate tracked own screenshots; code and configuration must remain unchanged.",
+    "No new production FPS benchmark or physical mobile test performed."
+  ]
+}

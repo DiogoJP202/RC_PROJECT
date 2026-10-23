@@ -56,6 +56,8 @@ git status --short --branch
 
 Esperado nesta baseline: **41 testes Vitest/5 arquivos, 22 Python, 14 E2E**, catálogo v2 aprovado e todos os comandos com exit 0. E2E regenera oito capturas; diferenças de PNG entre GPU/browser/tempo não significam alterações de código e devem ser revisadas antes de commit. Logs do backup: [local-validation](../artifacts/checkpoint/local-validation.json); [saídas](../artifacts/checkpoint/local-validation.txt).
 
+**Restauração comprovada em 23/10/2026:** clone novo do GitHub no commit `2b64744a0065031b3c7f70ee70291a10a1671fac`, `npm ci` e os sete checks acima com exit 0. Nenhum arquivo ignorado do workspace foi copiado; pesquisas/seed/lockfile mantiveram os hashes; working tree do clone permaneceu limpa após E2E. O commit seguinte apenas acrescenta esta evidência/documentação. [Relatório do clone](../artifacts/checkpoint/clean-clone-validation.json) e [saídas completas](../artifacts/checkpoint/clean-clone-validation.txt). Isso comprova restauração nesta estação com ferramentas instaladas; compatibilidade com outra GPU/OS continua sujeita aos checks no computador novo.
+
 `public/catalog.json` é o catálogo ativo. O seed `contracts/seed-catalog.json` v1 é histórico e sua rejeição no validador v2 é esperada. Não altere o seed nem enfraqueça o gate para mascarar esse diagnóstico.
 
 Depois do build, use `npm run preview -- --port 4173`. Para E2E no preview, defina `$env:PLAYWRIGHT_BASE_URL = 'http://127.0.0.1:4173'`; remova com `Remove-Item Env:PLAYWRIGHT_BASE_URL` para retornar ao padrão. O perfil opcional `node tests/e2e/production-profile.js` precisa do preview e de WebGL funcional. Não extrapole métricas históricas de Iris Xe/Chrome para o computador novo.
