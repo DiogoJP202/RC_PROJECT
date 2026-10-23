@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import type { AtlasContent } from '../content/catalog';
 import { useObservatory } from '../state/observatory';
 import { Icon } from './Icon';
@@ -6,7 +5,8 @@ import { Icon } from './Icon';
 const labels: Record<string, string> = { official: 'CANÔNICO', real_anatomy: 'BASE HUMANA', inference: 'INFERÊNCIA', hypothetical_model: 'HIPÓTESE VISUAL', unknown: 'DESCONHECIDO', manga_needs_verification: 'MANGÁ · A CONFERIR' };
 const systemLabels: Record<string, string> = { surface: 'Sistema tegumentar · base humana', muscular: 'Sistema muscular · base humana', skeletal: 'Sistema esquelético · base humana', vascular: 'Sistema cardiovascular · base humana', kakuhou: 'Sistema RC · anatomia ficcional', other: 'Organização corporal · esquema', rc: 'Sistema RC · anatomia ficcional' };
 export function EvidenceInspector({ content }: { content: AtlasContent }) {
-  const [tab, setTab] = useState<'structure' | 'evidence'>('structure');
+  const tab = useObservatory((s) => s.inspectorTab);
+  const setTab = useObservatory((s) => s.setInspectorTab);
   const selectedId = useObservatory((s) => s.selectedId);
   const open = useObservatory((s) => s.inspectorOpen);
   const canonOnly = useObservatory((s) => s.canonOnly);

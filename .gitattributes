@@ -3,3 +3,4 @@
 research/*.md -text
 contracts/seed-catalog.json -text
 *.png binary
+*.glb binary

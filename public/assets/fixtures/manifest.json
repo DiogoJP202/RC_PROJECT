@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "authorship": "original",
+  "license": "PROJECT_ORIGINAL",
+  "generator": "tools/generate_fixture_glbs.mjs",
+  "disclosure": "PROXY / CONCEPTUAL MODEL — synthetic pipeline fixtures, not validated anatomy",
+  "assets": [
+    {
+      "filename": "atlas-static-v1.glb",
+      "byteLength": 2604,
+      "sha256": "c2dc5e0db48fd88fd2686c270a625f569fadba18794a07cc5202816f594533e0"
+    },
+    {
+      "filename": "atlas-rigged-v1.glb",
+      "byteLength": 4532,
+      "sha256": "5be34fe872b46dd4e3f6293eb5b6052705c26320a3b5119835b82f8e06ae296e"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 # GHOUL ATLAS — Observatório Anatômico 3D
 
-Laboratório anatômico ficcional em PT-BR inspirado em *Tokyo Ghoul*, com interface original, seleção 3D real e evidências por afirmação. **Última fase implementada: G1.** As seis estruturas são geometrias autorais provisórias, sempre identificadas como `PROXY / CONCEPTUAL MODEL`. Interação/apresentação P1; anatomia P0; nenhum P2 declarado. Micro/Comparar são estados informativos; kagune, circulação RC e fisiologia continuam pendentes.
+Laboratório anatômico ficcional em PT-BR inspirado em *Tokyo Ghoul*, com interface original, seleção 3D real e evidências por afirmação. A base G1 agora recebe a **infraestrutura G2A**: registro GLB aprovado, instâncias/cache, bindings estáveis, rig/sockets e fallback para proxies. As seis estruturas continuam autorais provisórias, sempre `PROXY / CONCEPTUAL MODEL`; as duas fixtures GLB não são anatomia. Interação/apresentação P1; anatomia P0; nenhum P2 declarado. Micro/Comparar são estados informativos; kagune, circulação RC e fisiologia continuam pendentes. Resultados e limites em [G2A_ACCEPTANCE](docs/G2A_ACCEPTANCE.md).
 
-Para retomar, leia [AGENTS.md](AGENTS.md), [PROJECT_HANDOFF](docs/PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](docs/RESUME_ON_NEW_PC.md). Este checkpoint preserva código e documentação em repositório privado; não é deploy. A próxima fase autorizável é **G2A**, mediante nova instrução.
+Para retomar, leia [AGENTS.md](AGENTS.md), [PROJECT_HANDOFF](docs/PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](docs/RESUME_ON_NEW_PC.md). O checkpoint GitHub G0/G1 é histórico; as alterações G2A desta execução são locais. **G2B depende de nova autorização e dos assets do artista.** Não há deploy decorrente desta tarefa.
 
 ## Instalação reproduzível
 
@@ -99,11 +99,24 @@ references/private/     referências de terceiros locais, excluídas do Git
 
 Arraste para orbitar, role para aproximar e clique nos meshes; há botões HTML equivalentes. Quatro camadas independentes, opacidade, foco, posterior e isolar/restaurar afetam a cena. `R` reenquadra, `Esc` retorna ao corpo, `1/2/3` trocam modo e Espaço pausa o scan; atalhos respeitam inputs. Scan é ilustrativo, sem medida fisiológica. Os modos preservam contexto. Diagnóstico local: `?webgl=off`, `?asset=missing`, `?catalog=missing`, `?silhouette=1`.
 
-## GLB futuro
+## Integração GLB — G2A
 
-Nenhum GLB anatômico de produção foi fornecido, adquirido ou integrado. O adaptador foi testado com contêiner original em memória. A aplicação usa `src/scene/proxyGeometry.ts`; copiar `.glb` para `public/` não o integra automaticamente.
+Nenhum GLB anatômico de produção foi fornecido, adquirido ou integrado. A rota normal usa `src/scene/proxyGeometry.ts`. Para testar o ingresso, abra [bancada GLB local](http://127.0.0.1:5173/?assets=lab): selecione GLB modular ou articulado. Os arquivos autorais em `public/assets/fixtures/` substituem somente cabeça, tórax e kakuhou; os outros IDs mantêm proxies. O articulado possui skin, bones, socket e clipe `fixture_sway`; play/pausa/scrub são testes mecânicos, sem fisiologia.
 
-G2A deve preparar integração/validação mantendo proxies. G2B depende de modelos aprovados: arquivo/versão, licença/atribuição, unidades/orientação, bounds, nodes, anchors, materiais e recursos dependentes. Consulte [Blender → Web](docs/07_ASSET_PIPELINE.md), [inventário](docs/ASSET_INVENTORY.md) e [handoff](docs/PROJECT_HANDOFF.md). Asset sem licença clara não entra no build público; a forma do kakuhou continua conceitual.
+O registro `src/visuals/assets/assetRegistry.ts` aprova arquivos exatos por ID/versão/bytes/SHA-256/licença. `extras.atlasId` resolve bindings e sockets, independentemente dos nomes visuais. Carga assíncrona e cancelamento mantêm proxies durante espera/falha; retry recupera o GLB. Cada lease controla transforms, materiais, rig e mixer; a última liberação descarta o template compartilhado. Copiar `.glb` para `public/` não o integra nem o licencia: tudo nessa pasta é distribuído pelo build.
+
+O [contrato operacional Blender → Web](docs/BLENDER_WEB_INTEGRATION.md) refina o [contrato G0](docs/07_ASSET_PIPELINE.md). G2B exige arquivo/versão, licença/atribuição, escala/eixos/pivô, bounds, bindings, sockets, rig/clip e revisão artística/anatômica. Não reutilize bounds das fixtures. Recursos externos, data URIs e decoders/extensões não aprovados são recusados; consulte o contrato para o subconjunto admitido. A forma do kakuhou continua reconstrução.
+
+Fixtures podem ser reproduzidas com `node tools/generate_fixture_glbs.mjs`; o manifesto é determinístico e deve ser revisado junto dos binários. Testes de disco verificam hashes, anatomia semântica, rig, animação, sockets e descartes. Para perfilar sem sobrescrever os relatórios G1:
+
+```powershell
+node tests/e2e/production-profile.js --output=artifacts/g2a/production-proxy.json
+$env:ATLAS_PROFILE_URL = 'http://127.0.0.1:4173/?assets=lab'
+node tests/e2e/production-profile.js --asset=fixture.rigged.v1 --animate --output=artifacts/g2a/production-rigged.json
+Remove-Item Env:ATLAS_PROFILE_URL
+```
+
+Esses comandos exigem preview ativo em 4173. O segundo perfil distingue transferência do boot + carga explícita da fixture, e registra latência de ativação separada da interação inicial. Mobile físico continua pendente.
 
 ## Preservação e limitações
 
@@ -113,4 +126,4 @@ Capturas próprias estão em `artifacts/gates/`. JSON/TXT originais locais foram
 
 No Windows, `python.exe` pode ser alias da Microsoft Store. Instale Python 3.10+ ou defina `ATLAS_PYTHON`; os scripts procuram `python`, `python3`, `py -3` e opcionalmente o runtime do Codex, sem exigir este último. Se a política bloquear `npm.ps1`/`npx.ps1`, use `npm.cmd`/`npx.cmd` sem mudar a política global. Portas 5173/4173 devem estar livres. Instale o Chromium correspondente para E2E; o fallback Chrome/cache do Windows pode variar e não garante WebGL sem GPU/driver funcional.
 
-Limites conhecidos: anatomia P0, revisão artística e mobile físico pendentes; aviso de chunk lazy (~947 kB minificados) e `THREE.Clock` da dependência R3F. [Aceite G1](docs/G1_ACCEPTANCE.md), [log](docs/IMPLEMENTATION_LOG.md) e [handoff](docs/PROJECT_HANDOFF.md) distinguem medições e pendências. Não execute os prompts antigos automaticamente; G2A exige nova autorização.
+Limites conhecidos: anatomia P0, revisão artística e mobile físico pendentes; aviso de chunk lazy da cena e `THREE.Clock` da dependência R3F. [Aceite G1](docs/G1_ACCEPTANCE.md), [aceite G2A](docs/G2A_ACCEPTANCE.md) e [log](docs/IMPLEMENTATION_LOG.md) distinguem medições e pendências. Não execute os prompts antigos automaticamente; G2B e G3 exigem nova autorização.

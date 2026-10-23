@@ -1,0 +1,20 @@
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test g2a-assets.spec.ts
+
+
+Running 9 tests using 1 worker
+
+(node:17148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › tests\e2e\g2a-assets.spec.ts:62:1 › disk GLB loads asynchronously and replaces only its three stable anatomical bindings (3.8s)
+  ok 2 [chromium] › tests\e2e\g2a-assets.spec.ts:111:1 › a loaded mesh receives real pointer hits and keeps anatomical evidence identity (3.6s)
+  ok 3 [chromium] › tests\e2e\g2a-assets.spec.ts:130:1 › asset replacement preserves selection, layers, isolation, opacity and camera context (3.8s)
+  ok 4 [chromium] › tests\e2e\g2a-assets.spec.ts:160:1 › HTTP failure automatically shows available proxies and retry loads the real asset (3.5s)
+  ok 5 [chromium] › tests\e2e\g2a-assets.spec.ts:185:1 › a slow superseded asset cannot overwrite the later model or anatomical selection (3.3s)
+  ok 6 [chromium] › tests\e2e\g2a-assets.spec.ts:206:1 › repeated GLB swaps release leases and dispose unused templates without retained cache entries (3.2s)
+  ok 7 [chromium] › tests\e2e\g2a-assets.spec.ts:227:1 › rigged GLB exposes skin and clip, moves a bone-attached socket and respects reduced motion (3.3s)
+  ok 8 [chromium] › tests\e2e\g2a-assets.spec.ts:259:1 › G2A desktop capture preserves the observatory and labels the synthetic integration (3.1s)
+  ok 9 [chromium] › tests\e2e\g2a-assets.spec.ts:274:1 › mobile exploration remains touch accessible with GLB and produces a real capture (4.1s)
+
+  9 passed (33.3s)

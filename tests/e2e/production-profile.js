@@ -10,10 +10,12 @@
 import { chromium } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import os from 'node:os';
 
 const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173';
+const output = process.argv.find((arg) => arg.startsWith('--output='))?.slice('--output='.length) ?? 'artifacts/gates/G1-production-metrics.json';
+const requestedAsset = process.argv.find((arg) => arg.startsWith('--asset='))?.slice('--asset='.length);
 const chrome = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH
   ?? join(process.env.ProgramFiles ?? '', 'Google', 'Chrome', 'Application', 'chrome.exe');
 const browser = await chromium.launch({
@@ -56,6 +58,17 @@ let result;
 try {
   await page.goto(url, { waitUntil: 'load' });
   await page.waitForFunction(() => performance.getEntriesByName('atlas-interactive').length > 0, undefined, { timeout: 30_000 });
+  let assetActivationMs = null;
+  if (requestedAsset) {
+    const start = Date.now();
+    await page.getByTestId('asset-select').selectOption(requestedAsset);
+    await page.waitForFunction((id) => window.__ATLAS_SCENE__?.snapshot().assets?.activeId === id, requestedAsset);
+    assetActivationMs = Date.now() - start;
+    if (process.argv.includes('--animate')) {
+      await page.getByTestId('asset-animation-clip').selectOption({ index: 1 });
+      await page.getByTestId('asset-animation-play').click();
+    }
+  }
   const coldLoad = await page.evaluate(() => {
     const navigation = performance.getEntriesByType('navigation')[0];
     const resources = performance.getEntriesByType('resource');
@@ -112,6 +125,7 @@ try {
   const calls = sampled.renderSamples.map((sample) => sample.calls).filter(Number.isFinite);
   result = {
     measuredAt: new Date().toISOString(), target: url, build: 'production Vite preview; fresh browser context; HTTP cache disabled',
+    assetProfile: { requestedAsset: requestedAsset ?? 'proxy', assetActivationMs, animated: process.argv.includes('--animate'), transferScope: requestedAsset ? 'Body boot plus explicitly selected synthetic fixture and its lazy loader; not body-only initial transfer.' : 'Body initial transfer only.' },
     environment: { os: `${os.platform()} ${os.release()} ${os.arch()}`, cpu: os.cpus()[0]?.model, ramBytes: os.totalmem(), browser: `Chrome ${browser.version()}`, headless: true, renderer: sampled.scene.metrics?.renderer, viewport: sampled.viewport },
     network: { method: 'Chromium DevTools Protocol Network.emulateNetworkConditions', cdp: throttle, nominalDownloadMbps: 20, nominalUploadMbps: 20, latencyNote: 'latency=50ms is the CDP request latency setting; this does not certify a symmetric physical 50ms RTT.', transferredCdpBytes: networkBytes, transferredPerformanceBytes: compressedBytes, responseEncodings, encodingNote: 'Measured encoded transfer bytes include server compression and protocol overhead. GET response headers identify the actual content encoding; raw dist file sizes are a separate quantity.' },
     coldLoad, protocol: { warmupAfterInteractiveMs: 10_000, requestedSamplingMs: 30_000, fpsMethod: 'Percentiles of reciprocal requestAnimationFrame intervals; same visible desktop page renders R3F every frame.', sceneSampleIntervalMs: 1_000 },
@@ -120,8 +134,8 @@ try {
     runtime: { errors, warnings: [...new Set(warnings)], failedRequests, httpErrors },
     limitations: ['Single desktop run on this workstation, no claim about other GPUs.', 'Mobile layout is emulated separately; no physical mobile FPS measured.', 'Production anatomy/rig fidelity remains blocked by missing final licensed assets.'],
   };
-  await mkdir('artifacts/gates', { recursive: true });
-  await writeFile('artifacts/gates/G1-production-metrics.json', `${JSON.stringify(result, null, 2)}\n`);
+  await mkdir(dirname(output), { recursive: true });
+  await writeFile(output, `${JSON.stringify(result, null, 2)}\n`);
   console.log(JSON.stringify({ environment: result.environment, network: result.network, interactiveMs: coldLoad.interactiveMs, sampleMs: sampled.durationMs, frames: sampled.frames, fpsP50: sampled.fpsP50, fpsP10: sampled.fpsP10, renderer: sampled.scene.metrics, budgets: result.budgets, runtime: result.runtime }, null, 2));
   if (errors.length || failedRequests.length || httpErrors.length) process.exitCode = 1;
 } finally {

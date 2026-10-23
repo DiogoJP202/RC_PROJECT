@@ -1,5 +1,7 @@
 # GHOUL ATLAS — Retomar em outro computador
 
+> Este guia identifica o checkpoint GitHub **G0/G1**. Depois dele, G2A foi implementado e validado localmente: veja [aceite G2A](G2A_ACCEPTANCE.md) e [contrato Blender → Web](BLENDER_WEB_INTEGRATION.md). O próximo checkpoint deve versionar/sincronizar essas alterações antes de trocar de máquina; um clone do checkpoint histórico recupera G1. Para a próxima fase de desenvolvimento, use a proposta [G2B](../prompts/G2B_ASSETS_DEFINITIVOS.md) somente com nova autorização e pacote do artista. As instruções G2A abaixo são preservadas como histórico de retomada desse snapshot, não como pedido para refazer o trabalho atual.
+
 Comece por `AGENTS.md`, depois [PROJECT_HANDOFF](PROJECT_HANDOFF.md), este guia e [README](../README.md). Última fase concluída: **G1**, com anatomia proxy P0 e interação P1. **G2A é a próxima etapa autorizável; não foi executada nem autorizada pelo backup.**
 
 ## Identidade do checkpoint

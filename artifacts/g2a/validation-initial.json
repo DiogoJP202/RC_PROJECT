@@ -1,0 +1,48 @@
+{
+  "startedAt": "2026-10-23T20:13:40.554Z",
+  "baseline": "d7195027dfb48ab25d040a6295676aacb847ce59",
+  "scope": "G2A only; G1 regression suite unchanged",
+  "commands": [
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "seconds": 15.67
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "seconds": 12.301
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "seconds": 3.935
+    },
+    {
+      "command": "npm run test:catalog",
+      "exitCode": 0,
+      "seconds": 2.953
+    },
+    {
+      "command": "npm run validate:catalog",
+      "exitCode": 0,
+      "seconds": 2.038
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "seconds": 14.806
+    },
+    {
+      "command": "npm run test:e2e",
+      "exitCode": 1,
+      "seconds": 135.901
+    }
+  ],
+  "complete": false,
+  "completedAt": "2026-10-23T20:16:48.176Z",
+  "vitestSummary": "Test Files  7 passed (7)\n      Tests  83 passed (83)",
+  "pythonSummary": "Ran 22 tests in 0.390s\r",
+  "e2eSummary": "23 passed; 1 failed (mobile drawer return-to-stage after selection)",
+  "note": "Initial full run retained: no G1 failure. Drawer scrolling happened before modal focus restoration/layout commit; fixed by scheduling return after commit. Final verification recorded separately."
+}

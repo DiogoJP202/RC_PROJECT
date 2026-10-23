@@ -1,5 +1,7 @@
 # 01 — Roadmap revisado após a auditoria G0
 
+> Atualização da implementação local: G2A entregue como infraestrutura com fixtures sintéticas, conforme [G2A_ACCEPTANCE](G2A_ACCEPTANCE.md). G2B depende dos assets e nova autorização; G3/G4 continuam futuros. O planejamento e checkpoint G0/G1 abaixo são preservados como histórico.
+
 > Estado no checkpoint de transferência: G0 e G1 entregues; G2A/G2B/G3/G4 não iniciados. O roteiro abaixo preserva o planejamento G0. A autorização específica de G1 antecipou camadas/isolar com proxies, sem integrar anatomia final. G2 passa a ser proposto em **G2A: infraestrutura GLB** e **G2B: assets definitivos**. Consulte [PROJECT_HANDOFF](PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](RESUME_ON_NEW_PC.md) antes de executar prompts antigos. Nenhuma próxima fase é autorizada por este backup.
 
 Revisão: **23/10/2026**. Fontes de decisão: [RESEARCH_INDEX](RESEARCH_INDEX.md), [DECISIONS](DECISIONS.md), [CONTENT_AUDIT](CONTENT_AUDIT.md), [ASSET_INVENTORY](ASSET_INVENTORY.md). O pacote original foi diagnosticado antes desta revisão; nenhuma aplicação foi implementada no G0.

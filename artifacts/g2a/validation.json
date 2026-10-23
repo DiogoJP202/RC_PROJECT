@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-10-23T20:23:55.976Z",
+  "baseline": "d7195027dfb48ab25d040a6295676aacb847ce59",
+  "scope": "Final G2A checks after loader hardening and mobile fixes; G1 tests unchanged",
+  "commands": [
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "seconds": 6.698
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "seconds": 5.662
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "seconds": 1.689
+    },
+    {
+      "command": "npm run test:catalog",
+      "exitCode": 0,
+      "seconds": 1.535
+    },
+    {
+      "command": "npm run validate:catalog",
+      "exitCode": 0,
+      "seconds": 1.122
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "seconds": 30.705
+    },
+    {
+      "command": "npm run test:e2e",
+      "exitCode": 0,
+      "seconds": 186.865
+    }
+  ],
+  "complete": true,
+  "vitestSummary": "Test Files  7 passed (7)\n      Tests  85 passed (85)",
+  "pythonSummary": "Ran 22 tests in 0.306s\r",
+  "e2eSummary": "24 passed (3.1m)",
+  "completedAt": "2026-10-23T20:27:50.265Z"
+}

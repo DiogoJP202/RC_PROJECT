@@ -1,0 +1,169 @@
+GHOUL ATLAS — G2A full verification
+
+COMMAND: npm run typecheck
+
+> ghoul-atlas@0.1.0 typecheck
+> tsc -b --pretty false
+
+
+Exit code: 0
+
+COMMAND: npm run lint
+
+> ghoul-atlas@0.1.0 lint
+> eslint .
+
+
+Exit code: 0
+
+COMMAND: npm test
+
+> ghoul-atlas@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/dsoares/Documents/Projetos/RC_PROJECT
+
+
+ Test Files  7 passed (7)
+      Tests  83 passed (83)
+   Start at  17:14:10
+   Duration  1.58s (tests 39%, transform 38%, import 22%, worker 2%)
+
+
+Exit code: 0
+
+COMMAND: npm run test:catalog
+
+> ghoul-atlas@0.1.0 test:catalog
+> node tools/python.mjs -m unittest discover -s tools -p test_validate_catalog.py
+
+......................
+----------------------------------------------------------------------
+Ran 22 tests in 0.390s
+
+OK
+
+Exit code: 0
+
+COMMAND: npm run validate:catalog
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.
+
+Exit code: 0
+
+COMMAND: npm run build
+
+> ghoul-atlas@0.1.0 build
+> npm run validate:catalog && tsc -b && vite build
+
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 600 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                             0.73 kB │ gzip:   0.45 kB
+dist/assets/index-Dv9BOdK4.css             30.02 kB │ gzip:   7.33 kB
+dist/assets/GLTFLoader-CM_8evnr.js         43.81 kB │ gzip:  13.04 kB
+dist/assets/index-B7aAQzl4.js             260.71 kB │ gzip:  82.20 kB
+dist/assets/ObservatoryScene-B7WCclm_.js  974.71 kB │ gzip: 263.05 kB
+
+✓ built in 1.02s
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 900 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+Exit code: 0
+
+COMMAND: npm run test:e2e
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test
+
+
+Running 24 tests using 1 worker
+
+  ok  1 [chromium] › tests\e2e\g2a-assets.spec.ts:62:1 › disk GLB loads asynchronously and replaces only its three stable anatomical bindings (4.8s)
+  ok  2 [chromium] › tests\e2e\g2a-assets.spec.ts:111:1 › a loaded mesh receives real pointer hits and keeps anatomical evidence identity (4.3s)
+  ok  3 [chromium] › tests\e2e\g2a-assets.spec.ts:130:1 › asset replacement preserves selection, layers, isolation, opacity and camera context (5.1s)
+  ok  4 [chromium] › tests\e2e\g2a-assets.spec.ts:160:1 › HTTP failure automatically shows available proxies and retry loads the real asset (4.1s)
+  ok  5 [chromium] › tests\e2e\g2a-assets.spec.ts:185:1 › a slow superseded asset cannot overwrite the later model or anatomical selection (4.9s)
+  ok  6 [chromium] › tests\e2e\g2a-assets.spec.ts:206:1 › repeated GLB swaps release leases and dispose unused templates without retained cache entries (6.0s)
+  ok  7 [chromium] › tests\e2e\g2a-assets.spec.ts:227:1 › rigged GLB exposes skin and clip, moves a bone-attached socket and respects reduced motion (5.2s)
+  ok  8 [chromium] › tests\e2e\g2a-assets.spec.ts:260:1 › G2A desktop capture preserves the observatory and labels the synthetic integration (7.8s)
+  ok  9 [chromium] › tests\e2e\g2a-assets.spec.ts:282:1 › mobile exploration remains touch accessible with GLB and produces a real capture (5.4s)
+  x  10 [chromium] › tests\e2e\g2a-assets.spec.ts:307:1 › the mobile drawer supports touch, keyboard, native dismissal and explicit evidence reopening (19.8s)
+  ok 11 [chromium] › tests\e2e\observatory.spec.ts:46:1 › catalog loading is real and delays anatomy UI until data arrives (5.8s)
+  ok 12 [chromium] › tests\e2e\observatory.spec.ts:63:1 › 3D click raycasts an actual scene structure and synchronizes the inspector (3.8s)
+  ok 13 [chromium] › tests\e2e\observatory.spec.ts:83:1 › independent scene layers can be toggled and isolation restores the prior combination (4.2s)
+  ok 14 [chromium] › tests\e2e\observatory.spec.ts:105:1 › mouse orbit and wheel zoom change the real camera (3.4s)
+  ok 15 [chromium] › tests\e2e\observatory.spec.ts:124:1 › camera focus changes its actual pose and reset restores an overview (4.0s)
+  ok 16 [chromium] › tests\e2e\observatory.spec.ts:136:1 › opacity and scan controls affect the renderer; pausing and scrub are stable (4.6s)
+  ok 17 [chromium] › tests\e2e\observatory.spec.ts:163:1 › future modes preserve context and canon filter never hides the reconstruction disclosure (4.1s)
+  ok 18 [chromium] › tests\e2e\observatory.spec.ts:187:1 › keyboard alternatives work, range keys stay local and reduced motion pauses scan (3.6s)
+  ok 19 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?webgl=off preserves content and selection without WebGL (3.4s)
+  ok 20 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?asset=missing preserves content and selection without WebGL (3.1s)
+  ok 21 [chromium] › tests\e2e\observatory.spec.ts:231:1 › a lost real WebGL context opens an accessible fallback (3.4s)
+  ok 22 [chromium] › tests\e2e\observatory.spec.ts:245:1 › catalog errors have a visible recovery action (3.3s)
+  ok 23 [chromium] › tests\e2e\observatory.spec.ts:254:1 › desktop and silhouette gate captures include the real rendered scene (7.3s)
+  ok 24 [chromium] › tests\e2e\observatory.spec.ts:277:1 › touch-sized mobile remains usable without hover or horizontal overflow (4.6s)
+
+
+  1) [chromium] › tests\e2e\g2a-assets.spec.ts:307:1 › the mobile drawer supports touch, keyboard, native dismissal and explicit evidence reopening 
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator:  getByTestId('stage')
+    Expected: in viewport
+    Received: viewport ratio 0
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeInViewport" getByTestId('stage') with timeout 15000ms
+      - waiting for getByTestId('stage')
+        32 × locator resolved to <section class="stage" data-testid="stage" aria-label="Visor anatômico tridimensional">…</section>
+           - unexpected value "viewport ratio 0"
+
+
+      330 |     await page.getByTestId('mobile-structure-ghoul.kakuhou.rinkaku').tap();
+      331 |     await expect(drawer).not.toBeVisible();
+    > 332 |     await expect(page.getByTestId('stage')).toBeInViewport();
+          |                                             ^
+      333 |     expect((await api(page)).selectedId).toBe('ghoul.kakuhou.rinkaku');
+      334 |     await expect(page.getByTestId('inspector')).toHaveAttribute('data-selected-id', 'ghoul.kakuhou.rinkaku');
+      335 |     const selected = await api(page);
+        at <WORKSPACE>\tests\e2e\g2a-assets.spec.ts:332:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\g2a-assets-the-mobile-draw-8c66d-explicit-evidence-reopening-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\g2a-assets-the-mobile-draw-8c66d-explicit-evidence-reopening-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\g2a-assets-the-mobile-draw-8c66d-explicit-evidence-reopening-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\g2a-assets-the-mobile-draw-8c66d-explicit-evidence-reopening-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests\e2e\g2a-assets.spec.ts:307:1 › the mobile drawer supports touch, keyboard, native dismissal and explicit evidence reopening 
+  23 passed (2.2m)
+(node:17904) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:18948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+Exit code: 1

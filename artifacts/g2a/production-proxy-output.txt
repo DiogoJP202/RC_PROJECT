@@ -1,0 +1,112 @@
+{
+  "environment": {
+    "os": "win32 10.0.26200 x64",
+    "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+    "ramBytes": 16885276672,
+    "browser": "Chrome 155.0.8059.86",
+    "headless": true,
+    "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    }
+  },
+  "network": {
+    "method": "Chromium DevTools Protocol Network.emulateNetworkConditions",
+    "cdp": {
+      "offline": false,
+      "latency": 50,
+      "downloadThroughput": 2500000,
+      "uploadThroughput": 2500000,
+      "connectionType": "ethernet"
+    },
+    "nominalDownloadMbps": 20,
+    "nominalUploadMbps": 20,
+    "latencyNote": "latency=50ms is the CDP request latency setting; this does not certify a symmetric physical 50ms RTT.",
+    "transferredCdpBytes": 358602,
+    "transferredPerformanceBytes": 358241,
+    "responseEncodings": [
+      {
+        "url": "http://127.0.0.1:4173/",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": null,
+        "mimeType": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-BGGuc67C.css",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/css"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-DbFQCdKw.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "390",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "390",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4173/catalog.json",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/ObservatoryScene-B5cAWUa6.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      }
+    ],
+    "encodingNote": "Measured encoded transfer bytes include server compression and protocol overhead. GET response headers identify the actual content encoding; raw dist file sizes are a separate quantity."
+  },
+  "interactiveMs": 1879.6000000014901,
+  "sampleMs": 30012.900000002235,
+  "frames": 1800,
+  "fpsP50": 59.880239520968516,
+  "fpsP10": 59.523809523824994,
+  "renderer": {
+    "fpsP50": 60,
+    "fpsP10": 58,
+    "calls": 21,
+    "triangles": 149898,
+    "geometries": 13,
+    "textures": 3,
+    "samples": 1800,
+    "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "budgets": {
+    "interactionUnder5s": true,
+    "fpsP50AtLeast50": true,
+    "fpsP10AtLeast30": true,
+    "drawsUnder150": true,
+    "measuredInitialPayloadUnder8MiB": true
+  },
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "failedRequests": [],
+    "httpErrors": []
+  }
+}

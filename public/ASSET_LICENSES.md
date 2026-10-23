@@ -15,3 +15,9 @@ Nenhuma fotografia, screenshot, textura, HDRI, áudio, imagem do mangá/anime ou
 Os recursos autorais foram criados para uso neste projeto; este registro de proveniência não concede licença pública de redistribuição do projeto nem direitos sobre *Tokyo Ghoul*. O observatório é um estudo ficcional independente. As dependências de software mantêm suas licenças próprias nos respectivos pacotes/lockfile; não são fontes de meshes ou arte de terceiros nesta versão.
 
 Substituições por GLB/glTF exigem registro da versão efetivamente adquirida, autor, fonte, licença, atribuição, alterações, hash e nodes reais. A mera existência de um link de download não libera o asset.
+
+## Fixtures originais G2A
+
+`assets/fixtures/atlas-static-v1.glb` e `atlas-rigged-v1.glb` são arquivos binários glTF 2 originais gerados por `tools/generate_fixture_glbs.mjs`. Proveniência, tamanho e SHA-256 em `assets/fixtures/manifest.json`; registro técnico em `src/visuals/assets/assetRegistry.ts` no repositório. Não contêm meshes, imagens ou texturas de terceiros. O articulado inclui dois bones e um clipe sintético, sem comportamento fisiológico.
+
+São fixtures de infraestrutura, visíveis na bancada opt-in `?assets=lab`, mantendo `PROXY / CONCEPTUAL MODEL`. Não representam anatomia humana validada, forma canônica de kakuhou ou arte definitiva. `PROJECT_ORIGINAL` registra autoria para este projeto e não concede licença geral sobre material de terceiros ou sobre Tokyo Ghoul.

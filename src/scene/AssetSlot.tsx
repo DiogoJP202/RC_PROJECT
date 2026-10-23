@@ -17,10 +17,10 @@ const PALETTE: Record<AnatomyId, { color: string; roughness: number }> = {
   'human.thorax': { color: '#789ea0', roughness: 0.48 },
   'ghoul.kakuhou.rinkaku': { color: '#ad3e54', roughness: 0.38 },
 };
-export interface AssetSlotProps { onHit?: (id: AnatomyId) => void }
+export interface AssetSlotProps { onHit?: (id: AnatomyId) => void; replacedIds?: ReadonlySet<AnatomyId> }
 
 /** Asset seam: a future licensed GLB keeps these IDs, metadata, anchors and selection contract. */
-export function AssetSlot({ onHit }: AssetSlotProps) {
+export function AssetSlot({ onHit, replacedIds }: AssetSlotProps) {
   const geometries = useMemo(() => createProxyGeometries(), []);
   const materials = useMemo(() => Object.fromEntries(Object.entries(PALETTE).map(([id, values]) => [id,
     new MeshStandardMaterial({ color: values.color, roughness: values.roughness, metalness: 0.035, side: DoubleSide }),
@@ -72,7 +72,7 @@ export function AssetSlot({ onHit }: AssetSlotProps) {
     select(id);
   };
   return <group name="ANATOMY_ASSET_SLOT" userData={{ modelStatus: 'conceptual_proxy', generator: 'src/scene/proxyGeometry.ts' }}>
-    {(Object.keys(geometries) as AnatomyId[]).map((id) => {
+    {(Object.keys(geometries) as AnatomyId[]).filter((id) => !replacedIds?.has(id)).map((id) => {
       const visible = layers[anatomyLayer[id]] && (!isolated || selected === id);
       return <mesh key={id} name={NODE_NAMES[id]} geometry={geometries[id]} material={materials[id]} visible={visible}
         castShadow receiveShadow userData={{ anatomyId: id, layer: anatomyLayer[id], modelStatus: 'conceptual_proxy' }}

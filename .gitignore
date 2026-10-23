@@ -15,6 +15,11 @@ artifacts/*
 !artifacts/gates/
 artifacts/gates/*
 !artifacts/gates/G1-*.png
+!artifacts/gates/G2A-*.png
+!artifacts/g2a/
+artifacts/g2a/*
+!artifacts/g2a/*.json
+!artifacts/g2a/*.txt
 !artifacts/checkpoint/
 artifacts/checkpoint/*
 !artifacts/checkpoint/*.md

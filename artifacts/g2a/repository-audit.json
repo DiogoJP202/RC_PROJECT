@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-23T20:34:15.302Z",
+  "scope": "G2A local implementation; baseline and remote unchanged",
+  "git": {
+    "head": "d7195027dfb48ab25d040a6295676aacb847ce59",
+    "branch": "main",
+    "state": "modified/untracked G2A files retained for review; no stage/commit/push in this gate"
+  },
+  "checks": {
+    "reproducibleFixtures": true,
+    "fixtureChecks": [
+      {
+        "path": "public/assets/fixtures/atlas-static-v1.glb",
+        "bytes": 2604,
+        "sha256": "c2dc5e0db48fd88fd2686c270a625f569fadba18794a07cc5202816f594533e0",
+        "ok": true
+      },
+      {
+        "path": "public/assets/fixtures/atlas-rigged-v1.glb",
+        "bytes": 4532,
+        "sha256": "5be34fe872b46dd4e3f6293eb5b6052705c26320a3b5119835b82f8e06ae296e",
+        "ok": true
+      }
+    ],
+    "baselineInputsAndG1TestsUnchanged": true,
+    "bundleProtectedPayloadFindings": [],
+    "secretOrPersonalPathFindings": [],
+    "prohibitedCandidatePaths": [],
+    "missingLocalDocLinks": [],
+    "envOnlyEmptyNames": true
+  },
+  "distFiles": [
+    {
+      "path": "dist/assets/fixtures/atlas-rigged-v1.glb",
+      "bytes": 4532,
+      "gzipBytes": 1414,
+      "sha256": "5be34fe872b46dd4e3f6293eb5b6052705c26320a3b5119835b82f8e06ae296e"
+    },
+    {
+      "path": "dist/assets/fixtures/atlas-static-v1.glb",
+      "bytes": 2604,
+      "gzipBytes": 932,
+      "sha256": "c2dc5e0db48fd88fd2686c270a625f569fadba18794a07cc5202816f594533e0"
+    },
+    {
+      "path": "dist/assets/fixtures/manifest.json",
+      "bytes": 573,
+      "gzipBytes": 389,
+      "sha256": "2eb3ddaa32316826c84441a639e9503c966c8c0472822d7c593eac214c5dce80"
+    },
+    {
+      "path": "dist/assets/GLTFLoader-SmdEfMiW.js",
+      "bytes": 43810,
+      "gzipBytes": 12951,
+      "sha256": "0b63a3b1a93b80ad4912171fc58c2c2c5475e59b82a36c87894f5164ae1ae3a7"
+    },
+    {
+      "path": "dist/assets/index-BGGuc67C.css",
+      "bytes": 30485,
+      "gzipBytes": 7349,
+      "sha256": "ae49a8d438057ea6015242ce4e34598f0299b54dd0e76810c8db9b3879162f7f"
+    },
+    {
+      "path": "dist/assets/index-DbFQCdKw.js",
+      "bytes": 260765,
+      "gzipBytes": 81429,
+      "sha256": "c3426180f9a2be82286a9277ca8f2a909961a14e653f21ce9334c90af078e896"
+    },
+    {
+      "path": "dist/assets/ObservatoryScene-B5cAWUa6.js",
+      "bytes": 975519,
+      "gzipBytes": 261127,
+      "sha256": "53eff7981bd450949d19f04fbb9d9211d69db608eb3d4781692cd7207c9495fd"
+    },
+    {
+      "path": "dist/ASSET_LICENSES.md",
+      "bytes": 2634,
+      "gzipBytes": 1422,
+      "sha256": "b010c568f1a9e053ef8d4cf34c6ed00a206dc25970ab4d182a683fe3b1b86e93"
+    },
+    {
+      "path": "dist/atlas-mark.svg",
+      "bytes": 390,
+      "gzipBytes": 246,
+      "sha256": "419c6bc6179d58d6efaf39eb873d591d108685010029aef4fd140bd08461eb6a"
+    },
+    {
+      "path": "dist/catalog.json",
+      "bytes": 18763,
+      "gzipBytes": 4725,
+      "sha256": "d032e5e03a1aea6c9c147cf83617b2d9486e0e7b4cbec1ada21c33f38451383e"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 731,
+      "gzipBytes": 452,
+      "sha256": "7f2bf8bb2ac3a407d0d32e01b5a47701e432cd36dce6649405f4aaa3414fe6c3"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "artifacts/gates/G2A-desktop-default.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 191434,
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667"
+    },
+    {
+      "path": "artifacts/gates/G2A-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 179554,
+      "sha256": "42a313658fddb1c2a27b596eff63a7c06c60abc4487c8dd65a4f95b8e23e08e0"
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile-asset.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 108599,
+      "sha256": "58f2f465c9d4fc1a58079684e4bdf10770fdeb0967604daa3ef5bc1731d13025"
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile-default.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 75636,
+      "sha256": "6c345cd422b08225d419c8c6e6e7e176aefc03fd6e049187db5d0a0908ddce87"
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile-drawer.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 42860,
+      "sha256": "ca5c25d4d2508e3f2ca581b319a6a7dadb54ec8c5cf795d73b401411f4d839e0"
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 74748,
+      "sha256": "9462b26cc9f552b9f43a1792d4a2365f1a65556e2e77ee6f6f32c75e5f52accc"
+    },
+    {
+      "path": "artifacts/gates/G2A-rig-pose.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 133641,
+      "sha256": "374e1b07001495a4a8aee5ec93ad7ddc050bcd272031986f5066d49a8e4ee59a"
+    },
+    {
+      "path": "artifacts/gates/G2A-synthetic-rigged.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 168574,
+      "sha256": "8b080ab7071316f194c12078853a7667bacf9e1ec52b54acf34173a11c021375"
+    },
+    {
+      "path": "artifacts/gates/G2A-synthetic-static.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 179761,
+      "sha256": "7d0ec04bd2fe397e4ed9fd35dbda978fab787452141696ea9dd8c1d6bf611475"
+    }
+  ],
+  "notes": [
+    "Pattern-based scan and provenance review, not a universal secret/security certification.",
+    "Own fixture regeneration matched hashes; no production anatomy acquired.",
+    "Research and private originals preserved; protected payloads/names searched across actual dist files.",
+    "Exact synthetic file hashes and runtime allowlist do not replace human license/anatomy review for G2B."
+  ],
+  "qaLifecycle": {
+    "ownedDevAndPreviewServersStopped": true,
+    "ports": [
+      5173,
+      4173
+    ],
+    "note": "Servers were identified by process ID, workspace path and Vite command before stopping; no unrelated processes targeted."
+  }
+}

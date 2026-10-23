@@ -21,6 +21,7 @@ interface ObservatoryState {
   scanRevision: number;
   canonOnly: boolean;
   inspectorOpen: boolean;
+  inspectorTab: 'structure' | 'evidence';
   metrics: SceneMetrics | null;
   setMode: (mode: Mode) => void;
   select: (id: AnatomyId, focus?: boolean) => void;
@@ -34,6 +35,7 @@ interface ObservatoryState {
   scrub: (t: number) => void;
   setCanonOnly: (value: boolean) => void;
   setInspectorOpen: (value: boolean) => void;
+  setInspectorTab: (value: 'structure' | 'evidence') => void;
   setMetrics: (metrics: SceneMetrics) => void;
 }
 const clamp = (n: number) => Number.isFinite(n) ? Math.max(0, Math.min(1, n)) : 0;
@@ -41,7 +43,7 @@ export const useObservatory = create<ObservatoryState>((set) => ({
   mode: 'body', selectedId: 'human.surface', layers: { ...initialLayers }, surfaceOpacity: 0.94,
   isolated: false, savedLayers: null, focus: { target: 'overview', nonce: 0 },
   reducedMotion: false, paused: false, scanT: 0.35, scanRevision: 0, canonOnly: false,
-  inspectorOpen: true, metrics: null,
+  inspectorOpen: true, inspectorTab: 'structure', metrics: null,
   setMode: (mode) => set({ mode }),
   select: (id, focus = true) => set((s) => ({
     selectedId: id, inspectorOpen: true, isolated: false, savedLayers: null,
@@ -61,5 +63,6 @@ export const useObservatory = create<ObservatoryState>((set) => ({
   scrub: (value) => { scanClock.progress = clamp(value); set((s) => ({ scanT: clamp(value), scanRevision: s.scanRevision + 1, paused: true })); },
   setCanonOnly: (canonOnly) => set({ canonOnly }),
   setInspectorOpen: (inspectorOpen) => set({ inspectorOpen }),
+  setInspectorTab: (inspectorTab) => set({ inspectorTab }),
   setMetrics: (metrics) => set({ metrics }),
 }));

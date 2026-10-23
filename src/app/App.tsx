@@ -7,6 +7,8 @@ import { EvidenceInspector } from '../ui/EvidenceInspector';
 import { Timeline } from '../ui/Timeline';
 import { SceneFallback } from '../ui/Fallback';
 import { SceneBoundary } from './SceneBoundary';
+import { AssetLab } from '../ui/AssetLab';
+import { MobileExplorer } from '../ui/MobileExplorer';
 import { anatomyIds, type Mode } from './types';
 
 const Scene = lazy(() => import('../scene/ObservatoryScene'));
@@ -66,7 +68,7 @@ export default function App() {
     if (requestedId && anatomyIds.includes(requestedId as typeof anatomyIds[number])) useObservatory.getState().select(requestedId as typeof anatomyIds[number]);
     const shortcuts = (event: KeyboardEvent) => {
       const target = event.target;
-      if (target instanceof HTMLElement && (target.matches('input,textarea,select') || target.isContentEditable) || event.ctrlKey || event.metaKey || event.altKey || help.current?.open) return;
+      if (target instanceof HTMLElement && (target.matches('input,textarea,select') || target.isContentEditable) || event.ctrlKey || event.metaKey || event.altKey || document.querySelector('dialog[open]')) return;
       const s = useObservatory.getState();
       if (event.key.toLowerCase() === 'r') s.reset();
       if (event.key === 'Escape') { s.setMode('body'); s.reset(); }
@@ -90,6 +92,7 @@ export default function App() {
     </header>
     <section className="specimen-bar"><div><span className="status-dot" /> AMBIENTE DE INVESTIGAÇÃO <span className="bar-divider">/</span><span className="specimen-caption">ESPÉCIME NEUTRO · RINKAKU</span></div><label className="canon-toggle"><input type="checkbox" data-testid="canon-filter" checked={canonOnly} onChange={(e) => useObservatory.getState().setCanonOnly(e.target.checked)} /><span className="toggle-track" /> Evidência verificada</label></section>
     {catalogError ? <section className="catalog-error" data-testid="catalog-error" role="alert"><h1>Catálogo indisponível</h1><p>{catalogError}</p><button className="primary-button" data-testid="catalog-retry" onClick={() => setCatalogAttempt((value) => value + 1)}>Tentar novamente</button></section> : !content ? <section className="catalog-loading" role="status"><span className="loading-orbit" /><h1>Preparando o observatório</h1><p>Carregando catálogo e verificando evidências.</p></section> : <>
+      {query.get('assets') === 'lab' ? <AssetLab /> : null}
       <div className="workspace" id="workspace" tabIndex={-1}>
         <SystemsIndex content={content} />
         <section className="stage" data-testid="stage" aria-label="Visor anatômico tridimensional">
@@ -104,6 +107,7 @@ export default function App() {
         <EvidenceInspector content={content} />
       </div>
       <Timeline ready={ready && !sceneError && mode === 'body'} />
+      <MobileExplorer content={content} />
     </>}
     <footer className="statusbar"><span><span className="status-dot small" /> GHOUL ATLAS <span className="footer-divider">/</span> ESTUDO FICCIONAL INDEPENDENTE</span><label><input type="checkbox" checked={reduced} onChange={(e) => useObservatory.getState().setReducedMotion(e.target.checked)} /> Movimento reduzido</label><span className="status-metrics">FONTES E RECONSTRUÇÕES IDENTIFICADAS</span></footer>
     <dialog ref={help} className="help-dialog" aria-labelledby="help-title"><button className="icon-button dialog-close" aria-label="Fechar ajuda" onClick={() => help.current?.close()}><Icon name="close" /></button><span className="micro-label">GUIA DO OBSERVATÓRIO</span><h2 id="help-title">Explore. Questione.<br />Confira a evidência.</h2><p>O corpo é um proxy tridimensional original. Camadas e órgãos esquemáticos ajudam a testar a navegação; não constituem um atlas anatômico validado.</p><dl><div><dt>Arrastar / rolar</dt><dd>Orbitar e aproximar</dd></div><div><dt>R / Esc</dt><dd>Reenquadrar / retornar ao corpo</dd></div><div><dt>1 / 2 / 3</dt><dd>Corpo / Micro / Comparar</dd></div><div><dt>Espaço</dt><dd>Pausar inspeção visual</dd></div><div><dt>Tab / Enter</dt><dd>Navegar e selecionar na interface</dd></div></dl><p className="claim-disclaimer">Os atalhos não atuam enquanto você usa controles de formulário. PROXY descreve a forma; CANÔNICO descreve apenas a afirmação sustentada pela fonte.</p><button className="primary-button" onClick={() => help.current?.close()}>Continuar investigação <Icon name="arrow" size={16} /></button></dialog>

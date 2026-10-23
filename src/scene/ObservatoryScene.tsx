@@ -6,7 +6,10 @@ import { ACESFilmicToneMapping, Box3, Color, DoubleSide, Group, Mesh, PCFShadowM
 import type { AnatomyId, SceneMetrics, SceneProps } from '../app/types';
 import { useObservatory } from '../state/observatory';
 import { scanClock } from '../state/scanClock';
-import { AssetSlot } from './AssetSlot';
+import { IntegratedAssets } from './IntegratedAssets';
+import { assetRuntime, bindingAnchor, bindingBounds } from './assetRuntime';
+import { getAssetCacheStats } from '../visuals/assets/assetCache';
+import { useAssets } from '../state/assets';
 import { cameraPose, smoothFocus } from './camera';
 
 const ANCHORS: Record<AnatomyId, [number, number, number]> = {
@@ -37,11 +40,24 @@ function InspectableScene({ onReady, onError }: SceneProps) {
   const focus = useObservatory((s) => s.focus);
   const reducedMotion = useObservatory((s) => s.reducedMotion);
   const selected = useObservatory((s) => s.selectedId);
+  const assetStatus = useAssets((s) => s.status);
   const internal = useObservatory((s) => s.layers.internal);
   const isolated = useObservatory((s) => s.isolated);
   const selectionRef = useRef<Mesh>(null);
   const raycaster = useMemo(() => new Raycaster(), []);
   const pointer = useMemo(() => new Vector2(), []);
+  const orbitLimits = useRef({ min: new Vector3(-.4, .4, -.3), max: new Vector3(.4, 1.75, .3) });
+
+  useEffect(() => {
+    const limits = orbitLimits.current;
+    limits.min.set(-.4, .4, -.3); limits.max.set(.4, 1.75, .3);
+    if (assetRuntime.lease) {
+      const envelope = new Box3();
+      scene.traverse((object) => { if (object instanceof Mesh && object.userData.anatomyId) envelope.union(new Box3().setFromObject(object, true)); });
+      if (!envelope.isEmpty()) { limits.min.copy(envelope.min).addScalar(-.18); limits.max.copy(envelope.max).addScalar(.18); }
+      if (controls.current) controls.current.maxDistance = Math.max(6.8, envelope.getSize(new Vector3()).length() * 3);
+    } else if (controls.current) controls.current.maxDistance = 6.8;
+  }, [assetStatus, scene]);
 
   useEffect(() => {
     if (size.width <= 0 || size.height <= 0) return;
@@ -51,13 +67,23 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       controls.current.update();
       controls.current.enableDamping = true;
     }
-    const pose = cameraPose(focus.target, size.width / size.height);
+    let bounds = focus.target !== 'overview' && focus.target !== 'posterior' ? bindingBounds(focus.target) : null;
+    if ((focus.target === 'overview' || focus.target === 'posterior') && assetRuntime.lease) {
+      const envelope = new Box3();
+      scene.traverse((object) => {
+        if (object instanceof Mesh && ['human.surface', 'human.head'].includes(object.userData.anatomyId as string)) envelope.union(new Box3().setFromObject(object, true));
+      });
+      if (!envelope.isEmpty()) bounds = envelope;
+    }
+    const volume = bounds ? { center: bounds.getCenter(new Vector3()).toArray(), size: bounds.getSize(new Vector3()).toArray() } : undefined;
+    const pose = cameraPose(focus.target, size.width / size.height, 36, volume);
     const next = tween.current;
     next.fromPosition.copy(camera.position);
     next.toPosition.set(...pose.position);
     next.fromTarget.copy(controls.current?.target ?? new Vector3(0, 0.94, 0));
     next.toTarget.set(...pose.target);
     next.elapsed = 0;
+    next.duration = Math.max(.48, Math.min(1.15, next.fromPosition.distanceTo(next.toPosition) * .23 + .45));
     next.active = !reducedMotion && ready.current;
     if (!next.active) {
       camera.position.copy(next.toPosition);
@@ -65,7 +91,15 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       camera.lookAt(next.toTarget);
       controls.current?.update();
     }
-  }, [focus, reducedMotion, camera, size.width, size.height]);
+  }, [focus, reducedMotion, camera, scene, size.width, size.height]);
+
+  useEffect(() => {
+    const marker = selectionRef.current;
+    if (!marker) return;
+    const anchor = bindingAnchor(selected);
+    if (anchor) marker.position.copy(anchor);
+    else marker.position.set(...ANCHORS[selected]);
+  }, [selected, assetStatus]);
 
   useEffect(() => {
     const canvas = gl.domElement;
@@ -92,7 +126,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
 
   useEffect(() => {
     const project = (id: AnatomyId) => {
-      const point = new Vector3(...ANCHORS[id]).project(camera);
+      const point = (bindingAnchor(id) ?? new Vector3(...ANCHORS[id])).project(camera);
       return { x: point.x, y: point.y, z: point.z };
     };
     const api: AtlasSceneApi = {
@@ -100,7 +134,8 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       raycast: (x, y) => {
         pointer.set(x, y); raycaster.setFromCamera(pointer, camera);
         const hits = raycaster.intersectObjects(scene.children, true);
-        const hit = hits.find((entry) => entry.object.visible && entry.object.userData.anatomyId);
+        const hit = hits.find((entry) => entry.object.visible && entry.object.userData.anatomyId &&
+          !(useObservatory.getState().surfaceOpacity < .32 && entry.object.userData.layer === 'surface' && hits.some((other) => other.object.visible && other.object.userData.anatomyId && other.object.userData.layer !== 'surface')));
         return hit?.object.userData.anatomyId as AnatomyId ?? null;
       },
       snapshot: () => {
@@ -123,7 +158,24 @@ function InspectableScene({ onReady, onError }: SceneProps) {
           const p = new Vector3(x, y, z).project(camera);
           top = Math.max(top, p.y); bottom = Math.min(bottom, p.y); left = Math.min(left, p.x); right = Math.max(right, p.x);
         }
-        return { ready: ready.current, selectedId: state.selectedId, lastHit: lastHit.current, layers: state.layers,
+        const lease = assetRuntime.lease;
+        const assetState = useAssets.getState();
+        const assetNodes: Record<string, unknown>[] = [];
+        const bones: Record<string, unknown>[] = [];
+        lease?.scene.updateMatrixWorld(true);
+        lease?.scene.traverse((object) => {
+          if (object instanceof Mesh) assetNodes.push({ name: object.name, type: object.type, anatomyId: object.userData.anatomyId, visible: object.visible, worldPosition: object.getWorldPosition(new Vector3()).toArray() });
+          if (object.type === 'Bone') bones.push({ name: object.name, worldPosition: object.getWorldPosition(new Vector3()).toArray(), quaternion: object.quaternion.toArray() });
+        });
+        const assetBounds = lease ? new Box3().setFromObject(lease.scene, true) : null;
+        const clip = lease?.animations.find((item) => item.name === assetState.clip);
+        const assets = { requestedId: assetState.requestedId, activeId: lease?.assetId ?? 'proxy', status: assetState.status,
+          bindings: lease ? [...lease.bindings].map(([anatomyId, objects]) => { let meshCount = 0; objects.forEach((object) => object.traverse((node) => { if (node instanceof Mesh) meshCount++; })); return { anatomyId, nodeNames: objects.map((object) => object.name), meshCount }; }) : [],
+          nodes: assetNodes, bounds: assetBounds ? { min: assetBounds.min.toArray(), max: assetBounds.max.toArray(), size: assetBounds.getSize(new Vector3()).toArray() } : null,
+          sockets: lease ? [...lease.sockets].map(([id, node]) => ({ id, nodeName: node.name, worldPosition: node.getWorldPosition(new Vector3()).toArray() })) : [],
+          animations: lease?.animations.map((item) => ({ name: item.name, duration: item.duration })) ?? [],
+          animation: { clip: assetState.clip, time: assetRuntime.animationTime, playing: !!clip && assetState.playing && !state.reducedMotion }, bones, cache: getAssetCacheStats() };
+        return { ready: ready.current, selectedId: state.selectedId, lastHit: lastHit.current, layers: state.layers, assets,
           visibleNodes, nodes, surfaceOpacity: state.surfaceOpacity, paused: state.paused, reducedMotion: state.reducedMotion,
           scanT: scanProgress.current, scanRevision: state.scanRevision, camera: { position: camera.position.toArray(), target: controls.current?.target.toArray(), moving: tween.current.active },
           bounds: { min: bodyBounds.min.toArray(), max: bodyBounds.max.toArray(), projected: { top, bottom, left, right }, heightFraction: (top - bottom) / 2 },
@@ -146,9 +198,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       if (amount === 1) next.active = false;
     }
     if (controls.current && !next.active) {
-      controls.current.target.x = Math.max(-0.4, Math.min(0.4, controls.current.target.x));
-      controls.current.target.y = Math.max(0.4, Math.min(1.75, controls.current.target.y));
-      controls.current.target.z = Math.max(-0.3, Math.min(0.3, controls.current.target.z));
+      controls.current.target.clamp(orbitLimits.current.min, orbitLimits.current.max);
     }
     if (lastRevision.current !== state.scanRevision) {
       scanProgress.current = state.scanT;
@@ -158,7 +208,6 @@ function InspectableScene({ onReady, onError }: SceneProps) {
     scanClock.progress = scanProgress.current;
     if (scan.current) scan.current.position.y = 0.1 + scanProgress.current * 1.66;
     if (selectionRef.current) {
-      selectionRef.current.position.set(...ANCHORS[state.selectedId]);
       // A restrained fixed locator, not an invented organ pulse.
       selectionRef.current.lookAt(camera.position);
     }
@@ -177,7 +226,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       shadow-camera-left={-1.3} shadow-camera-right={1.3} shadow-camera-top={2.2} shadow-camera-bottom={-0.4} shadow-bias={-0.0007} />
     <directionalLight position={[-2.5, 1.9, -2.6]} intensity={3.4} color="#77abbc" />
     <pointLight position={[0, 0.95, -0.42]} intensity={0.055} distance={0.8} color="#c73c57" />
-    <AssetSlot onHit={(id) => { lastHit.current = id; }} />
+    <IntegratedAssets onHit={(id) => { lastHit.current = id; }} />
 
     <mesh name="CONCEPTUAL_SELECTION_LOCATOR" ref={selectionRef} renderOrder={5}
       visible={!isolated && (selected !== 'ghoul.kakuhou.rinkaku' || internal)}>

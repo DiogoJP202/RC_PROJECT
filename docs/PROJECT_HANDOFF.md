@@ -1,5 +1,7 @@
 # GHOUL ATLAS — Handoff de produto, engenharia e technical art
 
+> Atualização local G2A: a infraestrutura de ingresso GLB, fixtures originais de disco, leases/cache/rig/sockets e refinamentos mobile foram implementados depois do checkpoint GitHub G0/G1 descrito abaixo. Consulte [G2A_ACCEPTANCE](G2A_ACCEPTANCE.md), [BLENDER_WEB_INTEGRATION](BLENDER_WEB_INTEGRATION.md) e a seção G2A do log para evidências atuais. O histórico abaixo permanece datado; G2B/G3 não foram iniciados e arte final continua ausente. As alterações G2A desta execução ainda são locais e precisam ser incluídas no próximo checkpoint antes de transferir para outro computador.
+
 Checkpoint de transferência: **23/10/2026**, `America/Sao_Paulo`. Última fase de implementação concluída: **G1**. Esta operação preserva e documenta G0/G1; **G2A, G2B, G3 e G4 não foram iniciados**. Para clone, identidade do checkpoint e comandos no novo computador, começar por [RESUME_ON_NEW_PC](RESUME_ON_NEW_PC.md), depois [README](../README.md) e `AGENTS.md`.
 
 ## Visão e fronteira da versão preservada
