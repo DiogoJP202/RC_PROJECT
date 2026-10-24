@@ -1,5 +1,7 @@
 # G1 — Aceite técnico e classificação de qualidade
 
+> Este documento preserva o aceite histórico G1. A baseline de código G2A publicada em `main`, commit `0e53c1e31c366a05642501bef312d0fe5d5575b6`, foi confirmada por `git fetch` e `git ls-remote` na retomada de 24/10/2026; o checkpoint documental posterior preserva esse código. As referências abaixo a ausência de remote/publicação e ao adaptador futuro descrevem o encerramento original do G1. O estado posterior está em [G2A_ACCEPTANCE](G2A_ACCEPTANCE.md); a validação da nova máquina e a consolidação são registradas separadamente no [log](IMPLEMENTATION_LOG.md).
+
 23/10/2026, `America/Sao_Paulo`. Executado conforme as instruções adicionais aprovadas pelo usuário para G1. O resultado é local, sem deploy e sem assets de produção. Este aceite técnico não substitui a revisão artística do usuário.
 
 ## Resultado por sistema

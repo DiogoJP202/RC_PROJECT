@@ -1,0 +1,240 @@
+{
+  "measuredAt": "2026-10-24T20:09:39.972Z",
+  "git": {
+    "head": {
+      "command": "git rev-parse HEAD",
+      "exitCode": 0,
+      "stdout": "0e53c1e31c366a05642501bef312d0fe5d5575b6",
+      "stderr": ""
+    },
+    "remote": {
+      "command": "git ls-remote --heads origin main",
+      "exitCode": 0,
+      "stdout": "0e53c1e31c366a05642501bef312d0fe5d5575b6\trefs/heads/main",
+      "stderr": ""
+    },
+    "divergence": {
+      "command": "git rev-list --left-right --count HEAD...origin/main",
+      "exitCode": 0,
+      "stdout": "0\t0",
+      "stderr": ""
+    },
+    "integrity": {
+      "command": "git fsck --full",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "sourcePreserved": {
+      "command": "git diff --exit-code HEAD -- src tests tools public contracts package.json package-lock.json .nvmrc AGENTS.md research",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "whitespace": {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "status": {
+      "command": "git status --short --branch",
+      "exitCode": 0,
+      "stdout": "## main...origin/main\n M README.md\n M docs/01_ROADMAP_AND_GATES.md\n M docs/G1_ACCEPTANCE.md\n M docs/G2A_ACCEPTANCE.md\n M docs/IMPLEMENTATION_LOG.md\n M docs/PROJECT_HANDOFF.md\n M docs/RESUME_ON_NEW_PC.md\n?? artifacts/checkpoint/new-pc-browser-install.txt\n?? artifacts/checkpoint/new-pc-e2e.json\n?? artifacts/checkpoint/new-pc-e2e.txt\n?? artifacts/checkpoint/new-pc-http-smoke.json\n?? artifacts/checkpoint/new-pc-machine.json\n?? artifacts/checkpoint/new-pc-production-proxy.json\n?? artifacts/checkpoint/new-pc-production-proxy.txt\n?? artifacts/checkpoint/new-pc-production-rigged.json\n?? artifacts/checkpoint/new-pc-production-rigged.txt\n?? artifacts/checkpoint/new-pc-validation.json\n?? artifacts/checkpoint/new-pc-validation.txt\n?? artifacts/gates/G2A-new-pc-desktop-default.png\n?? artifacts/gates/G2A-new-pc-desktop.png\n?? artifacts/gates/G2A-new-pc-mobile-asset.png\n?? artifacts/gates/G2A-new-pc-mobile-default.png\n?? artifacts/gates/G2A-new-pc-mobile-drawer.png\n?? artifacts/gates/G2A-new-pc-mobile.png\n?? artifacts/gates/G2A-new-pc-rig-pose.png\n?? artifacts/gates/G2A-new-pc-synthetic-rigged.png\n?? artifacts/gates/G2A-new-pc-synthetic-static.png",
+      "stderr": ""
+    }
+  },
+  "fixtures": [
+    {
+      "path": "public/assets/fixtures/atlas-static-v1.glb",
+      "bytes": 2604,
+      "sha256": "c2dc5e0db48fd88fd2686c270a625f569fadba18794a07cc5202816f594533e0",
+      "matchesManifest": true
+    },
+    {
+      "path": "public/assets/fixtures/atlas-rigged-v1.glb",
+      "bytes": 4532,
+      "sha256": "5be34fe872b46dd4e3f6293eb5b6052705c26320a3b5119835b82f8e06ae296e",
+      "matchesManifest": true
+    }
+  ],
+  "historicalCaptures": [
+    {
+      "path": "artifacts/gates/G1-desktop.png",
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G1-focus.png",
+      "sha256": "0c9e913c221b5f2be550ef0dacb49d6ba60c174fe6f5b5b6c293b18d3bb036ed",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G1-mobile-full.png",
+      "sha256": "6c9774b8fb42fd5d001a9dc964c3482ff3a6d4850962c167adea627fd9d9491a",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G1-mobile-selection.png",
+      "sha256": "d51107d7671445f0aa90598b0c30e4d73e3a6018dd5025816c4c5dc514b2aaed",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G1-mobile.png",
+      "sha256": "a2ef4d4c7d51996c7eb2aedcdf33933648ffa42389b85245ad6152d682ea02e1",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G1-scan-20.png",
+      "sha256": "3b6a681bf6bbb47290686ccc1d5d5301db8d3e1052dc2028854d603ea5bcd975",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G1-scan-75.png",
+      "sha256": "3d539f2e04a5baf9b160c42ffc9ec7892b11602b1313ca58d9ad6962b8a0ee45",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G1-silhouette.png",
+      "sha256": "9178e8b7eade285e3b1200b06eedc87799471cdc4bebaa0ccebb5096b852c830",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G2A-desktop-default.png",
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G2A-desktop.png",
+      "sha256": "42a313658fddb1c2a27b596eff63a7c06c60abc4487c8dd65a4f95b8e23e08e0",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile-asset.png",
+      "sha256": "58f2f465c9d4fc1a58079684e4bdf10770fdeb0967604daa3ef5bc1731d13025",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile-default.png",
+      "sha256": "6c345cd422b08225d419c8c6e6e7e176aefc03fd6e049187db5d0a0908ddce87",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile-drawer.png",
+      "sha256": "ca5c25d4d2508e3f2ca581b319a6a7dadb54ec8c5cf795d73b401411f4d839e0",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile.png",
+      "sha256": "9462b26cc9f552b9f43a1792d4a2365f1a65556e2e77ee6f6f32c75e5f52accc",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G2A-rig-pose.png",
+      "sha256": "374e1b07001495a4a8aee5ec93ad7ddc050bcd272031986f5066d49a8e4ee59a",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G2A-synthetic-rigged.png",
+      "sha256": "8b080ab7071316f194c12078853a7667bacf9e1ec52b54acf34173a11c021375",
+      "sameAsBackup": true
+    },
+    {
+      "path": "artifacts/gates/G2A-synthetic-static.png",
+      "sha256": "7d0ec04bd2fe397e4ed9fd35dbda978fab787452141696ea9dd8c1d6bf611475",
+      "sameAsBackup": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "artifacts/gates/G2A-new-pc-desktop-default.png",
+      "sha256": "03fd9a65c539c3b1125e635a7e844c578954812ee15aacff101aa702faf4d981"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-desktop.png",
+      "sha256": "7dd02aee3a497fc19d6b01b0ccf5775da04827e76efd7c5eb48c32d7e86c077b"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile-asset.png",
+      "sha256": "591b608240d83ec57a2dfd8b127e7edcf1e018c4202e6c56ed5987f20498efcd"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile-default.png",
+      "sha256": "b98f8f05989eb3e505c29ba6bff641a493e62a8559d7ac1ba5447342e52af8c8"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile-drawer.png",
+      "sha256": "5a39251b0311e2d4c846dface2db909f6f5cb3c943dfdd12dff0f213e8768df3"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile.png",
+      "sha256": "c33677f8966652bbea3f7aec757af3291acf0c6023fb6a6937da7ecce9562366"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-rig-pose.png",
+      "sha256": "bdeba3e5eccb73113e348227fd90f393393b299d3c7b6238a60b70031ab2d9ee"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-synthetic-rigged.png",
+      "sha256": "ef6bf0f044c106a8d831cb18cd392c145f21d64a0c60295fe03f235c71c5f990"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-synthetic-static.png",
+      "sha256": "daac2c5293ad92ce2f96fa9868c0d5649108a35afa769b09e320b3151b66aa8f"
+    }
+  ],
+  "missingLocalLinks": [],
+  "preservedFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "7590772ea8279c93d9e6c4847a61198b14ad1eb19393c78b0b58a223013b3413"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d235539f8c9f665d31c195621f14b63c24a11f72958946c53536eb4d21328d59"
+    },
+    {
+      "path": "contracts/seed-catalog.json",
+      "sha256": "c853df0d95994ded4f301dec5092f3e67ca0346600a3eb94ca203f48140a55da"
+    },
+    {
+      "path": "public/catalog.json",
+      "sha256": "d032e5e03a1aea6c9c147cf83617b2d9486e0e7b4cbec1ada21c33f38451383e"
+    },
+    {
+      "path": "research/Anatomia e fisiologia dos ghouls em Tokyo Ghoul.md",
+      "sha256": "5360bf58168343e595a62111f9a6dc20fc3dfd09ba327d1897c021c7a93b6c9d"
+    },
+    {
+      "path": "research/Atlas Anatômico Interativo de Tokyo Ghoul.md",
+      "sha256": "543f6556ac31e0db7dc380b6a4b934125edbfcbd8305849cd570b6c7499d7389"
+    }
+  ],
+  "build": {
+    "files": [
+      "dist/ASSET_LICENSES.md",
+      "dist/atlas-mark.svg",
+      "dist/catalog.json",
+      "dist/index.html",
+      "dist/assets/GLTFLoader-SmdEfMiW.js",
+      "dist/assets/index-BGGuc67C.css",
+      "dist/assets/index-DbFQCdKw.js",
+      "dist/assets/ObservatoryScene-B5cAWUa6.js",
+      "dist/assets/fixtures/atlas-rigged-v1.glb",
+      "dist/assets/fixtures/atlas-static-v1.glb",
+      "dist/assets/fixtures/manifest.json"
+    ],
+    "protectedPayloadMatches": [],
+    "scope": "Exact research payloads and known private reference filenames checked; no universal secrecy or license certification claimed."
+  },
+  "limitations": [
+    "Docs and evidence are local changes; no commit/push/deploy.",
+    "No G2B/G3 implementation or production anatomy validation.",
+    "Mobile viewport emulation only."
+  ],
+  "finalizedAt": "2026-10-24T20:10:13.653Z",
+  "auditNotes": [
+    "Initial link scan ran before this report existed and flagged only its own link from IMPLEMENTATION_LOG; final scan after report creation found no missing local links.",
+    "Preview session stopped after all profiles and HTTP smoke completed."
+  ]
+}

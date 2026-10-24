@@ -1,0 +1,408 @@
+{
+  "measuredAt": "2026-10-24T20:40:22.838Z",
+  "scope": "Post-migration documentation/evidence consolidation only; no new app suite or benchmark run.",
+  "sourceBaseline": "0e53c1e31c366a05642501bef312d0fe5d5575b6",
+  "branch": "main",
+  "preCommitRemote": "0e53c1e31c366a05642501bef312d0fe5d5575b6\trefs/heads/main",
+  "implementationPreserved": true,
+  "unexpectedPaths": [],
+  "forbiddenPaths": [],
+  "sensitivePatternFindings": [],
+  "missingLocalLinks": [],
+  "checks": {
+    "whitespace": true,
+    "gitIntegrity": true,
+    "previousCommandsAllExitZero": true,
+    "e2eExitCode": 0,
+    "e2ePassLines": 24
+  },
+  "historicalCaptures": [
+    {
+      "path": "artifacts/gates/G1-desktop.png",
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G1-focus.png",
+      "sha256": "0c9e913c221b5f2be550ef0dacb49d6ba60c174fe6f5b5b6c293b18d3bb036ed",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G1-mobile-full.png",
+      "sha256": "6c9774b8fb42fd5d001a9dc964c3482ff3a6d4850962c167adea627fd9d9491a",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G1-mobile-selection.png",
+      "sha256": "d51107d7671445f0aa90598b0c30e4d73e3a6018dd5025816c4c5dc514b2aaed",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G1-mobile.png",
+      "sha256": "a2ef4d4c7d51996c7eb2aedcdf33933648ffa42389b85245ad6152d682ea02e1",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G1-scan-20.png",
+      "sha256": "3b6a681bf6bbb47290686ccc1d5d5301db8d3e1052dc2028854d603ea5bcd975",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G1-scan-75.png",
+      "sha256": "3d539f2e04a5baf9b160c42ffc9ec7892b11602b1313ca58d9ad6962b8a0ee45",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G1-silhouette.png",
+      "sha256": "9178e8b7eade285e3b1200b06eedc87799471cdc4bebaa0ccebb5096b852c830",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G2A-desktop-default.png",
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G2A-desktop.png",
+      "sha256": "42a313658fddb1c2a27b596eff63a7c06c60abc4487c8dd65a4f95b8e23e08e0",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile-asset.png",
+      "sha256": "58f2f465c9d4fc1a58079684e4bdf10770fdeb0967604daa3ef5bc1731d13025",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile-default.png",
+      "sha256": "6c345cd422b08225d419c8c6e6e7e176aefc03fd6e049187db5d0a0908ddce87",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile-drawer.png",
+      "sha256": "ca5c25d4d2508e3f2ca581b319a6a7dadb54ec8c5cf795d73b401411f4d839e0",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G2A-mobile.png",
+      "sha256": "9462b26cc9f552b9f43a1792d4a2365f1a65556e2e77ee6f6f32c75e5f52accc",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G2A-rig-pose.png",
+      "sha256": "374e1b07001495a4a8aee5ec93ad7ddc050bcd272031986f5066d49a8e4ee59a",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G2A-synthetic-rigged.png",
+      "sha256": "8b080ab7071316f194c12078853a7667bacf9e1ec52b54acf34173a11c021375",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    },
+    {
+      "path": "artifacts/gates/G2A-synthetic-static.png",
+      "sha256": "7d0ec04bd2fe397e4ed9fd35dbda978fab787452141696ea9dd8c1d6bf611475",
+      "matchesMigrationHash": true,
+      "matchesGitBlob": true
+    }
+  ],
+  "migrationCaptures": [
+    {
+      "path": "artifacts/gates/G2A-new-pc-desktop-default.png",
+      "sha256": "03fd9a65c539c3b1125e635a7e844c578954812ee15aacff101aa702faf4d981",
+      "matchesMigrationHash": true
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-desktop.png",
+      "sha256": "7dd02aee3a497fc19d6b01b0ccf5775da04827e76efd7c5eb48c32d7e86c077b",
+      "matchesMigrationHash": true
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile-asset.png",
+      "sha256": "591b608240d83ec57a2dfd8b127e7edcf1e018c4202e6c56ed5987f20498efcd",
+      "matchesMigrationHash": true
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile-default.png",
+      "sha256": "b98f8f05989eb3e505c29ba6bff641a493e62a8559d7ac1ba5447342e52af8c8",
+      "matchesMigrationHash": true
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile-drawer.png",
+      "sha256": "5a39251b0311e2d4c846dface2db909f6f5cb3c943dfdd12dff0f213e8768df3",
+      "matchesMigrationHash": true
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile.png",
+      "sha256": "c33677f8966652bbea3f7aec757af3291acf0c6023fb6a6937da7ecce9562366",
+      "matchesMigrationHash": true
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-rig-pose.png",
+      "sha256": "bdeba3e5eccb73113e348227fd90f393393b299d3c7b6238a60b70031ab2d9ee",
+      "matchesMigrationHash": true
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-synthetic-rigged.png",
+      "sha256": "ef6bf0f044c106a8d831cb18cd392c145f21d64a0c60295fe03f235c71c5f990",
+      "matchesMigrationHash": true
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-synthetic-static.png",
+      "sha256": "daac2c5293ad92ce2f96fa9868c0d5649108a35afa769b09e320b3151b66aa8f",
+      "matchesMigrationHash": true
+    }
+  ],
+  "fixtures": [
+    {
+      "path": "public/assets/fixtures/atlas-static-v1.glb",
+      "bytes": 2604,
+      "sha256": "c2dc5e0db48fd88fd2686c270a625f569fadba18794a07cc5202816f594533e0",
+      "matchesManifest": true
+    },
+    {
+      "path": "public/assets/fixtures/atlas-rigged-v1.glb",
+      "bytes": 4532,
+      "sha256": "5be34fe872b46dd4e3f6293eb5b6052705c26320a3b5119835b82f8e06ae296e",
+      "matchesManifest": true
+    }
+  ],
+  "profiles": [
+    {
+      "name": "proxy",
+      "frames": 1800,
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true
+      },
+      "errors": [],
+      "failedRequests": [],
+      "httpErrors": []
+    },
+    {
+      "name": "rigged",
+      "frames": 1800,
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true
+      },
+      "errors": [],
+      "failedRequests": [],
+      "httpErrors": []
+    }
+  ],
+  "environmentDiagnostic": "post-migration-environment.json",
+  "candidateFiles": [
+    {
+      "path": "README.md",
+      "bytes": 11096,
+      "sha256": "71191633fc57e055c665a9be9973d45fe4f593a6cd2271325a4b4b024c79106a"
+    },
+    {
+      "path": "docs/PROJECT_HANDOFF.md",
+      "bytes": 34512,
+      "sha256": "922f57c804a2a93b14a91213a0568b9ed45322780d349c47d2f8ee030b1415da"
+    },
+    {
+      "path": "docs/RESUME_ON_NEW_PC.md",
+      "bytes": 15977,
+      "sha256": "148a66e67a71fdd7a94765fc7548e1d486551666e7d01da636b05ea30a107aca"
+    },
+    {
+      "path": "docs/01_ROADMAP_AND_GATES.md",
+      "bytes": 15465,
+      "sha256": "05aaa29ac079ec89d7d263d847f4adcb7227c41a6e6537ec9466f7eaef6481ea"
+    },
+    {
+      "path": "docs/G1_ACCEPTANCE.md",
+      "bytes": 10516,
+      "sha256": "86e3aa298387ea8f97f7c147bf623529899fc10c1385d9ee6d6ed263722e27d1"
+    },
+    {
+      "path": "docs/G2A_ACCEPTANCE.md",
+      "bytes": 11761,
+      "sha256": "9d00113bdde254d444661cbb64f5906552710b0eb014d4916c5b7c0bedbf02c9"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_LOG.md",
+      "bytes": 58334,
+      "sha256": "dcfbf279823772b2a4be8a73940e9b207a8b583bb83fdba6e47d4e939a0d2695"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-audit.json",
+      "bytes": 9332,
+      "sha256": "9532baefcb0a9554f8b3c24e25887fa5dade214c94d83894493293f05e4b65b0"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-browser-install.txt",
+      "bytes": 6824,
+      "sha256": "7733121fb5bd2fe96e6bd648464a3724b552b27aba4485fbfe2ad4bf2d48fc0c"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-e2e.json",
+      "bytes": 205,
+      "sha256": "4bf95237239b3270ade4284f7547d605ade9b012ae0b61261e2eb427cb37c59a"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-e2e.txt",
+      "bytes": 3753,
+      "sha256": "04d36ea0b6e4b1f040e06ca62c766d88f122753efe84dd12d278a84c9a6be1a3"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-http-smoke.json",
+      "bytes": 703,
+      "sha256": "df7595f2f86e8076532370482f3f7e9c1fe443e5c570f385420341398817e676"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-machine.json",
+      "bytes": 1364,
+      "sha256": "f0484a2a3cd5e029ce99ced54c9d6f126eec2d00172e18c4d8b63ec25b65fa4c"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-production-proxy.json",
+      "bytes": 23392,
+      "sha256": "ac1d0e60a8c25563a453422e86fb90269cff9aaadfcc4c0b06b7a345dd43a8ea"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-production-proxy.txt",
+      "bytes": 3374,
+      "sha256": "e7c072c41a5b2b07317a5426de2a853bf035a458518420e9910f20f737f69e1a"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-production-rigged.json",
+      "bytes": 27765,
+      "sha256": "b1bbf728f467faacc6f8c3dd2ffeedbba088028ebfa34c7d07ee1bc94b64dd81"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-production-rigged.txt",
+      "bytes": 3818,
+      "sha256": "4de753a0d69cac5378157bdfd5e3739f32cbf7fcf72d8ef56e4f3bcdeb521882"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-validation.json",
+      "bytes": 4811,
+      "sha256": "a9ff9cda4bc7f57fc0a240a650d6a1399fbe2ae0f9164b825591d879acc6e06c"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-validation.txt",
+      "bytes": 2190,
+      "sha256": "4ec16bda29acc077b85fae3420912f77a44fa37e390185bcb81036331fa5cdf8"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-desktop-default.png",
+      "bytes": 187377,
+      "sha256": "03fd9a65c539c3b1125e635a7e844c578954812ee15aacff101aa702faf4d981"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-desktop.png",
+      "bytes": 176156,
+      "sha256": "7dd02aee3a497fc19d6b01b0ccf5775da04827e76efd7c5eb48c32d7e86c077b"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile-asset.png",
+      "bytes": 107906,
+      "sha256": "591b608240d83ec57a2dfd8b127e7edcf1e018c4202e6c56ed5987f20498efcd"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile-default.png",
+      "bytes": 72850,
+      "sha256": "b98f8f05989eb3e505c29ba6bff641a493e62a8559d7ac1ba5447342e52af8c8"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile-drawer.png",
+      "bytes": 42328,
+      "sha256": "5a39251b0311e2d4c846dface2db909f6f5cb3c943dfdd12dff0f213e8768df3"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-mobile.png",
+      "bytes": 72072,
+      "sha256": "c33677f8966652bbea3f7aec757af3291acf0c6023fb6a6937da7ecce9562366"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-rig-pose.png",
+      "bytes": 132520,
+      "sha256": "bdeba3e5eccb73113e348227fd90f393393b299d3c7b6238a60b70031ab2d9ee"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-synthetic-rigged.png",
+      "bytes": 165746,
+      "sha256": "ef6bf0f044c106a8d831cb18cd392c145f21d64a0c60295fe03f235c71c5f990"
+    },
+    {
+      "path": "artifacts/gates/G2A-new-pc-synthetic-static.png",
+      "bytes": 176381,
+      "sha256": "daac2c5293ad92ce2f96fa9868c0d5649108a35afa769b09e320b3151b66aa8f"
+    },
+    {
+      "path": "artifacts/checkpoint/post-migration-environment.json",
+      "bytes": 3400,
+      "sha256": "d72ed95554764f92bd4c7f797d8ade7e0860e6e41551eab9c7c740b33c918386"
+    }
+  ],
+  "selfExcludedFromHashes": true,
+  "limitations": [
+    "Pattern scans are not universal secret certification.",
+    "Previous new-pc results are preserved historical evidence, not newly executed tests.",
+    "Independent Node/Python remain recommended and uninstalled; current setup uses Codex runtimes.",
+    "Final commit SHA, remote identity and clean working tree are checked after normal push and reported in delivery."
+  ],
+  "evidenceTextNormalization": [
+    {
+      "path": "artifacts/checkpoint/new-pc-browser-install.txt",
+      "beforeSha256": "909ac509f2cb1d4797f9140cdc852e3ec6f44fb813e6a04401001986e99b41e9",
+      "afterSha256": "7733121fb5bd2fe96e6bd648464a3724b552b27aba4485fbfe2ad4bf2d48fc0c",
+      "transformation": "CRLF to LF per .gitattributes; no text content change"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-e2e.txt",
+      "beforeSha256": "061ace7894ea3919d881c89d6c56588f4fc1a7f549a105568766b0727def9b4b",
+      "afterSha256": "04d36ea0b6e4b1f040e06ca62c766d88f122753efe84dd12d278a84c9a6be1a3",
+      "transformation": "CRLF to LF per .gitattributes; no text content change"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-production-proxy.txt",
+      "beforeSha256": "d6095d170a5a08226133f43d3e6e0fdd809427895f921291573db37cfeed4822",
+      "afterSha256": "e7c072c41a5b2b07317a5426de2a853bf035a458518420e9910f20f737f69e1a",
+      "transformation": "CRLF to LF per .gitattributes; no text content change"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-production-rigged.txt",
+      "beforeSha256": "b92bc228dbb5d32c86289e76c1a427ea18cf78f5a7b0daa874ed0705e1387300",
+      "afterSha256": "4de753a0d69cac5378157bdfd5e3739f32cbf7fcf72d8ef56e4f3bcdeb521882",
+      "transformation": "CRLF to LF per .gitattributes; no text content change"
+    },
+    {
+      "path": "artifacts/checkpoint/new-pc-validation.txt",
+      "beforeSha256": "2bf3b495e03eca41b88c95e48b09200ee6c65caf1f210a0f353c3690c1132af0",
+      "afterSha256": "4ec16bda29acc077b85fae3420912f77a44fa37e390185bcb81036331fa5cdf8",
+      "transformation": "CRLF to LF per .gitattributes; remove one reporter trailing space from TXT copy only"
+    }
+  ],
+  "stagedReview": {
+    "measuredAt": "2026-10-24T20:40:53.859Z",
+    "files": 30,
+    "workingTreeMatchesIndex": true,
+    "commonSensitivePatternFindings": [],
+    "stagedWhitespaceCheckPassed": true
+  }
+}

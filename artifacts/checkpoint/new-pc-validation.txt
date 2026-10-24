@@ -1,0 +1,84 @@
+npm.cmd run typecheck
+exit=0 durationMs=5979
+
+> ghoul-atlas@0.1.0 typecheck
+> tsc -b --pretty false
+
+
+
+npm.cmd run lint
+exit=0 durationMs=7020
+
+> ghoul-atlas@0.1.0 lint
+> eslint .
+
+
+
+npm.cmd test
+exit=0 durationMs=2094
+
+> ghoul-atlas@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 <WORKSPACE>
+
+
+ Test Files  7 passed (7)
+      Tests  85 passed (85)
+   Start at  17:01:58
+   Duration  993ms (import 39%, transform 31%, tests 27%, worker 2%)
+
+
+
+npm.cmd run test:catalog
+exit=0 durationMs=1534
+
+> ghoul-atlas@0.1.0 test:catalog
+> node tools/python.mjs -m unittest discover -s tools -p test_validate_catalog.py
+
+
+......................
+----------------------------------------------------------------------
+Ran 22 tests in 0.372s
+
+OK
+
+npm.cmd run validate:catalog
+exit=0 durationMs=839
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.
+
+
+npm.cmd run build
+exit=0 durationMs=5654
+
+> ghoul-atlas@0.1.0 build
+> npm run validate:catalog && tsc -b && vite build
+
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 600 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                             0.73 kB │ gzip:   0.45 kB
+dist/assets/index-BGGuc67C.css             30.48 kB │ gzip:   7.41 kB
+dist/assets/GLTFLoader-SmdEfMiW.js         43.81 kB │ gzip:  13.04 kB
+dist/assets/index-DbFQCdKw.js             260.76 kB │ gzip:  82.21 kB
+dist/assets/ObservatoryScene-B5cAWUa6.js  975.51 kB │ gzip: 263.33 kB
+
+✓ built in 529ms
+
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 900 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

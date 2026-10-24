@@ -1,0 +1,7 @@
+{
+  "command": "npm.cmd run test:e2e",
+  "exitCode": 0,
+  "target": "http://127.0.0.1:4173",
+  "durationMs": 58491,
+  "browser": "Chromium 156.0.8078.4 (Playwright revision 1248), full browser headless"
+}

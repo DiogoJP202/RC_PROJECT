@@ -1,12 +1,14 @@
 # 01 — Roadmap revisado após a auditoria G0
 
-> Atualização da implementação local: G2A entregue como infraestrutura com fixtures sintéticas, conforme [G2A_ACCEPTANCE](G2A_ACCEPTANCE.md). G2B depende dos assets e nova autorização; G3/G4 continuam futuros. O planejamento e checkpoint G0/G1 abaixo são preservados como histórico.
+> Estado verificado em **24/10/2026**: a baseline de código G2A publicada e validada é [`0e53c1e31c366a05642501bef312d0fe5d5575b6`](https://github.com/DiogoJP202/RC_PROJECT/commit/0e53c1e31c366a05642501bef312d0fe5d5575b6), com infraestrutura e fixtures sintéticas, conforme [G2A_ACCEPTANCE](G2A_ACCEPTANCE.md). Antes das correções documentais, `main` local e remoto apontavam para esse SHA; o checkpoint de consolidação posterior não muda essa baseline de código. G0/G1/G2A estão concluídos e não serão refeitos; G2B/G3/G4 permanecem pendentes. A retomada foi validada e esta execução somente consolida ambiente/Git. O planejamento e checkpoint G0/G1 abaixo são preservados como histórico.
 
-> Estado no checkpoint de transferência: G0 e G1 entregues; G2A/G2B/G3/G4 não iniciados. O roteiro abaixo preserva o planejamento G0. A autorização específica de G1 antecipou camadas/isolar com proxies, sem integrar anatomia final. G2 passa a ser proposto em **G2A: infraestrutura GLB** e **G2B: assets definitivos**. Consulte [PROJECT_HANDOFF](PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](RESUME_ON_NEW_PC.md) antes de executar prompts antigos. Nenhuma próxima fase é autorizada por este backup.
+> Direção pós-migração do usuário: o próximo trabalho será a **preparação do motor de manifestação Rinkaku sem depender dos assets definitivos do Blender**, em sessão futura. G2B continua dependente de arte licenciada/revisada. Essa preparação não declara G3 concluído, não altera seus critérios de aceite e não é iniciada neste checkpoint.
 
-Revisão: **23/10/2026**. Fontes de decisão: [RESEARCH_INDEX](RESEARCH_INDEX.md), [DECISIONS](DECISIONS.md), [CONTENT_AUDIT](CONTENT_AUDIT.md), [ASSET_INVENTORY](ASSET_INVENTORY.md). O pacote original foi diagnosticado antes desta revisão; nenhuma aplicação foi implementada no G0.
+> Registro histórico do checkpoint de transferência de **23/10/2026, anterior ao G2A**: G0 e G1 entregues; G2A/G2B/G3/G4 ainda não iniciados naquele momento. A autorização específica de G1 antecipou camadas/isolar com proxies, sem integrar anatomia final. G2 foi dividido em **G2A: infraestrutura GLB** e **G2B: assets definitivos**. Consulte [PROJECT_HANDOFF](PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](RESUME_ON_NEW_PC.md) antes de executar prompts antigos. Nenhuma próxima fase é autorizada pelo checkpoint.
 
-Uma execução por gate/subgate, com decisão humana de prosseguir. **Esta execução termina em G0.** A visão de 90 segundos do North Star é a meta integrada do MVP, não promessa de entregar tudo em G1. Gates G1–G7 exigem código executável, checks, evidência de browser/captura e log; G0 é uma auditoria documental com comandos verificáveis.
+Revisão do planejamento G0: **23/10/2026**. Fontes de decisão: [RESEARCH_INDEX](RESEARCH_INDEX.md), [DECISIONS](DECISIONS.md), [CONTENT_AUDIT](CONTENT_AUDIT.md), [ASSET_INVENTORY](ASSET_INVENTORY.md). O pacote original foi diagnosticado antes desta revisão; nenhuma aplicação foi implementada no G0.
+
+Uma execução por gate/subgate, com decisão humana de prosseguir. **A execução original deste planejamento terminou em G0.** A visão de 90 segundos do North Star é a meta integrada do MVP, não promessa de entregar tudo em G1. Gates G1–G7 exigem código executável, checks, evidência de browser/captura e log; G0 é uma auditoria documental com comandos verificáveis.
 
 ## Sequência e dependências reais
 
@@ -16,6 +18,8 @@ G0 → G1 → G2 ─┬→ G3 ─┐
 ```
 
 G3 e G4 compartilham contrato de contexto e podem ser trabalhados em execuções separadas na ordem viável. Se rig final bloquear G3, seguir G2→G4 com bloqueio explícito; um demo procedural rotulado não encerra a dependência de arte final.
+
+A sequência acima é o planejamento original dos gates completos. A preparação do motor Rinkaku indicada após a migração pode usar a infraestrutura G2A e representação conceitual, antes da integração artística G2B; a dependência de arte final permanece no fechamento do produto.
 
 | Gate | Entrega | Pré-requisito de entrada | Evidência de saída |
 |---|---|---|---|

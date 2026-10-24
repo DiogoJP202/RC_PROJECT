@@ -1,0 +1,43 @@
+{
+  "volume": {
+    "FileSystem": "NTFS",
+    "Size": 510496714752,
+    "SizeRemaining": 41436463104
+  },
+  "git": "git version 2.55.0.windows.2",
+  "computer": {
+    "Manufacturer": "Positivo Tecnologia SA",
+    "Model": "R78512AI-15",
+    "TotalPhysicalMemory": 16540626944
+  },
+  "timezone": "America/Sao_Paulo",
+  "resolutions": [
+    "official npm 11.17.0 tarball extracted under <LOCALAPPDATA>/GhoulAtlas/tooling; SHA-512 verified; session PATH only",
+    "bundled Python 3.12.14 selected via ATLAS_PYTHON",
+    "npx.cmd playwright install chromium installed revision 1248 and companion browser dependencies"
+  ],
+  "initialIssues": [
+    "npm absent from PATH and common installation locations",
+    "python on PATH is Microsoft Store alias, no py launcher",
+    "Playwright expects revision 1248; initial cache contained revision 1228"
+  ],
+  "cpu": {
+    "Name": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16
+  },
+  "os": {
+    "Caption": "Microsoft Windows 11 Home",
+    "Version": "10.0.26200",
+    "BuildNumber": "26200",
+    "OSArchitecture": "64-bit"
+  },
+  "measuredAt": "2026-10-24T20:04:38.0306019Z",
+  "node": "v24.22.1",
+  "gpu": {
+    "Name": "AMD Radeon (TM) Graphics",
+    "DriverVersion": "31.0.21925.1001",
+    "AdapterRAM": 536870912
+  },
+  "globalSettingsChanged": false
+}

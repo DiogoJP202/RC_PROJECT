@@ -2,11 +2,13 @@
 
 Laboratório anatômico ficcional em PT-BR inspirado em *Tokyo Ghoul*, com interface original, seleção 3D real e evidências por afirmação. A base G1 agora recebe a **infraestrutura G2A**: registro GLB aprovado, instâncias/cache, bindings estáveis, rig/sockets e fallback para proxies. As seis estruturas continuam autorais provisórias, sempre `PROXY / CONCEPTUAL MODEL`; as duas fixtures GLB não são anatomia. Interação/apresentação P1; anatomia P0; nenhum P2 declarado. Micro/Comparar são estados informativos; kagune, circulação RC e fisiologia continuam pendentes. Resultados e limites em [G2A_ACCEPTANCE](docs/G2A_ACCEPTANCE.md).
 
-Para retomar, leia [AGENTS.md](AGENTS.md), [PROJECT_HANDOFF](docs/PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](docs/RESUME_ON_NEW_PC.md). O checkpoint GitHub G0/G1 é histórico; as alterações G2A desta execução são locais. **G2B depende de nova autorização e dos assets do artista.** Não há deploy decorrente desta tarefa.
+Para retomar, leia [AGENTS.md](AGENTS.md), [PROJECT_HANDOFF](docs/PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](docs/RESUME_ON_NEW_PC.md). A **baseline de código G2A validada em 24/10/2026** é [`0e53c1e31c366a05642501bef312d0fe5d5575b6`](https://github.com/DiogoJP202/RC_PROJECT/commit/0e53c1e31c366a05642501bef312d0fe5d5575b6). Antes das correções documentais, `git fetch` e `git ls-remote origin main` confirmaram `HEAD = origin/main = GitHub main` nesse SHA e a árvore limpa. A consolidação posterior de documentação/evidências não altera essa baseline de código; o HEAD de `main` deve ser conferido no Git. G0, G1 e G2A estão concluídos; **G2B/G3 permanecem pendentes**. Após este checkpoint, o próximo trabalho indicado pelo usuário é a preparação do motor de manifestação Rinkaku, sem depender dos assets definitivos do Blender, em sessão futura. A validação desta máquina e a consolidação estão no [log](docs/IMPLEMENTATION_LOG.md). Não há deploy decorrente desta tarefa.
 
 ## Instalação reproduzível
 
-Requisitos: Git; Node.js **22.12+ na linha 22 ou 24.x**; npm; Python **3.10+**. Ambiente testado: **Node 24.19.0, npm 11.17.0, Python 3.12.14**. `.nvmrc` registra o Node testado, se seu gerenciador a suportar. Use o `package-lock.json` versionado e `npm ci`; não atualize dependências durante a restauração.
+Requisitos: Git; Node.js **22.12+ na linha 22 ou 24.x**; npm; Python **3.10+**. Ambiente anterior testado: **Node 24.19.0, npm 11.17.0, Python 3.12.14**. Na retomada de 24/10/2026, **Node 24.22.1, npm 11.17.0 e Python 3.12.14** passaram nos checks, incluindo 85 unidades, 22 Python e 24 E2E; detalhes e ativação das ferramentas locais em [RESUME_ON_NEW_PC](docs/RESUME_ON_NEW_PC.md). `.nvmrc` preserva o Node da baseline. Use o `package-lock.json` versionado e `npm ci`; não atualize dependências durante a restauração.
+
+Nesta estação, a validação usou Node/Python internos do Codex e npm portátil que depende de Node no PATH. Isso comprova execução do projeto, mas não um ambiente independente do Codex. A configuração reproduzível recomendada usa Node/npm e Python próprios da estação e o Chromium correspondente ao Playwright fixado no lockfile; o [guia de retomada](docs/RESUME_ON_NEW_PC.md) distingue o diagnóstico atual dessa configuração recomendada.
 
 ```powershell
 git clone --branch main https://github.com/DiogoJP202/RC_PROJECT.git
@@ -84,15 +86,15 @@ O perfil aguarda 10 s e mede 30 s; grava relatório local e não certifica outro
 src/app/                 shell, boundary e tipos
 src/ui/                  índice, inspector, fontes, timeline, fallback e CSS
 src/state/               Zustand, contexto e relógio transiente
-src/scene/               proxies, AssetSlot, câmera, raycast e manifesto
+src/scene/               proxies, integração GLB, bindings, câmera e raycast
 src/content/             fetch e validação do catálogo
-src/visuals/assets/      adaptador GLB futuro, sem integração anatômica
+src/visuals/assets/      registro, preflight GLB, cache/leases e ownership
 public/                  catálogo, marca SVG e proveniência autoral
 contracts/               esquema v2, seed v1 e tokens iniciais
 tools/                   gate Python, regressões e seleção de runtime
 tests/e2e/               jornadas de navegador e perfil de produção
 docs/, research/, prompts/ especificações, duas pesquisas reais e gates
-artifacts/gates/         capturas G1 próprias versionadas
+artifacts/gates/         capturas G1/G2A próprias versionadas
 artifacts/checkpoint/    relatórios saneados e verificações do backup
 references/private/     referências de terceiros locais, excluídas do Git
 ```
@@ -126,4 +128,4 @@ Capturas próprias estão em `artifacts/gates/`. JSON/TXT originais locais foram
 
 No Windows, `python.exe` pode ser alias da Microsoft Store. Instale Python 3.10+ ou defina `ATLAS_PYTHON`; os scripts procuram `python`, `python3`, `py -3` e opcionalmente o runtime do Codex, sem exigir este último. Se a política bloquear `npm.ps1`/`npx.ps1`, use `npm.cmd`/`npx.cmd` sem mudar a política global. Portas 5173/4173 devem estar livres. Instale o Chromium correspondente para E2E; o fallback Chrome/cache do Windows pode variar e não garante WebGL sem GPU/driver funcional.
 
-Limites conhecidos: anatomia P0, revisão artística e mobile físico pendentes; aviso de chunk lazy da cena e `THREE.Clock` da dependência R3F. [Aceite G1](docs/G1_ACCEPTANCE.md), [aceite G2A](docs/G2A_ACCEPTANCE.md) e [log](docs/IMPLEMENTATION_LOG.md) distinguem medições e pendências. Não execute os prompts antigos automaticamente; G2B e G3 exigem nova autorização.
+Limites conhecidos: anatomia P0, revisão artística e mobile físico pendentes; aviso de chunk lazy da cena e `THREE.Clock` da dependência R3F. [Aceite G1](docs/G1_ACCEPTANCE.md), [aceite G2A](docs/G2A_ACCEPTANCE.md) e [log](docs/IMPLEMENTATION_LOG.md) distinguem medições e pendências. Não execute os prompts antigos automaticamente. Este checkpoint consolida ambiente e Git; a preparação do motor Rinkaku será uma sessão futura, e G2B continua dependente do pacote artístico licenciado/revisado.

@@ -1,5 +1,7 @@
 # G2A — Aceite técnico da infraestrutura de assets
 
+> Baseline de código G2A verificada em 24/10/2026: publicada em `main`, commit `0e53c1e31c366a05642501bef312d0fe5d5575b6`. Na retomada, `git fetch origin --prune`, `git rev-parse HEAD origin/main` e `git ls-remote --heads origin main` confirmaram o mesmo SHA. O checkpoint documental posterior preserva o código e acrescenta as evidências da migração. Os testes, capturas e perfis datados abaixo preservam a evidência da estação anterior; a revalidação e a consolidação estão no [log](IMPLEMENTATION_LOG.md).
+
 23/10/2026, America/Sao_Paulo. G1 aprovado como entrada; baseline Git preservada `d7195027dfb48ab25d040a6295676aacb847ce59`. Escopo entregue: infraestrutura GLB, fixtures sintéticas, substituição progressiva e refinamentos pontuais de interação/mobile. **G2B e G3 não foram implementados.** Nenhuma anatomia final foi produzida ou aprovada.
 
 Contrato operacional: [BLENDER_WEB_INTEGRATION](BLENDER_WEB_INTEGRATION.md). Histórico: [G1_ACCEPTANCE](G1_ACCEPTANCE.md) e [IMPLEMENTATION_LOG](IMPLEMENTATION_LOG.md). O aceite técnico abaixo não substitui revisão artística humana nem validação anatômica do artista/revisor.
@@ -85,4 +87,6 @@ G2B deve adicionar entradas aprovadas e representação correspondente, integrar
 
 Sem arquivo final, manter proxy e registrar blocker. Forma interna do kakuhou continua reconstrução; rig mais detalhado não estabelece histologia oficial. G3, manifestação rinkaku, RC/microcirculação e fórmulas fisiológicas permanecem fora deste aceite.
 
-Próximo prompt proposto: [G2B_ASSETS_DEFINITIVOS](../prompts/G2B_ASSETS_DEFINITIVOS.md), mediante nova autorização. O [contrato Blender → Web](BLENDER_WEB_INTEGRATION.md) é a referência para o artista em paralelo. As alterações G2A são locais sobre a baseline Git preservada; devem integrar o próximo checkpoint antes da transferência de computador.
+Próximo prompt proposto: [G2B_ASSETS_DEFINITIVOS](../prompts/G2B_ASSETS_DEFINITIVOS.md), mediante nova autorização. O [contrato Blender → Web](BLENDER_WEB_INTEGRATION.md) é a referência para o artista em paralelo. No encerramento original deste aceite, as alterações G2A ainda eram locais sobre a baseline Git preservada; sua publicação posterior foi confirmada no SHA da nota de estado atual. G2B e G3 continuam pendentes.
+
+Nota do checkpoint pós-migração: a proposta G2B acima é histórica. O usuário indicou como próximo trabalho a preparação do motor Rinkaku sem depender dos assets definitivos; isso não inicia nem conclui G3 nesta consolidação.

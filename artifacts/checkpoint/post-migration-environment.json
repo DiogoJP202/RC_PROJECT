@@ -1,0 +1,95 @@
+{
+  "measuredAt": "2026-10-24T20:35:38.694485Z",
+  "method": "Windows PowerShell -NoProfile -NonInteractive; process PATH replaced with persisted Machine + User PATH; no registry or global settings changed",
+  "commands": [
+    {
+      "name": "git",
+      "found": true,
+      "source": "C:\\Program Files\\Git\\cmd\\git.exe"
+    },
+    {
+      "name": "node",
+      "found": false,
+      "source": ""
+    },
+    {
+      "name": "npm",
+      "found": false,
+      "source": ""
+    },
+    {
+      "name": "npm.cmd",
+      "found": false,
+      "source": ""
+    },
+    {
+      "name": "npx",
+      "found": false,
+      "source": ""
+    },
+    {
+      "name": "python",
+      "found": true,
+      "source": "<USER_PROFILE>\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
+    },
+    {
+      "name": "python3",
+      "found": true,
+      "source": "<USER_PROFILE>\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe"
+    },
+    {
+      "name": "py",
+      "found": false,
+      "source": ""
+    },
+    {
+      "name": "nvm",
+      "found": false,
+      "source": ""
+    },
+    {
+      "name": "fnm",
+      "found": false,
+      "source": ""
+    },
+    {
+      "name": "volta",
+      "found": false,
+      "source": ""
+    },
+    {
+      "name": "uv",
+      "found": false,
+      "source": ""
+    }
+  ],
+  "probes": [
+    {
+      "output": "git version 2.55.0.windows.2\r\n",
+      "exitCode": 0,
+      "command": "git --version"
+    },
+    {
+      "output": "python.exe : Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut \r\nfrom Settings > Apps > Advanced app settings > App execution aliases.\r\nAt line:3 char:22\r\n+ $atlasPythonOutput = & python --version 2>&1; $atlasPythonExit = $LAS ...\r\n+                      ~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (Python was not ...cution aliases.:String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\n",
+      "exitCode": 9009,
+      "command": "python --version"
+    },
+    {
+      "output": "npm.cmd : 'node' is not recognized as an internal or external command,\r\nAt line:4 char:19\r\n+ ... NpmOutput = & \"$env:LOCALAPPDATA\\GhoulAtlas\\tooling\\npm-11.17.0\\npm.c ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: ('node' is not r...ternal command,:String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\noperable program or batch file.\r\n",
+      "exitCode": 1,
+      "command": "npm portable wrapper --version"
+    },
+    {
+      "output": "playwright.cmd : '\"node\"' is not recognized as an internal or external command,\r\nAt line:5 char:26\r\n+ ... ghtOutput = & '.\\node_modules\\.bin\\playwright.cmd' --version 2>&1; $a ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: ('\"node\"' is not...ternal command,:String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\noperable program or batch file.\r\n",
+      "exitCode": 1,
+      "command": "project playwright.cmd --version"
+    }
+  ],
+  "browser": {
+    "cliRequiresNode": true,
+    "version": "156.0.8078.4",
+    "cacheIndependentOfCodex": true
+  },
+  "independentEnvironmentReady": false,
+  "installationsOrGlobalSettingsChanged": false
+}

@@ -1,0 +1,813 @@
+{
+  "measuredAt": "2026-10-24T20:05:44.239Z",
+  "target": "http://127.0.0.1:4173",
+  "build": "production Vite preview; fresh browser context; HTTP cache disabled",
+  "assetProfile": {
+    "requestedAsset": "proxy",
+    "assetActivationMs": null,
+    "animated": false,
+    "transferScope": "Body initial transfer only."
+  },
+  "environment": {
+    "os": "win32 10.0.26200 x64",
+    "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+    "ramBytes": 16540626944,
+    "browser": "Chrome 156.0.8078.4",
+    "headless": true,
+    "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    }
+  },
+  "network": {
+    "method": "Chromium DevTools Protocol Network.emulateNetworkConditions",
+    "cdp": {
+      "offline": false,
+      "latency": 50,
+      "downloadThroughput": 2500000,
+      "uploadThroughput": 2500000,
+      "connectionType": "ethernet"
+    },
+    "nominalDownloadMbps": 20,
+    "nominalUploadMbps": 20,
+    "latencyNote": "latency=50ms is the CDP request latency setting; this does not certify a symmetric physical 50ms RTT.",
+    "transferredCdpBytes": 358594,
+    "transferredPerformanceBytes": 358241,
+    "responseEncodings": [
+      {
+        "url": "http://127.0.0.1:4173/",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": null,
+        "mimeType": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-BGGuc67C.css",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/css"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-DbFQCdKw.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "390",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "390",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4173/catalog.json",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/ObservatoryScene-B5cAWUa6.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      }
+    ],
+    "encodingNote": "Measured encoded transfer bytes include server compression and protocol overhead. GET response headers identify the actual content encoding; raw dist file sizes are a separate quantity."
+  },
+  "coldLoad": {
+    "interactiveMs": 1308.300000011921,
+    "navigationTransferBytes": 1031,
+    "resourceTransferBytes": 357210,
+    "encodedBodyBytes": 356141,
+    "resourceCount": 6,
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/assets/index-DbFQCdKw.js",
+        "transferBytes": 81729,
+        "encodedBodyBytes": 81429,
+        "durationMs": 101.2999999821186
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-BGGuc67C.css",
+        "transferBytes": 7649,
+        "encodedBodyBytes": 7349,
+        "durationMs": 70.40000000596046
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "transferBytes": 690,
+        "encodedBodyBytes": 390,
+        "durationMs": 61.29999998211861
+      },
+      {
+        "url": "http://127.0.0.1:4173/catalog.json",
+        "transferBytes": 5025,
+        "encodedBodyBytes": 4725,
+        "durationMs": 83.2000000178814
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "transferBytes": 690,
+        "encodedBodyBytes": 390,
+        "durationMs": 70.5
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/ObservatoryScene-B5cAWUa6.js",
+        "transferBytes": 261427,
+        "encodedBodyBytes": 261127,
+        "durationMs": 173.90000000596046
+      }
+    ]
+  },
+  "protocol": {
+    "warmupAfterInteractiveMs": 10000,
+    "requestedSamplingMs": 30000,
+    "fpsMethod": "Percentiles of reciprocal requestAnimationFrame intervals; same visible desktop page renders R3F every frame.",
+    "sceneSampleIntervalMs": 1000
+  },
+  "sample": {
+    "durationMs": 30015.30000001192,
+    "frames": 1800,
+    "fpsP50": 59.880239520968516,
+    "fpsP10": 58.8235294117647,
+    "fpsMin": 54.347826086952225,
+    "fpsMax": 66.22516556288838,
+    "startFrames": 604,
+    "endFrames": 2405,
+    "scene": {
+      "ready": true,
+      "selectedId": "human.surface",
+      "lastHit": null,
+      "layers": {
+        "surface": true,
+        "muscular": false,
+        "skeletal": false,
+        "internal": true
+      },
+      "assets": {
+        "requestedId": "proxy",
+        "activeId": "proxy",
+        "status": "proxy",
+        "bindings": [],
+        "nodes": [],
+        "bounds": null,
+        "sockets": [],
+        "animations": [],
+        "animation": {
+          "clip": "",
+          "time": 0,
+          "playing": false
+        },
+        "bones": [],
+        "cache": {
+          "loads": 0,
+          "hits": 0,
+          "disposed": 0,
+          "acquired": 0,
+          "released": 0,
+          "entries": 0,
+          "inFlight": 0,
+          "refCount": 0,
+          "assets": []
+        }
+      },
+      "visibleNodes": [
+        "HUMAN_SURFACE",
+        "HUMAN_HEAD",
+        "HUMAN_THORAX",
+        "KAKUHOU_RINKAKU"
+      ],
+      "nodes": [
+        {
+          "name": "HUMAN_SURFACE",
+          "anatomyId": "human.surface",
+          "visible": true,
+          "vertices": 101472,
+          "bounds": [
+            [
+              -0.39881572127342224,
+              0.019999997690320015,
+              -0.10774065554141998
+            ],
+            [
+              0.39881572127342224,
+              1.6200000047683716,
+              0.1810000091791153
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_HEAD",
+          "anatomyId": "human.head",
+          "visible": true,
+          "vertices": 28272,
+          "bounds": [
+            [
+              -0.08699999749660492,
+              1.5759999752044678,
+              -0.08445589989423752
+            ],
+            [
+              0.08699999749660492,
+              1.850000023841858,
+              0.09389623254537582
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_MUSCULAR",
+          "anatomyId": "human.muscular",
+          "visible": false,
+          "vertices": 110208,
+          "bounds": [
+            [
+              -0.35249319672584534,
+              0.13817860186100006,
+              -0.10999999940395355
+            ],
+            [
+              0.35249319672584534,
+              1.5107470750808716,
+              0.11800000071525574
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_SKELETAL",
+          "anatomyId": "human.skeletal",
+          "visible": false,
+          "vertices": 158088,
+          "bounds": [
+            [
+              -0.3664235472679138,
+              0.039000000804662704,
+              -0.07462053000926971
+            ],
+            [
+              0.3664235472679138,
+              1.8320000171661377,
+              0.15600000321865082
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_THORAX",
+          "anatomyId": "human.thorax",
+          "visible": true,
+          "vertices": 12264,
+          "bounds": [
+            [
+              -0.1334308236837387,
+              1.1996310949325562,
+              -0.050999999046325684
+            ],
+            [
+              0.1334308236837387,
+              1.4900007247924805,
+              0.08100000023841858
+            ]
+          ]
+        },
+        {
+          "name": "KAKUHOU_RINKAKU",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 15960,
+          "bounds": [
+            [
+              -0.10146593302488327,
+              0.917545735836029,
+              -0.1469999998807907
+            ],
+            [
+              0.10146593302488327,
+              1.034000039100647,
+              -0.07500000298023224
+            ]
+          ]
+        }
+      ],
+      "surfaceOpacity": 0.94,
+      "paused": false,
+      "reducedMotion": false,
+      "scanT": 0.022495833333574192,
+      "scanRevision": 0,
+      "camera": {
+        "position": [
+          1.1722353472476335,
+          0.9799999999999995,
+          4.019092619134743
+        ],
+        "target": [
+          0,
+          0.94,
+          0
+        ],
+        "moving": false
+      },
+      "bounds": {
+        "min": [
+          -0.39881572127342224,
+          0.019999997690320015,
+          -0.10774065554141998
+        ],
+        "max": [
+          0.39881572127342224,
+          1.850000023841858,
+          0.1810000091791153
+        ],
+        "projected": {
+          "top": 0.7172957400793538,
+          "bottom": -0.7262519503258207,
+          "left": -0.24276412271687084,
+          "right": 0.2282911240737073
+        },
+        "heightFraction": 0.7217738452025872
+      },
+      "metrics": {
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "frames": 2405,
+      "viewport": {
+        "width": 876,
+        "height": 656,
+        "dpr": 1
+      },
+      "modelStatus": "conceptual_proxy"
+    },
+    "renderSamples": [
+      {
+        "elapsedMs": 14.100000005961192,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 580,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 1014.4000000059605,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 580,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 2014.30000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 700,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 3014.100000005961,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 700,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 4013.9000000059605,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 820,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 5014.20000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 820,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 6014.20000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 940,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 7013.800000005962,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 940,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 8013.70000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1060,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 9013.70000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1060,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 10014.100000005961,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1179,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 11013.70000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1179,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 12014.100000005961,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1300,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 13013.90000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1300,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 14013.70000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1420,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 15013.600000005961,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1420,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 16013.40000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1540,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 17013.70000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1540,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 18013.40000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1660,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 19013.800000005962,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1660,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 20013.300000005962,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1780,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 21013.70000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1780,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 22013.600000005958,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 23013.300000005962,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 24013.200000005963,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 25013.600000005958,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 26013.100000005958,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 27013.700000005963,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 28013.50000000596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 29013.600000005958,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 30013.300000005962,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 21,
+        "triangles": 149898,
+        "geometries": 13,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      }
+    ],
+    "browserMemory": {
+      "usedJSHeapSize": 26815201,
+      "totalJSHeapSize": 35399657,
+      "jsHeapSizeLimit": 4395630592
+    },
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    },
+    "documentVisibility": "visible"
+  },
+  "memory": {
+    "before": {
+      "Timestamp": 149566.284396,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 8,
+      "Frames": 6,
+      "JSEventListeners": 369,
+      "LayoutObjects": 423,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 541,
+      "Resources": 6,
+      "ContextLifecycleStateObservers": 14,
+      "V8PerContextDatas": 4,
+      "WorkerGlobalScopes": 0,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 8,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 2,
+      "ArrayBufferContents": 475,
+      "LayoutCount": 46,
+      "RecalcStyleCount": 20,
+      "LayoutDuration": 0.119627,
+      "RecalcStyleDuration": 0.007387,
+      "DevToolsCommandDuration": 0.01213,
+      "ScriptDuration": 1.203558,
+      "V8CompileDuration": 0,
+      "TaskDuration": 1.627237,
+      "TaskOtherDuration": 0.284535,
+      "ThreadTime": 1.209422,
+      "ProcessTime": 2.074041,
+      "JSHeapUsedSize": 9977512,
+      "JSHeapTotalSize": 19206144,
+      "FirstMeaningfulPaint": 149555.485551,
+      "DomContentLoaded": 149555.161256,
+      "NavigationStart": 149554.953666
+    },
+    "after": {
+      "Timestamp": 149596.3115,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 8,
+      "Frames": 6,
+      "JSEventListeners": 609,
+      "LayoutObjects": 423,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 541,
+      "Resources": 6,
+      "ContextLifecycleStateObservers": 14,
+      "V8PerContextDatas": 4,
+      "WorkerGlobalScopes": 0,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 8,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 2,
+      "ArrayBufferContents": 475,
+      "LayoutCount": 167,
+      "RecalcStyleCount": 20,
+      "LayoutDuration": 0.147333,
+      "RecalcStyleDuration": 0.007387,
+      "DevToolsCommandDuration": 0.013879,
+      "ScriptDuration": 2.655796,
+      "V8CompileDuration": 0,
+      "TaskDuration": 3.825034,
+      "TaskOtherDuration": 1.000639,
+      "ThreadTime": 3.478539,
+      "ProcessTime": 5.818373,
+      "JSHeapUsedSize": 12770700,
+      "JSHeapTotalSize": 21041152,
+      "FirstMeaningfulPaint": 149555.485551,
+      "DomContentLoaded": 149555.161256,
+      "NavigationStart": 149554.953666
+    },
+    "note": "Chromium process/JS heap counters; geometries/textures separately from renderer.info. No estimate of GPU VRAM is claimed."
+  },
+  "budgets": {
+    "interactionUnder5s": true,
+    "fpsP50AtLeast50": true,
+    "fpsP10AtLeast30": true,
+    "drawsUnder150": true,
+    "measuredInitialPayloadUnder8MiB": true
+  },
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "failedRequests": [],
+    "httpErrors": []
+  },
+  "limitations": [
+    "Single desktop run on this workstation, no claim about other GPUs.",
+    "Mobile layout is emulated separately; no physical mobile FPS measured.",
+    "Production anatomy/rig fidelity remains blocked by missing final licensed assets."
+  ]
+}

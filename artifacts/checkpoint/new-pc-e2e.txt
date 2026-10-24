@@ -1,0 +1,35 @@
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test
+
+
+Running 24 tests using 1 worker
+
+(node:11756) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › tests\e2e\g2a-assets.spec.ts:62:1 › disk GLB loads asynchronously and replaces only its three stable anatomical bindings (2.5s)
+  ok  2 [chromium] › tests\e2e\g2a-assets.spec.ts:111:1 › a loaded mesh receives real pointer hits and keeps anatomical evidence identity (2.2s)
+  ok  3 [chromium] › tests\e2e\g2a-assets.spec.ts:130:1 › asset replacement preserves selection, layers, isolation, opacity and camera context (2.8s)
+  ok  4 [chromium] › tests\e2e\g2a-assets.spec.ts:160:1 › HTTP failure automatically shows available proxies and retry loads the real asset (2.1s)
+  ok  5 [chromium] › tests\e2e\g2a-assets.spec.ts:185:1 › a slow superseded asset cannot overwrite the later model or anatomical selection (2.3s)
+  ok  6 [chromium] › tests\e2e\g2a-assets.spec.ts:206:1 › repeated GLB swaps release leases and dispose unused templates without retained cache entries (2.6s)
+  ok  7 [chromium] › tests\e2e\g2a-assets.spec.ts:227:1 › rigged GLB exposes skin and clip, moves a bone-attached socket and respects reduced motion (2.6s)
+  ok  8 [chromium] › tests\e2e\g2a-assets.spec.ts:260:1 › G2A desktop capture preserves the observatory and labels the synthetic integration (4.1s)
+  ok  9 [chromium] › tests\e2e\g2a-assets.spec.ts:282:1 › mobile exploration remains touch accessible with GLB and produces a real capture (2.6s)
+  ok 10 [chromium] › tests\e2e\g2a-assets.spec.ts:307:1 › the mobile drawer supports touch, keyboard, native dismissal and explicit evidence reopening (3.0s)
+  ok 11 [chromium] › tests\e2e\observatory.spec.ts:46:1 › catalog loading is real and delays anatomy UI until data arrives (1.8s)
+  ok 12 [chromium] › tests\e2e\observatory.spec.ts:63:1 › 3D click raycasts an actual scene structure and synchronizes the inspector (1.9s)
+  ok 13 [chromium] › tests\e2e\observatory.spec.ts:83:1 › independent scene layers can be toggled and isolation restores the prior combination (1.7s)
+  ok 14 [chromium] › tests\e2e\observatory.spec.ts:105:1 › mouse orbit and wheel zoom change the real camera (1.6s)
+  ok 15 [chromium] › tests\e2e\observatory.spec.ts:124:1 › camera focus changes its actual pose and reset restores an overview (1.6s)
+  ok 16 [chromium] › tests\e2e\observatory.spec.ts:136:1 › opacity and scan controls affect the renderer; pausing and scrub are stable (2.7s)
+  ok 17 [chromium] › tests\e2e\observatory.spec.ts:163:1 › future modes preserve context and canon filter never hides the reconstruction disclosure (2.1s)
+  ok 18 [chromium] › tests\e2e\observatory.spec.ts:187:1 › keyboard alternatives work, range keys stay local and reduced motion pauses scan (1.7s)
+  ok 19 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?webgl=off preserves content and selection without WebGL (2.0s)
+  ok 20 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?asset=missing preserves content and selection without WebGL (1.9s)
+  ok 21 [chromium] › tests\e2e\observatory.spec.ts:231:1 › a lost real WebGL context opens an accessible fallback (1.5s)
+  ok 22 [chromium] › tests\e2e\observatory.spec.ts:245:1 › catalog errors have a visible recovery action (1.8s)
+  ok 23 [chromium] › tests\e2e\observatory.spec.ts:254:1 › desktop and silhouette gate captures include the real rendered scene (3.7s)
+  ok 24 [chromium] › tests\e2e\observatory.spec.ts:277:1 › touch-sized mobile remains usable without hover or horizontal overflow (2.0s)
+
+  24 passed (57.3s)

@@ -1,0 +1,126 @@
+{
+  "environment": {
+    "os": "win32 10.0.26200 x64",
+    "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+    "ramBytes": 16540626944,
+    "browser": "Chrome 156.0.8078.4",
+    "headless": true,
+    "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    }
+  },
+  "network": {
+    "method": "Chromium DevTools Protocol Network.emulateNetworkConditions",
+    "cdp": {
+      "offline": false,
+      "latency": 50,
+      "downloadThroughput": 2500000,
+      "uploadThroughput": 2500000,
+      "connectionType": "ethernet"
+    },
+    "nominalDownloadMbps": 20,
+    "nominalUploadMbps": 20,
+    "latencyNote": "latency=50ms is the CDP request latency setting; this does not certify a symmetric physical 50ms RTT.",
+    "transferredCdpBytes": 376722,
+    "transferredPerformanceBytes": 376324,
+    "responseEncodings": [
+      {
+        "url": "http://127.0.0.1:4173/?assets=lab",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": null,
+        "mimeType": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-BGGuc67C.css",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/css"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-DbFQCdKw.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "390",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "390",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4173/catalog.json",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/ObservatoryScene-B5cAWUa6.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fixtures/atlas-rigged-v1.glb",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "4532",
+        "mimeType": "model/gltf-binary"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/GLTFLoader-SmdEfMiW.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      }
+    ],
+    "encodingNote": "Measured encoded transfer bytes include server compression and protocol overhead. GET response headers identify the actual content encoding; raw dist file sizes are a separate quantity."
+  },
+  "interactiveMs": 1208.0999999940395,
+  "sampleMs": 30002.5,
+  "frames": 1800,
+  "fpsP50": 59.880239520968516,
+  "fpsP10": 58.8235294117647,
+  "renderer": {
+    "fpsP50": 60,
+    "fpsP10": 58,
+    "calls": 22,
+    "triangles": 102882,
+    "geometries": 15,
+    "textures": 4,
+    "samples": 1800,
+    "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "budgets": {
+    "interactionUnder5s": true,
+    "fpsP50AtLeast50": true,
+    "fpsP10AtLeast30": true,
+    "drawsUnder150": true,
+    "measuredInitialPayloadUnder8MiB": true
+  },
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "failedRequests": [],
+    "httpErrors": []
+  }
+}

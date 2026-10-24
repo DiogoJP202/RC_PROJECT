@@ -1,0 +1,110 @@
+{
+  "measuredAt": "2026-10-24T20:02:10.069Z",
+  "sourceSha": "0e53c1e31c366a05642501bef312d0fe5d5575b6",
+  "branch": "main",
+  "node": "v24.22.1",
+  "python": "3.12.14 bundled; ATLAS_PYTHON supplied for these commands",
+  "npm": "11.17.0 portable from official npm registry; SHA-512 verified",
+  "install": {
+    "command": "npm.cmd ci",
+    "exitCode": 0,
+    "addedPackages": 234,
+    "auditedPackages": 235,
+    "reportedVulnerabilities": 0,
+    "durationReported": "45s"
+  },
+  "checks": [
+    {
+      "command": "npm.cmd run typecheck",
+      "exitCode": 0,
+      "durationMs": 5979,
+      "stdout": "\n> ghoul-atlas@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+      "stderr": ""
+    },
+    {
+      "command": "npm.cmd run lint",
+      "exitCode": 0,
+      "durationMs": 7020,
+      "stdout": "\n> ghoul-atlas@0.1.0 lint\n> eslint .\n\n",
+      "stderr": ""
+    },
+    {
+      "command": "npm.cmd test",
+      "exitCode": 0,
+      "durationMs": 2094,
+      "stdout": "\n> ghoul-atlas@0.1.0 test\n> vitest run\n\n\n RUN  v5.0.5 <WORKSPACE>\n\n\n Test Files  7 passed (7)\n      Tests  85 passed (85)\n   Start at  17:01:58\n   Duration  993ms (import 39%, transform 31%, tests 27%, worker 2%)\n\n",
+      "stderr": ""
+    },
+    {
+      "command": "npm.cmd run test:catalog",
+      "exitCode": 0,
+      "durationMs": 1534,
+      "stdout": "\n> ghoul-atlas@0.1.0 test:catalog\n> node tools/python.mjs -m unittest discover -s tools -p test_validate_catalog.py\n\n",
+      "stderr": "......................\r\n----------------------------------------------------------------------\r\nRan 22 tests in 0.372s\r\n\r\nOK\r\n"
+    },
+    {
+      "command": "npm.cmd run validate:catalog",
+      "exitCode": 0,
+      "durationMs": 839,
+      "stdout": "\n> ghoul-atlas@0.1.0 validate:catalog\n> node tools/python.mjs tools/validate_catalog.py public/catalog.json\n\nCatalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.\r\n",
+      "stderr": ""
+    },
+    {
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "durationMs": 5654,
+      "stdout": "\n> ghoul-atlas@0.1.0 build\n> npm run validate:catalog && tsc -b && vite build\n\n\n> ghoul-atlas@0.1.0 validate:catalog\n> node tools/python.mjs tools/validate_catalog.py public/catalog.json\n\nCatalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.\r\nvite v8.3.5 building client environment for production...\ntransforming...\n✓ 600 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                             0.73 kB │ gzip:   0.45 kB\ndist/assets/index-BGGuc67C.css             30.48 kB │ gzip:   7.41 kB\ndist/assets/GLTFLoader-SmdEfMiW.js         43.81 kB │ gzip:  13.04 kB\ndist/assets/index-DbFQCdKw.js             260.76 kB │ gzip:  82.21 kB\ndist/assets/ObservatoryScene-B5cAWUa6.js  975.51 kB │ gzip: 263.33 kB\n\n✓ built in 529ms\n",
+      "stderr": "[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 900 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+    },
+    {
+      "command": "npm.cmd run test:e2e",
+      "exitCode": 0,
+      "target": "http://127.0.0.1:4173",
+      "durationMs": 58491,
+      "browser": "Chromium 156.0.8078.4 (Playwright revision 1248), full browser headless",
+      "stdout": "24 passed (57.3s); full output in new-pc-e2e.txt",
+      "stderr": "NO_COLOR ignored because FORCE_COLOR is set (runner warning)."
+    }
+  ],
+  "profiles": [
+    {
+      "file": "new-pc-production-proxy.json",
+      "exitCode": 0,
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "file": "new-pc-production-rigged.json",
+      "exitCode": 0,
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    }
+  ],
+  "completedAt": "2026-10-24T20:09:39.689Z"
+}

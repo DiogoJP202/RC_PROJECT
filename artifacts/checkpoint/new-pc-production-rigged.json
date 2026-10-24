@@ -1,0 +1,1000 @@
+{
+  "measuredAt": "2026-10-24T20:06:39.755Z",
+  "target": "http://127.0.0.1:4173/?assets=lab",
+  "build": "production Vite preview; fresh browser context; HTTP cache disabled",
+  "assetProfile": {
+    "requestedAsset": "fixture.rigged.v1",
+    "assetActivationMs": 322,
+    "animated": true,
+    "transferScope": "Body boot plus explicitly selected synthetic fixture and its lazy loader; not body-only initial transfer."
+  },
+  "environment": {
+    "os": "win32 10.0.26200 x64",
+    "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+    "ramBytes": 16540626944,
+    "browser": "Chrome 156.0.8078.4",
+    "headless": true,
+    "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    }
+  },
+  "network": {
+    "method": "Chromium DevTools Protocol Network.emulateNetworkConditions",
+    "cdp": {
+      "offline": false,
+      "latency": 50,
+      "downloadThroughput": 2500000,
+      "uploadThroughput": 2500000,
+      "connectionType": "ethernet"
+    },
+    "nominalDownloadMbps": 20,
+    "nominalUploadMbps": 20,
+    "latencyNote": "latency=50ms is the CDP request latency setting; this does not certify a symmetric physical 50ms RTT.",
+    "transferredCdpBytes": 376722,
+    "transferredPerformanceBytes": 376324,
+    "responseEncodings": [
+      {
+        "url": "http://127.0.0.1:4173/?assets=lab",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": null,
+        "mimeType": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-BGGuc67C.css",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/css"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-DbFQCdKw.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "390",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "390",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4173/catalog.json",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/ObservatoryScene-B5cAWUa6.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fixtures/atlas-rigged-v1.glb",
+        "status": 200,
+        "contentEncoding": "identity",
+        "contentLength": "4532",
+        "mimeType": "model/gltf-binary"
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/GLTFLoader-SmdEfMiW.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "contentLength": null,
+        "mimeType": "text/javascript"
+      }
+    ],
+    "encodingNote": "Measured encoded transfer bytes include server compression and protocol overhead. GET response headers identify the actual content encoding; raw dist file sizes are a separate quantity."
+  },
+  "coldLoad": {
+    "interactiveMs": 1208.0999999940395,
+    "navigationTransferBytes": 1031,
+    "resourceTransferBytes": 375293,
+    "encodedBodyBytes": 373624,
+    "resourceCount": 8,
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/assets/index-DbFQCdKw.js",
+        "transferBytes": 81729,
+        "encodedBodyBytes": 81429,
+        "durationMs": 104.09999999403954
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-BGGuc67C.css",
+        "transferBytes": 7649,
+        "encodedBodyBytes": 7349,
+        "durationMs": 72.7000000178814
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "transferBytes": 690,
+        "encodedBodyBytes": 390,
+        "durationMs": 81.2999999821186
+      },
+      {
+        "url": "http://127.0.0.1:4173/catalog.json",
+        "transferBytes": 5025,
+        "encodedBodyBytes": 4725,
+        "durationMs": 80
+      },
+      {
+        "url": "http://127.0.0.1:4173/atlas-mark.svg",
+        "transferBytes": 690,
+        "encodedBodyBytes": 390,
+        "durationMs": 79.19999998807907
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/ObservatoryScene-B5cAWUa6.js",
+        "transferBytes": 261427,
+        "encodedBodyBytes": 261127,
+        "durationMs": 175.59999999403954
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/fixtures/atlas-rigged-v1.glb",
+        "transferBytes": 4832,
+        "encodedBodyBytes": 4532,
+        "durationMs": 73.19999998807907
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/GLTFLoader-SmdEfMiW.js",
+        "transferBytes": 13251,
+        "encodedBodyBytes": 12951,
+        "durationMs": 74.30000001192093
+      }
+    ]
+  },
+  "protocol": {
+    "warmupAfterInteractiveMs": 10000,
+    "requestedSamplingMs": 30000,
+    "fpsMethod": "Percentiles of reciprocal requestAnimationFrame intervals; same visible desktop page renders R3F every frame.",
+    "sceneSampleIntervalMs": 1000
+  },
+  "sample": {
+    "durationMs": 30002.5,
+    "frames": 1800,
+    "fpsP50": 59.880239520968516,
+    "fpsP10": 58.8235294117647,
+    "fpsMin": 55.55555555555556,
+    "fpsMax": 65.78947368420738,
+    "startFrames": 604,
+    "endFrames": 2405,
+    "scene": {
+      "ready": true,
+      "selectedId": "human.surface",
+      "lastHit": null,
+      "layers": {
+        "surface": true,
+        "muscular": false,
+        "skeletal": false,
+        "internal": true
+      },
+      "assets": {
+        "requestedId": "fixture.rigged.v1",
+        "activeId": "fixture.rigged.v1",
+        "status": "ready",
+        "bindings": [
+          {
+            "anatomyId": "human.head",
+            "nodeNames": [
+              "CranialFacet"
+            ],
+            "meshCount": 1
+          },
+          {
+            "anatomyId": "human.thorax",
+            "nodeNames": [
+              "ChestAssembly"
+            ],
+            "meshCount": 2
+          },
+          {
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "nodeNames": [
+              "LumbarAssembly"
+            ],
+            "meshCount": 1
+          }
+        ],
+        "nodes": [
+          {
+            "name": "CranialFacet",
+            "type": "Mesh",
+            "anatomyId": "human.head",
+            "visible": true,
+            "worldPosition": [
+              0,
+              1.705,
+              0
+            ]
+          },
+          {
+            "name": "LeftFacet",
+            "type": "Mesh",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "worldPosition": [
+              -0.085,
+              1.3,
+              0
+            ]
+          },
+          {
+            "name": "RightFacet",
+            "type": "Mesh",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "worldPosition": [
+              0.085,
+              1.3,
+              0
+            ]
+          },
+          {
+            "name": "WeightedLumbarFacet",
+            "type": "SkinnedMesh",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "worldPosition": [
+              0,
+              0.976,
+              -0.112
+            ]
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.185,
+            0.9059999997019768,
+            -0.17199999865889548
+          ],
+          "max": [
+            0.185,
+            1.85,
+            0.12
+          ],
+          "size": [
+            0.37,
+            0.9440000002980233,
+            0.2919999986588955
+          ]
+        },
+        "sockets": [
+          {
+            "id": "lumbar",
+            "nodeName": "ConnectionSocket",
+            "worldPosition": [
+              0,
+              0.976,
+              -0.192
+            ]
+          },
+          {
+            "id": "rig-tip",
+            "nodeName": "RigConnectionSocket",
+            "worldPosition": [
+              0.03975909155941183,
+              1.0664747320025,
+              -0.192
+            ]
+          }
+        ],
+        "animations": [
+          {
+            "name": "fixture_sway",
+            "duration": 1
+          }
+        ],
+        "animation": {
+          "clip": "fixture_sway",
+          "time": 0.024800000011912723,
+          "playing": true
+        },
+        "bones": [
+          {
+            "name": "TestRootBone",
+            "worldPosition": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "TestTipBone",
+            "worldPosition": [
+              0,
+              1.0460000002980232,
+              -0.112
+            ],
+            "quaternion": [
+              0,
+              0,
+              0.00595196467539287,
+              0.9999822869105078
+            ]
+          }
+        ],
+        "cache": {
+          "loads": 1,
+          "hits": 0,
+          "disposed": 0,
+          "acquired": 1,
+          "released": 0,
+          "entries": 1,
+          "inFlight": 0,
+          "refCount": 1,
+          "assets": [
+            {
+              "assetId": "fixture.rigged.v1",
+              "refs": 1,
+              "status": "ready"
+            }
+          ]
+        }
+      },
+      "visibleNodes": [
+        "HUMAN_SURFACE",
+        "CranialFacet",
+        "LeftFacet",
+        "RightFacet",
+        "WeightedLumbarFacet"
+      ],
+      "nodes": [
+        {
+          "name": "HUMAN_SURFACE",
+          "anatomyId": "human.surface",
+          "visible": true,
+          "vertices": 101472,
+          "bounds": [
+            [
+              -0.39881572127342224,
+              0.019999997690320015,
+              -0.10774065554141998
+            ],
+            [
+              0.39881572127342224,
+              1.6200000047683716,
+              0.1810000091791153
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_MUSCULAR",
+          "anatomyId": "human.muscular",
+          "visible": false,
+          "vertices": 110208,
+          "bounds": [
+            [
+              -0.35249319672584534,
+              0.13817860186100006,
+              -0.10999999940395355
+            ],
+            [
+              0.35249319672584534,
+              1.5107470750808716,
+              0.11800000071525574
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_SKELETAL",
+          "anatomyId": "human.skeletal",
+          "visible": false,
+          "vertices": 158088,
+          "bounds": [
+            [
+              -0.3664235472679138,
+              0.039000000804662704,
+              -0.07462053000926971
+            ],
+            [
+              0.3664235472679138,
+              1.8320000171661377,
+              0.15600000321865082
+            ]
+          ]
+        },
+        {
+          "name": "CranialFacet",
+          "anatomyId": "human.head",
+          "visible": true,
+          "vertices": 6,
+          "bounds": [
+            [
+              -0.12,
+              1.56,
+              -0.12
+            ],
+            [
+              0.12,
+              1.85,
+              0.12
+            ]
+          ]
+        },
+        {
+          "name": "LeftFacet",
+          "anatomyId": "human.thorax",
+          "visible": true,
+          "vertices": 6,
+          "bounds": [
+            [
+              -0.185,
+              1.1,
+              -0.09
+            ],
+            [
+              0.015,
+              1.5,
+              0.09
+            ]
+          ]
+        },
+        {
+          "name": "RightFacet",
+          "anatomyId": "human.thorax",
+          "visible": true,
+          "vertices": 6,
+          "bounds": [
+            [
+              -0.015,
+              1.1,
+              -0.09
+            ],
+            [
+              0.185,
+              1.5,
+              0.09
+            ]
+          ]
+        },
+        {
+          "name": "WeightedLumbarFacet",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 8,
+          "bounds": [
+            [
+              -0.10000000149011612,
+              0.9059999997019768,
+              -0.17199999865889548
+            ],
+            [
+              0.10000000149011612,
+              1.0460000002980232,
+              -0.05200000134110451
+            ]
+          ]
+        }
+      ],
+      "surfaceOpacity": 0.94,
+      "paused": false,
+      "reducedMotion": false,
+      "scanT": 0.03571249999974428,
+      "scanRevision": 0,
+      "camera": {
+        "position": [
+          1.1595625341463016,
+          0.9749999988451602,
+          4.006142978805449
+        ],
+        "target": [
+          0,
+          0.93499999884516,
+          0.03050000458955765
+        ],
+        "moving": false
+      },
+      "bounds": {
+        "min": [
+          -0.39881572127342224,
+          0.019999997690320015,
+          -0.12
+        ],
+        "max": [
+          0.39881572127342224,
+          1.85,
+          0.1810000091791153
+        ],
+        "projected": {
+          "top": 0.7244485443491211,
+          "bottom": -0.7250709419988928,
+          "left": -0.18173791244380955,
+          "right": 0.1788749234203091
+        },
+        "heightFraction": 0.7247597431740069
+      },
+      "metrics": {
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "frames": 2405,
+      "viewport": {
+        "width": 876,
+        "height": 499,
+        "dpr": 1
+      },
+      "modelStatus": "conceptual_proxy"
+    },
+    "renderSamples": [
+      {
+        "elapsedMs": 0.6999999821182428,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 559,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 1000.6999999821182,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 559,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 2000.5999999821179,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 678,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 3000.7999999821186,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 678,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 4001.1999999821182,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 798,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 5001.099999982118,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 798,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 6000.499999982119,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 918,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 7000.899999982117,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 918,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 8000.999999982119,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1039,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 9000.799999982119,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1039,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 10000.799999982119,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1159,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 11000.899999982117,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1159,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 12000.299999982119,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1279,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 13000.49999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1279,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 14000.599999982118,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1399,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 15000.299999982119,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1399,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 16000.49999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1518,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 17000.599999982118,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1518,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 18000.399999982117,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1638,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 19016.69999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1638,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 20016.99999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1759,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 21016.599999982118,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1759,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 22000.59999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 23016.899999982117,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 24000.59999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 25016.399999982117,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 26000.399999982117,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 27000.09999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 28000.29999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 29000.09999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      {
+        "elapsedMs": 30000.09999998212,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 22,
+        "triangles": 102882,
+        "geometries": 15,
+        "textures": 4,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      }
+    ],
+    "browserMemory": {
+      "usedJSHeapSize": 30409175,
+      "totalJSHeapSize": 37235527,
+      "jsHeapSizeLimit": 4395630592
+    },
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    },
+    "documentVisibility": "visible"
+  },
+  "memory": {
+    "before": {
+      "Timestamp": 149621.814318,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 8,
+      "Frames": 6,
+      "JSEventListeners": 434,
+      "LayoutObjects": 457,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 620,
+      "Resources": 8,
+      "ContextLifecycleStateObservers": 16,
+      "V8PerContextDatas": 4,
+      "WorkerGlobalScopes": 0,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 8,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 2,
+      "ArrayBufferContents": 497,
+      "LayoutCount": 92,
+      "RecalcStyleCount": 41,
+      "LayoutDuration": 0.113143,
+      "RecalcStyleDuration": 0.011264,
+      "DevToolsCommandDuration": 0.026564,
+      "ScriptDuration": 1.464615,
+      "V8CompileDuration": 0,
+      "TaskDuration": 1.970676,
+      "TaskOtherDuration": 0.35509,
+      "ThreadTime": 1.468731,
+      "ProcessTime": 2.393084,
+      "JSHeapUsedSize": 13722860,
+      "JSHeapTotalSize": 20586496,
+      "FirstMeaningfulPaint": 149610.65023,
+      "DomContentLoaded": 149610.386738,
+      "NavigationStart": 149610.179072
+    },
+    "after": {
+      "Timestamp": 149651.828,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 8,
+      "Frames": 6,
+      "JSEventListeners": 794,
+      "LayoutObjects": 457,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 620,
+      "Resources": 8,
+      "ContextLifecycleStateObservers": 16,
+      "V8PerContextDatas": 4,
+      "WorkerGlobalScopes": 0,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 8,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 2,
+      "ArrayBufferContents": 497,
+      "LayoutCount": 333,
+      "RecalcStyleCount": 41,
+      "LayoutDuration": 0.170094,
+      "RecalcStyleDuration": 0.011264,
+      "DevToolsCommandDuration": 0.027273,
+      "ScriptDuration": 3.204345,
+      "V8CompileDuration": 0,
+      "TaskDuration": 4.62595,
+      "TaskOtherDuration": 1.212974,
+      "ThreadTime": 4.190092,
+      "ProcessTime": 6.639962,
+      "JSHeapUsedSize": 16525200,
+      "JSHeapTotalSize": 22945792,
+      "FirstMeaningfulPaint": 149610.65023,
+      "DomContentLoaded": 149610.386738,
+      "NavigationStart": 149610.179072
+    },
+    "note": "Chromium process/JS heap counters; geometries/textures separately from renderer.info. No estimate of GPU VRAM is claimed."
+  },
+  "budgets": {
+    "interactionUnder5s": true,
+    "fpsP50AtLeast50": true,
+    "fpsP10AtLeast30": true,
+    "drawsUnder150": true,
+    "measuredInitialPayloadUnder8MiB": true
+  },
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "failedRequests": [],
+    "httpErrors": []
+  },
+  "limitations": [
+    "Single desktop run on this workstation, no claim about other GPUs.",
+    "Mobile layout is emulated separately; no physical mobile FPS measured.",
+    "Production anatomy/rig fidelity remains blocked by missing final licensed assets."
+  ]
+}

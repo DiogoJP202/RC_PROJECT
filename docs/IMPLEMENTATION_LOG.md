@@ -1,5 +1,7 @@
 # GHOUL ATLAS — Registro de execução
 
+> Baseline de código G2A verificada na retomada de 24/10/2026: `main`, HEAD = origin/main = GitHub main = `0e53c1e31c366a05642501bef312d0fe5d5575b6` naquele momento. O checkpoint documental posterior consolida a migração sem alterar esse código; seu SHA final é conferido no Git após a publicação. As seções abaixo são registros históricos: frases como “sem app”, “não iniciado” e “alterações locais” valem para o momento de cada checkpoint. A retomada e a consolidação de 24/10 estão ao final, sem modificar os resultados anteriores.
+
 ## 2026-10-23 — G0: auditoria e preparação
 
 **Limite autorizado:** somente G0. Hipótese de partida: o pacote executivo e duas pesquisas podem fundamentar uma fatia vertical, mas rigor editorial e arte 3D precisam ser comprovados separadamente. Essa hipótese foi confrontada com filesystem, contratos, fontes externas e referências privadas. Não há aplicativo para declarar implementado ou visualmente aprovado.
@@ -259,3 +261,129 @@ Capturas G2A desktop/mobile normais, gaveta, GLB estático/articulado, rig em po
 Contrato final para o artista e proposta de próxima execução estão em BLENDER_WEB_INTEGRATION e `prompts/G2B_ASSETS_DEFINITIVOS.md`. G2A conclui a infraestrutura tecnicamente demonstrada com fixtures. A arte anatômica final, seus termos, revisão visual/anatômica, texturas/rig/morphs reais e celular físico permanecem dependências explícitas. Parada após G2A.
 
 Auditoria final em `artifacts/g2a/repository-audit.json`: 11 arquivos de dist, nove capturas próprias, dois GLBs reproduzidos com bytes/SHA idênticos; zero correspondências de payload/nome dos cinco materiais protegidos no build, zero candidatos a segredo/caminho pessoal ou caminho privado/gerado no conjunto de arquivos candidatos ao Git, zero links locais ausentes. Conferidos por diff os testes G1/loader legado, pesquisas, seed, catálogo v2, lockfile e capturas históricas: sem alterações. A análise por padrões não equivale a certificação universal de segurança. Baseline/main remota seguem d719502; alterações G2A permanecem locais para revisão e próximo checkpoint.
+
+## 2026-10-24 — Retomada e validação na nova máquina
+
+### Hipótese, escopo e identidade recuperada
+
+Hipótese: o clone publicado já contém G0/G1/G2A completos no seu escopo técnico; esta estação precisa de dependências e validação, sem reimplementar módulos. Confirmada por `git status --short --branch` inicialmente limpo, remote correto, `git fetch origin --prune`, `git fsck --full` sem erros e inspeção da árvore remota. `git merge-base --is-ancestor` confirmou a baseline G1 no histórico. `HEAD`, `origin/main` e `git ls-remote --heads origin main` coincidiram em **`0e53c1e31c366a05642501bef312d0fe5d5575b6`**, branch **main**; divergência `0 / 0`. A ref do GitHub foi consultada novamente no encerramento e continuou igual.
+
+Lidos integralmente AGENTS, README, PROJECT_HANDOFF, RESUME_ON_NEW_PC, G1_ACCEPTANCE, G2A_ACCEPTANCE, BLENDER_WEB_INTEGRATION, este log e 01_ROADMAP_AND_GATES. Inspeção direta e revisão paralela conferiram registro/preflight/importação/ownership/cache, leases/bindings, IntegratedAssets/AssetSlot, runtime/câmera, stores/relógios, bancada/gaveta mobile, fixtures/manifesto e testes. Há duas fixtures reais versionadas, não anatomia final escondida em cache. Nenhuma afirmação científica foi alterada ou promovida.
+
+### Ambiente e recuperação das ferramentas
+
+| Item | Estação anterior (histórico G2A) | Nova estação observada |
+|---|---|---|
+| Sistema | Windows 11 Pro x64, build 26200 | Windows 11 Home x64, 10.0.26200 |
+| Hardware | i5-1135G7, 16 GB, Intel Iris Xe | Positivo R78512AI-15; Ryzen 7 5825U, 8 cores/16 threads; 16 GB (16.540.626.944 B reportados) |
+| GPU/driver | Iris Xe via ANGLE D3D11 | AMD Radeon integrada, driver 31.0.21925.1001; ANGLE D3D11 confirmado no browser |
+| Git | Disponível no checkpoint | 2.55.0.windows.2 |
+| Node / npm / Python | 24.19.0 / 11.17.0 / 3.12.14 | 24.22.1 / 11.17.0 / 3.12.14 |
+| Browser de QA | Chrome 155.0.8059.86 headless | Chromium 156.0.8078.4, revisão Playwright 1248, browser completo headless |
+
+Problemas específicos encontrados: npm ausente do PATH e dos locais usuais; `python.exe` no PATH era alias Microsoft Store, sem launcher `py`; cache Playwright tinha revisão 1228, enquanto 1.64.1 exige 1248. Node 24.22.1 e Python 3.12.14 bundled do Codex já funcionavam. Não foi instalado outro Node/Python nem Blender.
+
+Para tornar os comandos existentes executáveis, o pacote oficial **npm 11.17.0** foi obtido em `registry.npmjs.org`, com SHA-512 conferido contra `dist.integrity`, e extraído em `<LOCALAPPDATA>/GhoulAtlas/tooling/npm-11.17.0`, com wrappers locais npm.cmd/npx.cmd. PATH foi ajustado somente no processo de execução. `npm.cmd ci` acrescentou **234 pacotes**, auditou **235** e reportou **zero vulnerabilidades**, em 45 s; lockfile e versões do projeto preservados. O aviso de nova major do npm não motivou atualização.
+
+Python foi apontado por `ATLAS_PYTHON` nos checks; o helper também encontrou **3.12.14 sem override**, confirmado por `node tools/python.mjs --version`. `npx.cmd playwright install chromium` instalou a revisão exigida e seus componentes auxiliares (headless shell/FFmpeg), necessidade do E2E já previsto. A instalação terminou com exit 0, conforme [saída](../artifacts/checkpoint/new-pc-browser-install.txt). E2E/perfis usaram `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` para o Chromium completo da mesma revisão, sem alterar a configuração do projeto. [Hardware e diagnóstico](../artifacts/checkpoint/new-pc-machine.json). O bloco de ativação em [RESUME_ON_NEW_PC](RESUME_ON_NEW_PC.md) foi executado em processo novo e retornou as três versões esperadas; não houve mudança global de PATH/política do PowerShell.
+
+### Checks e demonstração na nova estação
+
+| Comando | Resultado concreto |
+|---|---|
+| `npm.cmd ci` | exit 0; instalação pelo lockfile, 234 pacotes/235 auditados |
+| `npm.cmd run typecheck` | exit 0; TypeScript sem erro |
+| `npm.cmd run lint` | exit 0; sem erro ESLint |
+| `npm.cmd test` | exit 0; **85 testes, 7 arquivos** |
+| `npm.cmd run test:catalog` | exit 0; **22 testes Python** |
+| `npm.cmd run validate:catalog` | exit 0; `Catalog OK v2` |
+| `npm.cmd run build` | exit 0; catálogo + TypeScript + Vite |
+| `npm.cmd run test:e2e` | exit 0; **24/24, sem skipped**, 57,3 s no runner; `PLAYWRIGHT_BASE_URL=http://127.0.0.1:4173` |
+| Perfil proxy e perfil rigged/`--animate` | ambos exit 0; todos os budgets passaram |
+| Smoke HTTP no preview | `/`, `/catalog.json`, `/?assets=lab` e os dois GLBs retornaram **200**; binários 2.604/4.532 B |
+
+[Resumo dos checks](../artifacts/checkpoint/new-pc-validation.json), [stdout/stderr](../artifacts/checkpoint/new-pc-validation.txt), [E2E](../artifacts/checkpoint/new-pc-e2e.json) / [saída E2E](../artifacts/checkpoint/new-pc-e2e.txt) e [smoke HTTP](../artifacts/checkpoint/new-pc-http-smoke.json). Os checks independentes foram paralelizados; build ocorreu depois de typecheck para evitar escrita concorrente do compilador. Os E2E e os dois perfis foram executados em sequência. Nenhum teste foi removido, alterado ou enfraquecido.
+
+Bancada **`?assets=lab` confirmada**: carga assíncrona dos GLBs modular/articulado pelo registro aprovado, três bindings sobre proxies restantes, raycast real e identidade no inspector, camadas/isolar/foco/reset, HTTP 404→fallback→retry, cancelamento/race, descarte após trocas, deformação/clip/socket, pausa/scrub/reduced motion e controles mobile/teclado. Os 14 fluxos G1 e os 10 G2A passaram. A cena normal e o articulado/clipe também foram abertos no navegador integrado; o status GLB integrado e a pose 0,5 foram observados pela UI.
+
+As nove capturas E2E atuais foram abertas e inspecionadas: [desktop normal](../artifacts/gates/G2A-new-pc-desktop-default.png), [mobile normal](../artifacts/gates/G2A-new-pc-mobile-default.png), [gaveta mobile](../artifacts/gates/G2A-new-pc-mobile-drawer.png), [GLB modular](../artifacts/gates/G2A-new-pc-synthetic-static.png), [articulado](../artifacts/gates/G2A-new-pc-synthetic-rigged.png), [pose isolada](../artifacts/gates/G2A-new-pc-rig-pose.png), [seleção mobile](../artifacts/gates/G2A-new-pc-mobile-asset.png), [bancada desktop](../artifacts/gates/G2A-new-pc-desktop.png) e [bancada mobile](../artifacts/gates/G2A-new-pc-mobile.png). A cena normal mantém cabeça/pés e disclosure legíveis; a bancada mobile ocupa espaço adicional com rolagem. Fixtures angulares continuam explicitamente sem valor anatômico. As **17 imagens históricas G1/G2A** foram guardadas antes dos E2E e restauradas aos bytes anteriores; as novas usam `G2A-new-pc-*`, sem substituir o histórico.
+
+### Performance e diferenças observadas
+
+Protocolo igual ao script existente: build de produção/preview 4173, contexto novo/cache HTTP desativado, 1440×900/DPR 1, CDP 20 Mbps e `latency=50 ms` (sem certificar RTT físico), 10 s warm-up + 30 s de amostra. Browser integrado fechado antes das medições. Cada perfil produziu **1.800 intervalos**; renderer real AMD/ANGLE D3D11, sem SwiftShader nessa medição.
+
+| Métrica | Proxy anterior → novo | Articulado anterior → novo |
+|---|---:|---:|
+| FPS p50 / p10 | 59,88 / 59,52 → **59,88 / 58,82** | 59,88 / 59,52 → **59,88 / 58,82** |
+| Interação inicial Body | 1.879,6 → **1.308,3 ms** | 1.179,9 → **1.208,1 ms** |
+| Ativação adicional do GLB | não se aplica | 333 → **322 ms** |
+| Draw calls | 21 → **21** | 22 → **22** |
+| Transferência Performance API | 358.241 → **358.241 B** | 376.324 → **376.324 B**, boot + carga explícita |
+| Geometrias / texturas | 13 / 3 → **13 / 3** | 15 / 4 → **15 / 4** |
+
+[Perfil proxy atual](../artifacts/checkpoint/new-pc-production-proxy.json) e [articulado atual](../artifacts/checkpoint/new-pc-production-rigged.json) preservam medições completas, runtime e budgets. Ambos tiveram **zero erros JS, requests falhos e HTTP inesperados**; todos os budgets passaram. Os números antigos permanecem nos arquivos G2A originais. CPU/GPU/browser diferem e há somente uma execução de cada cenário; a variação de tempo não estabelece vantagem causal ou benchmark universal. Não se observou regressão funcional nesta estação.
+
+Permanecem warnings conhecidos: `THREE.Clock` no runtime e chunk lazy da cena **975,51 kB minificado / 263,33 kB gzip**, acima de 900 kB, além do aviso de ambiente FORCE_COLOR/NO_COLOR no runner. Nenhum limite foi aumentado nem dependência alterada para ocultá-los. Mobile físico, outros browsers e custo de arte definitiva continuam sem certificação; contadores não estimam VRAM nem provam ausência universal de vazamento.
+
+### Arquivos, checklist e encerramento
+
+Corrigidos **README.md**, **PROJECT_HANDOFF.md**, **RESUME_ON_NEW_PC.md**, **01_ROADMAP_AND_GATES.md**, **G1_ACCEPTANCE.md**, **G2A_ACCEPTANCE.md** e este log. Notas de estado atual substituem G2A “local/não iniciado”; os registros anteriores continuam datados e com suas contagens/métricas originais. O contrato Blender foi lido e continua válido, sem mudança necessária. Novas evidências ficam em `artifacts/checkpoint/new-pc-*` e `artifacts/gates/G2A-new-pc-*`. Código, testes, scripts, catálogo, fixtures, pesquisas, seed, lockfile, `.nvmrc` e AGENTS foram preservados.
+
+- [x] Clone/branch/remote/SHA íntegros e G2A publicado confirmados por Git, árvore remota e `fsck`.
+- [x] Nove documentos obrigatórios lidos e implementação confrontada com aceite/contrato.
+- [x] Ferramentas/dependências disponíveis e ativação local reproduzível documentada.
+- [x] Sete comandos de aceite com exit 0 e saídas próprias da nova máquina.
+- [x] Cena normal, bancada, falhas, rig, mobile e teclado demonstrados por E2E/browser/capturas.
+- [x] Hardware e perfis atuais registrados, separados dos resultados históricos.
+- [x] Documentação reconciliada; capturas históricas preservadas; integridade conferida em [auditoria final](../artifacts/checkpoint/new-pc-audit.json).
+- [ ] G2B: aguarda pacote Blender/GLB definitivo, licença por recurso e revisão de arte/anatomia, além de nova autorização.
+- [ ] G3: não iniciado; depende do contrato/rig e autorização posteriores.
+
+**Implementado:** recuperação das ferramentas e correções documentais, sem funcionalidade nova. **Demonstrado:** G0/G1/G2A publicados recuperados e operacionais nesta estação, com bancada GLB funcional. **Pendente:** arte/revisão G2B, G3 e mobile físico. **Testado:** todos os comandos, 85 unidades, 22 Python, catálogo, build, 24 E2E, smoke e dois perfis aprovados. Próxima fase recomendada: preparar/receber o pacote do artista para G2B, sem iniciá-la nesta sessão.
+
+O código continua sincronizado com o SHA remoto citado; **as correções documentais e evidências desta retomada são locais, sem commit/push/deploy**. Isso distingue sincronização do código validado de publicação das novas notas. Não houve G2B/G3, nova aquisição de anatomia ou alteração de versões do projeto.
+
+## 2026-10-24 — Checkpoint pós-migração: documentação, ambiente e Git
+
+### Autorização, hipótese e escopo
+
+O usuário solicitou exclusivamente consolidar o ambiente/Git e **autorizou commit e push em origin/main**, sem operações destrutivas ou force push. Hipótese: as sete correções documentais e 21 evidências locais da retomada podem ser publicadas sem alterar a implementação validada. Estado inicial: `main` em `0e53c1e31c366a05642501bef312d0fe5d5575b6`, igual a origin/main após fetch; sete documentos modificados, 12 relatórios `new-pc-*` e nove PNG novos; nenhum commit local à frente/atrás.
+
+Revisados README, PROJECT_HANDOFF, RESUME_ON_NEW_PC, roadmap, aceites G1/G2A e este log. Permanecem **G0/G1/G2A concluídos no escopo registrado**, **G2B/G3 pendentes**. A instrução atual do usuário substitui a recomendação anterior de começar por G2B: o próximo trabalho será **preparar o motor Rinkaku sem depender dos assets definitivos do Blender**, em outra execução. Não foi criada implementação ou preparação desse motor neste checkpoint. Critérios completos de G3 e dependências artísticas de G2B continuam preservados.
+
+Os trechos acima que dizem “alterações locais/sem push” e a limitação equivalente em `new-pc-audit.json` descrevem o encerramento da retomada **antes desta consolidação**. Os SHA/contagens/perfis anteriores não foram reescritos para aparentar uma nova medição. `0e53c1e` identifica o código testado; um HEAD documental posterior não significa nova implementação G2A.
+
+### Independência do ambiente: verificação e recomendação
+
+Diagnóstico repetido em Windows PowerShell `-NoProfile -NonInteractive`, com PATH de processo reconstruído somente dos valores persistidos Machine/User. Git independente funciona; **Node/npm/npx não são descobertos**, `python`/`python3` são aliases Store sem runtime e `py` está ausente. O wrapper npm portátil e a CLI Playwright local falham sem Node. O Chromium revisão 1248 está em cache externo ao Codex; isso não torna a CLI independente. [Saída estruturada](../artifacts/checkpoint/post-migration-environment.json).
+
+Portanto, **a execução validada ainda depende dos runtimes internos do Codex para Node e Python**. npm 11.17.0 está fora do Codex, mas seu wrapper chama `node` pelo PATH. Nenhuma ferramenta foi instalada/atualizada e nenhuma configuração global foi alterada nesta consolidação. A primeira tentativa de executar o probe por `-File` encontrou a política local de scripts; ele foi executado como comando de console com `-Command`, sem mudar a política. O diagnóstico final está no JSON vinculado, com caminhos pessoais saneados.
+
+O [guia de retomada](RESUME_ON_NEW_PC.md) agora separa o workaround atual de uma configuração independente **recomendada, não executada**: Node 24.22.1 x64 em ZIP numa pasta do usuário, npm portátil 11.17.0 existente, Python independente com revisão fixada (proposta Windows 3.13.17) e Playwright 1.64.1 local do lockfile/browser correspondente. Inclui ativação por sessão, verificação dos executáveis e revalidação posterior. Node/Python/Playwright oficiais foram consultados para indicar a configuração, sem baixar instaladores. Os 22 testes Python existentes foram executados em **3.12.14**, não em 3.13.17. A independência completa continua uma pendência documentada, não um sucesso presumido.
+
+### Preservação, privacidade e validação do checkpoint
+
+Auditoria independente e revisão principal verificaram os candidatos ao commit. Código/configurações de execução, testes, scripts, catálogo, contratos, fixtures, `.nvmrc`, lockfile, AGENTS e pesquisas não mudaram. Os dois GLBs mantêm bytes/SHA do manifesto. As **17 capturas históricas** correspondem aos blobs Git da baseline; as **nove capturas novas** correspondem aos SHA da auditoria da retomada, são PNG válidos (cinco desktop 1440×900/quatro mobile 390×844), sem metadados textuais/EXIF e foram inspecionadas visualmente. Nenhuma captura ou relatório necessário foi removido/substituído.
+
+Os registros de teste são consistentes: **85 unidades/7 arquivos**, **22 Python**, catálogo/build/typecheck/lint e **24 E2E** com exit 0. Os dois perfis têm 1.800 amostras, cinco budgets aprovados e somente o warning conhecido THREE.Clock. Isso é conferência das evidências da retomada; **as suítes de aplicativo e os perfis não foram reexecutados nesta operação só documental**, pois a implementação não mudou. Não há nova alegação de browser/screenshot/FPS.
+
+O scan limitado aos arquivos candidatos verifica padrões comuns de segredo, credencial em URL, e-mail, caminho pessoal absoluto, caminhos privados/gerados e payload integral das pesquisas. Nenhum desses dados é necessário ao novo checkpoint. A revisão não certifica ausência universal de segredos nem substitui a proveniência autoral dos PNG. Os relatórios originais `new-pc-*` são preservados; os dois novos relatórios registram diagnóstico de ambiente e auditoria desta consolidação.
+
+A primeira conferência staged apontou somente um espaço final em `[plugin builtin:vite-reporter]` no TXT capturado. A cópia TXT teve esse espaço removido e os TXT novos foram normalizados de CRLF para LF, conforme `.gitattributes`, sem mudar comandos/valores/resultados. A string original do reporter permanece no campo `stderr` do build em `new-pc-validation.json`. Hashes antes/depois e a transformação constam da auditoria; nenhum relatório histórico já versionado ou PNG foi alterado.
+
+Arquivos consolidados: **README.md**, **docs/PROJECT_HANDOFF.md**, **docs/RESUME_ON_NEW_PC.md**, **docs/01_ROADMAP_AND_GATES.md**, **docs/G1_ACCEPTANCE.md**, **docs/G2A_ACCEPTANCE.md**, este log, os **12 JSON/TXT new-pc**, **nove PNG G2A-new-pc**, `post-migration-environment.json` e [post-migration-checkpoint.json](../artifacts/checkpoint/post-migration-checkpoint.json). Não há mudança de configuração executável, dependência ou ferramenta global necessária para este commit.
+
+Checklist da preparação:
+
+- [x] Remote/branch e ausência de divergência confirmados antes de stage; autorização de push explícita.
+- [x] Sete documentos revisados; histórico e identidade do código testado separados do checkpoint documental.
+- [x] Dependência de runtimes detectada e configuração independente recomendada, sem instalação global.
+- [x] Código/lockfile/pesquisas/fixtures e 17 PNG históricos preservados; nove PNG e 12 relatórios novos conferidos.
+- [x] Integridade dos resultados anteriores revisada; nenhuma suíte antiga declarada como recém-executada.
+- [x] Links, whitespace, conjunto candidato e scan de dados conferidos na [auditoria](../artifacts/checkpoint/post-migration-checkpoint.json), antes da publicação.
+- [ ] Disponibilizar e validar ferramentas independentes do Codex — recomendação pendente, fora deste checkpoint.
+- [ ] Preparação do motor Rinkaku — próximo trabalho indicado, não iniciado; G2B/G3 continuam pendentes.
+
+**Implementado:** consolidação documental e preservação das evidências. **Demonstrado:** Git independente; dependência atual de Node/Python internos; integridade do código G2A e seus resultados anteriores. **Pendente:** ambiente independente validado e próximo trabalho Rinkaku. **Testado nesta operação:** descoberta de ferramentas sem PATH do Codex e verificações documentais/de integridade; sem nova suíte funcional.
+
+O conjunto revisado segue para commit em `main` e push normal em `origin/main`. A entrega registra o SHA completo retornado pelo Git e confirma `HEAD = origin/main = ref do GitHub`, divergência zero e working tree limpa **após** executar a publicação; o SHA do próprio commit não é embutido neste arquivo para evitar autorreferência. Sem deploy, force push ou alteração de G2B/G3.
