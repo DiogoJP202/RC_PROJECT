@@ -1,0 +1,36 @@
+{
+  "captures": 42,
+  "repeatChecks": {
+    "sequence": [
+      0.7,
+      0.2,
+      0.7,
+      0.3,
+      0.7
+    ],
+    "samePositionHash": true,
+    "sameTips": true,
+    "sameRoots": true,
+    "sameCamera": true,
+    "samePngBytes": true
+  },
+  "mobileLayout": {
+    "viewport": 390,
+    "documentWidth": 390
+  },
+  "phasesSeen": [
+    "rest",
+    "activation",
+    "release",
+    "growth",
+    "fixation",
+    "active",
+    "retract"
+  ],
+  "playbackMs": 19013,
+  "errors": [],
+  "failedRequests": [],
+  "sourceFiles": 68,
+  "historicalImages": 58,
+  "changes": []
+}

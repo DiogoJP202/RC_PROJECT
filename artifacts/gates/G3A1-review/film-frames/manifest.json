@@ -1,0 +1,43 @@
+{
+  "source": "artifacts/gates/G3A1-review/playback-and-reverse.webm",
+  "sourceSha256": "5D9F508C8C81AB64B4ECBED60B2CDC5EEA9E40C1483AA8DC74BEA25E2D37DA3F",
+  "method": "Existing Playwright FFmpeg seek in actual recorded WebM, one PNG per declared video second. No interpolation or generated imagery. Seconds are positions in the video, not normalized timeline t.",
+  "script": "artifacts/gates/G3A1-review/extract-film.ps1",
+  "frames": [
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-6.png",
+      "videoSecond": 6,
+      "sha256": "B9DE84AEA390239E1C688B964C3B1B4BA9F49C77D6257356C67DC1BBDCB66AE5"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-18.png",
+      "videoSecond": 18,
+      "sha256": "A70796FAFFACBB6EBA1B1532C6DA333AA6EC61264AD461806F2472AC899FAB16"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-21.png",
+      "videoSecond": 21,
+      "sha256": "CAD716EF836E5D164F508826AADC314C06211542B4935F76057FB77582DA4CB6"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-27.png",
+      "videoSecond": 27,
+      "sha256": "27AD685EEC785D5EAFF4AE92166CEBAD0E02D4FDF7C76D2F003AA40417745A21"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-32.png",
+      "videoSecond": 32,
+      "sha256": "C0E30E45B35164C11B2CFBA4F5C919B329D0A9CE68374BA16F278AB753870132"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-40.png",
+      "videoSecond": 40,
+      "sha256": "073A5B8F8D8580CA1CBA99340B975B7E07B47215927782D978D89EF29B0993AD"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-50.png",
+      "videoSecond": 50,
+      "sha256": "A7A956E7FF0199B668C2C1E6491F94D1E8EC3BDA960CB2750C5CA8CA5EA1DBD7"
+    }
+  ]
+}

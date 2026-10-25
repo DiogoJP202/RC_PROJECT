@@ -1,0 +1,148 @@
+/**
+ * Fresh G3A.1 measurements, independent of the preserved G3A report/profiler.
+ * Build and preview:4173 before running this file. Optional --quality=low,
+ * --mobile, --output=artifacts/g3a1/production-standard.json.
+ */
+/* global window, document, requestAnimationFrame, innerWidth, innerHeight, devicePixelRatio */
+import { chromium } from '@playwright/test';
+import { mkdir, writeFile } from 'node:fs/promises';
+import { dirname } from 'node:path';
+import os from 'node:os';
+
+const quality = process.argv.includes('--quality=low') ? 'low' : 'standard';
+const mobile = process.argv.includes('--mobile');
+const output = process.argv.find((arg) => arg.startsWith('--output='))?.slice('--output='.length)
+  ?? `artifacts/g3a1/production-${mobile ? 'emulated-mobile-' : ''}${quality}.json`;
+const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173';
+const browser = await chromium.launch({
+  ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH } : {}),
+  headless: true, args: ['--enable-webgl', '--ignore-gpu-blocklist'],
+});
+const viewport = mobile ? { width: 390, height: 844 } : { width: 1440, height: 900 };
+const context = await browser.newContext({ viewport, deviceScaleFactor: 1, isMobile: mobile, hasTouch: mobile, reducedMotion: 'no-preference', serviceWorkers: 'block' });
+const page = await context.newPage();
+const cdp = await context.newCDPSession(page);
+const errors = [], warnings = [], failedRequests = [], httpErrors = [], responseEncodings = [];
+const transferred = new Map();
+page.on('console', (message) => {
+  if (message.type() === 'error') errors.push(message.text());
+  if (message.type() === 'warning') warnings.push(message.text());
+});
+page.on('pageerror', (error) => errors.push(error.message));
+page.on('requestfailed', (request) => {
+  const failure = request.failure()?.errorText ?? '';
+  if (!failure.includes('ERR_ABORTED')) failedRequests.push({ url: request.url(), failure });
+});
+page.on('response', (response) => { if (response.status() >= 400) httpErrors.push({ url: response.url(), status: response.status() }); });
+await cdp.send('Network.enable');
+await cdp.send('Network.setCacheDisabled', { cacheDisabled: true });
+const throttle = { offline: false, latency: 50, downloadThroughput: 2_500_000, uploadThroughput: 2_500_000, connectionType: 'ethernet' };
+await cdp.send('Network.emulateNetworkConditions', throttle);
+await cdp.send('Performance.enable');
+cdp.on('Network.loadingFinished', ({ requestId, encodedDataLength }) => transferred.set(requestId, encodedDataLength));
+cdp.on('Network.responseReceived', ({ response }) => {
+  const headers = Object.fromEntries(Object.entries(response.headers).map(([key, value]) => [key.toLowerCase(), value]));
+  responseEncodings.push({ url: response.url, status: response.status, contentEncoding: headers['content-encoding'] ?? 'identity', mimeType: response.mimeType });
+});
+
+try {
+  await page.goto(url, { waitUntil: 'load' });
+  await page.waitForFunction(() => performance.getEntriesByName('atlas-interactive').length > 0, undefined, { timeout: 30_000 });
+  const coldLoad = await page.evaluate(() => {
+    const navigation = performance.getEntriesByType('navigation')[0];
+    const resources = performance.getEntriesByType('resource');
+    return {
+      interactiveMs: performance.getEntriesByName('atlas-interactive')[0].startTime,
+      transferBytes: navigation.transferSize + resources.reduce((sum, entry) => sum + entry.transferSize, 0),
+      encodedBodyBytes: navigation.encodedBodySize + resources.reduce((sum, entry) => sum + entry.encodedBodySize, 0),
+      resources: resources.map((entry) => ({ url: entry.name, transferBytes: entry.transferSize, encodedBodyBytes: entry.encodedBodySize, durationMs: entry.duration })),
+    };
+  });
+  const activationStart = Date.now();
+  await page.getByTestId('rinkaku-toggle').click();
+  await page.waitForFunction(() => Boolean(window.__ATLAS_SCENE__?.snapshot().rinkaku?.adapter));
+  const activationMs = Date.now() - activationStart;
+  await page.getByTestId('rinkaku-quality').selectOption(quality);
+  // Keep the body selection and initial surface opacity (.94) of the original
+  // production protocol; visual comparisons use separate opacity=1 captures.
+  const manifestTransferBytes = await page.evaluate(() => performance.getEntriesByType('navigation')[0].transferSize
+    + performance.getEntriesByType('resource').reduce((sum, entry) => sum + entry.transferSize, 0));
+  if (mobile) await page.getByTestId('stage').scrollIntoViewIfNeeded();
+  await page.getByTestId('rinkaku-reset').click();
+  await page.getByTestId('rinkaku-play').click();
+  if (mobile) await page.getByTestId('stage').scrollIntoViewIfNeeded();
+  await page.waitForTimeout(10_000);
+  const beforeMemory = await cdp.send('Performance.getMetrics');
+  const sampled = await page.evaluate(async () => {
+    const start = performance.now();
+    const initial = window.__ATLAS_SCENE__.snapshot();
+    const durations = [], renderSamples = [], phases = new Set();
+    let previous = start, nextMetricAt = 0, nextControlAt = 0, replayCount = 0;
+    await new Promise((resolve) => {
+      const frame = (now) => {
+        if (previous !== start) durations.push(now - previous);
+        previous = now;
+        if (now - start >= nextControlAt) {
+          const state = window.__ATLAS_SCENE__.snapshot();
+          phases.add(state.rinkaku.snapshot.phase);
+          if (state.rinkaku.t >= 1 && !state.rinkaku.playing) {
+            document.querySelector('[data-testid="rinkaku-reset"]').click();
+            document.querySelector('[data-testid="rinkaku-play"]').click();
+            replayCount++;
+          }
+          if (now - start >= nextMetricAt) {
+            renderSamples.push({ elapsedMs: now - start, phase: state.rinkaku.snapshot.phase, t: state.rinkaku.t, ...state.metrics, adapter: state.rinkaku.adapter });
+            nextMetricAt += 1_000;
+          }
+          nextControlAt += 500;
+        }
+        if (now - start < 30_000) requestAnimationFrame(frame);
+        else resolve();
+      };
+      requestAnimationFrame(frame);
+    });
+    const fps = durations.map((duration) => 1_000 / duration).sort((a, b) => a - b);
+    return {
+      durationMs: performance.now() - start, frames: durations.length,
+      fpsP50: fps[Math.floor(fps.length * .5)], fpsP10: fps[Math.floor(fps.length * .1)],
+      fpsMin: fps[0], fpsMax: fps.at(-1), phases: [...phases], replayCount,
+      initial, final: window.__ATLAS_SCENE__.snapshot(), renderSamples,
+      viewport: { width: innerWidth, height: innerHeight, dpr: devicePixelRatio },
+      documentVisibility: document.visibilityState,
+    };
+  });
+  const afterMemory = await cdp.send('Performance.getMetrics');
+  const metricMap = ({ metrics }) => Object.fromEntries(metrics.map(({ name, value }) => [name, value]));
+  const before = metricMap(beforeMemory), after = metricMap(afterMemory);
+  const calls = sampled.renderSamples.map((sample) => sample.calls).filter(Number.isFinite);
+  const triangles = sampled.renderSamples.map((sample) => sample.triangles).filter(Number.isFinite);
+  const range = (key) => {
+    const values = sampled.renderSamples.map((sample) => sample[key]).filter(Number.isFinite);
+    return { min: Math.min(...values), max: Math.max(...values) };
+  };
+  const result = {
+    measuredAt: new Date().toISOString(), gate: 'G3A.1', target: url, build: 'Production Vite preview; fresh context; HTTP cache disabled. Old G3A evidence retained separately.',
+    scenario: { quality, appendageCount: 4, seed: 17, particlesSetting: true, particlesRendered: quality === 'standard', mobileEmulation: mobile,
+      activationMs, activationAdditionalTransferBytes: manifestTransferBytes - coldLoad.transferBytes, bootPlusManifestTransferBytes: manifestTransferBytes,
+      sequence: 'Full 21 s cinematic transport, including 3.4 s retraction. Same normalized seven phase intervals and sampler motionTime as G3A. Restart through reset/play UI; 10 s warm-up then 30 s rAF sample.' },
+    environment: { os: `${os.platform()} ${os.release()} ${os.arch()}`, cpu: os.cpus()[0]?.model, ramBytes: os.totalmem(), browser: `Chromium ${browser.version()}`, headless: true, renderer: sampled.final.metrics?.renderer, viewport: sampled.viewport },
+    network: { method: 'Chromium DevTools Protocol', cdp: throttle, nominalDownloadMbps: 20, latencyNote: 'latency=50 ms is a CDP request setting, not measured symmetric physical RTT.', transferredCdpBytes: [...transferred.values()].reduce((sum, bytes) => sum + bytes, 0), transferredPerformanceBytes: coldLoad.transferBytes, transferScope: 'Initial Performance bytes are Body boot; lazy manifestation and combined transfer are separate scenario fields.', responseEncodings },
+    coldLoad, protocol: { warmupMs: 10_000, requestedSamplingMs: 30_000, playbackDurationSeconds: 21, retractionDurationSeconds: 3.4,
+      fpsMethod: 'Percentiles of reciprocal visible requestAnimationFrame intervals.', metricIntervalMs: 1_000, diagnosticReadIntervalMs: 500,
+      comparison: 'G3A used a linear 18 s cycle. Hardware/viewport/network/warm-up/sample remain the same for desktop; pose residence time differs intentionally. These values must not be presented as identical motion workloads.' },
+    sample: sampled, observables: { maxDrawCalls: Math.max(...calls), maxTriangles: Math.max(...triangles), geometryRange: range('geometries'), textureRange: range('textures'),
+      adapterResourceIdsStable: sampled.renderSamples.every((sample) => JSON.stringify(sample.adapter?.resourceIds) === JSON.stringify(sampled.initial.rinkaku.adapter?.resourceIds)) },
+    memory: { before, after, jsHeapUsedDeltaBytes: after.JSHeapUsedSize - before.JSHeapUsedSize, note: 'Heap can vary with GC. JS/process and renderer counters do not estimate GPU VRAM or prove universal leak absence.' },
+    budgets: { interactionUnder5s: coldLoad.interactiveMs <= 5_000, fpsP50AtLeast50: sampled.fpsP50 >= 50, fpsP10AtLeast30: sampled.fpsP10 >= 30,
+      drawsUnder150: Math.max(...calls) < 150, measuredInitialPayloadUnder8MiB: coldLoad.transferBytes <= 8 * 1024 * 1024, bodyPlusManifestUnder8MiB: manifestTransferBytes <= 8 * 1024 * 1024,
+      allSevenPhasesSampled: sampled.phases.length === 7 },
+    runtime: { errors, warnings: [...new Set(warnings)], failedRequests, httpErrors },
+    limitations: ['Single run per declared profile on this workstation.', 'Emulated mobile on workstation GPU is not physical mobile FPS.', 'Renderer counters are not VRAM; variable GC affects heap deltas.', 'Procedural shapes and seven phases are artistic hypothetical_model, subject to final human visual approval.'],
+  };
+  await mkdir(dirname(output), { recursive: true });
+  await writeFile(output, `${JSON.stringify(result, null, 2)}\n`);
+  console.log(JSON.stringify({ output, environment: result.environment, scenario: result.scenario, interactiveMs: coldLoad.interactiveMs,
+    transferBytes: coldLoad.transferBytes, sampleMs: sampled.durationMs, frames: sampled.frames, fpsP50: sampled.fpsP50, fpsP10: sampled.fpsP10,
+    phases: sampled.phases, replayCount: sampled.replayCount, observables: result.observables, budgets: result.budgets, runtime: result.runtime }, null, 2));
+  if (errors.length || failedRequests.length || httpErrors.length || Object.values(result.budgets).some((pass) => !pass)) process.exitCode = 1;
+} finally { await browser.close(); }

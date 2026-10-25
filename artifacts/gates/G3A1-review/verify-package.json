@@ -1,0 +1,23 @@
+{
+  "compositionsVerified": 8,
+  "comparisonPairs": 29,
+  "brokenLocalLinks": [],
+  "revisitPngByteIdentical": true,
+  "e2e": {
+    "startTime": "2026-10-25T01:39:00.988Z",
+    "duration": 396771.164,
+    "expected": 40,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "freshProfilesVerified": 4,
+  "filmFramesVerified": 7,
+  "historicalFilesVerified": 146,
+  "sensitiveDataFindings": [],
+  "failures": [],
+  "limits": [
+    "Pattern scanning is not a universal secret detector.",
+    "Hashes and tests do not certify artistic approval."
+  ]
+}

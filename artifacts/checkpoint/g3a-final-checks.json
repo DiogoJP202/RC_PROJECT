@@ -1,0 +1,75 @@
+[
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "log": "artifacts/checkpoint/gates/G3A-final-typecheck.txt",
+    "tail": [
+      "",
+      "> ghoul-atlas@0.1.0 typecheck",
+      "> tsc -b --pretty false",
+      ""
+    ]
+  },
+  {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "log": "artifacts/checkpoint/gates/G3A-final-lint.txt",
+    "tail": [
+      "",
+      "> ghoul-atlas@0.1.0 lint",
+      "> eslint .",
+      ""
+    ]
+  },
+  {
+    "command": "npm run test",
+    "exitCode": 0,
+    "log": "artifacts/checkpoint/gates/G3A-final-test.txt",
+    "tail": [
+      "",
+      " Test Files  13 passed (13)",
+      "      Tests  139 passed (139)",
+      "   Start at  03:10:27",
+      "   Duration  3.64s (tests 68%, import 16%, transform 13%, worker 2%)",
+      ""
+    ]
+  },
+  {
+    "command": "npm run test:catalog",
+    "exitCode": 0,
+    "log": "artifacts/checkpoint/gates/G3A-final-test-catalog.txt",
+    "tail": [
+      "",
+      "......................",
+      "----------------------------------------------------------------------",
+      "Ran 22 tests in 0.201s",
+      "",
+      "OK"
+    ]
+  },
+  {
+    "command": "npm run validate:catalog",
+    "exitCode": 0,
+    "log": "artifacts/checkpoint/gates/G3A-final-validate-catalog.txt",
+    "tail": [
+      "",
+      "> ghoul-atlas@0.1.0 validate:catalog",
+      "> node tools/python.mjs tools/validate_catalog.py public/catalog.json",
+      "",
+      "Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais."
+    ]
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "log": "artifacts/checkpoint/gates/G3A-final-build.txt",
+    "tail": [
+      "dist/assets/GLTFLoader-R2S4tB_9.js         43.89 kB │ gzip:  13.04 kB",
+      "dist/assets/index-z4l_4a6d.js             274.11 kB │ gzip:  86.18 kB",
+      "dist/assets/three.core-Dp-eO7LC.js        377.28 kB │ gzip: 100.66 kB",
+      "dist/assets/ObservatoryScene-CTISsmxB.js  605.84 kB │ gzip: 166.64 kB",
+      "",
+      "✓ built in 4.03s"
+    ]
+  }
+]

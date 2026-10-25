@@ -1,0 +1,81 @@
+[
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "evidence": "artifacts/g3a1/check-typecheck.txt",
+    "tail": [
+      "",
+      "> ghoul-atlas@0.1.0 typecheck",
+      "> tsc -b --pretty false",
+      ""
+    ]
+  },
+  {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "evidence": "artifacts/g3a1/check-lint.txt",
+    "tail": [
+      "",
+      "> ghoul-atlas@0.1.0 lint",
+      "> eslint .",
+      ""
+    ]
+  },
+  {
+    "command": "npm run test",
+    "exitCode": 0,
+    "evidence": "artifacts/g3a1/check-test.txt",
+    "tail": [
+      " RUN  v5.0.5 <workspace>",
+      "",
+      "",
+      " Test Files  12 passed (12)",
+      "      Tests  134 passed (134)",
+      "   Start at  22:38:34",
+      "   Duration  2.94s (tests 74%, import 16%, transform 6%, worker 3%)",
+      ""
+    ]
+  },
+  {
+    "command": "npm run test:catalog",
+    "exitCode": 0,
+    "evidence": "artifacts/g3a1/check-test-catalog.txt",
+    "tail": [
+      "> ghoul-atlas@0.1.0 test:catalog",
+      "> node tools/python.mjs -m unittest discover -s tools -p test_validate_catalog.py",
+      "",
+      "......................",
+      "----------------------------------------------------------------------",
+      "Ran 22 tests in 0.225s",
+      "",
+      "OK"
+    ]
+  },
+  {
+    "command": "npm run validate:catalog",
+    "exitCode": 0,
+    "evidence": "artifacts/g3a1/check-validate-catalog.txt",
+    "tail": [
+      "",
+      "> ghoul-atlas@0.1.0 validate:catalog",
+      "> node tools/python.mjs tools/validate_catalog.py public/catalog.json",
+      "",
+      "Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais."
+    ]
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "evidence": "artifacts/g3a1/check-build.txt",
+    "tail": [
+      "dist/assets/index-CYylM51m.css             38.26 kB │ gzip:   8.93 kB",
+      "dist/assets/RinkakuScene-an8NoLjH.js       13.29 kB │ gzip:   5.14 kB",
+      "dist/assets/GLTFLoader-lPnqtt5a.js         43.89 kB │ gzip:  13.04 kB",
+      "dist/assets/index-rhr7ynRh.js             274.11 kB │ gzip:  86.18 kB",
+      "dist/assets/three.core-Dp-eO7LC.js        377.28 kB │ gzip: 100.66 kB",
+      "dist/assets/ObservatoryScene-ibX4jUox.js  605.80 kB │ gzip: 166.63 kB",
+      "",
+      "✓ built in 4.65s"
+    ]
+  }
+]

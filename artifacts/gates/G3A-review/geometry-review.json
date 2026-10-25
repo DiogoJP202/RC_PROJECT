@@ -1,0 +1,84 @@
+{
+  "method": "Offline evaluation of the original pure sampler and procedural adapter in identity connection space; no new geometry algorithm and no edits to product.",
+  "epsilon": 0.000001,
+  "boundaries": [
+    {
+      "boundary": 0.08,
+      "beforeT": 0.079999,
+      "afterT": 0.080001,
+      "beforePhase": "rest",
+      "afterPhase": "activation",
+      "maxVertexDisplacementSceneUnits": 0,
+      "finite": true
+    },
+    {
+      "boundary": 0.2,
+      "beforeT": 0.199999,
+      "afterT": 0.200001,
+      "beforePhase": "activation",
+      "afterPhase": "release",
+      "maxVertexDisplacementSceneUnits": 1.2732925824820995e-11,
+      "finite": true
+    },
+    {
+      "boundary": 0.35,
+      "beforeT": 0.349999,
+      "afterT": 0.35000099999999995,
+      "beforePhase": "release",
+      "afterPhase": "growth",
+      "maxVertexDisplacementSceneUnits": 2.403912972498742e-8,
+      "finite": true
+    },
+    {
+      "boundary": 0.67,
+      "beforeT": 0.669999,
+      "afterT": 0.6700010000000001,
+      "beforePhase": "growth",
+      "afterPhase": "fixation",
+      "maxVertexDisplacementSceneUnits": 0.0000018668722824294359,
+      "finite": true
+    },
+    {
+      "boundary": 0.85,
+      "beforeT": 0.849999,
+      "afterT": 0.850001,
+      "beforePhase": "fixation",
+      "afterPhase": "active",
+      "maxVertexDisplacementSceneUnits": 0.0000010409503696306337,
+      "finite": true
+    },
+    {
+      "boundary": 0.95,
+      "beforeT": 0.9499989999999999,
+      "afterT": 0.950001,
+      "beforePhase": "active",
+      "afterPhase": "retract",
+      "maxVertexDisplacementSceneUnits": 0.0000015904502945096891,
+      "finite": true
+    }
+  ],
+  "sampleCount": 201,
+  "allPositionsFinite": true,
+  "maxRootCenterDriftSceneUnits": 0,
+  "revisit": {
+    "sequence": [
+      0.7,
+      0.2,
+      0.7,
+      0.3,
+      0.7
+    ],
+    "sameHash": true,
+    "maxVertexDisplacementSceneUnits": 0,
+    "finite": true
+  },
+  "ending": {
+    "maxVertexDisplacementSceneUnits": 4.239846675126535e-9,
+    "finite": true
+  },
+  "notes": [
+    "Scene units are illustrative and are not a physiological RC scale.",
+    "Position continuity and fixed root centres do not prove clean surface intersections, continuous skin topology, natural motion or human artistic approval.",
+    "The screenshots, actual playback and close-ups provide separate visual evidence."
+  ]
+}

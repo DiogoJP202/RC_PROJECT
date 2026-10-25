@@ -1,5 +1,11 @@
 # 01 — Roadmap revisado após a auditoria G0
 
+> **Checkpoint autorizado, 25/10/2026:** o usuário aprovou G3A/G3A.1 como **P1 técnico e visual com ressalvas** e autorizou consolidar/publicar o checkpoint em `main`. Arte final P2, anatomia final, G2B e G3B permanecem pendentes; não há autorização de deploy. O próximo trabalho planejado é **G4A: simulação de circulação e transporte visual RC**, ainda não implementado; G4 completo continua pendente. O SHA do novo checkpoint será conferido no Git após a publicação. As notas de desenvolvimento e aprovações pendentes abaixo registram os estados anteriores desta sequência.
+
+> **Atualização local G3A.1:** refinamento visual implementado e validado tecnicamente, mantendo o motor G3A e seus sete intervalos normalizados. Implantação lombar, identidade geométrica das fases, vista oblíqua e enquadramento móvel foram revisados; a aprovação artística permanece pendente da revisão humana. O transporte automático passa a 21 s, com 3,4 s de retração, por mapa monotônico e invertível separado do sampler, cuja referência de movimento secundário continua 18 s. Decisões em [G3A1_REFINEMENT](G3A1_REFINEMENT.md) e evidências no [pacote G3A.1](../artifacts/gates/G3A1-review/INDEX.md). Sem commit, push ou deploy; G2B/G3B/G4 e o fechamento artístico/anatômico de G3 continuam pendentes. Resultados novos estão no aceite G3A.1 e não substituem as notas históricas abaixo.
+
+> **Atualização G3A, 24/10/2026:** motor determinístico e representação procedural implementados localmente, sem dependência do Blender final. A autorização posterior ao checkpoint permitiu G3A; não autorizou G2B/G3B/G4 nem publicação. Consulte [G3A_ACCEPTANCE](G3A_ACCEPTANCE.md). O fechamento artístico/anatômico de G3 continua pendente. As notas seguintes registram os checkpoints anteriores, preservados como histórico.
+
 > Estado verificado em **24/10/2026**: a baseline de código G2A publicada e validada é [`0e53c1e31c366a05642501bef312d0fe5d5575b6`](https://github.com/DiogoJP202/RC_PROJECT/commit/0e53c1e31c366a05642501bef312d0fe5d5575b6), com infraestrutura e fixtures sintéticas, conforme [G2A_ACCEPTANCE](G2A_ACCEPTANCE.md). Antes das correções documentais, `main` local e remoto apontavam para esse SHA; o checkpoint de consolidação posterior não muda essa baseline de código. G0/G1/G2A estão concluídos e não serão refeitos; G2B/G3/G4 permanecem pendentes. A retomada foi validada e esta execução somente consolida ambiente/Git. O planejamento e checkpoint G0/G1 abaixo são preservados como histórico.
 
 > Direção pós-migração do usuário: o próximo trabalho será a **preparação do motor de manifestação Rinkaku sem depender dos assets definitivos do Blender**, em sessão futura. G2B continua dependente de arte licenciada/revisada. Essa preparação não declara G3 concluído, não altera seus critérios de aceite e não é iniciada neste checkpoint.
@@ -79,7 +85,25 @@ Vocabulário único: `rest / activation / release / growth / fixation / active /
 
 Aceite: sequências `.2→.7→.3→.7` reproduzem o mesmo `.7`; play/pause/reverse/scrub/reset não criam meshes duplicados nem valores não finitos. Dez ciclos completos sem erro de contexto e sem crescimento monotônico de geometrias/texturas após aquecimento. Câmera estável durante scrub; reduced motion usa etapas fixas. Capturas `G3-rest.png`, `G3-growth.png`, `G3-active.png` com t/seed registrados. Rig final ausente mantém **arte final pendente**, mesmo com engine demonstrada.
 
+### G3A — Motor independente da arte definitiva
+
+Subgate autorizado após a migração: `sampleRinkakuAt`, clock sem estado React por frame, adaptador procedural original, conexão lombar real da cena, sete fases contínuas e controles absolutos/reversíveis. Design e contrato futuro em [G3A_ENGINE_DESIGN](G3A_ENGINE_DESIGN.md) e [G3A_BLENDER_ANIMATION_CONTRACT](G3A_BLENDER_ANIMATION_CONTRACT.md). Critérios próprios em [G3A_ACCEPTANCE](G3A_ACCEPTANCE.md): revisão das cinco poses e mobile, sequência de crescimento, testes G1/G2A, dez ciclos automáticos completos, dez ciclos manuais separados e medição de produção.
+
+O subgate não exige GLB final, não implementa G2B/G3B/G4 e não promove o proxy a anatomia de produção. Capturas usam prefixo `G3A-` para preservar os checkpoints históricos.
+
+### G3A.1 — Refinamento P1 aprovado com ressalvas
+
+Escopo autorizado após a revisão visual G3A: revisar a implantação lombar e a distribuição das raízes para 1–4 apêndices, diferenciar as sete fases por geometria e comportamento, ampliar a cadência da retração e ajustar o enquadramento mobile. A vista oblíqua complementa posterior, lateral e foco lombar. Bindings, seleção, camadas, isolamento, órbita manual, movimento reduzido e restauração do observatório continuam requisitos; o contrato do futuro GLB não é substituído pela representação procedural.
+
+O transporte tem duração artística de **21 s**, dos quais **3,4 s** pertencem a `retract [.95,1]`. `playbackTimeAt(t)` e `rinkakuTAtPlaybackTime(seconds)` separam segundos de reprodução da pose absoluta; a desaceleração progride entre `.93` e `.95`. O sampler mantém os intervalos anteriores e `motionTime` derivado de `t × 18` e seed. Scrub arbitrário e reverso continuam avaliando a mesma pose, sem dependência de histórico.
+
+Validação exigida para esta revisão: suítes completas G0/G1/G2A/G3A, dez ciclos completos, benchmarks próprios, implantação com 1–4 apêndices, crescimento/retração em posterior/lateral/oblíqua e mobile em dois viewports. Comparações antes/depois devem usar a mesma câmera, configuração e valores de timeline, preservando as evidências anteriores. O relatório [G3A1_REFINEMENT](G3A1_REFINEMENT.md) e o [índice visual G3A.1](../artifacts/gates/G3A1-review/INDEX.md) registram a validação técnica e o parecer crítico. Em 25/10/2026, a revisão humana aprovou **P1 técnico e visual com ressalvas**; arte final P2 e anatomia final continuam pendentes. A autorização posterior permite consolidar/publicar o checkpoint em `main`; a restrição anterior de commit/push fica histórica, e deploy continua fora do escopo. G2B, G3B e G4 não foram implementados nesta execução.
+
 ## G4 — Corrente vascular e microcena
+
+### Próximo trabalho planejado — G4A
+
+Preparar a simulação de circulação e o transporte visual RC como subgate independente dos assets finais. Preservar contexto de seleção/câmera, arquitetura de instancing e a separação entre anatomia real e transporte ficcional hipotético. **G4A ainda não foi implementado; o checkpoint G3A/G3A.1 não inicia esse trabalho nem conclui G4.** O escopo e o aceite próprios precisam ser definidos na execução seguinte, sem transformar os critérios planejados abaixo em funcionalidades entregues.
 
 Entrada: G2, geradores/assets RBC/RC, texto de circulação humana e disclaimer do transporte RC. Carregamento de micro não ocorre na entrada Body.
 

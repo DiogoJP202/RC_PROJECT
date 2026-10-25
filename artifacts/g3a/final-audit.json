@@ -1,0 +1,324 @@
+{
+  "measuredAt": "2026-10-25T00:47:47.920Z",
+  "head": "84e6e1f36b8558d225ae4baf82a8f79ddb35c124",
+  "originMain": "84e6e1f36b8558d225ae4baf82a8f79ddb35c124",
+  "branch": "main",
+  "localOnly": true,
+  "protectedPaths": [
+    "package.json",
+    "package-lock.json",
+    "contracts",
+    "public/catalog.json",
+    "public/assets/fixtures",
+    "research",
+    "src/visuals/assets",
+    "tests/e2e/g2a-assets.spec.ts",
+    "tests/e2e/observatory.spec.ts"
+  ],
+  "protectedDiff": [],
+  "preservedHistoricalCaptures": [
+    {
+      "file": "artifacts/gates/G1-desktop.png",
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G1-focus.png",
+      "sha256": "0c9e913c221b5f2be550ef0dacb49d6ba60c174fe6f5b5b6c293b18d3bb036ed",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G1-mobile-full.png",
+      "sha256": "6c9774b8fb42fd5d001a9dc964c3482ff3a6d4850962c167adea627fd9d9491a",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G1-mobile-selection.png",
+      "sha256": "d51107d7671445f0aa90598b0c30e4d73e3a6018dd5025816c4c5dc514b2aaed",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G1-mobile.png",
+      "sha256": "a2ef4d4c7d51996c7eb2aedcdf33933648ffa42389b85245ad6152d682ea02e1",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G1-scan-20.png",
+      "sha256": "3b6a681bf6bbb47290686ccc1d5d5301db8d3e1052dc2028854d603ea5bcd975",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G1-scan-75.png",
+      "sha256": "3d539f2e04a5baf9b160c42ffc9ec7892b11602b1313ca58d9ad6962b8a0ee45",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G1-silhouette.png",
+      "sha256": "9178e8b7eade285e3b1200b06eedc87799471cdc4bebaa0ccebb5096b852c830",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-desktop-default.png",
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-desktop.png",
+      "sha256": "42a313658fddb1c2a27b596eff63a7c06c60abc4487c8dd65a4f95b8e23e08e0",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-mobile-asset.png",
+      "sha256": "58f2f465c9d4fc1a58079684e4bdf10770fdeb0967604daa3ef5bc1731d13025",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-mobile-default.png",
+      "sha256": "6c345cd422b08225d419c8c6e6e7e176aefc03fd6e049187db5d0a0908ddce87",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-mobile-drawer.png",
+      "sha256": "ca5c25d4d2508e3f2ca581b319a6a7dadb54ec8c5cf795d73b401411f4d839e0",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-mobile.png",
+      "sha256": "9462b26cc9f552b9f43a1792d4a2365f1a65556e2e77ee6f6f32c75e5f52accc",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-desktop-default.png",
+      "sha256": "03fd9a65c539c3b1125e635a7e844c578954812ee15aacff101aa702faf4d981",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-desktop.png",
+      "sha256": "7dd02aee3a497fc19d6b01b0ccf5775da04827e76efd7c5eb48c32d7e86c077b",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-mobile-asset.png",
+      "sha256": "591b608240d83ec57a2dfd8b127e7edcf1e018c4202e6c56ed5987f20498efcd",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-mobile-default.png",
+      "sha256": "b98f8f05989eb3e505c29ba6bff641a493e62a8559d7ac1ba5447342e52af8c8",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-mobile-drawer.png",
+      "sha256": "5a39251b0311e2d4c846dface2db909f6f5cb3c943dfdd12dff0f213e8768df3",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-mobile.png",
+      "sha256": "c33677f8966652bbea3f7aec757af3291acf0c6023fb6a6937da7ecce9562366",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-rig-pose.png",
+      "sha256": "bdeba3e5eccb73113e348227fd90f393393b299d3c7b6238a60b70031ab2d9ee",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-synthetic-rigged.png",
+      "sha256": "ef6bf0f044c106a8d831cb18cd392c145f21d64a0c60295fe03f235c71c5f990",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-synthetic-static.png",
+      "sha256": "daac2c5293ad92ce2f96fa9868c0d5649108a35afa769b09e320b3151b66aa8f",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-rig-pose.png",
+      "sha256": "374e1b07001495a4a8aee5ec93ad7ddc050bcd272031986f5066d49a8e4ee59a",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-synthetic-rigged.png",
+      "sha256": "8b080ab7071316f194c12078853a7667bacf9e1ec52b54acf34173a11c021375",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/gates/G2A-synthetic-static.png",
+      "sha256": "7d0ec04bd2fe397e4ed9fd35dbda978fab787452141696ea9dd8c1d6bf611475",
+      "unchanged": true
+    }
+  ],
+  "newRegressionCaptures": [
+    {
+      "file": "artifacts/gates/G3A-regression-G1-desktop.png",
+      "sha256": "591ad5d196e8972f002a5924e091bc3da44b295d490584b271b2035cfd740db0"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-focus.png",
+      "sha256": "c43b6549017e6e57b0056d52f811b135b0e5b86bffaa86f6120fef71335aea0a"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-mobile-full.png",
+      "sha256": "d5f0ab69aca68db4bb80adee8be7fb076e1409bcccf0b6c1b283bdaf2d587e84"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-mobile-selection.png",
+      "sha256": "bd33e2f620d5735e1a9605f22d6e70bd31ec3e9b57f7ed5ba585d91d0e15f9d3"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-mobile.png",
+      "sha256": "169f452c862cb1d60b06a569697cb8c94293a752bbeadbda955879070b55c79f"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-scan-20.png",
+      "sha256": "1776c914e6be7b5cc719dd90373471bf9ab9256e85b0f9a2092415f932a1adfb"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-scan-75.png",
+      "sha256": "fbb994e3f3deea74fe93b40fc97815dce4e090eeddec11f66a21dfb8b1715cdd"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-silhouette.png",
+      "sha256": "88960ab38e8c4a3b6a1d5d63b4e65d29fac525036afcf523bebcc3a21317aba4"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-desktop-default.png",
+      "sha256": "591ad5d196e8972f002a5924e091bc3da44b295d490584b271b2035cfd740db0"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-desktop.png",
+      "sha256": "7abdfd4717294217741a31de58dd2b72029bb9f61bb2d7cb8b28a6e85eef7cfb"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-mobile-asset.png",
+      "sha256": "591b608240d83ec57a2dfd8b127e7edcf1e018c4202e6c56ed5987f20498efcd"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-mobile-default.png",
+      "sha256": "169f452c862cb1d60b06a569697cb8c94293a752bbeadbda955879070b55c79f"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-mobile-drawer.png",
+      "sha256": "1128f14bf3ea1506dadf794ac693020f83ac50606bea798e49d6f183690f80a2"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-mobile.png",
+      "sha256": "dd90951ec977e8a3dde3f69e2814854abb58bb6a29d46899c2359bdf86993b8c"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-rig-pose.png",
+      "sha256": "df44d2fd5116b03ae02cc486609ab640f58232009698685e0f15440145b19c93"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-synthetic-rigged.png",
+      "sha256": "ba9ab6b5cbe80d6c4b199a0de08161503f9bbc8c038afca30b728ba54337af66"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-synthetic-static.png",
+      "sha256": "2c12ad1fab3fff5e3867f37ca0ca1541295a31a3422e32630888a8e8862f2ee9"
+    }
+  ],
+  "e2e": {
+    "startTime": "2026-10-25T00:39:01.524Z",
+    "duration": 309780.504,
+    "expected": 33,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "candidateFiles": [
+    ".gitignore",
+    "README.md",
+    "docs/01_ROADMAP_AND_GATES.md",
+    "docs/G1_ACCEPTANCE.md",
+    "docs/G2A_ACCEPTANCE.md",
+    "docs/IMPLEMENTATION_LOG.md",
+    "docs/PROJECT_HANDOFF.md",
+    "docs/RESUME_ON_NEW_PC.md",
+    "public/ASSET_LICENSES.md",
+    "src/app/App.tsx",
+    "src/app/types.ts",
+    "src/main.tsx",
+    "src/scene/ObservatoryScene.tsx",
+    "artifacts/g3a/build.txt",
+    "artifacts/g3a/e2e-initial.json",
+    "artifacts/g3a/e2e-initial.txt",
+    "artifacts/g3a/e2e.json",
+    "artifacts/g3a/e2e.txt",
+    "artifacts/g3a/environment.json",
+    "artifacts/g3a/lint.txt",
+    "artifacts/g3a/production-low.json",
+    "artifacts/g3a/production-low.txt",
+    "artifacts/g3a/production-standard.json",
+    "artifacts/g3a/production-standard.txt",
+    "artifacts/g3a/profile-exit-codes.json",
+    "artifacts/g3a/sequence/growth-t350.png",
+    "artifacts/g3a/sequence/growth-t400.png",
+    "artifacts/g3a/sequence/growth-t450.png",
+    "artifacts/g3a/sequence/growth-t500.png",
+    "artifacts/g3a/sequence/growth-t550.png",
+    "artifacts/g3a/sequence/growth-t600.png",
+    "artifacts/g3a/sequence/growth-t650.png",
+    "artifacts/g3a/sequence/growth-t700.png",
+    "artifacts/g3a/ten-cycles.json",
+    "artifacts/g3a/ten-playback-cycles.json",
+    "artifacts/g3a/test-catalog.txt",
+    "artifacts/g3a/test.txt",
+    "artifacts/g3a/typecheck.txt",
+    "artifacts/g3a/validate-catalog.txt",
+    "artifacts/g3a/validation.json",
+    "artifacts/g3a/visual-captures.json",
+    "artifacts/gates/G3A-activation.png",
+    "artifacts/gates/G3A-active.png",
+    "artifacts/gates/G3A-growth.png",
+    "artifacts/gates/G3A-mobile-controls.png",
+    "artifacts/gates/G3A-mobile.png",
+    "artifacts/gates/G3A-regression-G1-desktop.png",
+    "artifacts/gates/G3A-regression-G1-focus.png",
+    "artifacts/gates/G3A-regression-G1-mobile-full.png",
+    "artifacts/gates/G3A-regression-G1-mobile-selection.png",
+    "artifacts/gates/G3A-regression-G1-mobile.png",
+    "artifacts/gates/G3A-regression-G1-scan-20.png",
+    "artifacts/gates/G3A-regression-G1-scan-75.png",
+    "artifacts/gates/G3A-regression-G1-silhouette.png",
+    "artifacts/gates/G3A-regression-G2A-desktop-default.png",
+    "artifacts/gates/G3A-regression-G2A-desktop.png",
+    "artifacts/gates/G3A-regression-G2A-mobile-asset.png",
+    "artifacts/gates/G3A-regression-G2A-mobile-default.png",
+    "artifacts/gates/G3A-regression-G2A-mobile-drawer.png",
+    "artifacts/gates/G3A-regression-G2A-mobile.png",
+    "artifacts/gates/G3A-regression-G2A-rig-pose.png",
+    "artifacts/gates/G3A-regression-G2A-synthetic-rigged.png",
+    "artifacts/gates/G3A-regression-G2A-synthetic-static.png",
+    "artifacts/gates/G3A-rest.png",
+    "artifacts/gates/G3A-retract.png",
+    "docs/G3A_ACCEPTANCE.md",
+    "docs/G3A_BLENDER_ANIMATION_CONTRACT.md",
+    "docs/G3A_ENGINE_DESIGN.md",
+    "src/scene/rinkaku/ProceduralRinkakuAdapter.test.ts",
+    "src/scene/rinkaku/ProceduralRinkakuAdapter.ts",
+    "src/scene/rinkaku/RinkakuScene.tsx",
+    "src/scene/rinkaku/adapters.ts",
+    "src/scene/rinkaku/camera.test.ts",
+    "src/scene/rinkaku/camera.ts",
+    "src/scene/rinkaku/rinkakuRuntime.ts",
+    "src/simulation/rinkaku.test.ts",
+    "src/simulation/rinkaku.ts",
+    "src/state/rinkaku.test.ts",
+    "src/state/rinkaku.ts",
+    "src/ui/RinkakuControls.tsx",
+    "src/ui/rinkaku.css",
+    "tests/e2e/g3a-production-profile.js",
+    "tests/e2e/g3a-rinkaku.spec.ts"
+  ],
+  "sensitiveDataPatternFindings": [],
+  "evidenceSanitization": "Personal workspace/home paths replaced by <workspace>/<user>; original reports and prior capture copies retained in ignored artifacts/local/.",
+  "build": {
+    "fileCount": 13,
+    "forbiddenFiles": []
+  },
+  "notes": [
+    "No commit, push, deploy, dependency update or tool installation in G3A.",
+    "Pattern scan is a review aid, not a guarantee that arbitrary secrets cannot exist."
+  ]
+}

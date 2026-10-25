@@ -1,0 +1,1165 @@
+{
+  "createdAt": "2026-10-25T01:42:16.572Z",
+  "gate": "G3A.1",
+  "method": "Offline evaluation of the actual sampler and refined procedural adapter in identity connection space; CPU-side Three.js buffers, no WebGL/browser. All four allocated surfaces checked, including hidden branches. Default seed17/standard/particles enabled.",
+  "epsilon": 0.000001,
+  "samplesPerCount": 201,
+  "totalPoseSamples": 804,
+  "thresholds": {
+    "componentContinuityLimit": 0.00003,
+    "rootDriftLimit": 1e-9,
+    "normalUnitErrorLimit": 0.0001
+  },
+  "sourceHashes": {
+    "../../../src/scene/rinkaku/ProceduralRinkakuAdapter.ts": "393114e3be3c99ddc8c1bb48b3138f25d3bf277c47dff7bc996f48a7cb34a5f2",
+    "../../../src/simulation/rinkaku.ts": "d747ceb11ce2df64fc87da5c67a38ccdb8d62080eca7fb9d47c3f6a671c3473e"
+  },
+  "sourceChanges": [],
+  "counts": [
+    {
+      "appendageCount": 1,
+      "sampleCount": 201,
+      "rootsAtRest": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rootAtRest": [
+        0,
+        0,
+        0
+      ],
+      "allPositionsFinite": true,
+      "allNormalsFinite": true,
+      "allColorsFinite": true,
+      "allParticlesFinite": true,
+      "allVerticesInsideEnvelope": true,
+      "maxNormalUnitError": 5.0750749824857166e-8,
+      "maxRootCenterDriftSceneUnits": 0,
+      "maxConnectionRootDriftSceneUnits": 0,
+      "resourceIdentitiesStable": true,
+      "attributeBuffersStable": true,
+      "resources": {
+        "geometries": 5,
+        "materials": 2,
+        "textures": 0,
+        "allocatedVertices": 4168,
+        "allocatedParticles": 48
+      },
+      "resourceIds": {
+        "geometry": [
+          "1370b98d-0446-4b67-ae6d-203d8316821b",
+          "250b1f53-0750-4048-8cc4-3d7d94bce47f",
+          "1fb5497f-3c29-4bde-9a84-94cc3a71518f",
+          "af2a0adc-d9e2-4878-b4b2-919e9d6b7628",
+          "4c084cac-a7ec-4d62-ac8b-5f587a03df87"
+        ],
+        "material": [
+          "83f110e6-6ef3-4d7f-a71a-c5cdaf3436ea",
+          "6e9d4e90-4892-475e-84a5-9f6cb45bf0e8"
+        ]
+      },
+      "contactRingDiagnostics": {
+        "method": "Minimum distance of root XY centres minus conservative XY ring radii over 201 poses; circles include all sampled ring vertices. Positive clearance applies to these proximal sections only.",
+        "minimumFootprintClearanceSceneUnits": null,
+        "minimumNeckClearanceSceneUnits": null,
+        "singleAppendageHasNoPair": true,
+        "minimumFootprintLocalZ": 0.014999999664723873
+      },
+      "phaseObservations": {
+        "rest": {
+          "firstSampleT": 0,
+          "visible": false,
+          "visibleAppendages": 0
+        },
+        "activation": {
+          "firstSampleT": 0.08,
+          "visible": false,
+          "visibleAppendages": 0
+        },
+        "release": {
+          "firstSampleT": 0.2,
+          "visible": true,
+          "visibleAppendages": 0
+        },
+        "growth": {
+          "firstSampleT": 0.35,
+          "visible": true,
+          "visibleAppendages": 1
+        },
+        "fixation": {
+          "firstSampleT": 0.67,
+          "visible": true,
+          "visibleAppendages": 1
+        },
+        "active": {
+          "firstSampleT": 0.85,
+          "visible": true,
+          "visibleAppendages": 1
+        },
+        "retract": {
+          "firstSampleT": 0.95,
+          "visible": true,
+          "visibleAppendages": 1
+        }
+      },
+      "boundaries": [
+        {
+          "boundary": 0.08,
+          "beforeT": 0.079999,
+          "afterT": 0.080001,
+          "beforePhase": "rest",
+          "afterPhase": "activation",
+          "positions": {
+            "maximumComponentDifference": 1.1641532182693481e-10,
+            "maximumVectorDifference": 1.1641532182693481e-10,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 7.450580596923828e-8,
+            "maximumVectorDifference": 8.429369702178807e-8,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 0,
+            "maximumVectorDifference": 0,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.2,
+          "beforeT": 0.199999,
+          "afterT": 0.200001,
+          "beforePhase": "activation",
+          "afterPhase": "release",
+          "positions": {
+            "maximumComponentDifference": 6.705522537231445e-8,
+            "maximumVectorDifference": 7.158472705846889e-8,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.0003748474409803748,
+            "maximumVectorDifference": 0.00037718264263151885,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 2.9802322387695312e-8,
+            "maximumVectorDifference": 2.9802322387695312e-8,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.35,
+          "beforeT": 0.349999,
+          "afterT": 0.35000099999999995,
+          "beforePhase": "release",
+          "afterPhase": "growth",
+          "positions": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.5472292644750466e-8,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.0010053813457489014,
+            "maximumVectorDifference": 0.00143753654016149,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.4901161193847656e-8,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.67,
+          "beforeT": 0.669999,
+          "afterT": 0.6700010000000001,
+          "beforePhase": "growth",
+          "afterPhase": "fixation",
+          "positions": {
+            "maximumComponentDifference": 0.0000016093254089355469,
+            "maximumVectorDifference": 0.0000018000207985092997,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.004454106092453003,
+            "maximumVectorDifference": 0.006013542927177976,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.862645149230957e-9,
+            "maximumVectorDifference": 1.862645149230957e-9,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.85,
+          "beforeT": 0.849999,
+          "afterT": 0.850001,
+          "beforePhase": "fixation",
+          "afterPhase": "active",
+          "positions": {
+            "maximumComponentDifference": 8.344650268554688e-7,
+            "maximumVectorDifference": 0.0000010409503696306337,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.003405630588531494,
+            "maximumVectorDifference": 0.00400493350424043,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 0,
+            "maximumVectorDifference": 0,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.95,
+          "beforeT": 0.9499989999999999,
+          "afterT": 0.950001,
+          "beforePhase": "active",
+          "afterPhase": "retract",
+          "positions": {
+            "maximumComponentDifference": 0.0000019073486328125,
+            "maximumVectorDifference": 0.000001969660716278351,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.004322931170463562,
+            "maximumVectorDifference": 0.005680150743748153,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.5472292644750466e-8,
+            "finite": true
+          }
+        }
+      ],
+      "revisit": {
+        "sequence": [
+          0.7,
+          0.2,
+          0.7,
+          0.3,
+          0.7
+        ],
+        "samePositionHash": true,
+        "sameAllBufferBytes": true,
+        "sameTips": true,
+        "sameRoots": true,
+        "positions": {
+          "maximumComponentDifference": 0,
+          "maximumVectorDifference": 0,
+          "finite": true
+        }
+      },
+      "ending": {
+        "beforeT": 0.999999,
+        "finalT": 1,
+        "positions": {
+          "maximumComponentDifference": 8.198402383641223e-7,
+          "maximumVectorDifference": 8.475274634562326e-7,
+          "finite": true
+        },
+        "normals": {
+          "maximumComponentDifference": 1.4841635823249817,
+          "maximumVectorDifference": 1.7675552234385972,
+          "finite": true
+        },
+        "colors": {
+          "maximumComponentDifference": 0,
+          "maximumVectorDifference": 0,
+          "finite": true
+        },
+        "finalVisible": false,
+        "finalVisibleAppendages": 0,
+        "finalRootExposure": 0,
+        "finalAppendageExtension": 0,
+        "finalParticleCount": 0,
+        "sameRestSurfaceBuffers": true,
+        "sameRestAllBuffers": false,
+        "inactiveParticleBuffersEqual": false,
+        "endpointNote": "The surface at t=1 must match the retracted t=0 surface. Inactive particle matrices need not equal t=0 because motionTime intentionally differs by 18; particles must be count=0 and the group hidden. Same-t revisit still requires every particle matrix byte to match."
+      },
+      "disposed": {
+        "disposed": true,
+        "geometryCount": 0,
+        "materialCount": 0,
+        "visible": false
+      }
+    },
+    {
+      "appendageCount": 2,
+      "sampleCount": 201,
+      "rootsAtRest": [
+        [
+          -0.056,
+          0,
+          0
+        ],
+        [
+          0.056,
+          0,
+          0
+        ]
+      ],
+      "rootAtRest": [
+        0,
+        0,
+        0
+      ],
+      "allPositionsFinite": true,
+      "allNormalsFinite": true,
+      "allColorsFinite": true,
+      "allParticlesFinite": true,
+      "allVerticesInsideEnvelope": true,
+      "maxNormalUnitError": 5.0750749824857166e-8,
+      "maxRootCenterDriftSceneUnits": 0,
+      "maxConnectionRootDriftSceneUnits": 0,
+      "resourceIdentitiesStable": true,
+      "attributeBuffersStable": true,
+      "resources": {
+        "geometries": 5,
+        "materials": 2,
+        "textures": 0,
+        "allocatedVertices": 4168,
+        "allocatedParticles": 48
+      },
+      "resourceIds": {
+        "geometry": [
+          "2458ffbf-4748-4602-8f95-403a340b8aa2",
+          "64135496-b92c-4f17-9dba-7dae71c46980",
+          "62a5df9b-c6a1-405e-8854-c481052b955d",
+          "a97eeafc-f84b-4126-b571-a7208d0eea40",
+          "bb47f432-d3df-4e8b-a31c-a0cb1b5752cd"
+        ],
+        "material": [
+          "b103a356-c539-4305-a10c-91035255f4af",
+          "cdc3774b-1cc0-40ea-a435-33338d141e9e"
+        ]
+      },
+      "contactRingDiagnostics": {
+        "method": "Minimum distance of root XY centres minus conservative XY ring radii over 201 poses; circles include all sampled ring vertices. Positive clearance applies to these proximal sections only.",
+        "minimumFootprintClearanceSceneUnits": 0.01799999922513961,
+        "minimumNeckClearanceSceneUnits": 0.03759204144913833,
+        "singleAppendageHasNoPair": false,
+        "minimumFootprintLocalZ": 0.01515598502010107
+      },
+      "phaseObservations": {
+        "rest": {
+          "firstSampleT": 0,
+          "visible": false,
+          "visibleAppendages": 0
+        },
+        "activation": {
+          "firstSampleT": 0.08,
+          "visible": false,
+          "visibleAppendages": 0
+        },
+        "release": {
+          "firstSampleT": 0.2,
+          "visible": true,
+          "visibleAppendages": 0
+        },
+        "growth": {
+          "firstSampleT": 0.35,
+          "visible": true,
+          "visibleAppendages": 2
+        },
+        "fixation": {
+          "firstSampleT": 0.67,
+          "visible": true,
+          "visibleAppendages": 2
+        },
+        "active": {
+          "firstSampleT": 0.85,
+          "visible": true,
+          "visibleAppendages": 2
+        },
+        "retract": {
+          "firstSampleT": 0.95,
+          "visible": true,
+          "visibleAppendages": 2
+        }
+      },
+      "boundaries": [
+        {
+          "boundary": 0.08,
+          "beforeT": 0.079999,
+          "afterT": 0.080001,
+          "beforePhase": "rest",
+          "afterPhase": "activation",
+          "positions": {
+            "maximumComponentDifference": 4.656612873077393e-10,
+            "maximumVectorDifference": 4.656612873077393e-10,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 5.960464477539063e-8,
+            "maximumVectorDifference": 7.920075813483186e-8,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 0,
+            "maximumVectorDifference": 0,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.2,
+          "beforeT": 0.199999,
+          "afterT": 0.200001,
+          "beforePhase": "activation",
+          "afterPhase": "release",
+          "positions": {
+            "maximumComponentDifference": 6.705522537231445e-8,
+            "maximumVectorDifference": 7.158472705846889e-8,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.00037484747008420527,
+            "maximumVectorDifference": 0.0003771826650881462,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 2.9802322387695312e-8,
+            "maximumVectorDifference": 2.9802322387695312e-8,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.35,
+          "beforeT": 0.349999,
+          "afterT": 0.35000099999999995,
+          "beforePhase": "release",
+          "afterPhase": "growth",
+          "positions": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.5472292644750466e-8,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.0010053813457489014,
+            "maximumVectorDifference": 0.00143753654016149,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.4901161193847656e-8,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.67,
+          "beforeT": 0.669999,
+          "afterT": 0.6700010000000001,
+          "beforePhase": "growth",
+          "afterPhase": "fixation",
+          "positions": {
+            "maximumComponentDifference": 0.0000016093254089355469,
+            "maximumVectorDifference": 0.0000018000207985092997,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.003532707691192627,
+            "maximumVectorDifference": 0.004872799781850511,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.862645149230957e-9,
+            "maximumVectorDifference": 1.862645149230957e-9,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.85,
+          "beforeT": 0.849999,
+          "afterT": 0.850001,
+          "beforePhase": "fixation",
+          "afterPhase": "active",
+          "positions": {
+            "maximumComponentDifference": 8.940696716308594e-7,
+            "maximumVectorDifference": 0.0000010409503696306337,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.003405630588531494,
+            "maximumVectorDifference": 0.00490922517231253,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 0,
+            "maximumVectorDifference": 0,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.95,
+          "beforeT": 0.9499989999999999,
+          "afterT": 0.950001,
+          "beforePhase": "active",
+          "afterPhase": "retract",
+          "positions": {
+            "maximumComponentDifference": 0.0000019073486328125,
+            "maximumVectorDifference": 0.000001969660716278351,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.004322756081819534,
+            "maximumVectorDifference": 0.005680126700336225,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.5472292644750466e-8,
+            "finite": true
+          }
+        }
+      ],
+      "revisit": {
+        "sequence": [
+          0.7,
+          0.2,
+          0.7,
+          0.3,
+          0.7
+        ],
+        "samePositionHash": true,
+        "sameAllBufferBytes": true,
+        "sameTips": true,
+        "sameRoots": true,
+        "positions": {
+          "maximumComponentDifference": 0,
+          "maximumVectorDifference": 0,
+          "finite": true
+        }
+      },
+      "ending": {
+        "beforeT": 0.999999,
+        "finalT": 1,
+        "positions": {
+          "maximumComponentDifference": 8.23289155960083e-7,
+          "maximumVectorDifference": 8.492854814329866e-7,
+          "finite": true
+        },
+        "normals": {
+          "maximumComponentDifference": 1.5220710039138794,
+          "maximumVectorDifference": 1.7447469830775053,
+          "finite": true
+        },
+        "colors": {
+          "maximumComponentDifference": 0,
+          "maximumVectorDifference": 0,
+          "finite": true
+        },
+        "finalVisible": false,
+        "finalVisibleAppendages": 0,
+        "finalRootExposure": 0,
+        "finalAppendageExtension": 0,
+        "finalParticleCount": 0,
+        "sameRestSurfaceBuffers": true,
+        "sameRestAllBuffers": false,
+        "inactiveParticleBuffersEqual": false,
+        "endpointNote": "The surface at t=1 must match the retracted t=0 surface. Inactive particle matrices need not equal t=0 because motionTime intentionally differs by 18; particles must be count=0 and the group hidden. Same-t revisit still requires every particle matrix byte to match."
+      },
+      "disposed": {
+        "disposed": true,
+        "geometryCount": 0,
+        "materialCount": 0,
+        "visible": false
+      }
+    },
+    {
+      "appendageCount": 3,
+      "sampleCount": 201,
+      "rootsAtRest": [
+        [
+          -0.058,
+          0.046,
+          0
+        ],
+        [
+          0.058,
+          0.046,
+          0
+        ],
+        [
+          0,
+          -0.058,
+          0
+        ]
+      ],
+      "rootAtRest": [
+        0,
+        0,
+        0
+      ],
+      "allPositionsFinite": true,
+      "allNormalsFinite": true,
+      "allColorsFinite": true,
+      "allParticlesFinite": true,
+      "allVerticesInsideEnvelope": true,
+      "maxNormalUnitError": 4.993665259078739e-8,
+      "maxRootCenterDriftSceneUnits": 0,
+      "maxConnectionRootDriftSceneUnits": 0,
+      "resourceIdentitiesStable": true,
+      "attributeBuffersStable": true,
+      "resources": {
+        "geometries": 5,
+        "materials": 2,
+        "textures": 0,
+        "allocatedVertices": 4168,
+        "allocatedParticles": 48
+      },
+      "resourceIds": {
+        "geometry": [
+          "a8a12c99-8039-4319-8d2f-5b679550c534",
+          "59919035-6fc2-47c4-be1e-29ce9e607c45",
+          "64c5f844-91f5-4caf-b3fc-d0d1e7433d8d",
+          "18e7f2fc-61c0-4564-aa7b-4d6d68f75cbd",
+          "06f62508-68e2-4b98-8ed5-117725763dfc"
+        ],
+        "material": [
+          "77d0a0f0-6c08-4612-8bad-b0678528d137",
+          "3a17a4cd-5be0-4dd7-b70e-9221f588fc8c"
+        ]
+      },
+      "contactRingDiagnostics": {
+        "method": "Minimum distance of root XY centres minus conservative XY ring radii over 201 poses; circles include all sampled ring vertices. Positive clearance applies to these proximal sections only.",
+        "minimumFootprintClearanceSceneUnits": 0.021999999880790704,
+        "minimumNeckClearanceSceneUnits": 0.04159203754278668,
+        "singleAppendageHasNoPair": false,
+        "minimumFootprintLocalZ": 0.014999999664723873
+      },
+      "phaseObservations": {
+        "rest": {
+          "firstSampleT": 0,
+          "visible": false,
+          "visibleAppendages": 0
+        },
+        "activation": {
+          "firstSampleT": 0.08,
+          "visible": false,
+          "visibleAppendages": 0
+        },
+        "release": {
+          "firstSampleT": 0.2,
+          "visible": true,
+          "visibleAppendages": 0
+        },
+        "growth": {
+          "firstSampleT": 0.35,
+          "visible": true,
+          "visibleAppendages": 3
+        },
+        "fixation": {
+          "firstSampleT": 0.67,
+          "visible": true,
+          "visibleAppendages": 3
+        },
+        "active": {
+          "firstSampleT": 0.85,
+          "visible": true,
+          "visibleAppendages": 3
+        },
+        "retract": {
+          "firstSampleT": 0.95,
+          "visible": true,
+          "visibleAppendages": 3
+        }
+      },
+      "boundaries": [
+        {
+          "boundary": 0.08,
+          "beforeT": 0.079999,
+          "afterT": 0.080001,
+          "beforePhase": "rest",
+          "afterPhase": "activation",
+          "positions": {
+            "maximumComponentDifference": 2.3283064365386963e-10,
+            "maximumVectorDifference": 2.3283064365386963e-10,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 6.705522537231445e-8,
+            "maximumVectorDifference": 8.971687092477304e-8,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 0,
+            "maximumVectorDifference": 0,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.2,
+          "beforeT": 0.199999,
+          "afterT": 0.200001,
+          "beforePhase": "activation",
+          "afterPhase": "release",
+          "positions": {
+            "maximumComponentDifference": 6.705522537231445e-8,
+            "maximumVectorDifference": 7.158472705846889e-8,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.000374812341760844,
+            "maximumVectorDifference": 0.00037714731449274016,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 2.9802322387695312e-8,
+            "maximumVectorDifference": 2.9802322387695312e-8,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.35,
+          "beforeT": 0.349999,
+          "afterT": 0.35000099999999995,
+          "beforePhase": "release",
+          "afterPhase": "growth",
+          "positions": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.5387974345924616e-8,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.001104496419429779,
+            "maximumVectorDifference": 0.0014367897858802024,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.4901161193847656e-8,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.67,
+          "beforeT": 0.669999,
+          "afterT": 0.6700010000000001,
+          "beforePhase": "growth",
+          "afterPhase": "fixation",
+          "positions": {
+            "maximumComponentDifference": 0.0000016093254089355469,
+            "maximumVectorDifference": 0.0000018000207985092997,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.004292309284210205,
+            "maximumVectorDifference": 0.005864925200585372,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.862645149230957e-9,
+            "maximumVectorDifference": 1.862645149230957e-9,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.85,
+          "beforeT": 0.849999,
+          "afterT": 0.850001,
+          "beforePhase": "fixation",
+          "afterPhase": "active",
+          "positions": {
+            "maximumComponentDifference": 8.344650268554688e-7,
+            "maximumVectorDifference": 0.0000010409503696306337,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.003991063684225082,
+            "maximumVectorDifference": 0.004255187181662623,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 0,
+            "maximumVectorDifference": 0,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.95,
+          "beforeT": 0.9499989999999999,
+          "afterT": 0.950001,
+          "beforePhase": "active",
+          "afterPhase": "retract",
+          "positions": {
+            "maximumComponentDifference": 0.0000018477439880371094,
+            "maximumVectorDifference": 0.0000019615271892433564,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.003925889730453491,
+            "maximumVectorDifference": 0.005204014980006272,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.5472292644750466e-8,
+            "finite": true
+          }
+        }
+      ],
+      "revisit": {
+        "sequence": [
+          0.7,
+          0.2,
+          0.7,
+          0.3,
+          0.7
+        ],
+        "samePositionHash": true,
+        "sameAllBufferBytes": true,
+        "sameTips": true,
+        "sameRoots": true,
+        "positions": {
+          "maximumComponentDifference": 0,
+          "maximumVectorDifference": 0,
+          "finite": true
+        }
+      },
+      "ending": {
+        "beforeT": 0.999999,
+        "finalT": 1,
+        "positions": {
+          "maximumComponentDifference": 8.195638656616211e-7,
+          "maximumVectorDifference": 8.472026043086177e-7,
+          "finite": true
+        },
+        "normals": {
+          "maximumComponentDifference": 1.5894652605056763,
+          "maximumVectorDifference": 1.7829555397007875,
+          "finite": true
+        },
+        "colors": {
+          "maximumComponentDifference": 0,
+          "maximumVectorDifference": 0,
+          "finite": true
+        },
+        "finalVisible": false,
+        "finalVisibleAppendages": 0,
+        "finalRootExposure": 0,
+        "finalAppendageExtension": 0,
+        "finalParticleCount": 0,
+        "sameRestSurfaceBuffers": true,
+        "sameRestAllBuffers": false,
+        "inactiveParticleBuffersEqual": false,
+        "endpointNote": "The surface at t=1 must match the retracted t=0 surface. Inactive particle matrices need not equal t=0 because motionTime intentionally differs by 18; particles must be count=0 and the group hidden. Same-t revisit still requires every particle matrix byte to match."
+      },
+      "disposed": {
+        "disposed": true,
+        "geometryCount": 0,
+        "materialCount": 0,
+        "visible": false
+      }
+    },
+    {
+      "appendageCount": 4,
+      "sampleCount": 201,
+      "rootsAtRest": [
+        [
+          -0.058,
+          0.052,
+          0
+        ],
+        [
+          0.058,
+          0.052,
+          0
+        ],
+        [
+          -0.054,
+          -0.052,
+          0
+        ],
+        [
+          0.054,
+          -0.052,
+          0
+        ]
+      ],
+      "rootAtRest": [
+        0,
+        0,
+        0
+      ],
+      "allPositionsFinite": true,
+      "allNormalsFinite": true,
+      "allColorsFinite": true,
+      "allParticlesFinite": true,
+      "allVerticesInsideEnvelope": true,
+      "maxNormalUnitError": 5.0750749824857166e-8,
+      "maxRootCenterDriftSceneUnits": 0,
+      "maxConnectionRootDriftSceneUnits": 0,
+      "resourceIdentitiesStable": true,
+      "attributeBuffersStable": true,
+      "resources": {
+        "geometries": 5,
+        "materials": 2,
+        "textures": 0,
+        "allocatedVertices": 4168,
+        "allocatedParticles": 48
+      },
+      "resourceIds": {
+        "geometry": [
+          "f6af3058-30d5-4a4c-952a-045f98a1a4df",
+          "8ddc790e-f725-4742-9f7d-47dc8c115c58",
+          "fd50ba51-c391-4f27-ac40-0c20e43f15f5",
+          "12ad82d0-27a9-4ef3-9a3d-36ee43d92fbf",
+          "803ad106-31a2-4f52-be16-f72bed523c0f"
+        ],
+        "material": [
+          "9c25ac08-abee-44fb-bcd0-dfed1110271e",
+          "55290659-0d1a-4440-ad18-e52fc611458c"
+        ]
+      },
+      "contactRingDiagnostics": {
+        "method": "Minimum distance of root XY centres minus conservative XY ring radii over 201 poses; circles include all sampled ring vertices. Positive clearance applies to these proximal sections only.",
+        "minimumFootprintClearanceSceneUnits": 0.013076894366939408,
+        "minimumNeckClearanceSceneUnits": 0.029454034531576016,
+        "singleAppendageHasNoPair": false,
+        "minimumFootprintLocalZ": 0.01519260834902525
+      },
+      "phaseObservations": {
+        "rest": {
+          "firstSampleT": 0,
+          "visible": false,
+          "visibleAppendages": 0
+        },
+        "activation": {
+          "firstSampleT": 0.08,
+          "visible": false,
+          "visibleAppendages": 0
+        },
+        "release": {
+          "firstSampleT": 0.2,
+          "visible": true,
+          "visibleAppendages": 0
+        },
+        "growth": {
+          "firstSampleT": 0.35,
+          "visible": true,
+          "visibleAppendages": 4
+        },
+        "fixation": {
+          "firstSampleT": 0.67,
+          "visible": true,
+          "visibleAppendages": 4
+        },
+        "active": {
+          "firstSampleT": 0.85,
+          "visible": true,
+          "visibleAppendages": 4
+        },
+        "retract": {
+          "firstSampleT": 0.95,
+          "visible": true,
+          "visibleAppendages": 4
+        }
+      },
+      "boundaries": [
+        {
+          "boundary": 0.08,
+          "beforeT": 0.079999,
+          "afterT": 0.080001,
+          "beforePhase": "rest",
+          "afterPhase": "activation",
+          "positions": {
+            "maximumComponentDifference": 1.1641532182693481e-10,
+            "maximumVectorDifference": 1.1641532182693481e-10,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 7.450580596923828e-8,
+            "maximumVectorDifference": 8.429369702178807e-8,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 0,
+            "maximumVectorDifference": 0,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.2,
+          "beforeT": 0.199999,
+          "afterT": 0.200001,
+          "beforePhase": "activation",
+          "afterPhase": "release",
+          "positions": {
+            "maximumComponentDifference": 6.705522537231445e-8,
+            "maximumVectorDifference": 7.158472705846889e-8,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.000374812341760844,
+            "maximumVectorDifference": 0.00037714728862478205,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 2.9802322387695312e-8,
+            "maximumVectorDifference": 2.9802322387695312e-8,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.35,
+          "beforeT": 0.349999,
+          "afterT": 0.35000099999999995,
+          "beforePhase": "release",
+          "afterPhase": "growth",
+          "positions": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.580506819158526e-8,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.0010053813457489014,
+            "maximumVectorDifference": 0.00143753654016149,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.4901161193847656e-8,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.67,
+          "beforeT": 0.669999,
+          "afterT": 0.6700010000000001,
+          "beforePhase": "growth",
+          "afterPhase": "fixation",
+          "positions": {
+            "maximumComponentDifference": 0.0000016093254089355469,
+            "maximumVectorDifference": 0.0000018000207985092997,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.004454106092453003,
+            "maximumVectorDifference": 0.006013542927177976,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.862645149230957e-9,
+            "maximumVectorDifference": 1.862645149230957e-9,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.85,
+          "beforeT": 0.849999,
+          "afterT": 0.850001,
+          "beforePhase": "fixation",
+          "afterPhase": "active",
+          "positions": {
+            "maximumComponentDifference": 8.344650268554688e-7,
+            "maximumVectorDifference": 0.0000010409503696306337,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.003405630588531494,
+            "maximumVectorDifference": 0.00400493350424043,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 0,
+            "maximumVectorDifference": 0,
+            "finite": true
+          }
+        },
+        {
+          "boundary": 0.95,
+          "beforeT": 0.9499989999999999,
+          "afterT": 0.950001,
+          "beforePhase": "active",
+          "afterPhase": "retract",
+          "positions": {
+            "maximumComponentDifference": 0.0000018477439880371094,
+            "maximumVectorDifference": 0.0000019642421070675946,
+            "finite": true
+          },
+          "normals": {
+            "maximumComponentDifference": 0.003565460443496704,
+            "maximumVectorDifference": 0.004813686388649255,
+            "finite": true
+          },
+          "colors": {
+            "maximumComponentDifference": 1.4901161193847656e-8,
+            "maximumVectorDifference": 1.5472292644750466e-8,
+            "finite": true
+          }
+        }
+      ],
+      "revisit": {
+        "sequence": [
+          0.7,
+          0.2,
+          0.7,
+          0.3,
+          0.7
+        ],
+        "samePositionHash": true,
+        "sameAllBufferBytes": true,
+        "sameTips": true,
+        "sameRoots": true,
+        "positions": {
+          "maximumComponentDifference": 0,
+          "maximumVectorDifference": 0,
+          "finite": true
+        }
+      },
+      "ending": {
+        "beforeT": 0.999999,
+        "finalT": 1,
+        "positions": {
+          "maximumComponentDifference": 8.195638656616211e-7,
+          "maximumVectorDifference": 8.475274634562326e-7,
+          "finite": true
+        },
+        "normals": {
+          "maximumComponentDifference": 1.597280204296112,
+          "maximumVectorDifference": 1.7873333094195103,
+          "finite": true
+        },
+        "colors": {
+          "maximumComponentDifference": 0,
+          "maximumVectorDifference": 0,
+          "finite": true
+        },
+        "finalVisible": false,
+        "finalVisibleAppendages": 0,
+        "finalRootExposure": 0,
+        "finalAppendageExtension": 0,
+        "finalParticleCount": 0,
+        "sameRestSurfaceBuffers": true,
+        "sameRestAllBuffers": false,
+        "inactiveParticleBuffersEqual": false,
+        "endpointNote": "The surface at t=1 must match the retracted t=0 surface. Inactive particle matrices need not equal t=0 because motionTime intentionally differs by 18; particles must be count=0 and the group hidden. Same-t revisit still requires every particle matrix byte to match."
+      },
+      "disposed": {
+        "disposed": true,
+        "geometryCount": 0,
+        "materialCount": 0,
+        "visible": false
+      }
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "notes": [
+    "Scene units are illustrative, not a physiological RC scale.",
+    "Finite positions, fixed roots, positive proximal ring clearances and continuous sampled buffers do not prove collision-free meshes, clean body contact, continuous skin topology or natural motion.",
+    "The contact formula approximates the current proxy only; this run does not load a body, GLB, skeleton, renderer or physical phone.",
+    "Normals are measured for finiteness/unit length and boundary deltas are reported honestly; no claim of continuous shading at degenerate hidden rest tips follows.",
+    "Byte-equal revisit buffers include positions, normals, colors and all 48 particle matrices. They demonstrate this deterministic route/configuration, not human artistic approval.",
+    "CPU resource UUIDs/buffers and disposal flags are not renderer-memory, GPU VRAM, FPS or leak measurements.",
+    "Actual screenshots, video, E2E and production performance are separate evidence. No previous G3A metric is reused as a new result."
+  ]
+}

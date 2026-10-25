@@ -1,0 +1,28 @@
+{
+  "historicalFilesVerified": 318,
+  "terminalPngComparisons": 32,
+  "allTerminalPngsIdenticalToRest": true,
+  "finalMoviesVerified": 2,
+  "approvedPoseHashesIdentical": 24,
+  "e2e": {
+    "startTime": "2026-10-25T06:10:03.106Z",
+    "duration": 429095.359,
+    "expected": 44,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "profileBudgetsPassed": true,
+  "brokenLinks": [],
+  "sourceHashes": {
+    "src/scene/rinkaku/ProceduralRinkakuAdapter.ts": "30857c72fa6b6016e643b8400f3e04fa384441d6fab30149e5e87f4657d1a9c4",
+    "src/simulation/rinkaku.ts": "d747ceb11ce2df64fc87da5c67a38ccdb8d62080eca7fb9d47c3f6a671c3473e",
+    "src/state/rinkaku.ts": "74c89c9d900070e2d9b881a43cbd75afc33664acb1e09b9b21cb2d8b966b7b59",
+    "src/scene/visibility.ts": "18172539890fb01347606f091928620673e448e8fc27a7c390490a92c3d1ff0b",
+    "package-lock.json": "d235539f8c9f665d31c195621f14b63c24a11f72958946c53536eb4d21328d59"
+  },
+  "notes": [
+    "P1 approved by the human user with documented art caveats. P2 remains pending.",
+    "Git publication SHA and clean tree must be checked after commit/push."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "output": "artifacts/g3a1/production-emulated-mobile-standard.json",
+  "environment": {
+    "os": "win32 10.0.26200 x64",
+    "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+    "ramBytes": 16540626944,
+    "browser": "Chromium 156.0.8078.4",
+    "headless": true,
+    "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": {
+      "width": 390,
+      "height": 844,
+      "dpr": 1
+    }
+  },
+  "scenario": {
+    "quality": "standard",
+    "appendageCount": 4,
+    "seed": 17,
+    "particlesSetting": true,
+    "particlesRendered": true,
+    "mobileEmulation": true,
+    "activationMs": 199,
+    "activationAdditionalTransferBytes": 5420,
+    "bootPlusManifestTransferBytes": 373329,
+    "sequence": "Full 21 s cinematic transport, including 3.4 s retraction. Same normalized seven phase intervals and sampler motionTime as G3A. Restart through reset/play UI; 10 s warm-up then 30 s rAF sample."
+  },
+  "interactiveMs": 1386.3999999761581,
+  "transferBytes": 367909,
+  "sampleMs": 30014.20000001788,
+  "frames": 1800,
+  "fpsP50": 59.880239520968516,
+  "fpsP10": 59.523809523799216,
+  "phases": [
+    "growth",
+    "fixation",
+    "active",
+    "retract",
+    "rest",
+    "activation",
+    "release"
+  ],
+  "replayCount": 1,
+  "observables": {
+    "maxDrawCalls": 20,
+    "maxTriangles": 148110,
+    "geometryRange": {
+      "min": 18,
+      "max": 18
+    },
+    "textureRange": {
+      "min": 3,
+      "max": 3
+    },
+    "adapterResourceIdsStable": true
+  },
+  "budgets": {
+    "interactionUnder5s": true,
+    "fpsP50AtLeast50": true,
+    "fpsP10AtLeast30": true,
+    "drawsUnder150": true,
+    "measuredInitialPayloadUnder8MiB": true,
+    "bodyPlusManifestUnder8MiB": true,
+    "allSevenPhasesSampled": true
+  },
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "failedRequests": [],
+    "httpErrors": []
+  }
+}

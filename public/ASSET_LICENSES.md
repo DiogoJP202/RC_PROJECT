@@ -21,3 +21,15 @@ Substituições por GLB/glTF exigem registro da versão efetivamente adquirida, 
 `assets/fixtures/atlas-static-v1.glb` e `atlas-rigged-v1.glb` são arquivos binários glTF 2 originais gerados por `tools/generate_fixture_glbs.mjs`. Proveniência, tamanho e SHA-256 em `assets/fixtures/manifest.json`; registro técnico em `src/visuals/assets/assetRegistry.ts` no repositório. Não contêm meshes, imagens ou texturas de terceiros. O articulado inclui dois bones e um clipe sintético, sem comportamento fisiológico.
 
 São fixtures de infraestrutura, visíveis na bancada opt-in `?assets=lab`, mantendo `PROXY / CONCEPTUAL MODEL`. Não representam anatomia humana validada, forma canônica de kakuhou ou arte definitiva. `PROJECT_ORIGINAL` registra autoria para este projeto e não concede licença geral sobre material de terceiros ou sobre Tokyo Ghoul.
+
+## Representação procedural original G3A — registro inicial
+
+As quatro superfícies deformáveis Rinkaku, suas pregas/cores, a resposta visual da raiz lombar e as partículas são geradas por código autoral em `src/scene/rinkaku/ProceduralRinkakuAdapter.ts` e `RinkakuScene.tsx`. Nenhum mesh, textura, rig, personagem ou material externo foi incorporado. O registro é `PROJECT_ORIGINAL`, com o mesmo limite de direitos descrito acima.
+
+São `PROXY / CONCEPTUAL MODEL`, de natureza `hypothetical_model`: crescimento, fixação, retração, cores, partículas, quantidade de 1–4 apêndices e intervalos da timeline são decisões artísticas desta demonstração. O overlay de ativação não representa câmaras ou histologia do kakuhou; partículas não estabelecem forma/escala de células RC. A geometria não constitui anatomia ou arte final aprovada. O contrato de animação GLB futuro não disponibiliza um asset final nem altera a licença dos recursos G2A.
+
+### Refinamento G3A.1 e checkpoint P1 — 25/10/2026
+
+O registro anterior descreve a implementação inicial preservada nas evidências G3A. O overlay separado foi removido no G3A.1; a implantação, os brotos e as pregas pertencem à superfície procedural original do adaptador, com material sem emissão luminosa. A correção terminal assenta essa superfície antes de ocultá-la, sem acrescentar asset externo. Capturas, composições e vídeos são registros da aplicação autoral; não contêm referências privadas ou renders de terceiros.
+
+O usuário aprovou a entrega técnica e visual como **protótipo P1 com ressalvas**. Bases arredondadas, continuidade pele/tecido, facetas e revisão com modelos definitivos permanecem pendências de arte final/P2. Esta aprovação não muda `PROJECT_ORIGINAL`, não cria anatomia/cânone e não concede direitos sobre materiais de terceiros. Nenhum modelo, textura, fonte binária ou asset Blender externo foi incorporado neste checkpoint.

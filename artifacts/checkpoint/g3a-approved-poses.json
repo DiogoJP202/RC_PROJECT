@@ -1,0 +1,201 @@
+{
+  "method": "Compare the quantized geometry hashes of all 24 approved non-rest count/phase reference poses with the final checkpoint adapter. No GPU, no product mutation.",
+  "source": "artifacts/g3a1/phases-and-counts.json (preserved pre-checkpoint review metadata)",
+  "metadataSha256": "09ec546eff7935cec1dd93b7bc7e4b1a58868b468618bb8c6e69c1190de04043",
+  "comparisons": [
+    {
+      "count": 1,
+      "t": 0.14,
+      "phase": "activation",
+      "before": "72694632",
+      "after": "72694632",
+      "identical": true
+    },
+    {
+      "count": 1,
+      "t": 0.275,
+      "phase": "release",
+      "before": "da51ec16",
+      "after": "da51ec16",
+      "identical": true
+    },
+    {
+      "count": 1,
+      "t": 0.53,
+      "phase": "growth",
+      "before": "a228e2e4",
+      "after": "a228e2e4",
+      "identical": true
+    },
+    {
+      "count": 1,
+      "t": 0.76,
+      "phase": "fixation",
+      "before": "de064ff2",
+      "after": "de064ff2",
+      "identical": true
+    },
+    {
+      "count": 1,
+      "t": 0.9,
+      "phase": "active",
+      "before": "1d518dc7",
+      "after": "1d518dc7",
+      "identical": true
+    },
+    {
+      "count": 1,
+      "t": 0.98,
+      "phase": "retract",
+      "before": "aa2f7d8c",
+      "after": "aa2f7d8c",
+      "identical": true
+    },
+    {
+      "count": 2,
+      "t": 0.14,
+      "phase": "activation",
+      "before": "9eeee86e",
+      "after": "9eeee86e",
+      "identical": true
+    },
+    {
+      "count": 2,
+      "t": 0.275,
+      "phase": "release",
+      "before": "51b98fc7",
+      "after": "51b98fc7",
+      "identical": true
+    },
+    {
+      "count": 2,
+      "t": 0.53,
+      "phase": "growth",
+      "before": "5009369d",
+      "after": "5009369d",
+      "identical": true
+    },
+    {
+      "count": 2,
+      "t": 0.76,
+      "phase": "fixation",
+      "before": "4091b2af",
+      "after": "4091b2af",
+      "identical": true
+    },
+    {
+      "count": 2,
+      "t": 0.9,
+      "phase": "active",
+      "before": "cfc7e9c4",
+      "after": "cfc7e9c4",
+      "identical": true
+    },
+    {
+      "count": 2,
+      "t": 0.98,
+      "phase": "retract",
+      "before": "18fe4ef9",
+      "after": "18fe4ef9",
+      "identical": true
+    },
+    {
+      "count": 3,
+      "t": 0.14,
+      "phase": "activation",
+      "before": "203b9e65",
+      "after": "203b9e65",
+      "identical": true
+    },
+    {
+      "count": 3,
+      "t": 0.275,
+      "phase": "release",
+      "before": "5b860e90",
+      "after": "5b860e90",
+      "identical": true
+    },
+    {
+      "count": 3,
+      "t": 0.53,
+      "phase": "growth",
+      "before": "500aa2c0",
+      "after": "500aa2c0",
+      "identical": true
+    },
+    {
+      "count": 3,
+      "t": 0.76,
+      "phase": "fixation",
+      "before": "ea571e79",
+      "after": "ea571e79",
+      "identical": true
+    },
+    {
+      "count": 3,
+      "t": 0.9,
+      "phase": "active",
+      "before": "662ab416",
+      "after": "662ab416",
+      "identical": true
+    },
+    {
+      "count": 3,
+      "t": 0.98,
+      "phase": "retract",
+      "before": "62596b73",
+      "after": "62596b73",
+      "identical": true
+    },
+    {
+      "count": 4,
+      "t": 0.14,
+      "phase": "activation",
+      "before": "15aef734",
+      "after": "15aef734",
+      "identical": true
+    },
+    {
+      "count": 4,
+      "t": 0.275,
+      "phase": "release",
+      "before": "150f4340",
+      "after": "150f4340",
+      "identical": true
+    },
+    {
+      "count": 4,
+      "t": 0.53,
+      "phase": "growth",
+      "before": "1cc159ba",
+      "after": "1cc159ba",
+      "identical": true
+    },
+    {
+      "count": 4,
+      "t": 0.76,
+      "phase": "fixation",
+      "before": "8b2d8fe7",
+      "after": "8b2d8fe7",
+      "identical": true
+    },
+    {
+      "count": 4,
+      "t": 0.9,
+      "phase": "active",
+      "before": "5033a6d1",
+      "after": "5033a6d1",
+      "identical": true
+    },
+    {
+      "count": 4,
+      "t": 0.98,
+      "phase": "retract",
+      "before": "22c8f05d",
+      "after": "22c8f05d",
+      "identical": true
+    }
+  ],
+  "allIdentical": true,
+  "note": "Near-zero formation/rest and terminal retraction changed intentionally to remove residual area. Sampler and six representative non-rest t values are unchanged."
+}

@@ -1,0 +1,104 @@
+{
+  "file": "artifacts/gates/G3A1-review/checkpoint/endpoint-before-after.png",
+  "sha256": "0359823abd9d15e54a6fa025de49172941839d43e4793bc6adbe91f5cd870a58",
+  "sources": [
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/focus-t0.995.png",
+      "sha256": "c52a4d57df26fe244ec763ee3517676e212a3d6c070b213ee1bb36750537d353",
+      "cropBox": [
+        250,
+        170,
+        650,
+        440
+      ],
+      "t": 0.995,
+      "revision": "before"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/focus-t0.998.png",
+      "sha256": "06eecce7be3f94bf455b6a8f4c2c104f597752f71779f1b34f04d0966c253ca1",
+      "cropBox": [
+        250,
+        170,
+        650,
+        440
+      ],
+      "t": 0.998,
+      "revision": "before"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/focus-t0.999.png",
+      "sha256": "ac870db0b9bd21c8346fa14086c26625f585e4f01f2caf683bf6206d73690875",
+      "cropBox": [
+        250,
+        170,
+        650,
+        440
+      ],
+      "t": 0.999,
+      "revision": "before"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/focus-t1.000.png",
+      "sha256": "657586ea5327cd81cfa2951b304ccbd1126e0f927db0cb1a5a0e060e0b883aad",
+      "cropBox": [
+        250,
+        170,
+        650,
+        440
+      ],
+      "t": 1.0,
+      "revision": "before"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/terminal/count-4-focus-t0.995.png",
+      "sha256": "c52a4d57df26fe244ec763ee3517676e212a3d6c070b213ee1bb36750537d353",
+      "cropBox": [
+        250,
+        170,
+        650,
+        440
+      ],
+      "t": 0.995,
+      "revision": "after"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/terminal/count-4-focus-t0.998.png",
+      "sha256": "657586ea5327cd81cfa2951b304ccbd1126e0f927db0cb1a5a0e060e0b883aad",
+      "cropBox": [
+        250,
+        170,
+        650,
+        440
+      ],
+      "t": 0.998,
+      "revision": "after"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/terminal/count-4-focus-t0.999.png",
+      "sha256": "657586ea5327cd81cfa2951b304ccbd1126e0f927db0cb1a5a0e060e0b883aad",
+      "cropBox": [
+        250,
+        170,
+        650,
+        440
+      ],
+      "t": 0.999,
+      "revision": "after"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/terminal/count-4-focus-t1.000.png",
+      "sha256": "657586ea5327cd81cfa2951b304ccbd1126e0f927db0cb1a5a0e060e0b883aad",
+      "cropBox": [
+        250,
+        170,
+        650,
+        440
+      ],
+      "t": 1.0,
+      "revision": "after"
+    }
+  ],
+  "sameCamera": true,
+  "policy": "Only crop, resize, layout and labels. Source images unchanged."
+}

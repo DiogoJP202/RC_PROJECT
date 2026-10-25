@@ -4,3 +4,14 @@ research/*.md -text
 contracts/seed-catalog.json -text
 *.png binary
 *.glb binary
+# Captured G3A evidence has published byte hashes; never normalize these files.
+artifacts/g3a/** -text
+artifacts/g3a1/** -text
+artifacts/gates/G3A-review/** -text
+artifacts/gates/G3A1-review/** -text
+artifacts/checkpoint/g3a-*.json -text
+artifacts/checkpoint/gates/G3A-* -text
+*.webm binary
+# Preserve terminal output verbatim, including its trailing empty output line.
+artifacts/** whitespace=cr-at-eol
+artifacts/**/*.txt whitespace=cr-at-eol,-blank-at-eof

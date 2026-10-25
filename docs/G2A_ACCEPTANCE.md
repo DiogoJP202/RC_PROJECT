@@ -1,5 +1,7 @@
 # G2A — Aceite técnico da infraestrutura de assets
 
+> A implementação local posterior G3A tem [aceite próprio](G3A_ACCEPTANCE.md), incluindo regressão da bancada e conexão ao socket real das fixtures. Este documento e suas capturas preservam os resultados históricos; ausência de G3 no registro de 23/10 descreve aquele checkpoint.
+
 > Baseline de código G2A verificada em 24/10/2026: publicada em `main`, commit `0e53c1e31c366a05642501bef312d0fe5d5575b6`. Na retomada, `git fetch origin --prune`, `git rev-parse HEAD origin/main` e `git ls-remote --heads origin main` confirmaram o mesmo SHA. O checkpoint documental posterior preserva o código e acrescenta as evidências da migração. Os testes, capturas e perfis datados abaixo preservam a evidência da estação anterior; a revalidação e a consolidação estão no [log](IMPLEMENTATION_LOG.md).
 
 23/10/2026, America/Sao_Paulo. G1 aprovado como entrada; baseline Git preservada `d7195027dfb48ab25d040a6295676aacb847ce59`. Escopo entregue: infraestrutura GLB, fixtures sintéticas, substituição progressiva e refinamentos pontuais de interação/mobile. **G2B e G3 não foram implementados.** Nenhuma anatomia final foi produzida ou aprovada.

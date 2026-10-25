@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useMemo, useRef } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useRef } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
@@ -11,6 +11,16 @@ import { assetRuntime, bindingAnchor, bindingBounds } from './assetRuntime';
 import { getAssetCacheStats } from '../visuals/assets/assetCache';
 import { useAssets } from '../state/assets';
 import { cameraPose, smoothFocus } from './camera';
+import { useRinkaku } from '../state/rinkaku';
+import { inspectRinkaku, rinkakuRuntime } from './rinkaku/rinkakuRuntime';
+import { rinkakuCameraPose } from './rinkaku/camera';
+
+const RinkakuScene = lazy(() => import('./rinkaku/RinkakuScene'));
+
+function effectivelyVisible(object: import('three').Object3D): boolean {
+  for (let current: import('three').Object3D | null = object; current; current = current.parent) if (!current.visible) return false;
+  return true;
+}
 
 const ANCHORS: Record<AnatomyId, [number, number, number]> = {
   'human.surface': [0, 1.33, 0.115], 'human.head': [0, 1.72, 0.08],
@@ -43,6 +53,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
   const assetStatus = useAssets((s) => s.status);
   const internal = useObservatory((s) => s.layers.internal);
   const isolated = useObservatory((s) => s.isolated);
+  const rinkakuEnabled = useRinkaku((s) => s.enabled);
   const selectionRef = useRef<Mesh>(null);
   const raycaster = useMemo(() => new Raycaster(), []);
   const pointer = useMemo(() => new Vector2(), []);
@@ -51,13 +62,14 @@ function InspectableScene({ onReady, onError }: SceneProps) {
   useEffect(() => {
     const limits = orbitLimits.current;
     limits.min.set(-.4, .4, -.3); limits.max.set(.4, 1.75, .3);
+    if (rinkakuEnabled) { limits.min.set(-1.3, .1, -1.6); limits.max.set(1.3, 2.3, .6); }
     if (assetRuntime.lease) {
       const envelope = new Box3();
       scene.traverse((object) => { if (object instanceof Mesh && object.userData.anatomyId) envelope.union(new Box3().setFromObject(object, true)); });
       if (!envelope.isEmpty()) { limits.min.copy(envelope.min).addScalar(-.18); limits.max.copy(envelope.max).addScalar(.18); }
       if (controls.current) controls.current.maxDistance = Math.max(6.8, envelope.getSize(new Vector3()).length() * 3);
     } else if (controls.current) controls.current.maxDistance = 6.8;
-  }, [assetStatus, scene]);
+  }, [assetStatus, scene, rinkakuEnabled]);
 
   useEffect(() => {
     if (size.width <= 0 || size.height <= 0) return;
@@ -67,7 +79,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       controls.current.update();
       controls.current.enableDamping = true;
     }
-    let bounds = focus.target !== 'overview' && focus.target !== 'posterior' ? bindingBounds(focus.target) : null;
+    let bounds = focus.target !== 'overview' && focus.target !== 'posterior' && focus.target !== 'rinkaku-lateral' && focus.target !== 'rinkaku-oblique' ? bindingBounds(focus.target) : null;
     if ((focus.target === 'overview' || focus.target === 'posterior') && assetRuntime.lease) {
       const envelope = new Box3();
       scene.traverse((object) => {
@@ -75,8 +87,20 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       });
       if (!envelope.isEmpty()) bounds = envelope;
     }
+    const manifestationView = rinkakuEnabled && ['overview', 'posterior', 'rinkaku-lateral', 'rinkaku-oblique'].includes(focus.target);
+    if (manifestationView) {
+      // A complete, fixed pose envelope avoids camera changes during manual scrubbing.
+      bounds = rinkakuRuntime.adapter?.getBounds(new Box3()) ?? new Box3(new Vector3(-1.18, .156, -1.332), new Vector3(1.18, 2.216, .19));
+      if (assetRuntime.lease) {
+        scene.traverse((object) => {
+          if (object instanceof Mesh && ['human.surface', 'human.head'].includes(object.userData.anatomyId as string)) bounds!.union(new Box3().setFromObject(object, true));
+        });
+      } else bounds.union(new Box3(new Vector3(-.42, .02, -.15), new Vector3(.42, 1.85, .19)));
+    }
     const volume = bounds ? { center: bounds.getCenter(new Vector3()).toArray(), size: bounds.getSize(new Vector3()).toArray() } : undefined;
-    const pose = cameraPose(focus.target, size.width / size.height, 36, volume);
+    const pose = manifestationView && volume
+      ? rinkakuCameraPose(focus.target === 'rinkaku-lateral' ? 'lateral' : focus.target === 'rinkaku-oblique' ? 'oblique' : 'posterior', size.width / size.height, volume)
+      : cameraPose(focus.target === 'rinkaku-lateral' || focus.target === 'rinkaku-oblique' ? 'overview' : focus.target, size.width / size.height, 36, volume);
     const next = tween.current;
     next.fromPosition.copy(camera.position);
     next.toPosition.set(...pose.position);
@@ -91,7 +115,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       camera.lookAt(next.toTarget);
       controls.current?.update();
     }
-  }, [focus, reducedMotion, camera, scene, size.width, size.height]);
+  }, [focus, reducedMotion, camera, scene, size.width, size.height, rinkakuEnabled]);
 
   useEffect(() => {
     const marker = selectionRef.current;
@@ -134,8 +158,8 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       raycast: (x, y) => {
         pointer.set(x, y); raycaster.setFromCamera(pointer, camera);
         const hits = raycaster.intersectObjects(scene.children, true);
-        const hit = hits.find((entry) => entry.object.visible && entry.object.userData.anatomyId &&
-          !(useObservatory.getState().surfaceOpacity < .32 && entry.object.userData.layer === 'surface' && hits.some((other) => other.object.visible && other.object.userData.anatomyId && other.object.userData.layer !== 'surface')));
+        const hit = hits.find((entry) => effectivelyVisible(entry.object) && entry.object.userData.anatomyId &&
+          !(useObservatory.getState().surfaceOpacity < .32 && entry.object.userData.layer === 'surface' && hits.some((other) => effectivelyVisible(other.object) && other.object.userData.anatomyId && other.object.userData.layer !== 'surface')));
         return hit?.object.userData.anatomyId as AnatomyId ?? null;
       },
       snapshot: () => {
@@ -175,7 +199,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
           sockets: lease ? [...lease.sockets].map(([id, node]) => ({ id, nodeName: node.name, worldPosition: node.getWorldPosition(new Vector3()).toArray() })) : [],
           animations: lease?.animations.map((item) => ({ name: item.name, duration: item.duration })) ?? [],
           animation: { clip: assetState.clip, time: assetRuntime.animationTime, playing: !!clip && assetState.playing && !state.reducedMotion }, bones, cache: getAssetCacheStats() };
-        return { ready: ready.current, selectedId: state.selectedId, lastHit: lastHit.current, layers: state.layers, assets,
+        return { ready: ready.current, selectedId: state.selectedId, lastHit: lastHit.current, layers: state.layers, assets, rinkaku: inspectRinkaku(),
           visibleNodes, nodes, surfaceOpacity: state.surfaceOpacity, paused: state.paused, reducedMotion: state.reducedMotion,
           scanT: scanProgress.current, scanRevision: state.scanRevision, camera: { position: camera.position.toArray(), target: controls.current?.target.toArray(), moving: tween.current.active },
           bounds: { min: bodyBounds.min.toArray(), max: bodyBounds.max.toArray(), projected: { top, bottom, left, right }, heightFraction: (top - bottom) / 2 },
@@ -204,9 +228,9 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       scanProgress.current = state.scanT;
       lastRevision.current = state.scanRevision;
     }
-    if (!state.paused && !state.reducedMotion && state.mode === 'body' && !document.hidden) scanProgress.current = (scanProgress.current + Math.min(delta, 0.05) / 24) % 1;
+    if (!useRinkaku.getState().enabled && !state.paused && !state.reducedMotion && state.mode === 'body' && !document.hidden) scanProgress.current = (scanProgress.current + Math.min(delta, 0.05) / 24) % 1;
     scanClock.progress = scanProgress.current;
-    if (scan.current) scan.current.position.y = 0.1 + scanProgress.current * 1.66;
+    if (scan.current) { scan.current.position.y = 0.1 + scanProgress.current * 1.66; scan.current.visible = !useRinkaku.getState().enabled; }
     if (selectionRef.current) {
       // A restrained fixed locator, not an invented organ pulse.
       selectionRef.current.lookAt(camera.position);
@@ -227,6 +251,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
     <directionalLight position={[-2.5, 1.9, -2.6]} intensity={3.4} color="#77abbc" />
     <pointLight position={[0, 0.95, -0.42]} intensity={0.055} distance={0.8} color="#c73c57" />
     <IntegratedAssets onHit={(id) => { lastHit.current = id; }} />
+    {rinkakuEnabled ? <Suspense fallback={null}><RinkakuScene /></Suspense> : null}
 
     <mesh name="CONCEPTUAL_SELECTION_LOCATOR" ref={selectionRef} renderOrder={5}
       visible={!isolated && (selected !== 'ghoul.kakuhou.rinkaku' || internal)}>

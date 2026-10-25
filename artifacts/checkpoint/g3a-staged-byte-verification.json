@@ -1,0 +1,5 @@
+{
+  "stagedArtifactsVerified": 468,
+  "byteDifferences": [],
+  "policy": "Targeted -text rules preserve captured evidence exactly. CR-at-EOL and captured trailing empty log lines are recognized as archival data, not source-code whitespace errors."
+}

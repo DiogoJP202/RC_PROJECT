@@ -1,0 +1,3607 @@
+{
+  "revision": "after-translucent",
+  "captures": [
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/focus-t0.000.png",
+      "t": 0,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": false,
+        "t": 0,
+        "phase": "rest",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "253dc259",
+        "signature": "253dc259",
+        "visibleAppendages": 0,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.057999998331069946,
+            1.0280000010728836,
+            -0.07814093333482743
+          ],
+          [
+            0.057999998331069946,
+            1.0280000010728836,
+            -0.07814093333482743
+          ],
+          [
+            -0.05400000140070915,
+            0.9239999989271164,
+            -0.08322371196746826
+          ],
+          [
+            0.05400000140070915,
+            0.9239999989271164,
+            -0.08322371196746826
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0,
+        "phase": "rest",
+        "localPhaseProgress": 0,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 0.0016298545871284939
+      },
+      "sha256": "803ea7cc1f7b04d821e38b57659cc59edd93c13f6d0020d90cd7fe3456caf1f0"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/focus-t0.995.png",
+      "t": 0.995,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.995,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "20b744c7",
+        "signature": "20b744c7",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.045588972414469534,
+            1.0173492427729596,
+            -0.1306943862077791
+          ],
+          [
+            0.04728971096560964,
+            1.0175527746524407,
+            -0.13074996742175196
+          ],
+          [
+            -0.04205440840272453,
+            0.9359279164578888,
+            -0.1319832341806776
+          ],
+          [
+            0.041836967799521556,
+            0.9367446201050093,
+            -0.13295032614850266
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.995,
+        "phase": "retract",
+        "localPhaseProgress": 0.9,
+        "rootExposure": 0.028000000000000025,
+        "kakuhouActivation": 0.016240000000000032,
+        "appendageExtension": 0.028000000000000025,
+        "appendageThickness": 0.028000000000000025,
+        "visualStiffness": 0.028000000000000025,
+        "particleEmission": 0.003360000000000002,
+        "appendageMotion": 0.028000000000000025,
+        "visualIntensity": 0.028000000000000025,
+        "motionTime": 17.91162985458713
+      },
+      "sha256": "76fc090bd085beab3768c2eece4f91b407852c444462a3e9ab5ed46808c72d80"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/focus-t0.998.png",
+      "t": 0.998,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.998,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "e273ba8b",
+        "signature": "e273ba8b",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.05795355141162872,
+            1.0279588701426983,
+            -0.08333330628275872
+          ],
+          [
+            0.057956453412771225,
+            1.0279589148461818,
+            -0.08333251093328
+          ],
+          [
+            -0.05395094305276871,
+            0.9240415098369121,
+            -0.08771077756583691
+          ],
+          [
+            0.05395364761352539,
+            0.9240415806174278,
+            -0.08771107745170593
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.998,
+        "phase": "retract",
+        "localPhaseProgress": 0.96,
+        "rootExposure": 0.0046720000000000095,
+        "kakuhouActivation": 0.0027097600000000055,
+        "appendageExtension": 0.0046720000000000095,
+        "appendageThickness": 0.0046720000000000095,
+        "visualStiffness": 0.0046720000000000095,
+        "particleEmission": 0.0005606400000000011,
+        "appendageMotion": 0.0046720000000000095,
+        "visualIntensity": 0.0046720000000000095,
+        "motionTime": 17.965629854587128
+      },
+      "sha256": "0157bb39c4221f164d2704545fd00751c59be1649311065aad69da2efa714716"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/focus-t0.999.png",
+      "t": 0.999,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.999,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "23eed811",
+        "signature": "23eed811",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.05799993500113487,
+            1.027999945193529,
+            -0.07849281308054924
+          ],
+          [
+            0.05799993872642517,
+            1.027999945193529,
+            -0.07849281308054924
+          ],
+          [
+            -0.05399993062019348,
+            0.9240000585317611,
+            -0.08352425907552243
+          ],
+          [
+            0.05399993434548378,
+            0.9240000585317611,
+            -0.08352426093816757
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.999,
+        "phase": "retract",
+        "localPhaseProgress": 0.98,
+        "rootExposure": 0.0011840000000000739,
+        "kakuhouActivation": 0.0006867200000000295,
+        "appendageExtension": 0.0011840000000000739,
+        "appendageThickness": 0.0011840000000000739,
+        "visualStiffness": 0.0011840000000000739,
+        "particleEmission": 0.00014208000000000276,
+        "appendageMotion": 0.0011840000000000739,
+        "visualIntensity": 0.0011840000000000739,
+        "motionTime": 17.98362985458713
+      },
+      "sha256": "803ea7cc1f7b04d821e38b57659cc59edd93c13f6d0020d90cd7fe3456caf1f0"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/focus-t1.000.png",
+      "t": 1,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": false,
+        "t": 1,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "253dc259",
+        "signature": "253dc259",
+        "visibleAppendages": 0,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.057999998331069946,
+            1.0280000010728836,
+            -0.07814093333482743
+          ],
+          [
+            0.057999998331069946,
+            1.0280000010728836,
+            -0.07814093333482743
+          ],
+          [
+            -0.05400000140070915,
+            0.9239999989271164,
+            -0.08322371196746826
+          ],
+          [
+            0.05400000140070915,
+            0.9239999989271164,
+            -0.08322371196746826
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 1,
+        "phase": "retract",
+        "localPhaseProgress": 1,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 18.00162985458713
+      },
+      "sha256": "803ea7cc1f7b04d821e38b57659cc59edd93c13f6d0020d90cd7fe3456caf1f0"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/lateral-t0.000.png",
+      "t": 0,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": false,
+        "t": 0,
+        "phase": "rest",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "253dc259",
+        "signature": "253dc259",
+        "visibleAppendages": 0,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.057999998331069946,
+            1.0280000010728836,
+            -0.07814093333482743
+          ],
+          [
+            0.057999998331069946,
+            1.0280000010728836,
+            -0.07814093333482743
+          ],
+          [
+            -0.05400000140070915,
+            0.9239999989271164,
+            -0.08322371196746826
+          ],
+          [
+            0.05400000140070915,
+            0.9239999989271164,
+            -0.08322371196746826
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0,
+        "phase": "rest",
+        "localPhaseProgress": 0,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 0.0016298545871284939
+      },
+      "sha256": "206dbdf7fae0b30aedc3748ffab481851e615c0b702e4d8aea2da0690c606e74"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/lateral-t0.995.png",
+      "t": 0.995,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.995,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "20b744c7",
+        "signature": "20b744c7",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.045588972414469534,
+            1.0173492427729596,
+            -0.1306943862077791
+          ],
+          [
+            0.04728971096560964,
+            1.0175527746524407,
+            -0.13074996742175196
+          ],
+          [
+            -0.04205440840272453,
+            0.9359279164578888,
+            -0.1319832341806776
+          ],
+          [
+            0.041836967799521556,
+            0.9367446201050093,
+            -0.13295032614850266
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.995,
+        "phase": "retract",
+        "localPhaseProgress": 0.9,
+        "rootExposure": 0.028000000000000025,
+        "kakuhouActivation": 0.016240000000000032,
+        "appendageExtension": 0.028000000000000025,
+        "appendageThickness": 0.028000000000000025,
+        "visualStiffness": 0.028000000000000025,
+        "particleEmission": 0.003360000000000002,
+        "appendageMotion": 0.028000000000000025,
+        "visualIntensity": 0.028000000000000025,
+        "motionTime": 17.91162985458713
+      },
+      "sha256": "ad7d89f5137f73838417c4e779b1c533671373c606f2917ac646fe940fc2c81b"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/lateral-t0.998.png",
+      "t": 0.998,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.998,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "e273ba8b",
+        "signature": "e273ba8b",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.05795355141162872,
+            1.0279588701426983,
+            -0.08333330628275872
+          ],
+          [
+            0.057956453412771225,
+            1.0279589148461818,
+            -0.08333251093328
+          ],
+          [
+            -0.05395094305276871,
+            0.9240415098369121,
+            -0.08771077756583691
+          ],
+          [
+            0.05395364761352539,
+            0.9240415806174278,
+            -0.08771107745170593
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.998,
+        "phase": "retract",
+        "localPhaseProgress": 0.96,
+        "rootExposure": 0.0046720000000000095,
+        "kakuhouActivation": 0.0027097600000000055,
+        "appendageExtension": 0.0046720000000000095,
+        "appendageThickness": 0.0046720000000000095,
+        "visualStiffness": 0.0046720000000000095,
+        "particleEmission": 0.0005606400000000011,
+        "appendageMotion": 0.0046720000000000095,
+        "visualIntensity": 0.0046720000000000095,
+        "motionTime": 17.965629854587128
+      },
+      "sha256": "8858eb26c44203e6816b73d16ce4f1e8873b8d9e3273dbd5d3a4f3a5a417f269"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/lateral-t0.999.png",
+      "t": 0.999,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.999,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "23eed811",
+        "signature": "23eed811",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.05799993500113487,
+            1.027999945193529,
+            -0.07849281308054924
+          ],
+          [
+            0.05799993872642517,
+            1.027999945193529,
+            -0.07849281308054924
+          ],
+          [
+            -0.05399993062019348,
+            0.9240000585317611,
+            -0.08352425907552243
+          ],
+          [
+            0.05399993434548378,
+            0.9240000585317611,
+            -0.08352426093816757
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.999,
+        "phase": "retract",
+        "localPhaseProgress": 0.98,
+        "rootExposure": 0.0011840000000000739,
+        "kakuhouActivation": 0.0006867200000000295,
+        "appendageExtension": 0.0011840000000000739,
+        "appendageThickness": 0.0011840000000000739,
+        "visualStiffness": 0.0011840000000000739,
+        "particleEmission": 0.00014208000000000276,
+        "appendageMotion": 0.0011840000000000739,
+        "visualIntensity": 0.0011840000000000739,
+        "motionTime": 17.98362985458713
+      },
+      "sha256": "206dbdf7fae0b30aedc3748ffab481851e615c0b702e4d8aea2da0690c606e74"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/lateral-t1.000.png",
+      "t": 1,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 0.2,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": false,
+        "t": 1,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "253dc259",
+        "signature": "253dc259",
+        "visibleAppendages": 0,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.057999998331069946,
+            1.0280000010728836,
+            -0.07814093333482743
+          ],
+          [
+            0.057999998331069946,
+            1.0280000010728836,
+            -0.07814093333482743
+          ],
+          [
+            -0.05400000140070915,
+            0.9239999989271164,
+            -0.08322371196746826
+          ],
+          [
+            0.05400000140070915,
+            0.9239999989271164,
+            -0.08322371196746826
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "b58b9565-0970-4e03-8a74-4acc8aae05cc",
+            "1d6dab43-f85d-4b08-bfbc-0b36141c3529",
+            "90c94ac6-5ed7-44dc-b715-a65e82032fd2",
+            "02cf53c4-80c7-4816-9a56-92d4b2919e7e",
+            "243d6a15-a0b1-48fc-8ac2-be58ff9612ec"
+          ],
+          "material": [
+            "84103d3f-790e-4d90-9e29-240f9c51423b",
+            "67a3695d-ac1d-4e17-a867-53f6c8cb0347"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 1,
+        "phase": "retract",
+        "localPhaseProgress": 1,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 18.00162985458713
+      },
+      "sha256": "206dbdf7fae0b30aedc3748ffab481851e615c0b702e4d8aea2da0690c606e74"
+    }
+  ],
+  "recording": {
+    "file": "artifacts/gates/G3A1-review/checkpoint/after-translucent/retraction-final.webm",
+    "sha256": "00b02f67693c01aaaf222c3295e684b4041a596d3e5af9f3ebb2028eaa10b843",
+    "sequences": [
+      {
+        "view": "focus",
+        "samples": [
+          {
+            "elapsedMs": 6,
+            "t": 0.9804867647057947,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9804867647057947,
+              "phase": "retract",
+              "localPhaseProgress": 0.6097352941158934,
+              "rootExposure": 0.33803988738755353,
+              "kakuhouActivation": 0.19606313468478104,
+              "appendageExtension": 0.33803988738755353,
+              "appendageThickness": 0.33803988738755353,
+              "visualStiffness": 0.33803988738755353,
+              "particleEmission": 0.040564786486506424,
+              "appendageMotion": 0.33803988738755353,
+              "visualIntensity": 0.33803988738755353,
+              "motionTime": 17.650391619291433
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 37,
+            "t": 0.9809779411764705,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9809779411764705,
+              "phase": "retract",
+              "localPhaseProgress": 0.6195588235294108,
+              "rootExposure": 0.3240797870254949,
+              "kakuhouActivation": 0.18796627647478703,
+              "appendageExtension": 0.3240797870254949,
+              "appendageThickness": 0.3240797870254949,
+              "visualStiffness": 0.3240797870254949,
+              "particleEmission": 0.03888957444305939,
+              "appendageMotion": 0.3240797870254949,
+              "visualIntensity": 0.3240797870254949,
+              "motionTime": 17.6592327957636
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 71,
+            "t": 0.9814705882352941,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9814705882352941,
+              "phase": "retract",
+              "localPhaseProgress": 0.6294117647058822,
+              "rootExposure": 0.31021697537146364,
+              "kakuhouActivation": 0.1799258457154489,
+              "appendageExtension": 0.31021697537146364,
+              "appendageThickness": 0.31021697537146364,
+              "visualStiffness": 0.31021697537146364,
+              "particleEmission": 0.03722603704457564,
+              "appendageMotion": 0.31021697537146364,
+              "visualIntensity": 0.31021697537146364,
+              "motionTime": 17.66810044282242
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 103,
+            "t": 0.9819588235296746,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9819588235296746,
+              "phase": "retract",
+              "localPhaseProgress": 0.6391764705934916,
+              "rootExposure": 0.2966270156230949,
+              "kakuhouActivation": 0.172043669061395,
+              "appendageExtension": 0.2966270156230949,
+              "appendageThickness": 0.2966270156230949,
+              "visualStiffness": 0.2966270156230949,
+              "particleEmission": 0.035595241874771394,
+              "appendageMotion": 0.2966270156230949,
+              "visualIntensity": 0.2966270156230949,
+              "motionTime": 17.676888678121273
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 132,
+            "t": 0.9822029411766457,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9822029411766457,
+              "phase": "retract",
+              "localPhaseProgress": 0.6440588235329153,
+              "rootExposure": 0.28989105427932504,
+              "kakuhouActivation": 0.16813681148200854,
+              "appendageExtension": 0.28989105427932504,
+              "appendageThickness": 0.28989105427932504,
+              "visualStiffness": 0.28989105427932504,
+              "particleEmission": 0.034786926513519,
+              "appendageMotion": 0.28989105427932504,
+              "visualIntensity": 0.28989105427932504,
+              "motionTime": 17.68128279576675
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 158,
+            "t": 0.9826911764705881,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9826911764705881,
+              "phase": "retract",
+              "localPhaseProgress": 0.6538235294117628,
+              "rootExposure": 0.27654415158762724,
+              "kakuhouActivation": 0.1603956079208238,
+              "appendageExtension": 0.27654415158762724,
+              "appendageThickness": 0.27654415158762724,
+              "visualStiffness": 0.27654415158762724,
+              "particleEmission": 0.03318529819051527,
+              "appendageMotion": 0.27654415158762724,
+              "visualIntensity": 0.27654415158762724,
+              "motionTime": 17.690071031057716
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 189,
+            "t": 0.9831808823531163,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9831808823531163,
+              "phase": "retract",
+              "localPhaseProgress": 0.6636176470623262,
+              "rootExposure": 0.2633338585617141,
+              "kakuhouActivation": 0.15273363796579414,
+              "appendageExtension": 0.2633338585617141,
+              "appendageThickness": 0.2633338585617141,
+              "visualStiffness": 0.2633338585617141,
+              "particleEmission": 0.031600063027405687,
+              "appendageMotion": 0.2633338585617141,
+              "visualIntensity": 0.2633338585617141,
+              "motionTime": 17.69888573694322
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 220,
+            "t": 0.9836779411763827,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9836779411763827,
+              "phase": "retract",
+              "localPhaseProgress": 0.6735588235276552,
+              "rootExposure": 0.25011787338421243,
+              "kakuhouActivation": 0.14506836656284322,
+              "appendageExtension": 0.25011787338421243,
+              "appendageThickness": 0.25011787338421243,
+              "visualStiffness": 0.25011787338421243,
+              "particleEmission": 0.030014144806105494,
+              "appendageMotion": 0.25011787338421243,
+              "visualIntensity": 0.25011787338421243,
+              "motionTime": 17.70783279576202
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 253,
+            "t": 0.9841617647058822,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9841617647058822,
+              "phase": "retract",
+              "localPhaseProgress": 0.683235294117645,
+              "rootExposure": 0.23745137222674795,
+              "kakuhouActivation": 0.1377217958915138,
+              "appendageExtension": 0.23745137222674795,
+              "appendageThickness": 0.23745137222674795,
+              "visualStiffness": 0.23745137222674795,
+              "particleEmission": 0.028494164667209748,
+              "appendageMotion": 0.23745137222674795,
+              "visualIntensity": 0.23745137222674795,
+              "motionTime": 17.71654161929301
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 278,
+            "t": 0.9844102941177345,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9844102941177345,
+              "phase": "retract",
+              "localPhaseProgress": 0.6882058823546904,
+              "rootExposure": 0.23102422853423277,
+              "kakuhouActivation": 0.13399405254985497,
+              "appendageExtension": 0.23102422853423277,
+              "appendageThickness": 0.23102422853423277,
+              "visualStiffness": 0.23102422853423277,
+              "particleEmission": 0.027722907424107934,
+              "appendageMotion": 0.23102422853423277,
+              "visualIntensity": 0.23102422853423277,
+              "motionTime": 17.72101514870635
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 305,
+            "t": 0.9849058823528534,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9849058823528534,
+              "phase": "retract",
+              "localPhaseProgress": 0.6981176470570676,
+              "rootExposure": 0.2183760032719131,
+              "kakuhouActivation": 0.1266580818977096,
+              "appendageExtension": 0.2183760032719131,
+              "appendageThickness": 0.2183760032719131,
+              "visualStiffness": 0.2183760032719131,
+              "particleEmission": 0.026205120392629566,
+              "appendageMotion": 0.2183760032719131,
+              "visualIntensity": 0.2183760032719131,
+              "motionTime": 17.72993573693849
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 332,
+            "t": 0.9853911764705005,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9853911764705005,
+              "phase": "retract",
+              "localPhaseProgress": 0.7078235294100093,
+              "rootExposure": 0.20621675979741538,
+              "kakuhouActivation": 0.11960572068250092,
+              "appendageExtension": 0.20621675979741538,
+              "appendageThickness": 0.20621675979741538,
+              "visualStiffness": 0.20621675979741538,
+              "particleEmission": 0.02474601117568985,
+              "appendageMotion": 0.20621675979741538,
+              "visualIntensity": 0.20621675979741538,
+              "motionTime": 17.73867103105614
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 365,
+            "t": 0.9856441176472339,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9856441176472339,
+              "phase": "retract",
+              "localPhaseProgress": 0.7128823529446786,
+              "rootExposure": 0.1999716570927884,
+              "kakuhouActivation": 0.11598356111381725,
+              "appendageExtension": 0.1999716570927884,
+              "appendageThickness": 0.1999716570927884,
+              "visualStiffness": 0.1999716570927884,
+              "particleEmission": 0.023996598851134615,
+              "appendageMotion": 0.1999716570927884,
+              "visualIntensity": 0.1999716570927884,
+              "motionTime": 17.743223972237338
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 392,
+            "t": 0.9861264705881475,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9861264705881475,
+              "phase": "retract",
+              "localPhaseProgress": 0.7225294117629504,
+              "rootExposure": 0.18824490115700676,
+              "kakuhouActivation": 0.1091820426710639,
+              "appendageExtension": 0.18824490115700676,
+              "appendageThickness": 0.18824490115700676,
+              "visualStiffness": 0.18824490115700676,
+              "particleEmission": 0.022589388138840816,
+              "appendageMotion": 0.18824490115700676,
+              "visualIntensity": 0.18824490115700676,
+              "motionTime": 17.751906325173785
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 423,
+            "t": 0.9866147058825281,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9866147058825281,
+              "phase": "retract",
+              "localPhaseProgress": 0.732294117650562,
+              "rootExposure": 0.1766282635208134,
+              "kakuhouActivation": 0.10244439284207174,
+              "appendageExtension": 0.1766282635208134,
+              "appendageThickness": 0.1766282635208134,
+              "visualStiffness": 0.1766282635208134,
+              "particleEmission": 0.021195391622497603,
+              "appendageMotion": 0.1766282635208134,
+              "visualIntensity": 0.1766282635208134,
+              "motionTime": 17.760694560472636
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 452,
+            "t": 0.9871000000001751,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9871000000001751,
+              "phase": "retract",
+              "localPhaseProgress": 0.7420000000035014,
+              "rootExposure": 0.1653449759959782,
+              "kakuhouActivation": 0.09590008607766737,
+              "appendageExtension": 0.1653449759959782,
+              "appendageThickness": 0.1653449759959782,
+              "visualStiffness": 0.1653449759959782,
+              "particleEmission": 0.01984139711951738,
+              "appendageMotion": 0.1653449759959782,
+              "visualIntensity": 0.1653449759959782,
+              "motionTime": 17.769429854590282
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 486,
+            "t": 0.9875941176471462,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9875941176471462,
+              "phase": "retract",
+              "localPhaseProgress": 0.7518823529429246,
+              "rootExposure": 0.15413768115741633,
+              "kakuhouActivation": 0.08939985507130144,
+              "appendageExtension": 0.15413768115741633,
+              "appendageThickness": 0.15413768115741633,
+              "visualStiffness": 0.15413768115741633,
+              "particleEmission": 0.018496521738889965,
+              "appendageMotion": 0.15413768115741633,
+              "visualIntensity": 0.15413768115741633,
+              "motionTime": 17.77832397223576
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 519,
+            "t": 0.9880882352941174,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9880882352941174,
+              "phase": "retract",
+              "localPhaseProgress": 0.7617647058823478,
+              "rootExposure": 0.14322557500509414,
+              "kakuhouActivation": 0.08307083350295458,
+              "appendageExtension": 0.14322557500509414,
+              "appendageThickness": 0.14322557500509414,
+              "visualStiffness": 0.14322557500509414,
+              "particleEmission": 0.017187069000611302,
+              "appendageMotion": 0.14322557500509414,
+              "visualIntensity": 0.14322557500509414,
+              "motionTime": 17.787218089881243
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 549,
+            "t": 0.9885779411766457,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9885779411766457,
+              "phase": "retract",
+              "localPhaseProgress": 0.7715588235329134,
+              "rootExposure": 0.13271353817749987,
+              "kakuhouActivation": 0.07697385214294994,
+              "appendageExtension": 0.13271353817749987,
+              "appendageThickness": 0.13271353817749987,
+              "visualStiffness": 0.13271353817749987,
+              "particleEmission": 0.01592562458129998,
+              "appendageMotion": 0.13271353817749987,
+              "visualIntensity": 0.13271353817749987,
+              "motionTime": 17.796032795766752
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 576,
+            "t": 0.9888205882354691,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9888205882354691,
+              "phase": "retract",
+              "localPhaseProgress": 0.7764117647093831,
+              "rootExposure": 0.12761998538165797,
+              "kakuhouActivation": 0.07401959152136162,
+              "appendageExtension": 0.12761998538165797,
+              "appendageThickness": 0.12761998538165797,
+              "visualStiffness": 0.12761998538165797,
+              "particleEmission": 0.015314398245798957,
+              "appendageMotion": 0.12761998538165797,
+              "visualIntensity": 0.12761998538165797,
+              "motionTime": 17.800400442825573
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 601,
+            "t": 0.9893088235294115,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9893088235294115,
+              "phase": "retract",
+              "localPhaseProgress": 0.7861764705882306,
+              "rootExposure": 0.11760926709750119,
+              "kakuhouActivation": 0.06821337491655066,
+              "appendageExtension": 0.11760926709750119,
+              "appendageThickness": 0.11760926709750119,
+              "visualStiffness": 0.11760926709750119,
+              "particleEmission": 0.014113112051700141,
+              "appendageMotion": 0.11760926709750119,
+              "visualIntensity": 0.11760926709750119,
+              "motionTime": 17.809188678116538
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 634,
+            "t": 0.9897985294119398,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9897985294119398,
+              "phase": "retract",
+              "localPhaseProgress": 0.7959705882387962,
+              "rootExposure": 0.1078973295328689,
+              "kakuhouActivation": 0.06258045112906396,
+              "appendageExtension": 0.1078973295328689,
+              "appendageThickness": 0.1078973295328689,
+              "visualStiffness": 0.1078973295328689,
+              "particleEmission": 0.012947679543944268,
+              "appendageMotion": 0.1078973295328689,
+              "visualIntensity": 0.1078973295328689,
+              "motionTime": 17.818003384002047
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 670,
+            "t": 0.9902897058826157,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9902897058826157,
+              "phase": "retract",
+              "localPhaseProgress": 0.8057941176523136,
+              "rootExposure": 0.09849846533055362,
+              "kakuhouActivation": 0.05712910989172104,
+              "appendageExtension": 0.09849846533055362,
+              "appendageThickness": 0.09849846533055362,
+              "visualStiffness": 0.09849846533055362,
+              "particleEmission": 0.011819815839666431,
+              "appendageMotion": 0.09849846533055362,
+              "visualIntensity": 0.09849846533055362,
+              "motionTime": 17.82684456047421
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 701,
+            "t": 0.9907794117647056,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9907794117647056,
+              "phase": "retract",
+              "localPhaseProgress": 0.8155882352941127,
+              "rootExposure": 0.08948025732750287,
+              "kakuhouActivation": 0.05189854924995163,
+              "appendageExtension": 0.08948025732750287,
+              "appendageThickness": 0.08948025732750287,
+              "visualStiffness": 0.08948025732750287,
+              "particleEmission": 0.010737630879300339,
+              "appendageMotion": 0.08948025732750287,
+              "visualIntensity": 0.08948025732750287,
+              "motionTime": 17.83565926635183
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 734,
+            "t": 0.9912691176472339,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9912691176472339,
+              "phase": "retract",
+              "localPhaseProgress": 0.8253823529446783,
+              "rootExposure": 0.08082532195132752,
+              "kakuhouActivation": 0.04687868673176998,
+              "appendageExtension": 0.08082532195132752,
+              "appendageThickness": 0.08082532195132752,
+              "visualStiffness": 0.08082532195132752,
+              "particleEmission": 0.009699038634159302,
+              "appendageMotion": 0.08082532195132752,
+              "visualIntensity": 0.08082532195132752,
+              "motionTime": 17.84447397223734
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 770,
+            "t": 0.9917617647060574,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9917617647060574,
+              "phase": "retract",
+              "localPhaseProgress": 0.8352352941211475,
+              "rootExposure": 0.0724963554210869,
+              "kakuhouActivation": 0.042047886144230384,
+              "appendageExtension": 0.0724963554210869,
+              "appendageThickness": 0.0724963554210869,
+              "visualStiffness": 0.0724963554210869,
+              "particleEmission": 0.008699562650530429,
+              "appendageMotion": 0.0724963554210869,
+              "visualIntensity": 0.0724963554210869,
+              "motionTime": 17.853341619296163
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 798,
+            "t": 0.9922485294118522,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9922485294118522,
+              "phase": "retract",
+              "localPhaseProgress": 0.8449705882370432,
+              "rootExposure": 0.06465036502452592,
+              "kakuhouActivation": 0.03749721171422504,
+              "appendageExtension": 0.06465036502452592,
+              "appendageThickness": 0.06465036502452592,
+              "visualStiffness": 0.06465036502452592,
+              "particleEmission": 0.007758043802943107,
+              "appendageMotion": 0.06465036502452592,
+              "visualIntensity": 0.06465036502452592,
+              "motionTime": 17.86210338400047
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 826,
+            "t": 0.9924941176469709,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9924941176469709,
+              "phase": "retract",
+              "localPhaseProgress": 0.8498823529394187,
+              "rootExposure": 0.06084002906383279,
+              "kakuhouActivation": 0.03528721685702296,
+              "appendageExtension": 0.06084002906383279,
+              "appendageThickness": 0.06084002906383279,
+              "visualStiffness": 0.06084002906383279,
+              "particleEmission": 0.007300803487659935,
+              "appendageMotion": 0.06084002906383279,
+              "visualIntensity": 0.06084002906383279,
+              "motionTime": 17.866523972232606
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 851,
+            "t": 0.9929838235294992,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9929838235294992,
+              "phase": "retract",
+              "localPhaseProgress": 0.8596764705899843,
+              "rootExposure": 0.053545943668029894,
+              "kakuhouActivation": 0.031056647327457387,
+              "appendageExtension": 0.053545943668029894,
+              "appendageThickness": 0.053545943668029894,
+              "visualStiffness": 0.053545943668029894,
+              "particleEmission": 0.006425513240163591,
+              "appendageMotion": 0.053545943668029894,
+              "visualIntensity": 0.053545943668029894,
+              "motionTime": 17.875338678118116
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 884,
+            "t": 0.9934735294120274,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9934735294120274,
+              "phase": "retract",
+              "localPhaseProgress": 0.8694705882405477,
+              "rootExposure": 0.046665880737721155,
+              "kakuhouActivation": 0.0270662108278783,
+              "appendageExtension": 0.046665880737721155,
+              "appendageThickness": 0.046665880737721155,
+              "visualStiffness": 0.046665880737721155,
+              "particleEmission": 0.005599905688526544,
+              "appendageMotion": 0.046665880737721155,
+              "visualIntensity": 0.046665880737721155,
+              "motionTime": 17.88415338400362
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 920,
+            "t": 0.993966176470851,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.993966176470851,
+              "phase": "retract",
+              "localPhaseProgress": 0.8793235294170191,
+              "rootExposure": 0.04017365449863919,
+              "kakuhouActivation": 0.023300719609210763,
+              "appendageExtension": 0.04017365449863919,
+              "appendageThickness": 0.04017365449863919,
+              "visualStiffness": 0.04017365449863919,
+              "particleEmission": 0.004820838539836697,
+              "appendageMotion": 0.04017365449863919,
+              "visualIntensity": 0.04017365449863919,
+              "motionTime": 17.893021031062446
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 953,
+            "t": 0.9944558823529409,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9944558823529409,
+              "phase": "retract",
+              "localPhaseProgress": 0.8891176470588184,
+              "rootExposure": 0.034158114543052065,
+              "kakuhouActivation": 0.01981170643497021,
+              "appendageExtension": 0.034158114543052065,
+              "appendageThickness": 0.034158114543052065,
+              "visualStiffness": 0.034158114543052065,
+              "particleEmission": 0.004098973745166254,
+              "appendageMotion": 0.034158114543052065,
+              "visualIntensity": 0.034158114543052065,
+              "motionTime": 17.901835736940065
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 987,
+            "t": 0.9949455882354692,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9949455882354692,
+              "phase": "retract",
+              "localPhaseProgress": 0.8989117647093839,
+              "rootExposure": 0.028590486693948702,
+              "kakuhouActivation": 0.016582482282490263,
+              "appendageExtension": 0.028590486693948702,
+              "appendageThickness": 0.028590486693948702,
+              "visualStiffness": 0.028590486693948702,
+              "particleEmission": 0.00343085840327384,
+              "appendageMotion": 0.028590486693948702,
+              "visualIntensity": 0.028590486693948702,
+              "motionTime": 17.910650442825574
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1017,
+            "t": 0.9954455882354691,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9954455882354691,
+              "phase": "retract",
+              "localPhaseProgress": 0.9089117647093828,
+              "rootExposure": 0.02337966951418824,
+              "kakuhouActivation": 0.013560208318229128,
+              "appendageExtension": 0.02337966951418824,
+              "appendageThickness": 0.02337966951418824,
+              "visualStiffness": 0.02337966951418824,
+              "particleEmission": 0.0028055603417025954,
+              "appendageMotion": 0.02337966951418824,
+              "visualIntensity": 0.02337966951418824,
+              "motionTime": 17.919650442825574
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1045,
+            "t": 0.9956808823531162,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9956808823531162,
+              "phase": "retract",
+              "localPhaseProgress": 0.9136176470623251,
+              "rootExposure": 0.021096577855404863,
+              "kakuhouActivation": 0.012236015156134816,
+              "appendageExtension": 0.021096577855404863,
+              "appendageThickness": 0.021096577855404863,
+              "visualStiffness": 0.021096577855404863,
+              "particleEmission": 0.002531589342648577,
+              "appendageMotion": 0.021096577855404863,
+              "visualIntensity": 0.021096577855404863,
+              "motionTime": 17.923885736943223
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1071,
+            "t": 0.9961720588237921,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9961720588237921,
+              "phase": "retract",
+              "localPhaseProgress": 0.9234411764758425,
+              "rootExposure": 0.016686299039751606,
+              "kakuhouActivation": 0.009678053443055945,
+              "appendageExtension": 0.016686299039751606,
+              "appendageThickness": 0.016686299039751606,
+              "visualStiffness": 0.016686299039751606,
+              "particleEmission": 0.002002355884770199,
+              "appendageMotion": 0.016686299039751606,
+              "visualIntensity": 0.016686299039751606,
+              "motionTime": 17.932726913415387
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1101,
+            "t": 0.9966602941177344,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9966602941177344,
+              "phase": "retract",
+              "localPhaseProgress": 0.9332058823546877,
+              "rootExposure": 0.012788364669049646,
+              "kakuhouActivation": 0.007417251508048839,
+              "appendageExtension": 0.012788364669049646,
+              "appendageThickness": 0.012788364669049646,
+              "visualStiffness": 0.012788364669049646,
+              "particleEmission": 0.0015346037602859547,
+              "appendageMotion": 0.012788364669049646,
+              "visualIntensity": 0.012788364669049646,
+              "motionTime": 17.941515148706348
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1133,
+            "t": 0.9971500000002627,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9971500000002627,
+              "phase": "retract",
+              "localPhaseProgress": 0.9430000000052532,
+              "rootExposure": 0.009376613998305916,
+              "kakuhouActivation": 0.005438436119017398,
+              "appendageExtension": 0.009376613998305916,
+              "appendageThickness": 0.009376613998305916,
+              "visualStiffness": 0.009376613998305916,
+              "particleEmission": 0.0011251936797967155,
+              "appendageMotion": 0.009376613998305916,
+              "visualIntensity": 0.009376613998305916,
+              "motionTime": 17.950329854591857
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1163,
+            "t": 0.9973970588235291,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9973970588235291,
+              "phase": "retract",
+              "localPhaseProgress": 0.9479411764705827,
+              "rootExposure": 0.007848191888867984,
+              "kakuhouActivation": 0.004551951295543422,
+              "appendageExtension": 0.007848191888867984,
+              "appendageThickness": 0.007848191888867984,
+              "visualStiffness": 0.007848191888867984,
+              "particleEmission": 0.0009417830266641586,
+              "appendageMotion": 0.007848191888867984,
+              "visualIntensity": 0.007848191888867984,
+              "motionTime": 17.954776913410655
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1186,
+            "t": 0.9978852941179098,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9978852941179098,
+              "phase": "retract",
+              "localPhaseProgress": 0.9577058823581965,
+              "rootExposure": 0.0052150663699827016,
+              "kakuhouActivation": 0.0030247384945899514,
+              "appendageExtension": 0.0052150663699827016,
+              "appendageThickness": 0.0052150663699827016,
+              "visualStiffness": 0.0052150663699827016,
+              "particleEmission": 0.0006258079643979286,
+              "appendageMotion": 0.0052150663699827016,
+              "visualIntensity": 0.0052150663699827016,
+              "motionTime": 17.963565148709506
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1215,
+            "t": 0.9983764705881475,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9983764705881475,
+              "phase": "retract",
+              "localPhaseProgress": 0.9675294117629498,
+              "rootExposure": 0.0030945472797936358,
+              "kakuhouActivation": 0.0017948374222802599,
+              "appendageExtension": 0.0030945472797936358,
+              "appendageThickness": 0.0030945472797936358,
+              "visualStiffness": 0.0030945472797936358,
+              "particleEmission": 0.0003713456735752324,
+              "appendageMotion": 0.0030945472797936358,
+              "visualIntensity": 0.0030945472797936358,
+              "motionTime": 17.972406325173786
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1249,
+            "t": 0.9988661764706757,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9988661764706757,
+              "phase": "retract",
+              "localPhaseProgress": 0.9773235294135132,
+              "rootExposure": 0.001519345460229471,
+              "kakuhouActivation": 0.0008812203669330554,
+              "appendageExtension": 0.001519345460229471,
+              "appendageThickness": 0.001519345460229471,
+              "visualStiffness": 0.001519345460229471,
+              "particleEmission": 0.0001823214552275354,
+              "appendageMotion": 0.001519345460229471,
+              "visualIntensity": 0.001519345460229471,
+              "motionTime": 17.98122103105929
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1277,
+            "t": 0.999114705882528,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.999114705882528,
+              "phase": "retract",
+              "localPhaseProgress": 0.9822941176505608,
+              "rootExposure": 0.0009293932823538631,
+              "kakuhouActivation": 0.0005390481037652606,
+              "appendageExtension": 0.0009293932823538631,
+              "appendageThickness": 0.0009293932823538631,
+              "visualStiffness": 0.0009293932823538631,
+              "particleEmission": 0.00011152719388246579,
+              "appendageMotion": 0.0009293932823538631,
+              "visualIntensity": 0.0009293932823538631,
+              "motionTime": 17.985694560472634
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1308,
+            "t": 0.9996014705883227,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9996014705883227,
+              "phase": "retract",
+              "localPhaseProgress": 0.9920294117664543,
+              "rootExposure": 0.0001895780830128979,
+              "kakuhouActivation": 0.00010995528814750077,
+              "appendageExtension": 0.0001895780830128979,
+              "appendageThickness": 0.0001895780830128979,
+              "visualStiffness": 0.0001895780830128979,
+              "particleEmission": 0.00002274936996154997,
+              "appendageMotion": 0.0001895780830128979,
+              "visualIntensity": 0.0001895780830128979,
+              "motionTime": 17.994456325176937
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1334,
+            "t": 1,
+            "playing": false,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 1,
+              "phase": "retract",
+              "localPhaseProgress": 1,
+              "rootExposure": 0,
+              "kakuhouActivation": 0,
+              "appendageExtension": 0,
+              "appendageThickness": 0,
+              "visualStiffness": 0,
+              "particleEmission": 0,
+              "appendageMotion": 0,
+              "visualIntensity": 0,
+              "motionTime": 18.00162985458713
+            },
+            "visible": false,
+            "particleCount": 0
+          }
+        ]
+      },
+      {
+        "view": "lateral",
+        "samples": [
+          {
+            "elapsedMs": 2,
+            "t": 0.98,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.98,
+              "phase": "retract",
+              "localPhaseProgress": 0.6,
+              "rootExposure": 0.352,
+              "kakuhouActivation": 0.20415999999999995,
+              "appendageExtension": 0.352,
+              "appendageThickness": 0.352,
+              "visualStiffness": 0.352,
+              "particleEmission": 0.04224,
+              "appendageMotion": 0.352,
+              "visualIntensity": 0.352,
+              "motionTime": 17.64162985458713
+            },
+            "visible": true,
+            "particleCount": 2
+          },
+          {
+            "elapsedMs": 32,
+            "t": 0.9804897058825282,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9804897058825282,
+              "phase": "retract",
+              "localPhaseProgress": 0.6097941176505633,
+              "rootExposure": 0.33795590442390977,
+              "kakuhouActivation": 0.19601442456586765,
+              "appendageExtension": 0.33795590442390977,
+              "appendageThickness": 0.33795590442390977,
+              "visualStiffness": 0.33795590442390977,
+              "particleEmission": 0.04055470853086918,
+              "appendageMotion": 0.33795590442390977,
+              "visualIntensity": 0.33795590442390977,
+              "motionTime": 17.650444560472636
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 67,
+            "t": 0.980985294117647,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.980985294117647,
+              "phase": "retract",
+              "localPhaseProgress": 0.6197058823529406,
+              "rootExposure": 0.32387182693873484,
+              "kakuhouActivation": 0.1878456596244662,
+              "appendageExtension": 0.32387182693873484,
+              "appendageThickness": 0.32387182693873484,
+              "visualStiffness": 0.32387182693873484,
+              "particleEmission": 0.03886461923264818,
+              "appendageMotion": 0.32387182693873484,
+              "visualIntensity": 0.32387182693873484,
+              "motionTime": 17.659365148704776
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 101,
+            "t": 0.9814691176471464,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9814691176471464,
+              "phase": "retract",
+              "localPhaseProgress": 0.6293823529429282,
+              "rootExposure": 0.3102581382633228,
+              "kakuhouActivation": 0.1799497201927272,
+              "appendageExtension": 0.3102581382633228,
+              "appendageThickness": 0.3102581382633228,
+              "visualStiffness": 0.3102581382633228,
+              "particleEmission": 0.03723097659159874,
+              "appendageMotion": 0.3102581382633228,
+              "visualIntensity": 0.3102581382633228,
+              "motionTime": 17.668073972235764
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 131,
+            "t": 0.9819573529410888,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9819573529410888,
+              "phase": "retract",
+              "localPhaseProgress": 0.6391470588217757,
+              "rootExposure": 0.29666771575100204,
+              "kakuhouActivation": 0.17206727513558118,
+              "appendageExtension": 0.29666771575100204,
+              "appendageThickness": 0.29666771575100204,
+              "visualStiffness": 0.29666771575100204,
+              "particleEmission": 0.03560012589012024,
+              "appendageMotion": 0.29666771575100204,
+              "visualIntensity": 0.29666771575100204,
+              "motionTime": 17.676862207526728
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 163,
+            "t": 0.982447058823617,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.982447058823617,
+              "phase": "retract",
+              "localPhaseProgress": 0.6489411764723413,
+              "rootExposure": 0.2831963007376811,
+              "kakuhouActivation": 0.164253854427855,
+              "appendageExtension": 0.2831963007376811,
+              "appendageThickness": 0.2831963007376811,
+              "visualStiffness": 0.2831963007376811,
+              "particleEmission": 0.03398355608852173,
+              "appendageMotion": 0.2831963007376811,
+              "visualIntensity": 0.2831963007376811,
+              "motionTime": 17.685676913412237
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 196,
+            "t": 0.982936764705707,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.982936764705707,
+              "phase": "retract",
+              "localPhaseProgress": 0.6587352941141406,
+              "rootExposure": 0.2698963314607138,
+              "kakuhouActivation": 0.156539872247214,
+              "appendageExtension": 0.2698963314607138,
+              "appendageThickness": 0.2698963314607138,
+              "visualStiffness": 0.2698963314607138,
+              "particleEmission": 0.03238755977528565,
+              "appendageMotion": 0.2698963314607138,
+              "visualIntensity": 0.2698963314607138,
+              "motionTime": 17.694491619289856
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 229,
+            "t": 0.9834294117645306,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9834294117645306,
+              "phase": "retract",
+              "localPhaseProgress": 0.668588235290612,
+              "rootExposure": 0.25670087437714184,
+              "kakuhouActivation": 0.14888650713874224,
+              "appendageExtension": 0.25670087437714184,
+              "appendageThickness": 0.25670087437714184,
+              "visualStiffness": 0.25670087437714184,
+              "particleEmission": 0.030804104925257023,
+              "appendageMotion": 0.25670087437714184,
+              "visualIntensity": 0.25670087437714184,
+              "motionTime": 17.70335926634868
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 256,
+            "t": 0.983677941176383,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.983677941176383,
+              "phase": "retract",
+              "localPhaseProgress": 0.6735588235276596,
+              "rootExposure": 0.25011787338420655,
+              "kakuhouActivation": 0.14506836656283978,
+              "appendageExtension": 0.25011787338420655,
+              "appendageThickness": 0.25011787338420655,
+              "visualStiffness": 0.25011787338420655,
+              "particleEmission": 0.030014144806104787,
+              "appendageMotion": 0.25011787338420655,
+              "visualIntensity": 0.25011787338420655,
+              "motionTime": 17.707832795762023
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 287,
+            "t": 0.9841647058821776,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9841647058821776,
+              "phase": "retract",
+              "localPhaseProgress": 0.6832941176435531,
+              "rootExposure": 0.2373749908028422,
+              "kakuhouActivation": 0.13767749466564844,
+              "appendageExtension": 0.2373749908028422,
+              "appendageThickness": 0.2373749908028422,
+              "visualStiffness": 0.2373749908028422,
+              "particleEmission": 0.02848499889634107,
+              "appendageMotion": 0.2373749908028422,
+              "visualIntensity": 0.2373749908028422,
+              "motionTime": 17.716594560466326
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 316,
+            "t": 0.9846573529410012,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9846573529410012,
+              "phase": "retract",
+              "localPhaseProgress": 0.6931470588200244,
+              "rootExposure": 0.22469041758349806,
+              "kakuhouActivation": 0.13032044219842887,
+              "appendageExtension": 0.22469041758349806,
+              "appendageThickness": 0.22469041758349806,
+              "visualStiffness": 0.22469041758349806,
+              "particleEmission": 0.026962850110019768,
+              "appendageMotion": 0.22469041758349806,
+              "visualIntensity": 0.22469041758349806,
+              "motionTime": 17.72546220752515
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 350,
+            "t": 0.9851455882353818,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9851455882353818,
+              "phase": "retract",
+              "localPhaseProgress": 0.7029117647076359,
+              "rootExposure": 0.2123413998908925,
+              "kakuhouActivation": 0.12315801193671766,
+              "appendageExtension": 0.2123413998908925,
+              "appendageThickness": 0.2123413998908925,
+              "visualStiffness": 0.2123413998908925,
+              "particleEmission": 0.025480967986907105,
+              "appendageMotion": 0.2123413998908925,
+              "visualIntensity": 0.2123413998908925,
+              "motionTime": 17.734250442824003
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 377,
+            "t": 0.985639705882353,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.985639705882353,
+              "phase": "retract",
+              "localPhaseProgress": 0.7127941176470591,
+              "rootExposure": 0.20008002762441446,
+              "kakuhouActivation": 0.11604641602216037,
+              "appendageExtension": 0.20008002762441446,
+              "appendageThickness": 0.20008002762441446,
+              "visualStiffness": 0.20008002762441446,
+              "particleEmission": 0.02400960331492974,
+              "appendageMotion": 0.20008002762441446,
+              "visualIntensity": 0.20008002762441446,
+              "motionTime": 17.74314456046948
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 415,
+            "t": 0.9861279411762953,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9861279411762953,
+              "phase": "retract",
+              "localPhaseProgress": 0.7225588235259066,
+              "rootExposure": 0.1882095233740002,
+              "kakuhouActivation": 0.1091615235569201,
+              "appendageExtension": 0.1882095233740002,
+              "appendageThickness": 0.1882095233740002,
+              "visualStiffness": 0.1882095233740002,
+              "particleEmission": 0.022585142804880026,
+              "appendageMotion": 0.1882095233740002,
+              "visualIntensity": 0.1882095233740002,
+              "motionTime": 17.751932795760446
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 446,
+            "t": 0.9866176470588235,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9866176470588235,
+              "phase": "retract",
+              "localPhaseProgress": 0.73235294117647,
+              "rootExposure": 0.17655907795644288,
+              "kakuhouActivation": 0.10240426521473689,
+              "appendageExtension": 0.17655907795644288,
+              "appendageThickness": 0.17655907795644288,
+              "visualStiffness": 0.17655907795644288,
+              "particleEmission": 0.021187089354773148,
+              "appendageMotion": 0.17655907795644288,
+              "visualIntensity": 0.17655907795644288,
+              "motionTime": 17.76074750164595
+            },
+            "visible": true,
+            "particleCount": 1
+          },
+          {
+            "elapsedMs": 473,
+            "t": 0.9868617647057947,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9868617647057947,
+              "phase": "retract",
+              "localPhaseProgress": 0.7372352941158937,
+              "rootExposure": 0.17085054099002905,
+              "kakuhouActivation": 0.09909331377421682,
+              "appendageExtension": 0.17085054099002905,
+              "appendageThickness": 0.17085054099002905,
+              "visualStiffness": 0.17085054099002905,
+              "particleEmission": 0.020502064918803492,
+              "appendageMotion": 0.17085054099002905,
+              "visualIntensity": 0.17085054099002905,
+              "motionTime": 17.765141619291434
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 507,
+            "t": 0.9873544117646182,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9873544117646182,
+              "phase": "retract",
+              "localPhaseProgress": 0.7470882352923651,
+              "rootExposure": 0.1595384034825994,
+              "kakuhouActivation": 0.09253227401990766,
+              "appendageExtension": 0.1595384034825994,
+              "appendageThickness": 0.1595384034825994,
+              "visualStiffness": 0.1595384034825994,
+              "particleEmission": 0.01914460841791192,
+              "appendageMotion": 0.1595384034825994,
+              "visualIntensity": 0.1595384034825994,
+              "motionTime": 17.77400926635026
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 531,
+            "t": 0.9878455882352941,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9878455882352941,
+              "phase": "retract",
+              "localPhaseProgress": 0.7569117647058825,
+              "rootExposure": 0.14854658382734565,
+              "kakuhouActivation": 0.08615701861986047,
+              "appendageExtension": 0.14854658382734565,
+              "appendageThickness": 0.14854658382734565,
+              "visualStiffness": 0.14854658382734565,
+              "particleEmission": 0.01782559005928147,
+              "appendageMotion": 0.14854658382734565,
+              "visualIntensity": 0.14854658382734565,
+              "motionTime": 17.782850442822422
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 568,
+            "t": 0.9883308823529412,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9883308823529412,
+              "phase": "retract",
+              "localPhaseProgress": 0.7666176470588242,
+              "rootExposure": 0.13797854414944966,
+              "kakuhouActivation": 0.08002755560668079,
+              "appendageExtension": 0.13797854414944966,
+              "appendageThickness": 0.13797854414944966,
+              "visualStiffness": 0.13797854414944966,
+              "particleEmission": 0.016557425297933956,
+              "appendageMotion": 0.13797854414944966,
+              "visualIntensity": 0.13797854414944966,
+              "motionTime": 17.79158573694007
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 597,
+            "t": 0.9888205882354694,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9888205882354694,
+              "phase": "retract",
+              "localPhaseProgress": 0.7764117647093876,
+              "rootExposure": 0.12761998538165342,
+              "kakuhouActivation": 0.07401959152135895,
+              "appendageExtension": 0.12761998538165342,
+              "appendageThickness": 0.12761998538165342,
+              "visualStiffness": 0.12761998538165342,
+              "particleEmission": 0.015314398245798416,
+              "appendageMotion": 0.12761998538165342,
+              "visualIntensity": 0.12761998538165342,
+              "motionTime": 17.800400442825577
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 630,
+            "t": 0.9893132352942929,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9893132352942929,
+              "phase": "retract",
+              "localPhaseProgress": 0.786264705885859,
+              "rootExposure": 0.11752028474290277,
+              "kakuhouActivation": 0.06816176515088357,
+              "appendageExtension": 0.11752028474290277,
+              "appendageThickness": 0.11752028474290277,
+              "visualStiffness": 0.11752028474290277,
+              "particleEmission": 0.014102434169148331,
+              "appendageMotion": 0.11752028474290277,
+              "visualIntensity": 0.11752028474290277,
+              "motionTime": 17.8092680898844
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 656,
+            "t": 0.9895602941175594,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9895602941175594,
+              "phase": "retract",
+              "localPhaseProgress": 0.7912058823511885,
+              "rootExposure": 0.1125801984396061,
+              "kakuhouActivation": 0.06529651509497147,
+              "appendageExtension": 0.1125801984396061,
+              "appendageThickness": 0.1125801984396061,
+              "visualStiffness": 0.1125801984396061,
+              "particleEmission": 0.013509623812752725,
+              "appendageMotion": 0.1125801984396061,
+              "visualIntensity": 0.1125801984396061,
+              "motionTime": 17.8137151487032
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 699,
+            "t": 0.99029852941194,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.99029852941194,
+              "phase": "retract",
+              "localPhaseProgress": 0.8059705882387995,
+              "rootExposure": 0.09833282723195425,
+              "kakuhouActivation": 0.05703303979453345,
+              "appendageExtension": 0.09833282723195425,
+              "appendageThickness": 0.09833282723195425,
+              "visualStiffness": 0.09833282723195425,
+              "particleEmission": 0.011799939267834514,
+              "appendageMotion": 0.09833282723195425,
+              "visualIntensity": 0.09833282723195425,
+              "motionTime": 17.827003384002047
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 728,
+            "t": 0.990783823529587,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.990783823529587,
+              "phase": "retract",
+              "localPhaseProgress": 0.8156764705917411,
+              "rootExposure": 0.08940064638585643,
+              "kakuhouActivation": 0.05185237490379668,
+              "appendageExtension": 0.08940064638585643,
+              "appendageThickness": 0.08940064638585643,
+              "visualStiffness": 0.08940064638585643,
+              "particleEmission": 0.010728077566302771,
+              "appendageMotion": 0.08940064638585643,
+              "visualIntensity": 0.08940064638585643,
+              "motionTime": 17.835738678119696
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 753,
+            "t": 0.9910294117647059,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9910294117647059,
+              "phase": "retract",
+              "localPhaseProgress": 0.8205882352941188,
+              "rootExposure": 0.08501572359047327,
+              "kakuhouActivation": 0.049309119682474534,
+              "appendageExtension": 0.08501572359047327,
+              "appendageThickness": 0.08501572359047327,
+              "visualStiffness": 0.08501572359047327,
+              "particleEmission": 0.010201886830856793,
+              "appendageMotion": 0.08501572359047327,
+              "visualIntensity": 0.08501572359047327,
+              "motionTime": 17.840159266351836
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 779,
+            "t": 0.9915191176472341,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9915191176472341,
+              "phase": "retract",
+              "localPhaseProgress": 0.8303823529446822,
+              "rootExposure": 0.07655058957250038,
+              "kakuhouActivation": 0.0443993419520502,
+              "appendageExtension": 0.07655058957250038,
+              "appendageThickness": 0.07655058957250038,
+              "visualStiffness": 0.07655058957250038,
+              "particleEmission": 0.009186070748700051,
+              "appendageMotion": 0.07655058957250038,
+              "visualIntensity": 0.07655058957250038,
+              "motionTime": 17.848973972237342
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 814,
+            "t": 0.9920073529411765,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9920073529411765,
+              "phase": "retract",
+              "localPhaseProgress": 0.8401470588235297,
+              "rootExposure": 0.06848945588871336,
+              "kakuhouActivation": 0.039723884415453714,
+              "appendageExtension": 0.06848945588871336,
+              "appendageThickness": 0.06848945588871336,
+              "visualStiffness": 0.06848945588871336,
+              "particleEmission": 0.008218734706645608,
+              "appendageMotion": 0.06848945588871336,
+              "visualIntensity": 0.06848945588871336,
+              "motionTime": 17.857762207528307
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 845,
+            "t": 0.9924970588237048,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9924970588237048,
+              "phase": "retract",
+              "localPhaseProgress": 0.8499411764740953,
+              "rootExposure": 0.06079500726334519,
+              "kakuhouActivation": 0.0352611042127402,
+              "appendageExtension": 0.06079500726334519,
+              "appendageThickness": 0.06079500726334519,
+              "visualStiffness": 0.06079500726334519,
+              "particleEmission": 0.0072954008716014235,
+              "appendageMotion": 0.06079500726334519,
+              "visualIntensity": 0.06079500726334519,
+              "motionTime": 17.866576913413816
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 881,
+            "t": 0.9929911764706759,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9929911764706759,
+              "phase": "retract",
+              "localPhaseProgress": 0.8598235294135185,
+              "rootExposure": 0.05343954960711761,
+              "kakuhouActivation": 0.030994938772128222,
+              "appendageExtension": 0.05343954960711761,
+              "appendageThickness": 0.05343954960711761,
+              "visualStiffness": 0.05343954960711761,
+              "particleEmission": 0.0064127459528541125,
+              "appendageMotion": 0.05343954960711761,
+              "visualIntensity": 0.05343954960711761,
+              "motionTime": 17.875471031059295
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 907,
+            "t": 0.9932485294118524,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9932485294118524,
+              "phase": "retract",
+              "localPhaseProgress": 0.8649705882370476,
+              "rootExposure": 0.049774859246125125,
+              "kakuhouActivation": 0.028869418362752586,
+              "appendageExtension": 0.049774859246125125,
+              "appendageThickness": 0.049774859246125125,
+              "visualStiffness": 0.049774859246125125,
+              "particleEmission": 0.005972983109535021,
+              "appendageMotion": 0.049774859246125125,
+              "visualIntensity": 0.049774859246125125,
+              "motionTime": 17.88010338400047
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 931,
+            "t": 0.9937250000001753,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9937250000001753,
+              "phase": "retract",
+              "localPhaseProgress": 0.8745000000035056,
+              "rootExposure": 0.04329743724769153,
+              "kakuhouActivation": 0.02511251360366107,
+              "appendageExtension": 0.04329743724769153,
+              "appendageThickness": 0.04329743724769153,
+              "visualStiffness": 0.04329743724769153,
+              "particleEmission": 0.0051956924697229845,
+              "appendageMotion": 0.04329743724769153,
+              "visualIntensity": 0.04329743724769153,
+              "motionTime": 17.888679854590283
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 959,
+            "t": 0.993966176470413,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.993966176470413,
+              "phase": "retract",
+              "localPhaseProgress": 0.8793235294082594,
+              "rootExposure": 0.04017365450421617,
+              "kakuhouActivation": 0.023300719612445397,
+              "appendageExtension": 0.04017365450421617,
+              "appendageThickness": 0.04017365450421617,
+              "visualStiffness": 0.04017365450421617,
+              "particleEmission": 0.0048208385405059395,
+              "appendageMotion": 0.04017365450421617,
+              "visualIntensity": 0.04017365450421617,
+              "motionTime": 17.893021031054563
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 986,
+            "t": 0.9944588235292364,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9944588235292364,
+              "phase": "retract",
+              "localPhaseProgress": 0.8891764705847286,
+              "rootExposure": 0.03412332705112686,
+              "kakuhouActivation": 0.019791529689653586,
+              "appendageExtension": 0.03412332705112686,
+              "appendageThickness": 0.03412332705112686,
+              "visualStiffness": 0.03412332705112686,
+              "particleEmission": 0.0040947992461352195,
+              "appendageMotion": 0.03412332705112686,
+              "visualIntensity": 0.03412332705112686,
+              "motionTime": 17.901888678113384
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1014,
+            "t": 0.99495147058806,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.99495147058806,
+              "phase": "retract",
+              "localPhaseProgress": 0.8990294117612,
+              "rootExposure": 0.028526376719953506,
+              "kakuhouActivation": 0.016545298497573024,
+              "appendageExtension": 0.028526376719953506,
+              "appendageThickness": 0.028526376719953506,
+              "visualStiffness": 0.028526376719953506,
+              "particleEmission": 0.0034231652063944212,
+              "appendageMotion": 0.028526376719953506,
+              "visualIntensity": 0.028526376719953506,
+              "motionTime": 17.91075632517221
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1038,
+            "t": 0.9951970588236171,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9951970588236171,
+              "phase": "retract",
+              "localPhaseProgress": 0.9039411764723418,
+              "rootExposure": 0.025909166033281417,
+              "kakuhouActivation": 0.015027316299303206,
+              "appendageExtension": 0.025909166033281417,
+              "appendageThickness": 0.025909166033281417,
+              "visualStiffness": 0.025909166033281417,
+              "particleEmission": 0.0031090999239937744,
+              "appendageMotion": 0.025909166033281417,
+              "visualIntensity": 0.025909166033281417,
+              "motionTime": 17.915176913412235
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1062,
+            "t": 0.9956838235294118,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9956838235294118,
+              "phase": "retract",
+              "localPhaseProgress": 0.9136764705882353,
+              "rootExposure": 0.021068732171025784,
+              "kakuhouActivation": 0.012219864659195001,
+              "appendageExtension": 0.021068732171025784,
+              "appendageThickness": 0.021068732171025784,
+              "visualStiffness": 0.021068732171025784,
+              "particleEmission": 0.0025282478605230946,
+              "appendageMotion": 0.021068732171025784,
+              "visualIntensity": 0.021068732171025784,
+              "motionTime": 17.923938678116542
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1089,
+            "t": 0.9959308823531164,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9959308823531164,
+              "phase": "retract",
+              "localPhaseProgress": 0.918617647062329,
+              "rootExposure": 0.018791257241303705,
+              "kakuhouActivation": 0.010898929199956164,
+              "appendageExtension": 0.018791257241303705,
+              "appendageThickness": 0.018791257241303705,
+              "visualStiffness": 0.018791257241303705,
+              "particleEmission": 0.00225495086895644,
+              "appendageMotion": 0.018791257241303705,
+              "visualIntensity": 0.018791257241303705,
+              "motionTime": 17.928385736943227
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1119,
+            "t": 0.9964205882352064,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9964205882352064,
+              "phase": "retract",
+              "localPhaseProgress": 0.9284117647041282,
+              "rootExposure": 0.014640864721643942,
+              "kakuhouActivation": 0.008491701538553498,
+              "appendageExtension": 0.014640864721643942,
+              "appendageThickness": 0.014640864721643942,
+              "visualStiffness": 0.014640864721643942,
+              "particleEmission": 0.0017569037665972759,
+              "appendageMotion": 0.014640864721643942,
+              "visualIntensity": 0.014640864721643942,
+              "motionTime": 17.937200442820846
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1145,
+            "t": 0.9969088235295871,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9969088235295871,
+              "phase": "retract",
+              "localPhaseProgress": 0.9381764705917419,
+              "rootExposure": 0.010993848909424897,
+              "kakuhouActivation": 0.006376432367466434,
+              "appendageExtension": 0.010993848909424897,
+              "appendageThickness": 0.010993848909424897,
+              "visualStiffness": 0.010993848909424897,
+              "particleEmission": 0.0013192618691309915,
+              "appendageMotion": 0.010993848909424897,
+              "visualIntensity": 0.010993848909424897,
+              "motionTime": 17.945988678119697
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1171,
+            "t": 0.9971544117647059,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9971544117647059,
+              "phase": "retract",
+              "localPhaseProgress": 0.9430882352941174,
+              "rootExposure": 0.009348178283380859,
+              "kakuhouActivation": 0.005421943404360863,
+              "appendageExtension": 0.009348178283380859,
+              "appendageThickness": 0.009348178283380859,
+              "visualStiffness": 0.009348178283380859,
+              "particleEmission": 0.0011217813940057053,
+              "appendageMotion": 0.009348178283380859,
+              "visualIntensity": 0.009348178283380859,
+              "motionTime": 17.950409266351834
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1199,
+            "t": 0.9976499999998247,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9976499999998247,
+              "phase": "retract",
+              "localPhaseProgress": 0.9529999999964947,
+              "rootExposure": 0.006419354000942068,
+              "kakuhouActivation": 0.003723225320546364,
+              "appendageExtension": 0.006419354000942068,
+              "appendageThickness": 0.006419354000942068,
+              "visualStiffness": 0.006419354000942068,
+              "particleEmission": 0.0007703224801130504,
+              "appendageMotion": 0.006419354000942068,
+              "visualIntensity": 0.006419354000942068,
+              "motionTime": 17.959329854583974
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1228,
+            "t": 0.9981352941174718,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9981352941174718,
+              "phase": "retract",
+              "localPhaseProgress": 0.9627058823494363,
+              "rootExposure": 0.004068812496582419,
+              "kakuhouActivation": 0.002359911248017821,
+              "appendageExtension": 0.004068812496582419,
+              "appendageThickness": 0.004068812496582419,
+              "visualStiffness": 0.004068812496582419,
+              "particleEmission": 0.0004882574995898892,
+              "appendageMotion": 0.004068812496582419,
+              "visualIntensity": 0.004068812496582419,
+              "motionTime": 17.968065148701623
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1262,
+            "t": 0.9986235294118524,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9986235294118524,
+              "phase": "retract",
+              "localPhaseProgress": 0.9724705882370479,
+              "rootExposure": 0.0022318781873835736,
+              "kakuhouActivation": 0.0012944893486824816,
+              "appendageExtension": 0.0022318781873835736,
+              "appendageThickness": 0.0022318781873835736,
+              "visualStiffness": 0.0022318781873835736,
+              "particleEmission": 0.0002678253824860283,
+              "appendageMotion": 0.0022318781873835736,
+              "visualIntensity": 0.0022318781873835736,
+              "motionTime": 17.97685338400047
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1290,
+            "t": 0.9988720588237048,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9988720588237048,
+              "phase": "retract",
+              "localPhaseProgress": 0.9774411764740956,
+              "rootExposure": 0.0015037411626237507,
+              "kakuhouActivation": 0.0008721698743218154,
+              "appendageExtension": 0.0015037411626237507,
+              "appendageThickness": 0.0015037411626237507,
+              "visualStiffness": 0.0015037411626237507,
+              "particleEmission": 0.00018044893951485452,
+              "appendageMotion": 0.0015037411626237507,
+              "visualIntensity": 0.0015037411626237507,
+              "motionTime": 17.981326913413817
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1331,
+            "t": 0.9996102941176471,
+            "playing": true,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 0.9996102941176471,
+              "phase": "retract",
+              "localPhaseProgress": 0.9922058823529425,
+              "rootExposure": 0.00018129785136367094,
+              "kakuhouActivation": 0.00010515275379097133,
+              "appendageExtension": 0.00018129785136367094,
+              "appendageThickness": 0.00018129785136367094,
+              "visualStiffness": 0.00018129785136367094,
+              "particleEmission": 0.000021755742163634406,
+              "appendageMotion": 0.00018129785136367094,
+              "visualIntensity": 0.00018129785136367094,
+              "motionTime": 17.994615148704778
+            },
+            "visible": true,
+            "particleCount": 0
+          },
+          {
+            "elapsedMs": 1366,
+            "t": 1,
+            "playing": false,
+            "snapshot": {
+              "appendageCount": 4,
+              "seed": 17,
+              "particles": true,
+              "quality": "standard",
+              "t": 1,
+              "phase": "retract",
+              "localPhaseProgress": 1,
+              "rootExposure": 0,
+              "kakuhouActivation": 0,
+              "appendageExtension": 0,
+              "appendageThickness": 0,
+              "visualStiffness": 0,
+              "particleEmission": 0,
+              "appendageMotion": 0,
+              "visualIntensity": 0,
+              "motionTime": 18.00162985458713
+            },
+            "visible": false,
+            "particleCount": 0
+          }
+        ]
+      }
+    ],
+    "method": "Actual UI playback .98 to1, focus and lateral, plus a stationary endpoint hold. No time injection or synthetic frames."
+  }
+}

@@ -4,6 +4,8 @@ import { Color, DoubleSide, MeshStandardMaterial } from 'three';
 import type { AnatomyId } from '../app/types';
 import { anatomyLayer, useObservatory } from '../state/observatory';
 import { createProxyGeometries } from './proxyGeometry';
+import { useRinkaku } from '../state/rinkaku';
+import { isEffectivelyVisible } from './visibility';
 
 const NODE_NAMES: Record<AnatomyId, string> = {
   'human.surface': 'HUMAN_SURFACE', 'human.head': 'HUMAN_HEAD', 'human.muscular': 'HUMAN_MUSCULAR',
@@ -31,6 +33,7 @@ export function AssetSlot({ onHit, replacedIds }: AssetSlotProps) {
   const isolated = useObservatory((s) => s.isolated);
   const canonOnly = useObservatory((s) => s.canonOnly);
   const select = useObservatory((s) => s.select);
+  const manifestation = useRinkaku((s) => s.enabled);
   const resourceLifetime = useRef({ epoch: 0 });
   useEffect(() => {
     const lifetime = resourceLifetime.current;
@@ -61,11 +64,11 @@ export function AssetSlot({ onHit, replacedIds }: AssetSlotProps) {
   }, [materials, opacity, selected, canonOnly]);
 
   const hit = (event: ThreeEvent<MouseEvent>, id: AnatomyId) => {
-    if (!event.object.visible) return;
+    if (!isEffectivelyVisible(event.object)) return;
     // Let a transparent outer surface pass picking through to a visible inner structure.
     if (anatomyLayer[id] === 'surface' && opacity < 0.32 && event.intersections.some((entry) => {
       const target = entry.object.userData.anatomyId as AnatomyId | undefined;
-      return entry.object.visible && target && anatomyLayer[target] !== 'surface';
+      return isEffectivelyVisible(entry.object) && target && anatomyLayer[target] !== 'surface';
     })) return;
     event.stopPropagation();
     onHit?.(id);
@@ -73,11 +76,12 @@ export function AssetSlot({ onHit, replacedIds }: AssetSlotProps) {
   };
   return <group name="ANATOMY_ASSET_SLOT" userData={{ modelStatus: 'conceptual_proxy', generator: 'src/scene/proxyGeometry.ts' }}>
     {(Object.keys(geometries) as AnatomyId[]).filter((id) => !replacedIds?.has(id)).map((id) => {
-      const visible = layers[anatomyLayer[id]] && (!isolated || selected === id);
+      // Presentation substitution only: keep geometry, node, anchor and anatomical identity alive.
+      const visible = layers[anatomyLayer[id]] && (!isolated || selected === id) && !(manifestation && id === 'ghoul.kakuhou.rinkaku');
       return <mesh key={id} name={NODE_NAMES[id]} geometry={geometries[id]} material={materials[id]} visible={visible}
         castShadow receiveShadow userData={{ anatomyId: id, layer: anatomyLayer[id], modelStatus: 'conceptual_proxy' }}
         onClick={(event) => hit(event, id)}
-        onPointerOver={(event) => { if (!event.object.visible) return; event.stopPropagation(); document.body.style.cursor = 'crosshair'; }}
+        onPointerOver={(event) => { if (!isEffectivelyVisible(event.object)) return; event.stopPropagation(); document.body.style.cursor = 'crosshair'; }}
         onPointerOut={() => { document.body.style.cursor = ''; }} />;
     })}
   </group>;

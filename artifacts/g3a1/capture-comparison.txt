@@ -1,0 +1,35 @@
+{
+  "captures": 8,
+  "recordings": [
+    {
+      "view": "posterior",
+      "start": 0,
+      "direction": 1,
+      "elapsedMs": 21093
+    },
+    {
+      "view": "lateral",
+      "start": 0.93,
+      "direction": 1,
+      "elapsedMs": 4281
+    },
+    {
+      "view": "oblique",
+      "start": 0.93,
+      "direction": 1,
+      "elapsedMs": 4261
+    },
+    {
+      "view": "posterior",
+      "start": 1,
+      "direction": -1,
+      "elapsedMs": 21117
+    }
+  ],
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ]
+  }
+}

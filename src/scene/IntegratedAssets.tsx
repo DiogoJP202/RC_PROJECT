@@ -8,6 +8,8 @@ import { anatomyLayer, useObservatory } from '../state/observatory';
 import { acquireAsset, type AssetLease } from '../visuals/assets/assetCache';
 import { AssetSlot } from './AssetSlot';
 import { assetRuntime } from './assetRuntime';
+import { useRinkaku } from '../state/rinkaku';
+import { isEffectivelyVisible } from './visibility';
 
 type SurfaceMaterial = Material & { color?: Color; emissive?: Color; emissiveIntensity?: number };
 
@@ -22,6 +24,7 @@ export function IntegratedAssets({ onHit }: { onHit: (id: AnatomyId) => void }) 
   const isolated = useObservatory((s) => s.isolated);
   const canonOnly = useObservatory((s) => s.canonOnly);
   const reduced = useObservatory((s) => s.reducedMotion);
+  const manifestation = useRinkaku((s) => s.enabled);
   const replacedIds = useMemo(() => new Set(active?.bindings.keys() ?? []), [active]);
   const mixer = active?.mixer ?? null;
   const clips = useMemo(() => new Map(active?.animations.map((clip) => [clip.name, clip]) ?? []), [active]);
@@ -81,7 +84,7 @@ export function IntegratedAssets({ onHit }: { onHit: (id: AnatomyId) => void }) 
     if (!active) return;
     for (const [id, objects] of active.bindings) for (const node of objects) node.traverse((object) => {
       if (!(object instanceof Mesh)) return;
-      object.visible = layers[anatomyLayer[id]] && (!isolated || selected === id);
+      object.visible = layers[anatomyLayer[id]] && (!isolated || selected === id) && !(manifestation && id === 'ghoul.kakuhou.rinkaku');
       object.castShadow = true; object.receiveShadow = true;
       for (const material of Array.isArray(object.material) ? object.material : [object.material]) {
         const mat = material as SurfaceMaterial;
@@ -100,7 +103,7 @@ export function IntegratedAssets({ onHit }: { onHit: (id: AnatomyId) => void }) 
         mat.needsUpdate = true;
       }
     });
-  }, [active, baseMaterials, layers, selected, opacity, isolated, canonOnly]);
+  }, [active, baseMaterials, layers, selected, opacity, isolated, canonOnly, manifestation]);
 
   useFrame((_state, delta) => {
     if (!active || !mixer) return;
@@ -120,14 +123,14 @@ export function IntegratedAssets({ onHit }: { onHit: (id: AnatomyId) => void }) 
 
   const hit = (event: ThreeEvent<MouseEvent>) => {
     const id = event.object.userData.anatomyId as AnatomyId | undefined;
-    if (!id || !event.object.visible) return;
-    if (anatomyLayer[id] === 'surface' && opacity < 0.32 && event.intersections.some((entry) => entry.object.visible && entry.object.userData.anatomyId && anatomyLayer[entry.object.userData.anatomyId as AnatomyId] !== 'surface')) return;
+    if (!id || !isEffectivelyVisible(event.object)) return;
+    if (anatomyLayer[id] === 'surface' && opacity < 0.32 && event.intersections.some((entry) => isEffectivelyVisible(entry.object) && entry.object.userData.anatomyId && anatomyLayer[entry.object.userData.anatomyId as AnatomyId] !== 'surface')) return;
     event.stopPropagation(); onHit(id); useObservatory.getState().select(id);
   };
   return <>
     <AssetSlot onHit={onHit} replacedIds={replacedIds} />
     {active ? <primitive object={active.scene} dispose={null} onClick={hit}
-      onPointerOver={(event: ThreeEvent<PointerEvent>) => { if (event.object.visible && event.object.userData.anatomyId) { event.stopPropagation(); document.body.style.cursor = 'crosshair'; } }}
+      onPointerOver={(event: ThreeEvent<PointerEvent>) => { if (isEffectivelyVisible(event.object) && event.object.userData.anatomyId) { event.stopPropagation(); document.body.style.cursor = 'crosshair'; } }}
       onPointerOut={() => { document.body.style.cursor = ''; }} /> : null}
   </>;
 }

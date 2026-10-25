@@ -1,0 +1,438 @@
+{
+  "viewport": {
+    "width": 430,
+    "height": 932
+  },
+  "still": {
+    "file": "artifacts/gates/G3A1-review/mobile/430-growth.png",
+    "t": 0.53,
+    "phase": "growth",
+    "config": {
+      "appendageCount": 4,
+      "seed": 17,
+      "particles": true,
+      "quality": "standard"
+    },
+    "camera": {
+      "position": [
+        -1.4026678711344134,
+        1.191416798405327,
+        -4.735170242430291
+      ],
+      "target": [
+        0,
+        1.038,
+        -0.5710000000000001
+      ],
+      "moving": false
+    },
+    "bodyOpacity": 1,
+    "stageRect": {
+      "x": 0,
+      "y": 156,
+      "width": 430,
+      "height": 520
+    },
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "adapter": {
+      "representation": "procedural_proxy",
+      "disclosure": "PROXY / CONCEPTUAL MODEL",
+      "disposed": false,
+      "visible": true,
+      "t": 0.53,
+      "phase": "growth",
+      "appendageCount": 4,
+      "geometryCount": 5,
+      "materialCount": 2,
+      "vertexCount": 4228,
+      "triangleCount": 8320,
+      "particleCapacity": 48,
+      "particleCount": 29,
+      "positionHash": "1cc159ba",
+      "signature": "1cc159ba",
+      "visibleAppendages": 4,
+      "resources": {
+        "geometries": 5,
+        "materials": 2,
+        "textures": 0,
+        "allocatedVertices": 4168,
+        "allocatedParticles": 48
+      },
+      "root": [
+        0,
+        0.976,
+        -0.112
+      ],
+      "roots": [
+        [
+          -0.058,
+          1.028,
+          -0.112
+        ],
+        [
+          0.058,
+          1.028,
+          -0.112
+        ],
+        [
+          -0.054,
+          0.9239999999999999,
+          -0.112
+        ],
+        [
+          0.054,
+          0.9239999999999999,
+          -0.112
+        ]
+      ],
+      "tips": [
+        [
+          -0.3975480638600509,
+          1.317456310496596,
+          -0.7148946053338556
+        ],
+        [
+          0.3155820789573167,
+          1.366671763691764,
+          -0.6339442402193477
+        ],
+        [
+          -0.43617259930133173,
+          0.6943697869242496,
+          -0.4442633455112761
+        ],
+        [
+          0.5481357295141991,
+          0.6128336615574421,
+          -0.35635366206516905
+        ]
+      ],
+      "resourceIds": {
+        "geometry": [
+          "bca542ed-9aa3-4b9a-9742-fd223fef70bc",
+          "e1e51e3e-29c9-4f8f-a618-4e424f056c96",
+          "b0301789-e353-4dcd-9dfa-3aed719b2511",
+          "a5af7141-755d-4b0b-9b5a-459f3512a05a",
+          "dee30555-3a8b-44c9-bc17-2284e3d1e514"
+        ],
+        "material": [
+          "cebba3cc-d8f1-48f5-9450-af512b72462f",
+          "033c2bd4-5421-499f-b153-0cbd4cc36feb"
+        ]
+      }
+    },
+    "connection": {
+      "source": "proxy",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.976,
+        -0.112,
+        1
+      ]
+    }
+  },
+  "playing": {
+    "file": "artifacts/gates/G3A1-review/mobile/430-playing.png",
+    "t": 0.5559222222218911,
+    "phase": "growth",
+    "config": {
+      "appendageCount": 4,
+      "seed": 17,
+      "particles": true,
+      "quality": "standard"
+    },
+    "camera": {
+      "position": [
+        -1.4026678711344134,
+        1.191416798405327,
+        -4.735170242430291
+      ],
+      "target": [
+        0,
+        1.038,
+        -0.5710000000000001
+      ],
+      "moving": false
+    },
+    "bodyOpacity": 1,
+    "stageRect": {
+      "x": 0,
+      "y": 156,
+      "width": 430,
+      "height": 520
+    },
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "adapter": {
+      "representation": "procedural_proxy",
+      "disclosure": "PROXY / CONCEPTUAL MODEL",
+      "disposed": false,
+      "visible": true,
+      "t": 0.5559222222218911,
+      "phase": "growth",
+      "appendageCount": 4,
+      "geometryCount": 5,
+      "materialCount": 2,
+      "vertexCount": 4228,
+      "triangleCount": 8320,
+      "particleCapacity": 48,
+      "particleCount": 25,
+      "positionHash": "094c0ca5",
+      "signature": "094c0ca5",
+      "visibleAppendages": 4,
+      "resources": {
+        "geometries": 5,
+        "materials": 2,
+        "textures": 0,
+        "allocatedVertices": 4168,
+        "allocatedParticles": 48
+      },
+      "root": [
+        0,
+        0.976,
+        -0.112
+      ],
+      "roots": [
+        [
+          -0.058,
+          1.028,
+          -0.112
+        ],
+        [
+          0.058,
+          1.028,
+          -0.112
+        ],
+        [
+          -0.054,
+          0.9239999999999999,
+          -0.112
+        ],
+        [
+          0.054,
+          0.9239999999999999,
+          -0.112
+        ]
+      ],
+      "tips": [
+        [
+          -0.4872362538475643,
+          1.5355006593086384,
+          -0.7189242282033957
+        ],
+        [
+          0.49852682950893407,
+          1.623198118002196,
+          -0.6105485619148528
+        ],
+        [
+          -0.7244987917510778,
+          0.5721595595490534,
+          -0.48526486198939073
+        ],
+        [
+          0.7823523415992366,
+          0.5602706400399217,
+          -0.4621536333712758
+        ]
+      ],
+      "resourceIds": {
+        "geometry": [
+          "bca542ed-9aa3-4b9a-9742-fd223fef70bc",
+          "e1e51e3e-29c9-4f8f-a618-4e424f056c96",
+          "b0301789-e353-4dcd-9dfa-3aed719b2511",
+          "a5af7141-755d-4b0b-9b5a-459f3512a05a",
+          "dee30555-3a8b-44c9-bc17-2284e3d1e514"
+        ],
+        "material": [
+          "cebba3cc-d8f1-48f5-9450-af512b72462f",
+          "033c2bd4-5421-499f-b153-0cbd4cc36feb"
+        ]
+      }
+    },
+    "connection": {
+      "source": "proxy",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.976,
+        -0.112,
+        1
+      ]
+    }
+  },
+  "playbackCaptureTAfter": 0.5624166666666669,
+  "controls": {
+    "file": "artifacts/gates/G3A1-review/mobile/430-controls.png",
+    "t": 0.5679611111117735,
+    "phase": "growth",
+    "config": {
+      "appendageCount": 4,
+      "seed": 17,
+      "particles": true,
+      "quality": "standard"
+    },
+    "camera": {
+      "position": [
+        -1.4026678711344134,
+        1.191416798405327,
+        -4.735170242430291
+      ],
+      "target": [
+        0,
+        1.038,
+        -0.5710000000000001
+      ],
+      "moving": false
+    },
+    "bodyOpacity": 1,
+    "stageRect": {
+      "x": 0,
+      "y": 156,
+      "width": 430,
+      "height": 520
+    },
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "adapter": {
+      "representation": "procedural_proxy",
+      "disclosure": "PROXY / CONCEPTUAL MODEL",
+      "disposed": false,
+      "visible": true,
+      "t": 0.5679611111117735,
+      "phase": "growth",
+      "appendageCount": 4,
+      "geometryCount": 5,
+      "materialCount": 2,
+      "vertexCount": 4228,
+      "triangleCount": 8320,
+      "particleCapacity": 48,
+      "particleCount": 24,
+      "positionHash": "64385f57",
+      "signature": "64385f57",
+      "visibleAppendages": 4,
+      "resources": {
+        "geometries": 5,
+        "materials": 2,
+        "textures": 0,
+        "allocatedVertices": 4168,
+        "allocatedParticles": 48
+      },
+      "root": [
+        0,
+        0.976,
+        -0.112
+      ],
+      "roots": [
+        [
+          -0.058,
+          1.028,
+          -0.112
+        ],
+        [
+          0.058,
+          1.028,
+          -0.112
+        ],
+        [
+          -0.054,
+          0.9239999999999999,
+          -0.112
+        ],
+        [
+          0.054,
+          0.9239999999999999,
+          -0.112
+        ]
+      ],
+      "tips": [
+        [
+          -0.5504877010137134,
+          1.6386885010045287,
+          -0.7139600131808329
+        ],
+        [
+          0.5833268649144665,
+          1.719718416492817,
+          -0.6176809543831949
+        ],
+        [
+          -0.8223687430987346,
+          0.5553055691027462,
+          -0.5296991491421785
+        ],
+        [
+          0.8511695965811078,
+          0.5706506553829683,
+          -0.5246389946548882
+        ]
+      ],
+      "resourceIds": {
+        "geometry": [
+          "bca542ed-9aa3-4b9a-9742-fd223fef70bc",
+          "e1e51e3e-29c9-4f8f-a618-4e424f056c96",
+          "b0301789-e353-4dcd-9dfa-3aed719b2511",
+          "a5af7141-755d-4b0b-9b5a-459f3512a05a",
+          "dee30555-3a8b-44c9-bc17-2284e3d1e514"
+        ],
+        "material": [
+          "cebba3cc-d8f1-48f5-9450-af512b72462f",
+          "033c2bd4-5421-499f-b153-0cbd4cc36feb"
+        ]
+      }
+    },
+    "connection": {
+      "source": "proxy",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.976,
+        -0.112,
+        1
+      ]
+    }
+  },
+  "projectedBodyHeightFraction": 0.5969142690371466,
+  "note": "Real running screenshot: t may advance during capture. Emulated mobile layout is not a physical phone FPS or ergonomic certification."
+}

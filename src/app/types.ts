@@ -2,7 +2,7 @@ export const anatomyIds = ['human.surface', 'human.head', 'human.muscular', 'hum
 export type AnatomyId = (typeof anatomyIds)[number];
 export type LayerId = 'surface' | 'muscular' | 'skeletal' | 'internal';
 export type Mode = 'body' | 'micro' | 'compare';
-export type FocusTarget = AnatomyId | 'overview' | 'posterior';
+export type FocusTarget = AnatomyId | 'overview' | 'posterior' | 'rinkaku-lateral' | 'rinkaku-oblique';
 export interface SceneProps {
   onReady: () => void;
   onError: (message: string) => void;

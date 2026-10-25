@@ -1,0 +1,1315 @@
+{
+  "revision": "before",
+  "captures": [
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/focus-t0.000.png",
+      "t": 0,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": false,
+        "t": 0,
+        "phase": "rest",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "2593707d",
+        "signature": "2593707d",
+        "visibleAppendages": 0,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0,
+        "phase": "rest",
+        "localPhaseProgress": 0,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 0.0016298545871284939
+      },
+      "sha256": "657586ea5327cd81cfa2951b304ccbd1126e0f927db0cb1a5a0e060e0b883aad"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/focus-t0.995.png",
+      "t": 0.995,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.995,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "20b744c7",
+        "signature": "20b744c7",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.045588972414469534,
+            1.0173492427729596,
+            -0.1306943862077791
+          ],
+          [
+            0.04728971096560964,
+            1.0175527746524407,
+            -0.13074996742175196
+          ],
+          [
+            -0.04205440840272453,
+            0.9359279164578888,
+            -0.1319832341806776
+          ],
+          [
+            0.041836967799521556,
+            0.9367446201050093,
+            -0.13295032614850266
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.995,
+        "phase": "retract",
+        "localPhaseProgress": 0.9,
+        "rootExposure": 0.028000000000000025,
+        "kakuhouActivation": 0.016240000000000032,
+        "appendageExtension": 0.028000000000000025,
+        "appendageThickness": 0.028000000000000025,
+        "visualStiffness": 0.028000000000000025,
+        "particleEmission": 0.003360000000000002,
+        "appendageMotion": 0.028000000000000025,
+        "visualIntensity": 0.028000000000000025,
+        "motionTime": 17.91162985458713
+      },
+      "sha256": "c52a4d57df26fe244ec763ee3517676e212a3d6c070b213ee1bb36750537d353"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/focus-t0.998.png",
+      "t": 0.998,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.998,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "6aea494b",
+        "signature": "6aea494b",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.05556852451571204,
+            1.0258468815420685,
+            -0.11561722247221633
+          ],
+          [
+            0.055720318264375936,
+            1.0258492345662638,
+            -0.11561583163710876
+          ],
+          [
+            -0.05143182955359275,
+            0.9261729781999938,
+            -0.11562135323742098
+          ],
+          [
+            0.05157350564970167,
+            0.9261766246219223,
+            -0.11562722954248958
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.998,
+        "phase": "retract",
+        "localPhaseProgress": 0.96,
+        "rootExposure": 0.0046720000000000095,
+        "kakuhouActivation": 0.0027097600000000055,
+        "appendageExtension": 0.0046720000000000095,
+        "appendageThickness": 0.0046720000000000095,
+        "visualStiffness": 0.0046720000000000095,
+        "particleEmission": 0.0005606400000000011,
+        "appendageMotion": 0.0046720000000000095,
+        "visualIntensity": 0.0046720000000000095,
+        "motionTime": 17.965629854587128
+      },
+      "sha256": "06eecce7be3f94bf455b6a8f4c2c104f597752f71779f1b34f04d0966c253ca1"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/focus-t0.999.png",
+      "t": 0.999,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.999,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "d8e07011",
+        "signature": "d8e07011",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.0573717397693036,
+            1.0274449551947344,
+            -0.1129823578179185
+          ],
+          [
+            0.05740956620063786,
+            1.0274450350126347,
+            -0.11298227991840844
+          ],
+          [
+            -0.05333426755425604,
+            0.9245562241034354,
+            -0.11298235650103276
+          ],
+          [
+            0.053371910151485326,
+            0.9245562483112939,
+            -0.11298249102255822
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.999,
+        "phase": "retract",
+        "localPhaseProgress": 0.98,
+        "rootExposure": 0.0011840000000000739,
+        "kakuhouActivation": 0.0006867200000000295,
+        "appendageExtension": 0.0011840000000000739,
+        "appendageThickness": 0.0011840000000000739,
+        "visualStiffness": 0.0011840000000000739,
+        "particleEmission": 0.00014208000000000276,
+        "appendageMotion": 0.0011840000000000739,
+        "visualIntensity": 0.0011840000000000739,
+        "motionTime": 17.98362985458713
+      },
+      "sha256": "ac870db0b9bd21c8346fa14086c26625f585e4f01f2caf683bf6206d73690875"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/focus-t1.000.png",
+      "t": 1,
+      "view": "focus",
+      "camera": {
+        "position": [
+          -0.53,
+          1.0999999999999999,
+          -1.17
+        ],
+        "target": [
+          0,
+          0.98,
+          -0.12
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": false,
+        "t": 1,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "2593707d",
+        "signature": "2593707d",
+        "visibleAppendages": 0,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 1,
+        "phase": "retract",
+        "localPhaseProgress": 1,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 18.00162985458713
+      },
+      "sha256": "657586ea5327cd81cfa2951b304ccbd1126e0f927db0cb1a5a0e060e0b883aad"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/lateral-t0.000.png",
+      "t": 0,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": false,
+        "t": 0,
+        "phase": "rest",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "2593707d",
+        "signature": "2593707d",
+        "visibleAppendages": 0,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0,
+        "phase": "rest",
+        "localPhaseProgress": 0,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 0.0016298545871284939
+      },
+      "sha256": "08442ae5026bc1da6b076bb9f42c0bcc64fa14a1dc97c0c8188b3fcfafdea206"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/lateral-t0.995.png",
+      "t": 0.995,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.995,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "20b744c7",
+        "signature": "20b744c7",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.045588972414469534,
+            1.0173492427729596,
+            -0.1306943862077791
+          ],
+          [
+            0.04728971096560964,
+            1.0175527746524407,
+            -0.13074996742175196
+          ],
+          [
+            -0.04205440840272453,
+            0.9359279164578888,
+            -0.1319832341806776
+          ],
+          [
+            0.041836967799521556,
+            0.9367446201050093,
+            -0.13295032614850266
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.995,
+        "phase": "retract",
+        "localPhaseProgress": 0.9,
+        "rootExposure": 0.028000000000000025,
+        "kakuhouActivation": 0.016240000000000032,
+        "appendageExtension": 0.028000000000000025,
+        "appendageThickness": 0.028000000000000025,
+        "visualStiffness": 0.028000000000000025,
+        "particleEmission": 0.003360000000000002,
+        "appendageMotion": 0.028000000000000025,
+        "visualIntensity": 0.028000000000000025,
+        "motionTime": 17.91162985458713
+      },
+      "sha256": "9f6bf4af64846e90e5f2777986a9b0da598977006a83f992bf93c910c291b45d"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/lateral-t0.998.png",
+      "t": 0.998,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.998,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "6aea494b",
+        "signature": "6aea494b",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.05556852451571204,
+            1.0258468815420685,
+            -0.11561722247221633
+          ],
+          [
+            0.055720318264375936,
+            1.0258492345662638,
+            -0.11561583163710876
+          ],
+          [
+            -0.05143182955359275,
+            0.9261729781999938,
+            -0.11562135323742098
+          ],
+          [
+            0.05157350564970167,
+            0.9261766246219223,
+            -0.11562722954248958
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.998,
+        "phase": "retract",
+        "localPhaseProgress": 0.96,
+        "rootExposure": 0.0046720000000000095,
+        "kakuhouActivation": 0.0027097600000000055,
+        "appendageExtension": 0.0046720000000000095,
+        "appendageThickness": 0.0046720000000000095,
+        "visualStiffness": 0.0046720000000000095,
+        "particleEmission": 0.0005606400000000011,
+        "appendageMotion": 0.0046720000000000095,
+        "visualIntensity": 0.0046720000000000095,
+        "motionTime": 17.965629854587128
+      },
+      "sha256": "a28a453b28d5bb6839b21c1d0813d7898426030f010043f726a0ebd399aad8ab"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/lateral-t0.999.png",
+      "t": 0.999,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.999,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "d8e07011",
+        "signature": "d8e07011",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.0573717397693036,
+            1.0274449551947344,
+            -0.1129823578179185
+          ],
+          [
+            0.05740956620063786,
+            1.0274450350126347,
+            -0.11298227991840844
+          ],
+          [
+            -0.05333426755425604,
+            0.9245562241034354,
+            -0.11298235650103276
+          ],
+          [
+            0.053371910151485326,
+            0.9245562483112939,
+            -0.11298249102255822
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.999,
+        "phase": "retract",
+        "localPhaseProgress": 0.98,
+        "rootExposure": 0.0011840000000000739,
+        "kakuhouActivation": 0.0006867200000000295,
+        "appendageExtension": 0.0011840000000000739,
+        "appendageThickness": 0.0011840000000000739,
+        "visualStiffness": 0.0011840000000000739,
+        "particleEmission": 0.00014208000000000276,
+        "appendageMotion": 0.0011840000000000739,
+        "visualIntensity": 0.0011840000000000739,
+        "motionTime": 17.98362985458713
+      },
+      "sha256": "af63da717a7691b922affba0666ae721ea806f114b124c8ededc8848d84fc6c9"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/checkpoint/before/lateral-t1.000.png",
+      "t": 1,
+      "view": "lateral",
+      "camera": {
+        "position": [
+          4.721076025922804,
+          1.386477685574885,
+          -2.16125718767926
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "bodyOpacity": 1,
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": false,
+        "t": 1,
+        "phase": "retract",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 0,
+        "positionHash": "2593707d",
+        "signature": "2593707d",
+        "visibleAppendages": 0,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "ef038ae8-c760-4c56-99bd-7466ee65c8ab",
+            "3c676689-0f55-48b8-b36b-741507153dd5",
+            "4a19242d-f626-4a9b-a95a-6b8f67313677",
+            "1b3dd410-7f2d-42d0-8be6-4dd12147e240",
+            "0b685b5d-0831-4b1d-b19a-6dfabf8d8059"
+          ],
+          "material": [
+            "441bb94b-efd8-4de0-8907-7b32d3ea3cda",
+            "cc1b9b66-1c56-49f6-a3e4-147601e27e90"
+          ]
+        }
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 1,
+        "phase": "retract",
+        "localPhaseProgress": 1,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 18.00162985458713
+      },
+      "sha256": "08442ae5026bc1da6b076bb9f42c0bcc64fa14a1dc97c0c8188b3fcfafdea206"
+    }
+  ]
+}

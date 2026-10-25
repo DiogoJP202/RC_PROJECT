@@ -1,0 +1,9 @@
+
+> ghoul-atlas@0.1.0 test:catalog
+> node tools/python.mjs -m unittest discover -s tools -p test_validate_catalog.py
+
+......................
+----------------------------------------------------------------------
+Ran 22 tests in 0.176s
+
+OK

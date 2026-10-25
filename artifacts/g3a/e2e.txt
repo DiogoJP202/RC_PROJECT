@@ -1,0 +1,56 @@
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test --reporter=list,json
+
+[WebServer] (node:21964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 33 tests using 1 worker
+
+(node:18928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › tests\e2e\g2a-assets.spec.ts:62:1 › disk GLB loads asynchronously and replaces only its three stable anatomical bindings (2.4s)
+  ok  2 [chromium] › tests\e2e\g2a-assets.spec.ts:111:1 › a loaded mesh receives real pointer hits and keeps anatomical evidence identity (2.2s)
+  ok  3 [chromium] › tests\e2e\g2a-assets.spec.ts:130:1 › asset replacement preserves selection, layers, isolation, opacity and camera context (2.6s)
+  ok  4 [chromium] › tests\e2e\g2a-assets.spec.ts:160:1 › HTTP failure automatically shows available proxies and retry loads the real asset (2.0s)
+  ok  5 [chromium] › tests\e2e\g2a-assets.spec.ts:185:1 › a slow superseded asset cannot overwrite the later model or anatomical selection (2.2s)
+  ok  6 [chromium] › tests\e2e\g2a-assets.spec.ts:206:1 › repeated GLB swaps release leases and dispose unused templates without retained cache entries (2.6s)
+  ok  7 [chromium] › tests\e2e\g2a-assets.spec.ts:227:1 › rigged GLB exposes skin and clip, moves a bone-attached socket and respects reduced motion (2.5s)
+  ok  8 [chromium] › tests\e2e\g2a-assets.spec.ts:260:1 › G2A desktop capture preserves the observatory and labels the synthetic integration (3.8s)
+  ok  9 [chromium] › tests\e2e\g2a-assets.spec.ts:282:1 › mobile exploration remains touch accessible with GLB and produces a real capture (2.5s)
+  ok 10 [chromium] › tests\e2e\g2a-assets.spec.ts:307:1 › the mobile drawer supports touch, keyboard, native dismissal and explicit evidence reopening (2.8s)
+  ok 11 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:75:1 › absolute manual timeline reproduces geometry, keeps resources and records the five phase captures (5.8s)
+  ok 12 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:128:1 › play, pause, reverse and rapid scrubbing use one timeline while selection and the scan remain stable (6.9s)
+  ok 13 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:173:1 › ten full manual cycles keep geometry identities and warmed renderer resources bounded (25.1s)
+G3A automatic playback 1/10 complete in 18960 ms; geometries=19; textures=3
+G3A automatic playback 2/10 complete in 18919 ms; geometries=19; textures=3
+G3A automatic playback 3/10 complete in 19005 ms; geometries=19; textures=3
+G3A automatic playback 4/10 complete in 18970 ms; geometries=19; textures=3
+G3A automatic playback 5/10 complete in 19020 ms; geometries=19; textures=3
+G3A automatic playback 6/10 complete in 18983 ms; geometries=19; textures=3
+G3A automatic playback 7/10 complete in 19083 ms; geometries=19; textures=3
+G3A automatic playback 8/10 complete in 19017 ms; geometries=19; textures=3
+G3A automatic playback 9/10 complete in 19101 ms; geometries=19; textures=3
+G3A automatic playback 10/10 complete in 19027 ms; geometries=19; textures=3
+  ok 14 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:221:1 › ten complete automatic 18-second playback cycles retain stable resources without context loss (3.3m)
+  ok 15 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:264:1 › counts, particles and quality replace visual settings without detaching the root, and GLB sockets stay authoritative (3.7s)
+  ok 16 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:301:1 › posterior, lateral and lumbar focus are explicit and reduced motion keeps manual keyboard inspection (2.6s)
+  ok 17 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:332:1 › without WebGL the manifestation offers truthful static timeline controls and the original inspection remains available (1.2s)
+  ok 18 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:351:1 › loss of the real WebGL context pauses an active manifestation and keeps manual inspection available (4.3s)
+  ok 19 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:374:1 › mobile touch controls stay usable and capture the actual procedural manifestation (2.9s)
+  ok 20 [chromium] › tests\e2e\observatory.spec.ts:46:1 › catalog loading is real and delays anatomy UI until data arrives (1.8s)
+  ok 21 [chromium] › tests\e2e\observatory.spec.ts:63:1 › 3D click raycasts an actual scene structure and synchronizes the inspector (1.7s)
+  ok 22 [chromium] › tests\e2e\observatory.spec.ts:83:1 › independent scene layers can be toggled and isolation restores the prior combination (1.7s)
+  ok 23 [chromium] › tests\e2e\observatory.spec.ts:105:1 › mouse orbit and wheel zoom change the real camera (2.0s)
+  ok 24 [chromium] › tests\e2e\observatory.spec.ts:124:1 › camera focus changes its actual pose and reset restores an overview (1.9s)
+  ok 25 [chromium] › tests\e2e\observatory.spec.ts:136:1 › opacity and scan controls affect the renderer; pausing and scrub are stable (3.0s)
+  ok 26 [chromium] › tests\e2e\observatory.spec.ts:163:1 › future modes preserve context and canon filter never hides the reconstruction disclosure (2.4s)
+  ok 27 [chromium] › tests\e2e\observatory.spec.ts:187:1 › keyboard alternatives work, range keys stay local and reduced motion pauses scan (2.0s)
+  ok 28 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?webgl=off preserves content and selection without WebGL (2.0s)
+  ok 29 [chromium] › tests\e2e\observatory.spec.ts:218:3 › failure ?asset=missing preserves content and selection without WebGL (2.0s)
+  ok 30 [chromium] › tests\e2e\observatory.spec.ts:231:1 › a lost real WebGL context opens an accessible fallback (1.4s)
+  ok 31 [chromium] › tests\e2e\observatory.spec.ts:245:1 › catalog errors have a visible recovery action (1.7s)
+  ok 32 [chromium] › tests\e2e\observatory.spec.ts:254:1 › desktop and silhouette gate captures include the real rendered scene (3.1s)
+  ok 33 [chromium] › tests\e2e\observatory.spec.ts:277:1 › touch-sized mobile remains usable without hover or horizontal overflow (1.8s)
+
+  33 passed (5.2m)

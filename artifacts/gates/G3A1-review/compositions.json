@@ -1,0 +1,4771 @@
+{
+  "sourcePolicy": "All scene pixels originate in real application screenshots. Source files are not changed.",
+  "font": "Segoe UI / Segoe UI Semibold; DejaVu Sans fallback",
+  "comparisonTolerance": 1e-06,
+  "compositions": [
+    {
+      "file": "01-seven-phases-before-after.png",
+      "sha256": "8b14bf959055325f42771e16059ccc82daa9c19c8c1c2a913f512060c65718cf",
+      "dimensions": [
+        2086,
+        635
+      ],
+      "sources": [
+        {
+          "file": "artifacts/gates/G3A-review/phases/01-rest.png",
+          "sourceSha256": "adaa404689186c0c6f378507f539385ea43e01ceb51bffa3f1562cba4286bc07",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.04,
+          "phase": "rest",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            92,
+            296,
+            270
+          ],
+          "caption": "ANTES · G3A · Repouso",
+          "secondaryCaption": "t = 0.040 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/phases/02-activation.png",
+          "sourceSha256": "4af2e1e827bfd6f92dd686dfeb05028bd198ea340cddbc450aac2cb3cec6d2ca",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.14,
+          "phase": "activation",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            310,
+            92,
+            592,
+            270
+          ],
+          "caption": "ANTES · G3A · Ativação",
+          "secondaryCaption": "t = 0.140 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/phases/03-release.png",
+          "sourceSha256": "e50365567f07c528bf8b3955a761982ca0bfa576bc126886ec1539e72df7085c",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.275,
+          "phase": "release",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            606,
+            92,
+            888,
+            270
+          ],
+          "caption": "ANTES · G3A · Liberação",
+          "secondaryCaption": "t = 0.275 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/phases/04-growth.png",
+          "sourceSha256": "96caa5b7c7871dde91fbc81809a742ce7bb724ad3ff6932176e69d3511ba83a7",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            902,
+            92,
+            1184,
+            270
+          ],
+          "caption": "ANTES · G3A · Crescimento",
+          "secondaryCaption": "t = 0.530 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/phases/05-fixation.png",
+          "sourceSha256": "14a22a2608c047d80201f0067913fe607671a50115e1f47a2b29b7b31d0c12fb",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.76,
+          "phase": "fixation",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1198,
+            92,
+            1480,
+            270
+          ],
+          "caption": "ANTES · G3A · Fixação visual",
+          "secondaryCaption": "t = 0.760 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/phases/06-active.png",
+          "sourceSha256": "08ea6eaf40d3f1ef6e98f20b6a5ad6acbf9dcc5e37672d62410936a76a84ecdb",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1494,
+            92,
+            1776,
+            270
+          ],
+          "caption": "ANTES · G3A · Ativo",
+          "secondaryCaption": "t = 0.900 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/phases/07-retract.png",
+          "sourceSha256": "3f5deda300e19cecf376a27d20d2e0ee154ff728d2100187dbc73937602493e4",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1790,
+            92,
+            2072,
+            270
+          ],
+          "caption": "ANTES · G3A · Retração",
+          "secondaryCaption": "t = 0.980 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/phases/rest.png",
+          "sourceSha256": "135bfc6dd5f8c24db83e3a6331312d87fdf7e5651e386a46f682dac8db110d65",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.04,
+          "phase": "rest",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            341,
+            296,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Repouso",
+          "secondaryCaption": "t = 0.040 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/phases/activation.png",
+          "sourceSha256": "8053a8cfe281bfd7d69449e5d57919b4da2f44f25309bd9353994c47a6dbfeef",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.14,
+          "phase": "activation",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            310,
+            341,
+            592,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Ativação",
+          "secondaryCaption": "t = 0.140 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/phases/release.png",
+          "sourceSha256": "3e8407bb9a0fbafb56561a6f38bc37c0ab8606ba80c15e974e7d9a7bc692a886",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.275,
+          "phase": "release",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            606,
+            341,
+            888,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Liberação",
+          "secondaryCaption": "t = 0.275 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/phases/growth.png",
+          "sourceSha256": "0a0d5707afdcbd6b50cda89d2b1607e7e1fdd4b082750a9a48d60157372f88be",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            902,
+            341,
+            1184,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Crescimento",
+          "secondaryCaption": "t = 0.530 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/phases/fixation.png",
+          "sourceSha256": "9593a61992b6a9007930a2e5bf4008910302512fb4b6bf8abdee4393b32e9f88",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.76,
+          "phase": "fixation",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1198,
+            341,
+            1480,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Fixação visual",
+          "secondaryCaption": "t = 0.760 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/phases/active.png",
+          "sourceSha256": "a44c9bb0d9021181b876065b52f40d3039b1723c7a3e86596e5757b0a5b0d0ee",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1494,
+            341,
+            1776,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Ativo",
+          "secondaryCaption": "t = 0.900 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/phases/retract.png",
+          "sourceSha256": "2beecafa60a5ab14385b625eeb354a325b716928d5dbaf636e30b20f20f24632",
+          "sourceDimensions": [
+            1440,
+            900
+          ],
+          "cropBox": [
+            398,
+            243,
+            1011,
+            630
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1790,
+            341,
+            2072,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Retração",
+          "secondaryCaption": "t = 0.980 · 4 apêndices · seed 17"
+        }
+      ],
+      "operations": "Fixed crop, aspect-preserving Lanczos resize, layout and captions only. No retouch, external render or generated scene pixels."
+    },
+    {
+      "file": "02-implantation-before-after.png",
+      "sha256": "a418370e91df92910e14be3fae5583228b61513edb8c6734e6b747668dfcd0f5",
+      "dimensions": [
+        1706,
+        1051
+      ],
+      "sources": [
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/root-growth.png",
+          "sourceSha256": "c66cfb317de7ce8dce0e48da327719a6c73526a2955e0764fa6fc396db2296f2",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            0,
+            0,
+            876,
+            614
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -0.53,
+              1.0999999999999999,
+              -1.17
+            ],
+            "target": [
+              0,
+              0.98,
+              -0.12
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            92,
+            564,
+            478
+          ],
+          "caption": "ANTES · G3A · Crescimento",
+          "secondaryCaption": "t = 0.530 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/root-active.png",
+          "sourceSha256": "d4fe6615f7e782f664d4fb3aabee8debd3a309373eba0ebc984a94ca5ab6065d",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            0,
+            0,
+            876,
+            614
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -0.53,
+              1.0999999999999999,
+              -1.17
+            ],
+            "target": [
+              0,
+              0.98,
+              -0.12
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            578,
+            92,
+            1128,
+            478
+          ],
+          "caption": "ANTES · G3A · Ativo",
+          "secondaryCaption": "t = 0.900 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/root-retract.png",
+          "sourceSha256": "33436ebde548fb4cdc84a602f73057b0fbe3bb89806e6e944805421288466e72",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            0,
+            0,
+            876,
+            614
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -0.53,
+              1.0999999999999999,
+              -1.17
+            ],
+            "target": [
+              0,
+              0.98,
+              -0.12
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1142,
+            92,
+            1692,
+            478
+          ],
+          "caption": "ANTES · G3A · Retração",
+          "secondaryCaption": "t = 0.980 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/roots/t530.png",
+          "sourceSha256": "0549212a22d9155d557357b734166b3c47b5a51550e388a98f0e3eb5e6469f67",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            0,
+            0,
+            876,
+            614
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -0.53,
+              1.0999999999999999,
+              -1.17
+            ],
+            "target": [
+              0,
+              0.98,
+              -0.12
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            549,
+            564,
+            935
+          ],
+          "caption": "DEPOIS · G3A.1 · Crescimento",
+          "secondaryCaption": "t = 0.530 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/roots/t900.png",
+          "sourceSha256": "69c089ac1ae5e5b729a4af31092ac2893bbe5e56353f937d6e2e02756549b8de",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            0,
+            0,
+            876,
+            614
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -0.53,
+              1.0999999999999999,
+              -1.17
+            ],
+            "target": [
+              0,
+              0.98,
+              -0.12
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            578,
+            549,
+            1128,
+            935
+          ],
+          "caption": "DEPOIS · G3A.1 · Ativo",
+          "secondaryCaption": "t = 0.900 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/roots/t980.png",
+          "sourceSha256": "38a71362dc40070e83508464284f1db9d8fed01af17786ddda7cdbde0afaff5d",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            0,
+            0,
+            876,
+            614
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -0.53,
+              1.0999999999999999,
+              -1.17
+            ],
+            "target": [
+              0,
+              0.98,
+              -0.12
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1142,
+            549,
+            1692,
+            935
+          ],
+          "caption": "DEPOIS · G3A.1 · Retração",
+          "secondaryCaption": "t = 0.980 · 4 apêndices · seed 17"
+        }
+      ],
+      "operations": "Fixed crop, aspect-preserving Lanczos resize, layout and captions only. No retouch, external render or generated scene pixels."
+    },
+    {
+      "file": "03-growth-before-after.png",
+      "sha256": "8751b0b48768a106e830d94f5ab1af8e9fc7396ea8e9807d9a629825bf00890a",
+      "dimensions": [
+        2206,
+        607
+      ],
+      "sources": [
+        {
+          "file": "artifacts/gates/G3A-review/growth/t350.png",
+          "sourceSha256": "6afcd4361c551a4f0b3330b2a29f581f116697d3841475050e6fed9e6f5a1d19",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.35,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            92,
+            274,
+            256
+          ],
+          "caption": "ANTES · G3A · Crescimento",
+          "secondaryCaption": "t = 0.350 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/growth/t400.png",
+          "sourceSha256": "6cd5e54f03e0b173f48d7b763b60fe111ed87d810733d0adff72023e412608e2",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.4,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            288,
+            92,
+            548,
+            256
+          ],
+          "caption": "ANTES · G3A · Crescimento",
+          "secondaryCaption": "t = 0.400 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/growth/t450.png",
+          "sourceSha256": "02e281def41419f6feee7adafbee51860d4819f1ab61766b98b0b7cffe2076c7",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.45,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            562,
+            92,
+            822,
+            256
+          ],
+          "caption": "ANTES · G3A · Crescimento",
+          "secondaryCaption": "t = 0.450 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/growth/t500.png",
+          "sourceSha256": "fd8d5b3c9de48d0a118b5d3ef481bb52daae4073c8b48b52bccbf0e2e7e0c4ab",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.5,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            836,
+            92,
+            1096,
+            256
+          ],
+          "caption": "ANTES · G3A · Crescimento",
+          "secondaryCaption": "t = 0.500 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/growth/t550.png",
+          "sourceSha256": "c59e29c6cd16ad79c3d745c68dc6a07572710f2f9483aba03ea5ea0e1fe53158",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.55,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1110,
+            92,
+            1370,
+            256
+          ],
+          "caption": "ANTES · G3A · Crescimento",
+          "secondaryCaption": "t = 0.550 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/growth/t600.png",
+          "sourceSha256": "aaf6139440483fbf2a66d3434d568b287055c911eeb6ddb44901d38618e1a1b1",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.6,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1384,
+            92,
+            1644,
+            256
+          ],
+          "caption": "ANTES · G3A · Crescimento",
+          "secondaryCaption": "t = 0.600 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/growth/t650.png",
+          "sourceSha256": "5cdef06342622afcd740fc6f8dbff512a8f980f0bf712a677f4190e0f04379d9",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.65,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1658,
+            92,
+            1918,
+            256
+          ],
+          "caption": "ANTES · G3A · Crescimento",
+          "secondaryCaption": "t = 0.650 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/growth/t700.png",
+          "sourceSha256": "c7e3d17cdf881e523f688a7d33e5002afe9220707734b128be81453b55bb37ca",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.7,
+          "phase": "fixation",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1932,
+            92,
+            2192,
+            256
+          ],
+          "caption": "ANTES · G3A · Fixação visual",
+          "secondaryCaption": "t = 0.700 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/growth/t0350.png",
+          "sourceSha256": "35b3eee1b36f7a702257f643344241006836fa62ba770c44a9183c7a0fc4bbf7",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.35,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            327,
+            274,
+            491
+          ],
+          "caption": "DEPOIS · G3A.1 · Crescimento",
+          "secondaryCaption": "t = 0.350 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/growth/t0400.png",
+          "sourceSha256": "0ad0968147a4e472adc10204702f45351de520a36d895fea5adb0d5f6fe72016",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.4,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            288,
+            327,
+            548,
+            491
+          ],
+          "caption": "DEPOIS · G3A.1 · Crescimento",
+          "secondaryCaption": "t = 0.400 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/growth/t0450.png",
+          "sourceSha256": "550aa9dd0f6ca4e79cb0c92a63763af861ee0684e605a77b16ace2db2455a212",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.45,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            562,
+            327,
+            822,
+            491
+          ],
+          "caption": "DEPOIS · G3A.1 · Crescimento",
+          "secondaryCaption": "t = 0.450 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/growth/t0500.png",
+          "sourceSha256": "295765f88cda60bd7fcbc0841cfc87757e0135dab4dab114cb31a341ba39d7e2",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.5,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            836,
+            327,
+            1096,
+            491
+          ],
+          "caption": "DEPOIS · G3A.1 · Crescimento",
+          "secondaryCaption": "t = 0.500 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/growth/t0550.png",
+          "sourceSha256": "c1df6dd667c9325df72d2cc87c6d878d87c13e845390552379119839b768be1a",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.55,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1110,
+            327,
+            1370,
+            491
+          ],
+          "caption": "DEPOIS · G3A.1 · Crescimento",
+          "secondaryCaption": "t = 0.550 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/growth/t0600.png",
+          "sourceSha256": "0ca0ecdb60ca70353a245935ada822c64e52447dd323de780c9b6f12e835a02c",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.6,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1384,
+            327,
+            1644,
+            491
+          ],
+          "caption": "DEPOIS · G3A.1 · Crescimento",
+          "secondaryCaption": "t = 0.600 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/growth/t0650.png",
+          "sourceSha256": "a2a9e397c2084930104c433852669ecf42b5bb9b2223985c474a34d56d559c03",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.65,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1658,
+            327,
+            1918,
+            491
+          ],
+          "caption": "DEPOIS · G3A.1 · Crescimento",
+          "secondaryCaption": "t = 0.650 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/growth/t0700.png",
+          "sourceSha256": "10c8dbed238200896384637bb6ab991762f9c7de59eab0c3afde7f5b2caca234",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.7,
+          "phase": "fixation",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1932,
+            327,
+            2192,
+            491
+          ],
+          "caption": "DEPOIS · G3A.1 · Fixação visual",
+          "secondaryCaption": "t = 0.700 · 4 apêndices · seed 17"
+        }
+      ],
+      "operations": "Fixed crop, aspect-preserving Lanczos resize, layout and captions only. No retouch, external render or generated scene pixels."
+    },
+    {
+      "file": "04-retraction-before-after.png",
+      "sha256": "95a8919306ed9848671c8cb43e92cb28a45914824375cda0f1e90644b8e7f30a",
+      "dimensions": [
+        2086,
+        635
+      ],
+      "sources": [
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/retract-t950.png",
+          "sourceSha256": "844d830447f47b9fac291308baf773295ebe0663320b3d03ffb658c1940aa7e5",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.95,
+          "phase": "retract",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            92,
+            296,
+            270
+          ],
+          "caption": "ANTES · G3A · Retração",
+          "secondaryCaption": "t = 0.950 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/retract-t960.png",
+          "sourceSha256": "84b453eac46d059516c90e6516757d6326abb5bfd44276b5aeeae8373eeb7bfa",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.96,
+          "phase": "retract",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            310,
+            92,
+            592,
+            270
+          ],
+          "caption": "ANTES · G3A · Retração",
+          "secondaryCaption": "t = 0.960 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/retract-t970.png",
+          "sourceSha256": "94cbd97265d8cd20507e74402238f2991c02bc63634be800bb0b0f4b99b6f91c",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.97,
+          "phase": "retract",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            606,
+            92,
+            888,
+            270
+          ],
+          "caption": "ANTES · G3A · Retração",
+          "secondaryCaption": "t = 0.970 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/retract-t980.png",
+          "sourceSha256": "e82c283d3c3b8c0f4f7cee19641edbbf8e9a9ee394c5aa72c6c3b1bc259fb1cb",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            902,
+            92,
+            1184,
+            270
+          ],
+          "caption": "ANTES · G3A · Retração",
+          "secondaryCaption": "t = 0.980 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/retract-t990.png",
+          "sourceSha256": "ea9faf3491022c372e6610662761ac8bcae9774e49fe977bcd1a8e2f433f5651",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.99,
+          "phase": "retract",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1198,
+            92,
+            1480,
+            270
+          ],
+          "caption": "ANTES · G3A · Retração",
+          "secondaryCaption": "t = 0.990 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/retract-t995.png",
+          "sourceSha256": "0caca2ed15292818d7d487cc05ff3154cbc62014aff91d3bcfc2463d0cedd568",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.995,
+          "phase": "retract",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1494,
+            92,
+            1776,
+            270
+          ],
+          "caption": "ANTES · G3A · Retração",
+          "secondaryCaption": "t = 0.995 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A-review/diagnostics/retract-t1000.png",
+          "sourceSha256": "028a43f6205969cd5262de3b4081a51d98a8bfb8bcbb477947f18ba614d3b423",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 1,
+          "phase": "retract",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1790,
+            92,
+            2072,
+            270
+          ],
+          "caption": "ANTES · G3A · Retração",
+          "secondaryCaption": "t = 1.000 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/retraction/t0950.png",
+          "sourceSha256": "6a7bdecea5e623ab4a997777d68b01a673f7029ee9e8c0b65a7fd2c6d4d26c7c",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.95,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            341,
+            296,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Retração",
+          "secondaryCaption": "t = 0.950 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/retraction/t0960.png",
+          "sourceSha256": "be625e7377cd05e23c754499b5b975219b10fc155f4f0571a6424d7a169051fa",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.96,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            310,
+            341,
+            592,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Retração",
+          "secondaryCaption": "t = 0.960 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/retraction/t0970.png",
+          "sourceSha256": "fc8b87a97c44aaebea64f0d6fcb6cb0c9fe3bb275ea38960a8057cd22e32cbe4",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.97,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            606,
+            341,
+            888,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Retração",
+          "secondaryCaption": "t = 0.970 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/retraction/t0980.png",
+          "sourceSha256": "0ade875100cae0f2bee7fbd3b1170784d1cd136ca01631328ae41347362b46a7",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            902,
+            341,
+            1184,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Retração",
+          "secondaryCaption": "t = 0.980 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/retraction/t0990.png",
+          "sourceSha256": "498ed3d57e81ec6427f3d09f793481c774ce9dd29ec35ce4a8fb9e5dad5816a8",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.99,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1198,
+            341,
+            1480,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Retração",
+          "secondaryCaption": "t = 0.990 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/retraction/t0995.png",
+          "sourceSha256": "9c1b8912884bbad49629891abed57ebc20d1c88953a51b3431a73033ef4b9c5c",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.995,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1494,
+            341,
+            1776,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Retração",
+          "secondaryCaption": "t = 0.995 · 4 apêndices · seed 17"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/retraction/t1000.png",
+          "sourceSha256": "fb7144b80fd089faa929eef7322c562c8dfc5fca813be8137d16224053bd4a6b",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 1,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            1790,
+            341,
+            2072,
+            519
+          ],
+          "caption": "DEPOIS · G3A.1 · Retração",
+          "secondaryCaption": "t = 1.000 · 4 apêndices · seed 17"
+        }
+      ],
+      "operations": "Fixed crop, aspect-preserving Lanczos resize, layout and captions only. No retouch, external render or generated scene pixels."
+    },
+    {
+      "file": "05-counts-and-views.png",
+      "sha256": "be89466b5b6d3fd7b6294a99dc884b4ed9ef92ba6070907400c4b533c950767f",
+      "dimensions": [
+        1406,
+        1557
+      ],
+      "sources": [
+        {
+          "file": "artifacts/gates/G3A1-review/counts/1/posterior-active.png",
+          "sourceSha256": "6174877752402224dc84d1ef69fa42afe1e665ee929aa2078f52e97c3bcbdfc7",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 1,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            92,
+            464,
+            376
+          ],
+          "caption": "1 apêndice · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/1/lateral-active.png",
+          "sourceSha256": "2b6257b84dd00d9d3068d27dc87b7c02cd98b902387861c2ec311827345d06aa",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 1,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            92,
+            928,
+            376
+          ],
+          "caption": "1 apêndice · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/1/oblique-active.png",
+          "sourceSha256": "d3ced0d7b646bc97fbc16630ea8a160242977238b52ff8e10e3d16d54b00be82",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 1,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            92,
+            1392,
+            376
+          ],
+          "caption": "1 apêndice · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/2/posterior-active.png",
+          "sourceSha256": "d309d31ceaec13fabb1a4e5d41d244b07111e901944962f974692732b8bc6337",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 2,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            447,
+            464,
+            731
+          ],
+          "caption": "2 apêndices · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/2/lateral-active.png",
+          "sourceSha256": "500671bca6140bb1d72eda268d6734c34999acd9839c04350b45ba56e0c4cf55",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 2,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            447,
+            928,
+            731
+          ],
+          "caption": "2 apêndices · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/2/oblique-active.png",
+          "sourceSha256": "51897c21d3c5d85dcd46ece5474a7c1d9e7008fe424611f42fc19c027bd7ae19",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 2,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            447,
+            1392,
+            731
+          ],
+          "caption": "2 apêndices · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/3/posterior-active.png",
+          "sourceSha256": "47a45d4ce25fb45972c30659caa0c047da86b9403bc1f799f15b18e213bfd0bb",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 3,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            802,
+            464,
+            1086
+          ],
+          "caption": "3 apêndices · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/3/lateral-active.png",
+          "sourceSha256": "61b8d084b65afcc5b9d040a257ce8d11688b85b476a4bdd778ff97edcbd331a9",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 3,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            802,
+            928,
+            1086
+          ],
+          "caption": "3 apêndices · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/3/oblique-active.png",
+          "sourceSha256": "d33908e0e1b498041936e37dca73710b4328b887b4c6ab1d0b4cf45faae5d143",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 3,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            802,
+            1392,
+            1086
+          ],
+          "caption": "3 apêndices · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/4/posterior-active.png",
+          "sourceSha256": "88c3936a9d2a47ac316c9dc4fdb46d0d962a4e31f45616d342c6cf965fb37fa4",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            1157,
+            464,
+            1441
+          ],
+          "caption": "4 apêndices · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/4/lateral-active.png",
+          "sourceSha256": "4bff433ae3986edb69d54a2846ec9f3e7be56fc9b1640948747c106bc0517228",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            1157,
+            928,
+            1441
+          ],
+          "caption": "4 apêndices · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/4/oblique-active.png",
+          "sourceSha256": "83f51746d5a9c6a390787f2c607e33e167e52d1a9eaf59849920a8562d0b7984",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            1157,
+            1392,
+            1441
+          ],
+          "caption": "4 apêndices · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.900 · corpo opaco"
+        }
+      ],
+      "operations": "Fixed crop, aspect-preserving Lanczos resize, layout and captions only. No retouch, external render or generated scene pixels."
+    },
+    {
+      "file": "07-counts-growth-views.png",
+      "sha256": "0df10837d753f25a03824f5878643c3597d700113b24f7cf67d586dbd5a164b7",
+      "dimensions": [
+        1406,
+        1557
+      ],
+      "sources": [
+        {
+          "file": "artifacts/gates/G3A1-review/counts/1/posterior-growth.png",
+          "sourceSha256": "7c5ef30ddde9f4290327b0c60a59ec4203559485819336d0bdfab2a84edaf04f",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 1,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            92,
+            464,
+            376
+          ],
+          "caption": "1 apêndice · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/1/lateral-growth.png",
+          "sourceSha256": "a9a04e4561d12e3ed83d95a450e1722a9f4326d94c856ecf8462866845dc0882",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 1,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            92,
+            928,
+            376
+          ],
+          "caption": "1 apêndice · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/1/oblique-growth.png",
+          "sourceSha256": "28dd79134d57647a102e41b112b207790868566ac911b284f1c80f601a724885",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 1,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            92,
+            1392,
+            376
+          ],
+          "caption": "1 apêndice · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/2/posterior-growth.png",
+          "sourceSha256": "99a40012f8c51cc395f65d9b1e4bcb575d00947f1747e4ff13b95c1eb952a025",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 2,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            447,
+            464,
+            731
+          ],
+          "caption": "2 apêndices · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/2/lateral-growth.png",
+          "sourceSha256": "5f421ca6bbaf185fdb095062dc6c5bd3f83cfbe3add3f895b7a40561e1fb741c",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 2,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            447,
+            928,
+            731
+          ],
+          "caption": "2 apêndices · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/2/oblique-growth.png",
+          "sourceSha256": "07cdf05dd32f5b24a1560a2e6f275367b920728024f21fcf30b4d215305d8016",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 2,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            447,
+            1392,
+            731
+          ],
+          "caption": "2 apêndices · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/3/posterior-growth.png",
+          "sourceSha256": "770e01716b4ec715234d0376c953d0a06b1aa3d30cb4cab95b0dcf9886992544",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 3,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            802,
+            464,
+            1086
+          ],
+          "caption": "3 apêndices · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/3/lateral-growth.png",
+          "sourceSha256": "a8aae6ed60aefff1ed66f6fb66962be7429aed586d524612a48802849894df1e",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 3,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            802,
+            928,
+            1086
+          ],
+          "caption": "3 apêndices · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/3/oblique-growth.png",
+          "sourceSha256": "c316daae533a62647e537d2009469f07f93a3f9cdf986bac20f1e422da16eeea",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 3,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            802,
+            1392,
+            1086
+          ],
+          "caption": "3 apêndices · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/4/posterior-growth.png",
+          "sourceSha256": "d4ca87786a0e59acd28295f7167d57cd6df3b28de60db1a812e3a2c25f25c92b",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            1157,
+            464,
+            1441
+          ],
+          "caption": "4 apêndices · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/4/lateral-growth.png",
+          "sourceSha256": "f66118f7f917ce0c4e233cad4435f6d0bf9d20c87ddfb7033933cc6d34cbf318",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            1157,
+            928,
+            1441
+          ],
+          "caption": "4 apêndices · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/4/oblique-growth.png",
+          "sourceSha256": "fe62dd6354c55159eeccbdeb5abe75fd980d8f2ee42d45a110f6788c89f752a3",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            1157,
+            1392,
+            1441
+          ],
+          "caption": "4 apêndices · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.530 · corpo opaco"
+        }
+      ],
+      "operations": "Fixed crop, aspect-preserving Lanczos resize, layout and captions only. No retouch, external render or generated scene pixels."
+    },
+    {
+      "file": "08-counts-retraction-views.png",
+      "sha256": "224d46cf00040d415c364b024ba49aff00521cb584b2adb09ddc069e8cda993d",
+      "dimensions": [
+        1406,
+        1557
+      ],
+      "sources": [
+        {
+          "file": "artifacts/gates/G3A1-review/counts/1/posterior-retract.png",
+          "sourceSha256": "ceab95966deb0d00556e671a83f9c118920842e60276f6cdc85f3a1fe7d47205",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 1,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            92,
+            464,
+            376
+          ],
+          "caption": "1 apêndice · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/1/lateral-retract.png",
+          "sourceSha256": "4c0a822536eeb41f9be033ddb9faecca273362b0744d3355e8b4dfd22c8a24bd",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 1,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            92,
+            928,
+            376
+          ],
+          "caption": "1 apêndice · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/1/oblique-retract.png",
+          "sourceSha256": "27af00b0cb2132015dbea5aa105c6fc66c90aed046d91648aa870e8ccc04164b",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 1,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            92,
+            1392,
+            376
+          ],
+          "caption": "1 apêndice · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/2/posterior-retract.png",
+          "sourceSha256": "0848b3216bb887e0b9e6e4f27658e0e18cac42c84649ae33c8e2a3188fc721ad",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 2,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            447,
+            464,
+            731
+          ],
+          "caption": "2 apêndices · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/2/lateral-retract.png",
+          "sourceSha256": "b308ec529ee2bb3ee440d2cb0ddb5f6587162424016401827b704dfaf28fd700",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 2,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            447,
+            928,
+            731
+          ],
+          "caption": "2 apêndices · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/2/oblique-retract.png",
+          "sourceSha256": "50feae7d493961680dba970ea610d690870ed89da6513557b1da04f1de97c900",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 2,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            447,
+            1392,
+            731
+          ],
+          "caption": "2 apêndices · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/3/posterior-retract.png",
+          "sourceSha256": "63694fb775a06e4f9e05f07a0ca1b74881d795fbd67c7ab24ed5f95ee473cfee",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 3,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            802,
+            464,
+            1086
+          ],
+          "caption": "3 apêndices · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/3/lateral-retract.png",
+          "sourceSha256": "788f2ac3348e420dbf6994686a5d2e3f435b197e319be2c4e4eef55349db22fd",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 3,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            802,
+            928,
+            1086
+          ],
+          "caption": "3 apêndices · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/3/oblique-retract.png",
+          "sourceSha256": "18e95042e8d7fde2cf83a47d041225fc6f1d5d8c6f88917745b9ffde9c79a634",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 3,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            802,
+            1392,
+            1086
+          ],
+          "caption": "3 apêndices · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/4/posterior-retract.png",
+          "sourceSha256": "0ade875100cae0f2bee7fbd3b1170784d1cd136ca01631328ae41347362b46a7",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            1157,
+            464,
+            1441
+          ],
+          "caption": "4 apêndices · Posterior",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/4/lateral-retract.png",
+          "sourceSha256": "f12873e01ccf52d4a684a58108bbdb701eb6173aa6383863c5faf0d5290c0eb6",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            478,
+            1157,
+            928,
+            1441
+          ],
+          "caption": "4 apêndices · Lateral",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/counts/4/oblique-retract.png",
+          "sourceSha256": "0933aadd025e76a9ea1440f07dde63b0c7def5595a8dd4578e4c8b8338a83ca1",
+          "sourceDimensions": [
+            876,
+            614
+          ],
+          "cropBox": [
+            158,
+            123,
+            771,
+            510
+          ],
+          "captureAreaResolved": "stage",
+          "t": 0.98,
+          "phase": "retract",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            942,
+            1157,
+            1392,
+            1441
+          ],
+          "caption": "4 apêndices · Oblíqua",
+          "secondaryCaption": "G3A.1 · t = 0.980 · corpo opaco"
+        }
+      ],
+      "operations": "Fixed crop, aspect-preserving Lanczos resize, layout and captions only. No retouch, external render or generated scene pixels."
+    },
+    {
+      "file": "06-mobile-before-after.png",
+      "sha256": "0a44a29c2f9f3d055d1fce02496780881f249d461034deca4573d678df9558ba",
+      "dimensions": [
+        1270,
+        1579
+      ],
+      "sources": [
+        {
+          "file": "artifacts/gates/G3A1-review/before/mobile/390-growth.png",
+          "sourceSha256": "f88cb53f0e7fe3cdbeb95c9f9cb033728e7c1bd9cfe860d119fc2f81beabe1a9",
+          "sourceDimensions": [
+            390,
+            844
+          ],
+          "cropBox": [
+            0,
+            0,
+            390,
+            844
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -2.0821555023502984,
+              1.4757357580695647,
+              -6.752399147602451
+            ],
+            "target": [
+              0,
+              1.2480000000000002,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            92,
+            314,
+            741
+          ],
+          "caption": "ANTES · G3A · 390px",
+          "secondaryCaption": "t = 0.530 · Crescimento"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/after/mobile/390-growth.png",
+          "sourceSha256": "8422abd2577e2be8b98f939b49027937b6e9604e74942ffd7c9e65eef3f1e60c",
+          "sourceDimensions": [
+            390,
+            844
+          ],
+          "cropBox": [
+            0,
+            0,
+            390,
+            844
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.4808353254081217,
+              1.1999663637165139,
+              -4.967229872305363
+            ],
+            "target": [
+              0,
+              1.038,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            328,
+            92,
+            628,
+            741
+          ],
+          "caption": "DEPOIS · G3A.1 · 390px",
+          "secondaryCaption": "t = 0.530 · Crescimento"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/before/mobile/390-active.png",
+          "sourceSha256": "1f1a37772830abc9aabaf591c00e94022d91a88536408f92733742c753a8db39",
+          "sourceDimensions": [
+            390,
+            844
+          ],
+          "cropBox": [
+            0,
+            0,
+            390,
+            844
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -2.0821555023502984,
+              1.4757357580695647,
+              -6.752399147602451
+            ],
+            "target": [
+              0,
+              1.2480000000000002,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            642,
+            92,
+            942,
+            741
+          ],
+          "caption": "ANTES · G3A · 390px",
+          "secondaryCaption": "t = 0.900 · Ativo"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/after/mobile/390-active.png",
+          "sourceSha256": "ae4a169c4fde05a034f444a50f21cbafe6a9084cfbd56cd2d7086d010739fe9a",
+          "sourceDimensions": [
+            390,
+            844
+          ],
+          "cropBox": [
+            0,
+            0,
+            390,
+            844
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.4808353254081217,
+              1.1999663637165139,
+              -4.967229872305363
+            ],
+            "target": [
+              0,
+              1.038,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            956,
+            92,
+            1256,
+            741
+          ],
+          "caption": "DEPOIS · G3A.1 · 390px",
+          "secondaryCaption": "t = 0.900 · Ativo"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/before/mobile/430-growth.png",
+          "sourceSha256": "10d8bc4fd287270a10186d67b3552ad74e30eac076cbd7947d383d2638414bfc",
+          "sourceDimensions": [
+            430,
+            932
+          ],
+          "cropBox": [
+            0,
+            0,
+            430,
+            932
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.888466618410736,
+              1.4545510363886751,
+              -6.177385273406873
+            ],
+            "target": [
+              0,
+              1.2480000000000002,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            14,
+            813,
+            314,
+            1463
+          ],
+          "caption": "ANTES · G3A · 430px",
+          "secondaryCaption": "t = 0.530 · Crescimento"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/after/mobile/430-growth.png",
+          "sourceSha256": "4a61ed1760a721c454f275143a59bab672f20001a9c4b15c013b0e1ebf0757f0",
+          "sourceDimensions": [
+            430,
+            932
+          ],
+          "cropBox": [
+            0,
+            0,
+            430,
+            932
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.53,
+          "phase": "growth",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.4026678711344134,
+              1.191416798405327,
+              -4.735170242430291
+            ],
+            "target": [
+              0,
+              1.038,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            328,
+            813,
+            628,
+            1463
+          ],
+          "caption": "DEPOIS · G3A.1 · 430px",
+          "secondaryCaption": "t = 0.530 · Crescimento"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/before/mobile/430-active.png",
+          "sourceSha256": "60efafe1064c39eb02aedc6e73bc3cd65ab4e64fe568a0aca5181662f0cf2a7a",
+          "sourceDimensions": [
+            430,
+            932
+          ],
+          "cropBox": [
+            0,
+            0,
+            430,
+            932
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "before",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.888466618410736,
+              1.4545510363886751,
+              -6.177385273406873
+            ],
+            "target": [
+              0,
+              1.2480000000000002,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            642,
+            813,
+            942,
+            1463
+          ],
+          "caption": "ANTES · G3A · 430px",
+          "secondaryCaption": "t = 0.900 · Ativo"
+        },
+        {
+          "file": "artifacts/gates/G3A1-review/after/mobile/430-active.png",
+          "sourceSha256": "301dbab82c1ab29ba2f7fa776399100d72387faabe711a716ef36d2ec99ed67f",
+          "sourceDimensions": [
+            430,
+            932
+          ],
+          "cropBox": [
+            0,
+            0,
+            430,
+            932
+          ],
+          "captureAreaResolved": "viewport",
+          "t": 0.9,
+          "phase": "active",
+          "revision": "after",
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "camera": {
+            "position": [
+              -1.4026678711344134,
+              1.191416798405327,
+              -4.735170242430291
+            ],
+            "target": [
+              0,
+              1.038,
+              -0.5710000000000001
+            ],
+            "moving": false
+          },
+          "bodyOpacity": 1,
+          "destinationBox": [
+            956,
+            813,
+            1256,
+            1463
+          ],
+          "caption": "DEPOIS · G3A.1 · 430px",
+          "secondaryCaption": "t = 0.900 · Ativo"
+        }
+      ],
+      "operations": "Fixed crop, aspect-preserving Lanczos resize, layout and captions only. No retouch, external render or generated scene pixels."
+    }
+  ],
+  "matchedComparisons": [
+    {
+      "before": "artifacts/gates/G3A-review/phases/01-rest.png",
+      "after": "artifacts/gates/G3A1-review/phases/rest.png",
+      "t": 0.04,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/phases/02-activation.png",
+      "after": "artifacts/gates/G3A1-review/phases/activation.png",
+      "t": 0.14,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/phases/03-release.png",
+      "after": "artifacts/gates/G3A1-review/phases/release.png",
+      "t": 0.275,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/phases/04-growth.png",
+      "after": "artifacts/gates/G3A1-review/phases/growth.png",
+      "t": 0.53,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/phases/05-fixation.png",
+      "after": "artifacts/gates/G3A1-review/phases/fixation.png",
+      "t": 0.76,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/phases/06-active.png",
+      "after": "artifacts/gates/G3A1-review/phases/active.png",
+      "t": 0.9,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/phases/07-retract.png",
+      "after": "artifacts/gates/G3A1-review/phases/retract.png",
+      "t": 0.98,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/root-growth.png",
+      "after": "artifacts/gates/G3A1-review/roots/t530.png",
+      "t": 0.53,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/root-active.png",
+      "after": "artifacts/gates/G3A1-review/roots/t900.png",
+      "t": 0.9,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/root-retract.png",
+      "after": "artifacts/gates/G3A1-review/roots/t980.png",
+      "t": 0.98,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/growth/t350.png",
+      "after": "artifacts/gates/G3A1-review/growth/t0350.png",
+      "t": 0.35,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/growth/t400.png",
+      "after": "artifacts/gates/G3A1-review/growth/t0400.png",
+      "t": 0.4,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/growth/t450.png",
+      "after": "artifacts/gates/G3A1-review/growth/t0450.png",
+      "t": 0.45,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/growth/t500.png",
+      "after": "artifacts/gates/G3A1-review/growth/t0500.png",
+      "t": 0.5,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/growth/t550.png",
+      "after": "artifacts/gates/G3A1-review/growth/t0550.png",
+      "t": 0.55,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/growth/t600.png",
+      "after": "artifacts/gates/G3A1-review/growth/t0600.png",
+      "t": 0.6,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/growth/t650.png",
+      "after": "artifacts/gates/G3A1-review/growth/t0650.png",
+      "t": 0.65,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/growth/t700.png",
+      "after": "artifacts/gates/G3A1-review/growth/t0700.png",
+      "t": 0.7,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/retract-t950.png",
+      "after": "artifacts/gates/G3A1-review/retraction/t0950.png",
+      "t": 0.95,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/retract-t960.png",
+      "after": "artifacts/gates/G3A1-review/retraction/t0960.png",
+      "t": 0.96,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/retract-t970.png",
+      "after": "artifacts/gates/G3A1-review/retraction/t0970.png",
+      "t": 0.97,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/retract-t980.png",
+      "after": "artifacts/gates/G3A1-review/retraction/t0980.png",
+      "t": 0.98,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/retract-t990.png",
+      "after": "artifacts/gates/G3A1-review/retraction/t0990.png",
+      "t": 0.99,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/retract-t995.png",
+      "after": "artifacts/gates/G3A1-review/retraction/t0995.png",
+      "t": 0.995,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A-review/diagnostics/retract-t1000.png",
+      "after": "artifacts/gates/G3A1-review/retraction/t1000.png",
+      "t": 1,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 0.0,
+      "cameraEqualWithinTolerance": true,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Identical position and target within tolerance"
+    },
+    {
+      "before": "artifacts/gates/G3A1-review/before/mobile/390-growth.png",
+      "after": "artifacts/gates/G3A1-review/after/mobile/390-growth.png",
+      "t": 0.53,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 1.785169275297088,
+      "cameraEqualWithinTolerance": false,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Intentionally different mobile framing; same pose/configuration"
+    },
+    {
+      "before": "artifacts/gates/G3A1-review/before/mobile/390-active.png",
+      "after": "artifacts/gates/G3A1-review/after/mobile/390-active.png",
+      "t": 0.9,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 1.785169275297088,
+      "cameraEqualWithinTolerance": false,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Intentionally different mobile framing; same pose/configuration"
+    },
+    {
+      "before": "artifacts/gates/G3A1-review/before/mobile/430-growth.png",
+      "after": "artifacts/gates/G3A1-review/after/mobile/430-growth.png",
+      "t": 0.53,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 1.4422150309765822,
+      "cameraEqualWithinTolerance": false,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Intentionally different mobile framing; same pose/configuration"
+    },
+    {
+      "before": "artifacts/gates/G3A1-review/before/mobile/430-active.png",
+      "after": "artifacts/gates/G3A1-review/after/mobile/430-active.png",
+      "t": 0.9,
+      "timelineDelta": 0.0,
+      "configEqual": true,
+      "bodyOpacityDelta": 0.0,
+      "cameraMaximumDelta": 1.4422150309765822,
+      "cameraEqualWithinTolerance": false,
+      "tolerance": 1e-06,
+      "cameraPolicy": "Intentionally different mobile framing; same pose/configuration"
+    }
+  ],
+  "pending": [],
+  "approval": "Artistic approval remains pending human review."
+}

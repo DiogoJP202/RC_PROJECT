@@ -1,0 +1,13 @@
+
+> ghoul-atlas@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 <workspace>
+
+
+ Test Files  13 passed (13)
+      Tests  139 passed (139)
+   Start at  03:10:27
+   Duration  3.64s (tests 68%, import 16%, transform 13%, worker 2%)
+

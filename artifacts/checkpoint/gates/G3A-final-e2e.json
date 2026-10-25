@@ -1,0 +1,542 @@
+{
+  "method": "Complete final production suite, 1 worker, real 21 s cycles, no retries or timing injection.",
+  "stats": {
+    "startTime": "2026-10-25T06:10:03.106Z",
+    "duration": 429095.359,
+    "expected": 44,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "disk GLB loads asynchronously and replaces only its three stable anatomical bindings",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2226,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "a loaded mesh receives real pointer hits and keeps anatomical evidence identity",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2000,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "asset replacement preserves selection, layers, isolation, opacity and camera context",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2522,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "HTTP failure automatically shows available proxies and retry loads the real asset",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1998,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "a slow superseded asset cannot overwrite the later model or anatomical selection",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2256,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "repeated GLB swaps release leases and dispose unused templates without retained cache entries",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2708,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "rigged GLB exposes skin and clip, moves a bone-attached socket and respects reduced motion",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2686,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "G2A desktop capture preserves the observatory and labels the synthetic integration",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 3813,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "mobile exploration remains touch accessible with GLB and produces a real capture",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2657,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g2a-assets.spec.ts",
+      "title": "the mobile drawer supports touch, keyboard, native dismissal and explicit evidence reopening",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 3294,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-checkpoint.spec.ts",
+      "title": "terminal retraction settles before the visibility cutoff and leaves no rendered residue for 1–4 appendages",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 16639,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-checkpoint.spec.ts",
+      "title": "real terminal playback stops at one, keeps replay resources stable and releases them on exit",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 9324,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-checkpoint.spec.ts",
+      "title": "transparent body picking ignores pooled appendages below an invisible parent at the endpoint",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2323,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-checkpoint.spec.ts",
+      "title": "terminal surfaces also have no residual pixel footprint through the transparent body",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 8421,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-rinkaku.spec.ts",
+      "title": "absolute manual timeline reproduces geometry, keeps resources and records the five phase captures",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 5258,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-rinkaku.spec.ts",
+      "title": "play, pause, reverse and rapid scrubbing use one timeline while selection and the scan remain stable",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 6207,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-rinkaku.spec.ts",
+      "title": "ten full manual cycles keep geometry identities and warmed renderer resources bounded",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 26434,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-rinkaku.spec.ts",
+      "title": "ten complete automatic 21-second playback cycles retain stable resources without context loss",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 226533,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-rinkaku.spec.ts",
+      "title": "counts, particles and quality replace visual settings without detaching the root, and GLB sockets stay authoritative",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 3146,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-rinkaku.spec.ts",
+      "title": "posterior, lateral and lumbar focus are explicit and reduced motion keeps manual keyboard inspection",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2897,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-rinkaku.spec.ts",
+      "title": "without WebGL the manifestation offers truthful static timeline controls and the original inspection remains available",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 960,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-rinkaku.spec.ts",
+      "title": "loss of the real WebGL context pauses an active manifestation and keeps manual inspection available",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 4173,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a-rinkaku.spec.ts",
+      "title": "mobile touch controls stay usable and capture the actual procedural manifestation",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2406,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a1-refinement.spec.ts",
+      "title": "all seven deterministic phases support 1–4 appendages and preserve the same absolute pose after arbitrary scrubbing",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 8268,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a1-refinement.spec.ts",
+      "title": "lumbar implantation is captured at growth, active and retraction for every count in posterior, lateral and oblique views",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 14175,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a1-refinement.spec.ts",
+      "title": "growth and retraction sequences, phase boundaries and timeline revisits keep a stable camera and preallocated resources",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 7876,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a1-refinement.spec.ts",
+      "title": "the existing kakuhou presentation is suppressed only during manifestation and restored for proxy and both GLB fixtures",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 3315,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a1-refinement.spec.ts",
+      "title": "selection, layers and preexisting isolation stay functional while the original observer presentation is restored",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2690,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a1-refinement.spec.ts",
+      "title": "mobile 390×844 keeps a stable usable view and captures real growth playback",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 10177,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "g3a1-refinement.spec.ts",
+      "title": "mobile 430×932 keeps a stable usable view and captures real growth playback",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 10238,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "catalog loading is real and delays anatomy UI until data arrives",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1691,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "3D click raycasts an actual scene structure and synchronizes the inspector",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1908,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "independent scene layers can be toggled and isolation restores the prior combination",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1572,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "mouse orbit and wheel zoom change the real camera",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1915,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "camera focus changes its actual pose and reset restores an overview",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1777,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "opacity and scan controls affect the renderer; pausing and scrub are stable",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2880,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "future modes preserve context and canon filter never hides the reconstruction disclosure",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 2227,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "keyboard alternatives work, range keys stay local and reduced motion pauses scan",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1853,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "failure ?webgl=off preserves content and selection without WebGL",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1791,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "failure ?asset=missing preserves content and selection without WebGL",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1771,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "a lost real WebGL context opens an accessible fallback",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1755,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "catalog errors have a visible recovery action",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1420,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "desktop and silhouette gate captures include the real rendered scene",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 3270,
+          "retry": 0
+        }
+      ]
+    },
+    {
+      "file": "observatory.spec.ts",
+      "title": "touch-sized mobile remains usable without hover or horizontal overflow",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "durationMs": 1989,
+          "retry": 0
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

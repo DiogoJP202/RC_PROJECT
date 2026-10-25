@@ -10,12 +10,29 @@ test-results/
 # local screenshots of proprietary third-party UI — references only
 references/private/
 
-# Only original G1 captures and reviewed checkpoint reports are shared.
+# Original gate captures and reviewed reports, never proprietary references.
 artifacts/*
 !artifacts/gates/
 artifacts/gates/*
 !artifacts/gates/G1-*.png
 !artifacts/gates/G2A-*.png
+!artifacts/gates/G3A-*.png
+!artifacts/gates/G3A-review/
+!artifacts/gates/G3A-review/**
+!artifacts/gates/G3A1-*.png
+!artifacts/gates/G3A1-review/
+!artifacts/gates/G3A1-review/**
+!artifacts/g3a1/
+artifacts/g3a1/*
+!artifacts/g3a1/*.json
+!artifacts/g3a1/*.txt
+!artifacts/g3a/
+artifacts/g3a/*
+!artifacts/g3a/*.json
+!artifacts/g3a/*.txt
+!artifacts/g3a/sequence/
+artifacts/g3a/sequence/*
+!artifacts/g3a/sequence/*.png
 !artifacts/g2a/
 artifacts/g2a/*
 !artifacts/g2a/*.json

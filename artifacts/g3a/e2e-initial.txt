@@ -1,0 +1,19 @@
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test tests/e2e/g3a-rinkaku.spec.ts --reporter=list,json
+
+
+Running 8 tests using 1 worker
+
+(node:7944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:75:1 › absolute manual timeline reproduces geometry, keeps resources and records the five phase captures (5.5s)
+  ok 2 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:120:1 › play, pause, reverse and rapid scrubbing use one timeline while selection and the scan remain stable (7.0s)
+  ok 3 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:160:1 › ten full manual cycles keep geometry identities and warmed renderer resources bounded (23.2s)
+  ok 4 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:208:1 › counts, particles and quality replace visual settings without detaching the root, and GLB sockets stay authoritative (3.7s)
+  ok 5 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:245:1 › posterior, lateral and lumbar focus are explicit and reduced motion keeps manual keyboard inspection (3.6s)
+  ok 6 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:276:1 › without WebGL the manifestation offers truthful static timeline controls and the original inspection remains available (1.2s)
+  ok 7 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:292:1 › loss of the real WebGL context pauses an active manifestation and keeps manual inspection available (5.2s)
+  ok 8 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:315:1 › mobile touch controls stay usable and capture the actual procedural manifestation (3.5s)
+
+  8 passed (54.4s)

@@ -1,0 +1,6396 @@
+{
+  "createdAt": "2026-10-25T05:39:54.512Z",
+  "browser": "156.0.8078.4",
+  "captures": [
+    {
+      "file": "before/mobile/390-growth.png",
+      "revision": "before",
+      "captureArea": "viewport",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stageRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 560
+      },
+      "t": 0.53,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "camera": {
+        "position": [
+          -2.0821555023502984,
+          1.4757357580695647,
+          -6.752399147602451
+        ],
+        "target": [
+          0,
+          1.2480000000000002,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bodyOpacity": 1,
+      "bodyHeightFraction": 0.41028812999711056,
+      "sha256": "f88cb53f0e7fe3cdbeb95c9f9cb033728e7c1bd9cfe860d119fc2f81beabe1a9",
+      "phase": "growth",
+      "phaseMetadata": "Derived from the recorded t and preserved deterministic sampler intervals."
+    },
+    {
+      "file": "before/mobile/390-active.png",
+      "revision": "before",
+      "captureArea": "viewport",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stageRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 560
+      },
+      "t": 0.9,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "camera": {
+        "position": [
+          -2.0821555023502984,
+          1.4757357580695647,
+          -6.752399147602451
+        ],
+        "target": [
+          0,
+          1.2480000000000002,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bodyOpacity": 1,
+      "bodyHeightFraction": 0.41028812999711056,
+      "sha256": "1f1a37772830abc9aabaf591c00e94022d91a88536408f92733742c753a8db39",
+      "phase": "active",
+      "phaseMetadata": "Derived from the recorded t and preserved deterministic sampler intervals."
+    },
+    {
+      "file": "before/mobile/430-growth.png",
+      "revision": "before",
+      "captureArea": "viewport",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "stageRect": {
+        "x": 0,
+        "y": 156,
+        "width": 430,
+        "height": 560
+      },
+      "t": 0.53,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "camera": {
+        "position": [
+          -1.888466618410736,
+          1.4545510363886751,
+          -6.177385273406873
+        ],
+        "target": [
+          0,
+          1.2480000000000002,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bodyOpacity": 1,
+      "bodyHeightFraction": 0.4501296605146793,
+      "sha256": "10d8bc4fd287270a10186d67b3552ad74e30eac076cbd7947d383d2638414bfc",
+      "phase": "growth",
+      "phaseMetadata": "Derived from the recorded t and preserved deterministic sampler intervals."
+    },
+    {
+      "file": "before/mobile/430-active.png",
+      "revision": "before",
+      "captureArea": "viewport",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "stageRect": {
+        "x": 0,
+        "y": 156,
+        "width": 430,
+        "height": 560
+      },
+      "t": 0.9,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "camera": {
+        "position": [
+          -1.888466618410736,
+          1.4545510363886751,
+          -6.177385273406873
+        ],
+        "target": [
+          0,
+          1.2480000000000002,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bodyOpacity": 1,
+      "bodyHeightFraction": 0.4501296605146793,
+      "sha256": "60efafe1064c39eb02aedc6e73bc3cd65ab4e64fe568a0aca5181662f0cf2a7a",
+      "phase": "active",
+      "phaseMetadata": "Derived from the recorded t and preserved deterministic sampler intervals."
+    },
+    {
+      "file": "after/mobile/390-growth.png",
+      "revision": "after",
+      "captureArea": "viewport",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stageRect": {
+        "x": 0,
+        "y": 156,
+        "width": 390,
+        "height": 497.953125
+      },
+      "t": 0.53,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "camera": {
+        "position": [
+          -1.4808353254081217,
+          1.1999663637165139,
+          -4.967229872305363
+        ],
+        "target": [
+          0,
+          1.038,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bodyOpacity": 1,
+      "bodyHeightFraction": 0.5674252161192108,
+      "sha256": "8422abd2577e2be8b98f939b49027937b6e9604e74942ffd7c9e65eef3f1e60c",
+      "phase": "growth",
+      "phaseMetadata": "Derived from the recorded t and preserved deterministic sampler intervals."
+    },
+    {
+      "file": "after/mobile/390-active.png",
+      "revision": "after",
+      "captureArea": "viewport",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stageRect": {
+        "x": 0,
+        "y": 156,
+        "width": 390,
+        "height": 497.953125
+      },
+      "t": 0.9,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "camera": {
+        "position": [
+          -1.4808353254081217,
+          1.1999663637165139,
+          -4.967229872305363
+        ],
+        "target": [
+          0,
+          1.038,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bodyOpacity": 1,
+      "bodyHeightFraction": 0.5674252161192108,
+      "sha256": "ae4a169c4fde05a034f444a50f21cbafe6a9084cfbd56cd2d7086d010739fe9a",
+      "phase": "active",
+      "phaseMetadata": "Derived from the recorded t and preserved deterministic sampler intervals."
+    },
+    {
+      "file": "after/mobile/430-growth.png",
+      "revision": "after",
+      "captureArea": "viewport",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "stageRect": {
+        "x": 0,
+        "y": 156,
+        "width": 430,
+        "height": 520
+      },
+      "t": 0.53,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "camera": {
+        "position": [
+          -1.4026678711344134,
+          1.191416798405327,
+          -4.735170242430291
+        ],
+        "target": [
+          0,
+          1.038,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bodyOpacity": 1,
+      "bodyHeightFraction": 0.5969142690371465,
+      "sha256": "4a61ed1760a721c454f275143a59bab672f20001a9c4b15c013b0e1ebf0757f0",
+      "phase": "growth",
+      "phaseMetadata": "Derived from the recorded t and preserved deterministic sampler intervals."
+    },
+    {
+      "file": "after/mobile/430-active.png",
+      "revision": "after",
+      "captureArea": "viewport",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "stageRect": {
+        "x": 0,
+        "y": 156,
+        "width": 430,
+        "height": 520
+      },
+      "t": 0.9,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "camera": {
+        "position": [
+          -1.4026678711344134,
+          1.191416798405327,
+          -4.735170242430291
+        ],
+        "target": [
+          0,
+          1.038,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bodyOpacity": 1,
+      "bodyHeightFraction": 0.5969142690371465,
+      "sha256": "301dbab82c1ab29ba2f7fa776399100d72387faabe711a716ef36d2ec99ed67f",
+      "phase": "active",
+      "phaseMetadata": "Derived from the recorded t and preserved deterministic sampler intervals."
+    }
+  ],
+  "recordings": [
+    {
+      "view": "posterior",
+      "start": 0,
+      "direction": 1,
+      "elapsedMs": 21093,
+      "samples": [
+        {
+          "elapsedMs": 7,
+          "t": 0.0009499999996688631,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.017099999994039536,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 214,
+          "t": 0.012966666666997804,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.23340000000596048,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 432,
+          "t": 0.024994444444775592,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.44990000000596064,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 645,
+          "t": 0.03617222222189109,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.6510999999940397,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 862,
+          "t": 0.04815000000099342,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.8667000000178815,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1073,
+          "t": 0.06018888888922,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 1.08340000000596,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1294,
+          "t": 0.07314444444411329,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 1.3165999999940392,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1507,
+          "t": 0.08426111111210449,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 1.516700000017881,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "5143f073",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1714,
+          "t": 0.0962944444451067,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 1.7333000000119205,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "029d414d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1936,
+          "t": 0.1083277777781089,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 1.94990000000596,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "02b26b38",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2145,
+          "t": 0.12036666666633551,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 2.1665999999940393,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "3470aa36",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2364,
+          "t": 0.1324000000009934,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 2.383200000017881,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "653832a7",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2584,
+          "t": 0.14443888888921996,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 2.5999000000059596,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2d0a5959",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2800,
+          "t": 0.15647777777744656,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 2.8165999999940383,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "bf9e89c3",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3008,
+          "t": 0.16758333333333325,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.0164999999999984,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d5cccde5",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3215,
+          "t": 0.17961666666633544,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.233099999994038,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e9060724",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3433,
+          "t": 0.19166111111144216,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.4499000000059588,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "559beb9b",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3651,
+          "t": 0.2037111111117733,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.6668000000119196,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "3db25567",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3874,
+          "t": 0.21572777777744653,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.8830999999940374,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "20e6529f",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4089,
+          "t": 0.22777222222255325,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.099900000005959,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "4a48d75b",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4313,
+          "t": 0.2407555555552243,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.333599999994037,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "71254cd1",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4529,
+          "t": 0.25278888888988216,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.550200000017879,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "5d05f3ff",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4743,
+          "t": 0.2638888888888888,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.749999999999998,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "a65a54b6",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4963,
+          "t": 0.2768388888885576,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.983099999994037,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d25513a4",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 5175,
+          "t": 0.28797777777744643,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 5.183599999994036,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "8598e8de",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 5385,
+          "t": 0.2999833333343266,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 5.399700000017878,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "ab98b32a",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 5600,
+          "t": 0.31203333333300204,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 5.616599999994037,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "14e12b6e",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 5824,
+          "t": 0.3240833333333331,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 5.833499999999996,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "24c4ef01",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 6039,
+          "t": 0.3361000000006622,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.04980000001192,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "30c8d2c2",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 6258,
+          "t": 0.34812222222321554,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.2662000000178795,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e3c2a0cc",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 6473,
+          "t": 0.36017777777877097,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.483200000017877,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "27688c21",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 6691,
+          "t": 0.3722055555565488,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.699700000017878,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "46cb8730",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 6905,
+          "t": 0.38424444444477535,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.9164000000059564,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e6f9e643",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7116,
+          "t": 0.3962777777777775,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.132999999999995,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e3a5b221",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7328,
+          "t": 0.40831666666765976,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.349700000017876,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "492dc4e3",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7535,
+          "t": 0.4194333333339952,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.549800000011913,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "19c0a09c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7747,
+          "t": 0.43146666666699734,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.7664000000059525,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "223f23c2",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7954,
+          "t": 0.4425777777781084,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.966400000005952,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "69df87ed",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 8169,
+          "t": 0.45465555555621734,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 8.183800000011912,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "29313bcb",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 8380,
+          "t": 0.4666555555562173,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 8.399800000011911,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "0bf5872e",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 8589,
+          "t": 0.4777611111121039,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 8.59970000001787,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c3b3033d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 8813,
+          "t": 0.490727777777446,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 8.833099999994028,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "54aa52a2",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 9024,
+          "t": 0.5018388888885572,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.033099999994029,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "9c337c62",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 9244,
+          "t": 0.5138722222232152,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.249700000017873,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "ea85cc42",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 9462,
+          "t": 0.5268333333333329,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.482999999999993,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "3de73742",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 9679,
+          "t": 0.5388888888888886,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.699999999999996,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "dc52afc0",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 9896,
+          "t": 0.5509055555562176,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.916300000011915,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c47e35a0",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10117,
+          "t": 0.5629388888892197,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.132900000005955,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "4890b86d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10331,
+          "t": 0.5749777777774462,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.349599999994032,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d5f0b9d7",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10540,
+          "t": 0.5860833333333328,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.549499999999991,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "7d749d35",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10753,
+          "t": 0.5981333333336641,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.766400000005955,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "a2608fb8",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10975,
+          "t": 0.6101722222218908,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.983099999994035,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c7f8263c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 11190,
+          "t": 0.6221999999996687,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 11.199599999994037,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "21058866",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 11415,
+          "t": 0.6351833333339955,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 11.433300000011918,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "8eb4de1a",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 11621,
+          "t": 0.6463000000003309,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 11.633400000005958,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "a75e9fc3",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 11831,
+          "t": 0.65831111111078,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 11.84959999999404,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e454477c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 12046,
+          "t": 0.6703777777784402,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.066800000011924,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "517f61cd",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 12262,
+          "t": 0.6824111111114424,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.283400000005964,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "a83a2e95",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 12481,
+          "t": 0.6944166666666667,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.4995,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "9a9ed07a",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 12703,
+          "t": 0.7064555555565489,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.716200000017881,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d8e85ecf",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 12918,
+          "t": 0.7185111111121045,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.933200000017882,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "346b6b9a",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13130,
+          "t": 0.7305555555555556,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.15,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "dddc820c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13338,
+          "t": 0.7416444444441135,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.349599999994043,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "cd208e07",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13558,
+          "t": 0.7536722222218912,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.566099999994043,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "9d66f852",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13767,
+          "t": 0.7657500000000002,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.783500000000002,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "35b2e7ea",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13977,
+          "t": 0.7777500000000003,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.999500000000005,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "12eb8c37",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 14191,
+          "t": 0.7888833333336648,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 14.199900000005966,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "5ee6ff3f",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 14404,
+          "t": 0.8009388888892203,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 14.416900000005965,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "4a06d526",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 14625,
+          "t": 0.8129444444444447,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 14.633000000000004,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "7e6d6abf",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 14840,
+          "t": 0.824977777777447,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 14.849599999994046,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2ede6fee",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 15060,
+          "t": 0.8379333333339961,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.08280000001193,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "b74a0bed",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 15272,
+          "t": 0.8490444444451074,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.282800000011934,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "10d3ba9b",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 15491,
+          "t": 0.8610777777781097,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.499400000005974,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "843044e2",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 15709,
+          "t": 0.8731111111111121,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.716000000000017,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "f483e3eb",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 15922,
+          "t": 0.8851500000009945,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.9327000000179,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "7d9bbd48",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16139,
+          "t": 0.8971888888892212,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.149400000005983,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "5cb4ad86",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16348,
+          "t": 0.9092277777774481,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.366099999994066,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "3ef8c6ea",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16563,
+          "t": 0.9212833333330036,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.583099999994065,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "35ca173b",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16777,
+          "t": 0.9331124614049489,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.79950000000003,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "9491936c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16983,
+          "t": 0.9396612771260475,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.99940000000599,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "122f9c05",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 17203,
+          "t": 0.9440183473797675,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.21600000000003,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "7aa4c7fe",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 17418,
+          "t": 0.9475192651696153,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.433099999994067,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "96a57fcb",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 17643,
+          "t": 0.9507279411764711,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.649500000000028,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "70a801c0",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 17856,
+          "t": 0.9539132352940304,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.866099999994063,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "a490ad21",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18072,
+          "t": 0.9571044117646186,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.08309999999406,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d78d6ddd",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18292,
+          "t": 0.9605294117647063,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.316000000000024,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "946f0464",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18506,
+          "t": 0.9634720588234421,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.51609999999406,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "f4e93b94",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18715,
+          "t": 0.9666573529414398,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.732700000017903,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2efafac6",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18929,
+          "t": 0.9698426470589991,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.94930000001194,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "be41720b",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 19148,
+          "t": 0.9730426470589115,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.166900000005977,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2d921665",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 19367,
+          "t": 0.9762147058822656,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.382599999994056,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "ca740181",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 19586,
+          "t": 0.9794044117647062,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.599500000000013,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "04545b4a",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 19798,
+          "t": 0.9825852941178227,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.815800000011937,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "989e4158",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20006,
+          "t": 0.9855397058826162,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.0167000000179,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d5a739c0",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20222,
+          "t": 0.9887147058822656,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.23259999999406,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "8ea5653b",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20441,
+          "t": 0.9919014705884109,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.449300000011938,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "520b5d19",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20654,
+          "t": 0.9950867647059704,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.665900000005976,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "66715626",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20871,
+          "t": 0.9982720588235298,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.882500000000018,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "82bdd007",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 21093,
+          "t": 1,
+          "phase": "retract",
+          "playing": false,
+          "playback": {
+            "elapsedSeconds": 21,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        }
+      ]
+    },
+    {
+      "view": "lateral",
+      "start": 0.93,
+      "direction": 1,
+      "elapsedMs": 4281,
+      "samples": [
+        {
+          "elapsedMs": 3,
+          "t": 0.93,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.740000000000002,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "86454fcd",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 212,
+          "t": 0.938578460692418,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.95640000000596,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "9303c228",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 427,
+          "t": 0.9432544545544084,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.17320000001788,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c6dc23a6",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 633,
+          "t": 0.9465969542383909,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.373100000023847,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "ea28c308",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 844,
+          "t": 0.9498499938186328,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.589800000011927,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "24f9f2b4",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1066,
+          "t": 0.9530367647058825,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.80650000000001,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "153e3122",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1279,
+          "t": 0.9562220588238803,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.02310000002386,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "09cc9b84",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1486,
+          "t": 0.9591647058826163,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.2232000000179,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "eebf4851",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1695,
+          "t": 0.9623514705883233,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.43990000000598,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "6ccbd66b",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1912,
+          "t": 0.9655382352944687,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.656600000023865,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2fce0078",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2129,
+          "t": 0.9687220588238804,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.87310000002386,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "105af794",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2343,
+          "t": 0.971910294117735,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.08990000000598,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "94635291",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2552,
+          "t": 0.974852941176471,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.290000000000024,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "7ae4cb2c",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2763,
+          "t": 0.9780352941177353,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.506400000005993,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "869af157",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2974,
+          "t": 0.980979411765057,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.706600000023872,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "0e77863b",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3194,
+          "t": 0.984411764705883,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.940000000000037,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "63fecbf4",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3411,
+          "t": 0.9875941176471471,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.156400000006002,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "dda4e679",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3627,
+          "t": 0.9907808823532925,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.373100000023886,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "0b375328",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3845,
+          "t": 0.9939676470589996,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.58980000001197,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "bb7851d2",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4063,
+          "t": 0.9971529411765591,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.80640000000601,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "29559466",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4281,
+          "t": 1,
+          "phase": "retract",
+          "playing": false,
+          "playback": {
+            "elapsedSeconds": 21,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              4.721076025922804,
+              1.386477685574885,
+              -2.16125718767926
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        }
+      ]
+    },
+    {
+      "view": "oblique",
+      "start": 0.93,
+      "direction": 1,
+      "elapsedMs": 4261,
+      "samples": [
+        {
+          "elapsedMs": 4,
+          "t": 0.93,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.740000000000002,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "86454fcd",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 211,
+          "t": 0.9385996560688018,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.95720000001788,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "48c24974",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 427,
+          "t": 0.9432544545544084,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.173200000017882,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c6dc23a6",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 644,
+          "t": 0.9468577413468365,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.389900000005966,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "1a129458",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 852,
+          "t": 0.9498499938186328,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.58980000001193,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "24f9f2b4",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1061,
+          "t": 0.9530382352940302,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.806599999994052,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "50d7abc1",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1268,
+          "t": 0.9559794117646185,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.00659999999406,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d9853b88",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1477,
+          "t": 0.9591661764707639,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.22330000001194,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "addb3f15",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1689,
+          "t": 0.9621058823532045,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.423200000017903,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "8bcfe3ee",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1908,
+          "t": 0.9652926470589116,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.639900000005987,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "b3244be7",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2127,
+          "t": 0.9687235294120281,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.873200000017906,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d029e7ff",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2344,
+          "t": 0.9719088235295876,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.08980000001195,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "40013305",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2559,
+          "t": 0.9751073529413523,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.307300000011953,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "75feab1c",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2778,
+          "t": 0.97828235294144,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.523200000017916,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "dfc363f7",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2993,
+          "t": 0.9814676470589994,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.739800000011954,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "41bd2ecd",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3201,
+          "t": 0.9844073529414399,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.93970000001791,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "fd3cf6b4",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3411,
+          "t": 0.987594117647147,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.156400000005988,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "dda4e679",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3619,
+          "t": 0.9905352941177352,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.35640000000599,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e6c6f58e",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3837,
+          "t": 0.9937235294120282,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.573200000017913,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "188066cb",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4044,
+          "t": 0.9969102941177352,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.789900000005993,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "b7cd968e",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4261,
+          "t": 1,
+          "phase": "retract",
+          "playing": false,
+          "playback": {
+            "elapsedSeconds": 21,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              3.1805143753585217,
+              1.3367821484599076,
+              -4.39755635785322
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        }
+      ]
+    },
+    {
+      "view": "posterior",
+      "start": 1,
+      "direction": -1,
+      "elapsedMs": 21117,
+      "samples": [
+        {
+          "elapsedMs": 4,
+          "t": 1,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 21,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 225,
+          "t": 0.996817647058736,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.783599999994046,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "83312d45",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 431,
+          "t": 0.9936323529411766,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.567000000000004,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c89ca0ae",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 646,
+          "t": 0.9904455882350311,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.350299999982116,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d5e665a3",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 865,
+          "t": 0.9872588235293241,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 20.133599999994036,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "24b6cda4",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1081,
+          "t": 0.9840735294117647,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.916999999999994,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "10dc807c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1287,
+          "t": 0.9811279411762952,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.71669999998807,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c40434b3",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1497,
+          "t": 0.9779426470587359,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.500099999994035,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "f4e2e5d6",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1704,
+          "t": 0.9750014705881476,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.300099999994032,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d5af38d1",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 1914,
+          "t": 0.971820588235031,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 19.08379999998211,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "35864846",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2130,
+          "t": 0.9686264705881475,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.866599999994026,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "ca125589",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2344,
+          "t": 0.9656911764705881,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.666999999999987,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "0d34f960",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2563,
+          "t": 0.9622544117644427,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.433299999982104,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c8e01c73",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2781,
+          "t": 0.9590749999999122,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.217099999994026,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "95ffd66b",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 2997,
+          "t": 0.9558882352942051,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 18.00040000000594,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "79d99864",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3205,
+          "t": 0.9529455882350308,
+          "phase": "retract",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.800299999982098,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "33ce0388",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3421,
+          "t": 0.9497602689428281,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.58369999998806,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "084fd8de",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3637,
+          "t": 0.9465017135343322,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.366999999999987,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "88f5a029",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 3852,
+          "t": 0.9428326954325706,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 17.150400000005945,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "ec876962",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4063,
+          "t": 0.9379549536454708,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.933599999994026,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "09606594",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4282,
+          "t": 0.9287277777774455,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.71709999999402,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "b35e5614",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4498,
+          "t": 0.9166888888892186,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.500400000005936,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "1d29083c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4708,
+          "t": 0.905583333333332,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.300499999999975,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "5d1e6f6c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 4931,
+          "t": 0.8926222222215586,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 16.067199999988055,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "cad502c9",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 5147,
+          "t": 0.8805833333333318,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.850499999999974,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "47c10774",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 5364,
+          "t": 0.8685388888882252,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.633699999988053,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "89be1ed0",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 5571,
+          "t": 0.8574333333323385,
+          "phase": "active",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.433799999982092,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "bd936daf",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 5779,
+          "t": 0.8454055555545608,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.217299999982094,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "5adccfc1",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 5992,
+          "t": 0.8342888888882254,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 15.017199999988057,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "690f201a",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 6208,
+          "t": 0.8222499999999987,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 14.800499999999976,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "facb10c6",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 6413,
+          "t": 0.8102166666669968,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 14.583900000005942,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "b3bf555c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 6634,
+          "t": 0.7981777777771145,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 14.367199999988062,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d1140264",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 6847,
+          "t": 0.7861388888888879,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 14.150499999999983,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c7087cc9",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7066,
+          "t": 0.7740999999990058,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.933799999982105,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "ce9b0c91",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7279,
+          "t": 0.7620611111107791,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.717099999994025,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "3542de4f",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7487,
+          "t": 0.7509611111101168,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.517299999982102,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "cbe9e541",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7700,
+          "t": 0.7389166666666657,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.300499999999982,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "83b06ca0",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 7909,
+          "t": 0.7278055555555546,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 13.100499999999982,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "6695e233",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 8115,
+          "t": 0.7157722222225524,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.883900000005944,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "a09c4358",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 8332,
+          "t": 0.7037277777774458,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.667099999994024,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "398c586e",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 8546,
+          "t": 0.6916888888892192,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.450400000005946,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e6349988",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 8765,
+          "t": 0.6796666666666658,
+          "phase": "fixation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.233999999999984,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "75413f98",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 8981,
+          "t": 0.6676277777767834,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 12.0172999999821,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "1aa71f6d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 9199,
+          "t": 0.6555888888885568,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 11.800599999994022,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "c6a849ca",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 9413,
+          "t": 0.6435555555555545,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 11.583999999999982,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "1ac38fcb",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 9620,
+          "t": 0.6324388888892191,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 11.383900000005942,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "f7dfba83",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 9829,
+          "t": 0.6204111111114413,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 11.167400000005944,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "12754e89",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10043,
+          "t": 0.6092888888882259,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.967199999988065,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "5f0b8a96",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10256,
+          "t": 0.5972388888878948,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.750299999982106,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e460a23c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10463,
+          "t": 0.5852222222222216,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.53399999999999,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "01465682",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10679,
+          "t": 0.5731833333323395,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.317299999982112,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "bd9230b8",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 10898,
+          "t": 0.5611499999993373,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 10.100699999988072,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e245b947",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 11113,
+          "t": 0.5491111111111109,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.883999999999995,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2d5a40e4",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 11319,
+          "t": 0.5379944444447755,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.68390000000596,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d86b9a87",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 11530,
+          "t": 0.5259444444444444,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.467,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2ea419ba",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 11739,
+          "t": 0.5148444444437822,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.26719999998808,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "502f6c5d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 11947,
+          "t": 0.5028166666660042,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 9.050699999988076,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "beac34d3",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 12157,
+          "t": 0.49170555555489304,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 8.850699999988075,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "94a151f4",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 12364,
+          "t": 0.47967222222189093,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 8.634099999994037,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "6ba21a3c",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 12579,
+          "t": 0.46763333333366425,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 8.417400000005957,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "e4dae153",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 12796,
+          "t": 0.45557222222122845,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 8.200299999982112,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "6d3a7cb6",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13013,
+          "t": 0.4435666666660041,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.984199999988074,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "88a8dcae",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13233,
+          "t": 0.4315222222225531,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.7674000000059555,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "de4b01cd",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13447,
+          "t": 0.41948888888789526,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.5507999999821145,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "005123f0",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13656,
+          "t": 0.40837222222155967,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.350699999988074,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "5be41082",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 13863,
+          "t": 0.39633888888855756,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 7.134099999994036,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "cdf49d05",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 14076,
+          "t": 0.385222222222222,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.933999999999997,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "8f983e30",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 14292,
+          "t": 0.3731944444444443,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.717499999999997,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "9730fed5",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 14514,
+          "t": 0.36022222222222194,
+          "phase": "growth",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.483999999999995,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "6635c080",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 14725,
+          "t": 0.3491111111111109,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.283999999999996,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "252f25bf",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 14945,
+          "t": 0.33614999999933753,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 6.050699999988075,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "40b30816",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 15163,
+          "t": 0.3241055555558865,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 5.833900000005957,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "3af59695",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 15379,
+          "t": 0.3120833333333331,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 5.617499999999996,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "99e692ec",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 15596,
+          "t": 0.30003888888822644,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 5.400699999988076,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "f1e53171",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 15814,
+          "t": 0.28799999999999987,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 5.1839999999999975,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "35ef5db2",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16020,
+          "t": 0.2768666666663354,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.983599999994038,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "35a26517",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16233,
+          "t": 0.2648555555558866,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.767400000005958,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "b59cdce3",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16453,
+          "t": 0.2528222222212288,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.550799999982118,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "7422e078",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16664,
+          "t": 0.24079444444345105,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.334299999982119,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "637eecb5",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 16873,
+          "t": 0.22968333333233998,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 4.13429999998212,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "5a218a28",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 17080,
+          "t": 0.21763333333366452,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.9174000000059617,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "ea3d475e",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 17291,
+          "t": 0.20651666666567334,
+          "phase": "release",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.71729999998212,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "a15fde6b",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 17496,
+          "t": 0.19449444444477568,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.500900000005962,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "fe936b6e",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 17713,
+          "t": 0.1824555555548934,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.2841999999880813,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d5f222bb",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 17931,
+          "t": 0.17042777777711565,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 3.067699999988082,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "1ff7f3fb",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18148,
+          "t": 0.15838333333366464,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 2.8509000000059634,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "a4943d56",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18362,
+          "t": 0.14634999999900672,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 2.634299999982121,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "4cc3bb18",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18579,
+          "t": 0.13431666666600456,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 2.417699999988082,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "b9aea910",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18785,
+          "t": 0.12318888888922021,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 2.2174000000059637,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "16b94c43",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 18996,
+          "t": 0.11116666666666683,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 2.001000000000003,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "25bdb788",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 19204,
+          "t": 0.10005555555555572,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 1.8010000000000028,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "d7ffa0b0",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 19409,
+          "t": 0.08894999999966902,
+          "phase": "activation",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 1.6010999999940423,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2b338ae9",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 19624,
+          "t": 0.07689999999933789,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 1.3841999999880819,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 19833,
+          "t": 0.0648388888885579,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 1.1670999999940423,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20048,
+          "t": 0.052822222221228975,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.9507999999821215,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20259,
+          "t": 0.04170555555489344,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.750699999988082,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20466,
+          "t": 0.029688888889220204,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.5344000000059637,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20684,
+          "t": 0.017649999999337893,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.31769999998808207,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 20898,
+          "t": 0.005611111111111275,
+          "phase": "rest",
+          "playing": true,
+          "playback": {
+            "elapsedSeconds": 0.10100000000000295,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        },
+        {
+          "elapsedMs": 21117,
+          "t": 0,
+          "phase": "rest",
+          "playing": false,
+          "playback": {
+            "elapsedSeconds": 0,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "positionHash": "2593707d",
+          "camera": {
+            "position": [
+              -1.59025718767926,
+              1.3119343799024197,
+              -5.292076025922804
+            ],
+            "target": [
+              0,
+              1.1380000000000001,
+              -0.5710000000000001
+            ],
+            "moving": false
+          }
+        }
+      ]
+    }
+  ],
+  "video": {
+    "file": "playback-and-reverse.webm",
+    "sha256": "5d9f508c8c81ab64b4ecbed60b2cdc5eea9e40c1483aa8dc74bea25e2d37da3f"
+  },
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ]
+  },
+  "note": "Mobile before/after intentionally changes camera and stage layout. t, configuration, opacity and viewport match. Actual production UI and real playback; no synthetic frames."
+}

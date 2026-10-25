@@ -1,0 +1,23 @@
+
+> ghoul-atlas@0.1.0 build
+> npm run validate:catalog && tsc -b && vite build
+
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 609 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                             0.73 kB │ gzip:   0.45 kB
+dist/assets/index-CYylM51m.css             38.26 kB │ gzip:   8.93 kB
+dist/assets/RinkakuScene-an8NoLjH.js       13.29 kB │ gzip:   5.14 kB
+dist/assets/GLTFLoader-lPnqtt5a.js         43.89 kB │ gzip:  13.04 kB
+dist/assets/index-rhr7ynRh.js             274.11 kB │ gzip:  86.18 kB
+dist/assets/three.core-Dp-eO7LC.js        377.28 kB │ gzip: 100.66 kB
+dist/assets/ObservatoryScene-ibX4jUox.js  605.80 kB │ gzip: 166.63 kB
+
+✓ built in 4.65s

@@ -9,6 +9,8 @@ import { SceneFallback } from '../ui/Fallback';
 import { SceneBoundary } from './SceneBoundary';
 import { AssetLab } from '../ui/AssetLab';
 import { MobileExplorer } from '../ui/MobileExplorer';
+import { RinkakuEntry, RinkakuInspector, RinkakuTimeline } from '../ui/RinkakuControls';
+import { useRinkaku } from '../state/rinkaku';
 import { anatomyIds, type Mode } from './types';
 
 const Scene = lazy(() => import('../scene/ObservatoryScene'));
@@ -23,12 +25,16 @@ export default function App() {
   const [ready, setReady] = useState(false);
   const [sceneAttempt, setSceneAttempt] = useState(0);
   const help = useRef<HTMLDialogElement>(null);
+  const scenePlayable = useRef(false);
   const mode = useObservatory((s) => s.mode);
   const canonOnly = useObservatory((s) => s.canonOnly);
   const reduced = useObservatory((s) => s.reducedMotion);
   const selectedId = useObservatory((s) => s.selectedId);
+  const rinkakuEnabled = useRinkaku((s) => s.enabled);
   const onReady = useCallback(() => { setReady(true); performance.mark('atlas-interactive'); }, []);
-  const onSceneError = useCallback((message: string) => { setSceneError(message); setReady(false); }, []);
+  const onSceneError = useCallback((message: string) => { useRinkaku.getState().pause(); setSceneError(message); setReady(false); }, []);
+
+  useEffect(() => { scenePlayable.current = ready && !sceneError && mode === 'body'; }, [ready, sceneError, mode]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -75,20 +81,40 @@ export default function App() {
       if (event.key === '1') s.setMode('body');
       if (event.key === '2') s.setMode('micro');
       if (event.key === '3') s.setMode('compare');
-      if (event.code === 'Space' && !(target instanceof HTMLElement && target.closest('button,a'))) { event.preventDefault(); if (!s.reducedMotion) s.setPaused(!s.paused); }
+      if (event.code === 'Space' && !(target instanceof HTMLElement && target.closest('button,a'))) {
+        event.preventDefault();
+        if (!s.reducedMotion) {
+          const manifestation = useRinkaku.getState();
+          if (manifestation.enabled) {
+            if (manifestation.playing) manifestation.pause();
+            else if (scenePlayable.current) {
+              if (manifestation.t >= 1) { manifestation.reset(); manifestation.play(1); }
+              else manifestation.play(manifestation.t <= 0 ? 1 : undefined);
+            }
+          }
+          else s.setPaused(!s.paused);
+        }
+      }
     };
     window.addEventListener('keydown', shortcuts);
     return () => { preference.removeEventListener('change', update); window.removeEventListener('keydown', shortcuts); };
   }, []);
 
+  useEffect(() => {
+    if (mode !== 'body' || reduced || sceneError) useRinkaku.getState().pause();
+    const onVisibility = () => { if (document.hidden) useRinkaku.getState().pause(); };
+    document.addEventListener('visibilitychange', onVisibility);
+    return () => document.removeEventListener('visibilitychange', onVisibility);
+  }, [mode, reduced, sceneError]);
+
   const retryScene = () => { setSceneError(''); setReady(false); setSceneAttempt((value) => value + 1); };
   const selected = content?.structures.find((s) => s.id === selectedId);
-  return <main className={`observatory ${query.has('silhouette') ? 'silhouette-mode' : ''}`} data-testid="observatory">
+  return <main className={`observatory ${query.has('silhouette') ? 'silhouette-mode' : ''} ${rinkakuEnabled ? 'rinkaku-mode' : ''}`} data-testid="observatory">
     <a className="skip-link" href="#workspace">Ir para o observatório</a>
     <header className="topbar">
       <a className="brand" href="/" aria-label="Ghoul Atlas início"><img src="/atlas-mark.svg" width="39" height="39" alt="" /><span>GHOUL<span className="brand-light">ATLAS</span><small>RC OBSERVATORY / DIVISÃO DE PESQUISA</small></span></a>
       <nav className="mode-nav" aria-label="Modos do observatório">{(Object.keys(modeLabels) as Mode[]).map((item, i) => <button key={item} data-testid={`mode-${item}`} className={mode === item ? 'active' : ''} aria-current={mode === item ? 'page' : undefined} onClick={() => useObservatory.getState().setMode(item)}><span>{(i + 1).toString().padStart(2, '0')}</span>{modeLabels[item]}</button>)}</nav>
-      <div className="topbar-right"><span className="session-id">SESSÃO LOCAL<span>ESTUDO / 001</span></span><button className="icon-button" aria-label="Ajuda e atalhos" onClick={() => help.current?.showModal()}><Icon name="help" size={20} /></button></div>
+      <div className="topbar-right">{content ? <RinkakuEntry /> : null}<span className="session-id">SESSÃO LOCAL<span>ESTUDO / 001</span></span><button className="icon-button" aria-label="Ajuda e atalhos" onClick={() => help.current?.showModal()}><Icon name="help" size={20} /></button></div>
     </header>
     <section className="specimen-bar"><div><span className="status-dot" /> AMBIENTE DE INVESTIGAÇÃO <span className="bar-divider">/</span><span className="specimen-caption">ESPÉCIME NEUTRO · RINKAKU</span></div><label className="canon-toggle"><input type="checkbox" data-testid="canon-filter" checked={canonOnly} onChange={(e) => useObservatory.getState().setCanonOnly(e.target.checked)} /><span className="toggle-track" /> Evidência verificada</label></section>
     {catalogError ? <section className="catalog-error" data-testid="catalog-error" role="alert"><h1>Catálogo indisponível</h1><p>{catalogError}</p><button className="primary-button" data-testid="catalog-retry" onClick={() => setCatalogAttempt((value) => value + 1)}>Tentar novamente</button></section> : !content ? <section className="catalog-loading" role="status"><span className="loading-orbit" /><h1>Preparando o observatório</h1><p>Carregando catálogo e verificando evidências.</p></section> : <>
@@ -96,7 +122,7 @@ export default function App() {
       <div className="workspace" id="workspace" tabIndex={-1}>
         <SystemsIndex content={content} />
         <section className="stage" data-testid="stage" aria-label="Visor anatômico tridimensional">
-          <div className="stage-header"><div><span className="micro-label">ATLAS EXPERIMENTAL / 001</span><h1>O que nos torna<br /><em>diferentes?</em></h1></div><div className="stage-readout"><span className={ready && !sceneError ? 'status-dot' : 'status-dot amber'} /><span data-testid="scene-status" role="status">{sceneError ? 'Modo textual' : ready ? '3D conectado' : 'Carregando 3D'}</span><small>PROTÓTIPO G1</small></div></div>
+          <div className="stage-header"><div><span className="micro-label">{rinkakuEnabled ? 'ESTUDO CINEMÁTICO / RINKAKU' : 'ATLAS EXPERIMENTAL / 001'}</span><h1>{rinkakuEnabled ? <>Matéria<br /><em>em movimento.</em></> : <>O que nos torna<br /><em>diferentes?</em></>}</h1></div><div className="stage-readout"><span className={ready && !sceneError ? 'status-dot' : 'status-dot amber'} /><span data-testid="scene-status" role="status">{sceneError ? 'Modo textual' : ready ? '3D conectado' : 'Carregando 3D'}</span><small>{rinkakuEnabled ? 'PROCEDURAL / G3A' : 'PROTÓTIPO G1'}</small></div></div>
           <div className="scene-container" style={mode !== 'body' ? { visibility: 'hidden', pointerEvents: 'none' } : undefined} aria-hidden={mode !== 'body'}>
             {sceneError ? <SceneFallback message={sceneError} onRetry={retryScene} /> : <SceneBoundary key={sceneAttempt} onError={onSceneError}><Suspense fallback={<div className="scene-loading" role="status"><span className="loading-orbit" />Carregando o renderizador 3D…</div>}><Scene onReady={onReady} onError={onSceneError} /></Suspense></SceneBoundary>}
           </div>
@@ -104,9 +130,9 @@ export default function App() {
           <div className="stage-bottom"><div className="proxy-stamp"><span>△</span><div><strong>PROXY / CONCEPTUAL MODEL</strong><small>Geometria provisória · escala de cena ilustrativa</small></div></div><div className="scene-tools"><button className="icon-button" data-testid="camera-posterior" aria-label="Vista posterior" title="Vista posterior" disabled={!!sceneError || mode !== 'body'} onClick={() => useObservatory.getState().focusOn('posterior')}><Icon name="orbit" /></button><button className="icon-button" data-testid="camera-reset" aria-label="Reenquadrar corpo (R)" title="Reenquadrar corpo (R)" disabled={!!sceneError || mode !== 'body'} onClick={() => useObservatory.getState().reset()}><Icon name="reset" /></button></div></div>
           <div className="stage-caption"><span>{mode === 'body' ? selected?.label : modeLabels[mode]}</span><span>ARRASTE PARA ORBITAR <i /> ROLE PARA APROXIMAR</span></div>
         </section>
-        <EvidenceInspector content={content} />
+        {rinkakuEnabled ? <RinkakuInspector content={content} ready={ready && !sceneError && mode === 'body'} /> : <EvidenceInspector content={content} />}
       </div>
-      <Timeline ready={ready && !sceneError && mode === 'body'} />
+      {rinkakuEnabled ? <RinkakuTimeline ready={ready && !sceneError && mode === 'body'} /> : <Timeline ready={ready && !sceneError && mode === 'body'} />}
       <MobileExplorer content={content} />
     </>}
     <footer className="statusbar"><span><span className="status-dot small" /> GHOUL ATLAS <span className="footer-divider">/</span> ESTUDO FICCIONAL INDEPENDENTE</span><label><input type="checkbox" checked={reduced} onChange={(e) => useObservatory.getState().setReducedMotion(e.target.checked)} /> Movimento reduzido</label><span className="status-metrics">FONTES E RECONSTRUÇÕES IDENTIFICADAS</span></footer>

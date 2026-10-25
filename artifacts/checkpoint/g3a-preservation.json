@@ -1,0 +1,1310 @@
+{
+  "method": "All pre-checkpoint review evidence preserved byte for byte. Current regression outputs copied separately before restoring prior sources.",
+  "verifiedFiles": 318,
+  "restoredFiles": [
+    "artifacts/g3a1/compat-ten-cycles.json",
+    "artifacts/g3a1/compat-ten-playback-cycles.json",
+    "artifacts/g3a1/compat-visual-captures.json",
+    "artifacts/g3a1/implantation-views.json",
+    "artifacts/g3a1/mobile-390.json",
+    "artifacts/g3a1/mobile-430.json",
+    "artifacts/g3a1/phases-and-counts.json",
+    "artifacts/g3a1/presentation-restoration.json",
+    "artifacts/g3a1/sequences-and-boundaries.json",
+    "artifacts/gates/G1-desktop.png",
+    "artifacts/gates/G1-focus.png",
+    "artifacts/gates/G1-mobile-full.png",
+    "artifacts/gates/G1-mobile-selection.png",
+    "artifacts/gates/G1-mobile.png",
+    "artifacts/gates/G1-scan-20.png",
+    "artifacts/gates/G1-scan-75.png",
+    "artifacts/gates/G1-silhouette.png",
+    "artifacts/gates/G2A-desktop-default.png",
+    "artifacts/gates/G2A-desktop.png",
+    "artifacts/gates/G2A-mobile-asset.png",
+    "artifacts/gates/G2A-mobile-default.png",
+    "artifacts/gates/G2A-mobile-drawer.png",
+    "artifacts/gates/G2A-mobile.png",
+    "artifacts/gates/G2A-rig-pose.png",
+    "artifacts/gates/G2A-synthetic-rigged.png",
+    "artifacts/gates/G2A-synthetic-static.png",
+    "artifacts/gates/G3A1-review/mobile/390-controls.png",
+    "artifacts/gates/G3A1-review/mobile/390-playing.png",
+    "artifacts/gates/G3A1-review/mobile/430-controls.png",
+    "artifacts/gates/G3A1-review/mobile/430-playing.png"
+  ],
+  "files": [
+    {
+      "file": "artifacts/g3a/build.txt",
+      "sha256": "e1dc7d65f7be23bda77e4434d5b2d81971db2e39c8ca26349c59e96bf9b1f110"
+    },
+    {
+      "file": "artifacts/g3a/e2e-initial.json",
+      "sha256": "292713d819a58b3d27cab7bd3843b9cf35985a3af560d43e282bb1519875fa7a"
+    },
+    {
+      "file": "artifacts/g3a/e2e-initial.txt",
+      "sha256": "d535b6cf20a65469a99307c0375bbfd98bdaee7512d6cd0c4ad60e3afa1b5df7"
+    },
+    {
+      "file": "artifacts/g3a/e2e.json",
+      "sha256": "75af64acf20f73010ce2e3e426e2b7cd919c2daf0b44c49c023b00cdb68a2330"
+    },
+    {
+      "file": "artifacts/g3a/e2e.txt",
+      "sha256": "021a192ef88ef6963a6b25de89ec264a002310bbf8f679dcce3907d22395c859"
+    },
+    {
+      "file": "artifacts/g3a/environment.json",
+      "sha256": "c07ff7afb94d6df08e839ad9ad440033f0bb601075b7ec028ec4170b6300ef4d"
+    },
+    {
+      "file": "artifacts/g3a/final-audit.json",
+      "sha256": "b2d93f530dc8e052e2a137d260cf12c362f4bb518132361bb9d4227ded400536"
+    },
+    {
+      "file": "artifacts/g3a/lint.txt",
+      "sha256": "c578567735d514a87774970638b81dcb36632df9231240b2b1b39d95db661acb"
+    },
+    {
+      "file": "artifacts/g3a/production-low.json",
+      "sha256": "c9b8253e045cabb230416ce3c796f39bc5d51c6cc704a01f6be60ff6078e9372"
+    },
+    {
+      "file": "artifacts/g3a/production-low.txt",
+      "sha256": "a51b0f0e5730a8c7a8a0b912d561af65410762cdf8fc4108b210475d78075dec"
+    },
+    {
+      "file": "artifacts/g3a/production-standard.json",
+      "sha256": "d47deb355e2260a19f385406c82619078f236a7c43a92b94b7c6a5001327cc54"
+    },
+    {
+      "file": "artifacts/g3a/production-standard.txt",
+      "sha256": "06a572766553e56e601f716e6bee786469590c90c60cf0c526f0c5d96002a2c7"
+    },
+    {
+      "file": "artifacts/g3a/profile-exit-codes.json",
+      "sha256": "34f0823d00b2cba1a8ec135f437b14881e6ef9422a0be5d7f663d575aa21e0bc"
+    },
+    {
+      "file": "artifacts/g3a/sequence/growth-t350.png",
+      "sha256": "060d50d310244e9cd4c5ac8002debacc70fb3d9fee91a5a995cdabc82807a5ef"
+    },
+    {
+      "file": "artifacts/g3a/sequence/growth-t400.png",
+      "sha256": "1a751df71162dd239a74920e890f2e33e3db1a0d460becc1b8ba846f17a72ef4"
+    },
+    {
+      "file": "artifacts/g3a/sequence/growth-t450.png",
+      "sha256": "ad5959b996aacf239878420bb2ebfdfce2b44859a5f55eb74400dfd26ac1d8f4"
+    },
+    {
+      "file": "artifacts/g3a/sequence/growth-t500.png",
+      "sha256": "65d590ddfbf272865a488a2752961e5ea3ed3b8b4007dd14a30a7e450157396e"
+    },
+    {
+      "file": "artifacts/g3a/sequence/growth-t550.png",
+      "sha256": "eaef40046e814269b6a72b7e44cdbab13c939c4a6ef932f3f29dd28946c43ec9"
+    },
+    {
+      "file": "artifacts/g3a/sequence/growth-t600.png",
+      "sha256": "e5ac46e46a7947262760d46a038e6a7a13195c0c559b98cf25e05c8a3ba60d1d"
+    },
+    {
+      "file": "artifacts/g3a/sequence/growth-t650.png",
+      "sha256": "879f00d225c906c38a4dc3a7666982fdf6f354d1217cbcedf31f48665c83240e"
+    },
+    {
+      "file": "artifacts/g3a/sequence/growth-t700.png",
+      "sha256": "6f4c7d8f269b44c3bf7cd5bcbd1757828c518af68c2b12443dcb4f6ca92ab484"
+    },
+    {
+      "file": "artifacts/g3a/ten-cycles.json",
+      "sha256": "ab2b069f6abb54654cbf596d7a7238aaa46b13a1f74a67883f4fc79a336b2df0"
+    },
+    {
+      "file": "artifacts/g3a/ten-playback-cycles.json",
+      "sha256": "e01bbdfef4394dd61bf6db1da2007af37cd8eaeb1f21a11674f40e9c5c10c510"
+    },
+    {
+      "file": "artifacts/g3a/test-catalog.txt",
+      "sha256": "7079605be1cc74f0d71dbc33feeeb66befbbe19888cc38c0da9c1545f75e99f4"
+    },
+    {
+      "file": "artifacts/g3a/test.txt",
+      "sha256": "3a5c7a89d9f10bbaa5c6068f7d949e9bbbdf6506cfb80ab85af58f16f4c7832e"
+    },
+    {
+      "file": "artifacts/g3a/typecheck.txt",
+      "sha256": "08f6123eef1d115b5d3529e5c83bb74069b63f98411804d1a5357a71251c8be3"
+    },
+    {
+      "file": "artifacts/g3a/validate-catalog.txt",
+      "sha256": "7f67896751bc751fb1fe3c8c018393df7dac3e8e74bbbdd582983460e6c6f672"
+    },
+    {
+      "file": "artifacts/g3a/validation.json",
+      "sha256": "b80b1ae0614c9fc9e10117d6fd57904a8cb3a5897ef250c51721e221533200b4"
+    },
+    {
+      "file": "artifacts/g3a/visual-captures.json",
+      "sha256": "0053b6405ada1e3f15425f97fc4046b63726fd28289565b87ae291da0eabc50c"
+    },
+    {
+      "file": "artifacts/g3a1/baseline-standard-fresh.json",
+      "sha256": "25e6b5d5c643fe61dbc457d900f27b54cdeb1d76b799dd9ca6331ac435883b26"
+    },
+    {
+      "file": "artifacts/g3a1/capture-comparison.txt",
+      "sha256": "928d1fc7f4b7110b974a3ed927ebda8c34a1e9586bf5a51b745185a202995656"
+    },
+    {
+      "file": "artifacts/g3a1/check-build.txt",
+      "sha256": "ed2169ef343e61d3b2eb60f4be037937168004548872bff5ff76552f4783a8cd"
+    },
+    {
+      "file": "artifacts/g3a1/check-e2e.txt",
+      "sha256": "e3c16a257edf4ef7f9de9de8063d003d83759a733370621586f66bdb095f8474"
+    },
+    {
+      "file": "artifacts/g3a1/check-lint.txt",
+      "sha256": "c578567735d514a87774970638b81dcb36632df9231240b2b1b39d95db661acb"
+    },
+    {
+      "file": "artifacts/g3a1/check-test-catalog.txt",
+      "sha256": "02a608970992ed82437fb5eae6b4a2b32aab03c128abe625d89475a7b4c87254"
+    },
+    {
+      "file": "artifacts/g3a1/check-test.txt",
+      "sha256": "8b200390fdc1e2f6177ccfa2880ed1eeb0d8fbf5be0f5bd06b3ebe6fde6726a9"
+    },
+    {
+      "file": "artifacts/g3a1/check-typecheck.txt",
+      "sha256": "08f6123eef1d115b5d3529e5c83bb74069b63f98411804d1a5357a71251c8be3"
+    },
+    {
+      "file": "artifacts/g3a1/check-validate-catalog.txt",
+      "sha256": "7f67896751bc751fb1fe3c8c018393df7dac3e8e74bbbdd582983460e6c6f672"
+    },
+    {
+      "file": "artifacts/g3a1/checks.json",
+      "sha256": "a839cdc37721c17ef9cae2cbad89d4c5deb88983d3da793db858516a784d6a57"
+    },
+    {
+      "file": "artifacts/g3a1/compat-ten-cycles.json",
+      "sha256": "afa84a6e4c8794af0fbce427b9e83769bb66532914bc8ab939b8253b9c344200"
+    },
+    {
+      "file": "artifacts/g3a1/compat-ten-playback-cycles.json",
+      "sha256": "99ed2971220731f74620a005f5e605ff78783fb8e20f9b632992dbab3fdb2ab3"
+    },
+    {
+      "file": "artifacts/g3a1/compat-visual-captures.json",
+      "sha256": "baa27021f13d13339434e6151a71c9b1741d35e36efa73c24478648655bf925f"
+    },
+    {
+      "file": "artifacts/g3a1/e2e-results.json",
+      "sha256": "859544674a9cdd2a6566a31f3f076c68add474574ae3ce71e53e5cd6471f5389"
+    },
+    {
+      "file": "artifacts/g3a1/final-audit.json",
+      "sha256": "02bff764e38d1ac0dfbcf30110261d4a10483a2f8fdccf94907bce3f44c8763a"
+    },
+    {
+      "file": "artifacts/g3a1/implantation-views.json",
+      "sha256": "db8fd7b9c5e4c27e2ad86a5568e00e773e1a3e76d77d891d9f2c81a3ce178a98"
+    },
+    {
+      "file": "artifacts/g3a1/mobile-390.json",
+      "sha256": "0184a9eea45fc9fe54863eb6c894e40471fc9c77f3d4204a53861c6f02891aec"
+    },
+    {
+      "file": "artifacts/g3a1/mobile-430.json",
+      "sha256": "9517263e52db86c34de1a5c7724f5ca477ccc666c9f6da3f3f11636ce6265144"
+    },
+    {
+      "file": "artifacts/g3a1/phases-and-counts.json",
+      "sha256": "09ec546eff7935cec1dd93b7bc7e4b1a58868b468618bb8c6e69c1190de04043"
+    },
+    {
+      "file": "artifacts/g3a1/presentation-restoration.json",
+      "sha256": "a418b64ded27e820f26b4470242a9ec8c098905f00014772d46542420ba0e600"
+    },
+    {
+      "file": "artifacts/g3a1/production-emulated-mobile-standard.json",
+      "sha256": "105536276866272fdabd6e35b1c55df3cc4463c74d92bbd4eb2b3ff6580f2b5c"
+    },
+    {
+      "file": "artifacts/g3a1/production-low.json",
+      "sha256": "ab88133586b59f25382e28888f7c030992297c551c989d0bbf4a755dbaeabe45"
+    },
+    {
+      "file": "artifacts/g3a1/production-standard.json",
+      "sha256": "f32a2b39db4a2e87fe98d935f5769bcd5f1b63f1cea240a4f67a2a7ffe52f5e7"
+    },
+    {
+      "file": "artifacts/g3a1/profile-baseline.txt",
+      "sha256": "a972a594e1a202c48ad293b604d10b440714ff59494caacf6b4f04dfda99ee65"
+    },
+    {
+      "file": "artifacts/g3a1/profile-emulated-mobile.txt",
+      "sha256": "ddb5dc1f7074eca5866afc7e9df4cc3d1145ca7234f9477f3390ac818c44f5f9"
+    },
+    {
+      "file": "artifacts/g3a1/profile-low.txt",
+      "sha256": "85ddbdee4d79b1ca1091e29b99158c6eb5e482b7bd399a9e50edd05e060c8761"
+    },
+    {
+      "file": "artifacts/g3a1/profile-standard.txt",
+      "sha256": "bcad774fa6bb254e516125993f89cbf3067be73773f112e91ddcc1d9e59d8ebd"
+    },
+    {
+      "file": "artifacts/g3a1/sequences-and-boundaries.json",
+      "sha256": "2fda7a91e2e4bca1d5627a776de75e1f619e2581895472c3aafa336499fe80fd"
+    },
+    {
+      "file": "artifacts/gates/G1-desktop.png",
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667"
+    },
+    {
+      "file": "artifacts/gates/G1-focus.png",
+      "sha256": "0c9e913c221b5f2be550ef0dacb49d6ba60c174fe6f5b5b6c293b18d3bb036ed"
+    },
+    {
+      "file": "artifacts/gates/G1-mobile-full.png",
+      "sha256": "6c9774b8fb42fd5d001a9dc964c3482ff3a6d4850962c167adea627fd9d9491a"
+    },
+    {
+      "file": "artifacts/gates/G1-mobile-selection.png",
+      "sha256": "d51107d7671445f0aa90598b0c30e4d73e3a6018dd5025816c4c5dc514b2aaed"
+    },
+    {
+      "file": "artifacts/gates/G1-mobile.png",
+      "sha256": "a2ef4d4c7d51996c7eb2aedcdf33933648ffa42389b85245ad6152d682ea02e1"
+    },
+    {
+      "file": "artifacts/gates/G1-scan-20.png",
+      "sha256": "3b6a681bf6bbb47290686ccc1d5d5301db8d3e1052dc2028854d603ea5bcd975"
+    },
+    {
+      "file": "artifacts/gates/G1-scan-75.png",
+      "sha256": "3d539f2e04a5baf9b160c42ffc9ec7892b11602b1313ca58d9ad6962b8a0ee45"
+    },
+    {
+      "file": "artifacts/gates/G1-silhouette.png",
+      "sha256": "9178e8b7eade285e3b1200b06eedc87799471cdc4bebaa0ccebb5096b852c830"
+    },
+    {
+      "file": "artifacts/gates/G2A-desktop-default.png",
+      "sha256": "e8daffe8348fa85b653a6d922673233fd4012656b96871a3906a65dd95ab2667"
+    },
+    {
+      "file": "artifacts/gates/G2A-desktop.png",
+      "sha256": "42a313658fddb1c2a27b596eff63a7c06c60abc4487c8dd65a4f95b8e23e08e0"
+    },
+    {
+      "file": "artifacts/gates/G2A-mobile-asset.png",
+      "sha256": "58f2f465c9d4fc1a58079684e4bdf10770fdeb0967604daa3ef5bc1731d13025"
+    },
+    {
+      "file": "artifacts/gates/G2A-mobile-default.png",
+      "sha256": "6c345cd422b08225d419c8c6e6e7e176aefc03fd6e049187db5d0a0908ddce87"
+    },
+    {
+      "file": "artifacts/gates/G2A-mobile-drawer.png",
+      "sha256": "ca5c25d4d2508e3f2ca581b319a6a7dadb54ec8c5cf795d73b401411f4d839e0"
+    },
+    {
+      "file": "artifacts/gates/G2A-mobile.png",
+      "sha256": "9462b26cc9f552b9f43a1792d4a2365f1a65556e2e77ee6f6f32c75e5f52accc"
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-desktop-default.png",
+      "sha256": "03fd9a65c539c3b1125e635a7e844c578954812ee15aacff101aa702faf4d981"
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-desktop.png",
+      "sha256": "7dd02aee3a497fc19d6b01b0ccf5775da04827e76efd7c5eb48c32d7e86c077b"
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-mobile-asset.png",
+      "sha256": "591b608240d83ec57a2dfd8b127e7edcf1e018c4202e6c56ed5987f20498efcd"
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-mobile-default.png",
+      "sha256": "b98f8f05989eb3e505c29ba6bff641a493e62a8559d7ac1ba5447342e52af8c8"
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-mobile-drawer.png",
+      "sha256": "5a39251b0311e2d4c846dface2db909f6f5cb3c943dfdd12dff0f213e8768df3"
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-mobile.png",
+      "sha256": "c33677f8966652bbea3f7aec757af3291acf0c6023fb6a6937da7ecce9562366"
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-rig-pose.png",
+      "sha256": "bdeba3e5eccb73113e348227fd90f393393b299d3c7b6238a60b70031ab2d9ee"
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-synthetic-rigged.png",
+      "sha256": "ef6bf0f044c106a8d831cb18cd392c145f21d64a0c60295fe03f235c71c5f990"
+    },
+    {
+      "file": "artifacts/gates/G2A-new-pc-synthetic-static.png",
+      "sha256": "daac2c5293ad92ce2f96fa9868c0d5649108a35afa769b09e320b3151b66aa8f"
+    },
+    {
+      "file": "artifacts/gates/G2A-rig-pose.png",
+      "sha256": "374e1b07001495a4a8aee5ec93ad7ddc050bcd272031986f5066d49a8e4ee59a"
+    },
+    {
+      "file": "artifacts/gates/G2A-synthetic-rigged.png",
+      "sha256": "8b080ab7071316f194c12078853a7667bacf9e1ec52b54acf34173a11c021375"
+    },
+    {
+      "file": "artifacts/gates/G2A-synthetic-static.png",
+      "sha256": "7d0ec04bd2fe397e4ed9fd35dbda978fab787452141696ea9dd8c1d6bf611475"
+    },
+    {
+      "file": "artifacts/gates/G3A-activation.png",
+      "sha256": "5d94adaa6b14568da768496e6a9264490c7bc44227993c621ead0565e473b3f7"
+    },
+    {
+      "file": "artifacts/gates/G3A-active.png",
+      "sha256": "e32513d4cac45aa96ce68276e0fadee1f8763dbb812e466bc474b44b2f34bc08"
+    },
+    {
+      "file": "artifacts/gates/G3A-growth.png",
+      "sha256": "ef50386d6985f542b003ad2c5b85598cbb586d28398e83e8e99e2c6d349c499a"
+    },
+    {
+      "file": "artifacts/gates/G3A-mobile-controls.png",
+      "sha256": "8d01d44efc6a99da81f735745fb63e7ce6a76c4eadfb563a01a5d372e514f47d"
+    },
+    {
+      "file": "artifacts/gates/G3A-mobile.png",
+      "sha256": "8d01d44efc6a99da81f735745fb63e7ce6a76c4eadfb563a01a5d372e514f47d"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-desktop.png",
+      "sha256": "591ad5d196e8972f002a5924e091bc3da44b295d490584b271b2035cfd740db0"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-focus.png",
+      "sha256": "c43b6549017e6e57b0056d52f811b135b0e5b86bffaa86f6120fef71335aea0a"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-mobile-full.png",
+      "sha256": "d5f0ab69aca68db4bb80adee8be7fb076e1409bcccf0b6c1b283bdaf2d587e84"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-mobile-selection.png",
+      "sha256": "bd33e2f620d5735e1a9605f22d6e70bd31ec3e9b57f7ed5ba585d91d0e15f9d3"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-mobile.png",
+      "sha256": "169f452c862cb1d60b06a569697cb8c94293a752bbeadbda955879070b55c79f"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-scan-20.png",
+      "sha256": "1776c914e6be7b5cc719dd90373471bf9ab9256e85b0f9a2092415f932a1adfb"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-scan-75.png",
+      "sha256": "fbb994e3f3deea74fe93b40fc97815dce4e090eeddec11f66a21dfb8b1715cdd"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G1-silhouette.png",
+      "sha256": "88960ab38e8c4a3b6a1d5d63b4e65d29fac525036afcf523bebcc3a21317aba4"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-desktop-default.png",
+      "sha256": "591ad5d196e8972f002a5924e091bc3da44b295d490584b271b2035cfd740db0"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-desktop.png",
+      "sha256": "7abdfd4717294217741a31de58dd2b72029bb9f61bb2d7cb8b28a6e85eef7cfb"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-mobile-asset.png",
+      "sha256": "591b608240d83ec57a2dfd8b127e7edcf1e018c4202e6c56ed5987f20498efcd"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-mobile-default.png",
+      "sha256": "169f452c862cb1d60b06a569697cb8c94293a752bbeadbda955879070b55c79f"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-mobile-drawer.png",
+      "sha256": "1128f14bf3ea1506dadf794ac693020f83ac50606bea798e49d6f183690f80a2"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-mobile.png",
+      "sha256": "dd90951ec977e8a3dde3f69e2814854abb58bb6a29d46899c2359bdf86993b8c"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-rig-pose.png",
+      "sha256": "df44d2fd5116b03ae02cc486609ab640f58232009698685e0f15440145b19c93"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-synthetic-rigged.png",
+      "sha256": "ba9ab6b5cbe80d6c4b199a0de08161503f9bbc8c038afca30b728ba54337af66"
+    },
+    {
+      "file": "artifacts/gates/G3A-regression-G2A-synthetic-static.png",
+      "sha256": "2c12ad1fab3fff5e3867f37ca0ca1541295a31a3422e32630888a8e8862f2ee9"
+    },
+    {
+      "file": "artifacts/gates/G3A-rest.png",
+      "sha256": "df4d09cf495e06340318bb8cb4a83eb72790ef79d23df2f89f039ce45483529e"
+    },
+    {
+      "file": "artifacts/gates/G3A-retract.png",
+      "sha256": "0513ec26ec72831f6929e065701b9762782b9c7acb99d53ce0a740b3723d052c"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/01-seven-phases.png",
+      "sha256": "9abb77bf5e6516508be6677691d0cf6c44e6095a354f84f91d1933a2b76afad4"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/02-growth-sequence.png",
+      "sha256": "9cae87e9f75e039f895126dcd7251ac74d3f8a7c226a75a740e82e0b70202d22"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/03-active-views.png",
+      "sha256": "1270cd7cf4dad536689b5f55c048abdffe83b8f3aef00227f22f3b559598d378"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/04-retraction.png",
+      "sha256": "b825446b5dca8157456fadfe258d3d0644ead51e4959e2597524998d7a2f80e7"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/05-phase-transitions.png",
+      "sha256": "2493d954a1b4757feb32b13742bf48a8341d74aa7a107790371ccd999cb491d7"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/06-root-details.png",
+      "sha256": "256e4d5b7b92b427e96d1e2ba74fa1f3ddfcf7860ba5aa720e9fea7722ca03f1"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/07-scrub-revisit.png",
+      "sha256": "c30cc7a01d8094c3d6aef8bc82406770484eb56749a1a9d3b7ba2cd68e07046c"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/analyze-geometry.mjs",
+      "sha256": "d0dd51fe385d97676064e33ead2de0d25de9fd89a3604c15039709948f738fc4"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/capture-run.txt",
+      "sha256": "e635a406c9b692df82cba7c8a06ffead91df1f583d901b7d2e6ffb5fd25c2320"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/capture.mjs",
+      "sha256": "35fec931139e827bd26b8a8a2d0f3f0c298bde607915f36745411ced2c351a32"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/captures.json",
+      "sha256": "74f56c05e7defa035311f039e56dd2dea69a8a2aed79e6df1f0582ae1d201e0e"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/check-build.txt",
+      "sha256": "adff0a35b172f8181efbd09871a80ba79daf4f714393128b974b9bfc2553124d"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/check-lint.txt",
+      "sha256": "c578567735d514a87774970638b81dcb36632df9231240b2b1b39d95db661acb"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/check-test.txt",
+      "sha256": "fb50f5960ad50484eb1f68e1b042a67acb948376d1dd1ac022f641404ee4c7dc"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/check-typecheck.txt",
+      "sha256": "08f6123eef1d115b5d3529e5c83bb74069b63f98411804d1a5357a71251c8be3"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/checks.json",
+      "sha256": "a3644d8cd708c1bce853c9cb44c56d044a324789fd6865919cf094b4895b1871"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/compose.py",
+      "sha256": "a49d59e48b713aa4efc334d4a60e8ab469e9fc7b84a247c81b05af73b65d68f2"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/compositions.json",
+      "sha256": "cef91a92985b450465fc7ba386795487f585ea9af880e9f2d35938736a155927"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t079.png",
+      "sha256": "028a43f6205969cd5262de3b4081a51d98a8bfb8bcbb477947f18ba614d3b423"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t081.png",
+      "sha256": "028a43f6205969cd5262de3b4081a51d98a8bfb8bcbb477947f18ba614d3b423"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t199.png",
+      "sha256": "18cf5176a9634655468f337a8c6fe197db2c3a77aa5a076dc19b5fdd301bdff0"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t201.png",
+      "sha256": "2ec1f755116186b480e04fa753a7d6ee8c53d746edc9b867582775f15930cc45"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t349.png",
+      "sha256": "b59972708ff5004cd345711cb3bdf77949071d873ea7a864566ce47986d63dfe"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t351.png",
+      "sha256": "ec60f7f127e6e46e8bab6b57b71a159548dc96f74ca1fcea38692acda490b313"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t669.png",
+      "sha256": "227f2d117d629c20648073205bac96ab1dee5b1f82d19a04fa451948a384b7c5"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t671.png",
+      "sha256": "4a52dd1e254764a73ef0080d81e6eff1bcda83fd0f3f21dc3711b8a72a254237"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t849.png",
+      "sha256": "cee139dcdfeb96a67ecfb50b94a63cdf5125045bcefc527d890be9ecba58bfac"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t851.png",
+      "sha256": "e7716345aeb586ef037fd6971380de07292ec3cadbe7a7e3a107a1bdaf812183"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t949.png",
+      "sha256": "a919e3c5df3d228dbaa6cf6ad1e549193310ff99cc1f38c41ad90d064c92a78d"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/boundary-t951.png",
+      "sha256": "400ce7f38dc51f06ee1ff621e5592b72cc58e0b4fbd3f694df0d3ab787e3aee0"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/retract-t1000.png",
+      "sha256": "028a43f6205969cd5262de3b4081a51d98a8bfb8bcbb477947f18ba614d3b423"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/retract-t950.png",
+      "sha256": "844d830447f47b9fac291308baf773295ebe0663320b3d03ffb658c1940aa7e5"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/retract-t960.png",
+      "sha256": "84b453eac46d059516c90e6516757d6326abb5bfd44276b5aeeae8373eeb7bfa"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/retract-t970.png",
+      "sha256": "94cbd97265d8cd20507e74402238f2991c02bc63634be800bb0b0f4b99b6f91c"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/retract-t980.png",
+      "sha256": "e82c283d3c3b8c0f4f7cee19641edbbf8e9a9ee394c5aa72c6c3b1bc259fb1cb"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/retract-t990.png",
+      "sha256": "ea9faf3491022c372e6610662761ac8bcae9774e49fe977bcd1a8e2f433f5651"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/retract-t995.png",
+      "sha256": "0caca2ed15292818d7d487cc05ff3154cbc62014aff91d3bcfc2463d0cedd568"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/revisit-0700-after.png",
+      "sha256": "c7e3d17cdf881e523f688a7d33e5002afe9220707734b128be81453b55bb37ca"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/revisit-0700-before.png",
+      "sha256": "c7e3d17cdf881e523f688a7d33e5002afe9220707734b128be81453b55bb37ca"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/root-active.png",
+      "sha256": "d4fe6615f7e782f664d4fb3aabee8debd3a309373eba0ebc984a94ca5ab6065d"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/root-growth.png",
+      "sha256": "c66cfb317de7ce8dce0e48da327719a6c73526a2955e0764fa6fc396db2296f2"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/diagnostics/root-retract.png",
+      "sha256": "33436ebde548fb4cdc84a602f73057b0fbe3bb89806e6e944805421288466e72"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/geometry-review.json",
+      "sha256": "ce099b2cd343d7ef4ada59ebc474f1158c4ef102bc91cfd49cf7aa382905c0d2"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/growth/t350.png",
+      "sha256": "6afcd4361c551a4f0b3330b2a29f581f116697d3841475050e6fed9e6f5a1d19"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/growth/t400.png",
+      "sha256": "6cd5e54f03e0b173f48d7b763b60fe111ed87d810733d0adff72023e412608e2"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/growth/t450.png",
+      "sha256": "02e281def41419f6feee7adafbee51860d4819f1ab61766b98b0b7cffe2076c7"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/growth/t500.png",
+      "sha256": "fd8d5b3c9de48d0a118b5d3ef481bb52daae4073c8b48b52bccbf0e2e7e0c4ab"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/growth/t550.png",
+      "sha256": "c59e29c6cd16ad79c3d745c68dc6a07572710f2f9483aba03ea5ea0e1fe53158"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/growth/t600.png",
+      "sha256": "aaf6139440483fbf2a66d3434d568b287055c911eeb6ddb44901d38618e1a1b1"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/growth/t650.png",
+      "sha256": "5cdef06342622afcd740fc6f8dbff512a8f980f0bf712a677f4190e0f04379d9"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/growth/t700.png",
+      "sha256": "c7e3d17cdf881e523f688a7d33e5002afe9220707734b128be81453b55bb37ca"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/INDEX.md",
+      "sha256": "c76a3ef9d648ce43661f792e3d75d815607881fd3f9207f7bec8f3f6e5a81fcb"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/INVENTORY.md",
+      "sha256": "2cd5355f22e59db543c5473221cdf2bb7f880860b4829ee996269d7466775e75"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/mobile-playing.png",
+      "sha256": "10be2e296f2edef3e1a690387e7379826a76039f68a2786de9fe33acdb3469bf"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/phases/01-rest.png",
+      "sha256": "adaa404689186c0c6f378507f539385ea43e01ceb51bffa3f1562cba4286bc07"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/phases/02-activation.png",
+      "sha256": "4af2e1e827bfd6f92dd686dfeb05028bd198ea340cddbc450aac2cb3cec6d2ca"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/phases/03-release.png",
+      "sha256": "e50365567f07c528bf8b3955a761982ca0bfa576bc126886ec1539e72df7085c"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/phases/04-growth.png",
+      "sha256": "96caa5b7c7871dde91fbc81809a742ce7bb724ad3ff6932176e69d3511ba83a7"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/phases/05-fixation.png",
+      "sha256": "14a22a2608c047d80201f0067913fe607671a50115e1f47a2b29b7b31d0c12fb"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/phases/06-active.png",
+      "sha256": "08ea6eaf40d3f1ef6e98f20b6a5ad6acbf9dcc5e37672d62410936a76a84ecdb"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/phases/07-retract.png",
+      "sha256": "3f5deda300e19cecf376a27d20d2e0ee154ff728d2100187dbc73937602493e4"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/playback.webm",
+      "sha256": "729ee990d8e56180db1a47d6009978e243688ea3c4ca381e6e9ac1d3a96d7661"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/REPORT.md",
+      "sha256": "a17e15e10b249d101934067c6dd9f79f56070679514b81c67f837b353a21a541"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/verify-review.json",
+      "sha256": "2e349852cbccf1f066eaa0c85dd145c2ddd73d5d9dd83945d675fdb5af2f028a"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/verify.mjs",
+      "sha256": "44a7b39873f177bd459bce8d87ee2a31a29189b1e9da091970041a18dafc6f5a"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/views/active-lateral.png",
+      "sha256": "0c82ec8d3ae0ac9d7df490a1f8b40585a92e94685461162b8cd94b36052e5d8a"
+    },
+    {
+      "file": "artifacts/gates/G3A-review/views/active-posterior.png",
+      "sha256": "51b6c99b6b6f60439ddacb9b2bc0cfadb6d556470dd585b886189eb24ac9eb09"
+    },
+    {
+      "file": "artifacts/gates/G3A1-regression-activation.png",
+      "sha256": "f9719ca539f1e09acc368d8039ab994297241c11f7c15a6ee79c2bd8f10dc663"
+    },
+    {
+      "file": "artifacts/gates/G3A1-regression-active.png",
+      "sha256": "56f3e93270b3a54894a658642d3ed4adb5042d54df9f77f4973fa0dd9774d0c6"
+    },
+    {
+      "file": "artifacts/gates/G3A1-regression-growth.png",
+      "sha256": "aa643543787c4ac8dc79cc85c0d0f9001773ec4d04cc462610a284a7c1e91551"
+    },
+    {
+      "file": "artifacts/gates/G3A1-regression-mobile-controls.png",
+      "sha256": "9934701ecf2efb4eadc99cb56449c3d6a7bf35d906c40fb049f1ff33071307aa"
+    },
+    {
+      "file": "artifacts/gates/G3A1-regression-mobile.png",
+      "sha256": "9934701ecf2efb4eadc99cb56449c3d6a7bf35d906c40fb049f1ff33071307aa"
+    },
+    {
+      "file": "artifacts/gates/G3A1-regression-rest.png",
+      "sha256": "d6578ea0edac94ecd08746ed371af4ee7102c2450b1c95df108afd3689624e4f"
+    },
+    {
+      "file": "artifacts/gates/G3A1-regression-retract.png",
+      "sha256": "bbf324939b2f7b143562352fb883113e9af1e5fcb42d41c36a79304b9ca6b8b5"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/01-seven-phases-before-after.png",
+      "sha256": "8b14bf959055325f42771e16059ccc82daa9c19c8c1c2a913f512060c65718cf"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/02-implantation-before-after.png",
+      "sha256": "a418370e91df92910e14be3fae5583228b61513edb8c6734e6b747668dfcd0f5"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/03-growth-before-after.png",
+      "sha256": "8751b0b48768a106e830d94f5ab1af8e9fc7396ea8e9807d9a629825bf00890a"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/04-retraction-before-after.png",
+      "sha256": "95a8919306ed9848671c8cb43e92cb28a45914824375cda0f1e90644b8e7f30a"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/05-counts-and-views.png",
+      "sha256": "be89466b5b6d3fd7b6294a99dc884b4ed9ef92ba6070907400c4b533c950767f"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/06-mobile-before-after.png",
+      "sha256": "0a44a29c2f9f3d055d1fce02496780881f249d461034deca4573d678df9558ba"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/07-counts-growth-views.png",
+      "sha256": "0df10837d753f25a03824f5878643c3597d700113b24f7cf67d586dbd5a164b7"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/08-counts-retraction-views.png",
+      "sha256": "224d46cf00040d415c364b024ba49aff00521cb584b2adb09ddc069e8cda993d"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/after/mobile/390-active.png",
+      "sha256": "ae4a169c4fde05a034f444a50f21cbafe6a9084cfbd56cd2d7086d010739fe9a"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/after/mobile/390-growth.png",
+      "sha256": "8422abd2577e2be8b98f939b49027937b6e9604e74942ffd7c9e65eef3f1e60c"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/after/mobile/430-active.png",
+      "sha256": "301dbab82c1ab29ba2f7fa776399100d72387faabe711a716ef36d2ec99ed67f"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/after/mobile/430-growth.png",
+      "sha256": "4a61ed1760a721c454f275143a59bab672f20001a9c4b15c013b0e1ebf0757f0"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/analyze-geometry.mjs",
+      "sha256": "bf2fcde62a94918009418395c5a536817d33a87dcd38b19f93da88c01a2fa2ad"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/audit.py",
+      "sha256": "c11b645fe017525b2b818fd65690183e86f07d8252aa642ad64845fc57fba350"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/before/mobile/390-active.png",
+      "sha256": "1f1a37772830abc9aabaf591c00e94022d91a88536408f92733742c753a8db39"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/before/mobile/390-growth.png",
+      "sha256": "f88cb53f0e7fe3cdbeb95c9f9cb033728e7c1bd9cfe860d119fc2f81beabe1a9"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/before/mobile/430-active.png",
+      "sha256": "60efafe1064c39eb02aedc6e73bc3cd65ab4e64fe568a0aca5181662f0cf2a7a"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/before/mobile/430-growth.png",
+      "sha256": "10d8bc4fd287270a10186d67b3552ad74e30eac076cbd7947d383d2638414bfc"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/capture-comparison.mjs",
+      "sha256": "03c8e2662f56bc17624ee85353f91f0f5bde1d4b362a229f92dce5f083891d5c"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/comparison-captures.json",
+      "sha256": "d21c76500d9fc08e9bc9da26af08720ed4b96e6327cea4fab699c1e5d67c27a4"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compat-sequence/growth-t350.png",
+      "sha256": "1b43854b66c8fb4d62e2859a27379fe24f6ab99e88e57e092bd069753283c190"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compat-sequence/growth-t400.png",
+      "sha256": "cb8cd99d716a5a1e64f34f28f5bfa11fcc027ef4379c70edbbc1288cf43c5d90"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compat-sequence/growth-t450.png",
+      "sha256": "d0240f18016fd0027820c6b425ab49c56a565634012292f60223d988f1017d36"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compat-sequence/growth-t500.png",
+      "sha256": "a741013ad827bf2eef4eff5df049a876c5ed69024be4e7281f97d25c9ce8aa1f"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compat-sequence/growth-t550.png",
+      "sha256": "91caba11dbe77c5bf2c2355efdfe98a459883a9316b9576575c3094ffcba46d6"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compat-sequence/growth-t600.png",
+      "sha256": "1ae2b125102162a095ccfb8338847a3ad1a32e4543f99cde4ad1bdcae9c2ed89"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compat-sequence/growth-t650.png",
+      "sha256": "3bb7fb3aba7e70b6a7b339fc6e2c79ef2046fcbb146af9e62bf525e49ed657a7"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compat-sequence/growth-t700.png",
+      "sha256": "40cd4d0cb8112613074f58f80117220947743b03c43cb9086457426b2fd31962"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compose.py",
+      "sha256": "43b8300a6f2d40db9d40a6a3702541a4e8e8c9208c0c70d141c24e80acf90303"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/compositions.json",
+      "sha256": "9b6c6f4bc45239a0bcda58d6c3406a325cef9955a90b4efaf81ead0870d18057"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/1/lateral-active.png",
+      "sha256": "2b6257b84dd00d9d3068d27dc87b7c02cd98b902387861c2ec311827345d06aa"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/1/lateral-growth.png",
+      "sha256": "a9a04e4561d12e3ed83d95a450e1722a9f4326d94c856ecf8462866845dc0882"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/1/lateral-retract.png",
+      "sha256": "4c0a822536eeb41f9be033ddb9faecca273362b0744d3355e8b4dfd22c8a24bd"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/1/oblique-active.png",
+      "sha256": "d3ced0d7b646bc97fbc16630ea8a160242977238b52ff8e10e3d16d54b00be82"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/1/oblique-growth.png",
+      "sha256": "28dd79134d57647a102e41b112b207790868566ac911b284f1c80f601a724885"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/1/oblique-retract.png",
+      "sha256": "27af00b0cb2132015dbea5aa105c6fc66c90aed046d91648aa870e8ccc04164b"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/1/posterior-active.png",
+      "sha256": "6174877752402224dc84d1ef69fa42afe1e665ee929aa2078f52e97c3bcbdfc7"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/1/posterior-growth.png",
+      "sha256": "7c5ef30ddde9f4290327b0c60a59ec4203559485819336d0bdfab2a84edaf04f"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/1/posterior-retract.png",
+      "sha256": "ceab95966deb0d00556e671a83f9c118920842e60276f6cdc85f3a1fe7d47205"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/2/lateral-active.png",
+      "sha256": "500671bca6140bb1d72eda268d6734c34999acd9839c04350b45ba56e0c4cf55"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/2/lateral-growth.png",
+      "sha256": "5f421ca6bbaf185fdb095062dc6c5bd3f83cfbe3add3f895b7a40561e1fb741c"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/2/lateral-retract.png",
+      "sha256": "b308ec529ee2bb3ee440d2cb0ddb5f6587162424016401827b704dfaf28fd700"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/2/oblique-active.png",
+      "sha256": "51897c21d3c5d85dcd46ece5474a7c1d9e7008fe424611f42fc19c027bd7ae19"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/2/oblique-growth.png",
+      "sha256": "07cdf05dd32f5b24a1560a2e6f275367b920728024f21fcf30b4d215305d8016"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/2/oblique-retract.png",
+      "sha256": "50feae7d493961680dba970ea610d690870ed89da6513557b1da04f1de97c900"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/2/posterior-active.png",
+      "sha256": "d309d31ceaec13fabb1a4e5d41d244b07111e901944962f974692732b8bc6337"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/2/posterior-growth.png",
+      "sha256": "99a40012f8c51cc395f65d9b1e4bcb575d00947f1747e4ff13b95c1eb952a025"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/2/posterior-retract.png",
+      "sha256": "0848b3216bb887e0b9e6e4f27658e0e18cac42c84649ae33c8e2a3188fc721ad"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/3/lateral-active.png",
+      "sha256": "61b8d084b65afcc5b9d040a257ce8d11688b85b476a4bdd778ff97edcbd331a9"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/3/lateral-growth.png",
+      "sha256": "a8aae6ed60aefff1ed66f6fb66962be7429aed586d524612a48802849894df1e"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/3/lateral-retract.png",
+      "sha256": "788f2ac3348e420dbf6994686a5d2e3f435b197e319be2c4e4eef55349db22fd"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/3/oblique-active.png",
+      "sha256": "d33908e0e1b498041936e37dca73710b4328b887b4c6ab1d0b4cf45faae5d143"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/3/oblique-growth.png",
+      "sha256": "c316daae533a62647e537d2009469f07f93a3f9cdf986bac20f1e422da16eeea"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/3/oblique-retract.png",
+      "sha256": "18e95042e8d7fde2cf83a47d041225fc6f1d5d8c6f88917745b9ffde9c79a634"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/3/posterior-active.png",
+      "sha256": "47a45d4ce25fb45972c30659caa0c047da86b9403bc1f799f15b18e213bfd0bb"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/3/posterior-growth.png",
+      "sha256": "770e01716b4ec715234d0376c953d0a06b1aa3d30cb4cab95b0dcf9886992544"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/3/posterior-retract.png",
+      "sha256": "63694fb775a06e4f9e05f07a0ca1b74881d795fbd67c7ab24ed5f95ee473cfee"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/4/lateral-active.png",
+      "sha256": "4bff433ae3986edb69d54a2846ec9f3e7be56fc9b1640948747c106bc0517228"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/4/lateral-growth.png",
+      "sha256": "f66118f7f917ce0c4e233cad4435f6d0bf9d20c87ddfb7033933cc6d34cbf318"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/4/lateral-retract.png",
+      "sha256": "f12873e01ccf52d4a684a58108bbdb701eb6173aa6383863c5faf0d5290c0eb6"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/4/oblique-active.png",
+      "sha256": "83f51746d5a9c6a390787f2c607e33e167e52d1a9eaf59849920a8562d0b7984"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/4/oblique-growth.png",
+      "sha256": "fe62dd6354c55159eeccbdeb5abe75fd980d8f2ee42d45a110f6788c89f752a3"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/4/oblique-retract.png",
+      "sha256": "0933aadd025e76a9ea1440f07dde63b0c7def5595a8dd4578e4c8b8338a83ca1"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/4/posterior-active.png",
+      "sha256": "88c3936a9d2a47ac316c9dc4fdb46d0d962a4e31f45616d342c6cf965fb37fa4"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/4/posterior-growth.png",
+      "sha256": "d4ca87786a0e59acd28295f7167d57cd6df3b28de60db1a812e3a2c25f25c92b"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/counts/4/posterior-retract.png",
+      "sha256": "0ade875100cae0f2bee7fbd3b1170784d1cd136ca01631328ae41347362b46a7"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/extract-film.ps1",
+      "sha256": "aad5bff18053f6e5260714096d9ec0bf70ff99c8a397946932452579d0cf896a"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/manifest.json",
+      "sha256": "8bd3e2d66bfc9708858be388ed2b4f13187c27f92f887392746ee466aa4fdf6b"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-18.png",
+      "sha256": "a70796faffacbb6eba1b1532c6da333aa6ec61264ad461806f2472ac899fab16"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-21.png",
+      "sha256": "cad716ef836e5d164f508826aadc314c06211542b4935f76057fb77582da4cb6"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-27.png",
+      "sha256": "27ad685eec785d5eaff4ae92166cebad0e02d4fdf7c76d2f003aa40417745a21"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-32.png",
+      "sha256": "c0e30e45b35164c11b2cfba4f5c919b329d0a9ce68374ba16f278ab753870132"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-40.png",
+      "sha256": "073a5b8f8d8580ca1cba99340b975b7e07b47215927782d978d89ef29b0993ad"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-50.png",
+      "sha256": "a7a956e7ff0199b668c2c1e6491f94d1e8ec3bda960cb2750c5ca8ca5ea1dbd7"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/film-frames/second-6.png",
+      "sha256": "b9de84aea390239e1c688b964c3b1b4ba9f49c77d6257356c67dc1bbdcb66ae5"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/geometry-review.json",
+      "sha256": "25fbcdb41665d81f5f5d24ddf8cea273ecb35c989f63e3939a4ceaef79028f3a"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/growth/t0350.png",
+      "sha256": "35b3eee1b36f7a702257f643344241006836fa62ba770c44a9183c7a0fc4bbf7"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/growth/t0400.png",
+      "sha256": "0ad0968147a4e472adc10204702f45351de520a36d895fea5adb0d5f6fe72016"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/growth/t0450.png",
+      "sha256": "550aa9dd0f6ca4e79cb0c92a63763af861ee0684e605a77b16ace2db2455a212"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/growth/t0500.png",
+      "sha256": "295765f88cda60bd7fcbc0841cfc87757e0135dab4dab114cb31a341ba39d7e2"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/growth/t0550.png",
+      "sha256": "c1df6dd667c9325df72d2cc87c6d878d87c13e845390552379119839b768be1a"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/growth/t0600.png",
+      "sha256": "0ca0ecdb60ca70353a245935ada822c64e52447dd323de780c9b6f12e835a02c"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/growth/t0650.png",
+      "sha256": "a2a9e397c2084930104c433852669ecf42b5bb9b2223985c474a34d56d559c03"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/growth/t0700.png",
+      "sha256": "10c8dbed238200896384637bb6ab991762f9c7de59eab0c3afde7f5b2caca234"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/INDEX.md",
+      "sha256": "941505dd8c6bf4130e8b43f1d3b2ee360b84222459917a3db5a1a516303be043"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/INVENTORY.md",
+      "sha256": "c7d6d5aaf911bc9d4c98dc4f58fa68e6b43784df02adf1224fa5de4981ce1089"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/mobile/390-active.png",
+      "sha256": "e0701657059e0e9d08a962c70b48972e45df73144bd57a14e9bb121e7e0c78cb"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/mobile/390-controls.png",
+      "sha256": "04a991d5de9d47d2c0fda24366cfe6ad644cb5d531fb5ddd84692c722e65d599"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/mobile/390-growth.png",
+      "sha256": "0b6827f30cd42fa97277faac0dba16da0774e5357290e4566e80fcde03182bb4"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/mobile/390-playing.png",
+      "sha256": "c338d4e9051bc4b7283fb9756088944b919a2d62e3ac34dbe6ab97fa2d2acd41"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/mobile/430-active.png",
+      "sha256": "a2e3bd1a39d966b38d2b3391bea31368aadad34a3b2e9d6076d8e324a726bc29"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/mobile/430-controls.png",
+      "sha256": "2d84e15994fd8a1ed8111d501f5d7f0bb8d79e6cba622a3e33ee2680114a625f"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/mobile/430-growth.png",
+      "sha256": "09e65a45597f0a2d8d5bb20fc1584b77bfcda0b0ac317a30f9a01e31137ec3af"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/mobile/430-playing.png",
+      "sha256": "00bed229a221bbc8c5ce3ed35164edf28315fa8ce16f94864d9e07409eed751c"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/phases/activation.png",
+      "sha256": "8053a8cfe281bfd7d69449e5d57919b4da2f44f25309bd9353994c47a6dbfeef"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/phases/active.png",
+      "sha256": "a44c9bb0d9021181b876065b52f40d3039b1723c7a3e86596e5757b0a5b0d0ee"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/phases/fixation.png",
+      "sha256": "9593a61992b6a9007930a2e5bf4008910302512fb4b6bf8abdee4393b32e9f88"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/phases/growth.png",
+      "sha256": "0a0d5707afdcbd6b50cda89d2b1607e7e1fdd4b082750a9a48d60157372f88be"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/phases/release.png",
+      "sha256": "3e8407bb9a0fbafb56561a6f38bc37c0ab8606ba80c15e974e7d9a7bc692a886"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/phases/rest.png",
+      "sha256": "135bfc6dd5f8c24db83e3a6331312d87fdf7e5651e386a46f682dac8db110d65"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/phases/retract.png",
+      "sha256": "2beecafa60a5ab14385b625eeb354a325b716928d5dbaf636e30b20f20f24632"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/playback-and-reverse.webm",
+      "sha256": "5d9f508c8c81ab64b4ecbed60b2cdc5eea9e40c1483aa8dc74bea25e2d37da3f"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G1-desktop.png",
+      "sha256": "591ad5d196e8972f002a5924e091bc3da44b295d490584b271b2035cfd740db0"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G1-focus.png",
+      "sha256": "c43b6549017e6e57b0056d52f811b135b0e5b86bffaa86f6120fef71335aea0a"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G1-mobile-full.png",
+      "sha256": "d5f0ab69aca68db4bb80adee8be7fb076e1409bcccf0b6c1b283bdaf2d587e84"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G1-mobile-selection.png",
+      "sha256": "bd33e2f620d5735e1a9605f22d6e70bd31ec3e9b57f7ed5ba585d91d0e15f9d3"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G1-mobile.png",
+      "sha256": "169f452c862cb1d60b06a569697cb8c94293a752bbeadbda955879070b55c79f"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G1-scan-20.png",
+      "sha256": "1776c914e6be7b5cc719dd90373471bf9ab9256e85b0f9a2092415f932a1adfb"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G1-scan-75.png",
+      "sha256": "fbb994e3f3deea74fe93b40fc97815dce4e090eeddec11f66a21dfb8b1715cdd"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G1-silhouette.png",
+      "sha256": "88960ab38e8c4a3b6a1d5d63b4e65d29fac525036afcf523bebcc3a21317aba4"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G2A-desktop-default.png",
+      "sha256": "591ad5d196e8972f002a5924e091bc3da44b295d490584b271b2035cfd740db0"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G2A-desktop.png",
+      "sha256": "7abdfd4717294217741a31de58dd2b72029bb9f61bb2d7cb8b28a6e85eef7cfb"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G2A-mobile-asset.png",
+      "sha256": "591b608240d83ec57a2dfd8b127e7edcf1e018c4202e6c56ed5987f20498efcd"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G2A-mobile-default.png",
+      "sha256": "169f452c862cb1d60b06a569697cb8c94293a752bbeadbda955879070b55c79f"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G2A-mobile-drawer.png",
+      "sha256": "1128f14bf3ea1506dadf794ac693020f83ac50606bea798e49d6f183690f80a2"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G2A-mobile.png",
+      "sha256": "dd90951ec977e8a3dde3f69e2814854abb58bb6a29d46899c2359bdf86993b8c"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G2A-rig-pose.png",
+      "sha256": "df44d2fd5116b03ae02cc486609ab640f58232009698685e0f15440145b19c93"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G2A-synthetic-rigged.png",
+      "sha256": "ba9ab6b5cbe80d6c4b199a0de08161503f9bbc8c038afca30b728ba54337af66"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/regression/gates/G2A-synthetic-static.png",
+      "sha256": "2c12ad1fab3fff5e3867f37ca0ca1541295a31a3422e32630888a8e8862f2ee9"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/REPORT.md",
+      "sha256": "aa3abc4b3fa6159eba54e2fa1fc9c0338304f83e3ef5fc710526d643c2a6032e"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/retraction/t0950.png",
+      "sha256": "6a7bdecea5e623ab4a997777d68b01a673f7029ee9e8c0b65a7fd2c6d4d26c7c"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/retraction/t0960.png",
+      "sha256": "be625e7377cd05e23c754499b5b975219b10fc155f4f0571a6424d7a169051fa"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/retraction/t0970.png",
+      "sha256": "fc8b87a97c44aaebea64f0d6fcb6cb0c9fe3bb275ea38960a8057cd22e32cbe4"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/retraction/t0980.png",
+      "sha256": "0ade875100cae0f2bee7fbd3b1170784d1cd136ca01631328ae41347362b46a7"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/retraction/t0990.png",
+      "sha256": "498ed3d57e81ec6427f3d09f793481c774ce9dd29ec35ce4a8fb9e5dad5816a8"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/retraction/t0995.png",
+      "sha256": "9c1b8912884bbad49629891abed57ebc20d1c88953a51b3431a73033ef4b9c5c"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/retraction/t1000.png",
+      "sha256": "fb7144b80fd089faa929eef7322c562c8dfc5fca813be8137d16224053bd4a6b"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/revisit/t0700-after.png",
+      "sha256": "10c8dbed238200896384637bb6ab991762f9c7de59eab0c3afde7f5b2caca234"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/revisit/t0700-before.png",
+      "sha256": "10c8dbed238200896384637bb6ab991762f9c7de59eab0c3afde7f5b2caca234"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/roots/t140.png",
+      "sha256": "13cdde0f595dd55f27ae3a04db059e5202880d7b7cc1867b5b2eeec9b6b558cb"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/roots/t275.png",
+      "sha256": "4824550459c884e8bd89d782a01edd52841226b5f05729b666ffb16acfe6cc27"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/roots/t530.png",
+      "sha256": "0549212a22d9155d557357b734166b3c47b5a51550e388a98f0e3eb5e6469f67"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/roots/t760.png",
+      "sha256": "8f60ea6dfb0f67f08ad9ddbda0985c2cdac839f7ac2d975558c080e0b2bd51ab"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/roots/t900.png",
+      "sha256": "69c089ac1ae5e5b729a4af31092ac2893bbe5e56353f937d6e2e02756549b8de"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/roots/t980.png",
+      "sha256": "38a71362dc40070e83508464284f1db9d8fed01af17786ddda7cdbde0afaff5d"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/verify-package.json",
+      "sha256": "0c058ca7e55b81630277c2779f9018a7426e7ec7410b4e9f638250380b1bd9d0"
+    },
+    {
+      "file": "artifacts/gates/G3A1-review/verify.py",
+      "sha256": "1b80735f6e5028d10f3ade4ca4177bad3135632413aff5dccb11d115dadba17f"
+    }
+  ]
+}

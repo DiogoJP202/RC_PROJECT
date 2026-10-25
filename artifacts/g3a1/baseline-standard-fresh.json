@@ -1,0 +1,4274 @@
+{
+  "measuredAt": "2026-10-25T01:46:38.907Z",
+  "target": "http://127.0.0.1:4175",
+  "build": "Production Vite preview; fresh context; HTTP cache disabled.",
+  "scenario": {
+    "quality": "standard",
+    "appendageCount": 4,
+    "seed": 17,
+    "particlesSetting": true,
+    "particlesRendered": true,
+    "activationMs": 387,
+    "activationAdditionalTransferBytes": 5194,
+    "bootPlusManifestTransferBytes": 372488,
+    "sequence": "Full 18 s absolute timeline, restarted via reset/play UI; 10 s warm-up then 30 s rAF sample."
+  },
+  "environment": {
+    "os": "win32 10.0.26200 x64",
+    "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+    "ramBytes": 16540626944,
+    "browser": "Chromium 156.0.8078.4",
+    "headless": true,
+    "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    }
+  },
+  "network": {
+    "method": "Chromium DevTools Protocol",
+    "cdp": {
+      "offline": false,
+      "latency": 50,
+      "downloadThroughput": 2500000,
+      "uploadThroughput": 2500000,
+      "connectionType": "ethernet"
+    },
+    "nominalDownloadMbps": 20,
+    "latencyNote": "latency=50 ms is a CDP request setting, not a measurement of symmetric physical RTT.",
+    "transferredCdpBytes": 373006,
+    "transferredPerformanceBytes": 367294,
+    "transferScope": "Performance initial bytes are Body boot; scenario separately reports the lazy manifestation activation and combined total. CDP total includes both.",
+    "responseEncodings": [
+      {
+        "url": "http://127.0.0.1:4175/",
+        "status": 200,
+        "contentEncoding": "identity",
+        "mimeType": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:4175/assets/index-uDi3CUky.css",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/css"
+      },
+      {
+        "url": "http://127.0.0.1:4175/assets/index-R0rMkKN0.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4175/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4175/catalog.json",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4175/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4175/assets/three.core-Dp-eO7LC.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4175/assets/ObservatoryScene-qZ3g_aAV.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4175/assets/RinkakuScene-BNpPoM7s.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      }
+    ]
+  },
+  "coldLoad": {
+    "interactiveMs": 1374.5999999940395,
+    "transferBytes": 367294,
+    "encodedBodyBytes": 364894,
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4175/assets/index-R0rMkKN0.js",
+        "transferBytes": 85312,
+        "encodedBodyBytes": 85012,
+        "durationMs": 178.80000001192093
+      },
+      {
+        "url": "http://127.0.0.1:4175/assets/index-uDi3CUky.css",
+        "transferBytes": 9050,
+        "encodedBodyBytes": 8750,
+        "durationMs": 70.40000000596046
+      },
+      {
+        "url": "http://127.0.0.1:4175/atlas-mark.svg",
+        "transferBytes": 690,
+        "encodedBodyBytes": 390,
+        "durationMs": 56.099999994039536
+      },
+      {
+        "url": "http://127.0.0.1:4175/catalog.json",
+        "transferBytes": 5025,
+        "encodedBodyBytes": 4725,
+        "durationMs": 71.80000001192093
+      },
+      {
+        "url": "http://127.0.0.1:4175/atlas-mark.svg",
+        "transferBytes": 690,
+        "encodedBodyBytes": 390,
+        "durationMs": 70.7999999821186
+      },
+      {
+        "url": "http://127.0.0.1:4175/assets/ObservatoryScene-qZ3g_aAV.js",
+        "transferBytes": 165299,
+        "encodedBodyBytes": 164999,
+        "durationMs": 254
+      },
+      {
+        "url": "http://127.0.0.1:4175/assets/three.core-Dp-eO7LC.js",
+        "transferBytes": 100197,
+        "encodedBodyBytes": 99897,
+        "durationMs": 192.40000000596046
+      }
+    ]
+  },
+  "protocol": {
+    "warmupMs": 10000,
+    "requestedSamplingMs": 30000,
+    "fpsMethod": "Percentiles of reciprocal visible desktop requestAnimationFrame intervals.",
+    "metricIntervalMs": 1000,
+    "diagnosticReadIntervalMs": 500
+  },
+  "sample": {
+    "durationMs": 30018.69999998808,
+    "frames": 1796,
+    "fpsP50": 59.880239520968516,
+    "fpsP10": 58.8235294117647,
+    "fpsMin": 10.010010010009864,
+    "fpsMax": 64.9350649350588,
+    "phases": [
+      "growth",
+      "fixation",
+      "active",
+      "retract",
+      "rest",
+      "activation",
+      "release"
+    ],
+    "replayCount": 2,
+    "initial": {
+      "ready": true,
+      "selectedId": "human.surface",
+      "lastHit": null,
+      "layers": {
+        "surface": true,
+        "muscular": false,
+        "skeletal": false,
+        "internal": true
+      },
+      "assets": {
+        "requestedId": "proxy",
+        "activeId": "proxy",
+        "status": "proxy",
+        "bindings": [],
+        "nodes": [],
+        "bounds": null,
+        "sockets": [],
+        "animations": [],
+        "animation": {
+          "clip": "",
+          "time": 0,
+          "playing": false
+        },
+        "bones": [],
+        "cache": {
+          "loads": 0,
+          "hits": 0,
+          "disposed": 0,
+          "acquired": 0,
+          "released": 0,
+          "entries": 0,
+          "inFlight": 0,
+          "refCount": 0,
+          "assets": []
+        }
+      },
+      "rinkaku": {
+        "enabled": true,
+        "playing": true,
+        "direction": 1,
+        "t": 0.5283000000003304,
+        "config": {
+          "appendageCount": 4,
+          "seed": 17,
+          "particles": true,
+          "quality": "standard"
+        },
+        "snapshot": {
+          "appendageCount": 4,
+          "seed": 17,
+          "particles": true,
+          "quality": "standard",
+          "t": 0.5283000000003304,
+          "phase": "growth",
+          "localPhaseProgress": 0.5571875000010325,
+          "rootExposure": 1,
+          "kakuhouActivation": 0.8829185606320186,
+          "appendageExtension": 0.6102827650295128,
+          "appendageThickness": 0.6766176135351277,
+          "visualStiffness": 0.18733030298877032,
+          "particleEmission": 0.6194853220540603,
+          "appendageMotion": 0.3424547347991648,
+          "visualIntensity": 0.7963517992099769,
+          "motionTime": 9.511029854593074
+        },
+        "representation": "procedural",
+        "connection": {
+          "source": "proxy",
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.976,
+            -0.112,
+            1
+          ]
+        },
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.5283000000003304,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 29,
+          "positionHash": "b1b5bb53",
+          "signature": "b1b5bb53",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.3656159446173072,
+              1.2698137116730932,
+              -0.6637897988699729
+            ],
+            [
+              0.27439067004669937,
+              1.3113624920043647,
+              -0.5875749614335369
+            ],
+            [
+              -0.3816178120500757,
+              0.7334238301586766,
+              -0.3964349352354282
+            ],
+            [
+              0.5011117155432108,
+              0.6405391026050543,
+              -0.30386954888430817
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        },
+        "lifecycle": {
+          "mounted": 1,
+          "disposed": 0
+        }
+      },
+      "visibleNodes": [
+        "HUMAN_SURFACE",
+        "HUMAN_HEAD",
+        "HUMAN_THORAX",
+        "KAKUHOU_RINKAKU",
+        "G3A_CONCEPTUAL_APPENDAGE_1",
+        "G3A_CONCEPTUAL_APPENDAGE_2",
+        "G3A_CONCEPTUAL_APPENDAGE_3",
+        "G3A_CONCEPTUAL_APPENDAGE_4",
+        "G3A_CONCEPTUAL_ACTIVATION_PATCH"
+      ],
+      "nodes": [
+        {
+          "name": "HUMAN_SURFACE",
+          "anatomyId": "human.surface",
+          "visible": true,
+          "vertices": 101472,
+          "bounds": [
+            [
+              -0.39881572127342224,
+              0.019999997690320015,
+              -0.10774065554141998
+            ],
+            [
+              0.39881572127342224,
+              1.6200000047683716,
+              0.1810000091791153
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_HEAD",
+          "anatomyId": "human.head",
+          "visible": true,
+          "vertices": 28272,
+          "bounds": [
+            [
+              -0.08699999749660492,
+              1.5759999752044678,
+              -0.08445589989423752
+            ],
+            [
+              0.08699999749660492,
+              1.850000023841858,
+              0.09389623254537582
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_MUSCULAR",
+          "anatomyId": "human.muscular",
+          "visible": false,
+          "vertices": 110208,
+          "bounds": [
+            [
+              -0.35249319672584534,
+              0.13817860186100006,
+              -0.10999999940395355
+            ],
+            [
+              0.35249319672584534,
+              1.5107470750808716,
+              0.11800000071525574
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_SKELETAL",
+          "anatomyId": "human.skeletal",
+          "visible": false,
+          "vertices": 158088,
+          "bounds": [
+            [
+              -0.3664235472679138,
+              0.039000000804662704,
+              -0.07462053000926971
+            ],
+            [
+              0.3664235472679138,
+              1.8320000171661377,
+              0.15600000321865082
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_THORAX",
+          "anatomyId": "human.thorax",
+          "visible": true,
+          "vertices": 12264,
+          "bounds": [
+            [
+              -0.1334308236837387,
+              1.1996310949325562,
+              -0.050999999046325684
+            ],
+            [
+              0.1334308236837387,
+              1.4900007247924805,
+              0.08100000023841858
+            ]
+          ]
+        },
+        {
+          "name": "KAKUHOU_RINKAKU",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 15960,
+          "bounds": [
+            [
+              -0.10146593302488327,
+              0.917545735836029,
+              -0.1469999998807907
+            ],
+            [
+              0.10146593302488327,
+              1.034000039100647,
+              -0.07500000298023224
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 1042,
+          "bounds": [
+            [
+              -1.18,
+              0.15600000000000003,
+              -1.332
+            ],
+            [
+              1.18,
+              2.216,
+              0.02800000000000001
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 1042,
+          "bounds": [
+            [
+              -1.18,
+              0.15600000000000003,
+              -1.332
+            ],
+            [
+              1.18,
+              2.216,
+              0.02800000000000001
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 1042,
+          "bounds": [
+            [
+              -1.18,
+              0.15600000000000003,
+              -1.332
+            ],
+            [
+              1.18,
+              2.216,
+              0.02800000000000001
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 1042,
+          "bounds": [
+            [
+              -1.18,
+              0.15600000000000003,
+              -1.332
+            ],
+            [
+              1.18,
+              2.216,
+              0.02800000000000001
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_ACTIVATION_PATCH",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 425,
+          "bounds": [
+            [
+              -0.10064152098819887,
+              0.8967008359213413,
+              -0.17363970860311345
+            ],
+            [
+              0.09892132477959024,
+              1.0560565344016313,
+              -0.10236029139688659
+            ]
+          ]
+        }
+      ],
+      "surfaceOpacity": 0.94,
+      "paused": true,
+      "reducedMotion": false,
+      "scanT": 0.35697083333383,
+      "scanRevision": 0,
+      "camera": {
+        "position": [
+          -1.59025718767926,
+          1.3119343799024197,
+          -5.292076025922804
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bounds": {
+        "min": [
+          -0.39881572127342224,
+          0.019999997690320015,
+          -0.10774065554141998
+        ],
+        "max": [
+          0.39881572127342224,
+          1.850000023841858,
+          0.1810000091791153
+        ],
+        "projected": {
+          "top": 0.421792941928971,
+          "bottom": -0.6382566311136777,
+          "left": -0.08981395866172684,
+          "right": 0.24042808109086922
+        },
+        "heightFraction": 0.5300247865213243
+      },
+      "metrics": {
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 159250,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 548,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "frames": 600,
+      "viewport": {
+        "width": 876,
+        "height": 614,
+        "dpr": 1
+      },
+      "modelStatus": "conceptual_proxy"
+    },
+    "final": {
+      "ready": true,
+      "selectedId": "human.surface",
+      "lastHit": null,
+      "layers": {
+        "surface": true,
+        "muscular": false,
+        "skeletal": false,
+        "internal": true
+      },
+      "assets": {
+        "requestedId": "proxy",
+        "activeId": "proxy",
+        "status": "proxy",
+        "bindings": [],
+        "nodes": [],
+        "bounds": null,
+        "sockets": [],
+        "animations": [],
+        "animation": {
+          "clip": "",
+          "time": 0,
+          "playing": false
+        },
+        "bones": [],
+        "cache": {
+          "loads": 0,
+          "hits": 0,
+          "disposed": 0,
+          "acquired": 0,
+          "released": 0,
+          "entries": 0,
+          "inFlight": 0,
+          "refCount": 0,
+          "assets": []
+        }
+      },
+      "rinkaku": {
+        "enabled": true,
+        "playing": true,
+        "direction": 1,
+        "t": 0.16667222222354677,
+        "config": {
+          "appendageCount": 4,
+          "seed": 17,
+          "particles": true,
+          "quality": "standard"
+        },
+        "snapshot": {
+          "appendageCount": 4,
+          "seed": 17,
+          "particles": true,
+          "quality": "standard",
+          "t": 0.16667222222354677,
+          "phase": "activation",
+          "localPhaseProgress": 0.7222685185295564,
+          "rootExposure": 0.09737294204546612,
+          "kakuhouActivation": 0.6491529469697742,
+          "appendageExtension": 0,
+          "appendageThickness": 0,
+          "visualStiffness": 0,
+          "particleEmission": 0,
+          "appendageMotion": 0,
+          "visualIntensity": 0.2840044142992762,
+          "motionTime": 3.0017298546109705
+        },
+        "representation": "procedural",
+        "connection": {
+          "source": "proxy",
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.976,
+            -0.112,
+            1
+          ]
+        },
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": false,
+          "t": 0.16667222222354677,
+          "phase": "activation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 0,
+          "positionHash": "ef24b796",
+          "signature": "ef24b796",
+          "visibleAppendages": 0,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        },
+        "lifecycle": {
+          "mounted": 1,
+          "disposed": 0
+        }
+      },
+      "visibleNodes": [
+        "HUMAN_SURFACE",
+        "HUMAN_HEAD",
+        "HUMAN_THORAX",
+        "KAKUHOU_RINKAKU",
+        "G3A_CONCEPTUAL_APPENDAGE_1",
+        "G3A_CONCEPTUAL_APPENDAGE_2",
+        "G3A_CONCEPTUAL_APPENDAGE_3",
+        "G3A_CONCEPTUAL_APPENDAGE_4",
+        "G3A_CONCEPTUAL_ACTIVATION_PATCH"
+      ],
+      "nodes": [
+        {
+          "name": "HUMAN_SURFACE",
+          "anatomyId": "human.surface",
+          "visible": true,
+          "vertices": 101472,
+          "bounds": [
+            [
+              -0.39881572127342224,
+              0.019999997690320015,
+              -0.10774065554141998
+            ],
+            [
+              0.39881572127342224,
+              1.6200000047683716,
+              0.1810000091791153
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_HEAD",
+          "anatomyId": "human.head",
+          "visible": true,
+          "vertices": 28272,
+          "bounds": [
+            [
+              -0.08699999749660492,
+              1.5759999752044678,
+              -0.08445589989423752
+            ],
+            [
+              0.08699999749660492,
+              1.850000023841858,
+              0.09389623254537582
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_MUSCULAR",
+          "anatomyId": "human.muscular",
+          "visible": false,
+          "vertices": 110208,
+          "bounds": [
+            [
+              -0.35249319672584534,
+              0.13817860186100006,
+              -0.10999999940395355
+            ],
+            [
+              0.35249319672584534,
+              1.5107470750808716,
+              0.11800000071525574
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_SKELETAL",
+          "anatomyId": "human.skeletal",
+          "visible": false,
+          "vertices": 158088,
+          "bounds": [
+            [
+              -0.3664235472679138,
+              0.039000000804662704,
+              -0.07462053000926971
+            ],
+            [
+              0.3664235472679138,
+              1.8320000171661377,
+              0.15600000321865082
+            ]
+          ]
+        },
+        {
+          "name": "HUMAN_THORAX",
+          "anatomyId": "human.thorax",
+          "visible": true,
+          "vertices": 12264,
+          "bounds": [
+            [
+              -0.1334308236837387,
+              1.1996310949325562,
+              -0.050999999046325684
+            ],
+            [
+              0.1334308236837387,
+              1.4900007247924805,
+              0.08100000023841858
+            ]
+          ]
+        },
+        {
+          "name": "KAKUHOU_RINKAKU",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 15960,
+          "bounds": [
+            [
+              -0.10146593302488327,
+              0.917545735836029,
+              -0.1469999998807907
+            ],
+            [
+              0.10146593302488327,
+              1.034000039100647,
+              -0.07500000298023224
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 1042,
+          "bounds": [
+            [
+              -1.18,
+              0.15600000000000003,
+              -1.332
+            ],
+            [
+              1.18,
+              2.216,
+              0.02800000000000001
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 1042,
+          "bounds": [
+            [
+              -1.18,
+              0.15600000000000003,
+              -1.332
+            ],
+            [
+              1.18,
+              2.216,
+              0.02800000000000001
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 1042,
+          "bounds": [
+            [
+              -1.18,
+              0.15600000000000003,
+              -1.332
+            ],
+            [
+              1.18,
+              2.216,
+              0.02800000000000001
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 1042,
+          "bounds": [
+            [
+              -1.18,
+              0.15600000000000003,
+              -1.332
+            ],
+            [
+              1.18,
+              2.216,
+              0.02800000000000001
+            ]
+          ]
+        },
+        {
+          "name": "G3A_CONCEPTUAL_ACTIVATION_PATCH",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 425,
+          "bounds": [
+            [
+              -0.08079350990136339,
+              0.9081124214642754,
+              -0.17009383239672918
+            ],
+            [
+              0.07941256207736533,
+              1.0445359591066778,
+              -0.10590616760327085
+            ]
+          ]
+        }
+      ],
+      "surfaceOpacity": 0.94,
+      "paused": true,
+      "reducedMotion": false,
+      "scanT": 0.35697083333383,
+      "scanRevision": 0,
+      "camera": {
+        "position": [
+          -1.59025718767926,
+          1.3119343799024197,
+          -5.292076025922804
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false
+      },
+      "bounds": {
+        "min": [
+          -0.39881572127342224,
+          0.019999997690320015,
+          -0.10774065554141998
+        ],
+        "max": [
+          0.39881572127342224,
+          1.850000023841858,
+          0.1810000091791153
+        ],
+        "projected": {
+          "top": 0.421792941928971,
+          "bottom": -0.6382566311136777,
+          "left": -0.08981395866172684,
+          "right": 0.24042808109086922
+        },
+        "heightFraction": 0.5300247865213243
+      },
+      "metrics": {
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 18,
+        "triangles": 150210,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "frames": 2397,
+      "viewport": {
+        "width": 876,
+        "height": 614,
+        "dpr": 1
+      },
+      "modelStatus": "conceptual_proxy"
+    },
+    "renderSamples": [
+      {
+        "elapsedMs": 0.3999999999996362,
+        "phase": "growth",
+        "t": 0.5292333333326703,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 159250,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 548,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.5292333333326703,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 29,
+          "positionHash": "16d8a8e0",
+          "signature": "16d8a8e0",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.36704426891128705,
+              1.2763371248311575,
+              -0.6655965625438183
+            ],
+            [
+              0.2797644446212817,
+              1.3207370702263992,
+              -0.5867411138273031
+            ],
+            [
+              -0.39286406262591644,
+              0.7269840162501293,
+              -0.3963425353793895
+            ],
+            [
+              0.5115821023074578,
+              0.6362829001045537,
+              -0.30632588819092665
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 1000.3999999999996,
+        "phase": "growth",
+        "t": 0.5847888888882256,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 159250,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 548,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.5847888888882256,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 22,
+          "positionHash": "419ea07c",
+          "signature": "419ea07c",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.6139284572326721,
+              1.7257916100101862,
+              -0.6826970727859101
+            ],
+            [
+              0.6515282980001487,
+              1.780734162088593,
+              -0.6132495974835231
+            ],
+            [
+              -0.8794992124550033,
+              0.5959474268801508,
+              -0.5617476690069472
+            ],
+            [
+              0.8828824483210477,
+              0.6299156870640339,
+              -0.5688295436766253
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 2000.5,
+        "phase": "growth",
+        "t": 0.6403555555558855,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158950,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 668,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.6403555555558855,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 17,
+          "positionHash": "fb058ec6",
+          "signature": "fb058ec6",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.784506706758638,
+              1.8290337806105321,
+              -0.7821281963681558
+            ],
+            [
+              0.739924610549076,
+              1.8316695210096845,
+              -0.7276115377600713
+            ],
+            [
+              -0.861381282737148,
+              0.7915668525341055,
+              -0.675075841855554
+            ],
+            [
+              0.8739319383805563,
+              0.7763109836100802,
+              -0.7130314645919911
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 3000.7000000000007,
+        "phase": "fixation",
+        "t": 0.6959222222218903,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158950,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 668,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.6959222222218903,
+          "phase": "fixation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 16,
+          "positionHash": "2b7200e9",
+          "signature": "2b7200e9",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7990819901045144,
+              1.808058033996856,
+              -0.8046468557727047
+            ],
+            [
+              0.7611718292394205,
+              1.8437129263144043,
+              -0.7168547916145929
+            ],
+            [
+              -0.8420003151193747,
+              0.8526064298059849,
+              -0.6813471889982438
+            ],
+            [
+              0.8323842802263608,
+              0.7843497282573695,
+              -0.7502555701556457
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 4000.2999999999993,
+        "phase": "fixation",
+        "t": 0.7514444444444436,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158830,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 788,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.7514444444444436,
+          "phase": "fixation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 12,
+          "positionHash": "d6aef815",
+          "signature": "d6aef815",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.781398966371437,
+              1.8196286876009933,
+              -0.7880049206514059
+            ],
+            [
+              0.7799376984029338,
+              1.8697155203177622,
+              -0.7013933402044502
+            ],
+            [
+              -0.8678447062040435,
+              0.8454558875440086,
+              -0.6997848475567084
+            ],
+            [
+              0.8248582618676419,
+              0.7571316327178694,
+              -0.7635756355651068
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 5000.299999999999,
+        "phase": "fixation",
+        "t": 0.8069999999999992,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158830,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 788,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.8069999999999992,
+          "phase": "fixation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 7,
+          "positionHash": "9de77dd7",
+          "signature": "9de77dd7",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7565484839059423,
+              1.8432662762550875,
+              -0.7682248891376426
+            ],
+            [
+              0.7702998004129809,
+              1.8764153191488067,
+              -0.7072084083274541
+            ],
+            [
+              -0.8885036201731475,
+              0.8229571797569336,
+              -0.7188895055987197
+            ],
+            [
+              0.8434808215600542,
+              0.7466073387821914,
+              -0.7555417148069242
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 6000.200000000001,
+        "phase": "active",
+        "t": 0.8625500000003303,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158650,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 908,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.8625500000003303,
+          "phase": "active",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 5,
+          "positionHash": "d4020fd8",
+          "signature": "d4020fd8",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7459952391293441,
+              1.8611222432343024,
+              -0.7591075053515932
+            ],
+            [
+              0.7499279353075039,
+              1.868530626223413,
+              -0.7221895006712271
+            ],
+            [
+              -0.8901970421877853,
+              0.8037609149357229,
+              -0.7262669557962308
+            ],
+            [
+              0.8645891640981674,
+              0.7512289100416316,
+              -0.7397037908582281
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 7000.200000000001,
+        "phase": "active",
+        "t": 0.9181055555558859,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158650,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 908,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.9181055555558859,
+          "phase": "active",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 5,
+          "positionHash": "d550b75f",
+          "signature": "d550b75f",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7491760135805141,
+              1.8766639189037262,
+              -0.7581406381944056
+            ],
+            [
+              0.726162911943772,
+              1.8511222905090494,
+              -0.7426397425632247
+            ],
+            [
+              -0.87668074402063,
+              0.7852600428826899,
+              -0.7248586915581162
+            ],
+            [
+              0.8824758839517013,
+              0.7654923320450429,
+              -0.719417107550158
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 8000.0999999999985,
+        "phase": "retract",
+        "t": 0.9736611111114415,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158630,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1028,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.9736611111114415,
+          "phase": "retract",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 3,
+          "positionHash": "ea0e0a17",
+          "signature": "ea0e0a17",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.3428587153239736,
+              1.1851791866598964,
+              -0.6037982958816908
+            ],
+            [
+              0.19961785336603255,
+              1.1694790633179826,
+              -0.5896006724837917
+            ],
+            [
+              -0.21224913063891931,
+              0.8485891793517664,
+              -0.4206999122781976
+            ],
+            [
+              0.3247420640876476,
+              0.729672111752028,
+              -0.2853154498620185
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 9000.099999999999,
+        "phase": "rest",
+        "t": 0.023188888889220032,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158630,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1028,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": false,
+          "t": 0.023188888889220032,
+          "phase": "rest",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 0,
+          "positionHash": "ef24b796",
+          "signature": "ef24b796",
+          "visibleAppendages": 0,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 10000,
+        "phase": "rest",
+        "t": 0.07874999999999997,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 17,
+        "triangles": 149490,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1143,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": false,
+          "t": 0.07874999999999997,
+          "phase": "rest",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 0,
+          "positionHash": "ef24b796",
+          "signature": "ef24b796",
+          "visibleAppendages": 0,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 11000.099999999999,
+        "phase": "activation",
+        "t": 0.13431111111243563,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 17,
+        "triangles": 149490,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1143,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": false,
+          "t": 0.13431111111243563,
+          "phase": "activation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 0,
+          "positionHash": "ef24b796",
+          "signature": "ef24b796",
+          "visibleAppendages": 0,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 12000.400000000001,
+        "phase": "activation",
+        "t": 0.1898944444457689,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 18,
+        "triangles": 150210,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1263,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": false,
+          "t": 0.1898944444457689,
+          "phase": "activation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 0,
+          "positionHash": "ef24b796",
+          "signature": "ef24b796",
+          "visibleAppendages": 0,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 13000,
+        "phase": "release",
+        "t": 0.24541111111144215,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 18,
+        "triangles": 150210,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1263,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.24541111111144215,
+          "phase": "release",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 10,
+          "positionHash": "5b0047b8",
+          "signature": "5b0047b8",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.028222988079986314,
+              0.9972584526361262,
+              -0.11217160803242794
+            ],
+            [
+              0.03430845213047406,
+              0.9947484890432085,
+              -0.11214499622584201
+            ],
+            [
+              -0.025965035420168852,
+              0.9566099773371718,
+              -0.11889398528801894
+            ],
+            [
+              0.021017045266400792,
+              0.9575725368903737,
+              -0.12451039859130372
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 14016.599999999999,
+        "phase": "release",
+        "t": 0.30189444444576885,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158790,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1383,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.30189444444576885,
+          "phase": "release",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 36,
+          "positionHash": "a23d9731",
+          "signature": "a23d9731",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.02451029784920808,
+              1.0009885807396157,
+              -0.11048027074531766
+            ],
+            [
+              0.04246004906768035,
+              0.9987769429252507,
+              -0.11440387495165551
+            ],
+            [
+              -0.03199329472716053,
+              0.9680949863715559,
+              -0.14056034587323873
+            ],
+            [
+              0.01189651968307997,
+              0.9806830841035489,
+              -0.15830747415219712
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 15000.2,
+        "phase": "growth",
+        "t": 0.35654444444510663,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158790,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1383,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.35654444444510663,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 47,
+          "positionHash": "add0bdc2",
+          "signature": "add0bdc2",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.02782222445350907,
+              1.0052934517714103,
+              -0.10915494008507676
+            ],
+            [
+              0.04964735834929091,
+              1.001417848429606,
+              -0.11699352918757155
+            ],
+            [
+              -0.03495193884033287,
+              0.9750499903453724,
+              -0.15356125070442106
+            ],
+            [
+              0.006359668727504475,
+              0.9926905890442342,
+              -0.17599296823684057
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 16016.599999999999,
+        "phase": "growth",
+        "t": 0.413,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 159470,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1503,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.413,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 44,
+          "positionHash": "b29b65bf",
+          "signature": "b29b65bf",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.10352561196491653,
+              1.0500952873306644,
+              -0.11328529077605665
+            ],
+            [
+              0.11512415859103166,
+              1.0144373954078285,
+              -0.16509328088846206
+            ],
+            [
+              -0.038413327219304856,
+              1.0310255759578628,
+              -0.2574957875168875
+            ],
+            [
+              -0.039467485797048764,
+              1.0611670243862519,
+              -0.28233445703796134
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 17016.7,
+        "phase": "growth",
+        "t": 0.46856666666766017,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 159470,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1503,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.46856666666766017,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 38,
+          "positionHash": "5fae0ccb",
+          "signature": "5fae0ccb",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.3259299298592066,
+              1.114168808893003,
+              -0.31703646882445363
+            ],
+            [
+              0.18499095959843231,
+              1.00144620913055,
+              -0.43264550920852896
+            ],
+            [
+              0.014089938361923198,
+              1.0848877995045065,
+              -0.44970995482748904
+            ],
+            [
+              -0.047173763573958284,
+              1.0244135860533685,
+              -0.3534574845621669
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 18016.5,
+        "phase": "growth",
+        "t": 0.5241222222232156,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 159270,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1623,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.5241222222232156,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 30,
+          "positionHash": "1927e189",
+          "signature": "1927e189",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.36051777463287443,
+              1.2423081124931188,
+              -0.6540696382714877
+            ],
+            [
+              0.2519905677871597,
+              1.2703081159995344,
+              -0.5908180616595708
+            ],
+            [
+              -0.33188375792799896,
+              0.7632310293608543,
+              -0.3982127348643135
+            ],
+            [
+              0.45338900926168324,
+              0.6613613485908912,
+              -0.29456084592577
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 19000.2,
+        "phase": "growth",
+        "t": 0.5787666666673289,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 159270,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1623,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.5787666666673289,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 22,
+          "positionHash": "0dc0d334",
+          "signature": "0dc0d334",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.5807358655566007,
+              1.6875288786505416,
+              -0.6780631684750303
+            ],
+            [
+              0.6213330397806303,
+              1.7529919453168763,
+              -0.5988057977037271
+            ],
+            [
+              -0.8569320531448512,
+              0.5853178513062209,
+              -0.537042812867948
+            ],
+            [
+              0.8681273843362538,
+              0.6139342936972614,
+              -0.5410838651321604
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 20016.7,
+        "phase": "growth",
+        "t": 0.6352499999999995,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158970,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1743,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.6352499999999995,
+          "phase": "growth",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 17,
+          "positionHash": "8b845475",
+          "signature": "8b845475",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7794702757672751,
+              1.8319223854559286,
+              -0.774134501414604
+            ],
+            [
+              0.7397274384555843,
+              1.8337387299941477,
+              -0.7234823370147206
+            ],
+            [
+              -0.8690474496266017,
+              0.7746419529512077,
+              -0.6724699529784234
+            ],
+            [
+              0.879905598284311,
+              0.7671124600352537,
+              -0.7061232761797053
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 21016.5,
+        "phase": "fixation",
+        "t": 0.6907833333346574,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158970,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1743,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.6907833333346574,
+          "phase": "fixation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 16,
+          "positionHash": "bec42d64",
+          "signature": "bec42d64",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7992330441619815,
+              1.8083093940607244,
+              -0.8051894393495937
+            ],
+            [
+              0.7583171842387608,
+              1.840988169496674,
+              -0.7191154361218458
+            ],
+            [
+              -0.8406077621307487,
+              0.851891895625214,
+              -0.6805420497131558
+            ],
+            [
+              0.8346332971904129,
+              0.7869530233226155,
+              -0.7480884361116772
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 22016.300000000003,
+        "phase": "fixation",
+        "t": 0.7463166666676596,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158850,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.7463166666676596,
+          "phase": "fixation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 12,
+          "positionHash": "0548c44d",
+          "signature": "0548c44d",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7838807894972603,
+              1.817672930476107,
+              -0.7900622678888668
+            ],
+            [
+              0.7794529264905083,
+              1.867947086022916,
+              -0.7019034582754645
+            ],
+            [
+              -0.8651520534265498,
+              0.8471110332574522,
+              -0.6976682542011734
+            ],
+            [
+              0.8241719860510265,
+              0.7591814208014944,
+              -0.7633113428176446
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 23000.1,
+        "phase": "fixation",
+        "t": 0.8009833333343266,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158850,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.8009833333343266,
+          "phase": "fixation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 7,
+          "positionHash": "66630ab9",
+          "signature": "66630ab9",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7586170306408644,
+              1.8408703999363967,
+              -0.7698572511513261
+            ],
+            [
+              0.7722696010154809,
+              1.8766919640835886,
+              -0.7058396394207253
+            ],
+            [
+              -0.8872917492567721,
+              0.8254000822074719,
+              -0.7174161151033418
+            ],
+            [
+              0.8409839724289159,
+              0.7467459562949954,
+              -0.7570816061894455
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 24016.4,
+        "phase": "active",
+        "t": 0.8574500000013243,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158670,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.8574500000013243,
+          "phase": "active",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 5,
+          "positionHash": "9f925f1f",
+          "signature": "9f925f1f",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7465647468281504,
+              1.8595837666968698,
+              -0.7597223028689394
+            ],
+            [
+              0.751885764933191,
+              1.8694120823971168,
+              -0.7207144391068264
+            ],
+            [
+              -0.8904790040717537,
+              0.8054492278483457,
+              -0.7258234748359267
+            ],
+            [
+              0.8627539610608979,
+              0.750634445660102,
+              -0.7412303591753412
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 25016.800000000003,
+        "phase": "active",
+        "t": 0.9130222222225531,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158670,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.9130222222225531,
+          "phase": "active",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 5,
+          "positionHash": "895b5a52",
+          "signature": "895b5a52",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.7476662142834472,
+              1.8758763876730717,
+              -0.7573406924666155
+            ],
+            [
+              0.7280842398671865,
+              1.8535430915963573,
+              -0.7406276616776538
+            ],
+            [
+              -0.8790261381334353,
+              0.7864590796093631,
+              -0.7258923243252305
+            ],
+            [
+              0.8815745792828494,
+              0.7632753520009183,
+              -0.7213091402891421
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 26016.199999999997,
+        "phase": "retract",
+        "t": 0.9685388888898823,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158630,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": true,
+          "t": 0.9685388888898823,
+          "phase": "retract",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 3,
+          "positionHash": "321c5dcb",
+          "signature": "321c5dcb",
+          "visibleAppendages": 4,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.40799279877986827,
+              1.4221166715230515,
+              -0.6732027781418681
+            ],
+            [
+              0.38360781284819734,
+              1.5039230437412732,
+              -0.5761213277655494
+            ],
+            [
+              -0.6020887035590603,
+              0.625283745610377,
+              -0.42348373202240014
+            ],
+            [
+              0.704859247343547,
+              0.5823086847225438,
+              -0.3693300692374456
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 27016.1,
+        "phase": "retract",
+        "t": 1,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 23,
+        "triangles": 158630,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": false,
+          "t": 1,
+          "phase": "retract",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 0,
+          "positionHash": "ef24b796",
+          "signature": "ef24b796",
+          "visibleAppendages": 0,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 28016.5,
+        "phase": "rest",
+        "t": 0.05557777777810889,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 17,
+        "triangles": 149490,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": false,
+          "t": 0.05557777777810889,
+          "phase": "rest",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 0,
+          "positionHash": "ef24b796",
+          "signature": "ef24b796",
+          "visibleAppendages": 0,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 29016.1,
+        "phase": "activation",
+        "t": 0.1111222222232156,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 17,
+        "triangles": 149490,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": false,
+          "t": 0.1111222222232156,
+          "phase": "activation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 0,
+          "positionHash": "ef24b796",
+          "signature": "ef24b796",
+          "visibleAppendages": 0,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      },
+      {
+        "elapsedMs": 30015.9,
+        "phase": "activation",
+        "t": 0.16667222222354677,
+        "fpsP50": 60,
+        "fpsP10": 58,
+        "calls": 18,
+        "triangles": 150210,
+        "geometries": 19,
+        "textures": 3,
+        "samples": 1800,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "adapter": {
+          "representation": "procedural_proxy",
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "disposed": false,
+          "visible": false,
+          "t": 0.16667222222354677,
+          "phase": "activation",
+          "appendageCount": 4,
+          "geometryCount": 5,
+          "materialCount": 2,
+          "vertexCount": 4228,
+          "triangleCount": 8320,
+          "particleCapacity": 48,
+          "particleCount": 0,
+          "positionHash": "ef24b796",
+          "signature": "ef24b796",
+          "visibleAppendages": 0,
+          "resources": {
+            "geometries": 5,
+            "materials": 2,
+            "textures": 0,
+            "allocatedVertices": 4168,
+            "allocatedParticles": 48
+          },
+          "root": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "roots": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "tips": [
+            [
+              -0.034,
+              0.998,
+              -0.112
+            ],
+            [
+              0.034,
+              0.994,
+              -0.112
+            ],
+            [
+              -0.024,
+              0.953,
+              -0.112
+            ],
+            [
+              0.024,
+              0.949,
+              -0.112
+            ]
+          ],
+          "resourceIds": {
+            "geometry": [
+              "0e0cf32d-1733-44e1-92fa-f3b11a0a6744",
+              "37db1776-886b-4964-a878-ec4a19fb9e21",
+              "46de2498-aed0-4157-bb42-331db5bdde33",
+              "b2bbea48-a3b9-4152-9c96-427364b44432",
+              "5d02aac5-3f9e-4238-a210-546ac2d93056"
+            ],
+            "material": [
+              "fe074355-4d0b-4887-b5d0-f43233742ec6",
+              "7fb724fc-c1a7-4034-bba4-607891858524"
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    },
+    "documentVisibility": "visible"
+  },
+  "memory": {
+    "before": {
+      "Timestamp": 170020.917748,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 8,
+      "Frames": 6,
+      "JSEventListeners": 676,
+      "LayoutObjects": 578,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 842,
+      "Resources": 8,
+      "ContextLifecycleStateObservers": 17,
+      "V8PerContextDatas": 4,
+      "WorkerGlobalScopes": 0,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 8,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 2,
+      "ArrayBufferContents": 501,
+      "LayoutCount": 49,
+      "RecalcStyleCount": 91,
+      "LayoutDuration": 0.162364,
+      "RecalcStyleDuration": 0.019572,
+      "DevToolsCommandDuration": 0.032612,
+      "ScriptDuration": 2.635366,
+      "V8CompileDuration": 0,
+      "TaskDuration": 3.252709,
+      "TaskOtherDuration": 0.402795,
+      "ThreadTime": 2.17758,
+      "ProcessTime": 3.20898,
+      "JSHeapUsedSize": 12716132,
+      "JSHeapTotalSize": 21635072,
+      "FirstMeaningfulPaint": 170009.670266,
+      "DomContentLoaded": 170009.327806,
+      "NavigationStart": 170009.045906
+    },
+    "after": {
+      "Timestamp": 170050.979125,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 2,
+      "Frames": 2,
+      "JSEventListeners": 565,
+      "LayoutObjects": 415,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 671,
+      "Resources": 1,
+      "ContextLifecycleStateObservers": 9,
+      "V8PerContextDatas": 2,
+      "WorkerGlobalScopes": 0,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 2,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 0,
+      "ArrayBufferContents": 82,
+      "LayoutCount": 169,
+      "RecalcStyleCount": 191,
+      "LayoutDuration": 0.228611,
+      "RecalcStyleDuration": 0.03303,
+      "DevToolsCommandDuration": 0.033544,
+      "ScriptDuration": 6.554065,
+      "V8CompileDuration": 0,
+      "TaskDuration": 7.984565,
+      "TaskOtherDuration": 1.135315,
+      "ThreadTime": 6.807759,
+      "ProcessTime": 9.286716,
+      "JSHeapUsedSize": 10219824,
+      "JSHeapTotalSize": 27926528,
+      "FirstMeaningfulPaint": 170009.670266,
+      "DomContentLoaded": 170009.327806,
+      "NavigationStart": 170009.045906
+    },
+    "note": "JS/process and renderer counters do not estimate GPU VRAM."
+  },
+  "budgets": {
+    "interactionUnder5s": true,
+    "fpsP50AtLeast50": true,
+    "fpsP10AtLeast30": true,
+    "drawsUnder150": true,
+    "measuredInitialPayloadUnder8MiB": true,
+    "bodyPlusManifestUnder8MiB": true
+  },
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "failedRequests": [],
+    "httpErrors": []
+  },
+  "limitations": [
+    "Single run for the declared profile on this workstation.",
+    "Emulated mobile layout does not certify physical mobile FPS.",
+    "Procedural art and renderer counters do not establish final GLB/anatomical fidelity or universal leak absence."
+  ]
+}

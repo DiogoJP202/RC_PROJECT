@@ -1,18 +1,25 @@
 # GHOUL ATLAS — Retomar em outro computador
 
+> **Checkpoint atual autorizado, 25/10/2026:** G3A/G3A.1 aprovados pelo usuário como **P1 técnico e visual com ressalvas**, com consolidação/publicação em `main` autorizadas. Arte final P2, G2B e G3B continuam pendentes; não há autorização de deploy. Após publicar, confirmar o SHA remoto e a árvore limpa no registro de encerramento. O próximo trabalho planejado é **G4A: simulação de circulação e transporte visual RC**, ainda não implementado; G4 completo permanece pendente. As notas abaixo sobre trabalho exclusivamente local descrevem o período anterior a esta autorização e não substituem a conferência do Git atual.
+
+> **G3A.1 local, 24/10/2026:** preservar também o refinamento visual e suas evidências em [G3A1_REFINEMENT](G3A1_REFINEMENT.md) e [G3A1-review](../artifacts/gates/G3A1-review/INDEX.md). Transporte nominal de 21 s, retração de 3,4 s; sampler independente com referência de 18 s. Ainda sem commit/push/deploy e com aprovação artística humana pendente; um clone remoto não recupera essas alterações locais. Nenhuma ferramenta/dependência nova foi instalada nesta execução.
+
+> **Atualização local G3A, 24/10/2026:** há código e evidências G3A ainda sem commit/push sobre o checkpoint `84e6e1f36b8558d225ae4baf82a8f79ddb35c124` de `main`. Um clone remoto contém o checkpoint publicado, sem estas alterações locais até uma publicação posterior autorizada. Preserve a working tree ao transferir este trabalho. Leia [G3A_ACCEPTANCE](G3A_ACCEPTANCE.md) e [G3A_ENGINE_DESIGN](G3A_ENGINE_DESIGN.md). G0/G1/G2A preservados; G2B/G3B/G4 e arte final de G3 pendentes. Os registros de migração abaixo descrevem o checkpoint anterior a G3A.
+
 > Baseline de código verificada na retomada de **24/10/2026**: G2A está publicado em `main`, no commit [`0e53c1e31c366a05642501bef312d0fe5d5575b6`](https://github.com/DiogoJP202/RC_PROJECT/commit/0e53c1e31c366a05642501bef312d0fe5d5575b6). Naquele momento, `git fetch` e `git ls-remote origin main` confirmaram `HEAD = origin/main = GitHub main`; a árvore estava limpa antes das atualizações documentais. O checkpoint pós-migração consolida essas notas e evidências sem alterar o código; seu HEAD documental pode ser posterior à baseline. Veja [aceite G2A](G2A_ACCEPTANCE.md), [contrato Blender → Web](BLENDER_WEB_INTEGRATION.md) e [log](IMPLEMENTATION_LOG.md). Os registros G0/G1 abaixo são históricos. Não refaça G0, G1 ou G2A; G2B/G3 continuam pendentes.
 
-Comece por `AGENTS.md`, depois [PROJECT_HANDOFF](PROJECT_HANDOFF.md), este guia e [README](../README.md). Última fase concluída e publicada: **G2A**, com infraestrutura GLB e fixtures sintéticas; anatomia continua proxy P0 e interação P1. **G2B e G3 não foram iniciados.** A direção indicada pelo usuário para o próximo trabalho é preparar o motor de manifestação Rinkaku sem depender dos assets definitivos do Blender. Essa preparação fica para outra execução; o ingresso artístico [G2B](../prompts/G2B_ASSETS_DEFINITIVOS.md) continua pendente do pacote/revisão.
+Comece por `AGENTS.md`, depois [PROJECT_HANDOFF](PROJECT_HANDOFF.md), este guia e [README](../README.md). G0/G1/G2A estão entregues; o motor e refinamento G3A/G3A.1 receberam aprovação P1 técnica/visual com ressalvas e autorização de checkpoint em `main`. Anatomia continua proxy P0 e arte final P2 permanece pendente. G2B/G3B e G4 não foram implementados; o próximo trabalho planejado é G4A. Confirme o SHA remoto antes de transferir para garantir que o clone inclui o checkpoint G3A/G3A.1. O ingresso artístico [G2B](../prompts/G2B_ASSETS_DEFINITIVOS.md) continua pendente do pacote/revisão.
 
 ## Identidade do checkpoint
 
+- Checkpoint G3A/G3A.1: aprovação P1 com ressalvas e publicação em `main` autorizadas em 25/10/2026; SHA final a confirmar no Git e no registro de encerramento. Base anterior: `84e6e1f36b8558d225ae4baf82a8f79ddb35c124`.
 - Repositório privado: [DiogoJP202/RC_PROJECT](https://github.com/DiogoJP202/RC_PROJECT).
 - Branch: `main`.
 - Baseline de código publicada e validada em 24/10/2026, incluindo G2A: [`0e53c1e31c366a05642501bef312d0fe5d5575b6`](https://github.com/DiogoJP202/RC_PROJECT/commit/0e53c1e31c366a05642501bef312d0fe5d5575b6); commits documentais posteriores não substituem esta identidade do código testado.
 - Referência imutável da baseline G0/G1: tag `ghoul-atlas-g1-checkpoint`.
 - SHA da baseline: [`8fac8f7bba9a6891d5306cc14d6e86abbd4ea699`](https://github.com/DiogoJP202/RC_PROJECT/commit/8fac8f7bba9a6891d5306cc14d6e86abbd4ea699).
 
-A tag identifica somente o código G0/G1 validado naquele checkpoint; ela não representa o estado G2A atual. `main` contém G2A e a documentação de transferência. Confira sempre o HEAD remoto com os comandos abaixo; esta identificação não substitui executar os checks na máquina nova.
+A tag identifica somente o código G0/G1 validado naquele checkpoint; ela não representa G2A nem G3A/G3A.1. O novo checkpoint deve acrescentar G3A/G3A.1 a `main`, preservando G2A e a documentação de transferência. Confira sempre o HEAD remoto com os comandos abaixo; esta identificação não substitui executar os checks na máquina nova.
 
 ## Clone, instalação e inicialização
 
@@ -148,6 +155,6 @@ Auditorias JSON/TXT brutas de `artifacts/gates/` e a cópia local `IMPLEMENTATIO
 
 ## Próxima execução
 
-A recomendação anterior de seguir diretamente para [G2B_ASSETS_DEFINITIVOS](../prompts/G2B_ASSETS_DEFINITIVOS.md) fica preservada como histórico da retomada. A orientação atual é preparar o motor Rinkaku na próxima execução, de forma independente dos assets Blender definitivos. Este checkpoint não implementa essa preparação nem G2B/G3. O prompt [G2A_INTEGRACAO_GLB](../prompts/G2A_INTEGRACAO_GLB.md) também é histórico de uma fase entregue; não é uma instrução para reexecutá-la. G2B continua dependente de arte/licenças/revisão e G3/G4 permanecem futuros.
+A recomendação anterior de seguir diretamente para [G2B_ASSETS_DEFINITIVOS](../prompts/G2B_ASSETS_DEFINITIVOS.md) e a orientação posterior de preparar o motor Rinkaku ficam preservadas como histórico da retomada. Essa preparação foi implementada como G3A/G3A.1 e aprovada em P1 com ressalvas; consulte o [aceite](G3A_ACCEPTANCE.md) e o [refinamento](G3A1_REFINEMENT.md) antes de iniciar outra fase. O próximo trabalho planejado é **G4A: simulação de circulação e transporte visual RC**, ainda não implementado. O prompt [G2A_INTEGRACAO_GLB](../prompts/G2A_INTEGRACAO_GLB.md) é histórico de uma fase entregue; não é uma instrução para reexecutá-la. G2B continua dependente de arte/licenças/revisão; G3B, arte final P2 de G3 e G4 completo permanecem futuros. A consolidação deste checkpoint não autoriza implementá-los.
 
 Preserve e evolua a implementação existente: observatório/UI, seis IDs, quatro camadas/isolar, picking, câmera, store/contexto, scan, catálogo v2, validador, fallbacks, acessibilidade e testes. Não reinicialize scaffold, não trate o roadmap G0 como fotografia atual e não reimplemente a aplicação. Sem modelo final, mantenha `PROXY / CONCEPTUAL MODEL`; reconstrução própria não se torna ciência oficial com uma malha mais detalhada.

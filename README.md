@@ -1,8 +1,12 @@
 # GHOUL ATLAS — Observatório Anatômico 3D
 
-Laboratório anatômico ficcional em PT-BR inspirado em *Tokyo Ghoul*, com interface original, seleção 3D real e evidências por afirmação. A base G1 agora recebe a **infraestrutura G2A**: registro GLB aprovado, instâncias/cache, bindings estáveis, rig/sockets e fallback para proxies. As seis estruturas continuam autorais provisórias, sempre `PROXY / CONCEPTUAL MODEL`; as duas fixtures GLB não são anatomia. Interação/apresentação P1; anatomia P0; nenhum P2 declarado. Micro/Comparar são estados informativos; kagune, circulação RC e fisiologia continuam pendentes. Resultados e limites em [G2A_ACCEPTANCE](docs/G2A_ACCEPTANCE.md).
+Laboratório anatômico ficcional em PT-BR inspirado em *Tokyo Ghoul*, com interface original, seleção 3D real e evidências por afirmação. A base G1 recebe a **infraestrutura G2A**: registro GLB aprovado, instâncias/cache, bindings estáveis, rig/sockets e fallback para proxies. **G3A** acrescenta um motor determinístico de manifestação Rinkaku e uma representação procedural original, com timeline reversível, independente dos modelos definitivos do Blender. **G3A.1** refina a implantação lombar, a leitura das fases e o enquadramento móvel; em **25/10/2026**, o usuário aprovou o checkpoint **P1 técnico e visual com ressalvas**. A arte final P2 continua pendente. As estruturas continuam provisórias, sempre `PROXY / CONCEPTUAL MODEL`; as duas fixtures GLB não são anatomia. Interação/apresentação P1; anatomia P0; nenhum P2 declarado. Micro/Comparar, circulação RC e fisiologia continuam pendentes. Resultados e limites em [G2A_ACCEPTANCE](docs/G2A_ACCEPTANCE.md), [G3A_ACCEPTANCE](docs/G3A_ACCEPTANCE.md) e [G3A1_REFINEMENT](docs/G3A1_REFINEMENT.md).
 
-Para retomar, leia [AGENTS.md](AGENTS.md), [PROJECT_HANDOFF](docs/PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](docs/RESUME_ON_NEW_PC.md). A **baseline de código G2A validada em 24/10/2026** é [`0e53c1e31c366a05642501bef312d0fe5d5575b6`](https://github.com/DiogoJP202/RC_PROJECT/commit/0e53c1e31c366a05642501bef312d0fe5d5575b6). Antes das correções documentais, `git fetch` e `git ls-remote origin main` confirmaram `HEAD = origin/main = GitHub main` nesse SHA e a árvore limpa. A consolidação posterior de documentação/evidências não altera essa baseline de código; o HEAD de `main` deve ser conferido no Git. G0, G1 e G2A estão concluídos; **G2B/G3 permanecem pendentes**. Após este checkpoint, o próximo trabalho indicado pelo usuário é a preparação do motor de manifestação Rinkaku, sem depender dos assets definitivos do Blender, em sessão futura. A validação desta máquina e a consolidação estão no [log](docs/IMPLEMENTATION_LOG.md). Não há deploy decorrente desta tarefa.
+Para retomar, leia [AGENTS.md](AGENTS.md), [PROJECT_HANDOFF](docs/PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](docs/RESUME_ON_NEW_PC.md). G0/G1/G2A estão concluídos; G3A e seu refinamento G3A.1 foram desenvolvidos sobre `main` no checkpoint anterior `84e6e1f36b8558d225ae4baf82a8f79ddb35c124`. A consolidação e publicação do checkpoint em `main` foram autorizadas em 25/10/2026; o SHA resultante deve ser confirmado no Git e no registro de encerramento. Isso não autoriza deploy. **G2B, G3B, fechamento artístico P2 de G3 e G4 continuam pendentes.** A baseline histórica de código G2A validada em 24/10/2026 é [`0e53c1e31c366a05642501bef312d0fe5d5575b6`](https://github.com/DiogoJP202/RC_PROJECT/commit/0e53c1e31c366a05642501bef312d0fe5d5575b6); o checkpoint posterior consolidou documentação/evidências. A validação da máquina e as decisões G3A estão no [log](docs/IMPLEMENTATION_LOG.md). Consulte o estado atual no Git antes de continuar.
+
+O próximo trabalho planejado é **G4A: simulação de circulação e transporte visual RC**, preservando a classificação hipotética do transporte ficcional. G4A ainda não foi implementado nem é iniciado pela consolidação deste checkpoint.
+
+O [registro do checkpoint G3A/G3A.1](docs/G3A_CHECKPOINT.md) separa o aceite P1 da arte P2 e reúne as verificações finais:139 unidades,22 Python,catálogo,build e44 E2E aprovados, incluindo a correção do último trecho da retração. Os pacotes de revisão anteriores continuam preservados como histórico.
 
 ## Instalação reproduzível
 
@@ -94,7 +98,7 @@ contracts/               esquema v2, seed v1 e tokens iniciais
 tools/                   gate Python, regressões e seleção de runtime
 tests/e2e/               jornadas de navegador e perfil de produção
 docs/, research/, prompts/ especificações, duas pesquisas reais e gates
-artifacts/gates/         capturas G1/G2A próprias versionadas
+artifacts/gates/         capturas G1/G2A históricas e evidências próprias G3A
 artifacts/checkpoint/    relatórios saneados e verificações do backup
 references/private/     referências de terceiros locais, excluídas do Git
 ```
@@ -120,6 +124,24 @@ Remove-Item Env:ATLAS_PROFILE_URL
 
 Esses comandos exigem preview ativo em 4173. O segundo perfil distingue transferência do boot + carga explícita da fixture, e registra latência de ativação separada da interação inicial. Mobile físico continua pendente.
 
+## Manifestação Rinkaku — G3A e refinamento G3A.1
+
+No modo Corpo, escolha **Manifestar**. A timeline oferece iniciar/pausar/retomar, reverso, passos, scrub absoluto, reset e seleção das sete fases. Retomar conserva a direção; reset retorna a `t=0`; `t=1` termina recolhido. Alterne 1–4 apêndices, partículas e efeitos Padrão/Econômico. Use Posterior, Lateral, Oblíqua ou Focar raiz lombar. **Inspecionar** devolve o painel anatômico, com seleção e camadas preservadas. O scan demonstrativo G1 fica pausado durante a manifestação.
+
+No G3A.1, a reprodução automática completa leva **21 s**, com **3,4 s de retração**. Um mapa monotônico e invertível converte segundos de reprodução em progresso normalizado; o sampler puro conserva seus sete intervalos e a referência de 18 s do movimento secundário. Scrub continua instantâneo e independente desse relógio. Tempos, forma, crescimento e fixação são escolhas artísticas; não são tempos biológicos, fator RC ou mecanismo canônico. Movimento reduzido e ausência de WebGL preservam controle manual e leitura textual, com reprodução automática desabilitada. O adaptador usa o socket lombar do lease GLB quando disponível, ou o anchor do proxy; nenhum asset Blender final é necessário. [Design do motor](docs/G3A_ENGINE_DESIGN.md), [contrato futuro Blender](docs/G3A_BLENDER_ANIMATION_CONTRACT.md) e [aceite/evidências](docs/G3A_ACCEPTANCE.md).
+
+A revisão G3A.1 ajusta a superfície de implantação e a distribuição das raízes, a expressão geométrica progressiva das fases, a vista oblíqua e a ocupação da cena em mobile. Preserva a fronteira do adaptador e a restauração do observatório. Decisões e limitações ficam em [G3A1_REFINEMENT](docs/G3A1_REFINEMENT.md); comparações reais antes/depois, sequências e parecer crítico ficam no [novo pacote visual](artifacts/gates/G3A1-review/INDEX.md). O usuário aprovou a experiência P1 com ressalvas; bordas/facetas, silhueta estilizada e arte final P2 continuam registradas como limites. O [pacote G3A anterior](artifacts/gates/G3A-review/INDEX.md) permanece histórico.
+
+Para medir este módulo, com build e preview em 4173 ativos:
+
+```powershell
+node tests/e2e/g3a1-production-profile.js
+node tests/e2e/g3a1-production-profile.js --quality=low
+node tests/e2e/g3a1-production-profile.js --mobile
+```
+
+Execute os perfis sequencialmente, sem outro teste/cena 3D concorrente. Não substituem medição em celular físico nem revisão artística/anatômica.
+
 ## Preservação e limitações
 
 As duas pesquisas Markdown são versionadas no repositório privado para continuidade; hashes em [RESEARCH_INDEX](docs/RESEARCH_INDEX.md). Não entram no build web nem concedem licença sobre material citado. Documentos G0/G1 conservam contexto histórico; planos anteriores não significam funcionalidades entregues. `FILE_MANIFEST_SHA256.txt` é o manifesto original do pacote, não um checksum atualizado do projeto.
@@ -128,4 +150,4 @@ Capturas próprias estão em `artifacts/gates/`. JSON/TXT originais locais foram
 
 No Windows, `python.exe` pode ser alias da Microsoft Store. Instale Python 3.10+ ou defina `ATLAS_PYTHON`; os scripts procuram `python`, `python3`, `py -3` e opcionalmente o runtime do Codex, sem exigir este último. Se a política bloquear `npm.ps1`/`npx.ps1`, use `npm.cmd`/`npx.cmd` sem mudar a política global. Portas 5173/4173 devem estar livres. Instale o Chromium correspondente para E2E; o fallback Chrome/cache do Windows pode variar e não garante WebGL sem GPU/driver funcional.
 
-Limites conhecidos: anatomia P0, revisão artística e mobile físico pendentes; aviso de chunk lazy da cena e `THREE.Clock` da dependência R3F. [Aceite G1](docs/G1_ACCEPTANCE.md), [aceite G2A](docs/G2A_ACCEPTANCE.md) e [log](docs/IMPLEMENTATION_LOG.md) distinguem medições e pendências. Não execute os prompts antigos automaticamente. Este checkpoint consolida ambiente e Git; a preparação do motor Rinkaku será uma sessão futura, e G2B continua dependente do pacote artístico licenciado/revisado.
+Limites conhecidos: anatomia P0, arte final P2 e mobile físico pendentes; experiência G3A.1 P1 aprovada com ressalvas, cena carregada em chunk lazy e aviso `THREE.Clock` da dependência R3F. [Aceite G1](docs/G1_ACCEPTANCE.md), [aceite G2A](docs/G2A_ACCEPTANCE.md), [aceite G3A](docs/G3A_ACCEPTANCE.md) e [log](docs/IMPLEMENTATION_LOG.md) distinguem medições e pendências. Não execute os prompts antigos automaticamente. G2B continua dependente do pacote artístico licenciado/revisado; o demo procedural não encerra G3.
