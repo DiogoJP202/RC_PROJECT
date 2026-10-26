@@ -1,0 +1,13 @@
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test --grep real terminal playback|Micro preserves the rigged --reporter=list,json
+
+
+Running 2 tests using 1 worker
+
+(node:18672) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › tests\e2e\g3a-checkpoint.spec.ts:75:1 › real terminal playback stops at one, keeps replay resources stable and releases them on exit (13.4s)
+  ok 2 [chromium] › tests\e2e\vascular.spec.ts:138:1 › Micro preserves the rigged GLB lease, sampled socket, isolation and opacity without exposing the hidden asset bench (3.0s)
+
+  2 passed (18.7s)

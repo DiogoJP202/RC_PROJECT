@@ -1,0 +1,729 @@
+{
+  "gate": "G4A.1",
+  "generatedAt": "2026-10-25T20:56:43.311Z",
+  "rows": [
+    {
+      "mode": "flow",
+      "count": 100,
+      "before": {
+        "file": "artifacts/g4a1/production-before-flow-100.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523812105,
+        "sampleMs": 30009.90000000596,
+        "frames": 1800,
+        "bodyInteractiveMs": 1257.4000000059605,
+        "microDefault500ReadyMs": 1427.199999988079,
+        "payloadBytes": 391985,
+        "observables": {
+          "drawCalls": {
+            "min": 3,
+            "max": 3
+          },
+          "triangles": {
+            "min": 56032,
+            "max": 56032
+          },
+          "geometries": {
+            "min": 3,
+            "max": 3
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "after": {
+        "file": "artifacts/g4a1/production-after-flow-100.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.17159763315647,
+        "sampleMs": 30018.79999998212,
+        "frames": 1801,
+        "bodyInteractiveMs": 1190.2999999821186,
+        "microDefault500ReadyMs": 1444.699999988079,
+        "payloadBytes": 394999,
+        "observables": {
+          "drawCalls": {
+            "min": 3,
+            "max": 3
+          },
+          "triangles": {
+            "min": 56032,
+            "max": 56032
+          },
+          "geometries": {
+            "min": 3,
+            "max": 3
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "difference": {
+        "fpsP50": 0,
+        "fpsP10": -0.3522118906556315,
+        "payloadBytes": 3014
+      },
+      "passedOriginalBudgets": true
+    },
+    {
+      "mode": "flow",
+      "count": 500,
+      "before": {
+        "file": "artifacts/g4a1/production-before-flow-500.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523812105,
+        "sampleMs": 30007.5,
+        "frames": 1800,
+        "bodyInteractiveMs": 1301.0999999940395,
+        "microDefault500ReadyMs": 1421.199999988079,
+        "payloadBytes": 391985,
+        "observables": {
+          "drawCalls": {
+            "min": 3,
+            "max": 3
+          },
+          "triangles": {
+            "min": 214432,
+            "max": 214432
+          },
+          "geometries": {
+            "min": 3,
+            "max": 3
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "after": {
+        "file": "artifacts/g4a1/production-after-flow-500.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "sampleMs": 30009,
+        "frames": 1800,
+        "bodyInteractiveMs": 1257,
+        "microDefault500ReadyMs": 1417.199999988079,
+        "payloadBytes": 394999,
+        "observables": {
+          "drawCalls": {
+            "min": 3,
+            "max": 3
+          },
+          "triangles": {
+            "min": 214432,
+            "max": 214432
+          },
+          "geometries": {
+            "min": 3,
+            "max": 3
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "difference": {
+        "fpsP50": 0,
+        "fpsP10": -1.2889245226688217e-11,
+        "payloadBytes": 3014
+      },
+      "passedOriginalBudgets": true
+    },
+    {
+      "mode": "flow",
+      "count": 2000,
+      "before": {
+        "file": "artifacts/g4a1/production-before-flow-2000.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523812105,
+        "sampleMs": 30009.59999999404,
+        "frames": 1800,
+        "bodyInteractiveMs": 1286.800000011921,
+        "microDefault500ReadyMs": 1432.7999999821186,
+        "payloadBytes": 391985,
+        "observables": {
+          "drawCalls": {
+            "min": 3,
+            "max": 3
+          },
+          "triangles": {
+            "min": 808384,
+            "max": 808384
+          },
+          "geometries": {
+            "min": 3,
+            "max": 3
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "after": {
+        "file": "artifacts/g4a1/production-after-flow-2000.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "sampleMs": 30013.59999999404,
+        "frames": 1800,
+        "bodyInteractiveMs": 1249.800000011921,
+        "microDefault500ReadyMs": 1425.0999999940395,
+        "payloadBytes": 394999,
+        "observables": {
+          "drawCalls": {
+            "min": 3,
+            "max": 3
+          },
+          "triangles": {
+            "min": 808384,
+            "max": 808384
+          },
+          "geometries": {
+            "min": 3,
+            "max": 3
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "difference": {
+        "fpsP50": 0,
+        "fpsP10": -1.2889245226688217e-11,
+        "payloadBytes": 3014
+      },
+      "passedOriginalBudgets": true
+    },
+    {
+      "mode": "tracking",
+      "count": 100,
+      "before": {
+        "file": "artifacts/g4a1/production-before-tracking-100.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "sampleMs": 30012.70000001788,
+        "frames": 1800,
+        "bodyInteractiveMs": 1294.7000000178814,
+        "microDefault500ReadyMs": 1454.2000000178814,
+        "payloadBytes": 391985,
+        "observables": {
+          "drawCalls": {
+            "min": 3,
+            "max": 3
+          },
+          "triangles": {
+            "min": 56032,
+            "max": 56032
+          },
+          "geometries": {
+            "min": 3,
+            "max": 3
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "after": {
+        "file": "artifacts/g4a1/production-after-tracking-100.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "sampleMs": 30011.30000001192,
+        "frames": 1800,
+        "bodyInteractiveMs": 1191.300000011921,
+        "microDefault500ReadyMs": 1422.4000000059605,
+        "payloadBytes": 394999,
+        "observables": {
+          "drawCalls": {
+            "min": 4,
+            "max": 4
+          },
+          "triangles": {
+            "min": 56032,
+            "max": 56032
+          },
+          "geometries": {
+            "min": 4,
+            "max": 4
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "difference": {
+        "fpsP50": 0,
+        "fpsP10": 0,
+        "payloadBytes": 3014
+      },
+      "passedOriginalBudgets": true
+    },
+    {
+      "mode": "tracking",
+      "count": 500,
+      "before": {
+        "file": "artifacts/g4a1/production-before-tracking-500.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523824994,
+        "sampleMs": 30009.19999998808,
+        "frames": 1800,
+        "bodyInteractiveMs": 1297,
+        "microDefault500ReadyMs": 1425.5999999940395,
+        "payloadBytes": 391985,
+        "observables": {
+          "drawCalls": {
+            "min": 3,
+            "max": 3
+          },
+          "triangles": {
+            "min": 214432,
+            "max": 214432
+          },
+          "geometries": {
+            "min": 3,
+            "max": 3
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "after": {
+        "file": "artifacts/g4a1/production-after-tracking-500.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.17159763314374,
+        "sampleMs": 30012.399999976158,
+        "frames": 1800,
+        "bodyInteractiveMs": 1160.4000000059605,
+        "microDefault500ReadyMs": 1437.3999999761581,
+        "payloadBytes": 394999,
+        "observables": {
+          "drawCalls": {
+            "min": 4,
+            "max": 4
+          },
+          "triangles": {
+            "min": 214432,
+            "max": 214432
+          },
+          "geometries": {
+            "min": 4,
+            "max": 4
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "difference": {
+        "fpsP50": 0,
+        "fpsP10": -0.3522118906812537,
+        "payloadBytes": 3014
+      },
+      "passedOriginalBudgets": true
+    },
+    {
+      "mode": "tracking",
+      "count": 2000,
+      "before": {
+        "file": "artifacts/g4a1/production-before-tracking-2000.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "sampleMs": 30014.69999998808,
+        "frames": 1800,
+        "bodyInteractiveMs": 1262.7000000178814,
+        "microDefault500ReadyMs": 1425.5999999940395,
+        "payloadBytes": 391985,
+        "observables": {
+          "drawCalls": {
+            "min": 3,
+            "max": 3
+          },
+          "triangles": {
+            "min": 808384,
+            "max": 808384
+          },
+          "geometries": {
+            "min": 3,
+            "max": 3
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "after": {
+        "file": "artifacts/g4a1/production-after-tracking-2000.json",
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "sampleMs": 30005.40000000596,
+        "frames": 1800,
+        "bodyInteractiveMs": 1231,
+        "microDefault500ReadyMs": 1417.5999999940395,
+        "payloadBytes": 394999,
+        "observables": {
+          "drawCalls": {
+            "min": 4,
+            "max": 4
+          },
+          "triangles": {
+            "min": 808384,
+            "max": 808384
+          },
+          "geometries": {
+            "min": 4,
+            "max": 4
+          },
+          "textures": {
+            "min": 2,
+            "max": 2
+          },
+          "resourceIdsStable": true,
+          "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+        },
+        "budgets": {
+          "bodyInteractiveUnder5s": true,
+          "microReadyUnder5s": true,
+          "fpsP50AtLeast50": true,
+          "fpsP10AtLeast30": true,
+          "drawsUnder150": true,
+          "initialPayloadUnder8MiB": true,
+          "bodyPlusMicroUnder8MiB": true,
+          "resourceIdsStable": true,
+          "noSceneFailure": true
+        },
+        "runtimeErrors": 0,
+        "environment": {
+          "os": "win32 10.0.26200 x64",
+          "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+          "ramBytes": 16540626944,
+          "browser": "Chromium 156.0.8078.4",
+          "headless": true,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "viewport": {
+            "width": 1440,
+            "height": 900,
+            "dpr": 1
+          }
+        }
+      },
+      "difference": {
+        "fpsP50": 0,
+        "fpsP10": 0,
+        "payloadBytes": 3014
+      },
+      "passedOriginalBudgets": true
+    }
+  ],
+  "allOriginalBudgetsPassed": true,
+  "protocol": "Twelve sequential fresh Chromium contexts. Each: 10s warmup, 30s visible rAF sample; no visibility raycasts. Seed17, desktop1440x900/DPR1, cache disabled, CDP20Mbps/50ms. Flow and Tracking separated. readyMs is DEFAULT500 entry before profile selection.",
+  "limits": "One run per scenario/version on this workstation; capped refresh can conceal GPU headroom. rAF is not GPU frame time; heap and renderer counters are not VRAM. Mobile emulation does not certify a physical phone. Before/after deltas are observations, not statistical significance."
+}

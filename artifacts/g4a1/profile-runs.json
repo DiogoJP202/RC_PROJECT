@@ -1,0 +1,92 @@
+[
+  {
+    "label": "before",
+    "mode": "flow",
+    "count": 100,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-before-flow-100.txt"
+  },
+  {
+    "label": "before",
+    "mode": "flow",
+    "count": 500,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-before-flow-500.txt"
+  },
+  {
+    "label": "before",
+    "mode": "flow",
+    "count": 2000,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-before-flow-2000.txt"
+  },
+  {
+    "label": "before",
+    "mode": "tracking",
+    "count": 100,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-before-tracking-100.txt"
+  },
+  {
+    "label": "before",
+    "mode": "tracking",
+    "count": 500,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-before-tracking-500.txt"
+  },
+  {
+    "label": "before",
+    "mode": "tracking",
+    "count": 2000,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-before-tracking-2000.txt"
+  },
+  {
+    "label": "after",
+    "mode": "flow",
+    "count": 100,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-after-flow-100.txt",
+    "phase": "final-overlay-spacing"
+  },
+  {
+    "label": "after",
+    "mode": "flow",
+    "count": 500,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-after-flow-500.txt",
+    "phase": "final-overlay-spacing"
+  },
+  {
+    "label": "after",
+    "mode": "flow",
+    "count": 2000,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-after-flow-2000.txt",
+    "phase": "final-overlay-spacing"
+  },
+  {
+    "label": "after",
+    "mode": "tracking",
+    "count": 100,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-after-tracking-100.txt",
+    "phase": "final-overlay-spacing"
+  },
+  {
+    "label": "after",
+    "mode": "tracking",
+    "count": 500,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-after-tracking-500.txt",
+    "phase": "final-overlay-spacing"
+  },
+  {
+    "label": "after",
+    "mode": "tracking",
+    "count": 2000,
+    "exitCode": 0,
+    "log": "artifacts/g4a1/profile-after-tracking-2000.txt",
+    "phase": "final-overlay-spacing"
+  }
+]

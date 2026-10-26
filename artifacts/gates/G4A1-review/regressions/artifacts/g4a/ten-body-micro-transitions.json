@@ -1,0 +1,6323 @@
+{
+  "method": "Ten actual UI entries/returns, paused Body/Rinkaku, manual orbit before first entry; no camera/state injection.",
+  "before": {
+    "ready": true,
+    "selectedId": "human.thorax",
+    "lastHit": null,
+    "layers": {
+      "surface": true,
+      "muscular": false,
+      "skeletal": true,
+      "internal": true
+    },
+    "assets": {
+      "requestedId": "proxy",
+      "activeId": "proxy",
+      "status": "proxy",
+      "bindings": [],
+      "nodes": [],
+      "bounds": null,
+      "sockets": [],
+      "animations": [],
+      "animation": {
+        "clip": "",
+        "time": 0,
+        "playing": false
+      },
+      "bones": [],
+      "cache": {
+        "loads": 0,
+        "hits": 0,
+        "disposed": 0,
+        "acquired": 0,
+        "released": 0,
+        "entries": 0,
+        "inFlight": 0,
+        "refCount": 0,
+        "assets": []
+      }
+    },
+    "rinkaku": {
+      "enabled": true,
+      "playing": false,
+      "direction": 1,
+      "t": 0.7,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0.7,
+        "phase": "fixation",
+        "localPhaseProgress": 0.16666666666666627,
+        "rootExposure": 1,
+        "kakuhouActivation": 0.7837037037037038,
+        "appendageExtension": 1,
+        "appendageThickness": 1,
+        "visualStiffness": 0.37037037037037013,
+        "particleEmission": 0.332962962962963,
+        "appendageMotion": 0.5111111111111111,
+        "visualIntensity": 0.8925925925925926,
+        "motionTime": 12.601629854587127
+      },
+      "playback": {
+        "elapsedSeconds": 12.6,
+        "durationSeconds": 21,
+        "retractDurationSeconds": 3.4000000000000057
+      },
+      "representation": "procedural",
+      "connection": {
+        "source": "proxy",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0.976,
+          -0.112,
+          1
+        ]
+      },
+      "adapter": {
+        "representation": "procedural_proxy",
+        "disclosure": "PROXY / CONCEPTUAL MODEL",
+        "disposed": false,
+        "visible": true,
+        "t": 0.7,
+        "phase": "fixation",
+        "appendageCount": 4,
+        "geometryCount": 5,
+        "materialCount": 2,
+        "vertexCount": 4228,
+        "triangleCount": 8320,
+        "particleCapacity": 48,
+        "particleCount": 15,
+        "positionHash": "d919fa79",
+        "signature": "d919fa79",
+        "visibleAppendages": 4,
+        "resources": {
+          "geometries": 5,
+          "materials": 2,
+          "textures": 0,
+          "allocatedVertices": 4168,
+          "allocatedParticles": 48
+        },
+        "root": [
+          0,
+          0.976,
+          -0.112
+        ],
+        "roots": [
+          [
+            -0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            0.058,
+            1.028,
+            -0.112
+          ],
+          [
+            -0.054,
+            0.9239999999999999,
+            -0.112
+          ],
+          [
+            0.054,
+            0.9239999999999999,
+            -0.112
+          ]
+        ],
+        "tips": [
+          [
+            -0.8227480411802137,
+            1.8380336385778115,
+            -0.8374688133858263
+          ],
+          [
+            0.787361913724818,
+            1.8798913987582582,
+            -0.7485237551426752
+          ],
+          [
+            -0.8732867423893682,
+            0.8240011379236939,
+            -0.7155356824478069
+          ],
+          [
+            0.8607536691887445,
+            0.7572383511897578,
+            -0.7853044345198466
+          ]
+        ],
+        "resourceIds": {
+          "geometry": [
+            "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+            "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+            "b98a1024-0dd2-4b5f-a079-619feab19736",
+            "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+            "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+          ],
+          "material": [
+            "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+            "e7df6291-e4f1-4b49-b377-8fa39e042850"
+          ]
+        }
+      },
+      "lifecycle": {
+        "mounted": 1,
+        "disposed": 0
+      }
+    },
+    "visibleNodes": [
+      "HUMAN_SURFACE",
+      "HUMAN_HEAD",
+      "HUMAN_SKELETAL",
+      "HUMAN_THORAX",
+      "G3A_CONCEPTUAL_APPENDAGE_1",
+      "G3A_CONCEPTUAL_APPENDAGE_2",
+      "G3A_CONCEPTUAL_APPENDAGE_3",
+      "G3A_CONCEPTUAL_APPENDAGE_4"
+    ],
+    "nodes": [
+      {
+        "name": "HUMAN_SURFACE",
+        "anatomyId": "human.surface",
+        "visible": true,
+        "vertices": 101472,
+        "bounds": [
+          [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          [
+            0.39881572127342224,
+            1.6200000047683716,
+            0.1810000091791153
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_HEAD",
+        "anatomyId": "human.head",
+        "visible": true,
+        "vertices": 28272,
+        "bounds": [
+          [
+            -0.08699999749660492,
+            1.5759999752044678,
+            -0.08445589989423752
+          ],
+          [
+            0.08699999749660492,
+            1.850000023841858,
+            0.09389623254537582
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_MUSCULAR",
+        "anatomyId": "human.muscular",
+        "visible": false,
+        "vertices": 110208,
+        "bounds": [
+          [
+            -0.35249319672584534,
+            0.13817860186100006,
+            -0.10999999940395355
+          ],
+          [
+            0.35249319672584534,
+            1.5107470750808716,
+            0.11800000071525574
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_SKELETAL",
+        "anatomyId": "human.skeletal",
+        "visible": true,
+        "vertices": 158088,
+        "bounds": [
+          [
+            -0.3664235472679138,
+            0.039000000804662704,
+            -0.07462053000926971
+          ],
+          [
+            0.3664235472679138,
+            1.8320000171661377,
+            0.15600000321865082
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_THORAX",
+        "anatomyId": "human.thorax",
+        "visible": true,
+        "vertices": 12264,
+        "bounds": [
+          [
+            -0.1334308236837387,
+            1.1996310949325562,
+            -0.050999999046325684
+          ],
+          [
+            0.1334308236837387,
+            1.4900007247924805,
+            0.08100000023841858
+          ]
+        ]
+      },
+      {
+        "name": "KAKUHOU_RINKAKU",
+        "anatomyId": "ghoul.kakuhou.rinkaku",
+        "visible": false,
+        "vertices": 15960,
+        "bounds": [
+          [
+            -0.10146593302488327,
+            0.917545735836029,
+            -0.1469999998807907
+          ],
+          [
+            0.10146593302488327,
+            1.034000039100647,
+            -0.07500000298023224
+          ]
+        ]
+      },
+      {
+        "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+        "anatomyId": "ghoul.kakuhou.rinkaku",
+        "visible": true,
+        "vertices": 1042,
+        "bounds": [
+          [
+            -1.18,
+            0.15600000000000003,
+            -1.332
+          ],
+          [
+            1.18,
+            2.216,
+            0.02800000000000001
+          ]
+        ]
+      },
+      {
+        "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+        "anatomyId": "ghoul.kakuhou.rinkaku",
+        "visible": true,
+        "vertices": 1042,
+        "bounds": [
+          [
+            -1.18,
+            0.15600000000000003,
+            -1.332
+          ],
+          [
+            1.18,
+            2.216,
+            0.02800000000000001
+          ]
+        ]
+      },
+      {
+        "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+        "anatomyId": "ghoul.kakuhou.rinkaku",
+        "visible": true,
+        "vertices": 1042,
+        "bounds": [
+          [
+            -1.18,
+            0.15600000000000003,
+            -1.332
+          ],
+          [
+            1.18,
+            2.216,
+            0.02800000000000001
+          ]
+        ]
+      },
+      {
+        "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+        "anatomyId": "ghoul.kakuhou.rinkaku",
+        "visible": true,
+        "vertices": 1042,
+        "bounds": [
+          [
+            -1.18,
+            0.15600000000000003,
+            -1.332
+          ],
+          [
+            1.18,
+            2.216,
+            0.02800000000000001
+          ]
+        ]
+      }
+    ],
+    "surfaceOpacity": 0.2,
+    "paused": true,
+    "reducedMotion": true,
+    "scanT": 0.35,
+    "scanRevision": 0,
+    "camera": {
+      "position": [
+        1.305096517820474,
+        0.5615796458984279,
+        -5.3472111122280745
+      ],
+      "target": [
+        0,
+        1.1380000000000001,
+        -0.5710000000000001
+      ],
+      "moving": false,
+      "quaternion": [
+        0.007701264282951083,
+        0.9894559253161243,
+        -0.05740127947771291,
+        0.13275072692674053
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "enableDamping": false,
+      "projection": {
+        "near": 0.025,
+        "far": 40,
+        "zoom": 1,
+        "fov": 36,
+        "aspect": 1.4267100977198697,
+        "filmGauge": 35,
+        "filmOffset": 0
+      }
+    },
+    "bodyContext": {
+      "saved": null,
+      "entering": false,
+      "restoreRevision": 0
+    },
+    "vascularEntry": {
+      "disclosure": "PROXY / CONCEPTUAL MODEL",
+      "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+      "position": [
+        0.11,
+        1.2,
+        0.145
+      ],
+      "visible": true
+    },
+    "bounds": {
+      "min": [
+        -0.39881572127342224,
+        0.019999997690320015,
+        -0.10774065554141998
+      ],
+      "max": [
+        0.39881572127342224,
+        1.850000023841858,
+        0.1810000091791153
+      ],
+      "projected": {
+        "top": 0.3800916266712586,
+        "bottom": -0.6813173478500799,
+        "left": -0.22982119395252665,
+        "right": 0.10483153133984546
+      },
+      "heightFraction": 0.5307044872606692
+    },
+    "metrics": {
+      "fpsP50": 60,
+      "fpsP10": 56,
+      "calls": 24,
+      "triangles": 253646,
+      "geometries": 21,
+      "textures": 3,
+      "samples": 115,
+      "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+    },
+    "frames": 219,
+    "viewport": {
+      "width": 876,
+      "height": 614,
+      "dpr": 1
+    },
+    "modelStatus": "conceptual_proxy"
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 1,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 1
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 56,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 115,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 230,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 32,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 53.47593611864193
+        },
+        "lifecycle": {
+          "created": 1,
+          "disposed": 0,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 1,
+        "disposed": 1,
+        "active": 0
+      }
+    },
+    {
+      "cycle": 2,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 2,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 2
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 56,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 115,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 240,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 11,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 60.24096479634275,
+          "fpsP10": 40.98360734828793
+        },
+        "lifecycle": {
+          "created": 2,
+          "disposed": 1,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 2,
+        "disposed": 2,
+        "active": 0
+      }
+    },
+    {
+      "cycle": 3,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 3,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 3
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 58,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 247,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 251,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 10,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 60.60606093446086,
+          "fpsP10": 33.78378377357937
+        },
+        "lifecycle": {
+          "created": 3,
+          "disposed": 2,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 3,
+        "disposed": 3,
+        "active": 0
+      }
+    },
+    {
+      "cycle": 4,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 4,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 4
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 58,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 247,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 262,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 11,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.523811646211385,
+          "fpsP10": 51.28205022398069
+        },
+        "lifecycle": {
+          "created": 4,
+          "disposed": 3,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 4,
+        "disposed": 4,
+        "active": 0
+      }
+    },
+    {
+      "cycle": 5,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 5,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 5
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 58,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 247,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 273,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 11,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 57.14285689957288,
+          "fpsP10": 45.45454570084564
+        },
+        "lifecycle": {
+          "created": 5,
+          "disposed": 4,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 5,
+        "disposed": 5,
+        "active": 0
+      }
+    },
+    {
+      "cycle": 6,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 6,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 6
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 58,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 247,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 284,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 11,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 38.910507072905965
+        },
+        "lifecycle": {
+          "created": 6,
+          "disposed": 5,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 6,
+        "disposed": 6,
+        "active": 0
+      }
+    },
+    {
+      "cycle": 7,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 7,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 7
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 58,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 247,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 297,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 11,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 60.24096479634275,
+          "fpsP10": 49.50495242324611
+        },
+        "lifecycle": {
+          "created": 7,
+          "disposed": 6,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 7,
+        "disposed": 7,
+        "active": 0
+      }
+    },
+    {
+      "cycle": 8,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 8,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 8
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 58,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 247,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 308,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 12,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 53.76344066208423
+        },
+        "lifecycle": {
+          "created": 8,
+          "disposed": 7,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 8,
+        "disposed": 8,
+        "active": 0
+      }
+    },
+    {
+      "cycle": 9,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 9,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 9
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 58,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 247,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 319,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 11,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.523811646211385,
+          "fpsP10": 46.08294847966528
+        },
+        "lifecycle": {
+          "created": 9,
+          "disposed": 8,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 9,
+        "disposed": 9,
+        "active": 0
+      }
+    },
+    {
+      "cycle": 10,
+      "body": {
+        "ready": true,
+        "selectedId": "human.thorax",
+        "lastHit": null,
+        "layers": {
+          "surface": true,
+          "muscular": false,
+          "skeletal": true,
+          "internal": true
+        },
+        "assets": {
+          "requestedId": "proxy",
+          "activeId": "proxy",
+          "status": "proxy",
+          "bindings": [],
+          "nodes": [],
+          "bounds": null,
+          "sockets": [],
+          "animations": [],
+          "animation": {
+            "clip": "",
+            "time": 0,
+            "playing": false
+          },
+          "bones": [],
+          "cache": {
+            "loads": 0,
+            "hits": 0,
+            "disposed": 0,
+            "acquired": 0,
+            "released": 0,
+            "entries": 0,
+            "inFlight": 0,
+            "refCount": 0,
+            "assets": []
+          }
+        },
+        "rinkaku": {
+          "enabled": true,
+          "playing": false,
+          "direction": 1,
+          "t": 0.7,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          },
+          "snapshot": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard",
+            "t": 0.7,
+            "phase": "fixation",
+            "localPhaseProgress": 0.16666666666666627,
+            "rootExposure": 1,
+            "kakuhouActivation": 0.7837037037037038,
+            "appendageExtension": 1,
+            "appendageThickness": 1,
+            "visualStiffness": 0.37037037037037013,
+            "particleEmission": 0.332962962962963,
+            "appendageMotion": 0.5111111111111111,
+            "visualIntensity": 0.8925925925925926,
+            "motionTime": 12.601629854587127
+          },
+          "playback": {
+            "elapsedSeconds": 12.6,
+            "durationSeconds": 21,
+            "retractDurationSeconds": 3.4000000000000057
+          },
+          "representation": "procedural",
+          "connection": {
+            "source": "proxy",
+            "matrix": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0.976,
+              -0.112,
+              1
+            ]
+          },
+          "adapter": {
+            "representation": "procedural_proxy",
+            "disclosure": "PROXY / CONCEPTUAL MODEL",
+            "disposed": false,
+            "visible": true,
+            "t": 0.7,
+            "phase": "fixation",
+            "appendageCount": 4,
+            "geometryCount": 5,
+            "materialCount": 2,
+            "vertexCount": 4228,
+            "triangleCount": 8320,
+            "particleCapacity": 48,
+            "particleCount": 15,
+            "positionHash": "d919fa79",
+            "signature": "d919fa79",
+            "visibleAppendages": 4,
+            "resources": {
+              "geometries": 5,
+              "materials": 2,
+              "textures": 0,
+              "allocatedVertices": 4168,
+              "allocatedParticles": 48
+            },
+            "root": [
+              0,
+              0.976,
+              -0.112
+            ],
+            "roots": [
+              [
+                -0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                0.058,
+                1.028,
+                -0.112
+              ],
+              [
+                -0.054,
+                0.9239999999999999,
+                -0.112
+              ],
+              [
+                0.054,
+                0.9239999999999999,
+                -0.112
+              ]
+            ],
+            "tips": [
+              [
+                -0.8227480411802137,
+                1.8380336385778115,
+                -0.8374688133858263
+              ],
+              [
+                0.787361913724818,
+                1.8798913987582582,
+                -0.7485237551426752
+              ],
+              [
+                -0.8732867423893682,
+                0.8240011379236939,
+                -0.7155356824478069
+              ],
+              [
+                0.8607536691887445,
+                0.7572383511897578,
+                -0.7853044345198466
+              ]
+            ],
+            "resourceIds": {
+              "geometry": [
+                "a8b8a26e-a494-47ac-8ac0-6ee9b1d20e8f",
+                "d516db97-0c02-4714-a6ca-83c76d11b4ab",
+                "b98a1024-0dd2-4b5f-a079-619feab19736",
+                "d7a78ccd-cec5-4ae8-aa8a-1b2f4f1a1542",
+                "24375d8f-6a62-4b23-92d1-b739cf3d4a4c"
+              ],
+              "material": [
+                "e54a14a6-7c9a-417f-9aa4-8866c70a5da4",
+                "e7df6291-e4f1-4b49-b377-8fa39e042850"
+              ]
+            }
+          },
+          "lifecycle": {
+            "mounted": 1,
+            "disposed": 0
+          }
+        },
+        "visibleNodes": [
+          "HUMAN_SURFACE",
+          "HUMAN_HEAD",
+          "HUMAN_SKELETAL",
+          "HUMAN_THORAX",
+          "G3A_CONCEPTUAL_APPENDAGE_1",
+          "G3A_CONCEPTUAL_APPENDAGE_2",
+          "G3A_CONCEPTUAL_APPENDAGE_3",
+          "G3A_CONCEPTUAL_APPENDAGE_4"
+        ],
+        "nodes": [
+          {
+            "name": "HUMAN_SURFACE",
+            "anatomyId": "human.surface",
+            "visible": true,
+            "vertices": 101472,
+            "bounds": [
+              [
+                -0.39881572127342224,
+                0.019999997690320015,
+                -0.10774065554141998
+              ],
+              [
+                0.39881572127342224,
+                1.6200000047683716,
+                0.1810000091791153
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_HEAD",
+            "anatomyId": "human.head",
+            "visible": true,
+            "vertices": 28272,
+            "bounds": [
+              [
+                -0.08699999749660492,
+                1.5759999752044678,
+                -0.08445589989423752
+              ],
+              [
+                0.08699999749660492,
+                1.850000023841858,
+                0.09389623254537582
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_MUSCULAR",
+            "anatomyId": "human.muscular",
+            "visible": false,
+            "vertices": 110208,
+            "bounds": [
+              [
+                -0.35249319672584534,
+                0.13817860186100006,
+                -0.10999999940395355
+              ],
+              [
+                0.35249319672584534,
+                1.5107470750808716,
+                0.11800000071525574
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_SKELETAL",
+            "anatomyId": "human.skeletal",
+            "visible": true,
+            "vertices": 158088,
+            "bounds": [
+              [
+                -0.3664235472679138,
+                0.039000000804662704,
+                -0.07462053000926971
+              ],
+              [
+                0.3664235472679138,
+                1.8320000171661377,
+                0.15600000321865082
+              ]
+            ]
+          },
+          {
+            "name": "HUMAN_THORAX",
+            "anatomyId": "human.thorax",
+            "visible": true,
+            "vertices": 12264,
+            "bounds": [
+              [
+                -0.1334308236837387,
+                1.1996310949325562,
+                -0.050999999046325684
+              ],
+              [
+                0.1334308236837387,
+                1.4900007247924805,
+                0.08100000023841858
+              ]
+            ]
+          },
+          {
+            "name": "KAKUHOU_RINKAKU",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": false,
+            "vertices": 15960,
+            "bounds": [
+              [
+                -0.10146593302488327,
+                0.917545735836029,
+                -0.1469999998807907
+              ],
+              [
+                0.10146593302488327,
+                1.034000039100647,
+                -0.07500000298023224
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_1",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_2",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_3",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          },
+          {
+            "name": "G3A_CONCEPTUAL_APPENDAGE_4",
+            "anatomyId": "ghoul.kakuhou.rinkaku",
+            "visible": true,
+            "vertices": 1042,
+            "bounds": [
+              [
+                -1.18,
+                0.15600000000000003,
+                -1.332
+              ],
+              [
+                1.18,
+                2.216,
+                0.02800000000000001
+              ]
+            ]
+          }
+        ],
+        "surfaceOpacity": 0.2,
+        "paused": true,
+        "reducedMotion": true,
+        "scanT": 0.35,
+        "scanRevision": 10,
+        "camera": {
+          "position": [
+            1.305096517820474,
+            0.5615796458984279,
+            -5.3472111122280745
+          ],
+          "target": [
+            0,
+            1.1380000000000001,
+            -0.5710000000000001
+          ],
+          "moving": false,
+          "quaternion": [
+            0.007701264282951083,
+            0.9894559253161243,
+            -0.05740127947771291,
+            0.13275072692674053
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "enableDamping": false,
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.4267100977198697,
+            "filmGauge": 35,
+            "filmOffset": 0
+          }
+        },
+        "bodyContext": {
+          "saved": {
+            "camera": {
+              "position": [
+                1.305096517820474,
+                0.5615796458984279,
+                -5.3472111122280745
+              ],
+              "quaternion": [
+                0.007701264282951083,
+                0.9894559253161243,
+                -0.05740127947771291,
+                0.13275072692674053
+              ],
+              "up": [
+                0,
+                1,
+                0
+              ],
+              "projection": {
+                "near": 0.025,
+                "far": 40,
+                "zoom": 1,
+                "fov": 36,
+                "aspect": 1.4267100977198697,
+                "filmGauge": 35,
+                "filmOffset": 0
+              },
+              "controls": {
+                "target": [
+                  0,
+                  1.1380000000000001,
+                  -0.5710000000000001
+                ],
+                "enabled": true,
+                "enableDamping": false,
+                "minDistance": 0.42,
+                "maxDistance": 6.8,
+                "minPolarAngle": 0.45,
+                "maxPolarAngle": 1.87
+              }
+            },
+            "observatory": {
+              "selectedId": "human.thorax",
+              "layers": {
+                "surface": true,
+                "muscular": false,
+                "skeletal": true,
+                "internal": true
+              },
+              "surfaceOpacity": 0.2,
+              "isolated": false,
+              "savedLayers": null,
+              "focus": {
+                "target": "posterior",
+                "nonce": 2
+              },
+              "paused": true,
+              "scanT": 0.35,
+              "canonOnly": false,
+              "inspectorOpen": true,
+              "inspectorTab": "structure"
+            },
+            "rinkaku": {
+              "enabled": true,
+              "playing": false,
+              "direction": 1,
+              "t": 0.7,
+              "elapsedSeconds": 12.6,
+              "config": {
+                "appendageCount": 4,
+                "seed": 17,
+                "particles": true,
+                "quality": "standard"
+              }
+            },
+            "assets": {
+              "requestedId": "proxy",
+              "clip": "",
+              "playing": false,
+              "sample": 0
+            }
+          },
+          "entering": false,
+          "restoreRevision": 10
+        },
+        "vascularEntry": {
+          "disclosure": "PROXY / CONCEPTUAL MODEL",
+          "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+          "position": [
+            0.11,
+            1.2,
+            0.145
+          ],
+          "visible": true
+        },
+        "bounds": {
+          "min": [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          "max": [
+            0.39881572127342224,
+            1.850000023841858,
+            0.1810000091791153
+          ],
+          "projected": {
+            "top": 0.3800916266712586,
+            "bottom": -0.6813173478500799,
+            "left": -0.22982119395252665,
+            "right": 0.10483153133984546
+          },
+          "heightFraction": 0.5307044872606692
+        },
+        "metrics": {
+          "fpsP50": 60,
+          "fpsP10": 58,
+          "calls": 24,
+          "triangles": 253646,
+          "geometries": 21,
+          "textures": 3,
+          "samples": 247,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+        },
+        "frames": 330,
+        "viewport": {
+          "width": 876,
+          "height": 614,
+          "dpr": 1
+        },
+        "modelStatus": "conceptual_proxy"
+      },
+      "micro": {
+        "resources": {
+          "geometries": 4,
+          "materials": 4,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "metrics": {
+          "frames": 10,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 64.51613008665866,
+          "fpsP10": 51.81346951038203
+        },
+        "lifecycle": {
+          "created": 10,
+          "disposed": 9,
+          "active": 1
+        }
+      },
+      "released": {
+        "created": 10,
+        "disposed": 10,
+        "active": 0
+      }
+    }
+  ]
+}

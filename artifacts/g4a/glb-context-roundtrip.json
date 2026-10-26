@@ -1,0 +1,998 @@
+{
+  "before": {
+    "ready": true,
+    "selectedId": "human.thorax",
+    "lastHit": null,
+    "layers": {
+      "surface": false,
+      "muscular": false,
+      "skeletal": false,
+      "internal": true
+    },
+    "assets": {
+      "requestedId": "fixture.rigged.v1",
+      "activeId": "fixture.rigged.v1",
+      "status": "ready",
+      "bindings": [
+        {
+          "anatomyId": "human.head",
+          "nodeNames": [
+            "CranialFacet"
+          ],
+          "meshCount": 1
+        },
+        {
+          "anatomyId": "human.thorax",
+          "nodeNames": [
+            "ChestAssembly"
+          ],
+          "meshCount": 2
+        },
+        {
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "nodeNames": [
+            "LumbarAssembly"
+          ],
+          "meshCount": 1
+        }
+      ],
+      "nodes": [
+        {
+          "name": "CranialFacet",
+          "type": "Mesh",
+          "anatomyId": "human.head",
+          "visible": false,
+          "worldPosition": [
+            0,
+            1.705,
+            0
+          ]
+        },
+        {
+          "name": "LeftFacet",
+          "type": "Mesh",
+          "anatomyId": "human.thorax",
+          "visible": true,
+          "worldPosition": [
+            -0.085,
+            1.3,
+            0
+          ]
+        },
+        {
+          "name": "RightFacet",
+          "type": "Mesh",
+          "anatomyId": "human.thorax",
+          "visible": true,
+          "worldPosition": [
+            0.085,
+            1.3,
+            0
+          ]
+        },
+        {
+          "name": "WeightedLumbarFacet",
+          "type": "SkinnedMesh",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": false,
+          "worldPosition": [
+            0,
+            0.976,
+            -0.112
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.185,
+          0.9059999997019768,
+          -0.17199999865889548
+        ],
+        "max": [
+          0.185,
+          1.85,
+          0.12
+        ],
+        "size": [
+          0.37,
+          0.9440000002980233,
+          0.2919999986588955
+        ]
+      },
+      "sockets": [
+        {
+          "id": "lumbar",
+          "nodeName": "ConnectionSocket",
+          "worldPosition": [
+            0,
+            0.976,
+            -0.192
+          ]
+        },
+        {
+          "id": "rig-tip",
+          "nodeName": "RigConnectionSocket",
+          "worldPosition": [
+            0.03583746462778614,
+            1.0727521241259985,
+            -0.192
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "name": "fixture_sway",
+          "duration": 1
+        }
+      ],
+      "animation": {
+        "clip": "fixture_sway",
+        "time": 0.63,
+        "playing": false
+      },
+      "bones": [
+        {
+          "name": "TestRootBone",
+          "worldPosition": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "TestTipBone",
+          "worldPosition": [
+            0,
+            1.0460000002980232,
+            -0.112
+          ],
+          "quaternion": [
+            0,
+            0,
+            0.08868333880871614,
+            0.9960598724339128
+          ]
+        }
+      ],
+      "cache": {
+        "loads": 1,
+        "hits": 0,
+        "disposed": 0,
+        "acquired": 1,
+        "released": 0,
+        "entries": 1,
+        "inFlight": 0,
+        "refCount": 1,
+        "assets": [
+          {
+            "assetId": "fixture.rigged.v1",
+            "refs": 1,
+            "status": "ready"
+          }
+        ]
+      }
+    },
+    "rinkaku": {
+      "enabled": false,
+      "playing": false,
+      "direction": 1,
+      "t": 0,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0,
+        "phase": "rest",
+        "localPhaseProgress": 0,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 0.0016298545871284939
+      },
+      "playback": {
+        "elapsedSeconds": 0,
+        "durationSeconds": 21,
+        "retractDurationSeconds": 3.4000000000000057
+      },
+      "representation": "unmounted",
+      "connection": {
+        "source": "proxy",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "adapter": null,
+      "lifecycle": {
+        "mounted": 0,
+        "disposed": 0
+      }
+    },
+    "visibleNodes": [
+      "LeftFacet",
+      "RightFacet"
+    ],
+    "nodes": [
+      {
+        "name": "HUMAN_SURFACE",
+        "anatomyId": "human.surface",
+        "visible": false,
+        "vertices": 101472,
+        "bounds": [
+          [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          [
+            0.39881572127342224,
+            1.6200000047683716,
+            0.1810000091791153
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_MUSCULAR",
+        "anatomyId": "human.muscular",
+        "visible": false,
+        "vertices": 110208,
+        "bounds": [
+          [
+            -0.35249319672584534,
+            0.13817860186100006,
+            -0.10999999940395355
+          ],
+          [
+            0.35249319672584534,
+            1.5107470750808716,
+            0.11800000071525574
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_SKELETAL",
+        "anatomyId": "human.skeletal",
+        "visible": false,
+        "vertices": 158088,
+        "bounds": [
+          [
+            -0.3664235472679138,
+            0.039000000804662704,
+            -0.07462053000926971
+          ],
+          [
+            0.3664235472679138,
+            1.8320000171661377,
+            0.15600000321865082
+          ]
+        ]
+      },
+      {
+        "name": "CranialFacet",
+        "anatomyId": "human.head",
+        "visible": false,
+        "vertices": 6,
+        "bounds": [
+          [
+            -0.12,
+            1.56,
+            -0.12
+          ],
+          [
+            0.12,
+            1.85,
+            0.12
+          ]
+        ]
+      },
+      {
+        "name": "LeftFacet",
+        "anatomyId": "human.thorax",
+        "visible": true,
+        "vertices": 6,
+        "bounds": [
+          [
+            -0.185,
+            1.1,
+            -0.09
+          ],
+          [
+            0.015,
+            1.5,
+            0.09
+          ]
+        ]
+      },
+      {
+        "name": "RightFacet",
+        "anatomyId": "human.thorax",
+        "visible": true,
+        "vertices": 6,
+        "bounds": [
+          [
+            -0.015,
+            1.1,
+            -0.09
+          ],
+          [
+            0.185,
+            1.5,
+            0.09
+          ]
+        ]
+      },
+      {
+        "name": "WeightedLumbarFacet",
+        "anatomyId": "ghoul.kakuhou.rinkaku",
+        "visible": false,
+        "vertices": 8,
+        "bounds": [
+          [
+            -0.10000000149011612,
+            0.9059999997019768,
+            -0.17199999865889548
+          ],
+          [
+            0.10000000149011612,
+            1.0636667835894436,
+            -0.05200000134110451
+          ]
+        ]
+      }
+    ],
+    "surfaceOpacity": 0.18,
+    "paused": true,
+    "reducedMotion": true,
+    "scanT": 0.35,
+    "scanRevision": 0,
+    "camera": {
+      "position": [
+        0.24304281145117787,
+        1.3895420884293816,
+        1.2535892380113385
+      ],
+      "target": [
+        0,
+        1.3,
+        0
+      ],
+      "moving": false,
+      "quaternion": [
+        -0.03483665666100447,
+        0.09554604974746068,
+        0.00334587129935136,
+        0.9948096123759498
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "enableDamping": false,
+      "projection": {
+        "near": 0.025,
+        "far": 40,
+        "zoom": 1,
+        "fov": 36,
+        "aspect": 1.7555110220440882,
+        "filmGauge": 35,
+        "filmOffset": 0
+      }
+    },
+    "bodyContext": {
+      "saved": null,
+      "entering": false,
+      "restoreRevision": 0
+    },
+    "vascularEntry": {
+      "disclosure": "PROXY / CONCEPTUAL MODEL",
+      "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+      "position": [
+        0.0555,
+        1.244,
+        0.099
+      ],
+      "visible": false
+    },
+    "bounds": {
+      "min": [
+        -0.39881572127342224,
+        0.019999997690320015,
+        -0.12
+      ],
+      "max": [
+        0.39881572127342224,
+        1.85,
+        0.1810000091791153
+      ],
+      "projected": {
+        "top": 1.6527970336116453,
+        "bottom": -3.568229173413565,
+        "left": -0.6550539177741136,
+        "right": 0.6332157086291981
+      },
+      "heightFraction": 2.6105131035126052
+    },
+    "metrics": null,
+    "frames": 51,
+    "viewport": {
+      "width": 876,
+      "height": 499,
+      "dpr": 1
+    },
+    "modelStatus": "conceptual_proxy"
+  },
+  "after": {
+    "ready": true,
+    "selectedId": "human.thorax",
+    "lastHit": null,
+    "layers": {
+      "surface": false,
+      "muscular": false,
+      "skeletal": false,
+      "internal": true
+    },
+    "assets": {
+      "requestedId": "fixture.rigged.v1",
+      "activeId": "fixture.rigged.v1",
+      "status": "ready",
+      "bindings": [
+        {
+          "anatomyId": "human.head",
+          "nodeNames": [
+            "CranialFacet"
+          ],
+          "meshCount": 1
+        },
+        {
+          "anatomyId": "human.thorax",
+          "nodeNames": [
+            "ChestAssembly"
+          ],
+          "meshCount": 2
+        },
+        {
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "nodeNames": [
+            "LumbarAssembly"
+          ],
+          "meshCount": 1
+        }
+      ],
+      "nodes": [
+        {
+          "name": "CranialFacet",
+          "type": "Mesh",
+          "anatomyId": "human.head",
+          "visible": false,
+          "worldPosition": [
+            0,
+            1.705,
+            0
+          ]
+        },
+        {
+          "name": "LeftFacet",
+          "type": "Mesh",
+          "anatomyId": "human.thorax",
+          "visible": true,
+          "worldPosition": [
+            -0.085,
+            1.3,
+            0
+          ]
+        },
+        {
+          "name": "RightFacet",
+          "type": "Mesh",
+          "anatomyId": "human.thorax",
+          "visible": true,
+          "worldPosition": [
+            0.085,
+            1.3,
+            0
+          ]
+        },
+        {
+          "name": "WeightedLumbarFacet",
+          "type": "SkinnedMesh",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": false,
+          "worldPosition": [
+            0,
+            0.976,
+            -0.112
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.185,
+          0.9059999997019768,
+          -0.17199999865889548
+        ],
+        "max": [
+          0.185,
+          1.85,
+          0.12
+        ],
+        "size": [
+          0.37,
+          0.9440000002980233,
+          0.2919999986588955
+        ]
+      },
+      "sockets": [
+        {
+          "id": "lumbar",
+          "nodeName": "ConnectionSocket",
+          "worldPosition": [
+            0,
+            0.976,
+            -0.192
+          ]
+        },
+        {
+          "id": "rig-tip",
+          "nodeName": "RigConnectionSocket",
+          "worldPosition": [
+            0.03583746462778614,
+            1.0727521241259985,
+            -0.192
+          ]
+        }
+      ],
+      "animations": [
+        {
+          "name": "fixture_sway",
+          "duration": 1
+        }
+      ],
+      "animation": {
+        "clip": "fixture_sway",
+        "time": 0.63,
+        "playing": false
+      },
+      "bones": [
+        {
+          "name": "TestRootBone",
+          "worldPosition": [
+            0,
+            0.976,
+            -0.112
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "TestTipBone",
+          "worldPosition": [
+            0,
+            1.0460000002980232,
+            -0.112
+          ],
+          "quaternion": [
+            0,
+            0,
+            0.08868333880871614,
+            0.9960598724339128
+          ]
+        }
+      ],
+      "cache": {
+        "loads": 1,
+        "hits": 0,
+        "disposed": 0,
+        "acquired": 1,
+        "released": 0,
+        "entries": 1,
+        "inFlight": 0,
+        "refCount": 1,
+        "assets": [
+          {
+            "assetId": "fixture.rigged.v1",
+            "refs": 1,
+            "status": "ready"
+          }
+        ]
+      }
+    },
+    "rinkaku": {
+      "enabled": false,
+      "playing": false,
+      "direction": 1,
+      "t": 0,
+      "config": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard"
+      },
+      "snapshot": {
+        "appendageCount": 4,
+        "seed": 17,
+        "particles": true,
+        "quality": "standard",
+        "t": 0,
+        "phase": "rest",
+        "localPhaseProgress": 0,
+        "rootExposure": 0,
+        "kakuhouActivation": 0,
+        "appendageExtension": 0,
+        "appendageThickness": 0,
+        "visualStiffness": 0,
+        "particleEmission": 0,
+        "appendageMotion": 0,
+        "visualIntensity": 0,
+        "motionTime": 0.0016298545871284939
+      },
+      "playback": {
+        "elapsedSeconds": 0,
+        "durationSeconds": 21,
+        "retractDurationSeconds": 3.4000000000000057
+      },
+      "representation": "unmounted",
+      "connection": {
+        "source": "proxy",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "adapter": null,
+      "lifecycle": {
+        "mounted": 0,
+        "disposed": 0
+      }
+    },
+    "visibleNodes": [
+      "LeftFacet",
+      "RightFacet"
+    ],
+    "nodes": [
+      {
+        "name": "HUMAN_SURFACE",
+        "anatomyId": "human.surface",
+        "visible": false,
+        "vertices": 101472,
+        "bounds": [
+          [
+            -0.39881572127342224,
+            0.019999997690320015,
+            -0.10774065554141998
+          ],
+          [
+            0.39881572127342224,
+            1.6200000047683716,
+            0.1810000091791153
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_MUSCULAR",
+        "anatomyId": "human.muscular",
+        "visible": false,
+        "vertices": 110208,
+        "bounds": [
+          [
+            -0.35249319672584534,
+            0.13817860186100006,
+            -0.10999999940395355
+          ],
+          [
+            0.35249319672584534,
+            1.5107470750808716,
+            0.11800000071525574
+          ]
+        ]
+      },
+      {
+        "name": "HUMAN_SKELETAL",
+        "anatomyId": "human.skeletal",
+        "visible": false,
+        "vertices": 158088,
+        "bounds": [
+          [
+            -0.3664235472679138,
+            0.039000000804662704,
+            -0.07462053000926971
+          ],
+          [
+            0.3664235472679138,
+            1.8320000171661377,
+            0.15600000321865082
+          ]
+        ]
+      },
+      {
+        "name": "CranialFacet",
+        "anatomyId": "human.head",
+        "visible": false,
+        "vertices": 6,
+        "bounds": [
+          [
+            -0.12,
+            1.56,
+            -0.12
+          ],
+          [
+            0.12,
+            1.85,
+            0.12
+          ]
+        ]
+      },
+      {
+        "name": "LeftFacet",
+        "anatomyId": "human.thorax",
+        "visible": true,
+        "vertices": 6,
+        "bounds": [
+          [
+            -0.185,
+            1.1,
+            -0.09
+          ],
+          [
+            0.015,
+            1.5,
+            0.09
+          ]
+        ]
+      },
+      {
+        "name": "RightFacet",
+        "anatomyId": "human.thorax",
+        "visible": true,
+        "vertices": 6,
+        "bounds": [
+          [
+            -0.015,
+            1.1,
+            -0.09
+          ],
+          [
+            0.185,
+            1.5,
+            0.09
+          ]
+        ]
+      },
+      {
+        "name": "WeightedLumbarFacet",
+        "anatomyId": "ghoul.kakuhou.rinkaku",
+        "visible": false,
+        "vertices": 8,
+        "bounds": [
+          [
+            -0.10000000149011612,
+            0.9059999997019768,
+            -0.17199999865889548
+          ],
+          [
+            0.10000000149011612,
+            1.0636667835894436,
+            -0.05200000134110451
+          ]
+        ]
+      }
+    ],
+    "surfaceOpacity": 0.18,
+    "paused": true,
+    "reducedMotion": true,
+    "scanT": 0.35,
+    "scanRevision": 1,
+    "camera": {
+      "position": [
+        0.24304281145117787,
+        1.3895420884293816,
+        1.2535892380113385
+      ],
+      "target": [
+        0,
+        1.3,
+        0
+      ],
+      "moving": false,
+      "quaternion": [
+        -0.03483665666100447,
+        0.09554604974746068,
+        0.00334587129935136,
+        0.9948096123759498
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "enableDamping": false,
+      "projection": {
+        "near": 0.025,
+        "far": 40,
+        "zoom": 1,
+        "fov": 36,
+        "aspect": 1.7555110220440882,
+        "filmGauge": 35,
+        "filmOffset": 0
+      }
+    },
+    "bodyContext": {
+      "saved": {
+        "camera": {
+          "position": [
+            0.24304281145117787,
+            1.3895420884293816,
+            1.2535892380113385
+          ],
+          "quaternion": [
+            -0.03483665666100447,
+            0.09554604974746068,
+            0.00334587129935136,
+            0.9948096123759498
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ],
+          "projection": {
+            "near": 0.025,
+            "far": 40,
+            "zoom": 1,
+            "fov": 36,
+            "aspect": 1.7555110220440882,
+            "filmGauge": 35,
+            "filmOffset": 0
+          },
+          "controls": {
+            "target": [
+              0,
+              1.3,
+              0
+            ],
+            "enabled": true,
+            "enableDamping": false,
+            "minDistance": 0.42,
+            "maxDistance": 6.8,
+            "minPolarAngle": 0.45,
+            "maxPolarAngle": 1.87
+          }
+        },
+        "observatory": {
+          "selectedId": "human.thorax",
+          "layers": {
+            "surface": false,
+            "muscular": false,
+            "skeletal": false,
+            "internal": true
+          },
+          "surfaceOpacity": 0.18,
+          "isolated": true,
+          "savedLayers": {
+            "surface": true,
+            "muscular": false,
+            "skeletal": false,
+            "internal": true
+          },
+          "focus": {
+            "target": "human.thorax",
+            "nonce": 1
+          },
+          "paused": true,
+          "scanT": 0.35,
+          "canonOnly": false,
+          "inspectorOpen": true,
+          "inspectorTab": "structure"
+        },
+        "rinkaku": {
+          "enabled": false,
+          "playing": false,
+          "direction": 1,
+          "t": 0,
+          "elapsedSeconds": 0,
+          "config": {
+            "appendageCount": 4,
+            "seed": 17,
+            "particles": true,
+            "quality": "standard"
+          }
+        },
+        "assets": {
+          "requestedId": "fixture.rigged.v1",
+          "clip": "fixture_sway",
+          "playing": false,
+          "sample": 0.63
+        }
+      },
+      "entering": false,
+      "restoreRevision": 1
+    },
+    "vascularEntry": {
+      "disclosure": "PROXY / CONCEPTUAL MODEL",
+      "region": "Approximate thoracic study marker; not a mapped blood vessel.",
+      "position": [
+        0.0555,
+        1.244,
+        0.099
+      ],
+      "visible": false
+    },
+    "bounds": {
+      "min": [
+        -0.39881572127342224,
+        0.019999997690320015,
+        -0.12
+      ],
+      "max": [
+        0.39881572127342224,
+        1.85,
+        0.1810000091791153
+      ],
+      "projected": {
+        "top": 1.6527970336116453,
+        "bottom": -3.568229173413565,
+        "left": -0.6550539177741136,
+        "right": 0.6332157086291981
+      },
+      "heightFraction": 2.6105131035126052
+    },
+    "metrics": null,
+    "frames": 61,
+    "viewport": {
+      "width": 876,
+      "height": 750,
+      "dpr": 1
+    },
+    "modelStatus": "conceptual_proxy"
+  }
+}

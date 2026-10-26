@@ -23,9 +23,12 @@ async function open(page: Page) {
   await page.goto('/');
   await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
   await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('1');
+  await expect.poll(async () => (await scene(page)).metrics?.geometries ?? 0).toBeGreaterThan(0);
+  const bodyBaseline = await scene(page);
   await page.getByTestId('rinkaku-toggle').click();
   await expect.poll(async () => Boolean((await scene(page)).rinkaku.adapter)).toBe(true);
   await expect.poll(async () => (await scene(page)).camera.moving).toBe(false);
+  return bodyBaseline;
 }
 
 test('terminal retraction settles before the visibility cutoff and leaves no rendered residue for 1–4 appendages', async ({ page }) => {
@@ -70,7 +73,7 @@ test('terminal retraction settles before the visibility cutoff and leaves no ren
 });
 
 test('real terminal playback stops at one, keeps replay resources stable and releases them on exit', async ({ page }) => {
-  await open(page);
+  const bodyBaseline = await open(page);
   await scrub(page, .9);
   await page.waitForTimeout(2200);
   const warmed = await scene(page);
@@ -88,9 +91,11 @@ test('real terminal playback stops at one, keeps replay resources stable and rel
   expect(end.layers).toEqual(warmed.layers);
   await page.getByTestId('rinkaku-toggle').click();
   await expect.poll(async () => (await scene(page)).rinkaku.adapter).toBeNull();
-  await expect.poll(async () => (await scene(page)).metrics.geometries).toBe(13);
+  // G4A adds two permanent Body marker geometries. Compare to the actual
+  // unmounted Body baseline, preserving the original disposal invariant.
+  await expect.poll(async () => (await scene(page)).metrics.geometries).toBe(bodyBaseline.metrics.geometries);
   const unmounted = await scene(page);
-  expect(unmounted.metrics.textures).toBe(3);
+  expect(unmounted.metrics.textures).toBe(bodyBaseline.metrics.textures);
   await mkdir(OUTPUT, { recursive: true });
   await writeFile(`${OUTPUT}/terminal-resources.json`, JSON.stringify({ method: 'Real UI playback from .98 to1; retained replay buffers are intentional until mode exit. Renderer counters do not measure VRAM.', elapsedMs: Date.now() - started, warmed, end, unmounted }, null, 2) + '\n');
 });

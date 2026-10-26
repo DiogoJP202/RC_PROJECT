@@ -1,0 +1,25 @@
+{
+  "source": "artifacts/gates/G4A1-review/after/tracking-42s.webm",
+  "sourceSHA256": "8817e244e0fb2cdc9b73d38b9371f8c496a119d65caea68a3943632d1b188c7f",
+  "method": "Existing Playwright ffmpeg: actual video frames at container timestamps, not simulation time. Each seek and PNG decode exit0.",
+  "frames": [
+    {
+      "file": "artifacts/gates/G4A1-review/after/decoded/video-15.png",
+      "videoTimestampSeconds": 15,
+      "exitCode": 0,
+      "sha256": "4025d6763619567b521403508269b0a86f734d4479cbd116bfa36916ebdf19ac"
+    },
+    {
+      "file": "artifacts/gates/G4A1-review/after/decoded/video-30.png",
+      "videoTimestampSeconds": 30,
+      "exitCode": 0,
+      "sha256": "621c3a428d1d953eec6538fb1a399e143a7a370bfe17e60c5fddd3d7f2eb9da2"
+    },
+    {
+      "file": "artifacts/gates/G4A1-review/after/decoded/video-45.png",
+      "videoTimestampSeconds": 45,
+      "exitCode": 0,
+      "sha256": "a3b1f745266aeb7a7931c89389f402ab053789c8773f39b1d98f43e966340244"
+    }
+  ]
+}

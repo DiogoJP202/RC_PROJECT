@@ -1,0 +1,10 @@
+{
+  "mode": "restore",
+  "total": 736,
+  "changed": 170,
+  "restored": 170,
+  "verifiedOriginalCount": 736,
+  "remainingDifferent": 0,
+  "report": "artifacts/g4a1/history-preservation.json",
+  "requiresRestore": false
+}

@@ -1,0 +1,2 @@
+G4A.1 final overlay-spacing verification. npm script equivalent via repository CLIs; inherited npm executable unavailable.
+> node node_modules/eslint/bin/eslint.js .

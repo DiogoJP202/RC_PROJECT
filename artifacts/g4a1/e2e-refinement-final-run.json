@@ -1,0 +1,10 @@
+{
+  "command": "node node_modules/@playwright/test/cli.js test tests/e2e/g4a1-refinement.spec.ts --reporter=list,json",
+  "baseURL": "http://127.0.0.1:4173",
+  "exitCode": 1,
+  "durationMs": 195161,
+  "phase": "final-overlay-spacing",
+  "note": "Existing6 scenarios only; desktop selection and mobile390/430 now verify identity/proxy non-overlap. Full62 evidence was not rewritten.",
+  "log": "artifacts/g4a1/e2e-refinement-final.txt",
+  "report": "artifacts/g4a1/e2e-refinement-final.json"
+}

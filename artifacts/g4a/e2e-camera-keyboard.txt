@@ -1,0 +1,14 @@
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test tests/e2e/vascular.spec.ts --grep releasing tracking|enabling reduced motion|free observation --reporter=list,json
+
+
+Running 3 tests using 1 worker
+
+(node:11720) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › tests\e2e\vascular.spec.ts:221:1 › releasing tracking by button, missing profile or first Escape retains the actual camera pose (9.2s)
+  ok 2 [chromium] › tests\e2e\vascular.spec.ts:246:1 › enabling reduced motion inside Micro overrides the saved Body orbit inertia on return (3.8s)
+  ok 3 [chromium] › tests\e2e\vascular.spec.ts:273:1 › free observation accepts real orbit and keyboard pan, and camera reset preserves the absolute transport pose (4.1s)
+
+  3 passed (19.0s)

@@ -1,0 +1,7 @@
+G4A.1 final overlay-spacing verification. npm script equivalent via repository CLIs; inherited npm executable unavailable.
+> node tools/python.mjs -m unittest discover -s tools -p test_validate_catalog.py
+......................
+----------------------------------------------------------------------
+Ran 22 tests in 0.154s
+
+OK

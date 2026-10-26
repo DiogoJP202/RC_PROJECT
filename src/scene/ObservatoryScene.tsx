@@ -14,6 +14,7 @@ import { cameraPose, smoothFocus } from './camera';
 import { useRinkaku } from '../state/rinkaku';
 import { inspectRinkaku, rinkakuRuntime } from './rinkaku/rinkakuRuntime';
 import { rinkakuCameraPose } from './rinkaku/camera';
+import { bodySceneBridge, captureBodyCamera, restoreBodyCamera, type BodyCameraSnapshot } from './bodyContext';
 
 const RinkakuScene = lazy(() => import('./rinkaku/RinkakuScene'));
 
@@ -46,7 +47,8 @@ function InspectableScene({ onReady, onError }: SceneProps) {
   const frameCount = useRef(0);
   const frameCursor = useRef(0);
   const frameDurations = useRef(new Float32Array(1800));
-  const tween = useRef({ active: false, elapsed: 0, duration: 1.05, fromPosition: new Vector3(), toPosition: new Vector3(), fromTarget: new Vector3(), toTarget: new Vector3() });
+  const tween = useRef({ active: false, elapsed: 0, duration: 1.05, fromPosition: new Vector3(), toPosition: new Vector3(), fromTarget: new Vector3(), toTarget: new Vector3(), onComplete: null as (() => void) | null });
+  const mode = useObservatory((s) => s.mode);
   const focus = useObservatory((s) => s.focus);
   const reducedMotion = useObservatory((s) => s.reducedMotion);
   const selected = useObservatory((s) => s.selectedId);
@@ -58,6 +60,42 @@ function InspectableScene({ onReady, onError }: SceneProps) {
   const raycaster = useMemo(() => new Raycaster(), []);
   const pointer = useMemo(() => new Vector2(), []);
   const orbitLimits = useRef({ min: new Vector3(-.4, .4, -.3), max: new Vector3(.4, 1.75, .3) });
+  const vascularMarker = useRef<Group>(null);
+  const restoredFocus = useRef<{ target: typeof focus.target; nonce: number; camera: BodyCameraSnapshot } | null>(null);
+
+  useEffect(() => bodySceneBridge.bind({
+    capture: () => controls.current ? captureBodyCamera(camera, controls.current) : null,
+    restore: (saved) => {
+      tween.current.active = false; tween.current.onComplete = null;
+      if (!controls.current) return;
+      restoreBodyCamera(camera, controls.current, saved);
+      restoredFocus.current = { ...useObservatory.getState().focus, camera: saved };
+    },
+    prepareEntry: (onComplete) => {
+      const next = tween.current;
+      next.fromPosition.copy(camera.position); next.fromTarget.copy(controls.current?.target ?? new Vector3(0, .94, 0));
+      next.toTarget.copy(vascularMarker.current?.position ?? new Vector3(.11, 1.2, .145));
+      next.toPosition.copy(next.toTarget).add(new Vector3(.13, .07, .42));
+      next.elapsed = 0; next.duration = .95; next.active = true; next.onComplete = onComplete;
+      restoredFocus.current = null;
+      if (controls.current) controls.current.enabled = false;
+    },
+    cancelEntry: () => {
+      tween.current.active = false; tween.current.onComplete = null;
+      if (controls.current) controls.current.enabled = true;
+    },
+  }), [camera]);
+
+  useEffect(() => {
+    const marker = vascularMarker.current;
+    if (!marker) return;
+    const bounds = bindingBounds('human.thorax');
+    if (bounds) {
+      const extent = bounds.getSize(new Vector3());
+      bounds.getCenter(marker.position);
+      marker.position.add(new Vector3(extent.x * .15, -extent.y * .14, extent.z * .55));
+    } else marker.position.set(.11, 1.2, .145);
+  }, [assetStatus]);
 
   useEffect(() => {
     const limits = orbitLimits.current;
@@ -72,12 +110,21 @@ function InspectableScene({ onReady, onError }: SceneProps) {
   }, [assetStatus, scene, rinkakuEnabled]);
 
   useEffect(() => {
+    if (mode !== 'body' || bodySceneBridge.entering) return;
     if (size.width <= 0 || size.height <= 0) return;
+    // Return to the captured orbit. Layout may settle over several commits while
+    // the hidden Body panel becomes visible; these commits must not invoke a preset.
+    const restored = restoredFocus.current;
+    if (restored && focus.target === restored.target && focus.nonce === restored.nonce && controls.current) {
+      restoreBodyCamera(camera, controls.current, restored.camera);
+      return;
+    }
+    restoredFocus.current = null;
     // Flush residual orbit inertia before a new focus so reset is deterministic.
     if (controls.current) {
       controls.current.enableDamping = false;
       controls.current.update();
-      controls.current.enableDamping = true;
+      controls.current.enableDamping = !reducedMotion;
     }
     let bounds = focus.target !== 'overview' && focus.target !== 'posterior' && focus.target !== 'rinkaku-lateral' && focus.target !== 'rinkaku-oblique' ? bindingBounds(focus.target) : null;
     if ((focus.target === 'overview' || focus.target === 'posterior') && assetRuntime.lease) {
@@ -107,6 +154,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
     next.fromTarget.copy(controls.current?.target ?? new Vector3(0, 0.94, 0));
     next.toTarget.set(...pose.target);
     next.elapsed = 0;
+    next.onComplete = null;
     next.duration = Math.max(.48, Math.min(1.15, next.fromPosition.distanceTo(next.toPosition) * .23 + .45));
     next.active = !reducedMotion && ready.current;
     if (!next.active) {
@@ -115,7 +163,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       camera.lookAt(next.toTarget);
       controls.current?.update();
     }
-  }, [focus, reducedMotion, camera, scene, size.width, size.height, rinkakuEnabled]);
+  }, [focus, reducedMotion, camera, scene, size.width, size.height, rinkakuEnabled, mode]);
 
   useEffect(() => {
     const marker = selectionRef.current;
@@ -134,6 +182,7 @@ function InspectableScene({ onReady, onError }: SceneProps) {
 
   useEffect(() => {
     const interval = window.setInterval(() => {
+      if (useObservatory.getState().mode !== 'body' || document.hidden) return;
       const count = Math.min(frameCursor.current, frameDurations.current.length);
       if (count < 2) return;
       const fps = Array.from(frameDurations.current.subarray(0, count), (d) => 1 / Math.max(d, 0.001)).sort((a, b) => a - b);
@@ -201,17 +250,23 @@ function InspectableScene({ onReady, onError }: SceneProps) {
           animation: { clip: assetState.clip, time: assetRuntime.animationTime, playing: !!clip && assetState.playing && !state.reducedMotion }, bones, cache: getAssetCacheStats() };
         return { ready: ready.current, selectedId: state.selectedId, lastHit: lastHit.current, layers: state.layers, assets, rinkaku: inspectRinkaku(),
           visibleNodes, nodes, surfaceOpacity: state.surfaceOpacity, paused: state.paused, reducedMotion: state.reducedMotion,
-          scanT: scanProgress.current, scanRevision: state.scanRevision, camera: { position: camera.position.toArray(), target: controls.current?.target.toArray(), moving: tween.current.active },
+          scanT: scanProgress.current, scanRevision: state.scanRevision, camera: { position: camera.position.toArray(), target: controls.current?.target.toArray(), moving: tween.current.active,
+            quaternion: camera.quaternion.toArray(), up: camera.up.toArray(), enableDamping: controls.current?.enableDamping,
+            projection: controls.current ? captureBodyCamera(camera, controls.current).projection : null },
+          bodyContext: { saved: bodySceneBridge.saved, entering: bodySceneBridge.entering, restoreRevision: bodySceneBridge.restoreRevision },
+          vascularEntry: { disclosure: 'PROXY / CONCEPTUAL MODEL', region: 'Approximate thoracic study marker; not a mapped blood vessel.',
+            position: vascularMarker.current?.position.toArray(), visible: mode === 'body' && !state.isolated },
           bounds: { min: bodyBounds.min.toArray(), max: bodyBounds.max.toArray(), projected: { top, bottom, left, right }, heightFraction: (top - bottom) / 2 },
           metrics: state.metrics, frames: frameCount.current, viewport: { width: size.width, height: size.height, dpr: gl.getPixelRatio() }, modelStatus: 'conceptual_proxy' };
       },
     };
     window.__ATLAS_SCENE__ = api;
     return () => { if (window.__ATLAS_SCENE__ === api) delete window.__ATLAS_SCENE__; };
-  }, [camera, gl, pointer, raycaster, scene, size.width, size.height]);
+  }, [camera, gl, pointer, raycaster, scene, size.width, size.height, mode]);
 
   useFrame((_frameState, delta) => {
     const state = useObservatory.getState();
+    if (state.mode !== 'body') return;
     const next = tween.current;
     if (next.active && controls.current) {
       next.elapsed += Math.min(delta, 0.05);
@@ -219,7 +274,11 @@ function InspectableScene({ onReady, onError }: SceneProps) {
       camera.position.lerpVectors(next.fromPosition, next.toPosition, amount);
       controls.current.target.lerpVectors(next.fromTarget, next.toTarget, amount);
       controls.current.update();
-      if (amount === 1) next.active = false;
+      if (amount === 1) {
+        next.active = false;
+        const complete = next.onComplete; next.onComplete = null;
+        complete?.();
+      }
     }
     if (controls.current && !next.active) {
       controls.current.target.clamp(orbitLimits.current.min, orbitLimits.current.max);
@@ -253,6 +312,15 @@ function InspectableScene({ onReady, onError }: SceneProps) {
     <IntegratedAssets onHit={(id) => { lastHit.current = id; }} />
     {rinkakuEnabled ? <Suspense fallback={null}><RinkakuScene /></Suspense> : null}
 
+    <group ref={vascularMarker} name="CONCEPTUAL_VASCULAR_STUDY_MARKER" position={[.11, 1.2, .145]} visible={!isolated}
+      userData={{ role: 'vascular_study_entry', modelStatus: 'conceptual_proxy', disclosure: 'PROXY / CONCEPTUAL MODEL', locationPrecision: 'approximate' }}
+      onClick={(event) => { if (useObservatory.getState().mode !== 'body' || useObservatory.getState().isolated) return; event.stopPropagation(); bodySceneBridge.requestEntry?.(); }}
+      onPointerOver={(event) => { if (useObservatory.getState().mode === 'body' && !useObservatory.getState().isolated) { event.stopPropagation(); document.body.style.cursor = 'crosshair'; } }}
+      onPointerOut={() => { document.body.style.cursor = ''; }}>
+      <mesh><torusGeometry args={[.034, .0025, 8, 40]} /><meshBasicMaterial color="#b5cdb7" transparent opacity={.72} /></mesh>
+      <mesh rotation={[0, 0, -.25]}><capsuleGeometry args={[.0055, .11, 4, 8]} /><meshStandardMaterial color="#ac6266" roughness={.83} /></mesh>
+    </group>
+
     <mesh name="CONCEPTUAL_SELECTION_LOCATOR" ref={selectionRef} renderOrder={5}
       visible={!isolated && (selected !== 'ghoul.kakuhou.rinkaku' || internal)}>
       <ringGeometry args={[selected === 'ghoul.kakuhou.rinkaku' ? 0.083 : 0.035, selected === 'ghoul.kakuhou.rinkaku' ? 0.086 : 0.037, 64]} />
@@ -277,14 +345,15 @@ function InspectableScene({ onReady, onError }: SceneProps) {
     {[0.54, 0.72, 1.02].map((radius, index) => <mesh key={radius} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.005, 0]}>
       <ringGeometry args={[radius, radius + 0.0015, 96]} /><meshBasicMaterial color={index === 0 ? '#427479' : '#203e4c'} transparent opacity={0.6 - index * 0.12} />
     </mesh>)}
-    <OrbitControls ref={controls} makeDefault enableDamping dampingFactor={0.09} rotateSpeed={0.6} zoomSpeed={0.72}
+    <OrbitControls ref={controls} makeDefault enableDamping={!reducedMotion} dampingFactor={0.09} rotateSpeed={0.6} zoomSpeed={0.72}
       minDistance={0.42} maxDistance={6.8} minPolarAngle={0.45} maxPolarAngle={1.87} enablePan panSpeed={0.45}
-      target={[0, 0.94, 0]} onStart={() => { tween.current.active = false; }} />
+      target={[0, 0.94, 0]} onStart={() => { tween.current.active = false; restoredFocus.current = null; bodySceneBridge.cancelEntry(); }} />
   </>;
 }
 
 export default function ObservatoryScene(props: SceneProps) {
-  return <Canvas className="atlas-canvas" shadows={{ type: PCFShadowMap }} dpr={[1, 1.5]} camera={{ position: [1.2, 1, 4], fov: 36, near: 0.025, far: 40 }}
+  const mode = useObservatory((s) => s.mode);
+  return <Canvas className="atlas-canvas" frameloop={mode === 'body' ? 'always' : 'never'} shadows={{ type: PCFShadowMap }} dpr={[1, 1.5]} camera={{ position: [1.2, 1, 4], fov: 36, near: 0.025, far: 40 }}
     gl={(defaults) => {
       try { return new WebGLRenderer({ ...defaults, antialias: true, alpha: false, powerPreference: 'high-performance', preserveDrawingBuffer: false }); }
       catch (error) {

@@ -12,6 +12,15 @@ artifacts/gates/G3A1-review/** -text
 artifacts/checkpoint/g3a-*.json -text
 artifacts/checkpoint/gates/G3A-* -text
 *.webm binary
+artifacts/gates/G4A-review/** -text
+artifacts/g4a/** -text
+artifacts/gates/G4A1-review/** -text
+artifacts/g4a1/** -text
+artifacts/checkpoint/g4a-* -text
+artifacts/checkpoint/gates/G4A-* -text
 # Preserve terminal output verbatim, including its trailing empty output line.
 artifacts/** whitespace=cr-at-eol
 artifacts/**/*.txt whitespace=cr-at-eol,-blank-at-eof
+# Historical Playwright reporter spacing is evidence, not source formatting.
+artifacts/g4a/*.txt whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+artifacts/g4a1/*.txt whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol

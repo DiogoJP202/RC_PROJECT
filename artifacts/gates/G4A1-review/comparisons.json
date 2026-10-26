@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-10-26T01:28:26.424Z",
+  "comparisons": [
+    {
+      "name": "overview",
+      "title": "Visão geral",
+      "before": "before/overview.png",
+      "after": "after/overview.png",
+      "seconds": 4,
+      "sameCamera": true,
+      "sameViewport": true,
+      "sameCanvasDimensions": true,
+      "sameTimeline": true,
+      "sameIdentity": true,
+      "sameConfig": true,
+      "matched": true,
+      "cameraDeltas": {
+        "position": 0,
+        "target": 0,
+        "quaternion": 0,
+        "up": 0
+      },
+      "note": "Same measured camera pose, canvas size, timeline, identity and config."
+    },
+    {
+      "name": "rc-selected",
+      "title": "RC selecionada / cor e marcador",
+      "before": "before/rc-selected.png",
+      "after": "after/rc-selected.png",
+      "seconds": 11,
+      "sameCamera": false,
+      "sameViewport": true,
+      "sameCanvasDimensions": true,
+      "sameTimeline": true,
+      "sameIdentity": true,
+      "sameConfig": true,
+      "matched": false,
+      "cameraDeltas": {
+        "position": 0.6248260001444746,
+        "target": 0,
+        "quaternion": 0.197722536345887,
+        "up": 0.01801836104072581
+      },
+      "note": "Measured framing differs. Inspect behavior/layout as well as material; do not claim an identical-camera material comparison."
+    },
+    {
+      "name": "tracking-occlusion",
+      "title": "Tracking / oclusão",
+      "before": "before/tracking-occlusion.png",
+      "after": "after/tracking-occlusion.png",
+      "seconds": 20,
+      "sameCamera": false,
+      "sameViewport": true,
+      "sameCanvasDimensions": true,
+      "sameTimeline": true,
+      "sameIdentity": true,
+      "sameConfig": true,
+      "matched": false,
+      "cameraDeltas": {
+        "position": 0.5326500575459961,
+        "target": 6.4134000839094176e-15,
+        "quaternion": 0.17354856045074551,
+        "up": 0.011318425248418118
+      },
+      "note": "Measured framing differs. Inspect behavior/layout as well as material; do not claim an identical-camera material comparison."
+    },
+    {
+      "name": "rbc-closeup",
+      "title": "Close da hemácia",
+      "before": "before/rbc-closeup.png",
+      "after": "after/rbc-closeup.png",
+      "seconds": 11,
+      "sameCamera": false,
+      "sameViewport": true,
+      "sameCanvasDimensions": true,
+      "sameTimeline": true,
+      "sameIdentity": true,
+      "sameConfig": true,
+      "matched": false,
+      "cameraDeltas": {
+        "position": 0.4659751955277639,
+        "target": 5.60415245948141e-15,
+        "quaternion": 0.11944025160688551,
+        "up": 0.019311986607903637
+      },
+      "note": "Measured framing differs. Inspect behavior/layout as well as material; do not claim an identical-camera material comparison."
+    },
+    {
+      "name": "wall",
+      "title": "Parede vascular",
+      "before": "before/wall.png",
+      "after": "after/wall.png",
+      "seconds": 4,
+      "sameCamera": true,
+      "sameViewport": true,
+      "sameCanvasDimensions": true,
+      "sameTimeline": true,
+      "sameIdentity": true,
+      "sameConfig": true,
+      "matched": true,
+      "cameraDeltas": {
+        "position": 0,
+        "target": 0,
+        "quaternion": 0,
+        "up": 0
+      },
+      "note": "Same measured camera pose, canvas size, timeline, identity and config."
+    },
+    {
+      "name": "desktop",
+      "title": "Desktop / realce didático",
+      "before": "before/desktop.png",
+      "after": "after/desktop.png",
+      "seconds": 11,
+      "sameCamera": false,
+      "sameViewport": true,
+      "sameCanvasDimensions": true,
+      "sameTimeline": true,
+      "sameIdentity": true,
+      "sameConfig": true,
+      "matched": false,
+      "cameraDeltas": {
+        "position": 0.6248260001444746,
+        "target": 0,
+        "quaternion": 0.197722536345887,
+        "up": 0.01801836104072581
+      },
+      "note": "Measured framing differs. Inspect behavior/layout as well as material; do not claim an identical-camera material comparison."
+    },
+    {
+      "name": "mobile",
+      "title": "Mobile390",
+      "before": "before/mobile.png",
+      "after": "after/mobile.png",
+      "seconds": 11,
+      "sameCamera": false,
+      "sameViewport": true,
+      "sameCanvasDimensions": true,
+      "sameTimeline": true,
+      "sameIdentity": true,
+      "sameConfig": true,
+      "matched": false,
+      "cameraDeltas": {
+        "position": 0.6248260001444746,
+        "target": 0,
+        "quaternion": 0.197722536345887,
+        "up": 0.01801836104072581
+      },
+      "note": "Measured framing differs. Inspect behavior/layout as well as material; do not claim an identical-camera material comparison."
+    }
+  ],
+  "pendingViews": [],
+  "method": "Hashes checked; camera pose/dimensions/timeline/config compared from actual capture metadata. Contact sheet embeds only those PNGs without replacing scene content."
+}

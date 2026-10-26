@@ -1,0 +1,257 @@
+{
+  "method": "Existing anatomyId meshes observed before/during/after actual UI entry, retaining original bindings and authoritative lumbar socket.",
+  "samples": [
+    {
+      "asset": "proxy",
+      "before": [
+        {
+          "name": "KAKUHOU_RINKAKU",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 15960,
+          "bounds": [
+            [
+              -0.10146593302488327,
+              0.917545735836029,
+              -0.1469999998807907
+            ],
+            [
+              0.10146593302488327,
+              1.034000039100647,
+              -0.07500000298023224
+            ]
+          ]
+        }
+      ],
+      "during": [
+        {
+          "name": "KAKUHOU_RINKAKU",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": false,
+          "vertices": 15960,
+          "bounds": [
+            [
+              -0.10146593302488327,
+              0.917545735836029,
+              -0.1469999998807907
+            ],
+            [
+              0.10146593302488327,
+              1.034000039100647,
+              -0.07500000298023224
+            ]
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "name": "KAKUHOU_RINKAKU",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 15960,
+          "bounds": [
+            [
+              -0.10146593302488327,
+              0.917545735836029,
+              -0.1469999998807907
+            ],
+            [
+              0.10146593302488327,
+              1.034000039100647,
+              -0.07500000298023224
+            ]
+          ]
+        }
+      ],
+      "connection": {
+        "source": "proxy",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0.976,
+          -0.112,
+          1
+        ]
+      }
+    },
+    {
+      "asset": "fixture.static.v1",
+      "before": [
+        {
+          "name": "LumbarFacet",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 6,
+          "bounds": [
+            [
+              -0.105,
+              0.901,
+              -0.187
+            ],
+            [
+              0.105,
+              1.051,
+              -0.037000000000000005
+            ]
+          ]
+        }
+      ],
+      "during": [
+        {
+          "name": "LumbarFacet",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": false,
+          "vertices": 6,
+          "bounds": [
+            [
+              -0.105,
+              0.901,
+              -0.187
+            ],
+            [
+              0.105,
+              1.051,
+              -0.037000000000000005
+            ]
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "name": "LumbarFacet",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 6,
+          "bounds": [
+            [
+              -0.105,
+              0.901,
+              -0.187
+            ],
+            [
+              0.105,
+              1.051,
+              -0.037000000000000005
+            ]
+          ]
+        }
+      ],
+      "connection": {
+        "source": "asset-socket",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0.976,
+          -0.192,
+          1
+        ]
+      }
+    },
+    {
+      "asset": "fixture.rigged.v1",
+      "before": [
+        {
+          "name": "WeightedLumbarFacet",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 8,
+          "bounds": [
+            [
+              -0.10000000149011612,
+              0.9059999997019768,
+              -0.17199999865889548
+            ],
+            [
+              0.10000000149011612,
+              1.0460000002980232,
+              -0.05200000134110451
+            ]
+          ]
+        }
+      ],
+      "during": [
+        {
+          "name": "WeightedLumbarFacet",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": false,
+          "vertices": 8,
+          "bounds": [
+            [
+              -0.10000000149011612,
+              0.9059999997019768,
+              -0.17199999865889548
+            ],
+            [
+              0.10000000149011612,
+              1.0460000002980232,
+              -0.05200000134110451
+            ]
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "name": "WeightedLumbarFacet",
+          "anatomyId": "ghoul.kakuhou.rinkaku",
+          "visible": true,
+          "vertices": 8,
+          "bounds": [
+            [
+              -0.10000000149011612,
+              0.9059999997019768,
+              -0.17199999865889548
+            ],
+            [
+              0.10000000149011612,
+              1.0460000002980232,
+              -0.05200000134110451
+            ]
+          ]
+        }
+      ],
+      "connection": {
+        "source": "asset-socket",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0.976,
+          -0.192,
+          1
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "config": {
+    "argv": [
+      "<user>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "<workspace>\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "vascular.spec.ts",
+      "--reporter=list,json"
+    ],
+    "configFile": "<workspace>\\playwright.config.ts",
+    "rootDir": "<workspace>/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "<workspace>/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "<workspace>/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "<workspace>\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "<workspace>\\tests\\e2e",
+        "snapshotDir": "<workspace>\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "deviceScaleFactor": 1,
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "launchOptions": {
+            "executablePath": "<user>\\AppData\\Local\\ms-playwright\\chromium-1248\\chrome-win64\\chrome.exe",
+            "args": [
+              "--enable-webgl",
+              "--ignore-gpu-blocklist"
+            ]
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "vascular.spec.ts",
+      "file": "vascular.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ten Body→Micro→Body transitions restore the manual camera, selection, layers and paused Rinkaku pose",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2933,
+                  "error": {
+                    "message": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByTestId('rinkaku-time')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"1\" value=\"0\" step=\"0.001\" type=\"range\" data-testid=\"rinkaku-time\" id=\"rinkaku-timeline-input\" aria-label=\"Progresso da manifestação Rinkaku\"/>\u001b[22m\n\u001b[2m    - fill(\".7\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                    "stack": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByTestId('rinkaku-time')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"1\" value=\"0\" step=\"0.001\" type=\"range\" data-testid=\"rinkaku-time\" id=\"rinkaku-timeline-input\" aria-label=\"Progresso da manifestação Rinkaku\"/>\u001b[22m\n\u001b[2m    - fill(\".7\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at <workspace>\\tests\\e2e\\vascular.spec.ts:74:42",
+                    "location": {
+                      "file": "<workspace>\\tests\\e2e\\vascular.spec.ts",
+                      "column": 42,
+                      "line": 74
+                    },
+                    "snippet": "  72 |   await page.getByTestId('layer-skeletal').click();\n  73 |   await page.getByTestId('rinkaku-toggle').click();\n> 74 |   await page.getByTestId('rinkaku-time').fill('.7');\n     |                                          ^\n  75 |   await expect.poll(async () => (await body(page)).rinkaku.t).toBeCloseTo(.7, 6);\n  76 |   const canvas = page.getByTestId('stage').locator('canvas'); const box = await canvas.boundingBox();\n  77 |   await page.mouse.move(box!.x + box!.width * .48, box!.y + box!.height * .55);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<workspace>\\tests\\e2e\\vascular.spec.ts",
+                        "column": 42,
+                        "line": 74
+                      },
+                      "message": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByTestId('rinkaku-time')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"1\" value=\"0\" step=\"0.001\" type=\"range\" data-testid=\"rinkaku-time\" id=\"rinkaku-timeline-input\" aria-label=\"Progresso da manifestação Rinkaku\"/>\u001b[22m\n\u001b[2m    - fill(\".7\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n  72 |   await page.getByTestId('layer-skeletal').click();\n  73 |   await page.getByTestId('rinkaku-toggle').click();\n> 74 |   await page.getByTestId('rinkaku-time').fill('.7');\n     |                                          ^\n  75 |   await expect.poll(async () => (await body(page)).rinkaku.t).toBeCloseTo(.7, 6);\n  76 |   const canvas = page.getByTestId('stage').locator('canvas'); const box = await canvas.boundingBox();\n  77 |   await page.mouse.move(box!.x + box!.width * .48, box!.y + box!.height * .55);\n    at <workspace>\\tests\\e2e\\vascular.spec.ts:74:42"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T15:08:04.881Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "<workspace>\\test-results\\vascular-ten-Body→Micro→Bo-9e377-ers-and-paused-Rinkaku-pose-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<workspace>\\test-results\\vascular-ten-Body→Micro→Bo-9e377-ers-and-paused-Rinkaku-pose-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "<workspace>\\test-results\\vascular-ten-Body→Micro→Bo-9e377-ers-and-paused-Rinkaku-pose-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<workspace>\\tests\\e2e\\vascular.spec.ts",
+                    "column": 42,
+                    "line": 74
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1699b82d7a4af92e5992-da70647c326a07acbd04",
+          "file": "vascular.spec.ts",
+          "line": 68,
+          "column": 1
+        },
+        {
+          "title": "absolute scrubbing, pause, speed, reset and population changes retain deterministic instanced transport",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5235,
+                  "error": {
+                    "message": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByTestId('micro-speed')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"1\" step=\"0.01\" type=\"range\" data-testid=\"micro-speed\" value=\"0.42857142857142855\" aria-label=\"Velocidade visual normalizada\"/>\u001b[22m\n\u001b[2m    - fill(\".8\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                    "stack": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByTestId('micro-speed')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"1\" step=\"0.01\" type=\"range\" data-testid=\"micro-speed\" value=\"0.42857142857142855\" aria-label=\"Velocidade visual normalizada\"/>\u001b[22m\n\u001b[2m    - fill(\".8\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at <workspace>\\tests\\e2e\\vascular.spec.ts:127:41",
+                    "location": {
+                      "file": "<workspace>\\tests\\e2e\\vascular.spec.ts",
+                      "column": 41,
+                      "line": 127
+                    },
+                    "snippet": "  125 |   expect((await micro(page)).playing).toBe(false);\n  126 |   await page.emulateMedia({ reducedMotion: 'no-preference' });\n> 127 |   await page.getByTestId('micro-speed').fill('.8'); await page.getByTestId('micro-play').click();\n      |                                         ^\n  128 |   await expect.poll(async () => (await micro(page)).seconds).toBeGreaterThan(.1);\n  129 |   await page.getByTestId('micro-play').click(); const paused = await micro(page);\n  130 |   await page.waitForTimeout(150); expect((await micro(page)).seconds).toBe(paused.seconds);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<workspace>\\tests\\e2e\\vascular.spec.ts",
+                        "column": 41,
+                        "line": 127
+                      },
+                      "message": "Error: locator.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for getByTestId('micro-speed')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" max=\"1\" step=\"0.01\" type=\"range\" data-testid=\"micro-speed\" value=\"0.42857142857142855\" aria-label=\"Velocidade visual normalizada\"/>\u001b[22m\n\u001b[2m    - fill(\".8\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n  125 |   expect((await micro(page)).playing).toBe(false);\n  126 |   await page.emulateMedia({ reducedMotion: 'no-preference' });\n> 127 |   await page.getByTestId('micro-speed').fill('.8'); await page.getByTestId('micro-play').click();\n      |                                         ^\n  128 |   await expect.poll(async () => (await micro(page)).seconds).toBeGreaterThan(.1);\n  129 |   await page.getByTestId('micro-play').click(); const paused = await micro(page);\n  130 |   await page.waitForTimeout(150); expect((await micro(page)).seconds).toBe(paused.seconds);\n    at <workspace>\\tests\\e2e\\vascular.spec.ts:127:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T15:08:11.319Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "<workspace>\\test-results\\vascular-absolute-scrubbin-0ee4c-inistic-instanced-transport-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<workspace>\\test-results\\vascular-absolute-scrubbin-0ee4c-inistic-instanced-transport-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "<workspace>\\test-results\\vascular-absolute-scrubbin-0ee4c-inistic-instanced-transport-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<workspace>\\tests\\e2e\\vascular.spec.ts",
+                    "column": 41,
+                    "line": 127
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1699b82d7a4af92e5992-0d5100a1a48877012b03",
+          "file": "vascular.spec.ts",
+          "line": 107,
+          "column": 1
+        },
+        {
+          "title": "real RC and RBC picking reaches the stable inspector identity and evidence remains classified",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3957,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T15:08:18.227Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1699b82d7a4af92e5992-26548221d6e451f535a4",
+          "file": "vascular.spec.ts",
+          "line": 134,
+          "column": 1
+        },
+        {
+          "title": "tracking keeps one identity through real playback, while profile removal is explicit and keyboard exits in two steps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 80000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 46811,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T15:08:22.510Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1699b82d7a4af92e5992-f640422cbbc369b7c667",
+          "file": "vascular.spec.ts",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "reduced motion keeps manual transport and camera/selection controls available without continuous playback",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 19727,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m7\u001b[39m\nReceived:   \u001b[31m6.51\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m7\u001b[39m\nReceived:   \u001b[31m6.51\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n    at <workspace>\\tests\\e2e\\vascular.spec.ts:191:62",
+                    "location": {
+                      "file": "<workspace>\\tests\\e2e\\vascular.spec.ts",
+                      "column": 62,
+                      "line": 191
+                    },
+                    "snippet": "  189 |   await expect.poll(async () => (await micro(page)).seconds).toBe(7);\n  190 |   await page.getByTestId('micro-time').focus(); await page.keyboard.press('ArrowRight');\n> 191 |   await expect.poll(async () => (await micro(page)).seconds).toBeGreaterThan(7);\n      |                                                              ^\n  192 |   const still = await micro(page); await page.waitForTimeout(160);\n  193 |   expect((await micro(page)).adapter.positionHash).toBe(still.adapter.positionHash);\n  194 |   await page.getByTestId('micro-entity').selectOption('rc:17:0'); await page.getByTestId('micro-follow').click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<workspace>\\tests\\e2e\\vascular.spec.ts",
+                        "column": 62,
+                        "line": 191
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m7\u001b[39m\nReceived:   \u001b[31m6.51\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n  189 |   await expect.poll(async () => (await micro(page)).seconds).toBe(7);\n  190 |   await page.getByTestId('micro-time').focus(); await page.keyboard.press('ArrowRight');\n> 191 |   await expect.poll(async () => (await micro(page)).seconds).toBeGreaterThan(7);\n      |                                                              ^\n  192 |   const still = await micro(page); await page.waitForTimeout(160);\n  193 |   expect((await micro(page)).adapter.positionHash).toBe(still.adapter.positionHash);\n  194 |   await page.getByTestId('micro-entity').selectOption('rc:17:0'); await page.getByTestId('micro-follow').click();\n    at <workspace>\\tests\\e2e\\vascular.spec.ts:191:62"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T15:09:09.339Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "<workspace>\\test-results\\vascular-reduced-motion-ke-0d74f-without-continuous-playback-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "<workspace>\\test-results\\vascular-reduced-motion-ke-0d74f-without-continuous-playback-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "<workspace>\\test-results\\vascular-reduced-motion-ke-0d74f-without-continuous-playback-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<workspace>\\tests\\e2e\\vascular.spec.ts",
+                    "column": 62,
+                    "line": 191
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1699b82d7a4af92e5992-978838bb8408636a4867",
+          "file": "vascular.spec.ts",
+          "line": 183,
+          "column": 1
+        },
+        {
+          "title": "a real Micro WebGL context loss leaves textual evidence and the Body bookmark available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3703,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T15:09:31.809Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1699b82d7a4af92e5992-6f3817fa120ed8661f57",
+          "file": "vascular.spec.ts",
+          "line": 200,
+          "column": 1
+        },
+        {
+          "title": "Micro without WebGL exposes accessible static evidence and a truthful return path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1380,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T15:09:35.877Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1699b82d7a4af92e5992-03cc33c773f072bd46e5",
+          "file": "vascular.spec.ts",
+          "line": 218,
+          "column": 1
+        },
+        {
+          "title": "mobile Micro has usable touch controls, no overflow and readable selection/evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-25T15:09:37.274Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1699b82d7a4af92e5992-02f00b3009f033e594c0",
+          "file": "vascular.spec.ts",
+          "line": 230,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-25T15:08:04.199Z",
+    "duration": 96664.467,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

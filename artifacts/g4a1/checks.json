@@ -1,0 +1,56 @@
+[
+  {
+    "command": "node node_modules/typescript/bin/tsc -b --pretty false",
+    "npmScript": "typecheck",
+    "exitCode": 0,
+    "durationMs": 5343,
+    "log": "artifacts/g4a1/typecheck.txt",
+    "phase": "final-overlay-spacing",
+    "previousEvidence": "artifacts/local/g4a1-pre-overlay-fix/manifest.json"
+  },
+  {
+    "command": "node node_modules/eslint/bin/eslint.js .",
+    "npmScript": "lint",
+    "exitCode": 0,
+    "durationMs": 5588,
+    "log": "artifacts/g4a1/lint.txt",
+    "phase": "final-overlay-spacing",
+    "previousEvidence": "artifacts/local/g4a1-pre-overlay-fix/manifest.json"
+  },
+  {
+    "command": "node node_modules/vitest/vitest.mjs run",
+    "npmScript": "test",
+    "exitCode": 0,
+    "durationMs": 5151,
+    "log": "artifacts/g4a1/test.txt",
+    "phase": "final-overlay-spacing",
+    "previousEvidence": "artifacts/local/g4a1-pre-overlay-fix/manifest.json"
+  },
+  {
+    "command": "node tools/python.mjs -m unittest discover -s tools -p test_validate_catalog.py",
+    "npmScript": "test:catalog",
+    "exitCode": 0,
+    "durationMs": 706,
+    "log": "artifacts/g4a1/test-catalog.txt",
+    "phase": "final-overlay-spacing",
+    "previousEvidence": "artifacts/local/g4a1-pre-overlay-fix/manifest.json"
+  },
+  {
+    "command": "node tools/python.mjs tools/validate_catalog.py public/catalog.json",
+    "npmScript": "validate:catalog",
+    "exitCode": 0,
+    "durationMs": 469,
+    "log": "artifacts/g4a1/validate-catalog.txt",
+    "phase": "final-overlay-spacing",
+    "previousEvidence": "artifacts/local/g4a1-pre-overlay-fix/manifest.json"
+  },
+  {
+    "command": "node tools/python.mjs tools/validate_catalog.py public/catalog.json && node node_modules/typescript/bin/tsc -b && node node_modules/vite/bin/vite.js build",
+    "npmScript": "build",
+    "exitCode": 0,
+    "durationMs": 6323,
+    "log": "artifacts/g4a1/build.txt",
+    "phase": "final-overlay-spacing",
+    "previousEvidence": "artifacts/local/g4a1-pre-overlay-fix/manifest.json"
+  }
+]

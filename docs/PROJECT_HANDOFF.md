@@ -1,6 +1,16 @@
 # GHOUL ATLAS — Handoff de produto, engenharia e technical art
 
-> **Estado atual, 25/10/2026:** G3A/G3A.1 aprovados pelo usuário como **P1 técnico e visual com ressalvas**. A consolidação e publicação de um checkpoint em `main` estão autorizadas; o SHA será confirmado no encerramento, sem presumir sincronização antes do push. Isso não autoriza deploy. Arte final P2, G2B e G3B permanecem pendentes. O próximo trabalho planejado é **G4A: simulação de circulação e transporte visual RC**, ainda não implementado; G4 completo também permanece pendente. Os avisos anteriores de aprovação/publicação pendentes abaixo ficam preservados como histórico.
+> **ATUAL — G4A/G4A.1 aprovados pelo usuário como P1 técnico e visual com ressalvas:** parede esquemática, marcador fino, hemácia simplificada e mobile apertado permanecem limites aceitos; arte final P2/Blender continua pendente. Passaram **203 unidades, 22 Python e a suíte completa de 62 E2E**; os mesmos seis cenários de refinamento foram rechecados após o CSS final, sem somá-los como 68 testes distintos. TypeScript, lint, catálogo, build e os 12 perfis finais nos budgets originais também passaram. Este estado integra o checkpoint G4A/G4A.1 em `main`, com commit/push autorizados; sua identidade é o commit que introduz [G4A_CHECKPOINT](G4A_CHECKPOINT.md), consultável por `git log -1 -- docs/G4A_CHECKPOINT.md`. O encerramento verifica o SHA remoto e a limpeza da working tree; compare o Git local e remoto ao retomar. A base `717f4069c5e662f78ea8b28e7d13e0636ab0c5dd` é o precedente histórico. Deploy permanece fora do escopo. Não iniciar G4A.2; **G4B é a próxima etapa planejada, ainda não iniciada**, e G4B/G5/G2B/G3B não são implementados por este checkpoint.
+
+O estado para continuidade é o [checkpoint G4A](G4A_CHECKPOINT.md), o [aceite G4A](G4A_ACCEPTANCE.md), o [refinamento G4A.1](G4A1_REFINEMENT.md) e seu [índice de revisão](../artifacts/gates/G4A1-review/INDEX.md). Body→Micro→Body, transporte absoluto, seleção por instância/HTML e câmeras livre/fluxo/tracking existem. O G4A.1 acrescenta planejamento de enquadramento por volumes, transporte de câmera com correções limitadas, seleção externa que conserva a cor-base, materiais mais mates e composição compacta. A aprovação P1 não declara G4 completo: metabolismo, progressão posterior e arte definitiva continuam fora deste escopo.
+
+O [comparativo final de desempenho](../artifacts/gates/G4A1-review/PERFORMANCE.md) e seus [dados de origem](../artifacts/g4a1/performance-comparison.json) separam seis perfis anteriores e seis atuais após o ajuste de CSS: FPS p50 de 59,88 em todos; p10 anterior de 59,52 e atual entre 58,82–59,52. Fluxo conserva três draws; Tracking usa quatro com o marcador. São observações desta estação, sem certificação de telefone físico ou aprovação artística automática.
+
+## Registros anteriores preservados
+
+As notas e tabelas históricas abaixo registram checkpoints anteriores a G4A. Afirmações de “G4A planejado/não implementado”, “Micro informativo”, publicação G3A ainda por confirmar e aprovações P1 anteriormente pendentes pertencem àqueles momentos; o aviso **ATUAL** acima prevalece. A restrição anterior de commit/push de G4A/G4A.1 foi substituída pela autorização de checkpoint, sem autorizar deploy ou novas fases. Comandos e contratos preservados continuam úteis, mas seus resultados históricos não substituem as evidências atuais.
+
+> **Registro histórico — autorização do checkpoint G3A, 25/10/2026:** G3A/G3A.1 aprovados pelo usuário como **P1 técnico e visual com ressalvas**. A consolidação e publicação de um checkpoint em `main` estão autorizadas; o SHA será confirmado no encerramento, sem presumir sincronização antes do push. Isso não autoriza deploy. Arte final P2, G2B e G3B permanecem pendentes. O próximo trabalho planejado é **G4A: simulação de circulação e transporte visual RC**, ainda não implementado; G4 completo também permanece pendente. Os avisos anteriores de aprovação/publicação pendentes abaixo ficam preservados como histórico.
 
 > **G3A.1 local, 24/10/2026:** refinamento da implantação, identidade geométrica das fases, transporte nominal de 21 s (retração de 3,4 s), vista oblíqua e mobile. O sampler absoluto e os contratos G2A permanecem preservados. Decisões, resultados novos e limites em [G3A1_REFINEMENT](G3A1_REFINEMENT.md); comparativos reais no [pacote G3A.1](../artifacts/gates/G3A1-review/INDEX.md). Aprovação artística humana pendente. Trabalho sem commit/push/deploy; os checkpoints abaixo continuam históricos.
 
@@ -20,7 +30,7 @@ A interface tem identidade original de laboratório: palco central, índice, ins
 
 As invariantes de `AGENTS.md` continuam obrigatórias. Separar `official`, `manga_needs_verification`, `real_anatomy`, `inference`, `hypothetical_model` e `unknown` por afirmação. Uma função sustentada por texto oficial não autentica a malha que a ilustra. Fator RC, reserva normalizada e progresso de animação são conceitos distintos; G1 não exibe fórmula fisiológica nem valor RC inventado.
 
-## Estado efetivo dos gates
+## Estado efetivo dos gates — registro anterior a G4A
 
 | Fase | Implementado e demonstrado | Limite preservado |
 |---|---|---|

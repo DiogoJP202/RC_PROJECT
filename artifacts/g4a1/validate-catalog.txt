@@ -1,0 +1,3 @@
+G4A.1 final overlay-spacing verification. npm script equivalent via repository CLIs; inherited npm executable unavailable.
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.

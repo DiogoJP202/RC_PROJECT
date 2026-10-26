@@ -1,0 +1,23 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "selectedId": "rc:17:0",
+  "seconds": 11,
+  "overlays": {
+    "identity": {
+      "top": 633,
+      "bottom": 665,
+      "left": 280,
+      "right": 488.90625
+    },
+    "disclosure": {
+      "top": 690,
+      "bottom": 737,
+      "left": 278,
+      "right": 552.6875
+    },
+    "verticalGap": 25
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "method": "Only new checkpoint JSON/TXT; original raw bytes backed up locally before removing personal paths/BOM. Historical G4A/G4A.1 unchanged.",
+  "records": [
+    {
+      "file": "artifacts/checkpoint/g4a-build.txt",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-build.txt",
+      "beforeSha256": "97d2d9732f955a7a0a05a5664b3836ffc1d36d15c540a3cb46ce37de00f9c083",
+      "sha256": "97d2d9732f955a7a0a05a5664b3836ffc1d36d15c540a3cb46ce37de00f9c083",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/g4a-checks.json",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-checks.json",
+      "beforeSha256": "944893e2f59c0e0071f24f0091d3b30997b8779335ec8b79aa1d55d8d45bd6a3",
+      "sha256": "944893e2f59c0e0071f24f0091d3b30997b8779335ec8b79aa1d55d8d45bd6a3",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/g4a-e2e-smoke.json",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-e2e-smoke.json",
+      "beforeSha256": "f31fcd73969bcedea8222e09368824342abdd36ce6868f530224ba5cdff22aed",
+      "sha256": "d8a0fb77c8afcf151198b4b99efae533fcf37bcf886bd518833fa82402c69da5",
+      "changed": true,
+      "occurrences": 10
+    },
+    {
+      "file": "artifacts/checkpoint/g4a-e2e-smoke.txt",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-e2e-smoke.txt",
+      "beforeSha256": "e33e1451ea99019635beca438bc9aec1096644f9ff478266be9430de6c9836c4",
+      "sha256": "e33e1451ea99019635beca438bc9aec1096644f9ff478266be9430de6c9836c4",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/g4a-evidence-preservation.json",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-evidence-preservation.json",
+      "beforeSha256": "e615125e524e4a7d141bffe59b6b2d9e933b9a873394f659600ae23c24cb8e82",
+      "sha256": "e615125e524e4a7d141bffe59b6b2d9e933b9a873394f659600ae23c24cb8e82",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/g4a-lint.txt",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-lint.txt",
+      "beforeSha256": "c578567735d514a87774970638b81dcb36632df9231240b2b1b39d95db661acb",
+      "sha256": "c578567735d514a87774970638b81dcb36632df9231240b2b1b39d95db661acb",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/g4a-test-catalog.txt",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-test-catalog.txt",
+      "beforeSha256": "f8befd9f722ecbd231199087c4f05f39424737e88a4f0d532983eb1af6af3418",
+      "sha256": "f8befd9f722ecbd231199087c4f05f39424737e88a4f0d532983eb1af6af3418",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/g4a-test.txt",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-test.txt",
+      "beforeSha256": "469a6263cc8f994876d70b1b582375b1677bd25b2703d1d9f9ea58947be44f57",
+      "sha256": "92d3122ab1d7434ae967191ce9fcb4a0f0120075ccd6e6e7ef0b0b2cd9223e12",
+      "changed": true,
+      "occurrences": 1
+    },
+    {
+      "file": "artifacts/checkpoint/g4a-typecheck.txt",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-typecheck.txt",
+      "beforeSha256": "08f6123eef1d115b5d3529e5c83bb74069b63f98411804d1a5357a71251c8be3",
+      "sha256": "08f6123eef1d115b5d3529e5c83bb74069b63f98411804d1a5357a71251c8be3",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/g4a-validate-catalog.txt",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/g4a-validate-catalog.txt",
+      "beforeSha256": "7f67896751bc751fb1fe3c8c018393df7dac3e8e74bbbdd582983460e6c6f672",
+      "sha256": "7f67896751bc751fb1fe3c8c018393df7dac3e8e74bbbdd582983460e6c6f672",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/gates/G4A-camera-mode-transitions.json",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/gates/G4A-camera-mode-transitions.json",
+      "beforeSha256": "c01881bb5682457832f6c1667178ecaa34abff0d3dcffcbfa7af5179f76445cc",
+      "sha256": "c01881bb5682457832f6c1667178ecaa34abff0d3dcffcbfa7af5179f76445cc",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/gates/G4A-mobile-390-layout.json",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/gates/G4A-mobile-390-layout.json",
+      "beforeSha256": "d6bd57eed3901cd84401b31604fb6aba44f179a5f29c23c906aa02a321175767",
+      "sha256": "d6bd57eed3901cd84401b31604fb6aba44f179a5f29c23c906aa02a321175767",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/gates/G4A-mobile-430-layout.json",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/gates/G4A-mobile-430-layout.json",
+      "beforeSha256": "af3c29feb986b7e2339ac40f839e7de1e834393883eced78b8b694405b37a343",
+      "sha256": "af3c29feb986b7e2339ac40f839e7de1e834393883eced78b8b694405b37a343",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/gates/G4A-selection-and-real-visibility.json",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/gates/G4A-selection-and-real-visibility.json",
+      "beforeSha256": "487409b7fe20ec9cea2ee68baa8c7c1721e13d903b2d13b72e7c9879a802d124",
+      "sha256": "487409b7fe20ec9cea2ee68baa8c7c1721e13d903b2d13b72e7c9879a802d124",
+      "changed": false,
+      "occurrences": 0
+    },
+    {
+      "file": "artifacts/checkpoint/gates/G4A-small-scrub-camera-revisits.json",
+      "backup": "artifacts/local/g4a-checkpoint/raw/artifacts/checkpoint/gates/G4A-small-scrub-camera-revisits.json",
+      "beforeSha256": "324798462b46815379b8b537c7de4a587c39913a19d21b213f8a649e9e4b28cd",
+      "sha256": "324798462b46815379b8b537c7de4a587c39913a19d21b213f8a649e9e4b28cd",
+      "changed": false,
+      "occurrences": 0
+    }
+  ]
+}

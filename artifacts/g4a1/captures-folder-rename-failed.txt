@@ -1,0 +1,17 @@
+node:internal/fs/promises:1491
+  return await PromisePrototypeThen(
+         ^
+
+Error: EPERM: operation not permitted, rename '<workspace>\artifacts\gates\G4A1-review\after' -> '<workspace>\artifacts\gates\G4A1-review\history\after-2026-10-26T01-19-51.550Z'
+    at async Object.rename (node:internal/fs/promises:1491:10)
+    at async prepareFolder (file:///<workspace>/artifacts/gates/G4A1-review/capture.mjs:40:69)
+    at async run (file:///<workspace>/artifacts/gates/G4A1-review/capture.mjs:124:18)
+    at async file:///<workspace>/artifacts/gates/G4A1-review/capture.mjs:205:5 {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'rename',
+  path: '<workspace>\\artifacts\\gates\\G4A1-review\\after',
+  dest: '<workspace>\\artifacts\\gates\\G4A1-review\\history\\after-2026-10-26T01-19-51.550Z'
+}
+
+Node.js v24.22.1

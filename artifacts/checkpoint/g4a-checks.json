@@ -1,0 +1,46 @@
+[
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "durationMs": 9044,
+    "log": "artifacts/checkpoint/g4a-typecheck.txt"
+  },
+  {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "durationMs": 21045,
+    "log": "artifacts/checkpoint/g4a-lint.txt"
+  },
+  {
+    "command": "npm run test",
+    "exitCode": 0,
+    "durationMs": 6038,
+    "log": "artifacts/checkpoint/g4a-test.txt"
+  },
+  {
+    "command": "npm run test:catalog",
+    "exitCode": 0,
+    "durationMs": 945,
+    "log": "artifacts/checkpoint/g4a-test-catalog.txt"
+  },
+  {
+    "command": "npm run validate:catalog",
+    "exitCode": 0,
+    "durationMs": 614,
+    "log": "artifacts/checkpoint/g4a-validate-catalog.txt"
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "durationMs": 6620,
+    "log": "artifacts/checkpoint/g4a-build.txt"
+  },
+  {
+    "command": "npm run test:e2e -- tests/e2e/g4a1-refinement.spec.ts --reporter=list,json",
+    "exitCode": 0,
+    "durationMs": 36046,
+    "log": "artifacts/checkpoint/g4a-e2e-smoke.txt",
+    "report": "artifacts/checkpoint/g4a-e2e-smoke.json",
+    "meaning": "Checkpoint smoke: the same six scenarios; not six new unique tests."
+  }
+]

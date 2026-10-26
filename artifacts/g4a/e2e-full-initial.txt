@@ -1,0 +1,111 @@
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test --reporter=list,json
+
+
+Running 52 tests using 1 worker
+
+(node:6980) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › tests\e2e\g2a-assets.spec.ts:62:1 › disk GLB loads asynchronously and replaces only its three stable anatomical bindings (2.7s)
+  ok  2 [chromium] › tests\e2e\g2a-assets.spec.ts:111:1 › a loaded mesh receives real pointer hits and keeps anatomical evidence identity (2.3s)
+  ok  3 [chromium] › tests\e2e\g2a-assets.spec.ts:130:1 › asset replacement preserves selection, layers, isolation, opacity and camera context (3.0s)
+  ok  4 [chromium] › tests\e2e\g2a-assets.spec.ts:160:1 › HTTP failure automatically shows available proxies and retry loads the real asset (2.2s)
+  ok  5 [chromium] › tests\e2e\g2a-assets.spec.ts:185:1 › a slow superseded asset cannot overwrite the later model or anatomical selection (2.4s)
+  ok  6 [chromium] › tests\e2e\g2a-assets.spec.ts:206:1 › repeated GLB swaps release leases and dispose unused templates without retained cache entries (3.0s)
+  ok  7 [chromium] › tests\e2e\g2a-assets.spec.ts:227:1 › rigged GLB exposes skin and clip, moves a bone-attached socket and respects reduced motion (2.6s)
+  ok  8 [chromium] › tests\e2e\g2a-assets.spec.ts:260:1 › G2A desktop capture preserves the observatory and labels the synthetic integration (4.4s)
+  ok  9 [chromium] › tests\e2e\g2a-assets.spec.ts:282:1 › mobile exploration remains touch accessible with GLB and produces a real capture (2.9s)
+  ok 10 [chromium] › tests\e2e\g2a-assets.spec.ts:307:1 › the mobile drawer supports touch, keyboard, native dismissal and explicit evidence reopening (3.1s)
+  ok 11 [chromium] › tests\e2e\g3a-checkpoint.spec.ts:31:1 › terminal retraction settles before the visibility cutoff and leaves no rendered residue for 1–4 appendages (18.1s)
+  x  12 [chromium] › tests\e2e\g3a-checkpoint.spec.ts:72:1 › real terminal playback stops at one, keeps replay resources stable and releases them on exit (24.8s)
+(node:7292) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 13 [chromium] › tests\e2e\g3a-checkpoint.spec.ts:98:1 › transparent body picking ignores pooled appendages below an invisible parent at the endpoint (2.9s)
+  ok 14 [chromium] › tests\e2e\g3a-checkpoint.spec.ts:115:1 › terminal surfaces also have no residual pixel footprint through the transparent body (10.8s)
+  ok 15 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:75:1 › absolute manual timeline reproduces geometry, keeps resources and records the five phase captures (5.5s)
+  ok 16 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:128:1 › play, pause, reverse and rapid scrubbing use one timeline while selection and the scan remain stable (7.0s)
+  ok 17 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:173:1 › ten full manual cycles keep geometry identities and warmed renderer resources bounded (25.4s)
+G3A automatic playback 1/10 complete in 21233 ms; geometries=20; textures=3
+G3A automatic playback 2/10 complete in 21225 ms; geometries=20; textures=3
+G3A automatic playback 3/10 complete in 21190 ms; geometries=20; textures=3
+G3A automatic playback 4/10 complete in 21165 ms; geometries=20; textures=3
+G3A automatic playback 5/10 complete in 21251 ms; geometries=20; textures=3
+G3A automatic playback 6/10 complete in 21210 ms; geometries=20; textures=3
+G3A automatic playback 7/10 complete in 21261 ms; geometries=20; textures=3
+G3A automatic playback 8/10 complete in 21271 ms; geometries=20; textures=3
+G3A automatic playback 9/10 complete in 21204 ms; geometries=20; textures=3
+G3A automatic playback 10/10 complete in 21198 ms; geometries=20; textures=3
+  ok 18 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:221:1 › ten complete automatic 21-second playback cycles retain stable resources without context loss (3.7m)
+  ok 19 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:264:1 › counts, particles and quality replace visual settings without detaching the root, and GLB sockets stay authoritative (3.6s)
+  ok 20 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:301:1 › posterior, lateral and lumbar focus are explicit and reduced motion keeps manual keyboard inspection (3.3s)
+  ok 21 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:332:1 › without WebGL the manifestation offers truthful static timeline controls and the original inspection remains available (1.2s)
+  ok 22 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:351:1 › loss of the real WebGL context pauses an active manifestation and keeps manual inspection available (4.8s)
+  ok 23 [chromium] › tests\e2e\g3a-rinkaku.spec.ts:374:1 › mobile touch controls stay usable and capture the actual procedural manifestation (2.6s)
+  ok 24 [chromium] › tests\e2e\g3a1-refinement.spec.ts:81:1 › all seven deterministic phases support 1–4 appendages and preserve the same absolute pose after arbitrary scrubbing (10.3s)
+  ok 25 [chromium] › tests\e2e\g3a1-refinement.spec.ts:122:1 › lumbar implantation is captured at growth, active and retraction for every count in posterior, lateral and oblique views (16.6s)
+  ok 26 [chromium] › tests\e2e\g3a1-refinement.spec.ts:149:1 › growth and retraction sequences, phase boundaries and timeline revisits keep a stable camera and preallocated resources (8.5s)
+  ok 27 [chromium] › tests\e2e\g3a1-refinement.spec.ts:187:1 › the existing kakuhou presentation is suppressed only during manifestation and restored for proxy and both GLB fixtures (3.5s)
+  ok 28 [chromium] › tests\e2e\g3a1-refinement.spec.ts:224:1 › selection, layers and preexisting isolation stay functional while the original observer presentation is restored (3.1s)
+  ok 29 [chromium] › tests\e2e\g3a1-refinement.spec.ts:252:3 › mobile 390×844 keeps a stable usable view and captures real growth playback (10.4s)
+  ok 30 [chromium] › tests\e2e\g3a1-refinement.spec.ts:252:3 › mobile 430×932 keeps a stable usable view and captures real growth playback (10.9s)
+  ok 31 [chromium] › tests\e2e\observatory.spec.ts:46:1 › catalog loading is real and delays anatomy UI until data arrives (1.5s)
+  ok 32 [chromium] › tests\e2e\observatory.spec.ts:63:1 › 3D click raycasts an actual scene structure and synchronizes the inspector (1.9s)
+  ok 33 [chromium] › tests\e2e\observatory.spec.ts:83:1 › independent scene layers can be toggled and isolation restores the prior combination (2.0s)
+  ok 34 [chromium] › tests\e2e\observatory.spec.ts:105:1 › mouse orbit and wheel zoom change the real camera (2.0s)
+  ok 35 [chromium] › tests\e2e\observatory.spec.ts:124:1 › camera focus changes its actual pose and reset restores an overview (2.0s)
+  ok 36 [chromium] › tests\e2e\observatory.spec.ts:136:1 › opacity and scan controls affect the renderer; pausing and scrub are stable (2.8s)
+  ok 37 [chromium] › tests\e2e\observatory.spec.ts:163:1 › micro and future comparison preserve context and canon filter never hides the reconstruction disclosure (3.5s)
+  ok 38 [chromium] › tests\e2e\observatory.spec.ts:194:1 › keyboard alternatives work, range keys stay local and reduced motion pauses scan (2.0s)
+  ok 39 [chromium] › tests\e2e\observatory.spec.ts:225:3 › failure ?webgl=off preserves content and selection without WebGL (1.9s)
+  ok 40 [chromium] › tests\e2e\observatory.spec.ts:225:3 › failure ?asset=missing preserves content and selection without WebGL (2.0s)
+  ok 41 [chromium] › tests\e2e\observatory.spec.ts:238:1 › a lost real WebGL context opens an accessible fallback (1.5s)
+  ok 42 [chromium] › tests\e2e\observatory.spec.ts:252:1 › catalog errors have a visible recovery action (1.7s)
+  ok 43 [chromium] › tests\e2e\observatory.spec.ts:261:1 › desktop and silhouette gate captures include the real rendered scene (3.6s)
+  ok 44 [chromium] › tests\e2e\observatory.spec.ts:284:1 › touch-sized mobile remains usable without hover or horizontal overflow (2.3s)
+  ok 45 [chromium] › tests\e2e\vascular.spec.ts:68:1 › ten Body→Micro→Body transitions restore the manual camera, selection, layers and paused Rinkaku pose (11.3s)
+  ok 46 [chromium] › tests\e2e\vascular.spec.ts:110:1 › absolute scrubbing, pause, speed, reset and population changes retain deterministic instanced transport (5.3s)
+  ok 47 [chromium] › tests\e2e\vascular.spec.ts:137:1 › real RC and RBC picking reaches the stable inspector identity and evidence remains classified (3.8s)
+  ok 48 [chromium] › tests\e2e\vascular.spec.ts:157:1 › tracking keeps one identity through real playback, while profile removal is explicit and keyboard exits in two steps (47.4s)
+  ok 49 [chromium] › tests\e2e\vascular.spec.ts:198:1 › reduced motion keeps manual transport and camera/selection controls available without continuous playback (3.9s)
+  ok 50 [chromium] › tests\e2e\vascular.spec.ts:215:1 › a real Micro WebGL context loss leaves textual evidence and the Body bookmark available (3.1s)
+  ok 51 [chromium] › tests\e2e\vascular.spec.ts:236:1 › Micro without WebGL exposes accessible static evidence and a truthful return path (1.6s)
+  ok 52 [chromium] › tests\e2e\vascular.spec.ts:248:1 › mobile Micro has usable touch controls, no overflow and readable selection/evidence (3.6s)
+
+
+  1) [chromium] › tests\e2e\g3a-checkpoint.spec.ts:72:1 › real terminal playback stops at one, keeps replay resources stable and releases them on exit 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 13
+    Received: 15
+
+    Call Log:
+    - Timeout 15000ms exceeded while waiting on the predicate
+
+      89 |   await page.getByTestId('rinkaku-toggle').click();
+      90 |   await expect.poll(async () => (await scene(page)).rinkaku.adapter).toBeNull();
+    > 91 |   await expect.poll(async () => (await scene(page)).metrics.geometries).toBe(13);
+         |                                                                         ^
+      92 |   const unmounted = await scene(page);
+      93 |   expect(unmounted.metrics.textures).toBe(3);
+      94 |   await mkdir(OUTPUT, { recursive: true });
+        at <workspace>\tests\e2e\g3a-checkpoint.spec.ts:91:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\g3a-checkpoint-real-termin-f0348-e-and-releases-them-on-exit-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\g3a-checkpoint-real-termin-f0348-e-and-releases-them-on-exit-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\g3a-checkpoint-real-termin-f0348-e-and-releases-them-on-exit-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\g3a-checkpoint-real-termin-f0348-e-and-releases-them-on-exit-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests\e2e\g3a-checkpoint.spec.ts:72:1 › real terminal playback stops at one, keeps replay resources stable and releases them on exit 
+  51 passed (9.0m)

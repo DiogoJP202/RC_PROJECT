@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-25T16:01:47.827Z",
+  "scope": "New .json/.txt files under artifacts/g4a relative to HEAD only; symlinks and committed historical files are skipped.",
+  "replacements": {
+    "workspace": "<workspace>",
+    "user": "<user>"
+  },
+  "totals": {
+    "files": 34,
+    "changed": 11,
+    "workspaceHits": 95,
+    "userHits": 12,
+    "pathHits": 107
+  },
+  "skippedTracked": [],
+  "files": [
+    {
+      "path": "artifacts/g4a/build.txt",
+      "beforeSHA256": "3d88590a3eb9448c829cdf25df3b72c56c565dbc411907bd22a00f3ce0493775",
+      "afterSHA256": "3d88590a3eb9448c829cdf25df3b72c56c565dbc411907bd22a00f3ce0493775",
+      "backup": "artifacts/local/g4a-raw-logs/build.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/camera-release-continuity.json",
+      "beforeSHA256": "a528471849d074faf6bebfc5f659303eabb143074a9cc8084c304c8c881fbd8d",
+      "afterSHA256": "a528471849d074faf6bebfc5f659303eabb143074a9cc8084c304c8c881fbd8d",
+      "backup": "artifacts/local/g4a-raw-logs/camera-release-continuity.json",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/captures.txt",
+      "beforeSHA256": "7e39eabac2917daac8dd1075c140c5e245cfc855621bc6fb5402bdb495e55ede",
+      "afterSHA256": "7e39eabac2917daac8dd1075c140c5e245cfc855621bc6fb5402bdb495e55ede",
+      "backup": "artifacts/local/g4a-raw-logs/captures.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/checks.json",
+      "beforeSHA256": "54d45f603c63f0795da5bc63e96cfbc27236742ed49421f7d88e3030708f98ef",
+      "afterSHA256": "54d45f603c63f0795da5bc63e96cfbc27236742ed49421f7d88e3030708f98ef",
+      "backup": "artifacts/local/g4a-raw-logs/checks.json",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-camera-final.json",
+      "beforeSHA256": "8767a9d6e81c09ccbdd50376ffba4576a1e6a4ec04b1babaa09c9f83ebc16cd4",
+      "afterSHA256": "3af00229a415e2b726d9c6879c3a8de31d639232c2e4410b48f0be2b5ec25cab",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-camera-final.json",
+      "changed": true,
+      "pathHits": {
+        "workspace": 16,
+        "user": 2,
+        "total": 18
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-camera-final.txt",
+      "beforeSHA256": "a10b173ab6e3c8701eb353c7fda2365a1a9d3071a7fe7fd5031af67af5d4f141",
+      "afterSHA256": "b41fd9e055cde7faf981bc136e911f4125e3f24f4fe77ce589b0415905e7e179",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-camera-final.txt",
+      "changed": true,
+      "pathHits": {
+        "workspace": 1,
+        "user": 0,
+        "total": 1
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-camera-keyboard.json",
+      "beforeSHA256": "66664505a59c42b3425a84b8f62ac7e75bd532d56cf56e4e9e4bcc5ff79a1d3f",
+      "afterSHA256": "46c446794f93bfdb0d2e72c1c6adbd1c53809446d675208ff0e0519fdc55b5a3",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-camera-keyboard.json",
+      "changed": true,
+      "pathHits": {
+        "workspace": 8,
+        "user": 2,
+        "total": 10
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-camera-keyboard.txt",
+      "beforeSHA256": "30a5462839440b313714578531434fe5cb92f054a88d00684ded09a40e274a94",
+      "afterSHA256": "30a5462839440b313714578531434fe5cb92f054a88d00684ded09a40e274a94",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-camera-keyboard.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-context-disposal.json",
+      "beforeSHA256": "919c146d0be7551d939cefdba691ddd1d591b6a07c87a466716982d866d225ef",
+      "afterSHA256": "0ec7389cd5def1eb800ea3859e2418448a3fc9ca0875d1d00f58fb550efc060d",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-context-disposal.json",
+      "changed": true,
+      "pathHits": {
+        "workspace": 8,
+        "user": 2,
+        "total": 10
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-context-disposal.txt",
+      "beforeSHA256": "254fe7cf1fa9efd1120305017516194db75575d4641c0f17990277863f281bca",
+      "afterSHA256": "254fe7cf1fa9efd1120305017516194db75575d4641c0f17990277863f281bca",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-context-disposal.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-full-initial.json",
+      "beforeSHA256": "ed15ab45410ff80d9276322ada8400b438595501499a5f207b4749890109c44c",
+      "afterSHA256": "28bf1de7168fe4fcab03a5803e93bcc44cfdb4c6bd8f95f396727e0d57c5043b",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-full-initial.json",
+      "changed": true,
+      "pathHits": {
+        "workspace": 16,
+        "user": 2,
+        "total": 18
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-full-initial.txt",
+      "beforeSHA256": "8285dc0aac2bd78896222b92f1da6d6a4b0b0fd4c58c09623d2d97ec066be1f1",
+      "afterSHA256": "9c08f362758778f218d2f32322b24943a300d2bac929870898fa5f6e9355fac7",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-full-initial.txt",
+      "changed": true,
+      "pathHits": {
+        "workspace": 1,
+        "user": 0,
+        "total": 1
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-full-interrupted-camera.txt",
+      "beforeSHA256": "ef0e6c09e37e5bb5499be915554b5534178b976d7897476ed39e7913555d5bbe",
+      "afterSHA256": "ef0e6c09e37e5bb5499be915554b5534178b976d7897476ed39e7913555d5bbe",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-full-interrupted-camera.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-full.json",
+      "beforeSHA256": "905d93bf13b71868d08871faf90751df30612d405fad15c2e2e08c374f1b9199",
+      "afterSHA256": "4372cd68e40c0cbc9c889bc21252e7d665ecd029025c612466f5bcfc373b6882",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-full.json",
+      "changed": true,
+      "pathHits": {
+        "workspace": 8,
+        "user": 2,
+        "total": 10
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-full.txt",
+      "beforeSHA256": "1166be7fb02dac1cc249d6a6d2204b0718e39050b1cacd342757d0ff183853cd",
+      "afterSHA256": "1166be7fb02dac1cc249d6a6d2204b0718e39050b1cacd342757d0ff183853cd",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-full.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-repairs.txt",
+      "beforeSHA256": "f1ab28d18dd95a34f2b1bac6374c7fc38b3bb0b8187e4866c812815278ac180d",
+      "afterSHA256": "f6b7d57188579736778de4b917df8b48a2c39736adcb14f18bc7c00a06f221d2",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-repairs.txt",
+      "changed": true,
+      "pathHits": {
+        "workspace": 1,
+        "user": 0,
+        "total": 1
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-vascular.json",
+      "beforeSHA256": "9f11169bbe84fccdf874181c6e1673321ce9b8512723725699d60287c323ba51",
+      "afterSHA256": "2b66209f6dd1e1c0ad1b92fc3454ad0858456d2159560934b136522932fbd989",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-vascular.json",
+      "changed": true,
+      "pathHits": {
+        "workspace": 32,
+        "user": 2,
+        "total": 34
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/e2e-vascular.txt",
+      "beforeSHA256": "581cd8e50bfa51bf445eab7cb3f50ba3a17c97f5ae29ee57ae2406f02f153d6e",
+      "afterSHA256": "105fa51a0ccc59270250d5d5692819c7f3f781f41a59209d0700b7495fa76d49",
+      "backup": "artifacts/local/g4a-raw-logs/e2e-vascular.txt",
+      "changed": true,
+      "pathHits": {
+        "workspace": 3,
+        "user": 0,
+        "total": 3
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/glb-context-roundtrip.json",
+      "beforeSHA256": "3cfe49189909955c94697ba6bd64ac17de4abab44dad588229d274bdcb08c3a0",
+      "afterSHA256": "3cfe49189909955c94697ba6bd64ac17de4abab44dad588229d274bdcb08c3a0",
+      "backup": "artifacts/local/g4a-raw-logs/glb-context-roundtrip.json",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/history-preservation.json",
+      "beforeSHA256": "1b87fa1e9c27bbe9b9d9961fd9bc93cf9f5c8afab03ab137964fed804ef4e7fa",
+      "afterSHA256": "1b87fa1e9c27bbe9b9d9961fd9bc93cf9f5c8afab03ab137964fed804ef4e7fa",
+      "backup": "artifacts/local/g4a-raw-logs/history-preservation.json",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/history-preservation.txt",
+      "beforeSHA256": "cf1e0d3b80216c02fad0594aaf6fe0409b6d7bc67c06a4f6b44dbdf055d2c3d8",
+      "afterSHA256": "cf1e0d3b80216c02fad0594aaf6fe0409b6d7bc67c06a4f6b44dbdf055d2c3d8",
+      "backup": "artifacts/local/g4a-raw-logs/history-preservation.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/lint.txt",
+      "beforeSHA256": "c578567735d514a87774970638b81dcb36632df9231240b2b1b39d95db661acb",
+      "afterSHA256": "c578567735d514a87774970638b81dcb36632df9231240b2b1b39d95db661acb",
+      "backup": "artifacts/local/g4a-raw-logs/lint.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/production-100.json",
+      "beforeSHA256": "2bb2dd06eef2979de67349e5101aa83a4573260c7d64f66ae0be0d568bd3bfdb",
+      "afterSHA256": "2bb2dd06eef2979de67349e5101aa83a4573260c7d64f66ae0be0d568bd3bfdb",
+      "backup": "artifacts/local/g4a-raw-logs/production-100.json",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/production-2000.json",
+      "beforeSHA256": "8c359114a2d32494c24a3678a6bec36441a63826425a9bff1b3fc1fa621f7ae2",
+      "afterSHA256": "8c359114a2d32494c24a3678a6bec36441a63826425a9bff1b3fc1fa621f7ae2",
+      "backup": "artifacts/local/g4a-raw-logs/production-2000.json",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/production-500.json",
+      "beforeSHA256": "9f2b7f469beb126b079220131653f92c63dcbab279b34306462ccb17e4ef4d78",
+      "afterSHA256": "9f2b7f469beb126b079220131653f92c63dcbab279b34306462ccb17e4ef4d78",
+      "backup": "artifacts/local/g4a-raw-logs/production-500.json",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/profile-100.txt",
+      "beforeSHA256": "f3a3c1931e13e693247b7dff4998b88a977863f1fc08d017d260704774f7af65",
+      "afterSHA256": "f3a3c1931e13e693247b7dff4998b88a977863f1fc08d017d260704774f7af65",
+      "backup": "artifacts/local/g4a-raw-logs/profile-100.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/profile-2000.txt",
+      "beforeSHA256": "4dd2459bb00d30f7e5f3d32e24a7a47db9c289379210cd16921bab47acb39d15",
+      "afterSHA256": "4dd2459bb00d30f7e5f3d32e24a7a47db9c289379210cd16921bab47acb39d15",
+      "backup": "artifacts/local/g4a-raw-logs/profile-2000.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/profile-500.txt",
+      "beforeSHA256": "90d62a3c8a2a442e728934ea497c798a1a4c58470a3d072f0145b234112b09b7",
+      "afterSHA256": "90d62a3c8a2a442e728934ea497c798a1a4c58470a3d072f0145b234112b09b7",
+      "backup": "artifacts/local/g4a-raw-logs/profile-500.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/ten-body-micro-transitions.json",
+      "beforeSHA256": "90c20224f2a29e2c86ebf7d337f04da72a2f3e1ae29fb5aee3ebfcbe19b868c8",
+      "afterSHA256": "90c20224f2a29e2c86ebf7d337f04da72a2f3e1ae29fb5aee3ebfcbe19b868c8",
+      "backup": "artifacts/local/g4a-raw-logs/ten-body-micro-transitions.json",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/test-catalog.txt",
+      "beforeSHA256": "b98a866b7547684e5f30928200afdab5d16fb95c1eb1d718cb21a7162f895926",
+      "afterSHA256": "b98a866b7547684e5f30928200afdab5d16fb95c1eb1d718cb21a7162f895926",
+      "backup": "artifacts/local/g4a-raw-logs/test-catalog.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/test.txt",
+      "beforeSHA256": "68e0ad71e8760900e9fdb00040d74f38a9657cd8106befaa7d0edb770409a42e",
+      "afterSHA256": "312680e05dd7a96d2099fd7a7955e9f726e6e961bb0d9915ec29ef4847773329",
+      "backup": "artifacts/local/g4a-raw-logs/test.txt",
+      "changed": true,
+      "pathHits": {
+        "workspace": 1,
+        "user": 0,
+        "total": 1
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/tracking-loop.json",
+      "beforeSHA256": "2cf89427031c78ac36d8e4e24adbbe30b96dd19649cc39716447f1717b9760fc",
+      "afterSHA256": "2cf89427031c78ac36d8e4e24adbbe30b96dd19649cc39716447f1717b9760fc",
+      "backup": "artifacts/local/g4a-raw-logs/tracking-loop.json",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/typecheck.txt",
+      "beforeSHA256": "08f6123eef1d115b5d3529e5c83bb74069b63f98411804d1a5357a71251c8be3",
+      "afterSHA256": "08f6123eef1d115b5d3529e5c83bb74069b63f98411804d1a5357a71251c8be3",
+      "backup": "artifacts/local/g4a-raw-logs/typecheck.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    },
+    {
+      "path": "artifacts/g4a/validate-catalog.txt",
+      "beforeSHA256": "7f67896751bc751fb1fe3c8c018393df7dac3e8e74bbbdd582983460e6c6f672",
+      "afterSHA256": "7f67896751bc751fb1fe3c8c018393df7dac3e8e74bbbdd582983460e6c6f672",
+      "backup": "artifacts/local/g4a-raw-logs/validate-catalog.txt",
+      "changed": false,
+      "pathHits": {
+        "workspace": 0,
+        "user": 0,
+        "total": 0
+      },
+      "bomRemoved": false
+    }
+  ]
+}

@@ -7,6 +7,9 @@ coverage/
 playwright-report/
 test-results/
 
+# Local byte-identical duplicate; canonical reviewed G4A movie is in artifacts/gates/G4A-review/.
+/flow-and-tracking.webm
+
 # local screenshots of proprietary third-party UI — references only
 references/private/
 
@@ -22,6 +25,19 @@ artifacts/gates/*
 !artifacts/gates/G3A1-*.png
 !artifacts/gates/G3A1-review/
 !artifacts/gates/G3A1-review/**
+!artifacts/gates/G4A-*.png
+!artifacts/gates/G4A-review/
+!artifacts/gates/G4A-review/**
+!artifacts/gates/G4A1-review/
+!artifacts/gates/G4A1-review/**
+!artifacts/g4a1/
+artifacts/g4a1/*
+!artifacts/g4a1/*.json
+!artifacts/g4a1/*.txt
+!artifacts/g4a/
+artifacts/g4a/*
+!artifacts/g4a/*.json
+!artifacts/g4a/*.txt
 !artifacts/g3a1/
 artifacts/g3a1/*
 !artifacts/g3a1/*.json

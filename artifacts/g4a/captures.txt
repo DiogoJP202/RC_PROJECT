@@ -1,0 +1,26 @@
+{
+  "captureCount": 17,
+  "video": "artifacts/gates/G4A-review/flow-and-tracking.webm",
+  "mobileLayout": {
+    "viewport": 390,
+    "documentWidth": 390
+  },
+  "revisit": {
+    "sameT": 11,
+    "sequence": [
+      11,
+      3,
+      27,
+      6,
+      11
+    ],
+    "samePositionHash": true
+  },
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "failedRequests": []
+  }
+}

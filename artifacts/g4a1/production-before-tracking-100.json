@@ -1,0 +1,4005 @@
+{
+  "gate": "G4A.1",
+  "comparisonLabel": "before",
+  "measuredAt": "2026-10-25T20:50:30.833Z",
+  "target": "http://127.0.0.1:4176",
+  "build": "Fresh production Vite preview; HTTP cache disabled; no previous gate measurements reused.",
+  "scenario": {
+    "count": 100,
+    "seed": 17,
+    "cameraMode": "tracking",
+    "selectedId": "rc:17:0",
+    "highlightRC": false,
+    "normalizedSpeed": 0.42857142857142855,
+    "mobileEmulation": false,
+    "bodyRemainsMountedForContext": true,
+    "microLazy": true,
+    "readyObservedMs": 1959,
+    "readyMs": 1454.2000000178814,
+    "readyInitialProfile": 500,
+    "microAdditionalTransferBytes": 17351,
+    "bootPlusMicroTransferBytes": 391985
+  },
+  "environment": {
+    "os": "win32 10.0.26200 x64",
+    "cpu": "AMD Ryzen 7 5825U with Radeon Graphics         ",
+    "ramBytes": 16540626944,
+    "browser": "Chromium 156.0.8078.4",
+    "headless": true,
+    "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    }
+  },
+  "protocol": {
+    "warmupMs": 10000,
+    "requestedSampleMs": 30000,
+    "readDiagnosticsIntervalMs": 1000,
+    "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals. Diagnostics once per second, never every frame.",
+    "profileMeaning": "Counts are rendered entities, not physiological concentrations; each count/mode is a separate fresh context.",
+    "readinessMeaning": "Entry readyMs always measures DEFAULT500 before changing the measured population. Flow protocol matches G4A; Tracking is a separate cost scenario.",
+    "diagnosticScope": "Renderer counters cover Micro only; Body remains resident. One owned bump texture is distinct from renderer texture count. Visibility raycasts are not sampled during FPS measurement."
+  },
+  "network": {
+    "method": "Chromium DevTools Protocol",
+    "cdp": {
+      "offline": false,
+      "latency": 50,
+      "downloadThroughput": 2500000,
+      "uploadThroughput": 2500000,
+      "connectionType": "ethernet"
+    },
+    "nominalDownloadMbps": 20,
+    "latencyNote": "50 ms is a CDP setting, not measured physical RTT.",
+    "transferredCdpBytes": 392774,
+    "responseEncodings": [
+      {
+        "url": "http://127.0.0.1:4176/",
+        "status": 200,
+        "contentEncoding": "identity",
+        "mimeType": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:4176/assets/index-CRFQ2SBT.css",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/css"
+      },
+      {
+        "url": "http://127.0.0.1:4176/assets/jsx-runtime-Dq06JIld.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4176/assets/index-UFbsdxFt.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4176/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4176/catalog.json",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "application/json"
+      },
+      {
+        "url": "http://127.0.0.1:4176/atlas-mark.svg",
+        "status": 200,
+        "contentEncoding": "identity",
+        "mimeType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:4176/assets/ObservatoryScene-CfcXQCpg.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4176/assets/three.core-Dp-eO7LC.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4176/assets/OrbitControls-Ci_xutm9.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4176/assets/VascularWorkspace-B0O9VY0R.css",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/css"
+      },
+      {
+        "url": "http://127.0.0.1:4176/assets/VascularWorkspace-BnphLhPf.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:4176/assets/VascularScene-DNFYgXwa.js",
+        "status": 200,
+        "contentEncoding": "gzip",
+        "mimeType": "text/javascript"
+      }
+    ]
+  },
+  "bodyCold": {
+    "interactiveMs": 1294.7000000178814,
+    "transferBytes": 374634,
+    "encodedBodyBytes": 371634,
+    "resourceUrls": [
+      "http://127.0.0.1:4176/assets/index-UFbsdxFt.js",
+      "http://127.0.0.1:4176/assets/index-CRFQ2SBT.css",
+      "http://127.0.0.1:4176/assets/jsx-runtime-Dq06JIld.js",
+      "http://127.0.0.1:4176/atlas-mark.svg",
+      "http://127.0.0.1:4176/catalog.json",
+      "http://127.0.0.1:4176/atlas-mark.svg",
+      "http://127.0.0.1:4176/assets/ObservatoryScene-CfcXQCpg.js",
+      "http://127.0.0.1:4176/assets/three.core-Dp-eO7LC.js",
+      "http://127.0.0.1:4176/assets/OrbitControls-Ci_xutm9.js"
+    ]
+  },
+  "microLoad": {
+    "readyMs": 1454.2000000178814,
+    "combinedTransferBytes": 391985,
+    "resourceUrls": [
+      "http://127.0.0.1:4176/assets/index-UFbsdxFt.js",
+      "http://127.0.0.1:4176/assets/index-CRFQ2SBT.css",
+      "http://127.0.0.1:4176/assets/jsx-runtime-Dq06JIld.js",
+      "http://127.0.0.1:4176/atlas-mark.svg",
+      "http://127.0.0.1:4176/catalog.json",
+      "http://127.0.0.1:4176/atlas-mark.svg",
+      "http://127.0.0.1:4176/assets/ObservatoryScene-CfcXQCpg.js",
+      "http://127.0.0.1:4176/assets/three.core-Dp-eO7LC.js",
+      "http://127.0.0.1:4176/assets/OrbitControls-Ci_xutm9.js",
+      "http://127.0.0.1:4176/assets/VascularWorkspace-BnphLhPf.js",
+      "http://127.0.0.1:4176/assets/VascularWorkspace-B0O9VY0R.css",
+      "http://127.0.0.1:4176/assets/VascularScene-DNFYgXwa.js"
+    ]
+  },
+  "sample": {
+    "durationMs": 30012.70000001788,
+    "frames": 1800,
+    "fpsP50": 59.880239520968516,
+    "fpsP10": 59.523809523799216,
+    "fpsMin": 55.865921787704956,
+    "fpsMax": 66.66666666666667,
+    "initial": {
+      "seconds": 10.015699999988058,
+      "playing": true,
+      "config": {
+        "count": 100,
+        "seed": 17
+      },
+      "cameraMode": "tracking",
+      "camera": {
+        "position": [
+          -1.9455993899351642,
+          -0.25513238968897956,
+          7.068113214452977
+        ],
+        "quaternion": [
+          -0.15834894112606512,
+          0.5943808243697107,
+          0.12077625040710122,
+          0.7791342283608379
+        ],
+        "target": [
+          -3.375094664551493,
+          -0.8835049975021831,
+          6.676472814092535
+        ],
+        "up": [
+          -0.12338941316110466,
+          0.9917809873563601,
+          -0.03384561771044449
+        ]
+      },
+      "selectedId": "rc:17:0",
+      "highlightRC": false,
+      "adapter": {
+        "representation": "procedural_vascular",
+        "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+        "disposed": false,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "seconds": 10.015699999988058,
+        "selectedId": "rc:17:0",
+        "selectedPresent": true,
+        "highlightRC": false,
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "geometry": {
+          "rbcVertices": 216,
+          "rbcTriangles": 384,
+          "rcVertices": 264,
+          "rcTriangles": 480,
+          "wallTriangles": 16384
+        },
+        "triangles": 56032,
+        "draws": 3,
+        "resources": {
+          "geometries": 3,
+          "materials": 3,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "resourceIds": {
+          "geometry": [
+            "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+            "19777157-303c-4c3d-b683-4d62ef6c504e",
+            "389d66a7-1672-46d0-ac7c-f24421632178"
+          ],
+          "material": [
+            "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+            "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+            "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+          ],
+          "texture": [
+            "351453fc-75f4-4df1-a069-33d2fc1c6719"
+          ]
+        },
+        "boundingRadius": {
+          "rbc": 1.01,
+          "rc": 1.2
+        },
+        "bounds": {
+          "min": [
+            -10.55,
+            -3.2,
+            -10.55
+          ],
+          "max": [
+            10.55,
+            3.2,
+            10.55
+          ],
+          "space": "local"
+        },
+        "positionHash": "64eda305"
+      },
+      "metrics": {
+        "frames": 634,
+        "calls": 3,
+        "triangles": 56032,
+        "geometries": 3,
+        "textures": 2,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "fpsP50": 59.880241059749196,
+        "fpsP10": 59.17160032526856
+      }
+    },
+    "final": {
+      "seconds": 40.0315000000004,
+      "playing": true,
+      "config": {
+        "count": 100,
+        "seed": 17
+      },
+      "cameraMode": "tracking",
+      "camera": {
+        "position": [
+          6.732905266314676,
+          0.37376385876629825,
+          2.7849348379566763
+        ],
+        "quaternion": [
+          -0.020400248909054244,
+          0.9751389584125009,
+          0.09860666102981176,
+          0.19739444782258506
+        ],
+        "target": [
+          6.134320986193797,
+          0.05893359302545775,
+          4.203219514058057
+        ],
+        "up": [
+          0.040341373829900405,
+          0.9943950369862888,
+          -0.09772964736738483
+        ]
+      },
+      "selectedId": "rc:17:0",
+      "highlightRC": false,
+      "adapter": {
+        "representation": "procedural_vascular",
+        "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+        "disposed": false,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "seconds": 40.0315000000004,
+        "selectedId": "rc:17:0",
+        "selectedPresent": true,
+        "highlightRC": false,
+        "counts": {
+          "total": 100,
+          "rbc": 87,
+          "rc": 13
+        },
+        "geometry": {
+          "rbcVertices": 216,
+          "rbcTriangles": 384,
+          "rcVertices": 264,
+          "rcTriangles": 480,
+          "wallTriangles": 16384
+        },
+        "triangles": 56032,
+        "draws": 3,
+        "resources": {
+          "geometries": 3,
+          "materials": 3,
+          "textures": 1,
+          "instanceCapacity": 2000
+        },
+        "resourceIds": {
+          "geometry": [
+            "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+            "19777157-303c-4c3d-b683-4d62ef6c504e",
+            "389d66a7-1672-46d0-ac7c-f24421632178"
+          ],
+          "material": [
+            "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+            "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+            "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+          ],
+          "texture": [
+            "351453fc-75f4-4df1-a069-33d2fc1c6719"
+          ]
+        },
+        "boundingRadius": {
+          "rbc": 1.01,
+          "rc": 1.2
+        },
+        "bounds": {
+          "min": [
+            -10.55,
+            -3.2,
+            -10.55
+          ],
+          "max": [
+            10.55,
+            3.2,
+            10.55
+          ],
+          "space": "local"
+        },
+        "positionHash": "3750fa4f"
+      },
+      "metrics": {
+        "frames": 2435,
+        "calls": 3,
+        "triangles": 56032,
+        "geometries": 3,
+        "textures": 2,
+        "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "fpsP50": 59.880241059749196,
+        "fpsP10": 59.17160032526856
+      }
+    },
+    "observations": [
+      {
+        "elapsedMs": 11.399999999999636,
+        "seconds": 10.032299999982097,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -1.9643664083758332,
+            -0.25789819358854793,
+            7.062700557664633
+          ],
+          "quaternion": [
+            -0.15829163868152846,
+            0.5933583617490649,
+            0.12039709982448588,
+            0.7799834293238768
+          ],
+          "target": [
+            -3.3930997955930278,
+            -0.8854226078538268,
+            6.667101255573459
+          ],
+          "up": [
+            -0.12291313096409699,
+            0.9918325215507499,
+            -0.03406774766379275
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 10.032299999982097,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "bc090ebe"
+        },
+        "metrics": {
+          "frames": 635,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 1012.2000000000007,
+        "seconds": 11.03319999998806,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -3.0641005496933533,
+            -0.407492960487322,
+            6.643319868024281
+          ],
+          "quaternion": [
+            -0.15120240966546356,
+            0.5295441742031408,
+            0.09671897695870714,
+            0.8290755323702009
+          ],
+          "target": [
+            -4.427734044148697,
+            -0.9748334815395582,
+            6.011250996264643
+          ],
+          "up": [
+            -0.08816463165375897,
+            0.9952783647455135,
+            -0.04059525089038885
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 11.03319999998806,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "ecb4c545"
+        },
+        "metrics": {
+          "frames": 695,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 2011.8999999999996,
+        "seconds": 12.032999999999978,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -4.080402670803649,
+            -0.5128219169803935,
+            6.050378812628141
+          ],
+          "quaternion": [
+            -0.137840725998951,
+            0.4616216586465633,
+            0.07303268700614476,
+            0.8732534598575263
+          ],
+          "target": [
+            -5.339441065368013,
+            -1.0063950621122695,
+            5.192201139070719
+          ],
+          "up": [
+            -0.04661689543495711,
+            0.9984187000783589,
+            -0.03141598946151946
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 12.032999999999978,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "bf005373"
+        },
+        "metrics": {
+          "frames": 755,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 3011.7000000000007,
+        "seconds": 13.032699999988056,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -4.986989739592285,
+            -0.562230918998758,
+            5.300547478239897
+          ],
+          "quaternion": [
+            -0.12026499465632791,
+            0.3898822587915102,
+            0.05147826415769099,
+            0.9115251744517286
+          ],
+          "target": [
+            -6.101445413709676,
+            -0.9761508199818252,
+            4.236096984244529
+          ],
+          "up": [
+            -0.006663506717653877,
+            0.9999581493917837,
+            -0.006268743349561228
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 13.032699999988056,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "5add83d9"
+        },
+        "metrics": {
+          "frames": 815,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 4011.5999999999985,
+        "seconds": 14.032599999994014,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -5.759772692935176,
+            -0.549877357949168,
+            4.415933897014111
+          ],
+          "quaternion": [
+            -0.10131437822533809,
+            0.3149896240033597,
+            0.033647841754063636,
+            0.9430719783136009
+          ],
+          "target": [
+            -6.693174968859085,
+            -0.8872749534774005,
+            3.1746235354203436
+          ],
+          "up": [
+            0.023697652053910008,
+            0.9992409188023491,
+            0.03091937059788155
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 14.032599999994014,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "c8dd5865"
+        },
+        "metrics": {
+          "frames": 875,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 5011.9000000000015,
+        "seconds": 15.033199999988053,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -6.379582058295849,
+            -0.4767807761600831,
+            3.4223999025086767
+          ],
+          "quaternion": [
+            -0.08407108250921881,
+            0.23776269054691154,
+            0.02022195304580902,
+            0.9674668101204479
+          ],
+          "target": [
+            -7.102373219721452,
+            -0.7494774359364367,
+            2.0409331489872615
+          ],
+          "up": [
+            0.039093866933485114,
+            0.9965713219568685,
+            0.07291961204865538
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 15.033199999988053,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "57a80540"
+        },
+        "metrics": {
+          "frames": 935,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 6011.5999999999985,
+        "seconds": 16.03249999999997,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -6.831962582603813,
+            -0.35097849373042334,
+            2.3503878743506323
+          ],
+          "quaternion": [
+            -0.07130960246185107,
+            0.1591973510769006,
+            0.010896292498966979,
+            0.9846077466771261
+          ],
+          "target": [
+            -7.323753089401004,
+            -0.5778342558366288,
+            0.8697779662060457
+          ],
+          "up": [
+            0.038187344072997946,
+            0.9930745665279722,
+            0.11110639976135576
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 16.03249999999997,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "f2bf0af1"
+        },
+        "metrics": {
+          "frames": 995,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 7011.5,
+        "seconds": 17.032599999994016,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -7.110362347006329,
+            -0.18549801384759065,
+            1.225490410754211
+          ],
+          "quaternion": [
+            -0.06497422576146579,
+            0.07980750104252962,
+            0.004477549412024212,
+            0.9946803829951146
+          ],
+          "target": [
+            -7.358860165240341,
+            -0.3896761300105764,
+            -0.31217521922148905
+          ],
+          "up": [
+            0.02373528485638068,
+            0.9901539071319815,
+            0.13795606707955088
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 17.032599999994016,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "29f25110"
+        },
+        "metrics": {
+          "frames": 1055,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 8011.799999999999,
+        "seconds": 18.032799999982096,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -7.21086761382774,
+            0.0026845653950145765,
+            0.07462398730999853
+          ],
+          "quaternion": [
+            -0.06609742966978903,
+            0.0001808600562505421,
+            -0.0007227140043517845,
+            0.9978128956699023
+          ],
+          "target": [
+            -7.211582619326649,
+            -0.20393041082062818,
+            -1.4780759007669
+          ],
+          "up": [
+            0.0014893206266717914,
+            0.9889407412579208,
+            0.14830371608393653
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 18.032799999982096,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "acf2c2c7"
+        },
+        "metrics": {
+          "frames": 1115,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 9011.8,
+        "seconds": 19.032699999988072,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -7.132596657409844,
+            0.19467775262701933,
+            -1.0771661809787294
+          ],
+          "quaternion": [
+            -0.07468188452122886,
+            -0.07918592744576539,
+            -0.006587350872336148,
+            0.9940366249929609
+          ],
+          "target": [
+            -6.888006870014989,
+            -0.03908177723362316,
+            -2.6035579383095047
+          ],
+          "up": [
+            -0.0212269636819463,
+            0.9898907645271985,
+            0.14023441202716205
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 19.032699999988072,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "239c4645"
+        },
+        "metrics": {
+          "frames": 1175,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 10011.400000000001,
+        "seconds": 20.03240000000595,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -6.876482196576963,
+            0.3713250867962769,
+            -2.2057740088096995
+          ],
+          "quaternion": [
+            -0.08969580355087488,
+            -0.15778911426121242,
+            -0.014861461923388521,
+            0.9832783915023886
+          ],
+          "target": [
+            -6.3957406551030385,
+            0.08834850845615627,
+            -3.6655146585824765
+          ],
+          "up": [
+            -0.037016460441711405,
+            0.9926463858050137,
+            0.11525161345773659
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 20.03240000000595,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "0f884bd8"
+        },
+        "metrics": {
+          "frames": 1235,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 11011.400000000001,
+        "seconds": 21.032199999988073,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -6.445344529574171,
+            0.5146506822432453,
+            -3.286262574734687
+          ],
+          "quaternion": [
+            -0.10911124735584188,
+            -0.23503621828351245,
+            -0.026826302924727496,
+            0.9654703834229345
+          ],
+          "target": [
+            -5.7443978399361395,
+            0.16526601952836895,
+            -4.640796230744534
+          ],
+          "up": [
+            -0.0398535068387004,
+            0.9961488613122546,
+            0.0780970172218895
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 21.032199999988073,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "c8ef1b35"
+        },
+        "metrics": {
+          "frames": 1295,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 12011.5,
+        "seconds": 22.032699999988083,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -5.84515008776359,
+            0.609486409798884,
+            -4.292014336780999
+          ],
+          "quaternion": [
+            -0.13009465352502594,
+            -0.31028542647436635,
+            -0.04299683817056439,
+            0.9407176022320185
+          ],
+          "target": [
+            -4.946509180009918,
+            0.18347192051074002,
+            -5.506111719763033
+          ],
+          "up": [
+            -0.026523134904587083,
+            0.998996019757572,
+            0.036103681576286496
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 22.032699999988083,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "caa6e0f9"
+        },
+        "metrics": {
+          "frames": 1355,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 13011.3,
+        "seconds": 23.03229999998212,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -5.088813170314285,
+            0.6452129799813364,
+            -5.192944752142726
+          ],
+          "quaternion": [
+            -0.14939910953227467,
+            -0.38279126975094757,
+            -0.06287690877983912,
+            0.9095038450802241
+          ],
+          "target": [
+            -4.020728279992445,
+            0.14090417333524902,
+            -6.23704941209971
+          ],
+          "up": [
+            0.0021657550487345413,
+            0.9999954024372953,
+            -0.002122406497501698
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 23.03229999998212,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "ab8d7b24"
+        },
+        "metrics": {
+          "frames": 1415,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 14011.3,
+        "seconds": 24.032499999999988,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -4.193665582869111,
+            0.6177594555562228,
+            -5.962868392936939
+          ],
+          "quaternion": [
+            -0.16411581765906402,
+            -0.45226219058621514,
+            -0.08509888987631536,
+            0.8725153799802464
+          ],
+          "target": [
+            -2.9871774839473457,
+            0.041898617179133346,
+            -6.813993895010064
+          ],
+          "up": [
+            0.041337794989136645,
+            0.9987215033296726,
+            -0.02909545484015385
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 24.032499999999988,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "154bca6f"
+        },
+        "metrics": {
+          "frames": 1475,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 15011.400000000001,
+        "seconds": 25.032499999999978,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -3.18487606730841,
+            0.5299749913237864,
+            -6.5770280966439545
+          ],
+          "quaternion": [
+            -0.17212996534550745,
+            -0.518522107422378,
+            -0.10761594692384487,
+            0.8306171844550861
+          ],
+          "target": [
+            -1.8715595238586127,
+            -0.10339307080805404,
+            -7.219097269014664
+          ],
+          "up": [
+            0.08317033951037932,
+            0.9957180696193476,
+            -0.04035121385099064
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 25.032499999999978,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "e48df154"
+        },
+        "metrics": {
+          "frames": 1535,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 16011.2,
+        "seconds": 26.032099999994024,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -2.091462823011005,
+            0.39125904059264593,
+            -7.017112378358216
+          ],
+          "quaternion": [
+            -0.1724436625883792,
+            -0.581674479024675,
+            -0.12817233049719498,
+            0.784531603811724
+          ],
+          "target": [
+            -0.7014836517674146,
+            -0.28043506374841276,
+            -7.439375316620672
+          ],
+          "up": [
+            0.11915742231700455,
+            0.9922350673983403,
+            -0.035652205146077934
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 26.032099999994024,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "daf0b6e7"
+        },
+        "metrics": {
+          "frames": 1595,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 17011.1,
+        "seconds": 27.03199999999998,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            -0.9431829080576231,
+            0.21580665899190055,
+            -7.271579559729711
+          ],
+          "quaternion": [
+            -0.1650913059395041,
+            -0.6419642291245241,
+            -0.1446699115213971,
+            0.7346410047963124
+          ],
+          "target": [
+            0.49495644407405415,
+            -0.4720770117924735,
+            -7.466317165918174
+          ],
+          "up": [
+            0.14222998149023972,
+            0.9896584203907745,
+            -0.01862372988751961
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 27.03199999999998,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "dafa7151"
+        },
+        "metrics": {
+          "frames": 1655,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 18011.1,
+        "seconds": 28.03209999999403,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            0.22928037604788298,
+            0.02105064729025552,
+            -7.33431131656035
+          ],
+          "quaternion": [
+            -0.15092245507787516,
+            -0.6994868565431706,
+            -0.1553689043549514,
+            0.6810294073211249
+          ],
+          "target": [
+            1.6873110657836645,
+            -0.6596769654957176,
+            -7.29548999606571
+          ],
+          "up": [
+            0.14801088042209284,
+            0.9889757016178161,
+            0.004454310970868189
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 28.03209999999403,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "1030d8d9"
+        },
+        "metrics": {
+          "frames": 1715,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 19011.1,
+        "seconds": 29.03199999999998,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            1.395487390029407,
+            -0.1739913200224522,
+            -7.204328066040671
+          ],
+          "quaternion": [
+            -0.13141533477436257,
+            -0.7540637625104956,
+            -0.1590832232605821,
+            0.6235466140808408
+          ],
+          "target": [
+            2.843218394728139,
+            -0.8245774174214933,
+            -6.927591835048146
+          ],
+          "up": [
+            0.13543152939598288,
+            0.9904428075664267,
+            0.026102601123242853
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 29.03199999999998,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "c8717090"
+        },
+        "metrics": {
+          "frames": 1775,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 20011,
+        "seconds": 30.031900000005937,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            2.5263580563814143,
+            -0.35038747539507287,
+            -6.88506155569035
+          ],
+          "quaternion": [
+            -0.1085077925013277,
+            -0.8051924234114531,
+            -0.15537428043965634,
+            0.5619164112438245
+          ],
+          "target": [
+            3.9297629247038004,
+            -0.9499020816779804,
+            -6.369217164030252
+          ],
+          "up": [
+            0.10682946696116452,
+            0.9935071150005123,
+            0.03912898455304389
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 30.031900000005937,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "c9ac0eb3"
+        },
+        "metrics": {
+          "frames": 1835,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 21011,
+        "seconds": 31.031999999999975,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            3.593009979285778,
+            -0.4906120376952924,
+            -6.384222893026236
+          ],
+          "quaternion": [
+            0.08444544131051737,
+            0.8520092911506161,
+            0.14474760962768723,
+            -0.4959811132915924
+          ],
+          "target": [
+            4.913694613211434,
+            -1.0223191146864845,
+            -5.634177163898111
+          ],
+          "up": [
+            0.06768767102841021,
+            0.9969798402001218,
+            0.03807331644721147
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 31.031999999999975,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "a7ba22c4"
+        },
+        "metrics": {
+          "frames": 1895,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 22011,
+        "seconds": 32.031999999999975,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            4.566466546046457,
+            -0.5802065851435803,
+            -5.714853248832758
+          ],
+          "quaternion": [
+            0.061526483248122384,
+            0.8934297522635548,
+            0.1287914243313989,
+            -0.42592316049739654
+          ],
+          "target": [
+            5.763440456762777,
+            -1.0340302238453427,
+            -4.744695709182773
+          ],
+          "up": [
+            0.02584708091674175,
+            0.9994525574527817,
+            0.020652210757624464
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 32.031999999999975,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "49f31837"
+        },
+        "metrics": {
+          "frames": 1955,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 23010.9,
+        "seconds": 33.03179999998216,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            5.41958585276574,
+            -0.6097728463470413,
+            -4.895718457258937
+          ],
+          "quaternion": [
+            0.04168061560169002,
+            0.9284606389542528,
+            0.11004960393545295,
+            -0.3522962572457656
+          ],
+          "target": [
+            6.453019180157337,
+            -0.984239022697898,
+            -3.730039771363473
+          ],
+          "up": [
+            -0.010180441396399823,
+            0.9998846752678869,
+            -0.011269195952097582
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 33.03179999998216,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "ae732643"
+        },
+        "metrics": {
+          "frames": 2015,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 24010.6,
+        "seconds": 34.03169999998817,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            6.129054551776208,
+            -0.5763961602850459,
+            -3.950652541521089
+          ],
+          "quaternion": [
+            0.02605478953775582,
+            0.9564562616905287,
+            0.09157323848317334,
+            -0.275911053437201
+          ],
+          "target": [
+            6.964483527856522,
+            -0.8791653314682452,
+            -2.6233266204462256
+          ],
+          "up": [
+            -0.033470748114262525,
+            0.9980913430947875,
+            -0.05189778280345351
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 34.03169999998817,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "e76d6850"
+        },
+        "metrics": {
+          "frames": 2075,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 25010.5,
+        "seconds": 35.031500000000136,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            6.676517925171579,
+            -0.4841253183961469,
+            -2.9077953771979677
+          ],
+          "quaternion": [
+            0.01480582451750551,
+            0.9771735384210289,
+            0.07633370452265151,
+            -0.19770136297944724
+          ],
+          "target": [
+            7.287947356675414,
+            -0.7309098727362895,
+            -1.4589972311733315
+          ],
+          "up": [
+            -0.040588477818630446,
+            0.9948350659900007,
+            -0.09303637431154319
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 35.031500000000136,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "0cf21654"
+        },
+        "metrics": {
+          "frames": 2135,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 26010.699999999997,
+        "seconds": 36.03159999999424,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            7.050182754180941,
+            -0.3432004707912435,
+            -1.7960870121538903
+          ],
+          "quaternion": [
+            0.007139096789862118,
+            0.9906924308183064,
+            0.0666882009569196,
+            -0.11844924934109843
+          ],
+          "target": [
+            7.42087561907807,
+            -0.5554368898614258,
+            -0.26878403062007794
+          ],
+          "up": [
+            -0.03233005956364234,
+            0.9914550582467913,
+            -0.12637893307614062
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 36.03159999999424,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "4b732852"
+        },
+        "metrics": {
+          "frames": 2195,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 27010.699999999997,
+        "seconds": 37.031900000006196,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            7.24354727845209,
+            -0.16857793743944618,
+            -0.6442716181796644
+          ],
+          "quaternion": [
+            0.0015848944806912944,
+            0.9971868134202191,
+            0.06411423800091437,
+            -0.03879834707660319
+          ],
+          "target": [
+            7.365498518860105,
+            -0.3708272841671695,
+            0.9181673694819561
+          ],
+          "up": [
+            -0.013115241871052292,
+            0.9892849216629415,
+            -0.145407476427492
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 37.031900000006196,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "269cd04e"
+        },
+        "metrics": {
+          "frames": 2255,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 28010.6,
+        "seconds": 38.03159999999434,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            7.254369907763739,
+            0.021735017044067356,
+            0.5197293653176258
+          ],
+          "quaternion": [
+            -0.003673606656263035,
+            0.9967733932247363,
+            0.06909476339013479,
+            0.04068440543305984
+          ],
+          "target": [
+            7.127403296851123,
+            -0.19572277400076382,
+            2.0747685094859283
+          ],
+          "up": [
+            0.010311891550274078,
+            0.9891497971115203,
+            -0.1465480936992817
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 38.03159999999434,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "a654b42f"
+        },
+        "metrics": {
+          "frames": 2315,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 29010.6,
+        "seconds": 39.031699999988426,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            7.083233262308915,
+            0.20883974823672785,
+            1.6715311842250518
+          ],
+          "quaternion": [
+            -0.010486780342541583,
+            0.9894467165837765,
+            0.081107553230987,
+            0.11961098314332909
+          ],
+          "target": [
+            6.713805894201809,
+            -0.047424088814440435,
+            3.177921967359178
+          ],
+          "up": [
+            0.030435835520973092,
+            0.9910995111917353,
+            -0.12959714052263488
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 39.031699999988426,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "1c2169ec"
+        },
+        "metrics": {
+          "frames": 2375,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      },
+      {
+        "elapsedMs": 30010.5,
+        "seconds": 40.0315000000004,
+        "playing": true,
+        "config": {
+          "count": 100,
+          "seed": 17
+        },
+        "cameraMode": "tracking",
+        "camera": {
+          "position": [
+            6.732905266314676,
+            0.37376385876629825,
+            2.7849348379566763
+          ],
+          "quaternion": [
+            -0.020400248909054244,
+            0.9751389584125009,
+            0.09860666102981176,
+            0.19739444782258506
+          ],
+          "target": [
+            6.134320986193797,
+            0.05893359302545775,
+            4.203219514058057
+          ],
+          "up": [
+            0.040341373829900405,
+            0.9943950369862888,
+            -0.09772964736738483
+          ]
+        },
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "adapter": {
+          "representation": "procedural_vascular",
+          "disclosure": "MODELO DIDÁTICO / RC CONCEITUAL / P1",
+          "disposed": false,
+          "config": {
+            "count": 100,
+            "seed": 17
+          },
+          "seconds": 40.0315000000004,
+          "selectedId": "rc:17:0",
+          "selectedPresent": true,
+          "highlightRC": false,
+          "counts": {
+            "total": 100,
+            "rbc": 87,
+            "rc": 13
+          },
+          "geometry": {
+            "rbcVertices": 216,
+            "rbcTriangles": 384,
+            "rcVertices": 264,
+            "rcTriangles": 480,
+            "wallTriangles": 16384
+          },
+          "triangles": 56032,
+          "draws": 3,
+          "resources": {
+            "geometries": 3,
+            "materials": 3,
+            "textures": 1,
+            "instanceCapacity": 2000
+          },
+          "resourceIds": {
+            "geometry": [
+              "ac0ba0c3-c497-4fe6-84cc-a24fabbd7e48",
+              "19777157-303c-4c3d-b683-4d62ef6c504e",
+              "389d66a7-1672-46d0-ac7c-f24421632178"
+            ],
+            "material": [
+              "84c2f85e-8e56-47f7-bd6c-f246dae87fd7",
+              "c0d9a30e-474b-402a-b775-137bc76a1cfd",
+              "edd75c5e-99db-47fd-9086-d1a5c17dba4b"
+            ],
+            "texture": [
+              "351453fc-75f4-4df1-a069-33d2fc1c6719"
+            ]
+          },
+          "boundingRadius": {
+            "rbc": 1.01,
+            "rc": 1.2
+          },
+          "bounds": {
+            "min": [
+              -10.55,
+              -3.2,
+              -10.55
+            ],
+            "max": [
+              10.55,
+              3.2,
+              10.55
+            ],
+            "space": "local"
+          },
+          "positionHash": "3750fa4f"
+        },
+        "metrics": {
+          "frames": 2435,
+          "calls": 3,
+          "triangles": 56032,
+          "geometries": 3,
+          "textures": 2,
+          "renderer": "ANGLE (AMD, AMD Radeon (TM) Graphics (0x000015E7) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "fpsP50": 59.880241059749196,
+          "fpsP10": 59.17160032526856
+        },
+        "readyText": "3D conectado"
+      }
+    ],
+    "documentVisibility": "visible",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1
+    }
+  },
+  "observables": {
+    "drawCalls": {
+      "min": 3,
+      "max": 3
+    },
+    "triangles": {
+      "min": 56032,
+      "max": 56032
+    },
+    "geometries": {
+      "min": 3,
+      "max": 3
+    },
+    "textures": {
+      "min": 2,
+      "max": 2
+    },
+    "resourceIdsStable": true,
+    "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+  },
+  "memory": {
+    "before": {
+      "Timestamp": 238652.850428,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 2,
+      "Frames": 2,
+      "JSEventListeners": 877,
+      "LayoutObjects": 520,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 1171,
+      "Resources": 1,
+      "ContextLifecycleStateObservers": 7,
+      "V8PerContextDatas": 2,
+      "WorkerGlobalScopes": 0,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 2,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 0,
+      "ArrayBufferContents": 101,
+      "LayoutCount": 56,
+      "RecalcStyleCount": 84,
+      "LayoutDuration": 0.138713,
+      "RecalcStyleDuration": 0.02536,
+      "DevToolsCommandDuration": 0.053513,
+      "ScriptDuration": 1.343912,
+      "V8CompileDuration": 0,
+      "TaskDuration": 1.963254,
+      "TaskOtherDuration": 0.401756,
+      "ThreadTime": 1.437925,
+      "ProcessTime": 2.49658,
+      "JSHeapUsedSize": 15455384,
+      "JSHeapTotalSize": 29184000,
+      "FirstMeaningfulPaint": 238639.997645,
+      "DomContentLoaded": 238639.643393,
+      "NavigationStart": 238639.42858
+    },
+    "after": {
+      "Timestamp": 238682.904863,
+      "AudioHandlers": 0,
+      "AudioWorkletProcessors": 0,
+      "Documents": 2,
+      "Frames": 2,
+      "JSEventListeners": 937,
+      "LayoutObjects": 518,
+      "MediaKeySessions": 0,
+      "MediaKeys": 0,
+      "Nodes": 763,
+      "Resources": 1,
+      "ContextLifecycleStateObservers": 7,
+      "V8PerContextDatas": 2,
+      "WorkerGlobalScopes": 0,
+      "UACSSResources": 0,
+      "RTCPeerConnections": 0,
+      "ResourceFetchers": 2,
+      "AdSubframes": 0,
+      "DetachedScriptStates": 0,
+      "ArrayBufferContents": 85,
+      "LayoutCount": 177,
+      "RecalcStyleCount": 84,
+      "LayoutDuration": 0.179244,
+      "RecalcStyleDuration": 0.02536,
+      "DevToolsCommandDuration": 0.054512,
+      "ScriptDuration": 2.403472,
+      "V8CompileDuration": 0,
+      "TaskDuration": 3.817403,
+      "TaskOtherDuration": 1.154815,
+      "ThreadTime": 3.370104,
+      "ProcessTime": 5.705349,
+      "JSHeapUsedSize": 11527628,
+      "JSHeapTotalSize": 15605760,
+      "FirstMeaningfulPaint": 238639.997645,
+      "DomContentLoaded": 238639.643393,
+      "NavigationStart": 238639.42858
+    },
+    "jsHeapUsedDeltaBytes": -3927756,
+    "note": "GC can alter heap. Renderer counters and JS memory do not estimate GPU VRAM."
+  },
+  "budgets": {
+    "bodyInteractiveUnder5s": true,
+    "microReadyUnder5s": true,
+    "fpsP50AtLeast50": true,
+    "fpsP10AtLeast30": true,
+    "drawsUnder150": true,
+    "initialPayloadUnder8MiB": true,
+    "bodyPlusMicroUnder8MiB": true,
+    "resourceIdsStable": true,
+    "noSceneFailure": true
+  },
+  "runtime": {
+    "errors": [],
+    "warnings": [
+      "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "failedRequests": [],
+    "httpErrors": []
+  },
+  "limitations": [
+    "One run of this declared profile/mode/build on the workstation; before/after must use identical hardware, seed17, count and mode.",
+    "Emulated mobile uses workstation GPU and does not certify a physical phone.",
+    "rAF percentiles are not GPU frame timings; heap/resource identities do not prove universal leak absence.",
+    "Artistic human review is independent of numeric budgets."
+  ]
+}

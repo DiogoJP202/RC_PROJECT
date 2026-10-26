@@ -1,0 +1,50 @@
+
+> ghoul-atlas@0.1.0 test:e2e
+> playwright test tests/e2e/vascular.spec.ts --grep releasing tracking|enabling reduced motion|free observation --reporter=list,json
+
+
+Running 3 tests using 1 worker
+
+(node:26176) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › tests\e2e\vascular.spec.ts:221:1 › releasing tracking by button, missing profile or first Escape retains the actual camera pose (9.4s)
+  ok 2 [chromium] › tests\e2e\vascular.spec.ts:246:1 › enabling reduced motion inside Micro overrides the saved Body orbit inertia on return (3.9s)
+  x  3 [chromium] › tests\e2e\vascular.spec.ts:273:1 › free observation accepts real orbit and keyboard pan, and camera reset preserves the absolute transport pose (21.6s)
+
+
+  1) [chromium] › tests\e2e\vascular.spec.ts:273:1 › free observation accepts real orbit and keyboard pan, and camera reset preserves the absolute transport pose 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0.001
+    Received:   0
+
+    Call Log:
+    - Timeout 15000ms exceeded while waiting on the predicate
+
+      280 |   await expect.poll(async () => distance((await micro(page)).camera.position, before.camera.position)).toBeGreaterThan(.05);
+      281 |   await canvas.focus(); const orbited = await micro(page); await page.keyboard.press('ArrowRight');
+    > 282 |   await expect.poll(async () => distance((await micro(page)).camera.target, orbited.camera.target)).toBeGreaterThan(.001);
+          |                                                                                                     ^
+      283 |   await page.getByTestId('micro-camera-reset').click();
+      284 |   await expect.poll(async () => distance((await micro(page)).camera.position, before.camera.position)).toBeLessThan(1e-7);
+      285 |   expect((await micro(page)).seconds).toBe(24); expect((await micro(page)).adapter.positionHash).toBe(before.adapter.positionHash);
+        at <workspace>\tests\e2e\vascular.spec.ts:282:101
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\vascular-free-observation--cc4ed-the-absolute-transport-pose-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\vascular-free-observation--cc4ed-the-absolute-transport-pose-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\vascular-free-observation--cc4ed-the-absolute-transport-pose-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\vascular-free-observation--cc4ed-the-absolute-transport-pose-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests\e2e\vascular.spec.ts:273:1 › free observation accepts real orbit and keyboard pan, and camera reset preserves the absolute transport pose 
+  2 passed (42.2s)

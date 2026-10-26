@@ -33,3 +33,17 @@ São `PROXY / CONCEPTUAL MODEL`, de natureza `hypothetical_model`: crescimento, 
 O registro anterior descreve a implementação inicial preservada nas evidências G3A. O overlay separado foi removido no G3A.1; a implantação, os brotos e as pregas pertencem à superfície procedural original do adaptador, com material sem emissão luminosa. A correção terminal assenta essa superfície antes de ocultá-la, sem acrescentar asset externo. Capturas, composições e vídeos são registros da aplicação autoral; não contêm referências privadas ou renders de terceiros.
 
 O usuário aprovou a entrega técnica e visual como **protótipo P1 com ressalvas**. Bases arredondadas, continuidade pele/tecido, facetas e revisão com modelos definitivos permanecem pendências de arte final/P2. Esta aprovação não muda `PROJECT_ORIGINAL`, não cria anatomia/cânone e não concede direitos sobre materiais de terceiros. Nenhum modelo, textura, fonte binária ou asset Blender externo foi incorporado neste checkpoint.
+
+## G4A — representação vascular procedural original
+
+Geometrias de vaso, hemácia bicôncava e superfície RC, cores e mapa de relevo 128×128 são gerados pelo código autoral em `src/scene/vascular/ProceduralVascularAdapter.ts`. Proveniência: `PROJECT_ORIGINAL`, implementação local do Ghoul Atlas em 25/10/2026. Não há meshes, fotografias, figuras de livros, texturas externas ou assets de Tokyo Ghoul incorporados. As fontes OpenStax/Young Jump sustentam somente as afirmações textuais delimitadas em `src/content/vascularEvidence.ts`; suas imagens não foram reproduzidas.
+
+A microcena é um protótipo P1 didático. Forma, escala, material e transporte RC são reconstruções conceituais; a procedência original não confere validação anatômica ou aprovação artística final. Arte Blender futura exige o ingresso de licença, autoria e revisão próprios antes de entrar no build público.
+
+### G4A.1 — refinamento autoral
+
+O marcador de seleção externo, a variação ampla da parede, os ajustes de material/luz e os componentes de apresentação são código/geração autorais `PROJECT_ORIGINAL`. O mapa128×128 permanece gerado localmente. Nenhuma figura OpenStax, fotografia, textura de terceiros, mesh Blender ou asset de Tokyo Ghoul foi incorporado. As comparações e o vídeo registram somente a aplicação; os arcos de seleção são interface didática, não estrutura celular ou emissão biológica. Aprovação artística humana e arte final P2 permanecem pendentes.
+
+### Aceite posterior G4A/G4A.1 — checkpoint P1
+
+O parágrafo anterior registra a revisão pré-aprovação. O usuário aprovou posteriormente G4A/G4A.1 como **protótipo P1 técnico e visual com ressalvas**, sem nova rodada G4A.2. Parede esquemática, marcador fino, hemácias simplificadas e mobile apertado são limites aceitos do protótipo. P2 continua dependente de assets definitivos licenciados e revisão Blender/web. Este aceite não concede direitos de terceiros nem transforma a reconstrução RC em anatomia/cânone validado.

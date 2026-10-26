@@ -1,0 +1,75 @@
+{
+  "reason": "Final video inspection found overlapping desktop identity/disclosure labels. Before changing only CSS spacing, preserve completed measured after-profile results; renew six after profiles on final UI build. Frozen baseline and engine are unchanged.",
+  "files": [
+    {
+      "source": "artifacts/g4a1/production-after-flow-100.json",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/production-after-flow-100.json",
+      "sha256": "11a99a5aaafe679b284f0baa54654d391c8090809057747bc0d78387a2f70b0d"
+    },
+    {
+      "source": "artifacts/g4a1/production-after-flow-2000.json",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/production-after-flow-2000.json",
+      "sha256": "60f9851b688277f91ce337d4dfa6c70170b9df489631101437766e528226f8e5"
+    },
+    {
+      "source": "artifacts/g4a1/production-after-flow-500.json",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/production-after-flow-500.json",
+      "sha256": "bc10b7ba5402d8c255f2fb34d31c8311e626f6e7bab710a8ef75737bb2bd7ca8"
+    },
+    {
+      "source": "artifacts/g4a1/production-after-tracking-100.json",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/production-after-tracking-100.json",
+      "sha256": "ebabecac6ae081cbc40fdd1ee4b67f482a27987e40a71c0441ecadb047267f07"
+    },
+    {
+      "source": "artifacts/g4a1/production-after-tracking-2000.json",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/production-after-tracking-2000.json",
+      "sha256": "2414d69f39542c3b36b9b50f2d4f8eaaf567e9e283b7a78143841374cd94e2a3"
+    },
+    {
+      "source": "artifacts/g4a1/production-after-tracking-500.json",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/production-after-tracking-500.json",
+      "sha256": "86fb07e0bcc185f6294741381157dc8d0095dd3e9de9a698781246043c63de6c"
+    },
+    {
+      "source": "artifacts/g4a1/profile-after-flow-100.txt",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/profile-after-flow-100.txt",
+      "sha256": "374d29f552610a8b068ac865cb0fba7d7cfb6f1011289ad58243dfa5eafb1cda"
+    },
+    {
+      "source": "artifacts/g4a1/profile-after-flow-2000.txt",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/profile-after-flow-2000.txt",
+      "sha256": "078d6cabd7a3d0e7efc0e5ecef49c9930e64c2a9aab078854d53e70059fc5ff1"
+    },
+    {
+      "source": "artifacts/g4a1/profile-after-flow-500.txt",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/profile-after-flow-500.txt",
+      "sha256": "5451b409ca9ae0f3940323018e966c340e82f228e8ea70aa7ab2ca83d3b38060"
+    },
+    {
+      "source": "artifacts/g4a1/profile-after-tracking-100.txt",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/profile-after-tracking-100.txt",
+      "sha256": "c12f7b5996a09cadd5ed3ec908ec271dd80636add4bfd1b137623192b6fd6eed"
+    },
+    {
+      "source": "artifacts/g4a1/profile-after-tracking-2000.txt",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/profile-after-tracking-2000.txt",
+      "sha256": "3a54c801ea1a18e5ce20017bf42b7ec92788fe6569e9fe38cafa34f7ad864812"
+    },
+    {
+      "source": "artifacts/g4a1/profile-after-tracking-500.txt",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/profile-after-tracking-500.txt",
+      "sha256": "cb6766effbf10f16b3be1b34b45b713d6d3115ce2351928bfee172a6343f81af"
+    },
+    {
+      "source": "artifacts/g4a1/performance-comparison.json",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/performance-comparison.json",
+      "sha256": "5911094e4e06303d3a2e4b8cfd2a9cf95f1f89b234ea6aa9cec92654eab4cec2"
+    },
+    {
+      "source": "artifacts/g4a1/profile-runs.json",
+      "archive": "artifacts/gates/G4A1-review/iterations/pre-overlay-fix/profile-runs.json",
+      "sha256": "b7b5acb829c85cce5bc764b5fd88e17326bc88a01e6f48d682f93a6e8d8e864b"
+    }
+  ]
+}

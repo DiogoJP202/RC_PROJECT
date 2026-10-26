@@ -1,0 +1,38 @@
+[
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "durationMs": 7958,
+    "log": "artifacts/g4a/typecheck.txt"
+  },
+  {
+    "command": "npm run lint",
+    "exitCode": 0,
+    "durationMs": 7350,
+    "log": "artifacts/g4a/lint.txt"
+  },
+  {
+    "command": "npm run test",
+    "exitCode": 0,
+    "durationMs": 5329,
+    "log": "artifacts/g4a/test.txt"
+  },
+  {
+    "command": "npm run test:catalog",
+    "exitCode": 0,
+    "durationMs": 1140,
+    "log": "artifacts/g4a/test-catalog.txt"
+  },
+  {
+    "command": "npm run validate:catalog",
+    "exitCode": 0,
+    "durationMs": 835,
+    "log": "artifacts/g4a/validate-catalog.txt"
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "durationMs": 8628,
+    "log": "artifacts/g4a/build.txt"
+  }
+]

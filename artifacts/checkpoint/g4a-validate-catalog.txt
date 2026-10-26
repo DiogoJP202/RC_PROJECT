@@ -1,0 +1,5 @@
+
+> ghoul-atlas@0.1.0 validate:catalog
+> node tools/python.mjs tools/validate_catalog.py public/catalog.json
+
+Catalog OK v2: public/catalog.json; estrutura, referências, fontes conferidas e assets reais.

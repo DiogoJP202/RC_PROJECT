@@ -160,7 +160,7 @@ test('opacity and scan controls affect the renderer; pausing and scrub are stabl
   expect((await scene(page)).scanT).toBe(reduced.scanT);
 });
 
-test('future modes preserve context and canon filter never hides the reconstruction disclosure', async ({ page }) => {
+test('micro and future comparison preserve context and canon filter never hides the reconstruction disclosure', async ({ page }) => {
   await openObservatory(page);
   await select(page, 'ghoul.kakuhou.rinkaku');
   await page.getByTestId('layer-skeletal').click();
@@ -170,8 +170,15 @@ test('future modes preserve context and canon filter never hides the reconstruct
   const context = await scene(page);
   for (const mode of ['micro', 'compare']) {
     await page.getByTestId(`mode-${mode}`).click();
-    await expect(page.getByText(/em desenvolvimento/i).first()).toBeVisible();
-    await page.getByTestId('mode-return').click();
+    if (mode === 'micro') {
+      // G4A replaces the informational placeholder with an actual lazy scene;
+      // the original Body-context invariant remains the purpose of this test.
+      await expect(page.getByTestId('micro-status')).toHaveText('3D conectado');
+      await page.getByTestId('micro-return').click();
+    } else {
+      await expect(page.getByText(/em desenvolvimento/i).first()).toBeVisible();
+      await page.getByTestId('mode-return').click();
+    }
     await expect(page.getByTestId('inspector')).toHaveAttribute('data-selected-id', 'ghoul.kakuhou.rinkaku');
     const returned = await scene(page);
     expect(returned.layers).toEqual(context.layers);
