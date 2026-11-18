@@ -10,7 +10,7 @@ import './vascular.css';
 
 const Scene = lazy(() => import('../scene/vascular/VascularScene'));
 
-export default function VascularWorkspace({ content, onReturn, webglOff = false }: { content: AtlasContent; onReturn: () => void; webglOff?: boolean }) {
+export default function VascularWorkspace({ content, active, onReturn, returnLabel, webglOff = false }: { content: AtlasContent; active: boolean; onReturn: () => void; returnLabel: string; webglOff?: boolean }) {
   const state = useVascular();
   const reduced = useObservatory((s) => s.reducedMotion);
   const canonOnly = useObservatory((s) => s.canonOnly);
@@ -33,9 +33,10 @@ export default function VascularWorkspace({ content, onReturn, webglOff = false 
   const ready = useCallback(() => { useVascular.getState().setReady(true); performance.mark('atlas-micro-interactive'); }, []);
   const fail = useCallback((message: string) => { useVascular.getState().pause(); useVascular.getState().setReady(false); setError(message); }, []);
   useEffect(() => {
+    if (!active || !state.playing) return;
     const timer = window.setInterval(() => setSeconds(vascularClock.seconds), 250);
     return () => window.clearInterval(timer);
-  }, []);
+  }, [active, state.playing]);
   useEffect(() => {
     if (reduced) useVascular.getState().pause();
     const visibility = () => { if (document.hidden) useVascular.getState().pause(); };
@@ -59,13 +60,13 @@ export default function VascularWorkspace({ content, onReturn, webglOff = false 
           <button data-testid="micro-follow" disabled={!selected || !state.ready} aria-pressed={state.cameraMode === 'tracking'} onClick={() => state.setCameraMode(state.cameraMode === 'tracking' ? 'free' : 'tracking')}>{state.cameraMode === 'tracking' ? 'Soltar célula' : 'Seguir célula'}</button>
         </div>
         <button data-testid="micro-camera-reset" className="text-button" onClick={() => state.resetCamera()} disabled={!state.ready}><Icon name="reset" />Reenquadrar microcena</button>
-        <button data-testid="micro-return" className="secondary-button" onClick={onReturn}><Icon name="arrow" />Voltar ao corpo</button>
+        <button data-testid="micro-return" className="secondary-button" onClick={onReturn}><Icon name="arrow" />{returnLabel}</button>
         <p className="micro-note">Esc: sair de tracking; depois voltar ao corpo. R: reenquadrar a cena atual.</p>
       </aside>
       <section className="stage micro-stage" data-testid="micro-stage" aria-label="Interior vascular tridimensional">
         <div className="stage-header"><div><span className="micro-label">MICRO / CIRCUITO DIDÁTICO</span><h1>Por dentro <em>da corrente.</em></h1></div><div className="stage-readout"><span className={`status-dot ${error ? 'amber' : ''}`} /><span role="status" data-testid="micro-status">{error ? 'Modo textual' : state.ready ? '3D conectado' : 'Carregando 3D'}</span><small>PROCEDURAL / G4A.1</small></div></div>
         <div className="scene-container">
-          {error ? <div className="micro-fallback" role="alert"><Icon name="orbit" size={48} /><h2>O estudo continua.</h2><p>{error}</p><div className="micro-schematic" aria-label="Esquema conceitual de fluxo"><span>Hemácia</span><Icon name="arrow" /><span>RC conceitual</span></div><p>Use os seletores e as evidências. Nenhuma dimensão ou trajetória RC é estabelecida por este esquema.</p><button className="secondary-button" data-testid="micro-retry" onClick={() => { setError(''); setAttempt((n) => n + 1); }}>Tentar novamente</button></div> : <SceneBoundary key={attempt} onError={fail}><Suspense fallback={<div className="scene-loading" role="status">Preparando o ambiente vascular…</div>}><Scene onReady={ready} onError={fail} /></Suspense></SceneBoundary>}
+          {error ? <div className="micro-fallback" role="alert"><Icon name="orbit" size={48} /><h2>O estudo continua.</h2><p>{error}</p><div className="micro-schematic" aria-label="Esquema conceitual de fluxo"><span>Hemácia</span><Icon name="arrow" /><span>RC conceitual</span></div><p>Use os seletores e as evidências. Nenhuma dimensão ou trajetória RC é estabelecida por este esquema.</p><button className="secondary-button" data-testid="micro-retry" onClick={() => { setError(''); setAttempt((n) => n + 1); }}>Tentar novamente</button></div> : <SceneBoundary key={attempt} onError={fail}><Suspense fallback={<div className="scene-loading" role="status">Preparando o ambiente vascular…</div>}><Scene onReady={ready} onError={fail} active={active} /></Suspense></SceneBoundary>}
         </div>
         <div className="micro-scene-label"><span>{state.cameraMode === 'tracking' ? 'ACOMPANHAMENTO / IDENTIDADE FIXA' : state.cameraMode === 'flow' ? 'OBSERVAÇÃO DO FLUXO' : 'OBSERVAÇÃO LIVRE'}</span><strong>{state.selectedId ?? 'CIRCUITO ILUSTRATIVO'}</strong></div>
         <div className="stage-bottom"><div className="proxy-stamp"><span>△</span><div><strong>PROXY / CONCEPTUAL MODEL</strong><small>Geometria e transporte simplificados · sem escala RC real</small></div></div></div>

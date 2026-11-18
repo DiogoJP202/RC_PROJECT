@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/atlas", "destination": "/index.html" },
+    { "source": "/atlas/rinkaku", "destination": "/index.html" },
+    { "source": "/atlas/vascular", "destination": "/index.html" },
+    { "source": "/atlas/comparar", "destination": "/index.html" },
+    { "source": "/atlas/cell/:entityId", "destination": "/index.html" },
+    { "source": "/estudos", "destination": "/index.html" },
+    { "source": "/fontes", "destination": "/index.html" }
+  ]
+}

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { Canvas, useFrame, useThree, type ThreeEvent } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
@@ -11,7 +11,7 @@ import { vascularLifecycle } from './lifecycle';
 import { constrainVascularCamera, VascularCameraRig } from './camera';
 import { VascularVisibilityProbe, type VisibilityResult } from './visibility';
 
-interface Props { onReady: () => void; onError: (message: string) => void }
+interface Props { onReady: () => void; onError: (message: string) => void; active: boolean }
 interface MicroApi {
   snapshot: () => Record<string, unknown>;
   project: (id: string) => { x: number; y: number; z: number } | null;
@@ -20,7 +20,7 @@ interface MicroApi {
 }
 declare global { interface Window { __ATLAS_MICRO__?: MicroApi } }
 
-function VascularContents({ onReady, onError }: Props) {
+function VascularContents({ onReady, onError, active }: Props) {
   const { camera, gl, size } = useThree();
   const controls = useRef<OrbitControlsImpl>(null);
   const config = useVascular((s) => s.config);
@@ -33,6 +33,17 @@ function VascularContents({ onReady, onError }: Props) {
   const lighting = useRef<Group>(null);
   const last = useRef({ seconds: NaN, selected: '', highlight: false, mode: '', revision: -1, ready: false, reset: -1 });
   const metric = useRef({ frames: 0, durations: new Float32Array(2400), cursor: 0, renderer: '', calls: 0, triangles: 0, geometries: 0, textures: 0 });
+  const parkedCamera = useRef(false);
+  const heldCamera = useRef<{ clockRevision: number; cameraRevision: number; cameraMode: string; selectedId: string | null; reduced: boolean } | null>(null);
+  useLayoutEffect(() => {
+    if (!active) { parkedCamera.current = true; return; }
+    if (!parkedCamera.current || !last.current.ready) return;
+    parkedCamera.current = false;
+    const state = useVascular.getState();
+    // Editorial navigation pauses playback without snapping an in-flight camera to a preset.
+    heldCamera.current = { clockRevision: vascularClock.revision, cameraRevision: state.cameraRevision,
+      cameraMode: state.cameraMode, selectedId: state.selectedId, reduced };
+  }, [active, reduced]);
   const advanceOptions = useRef({ reducedMotion: false, hidden: false, available: true, active: true });
 
   useEffect(() => { resources.adapter.setConfig(config); last.current.seconds = NaN; }, [config, resources]);
@@ -122,7 +133,11 @@ function VascularContents({ onReady, onError }: Props) {
     // reframe or first mount returns Free Observation to the circuit entrance.
     const reset = !last.current.ready || last.current.reset !== state.cameraRevision;
     const discontinuity = Number.isFinite(last.current.seconds) && Math.abs(seconds - last.current.seconds) > .4;
-    if (state.cameraMode !== 'free' || reset) {
+    const held = heldCamera.current;
+    const unchanged = held && !state.playing && held.clockRevision === vascularClock.revision && held.cameraRevision === state.cameraRevision
+      && held.cameraMode === state.cameraMode && held.selectedId === state.selectedId && held.reduced === reduced;
+    if (!unchanged) heldCamera.current = null;
+    if (!unchanged && (state.cameraMode !== 'free' || reset)) {
       if (last.current.ready && last.current.mode === 'free' && state.cameraMode !== 'free') resources.cameraRig.seed(camera.position, controls.current?.target ?? resources.target);
       const pose = resources.cameraRig.update(delta, state.cameraMode === 'tracking' ? 'tracking' : 'flow', state.cameraMode === 'free' ? 0 : seconds,
         state.cameraMode === 'tracking' && selected ? resources.sample : null, reduced,
@@ -168,7 +183,7 @@ function VascularContents({ onReady, onError }: Props) {
 }
 
 export default function VascularScene(props: Props) {
-  return <Canvas camera={{ position: [8, 0, 0], fov: 58, near: .06, far: 60 }} dpr={[1, 1.5]}
+  return <Canvas frameloop={props.active ? 'always' : 'never'} camera={{ position: [8, 0, 0], fov: 58, near: .06, far: 60 }} dpr={[1, 1.5]}
     gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
     onCreated={({ gl, camera }) => { gl.toneMapping = ACESFilmicToneMapping; gl.toneMappingExposure = 1.05; gl.setClearColor(new Color('#130c11')); gl.domElement.tabIndex = 0; gl.domElement.setAttribute('aria-label', 'Exploração vascular: arraste para orbitar, use setas para deslocar'); (camera as PerspectiveCamera).updateProjectionMatrix(); }}>
     <VascularContents {...props} />

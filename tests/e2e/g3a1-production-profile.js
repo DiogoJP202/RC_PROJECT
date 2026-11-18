@@ -1,7 +1,7 @@
 /**
  * Fresh G3A.1 measurements, independent of the preserved G3A report/profiler.
  * Build and preview:4173 before running this file. Optional --quality=low,
- * --mobile, --output=artifacts/g3a1/production-standard.json.
+ * --mobile, --output=test-results/atlas-evidence/g3a1/production-standard.json.
  */
 /* global window, document, requestAnimationFrame, innerWidth, innerHeight, devicePixelRatio */
 import { chromium } from '@playwright/test';
@@ -12,8 +12,8 @@ import os from 'node:os';
 const quality = process.argv.includes('--quality=low') ? 'low' : 'standard';
 const mobile = process.argv.includes('--mobile');
 const output = process.argv.find((arg) => arg.startsWith('--output='))?.slice('--output='.length)
-  ?? `artifacts/g3a1/production-${mobile ? 'emulated-mobile-' : ''}${quality}.json`;
-const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173';
+  ?? `test-results/atlas-evidence/g3a1/production-${mobile ? 'emulated-mobile-' : ''}${quality}.json`;
+const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173/atlas';
 const browser = await chromium.launch({
   ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH } : {}),
   headless: true, args: ['--enable-webgl', '--ignore-gpu-blocklist'],

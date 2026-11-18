@@ -1,3 +1,5 @@
+import { chooseStructure, openBodyTool } from './body-tools';
+import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
 
 type Point = number[];
@@ -41,7 +43,7 @@ const distance = (a: Point, b: Point) => Math.hypot(...a.map((n, i) => n - b[i])
 const cameraDistance = (a: Camera, b: Camera) => distance(a.position, b.position) + distance(a.target, b.target);
 
 async function openLab(page: Page) {
-  await page.goto('/?assets=lab');
+  await page.goto('/atlas?assets=lab');
   await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
   await expect(page.locator('canvas')).toBeVisible();
   await expect(page.getByTestId('asset-select')).toBeVisible();
@@ -55,7 +57,8 @@ async function chooseAsset(page: Page, id: string) {
 }
 
 async function select(page: Page, id: string) {
-  await page.getByTestId(`structure-${id}`).click();
+  await chooseStructure(page, id);
+  await openBodyTool(page, 'inspect');
   await expect(page.getByTestId('inspector')).toHaveAttribute('data-selected-id', id);
 }
 
@@ -131,11 +134,15 @@ test('asset replacement preserves selection, layers, isolation, opacity and came
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await openLab(page);
   await chooseAsset(page, staticId);
+  await openBodyTool(page, 'layers');
   await page.getByTestId('layer-muscular').click();
+  await openBodyTool(page, 'layers');
   await page.getByTestId('layer-skeletal').click();
   await select(page, 'human.thorax');
+  await openBodyTool(page, 'layers');
   await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('0.27');
   const beforeIsolation = await api(page);
+  await openBodyTool(page, 'inspect');
   await page.getByTestId('isolate-selection').click();
   await expect(page.getByTestId('isolate-selection')).toHaveAttribute('aria-pressed', 'true');
   const isolated = await api(page);
@@ -259,24 +266,24 @@ test('rigged GLB exposes skin and clip, moves a bone-attached socket and respect
 
 test('G2A desktop capture preserves the observatory and labels the synthetic integration', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/');
+  await page.goto('/atlas');
   await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
   await expect(page.getByTestId('asset-select')).toHaveCount(0);
-  await page.screenshot({ path: 'artifacts/gates/G2A-desktop-default.png' });
+  await page.screenshot({ path: `${evidenceRoot}/gates/G2A-desktop-default.png` });
   await openLab(page);
-  await page.screenshot({ path: 'artifacts/gates/G2A-desktop.png' });
+  await page.screenshot({ path: `${evidenceRoot}/gates/G2A-desktop.png` });
   await chooseAsset(page, staticId);
   await page.getByTestId('camera-reset').click();
   await expect(page.getByTestId('asset-status')).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  await page.screenshot({ path: 'artifacts/gates/G2A-synthetic-static.png' });
+  await page.screenshot({ path: `${evidenceRoot}/gates/G2A-synthetic-static.png` });
   await chooseAsset(page, riggedId);
   await page.getByTestId('asset-animation-clip').selectOption((await api(page)).assets.animations[0].name);
   await page.getByTestId('asset-animation-time').fill('0.25');
-  await page.screenshot({ path: 'artifacts/gates/G2A-synthetic-rigged.png' });
+  await page.screenshot({ path: `${evidenceRoot}/gates/G2A-synthetic-rigged.png` });
   await select(page, 'ghoul.kakuhou.rinkaku');
   await page.getByTestId('isolate-selection').click();
-  await page.screenshot({ path: 'artifacts/gates/G2A-rig-pose.png' });
+  await page.screenshot({ path: `${evidenceRoot}/gates/G2A-rig-pose.png` });
 });
 
 test('mobile exploration remains touch accessible with GLB and produces a real capture', async ({ browser }) => {
@@ -287,12 +294,14 @@ test('mobile exploration remains touch accessible with GLB and produces a real c
     expect(await page.evaluate(() => matchMedia('(hover: none)').matches)).toBe(true);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.getByTestId('stage').scrollIntoViewIfNeeded();
-    await page.screenshot({ path: 'artifacts/gates/G2A-mobile.png' });
+    await page.screenshot({ path: `${evidenceRoot}/gates/G2A-mobile.png` });
     await chooseAsset(page, staticId);
+    await openBodyTool(page, 'structures');
     const structure = page.getByTestId('structure-ghoul.kakuhou.rinkaku');
     const button = await structure.boundingBox();
     expect(button!.height).toBeGreaterThanOrEqual(44);
     await structure.tap();
+    await openBodyTool(page, 'inspect');
     await expect(page.getByTestId('inspector')).toHaveAttribute('data-selected-id', 'ghoul.kakuhou.rinkaku');
     await expect(page.getByTestId('inspector')).toBeInViewport();
     await page.getByTestId('focus-selection').tap();
@@ -300,7 +309,7 @@ test('mobile exploration remains touch accessible with GLB and produces a real c
     expect((await api(page)).selectedId).toBe('ghoul.kakuhou.rinkaku');
     expect((await api(page)).assets.activeId).toBe(staticId);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-    await page.screenshot({ path: 'artifacts/gates/G2A-mobile-asset.png' });
+    await page.screenshot({ path: `${evidenceRoot}/gates/G2A-mobile-asset.png` });
   } finally { await context.close(); }
 });
 
@@ -308,30 +317,30 @@ test('the mobile drawer supports touch, keyboard, native dismissal and explicit 
   const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 1, reducedMotion: 'reduce' });
   const page = await context.newPage();
   try {
-    await page.goto('/');
+    await page.goto('/atlas');
     await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
     await expect(page.getByTestId('asset-select')).toHaveCount(0);
-    const explore = page.getByTestId('mobile-explore');
+    const explore = page.getByTestId('body-structures');
     await expect(explore).toBeInViewport();
     const button = await explore.boundingBox();
     expect(button!.height).toBeGreaterThanOrEqual(44);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-    await page.screenshot({ path: 'artifacts/gates/G2A-mobile-default.png' });
+    await page.screenshot({ path: `${evidenceRoot}/gates/G2A-mobile-default.png` });
     await explore.tap();
-    const drawer = page.getByRole('dialog', { name: 'Escolha uma estrutura' });
+    const drawer = page.getByRole('dialog', { name: 'Estruturas anatômicas' });
     await expect(drawer).toBeVisible();
-    await expect(drawer.getByRole('heading', { name: 'Escolha uma estrutura' })).toBeVisible();
+    await expect(drawer.getByRole('heading', { name: 'Estruturas anatômicas' })).toBeVisible();
     await page.keyboard.press('Tab');
     expect(await drawer.evaluate((element) => element.contains(document.activeElement))).toBe(true);
-    await page.screenshot({ path: 'artifacts/gates/G2A-mobile-drawer.png' });
-    await drawer.getByRole('button', { name: 'Fechar exploração', exact: true }).click();
+    await page.screenshot({ path: `${evidenceRoot}/gates/G2A-mobile-drawer.png` });
+    await drawer.getByRole('button', { name: 'Fechar painel', exact: true }).click();
     await expect(drawer).not.toBeVisible();
     await explore.tap();
-    await page.getByTestId('mobile-structure-ghoul.kakuhou.rinkaku').tap();
+    await page.getByTestId('structure-ghoul.kakuhou.rinkaku').tap();
     await expect(drawer).not.toBeVisible();
     await expect(page.getByTestId('stage')).toBeInViewport();
     expect((await api(page)).selectedId).toBe('ghoul.kakuhou.rinkaku');
-    await expect(page.getByTestId('inspector')).toHaveAttribute('data-selected-id', 'ghoul.kakuhou.rinkaku');
+    await expect(page.getByTestId('body-selection')).toContainText(/kakuhou/i);
     const selected = await api(page);
     await explore.tap();
     await expect(drawer).toBeVisible();
@@ -342,8 +351,6 @@ test('the mobile drawer supports touch, keyboard, native dismissal and explicit 
     expect(dismissed.layers).toEqual(selected.layers);
     expect(cameraDistance(dismissed.camera, selected.camera)).toBeLessThan(0.0001);
     const inspectorToggle = page.getByTestId('inspector-toggle');
-    await expect(inspectorToggle).toHaveAttribute('aria-expanded', 'true');
-    await inspectorToggle.click();
     await expect(inspectorToggle).toHaveAttribute('aria-expanded', 'false');
     await explore.tap();
     await drawer.getByRole('button', { name: /Ler evidências da seleção/ }).tap();

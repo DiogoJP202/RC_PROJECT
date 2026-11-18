@@ -47,3 +47,21 @@ O marcador de seleção externo, a variação ampla da parede, os ajustes de mat
 ### Aceite posterior G4A/G4A.1 — checkpoint P1
 
 O parágrafo anterior registra a revisão pré-aprovação. O usuário aprovou posteriormente G4A/G4A.1 como **protótipo P1 técnico e visual com ressalvas**, sem nova rodada G4A.2. Parede esquemática, marcador fino, hemácias simplificadas e mobile apertado são limites aceitos do protótipo. P2 continua dependente de assets definitivos licenciados e revisão Blender/web. Este aceite não concede direitos de terceiros nem transforma a reconstrução RC em anatomia/cânone validado.
+
+## UI-R1 — Captura editorial e tipografia
+
+A imagem da vitrine é `PROJECT_ORIGINAL`: quadro do Rinkaku gerado no renderer do próprio Ghoul Atlas (checkpoint `1bcecb0`; vista oblíqua, fase ativa, `t=0,88`, quatro apêndices, seed 17, sem partículas artísticas). O HUD foi ocultado somente na captura. As versões WebP resultam de recorte, redimensionamento e compressão; não incluem referências privadas, scans, imagens de personagens, fotos ou malhas de terceiros. A legenda HTML mantém o aviso **Modelo conceitual**. O quadro não atesta forma, escala ou anatomia oficiais.
+
+| Arquivo da vitrine | Dimensões | SHA-256 |
+|---|---:|---|
+| `assets/ui-r1/rinkaku-hero-768.webp` | 768 × 559 | `89f90457c07477515abd9a286ab78cb8c39e6b33300098a39cf20c1d29458895` |
+| `assets/ui-r1/rinkaku-hero-1440.webp` | 1440 × 1048 | `73b2d780acd0a682e13f2ebfd62f52cdeedb917232aa9620289df316d4ee939c` |
+
+IBM Plex™ é tipografia da IBM Corp., distribuída sob a **SIL Open Font License, Version 1.1**. Os quatro subconjuntos Latin1 WOFF2 abaixo foram copiados sem modificações dos pacotes oficiais, com o [texto de licença](assets/fonts/OFL-IBM-Plex.txt). São servidos localmente; nenhum CDN ou pacote novo é necessário em runtime.
+
+| Variante e release oficial | SHA-256 |
+|---|---|
+| [Plex Sans Regular 1.1.0](https://registry.npmjs.org/@ibm/plex-sans/-/plex-sans-1.1.0.tgz) | `b5ad7bd39f996144915f0ad9849a90183b27d8c28ad97ed98af5b1bebc51f6b1` |
+| [Plex Sans Medium 1.1.0](https://registry.npmjs.org/@ibm/plex-sans/-/plex-sans-1.1.0.tgz) | `b5610af04d0d4b5a14a621d96d974b993e945a065db1a8861918f69ef9321934` |
+| [Plex Sans Condensed SemiBold 2.0.0](https://registry.npmjs.org/@ibm/plex-sans-condensed/-/plex-sans-condensed-2.0.0.tgz) | `6738b1096fd433204a070db0b4a9b1172ad3e6bdff8aad5f05f7351e7c157d06` |
+| [Plex Mono Regular 2.5.0](https://registry.npmjs.org/@ibm/plex-mono/-/plex-mono-2.5.0.tgz) | `e8993d946649b9d01abb1ed06d574b19d8ea3e66b5c3948602db335c44c18e56` |

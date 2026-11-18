@@ -1,6 +1,6 @@
 /** New G4A.1 production measurement; independently collected Flow and Tracking runs. Build/preview first; run profiles sequentially.
  * node tests/e2e/g4a1-production-profile.js --count=100|500|2000 [--tracking] [--mobile] [--label=before|after]
- * Optional --output=artifacts/g4a1/production-after-flow-500.json and ATLAS_PROFILE_URL. Baseline: --label=before with URL4176; current URL4173.
+ * Optional --output=test-results/atlas-evidence/g4a1/production-after-flow-500.json and ATLAS_PROFILE_URL. Baseline: --label=before with URL4176; current URL4173.
  */
 /* global window, document, requestAnimationFrame, innerWidth, innerHeight, devicePixelRatio */
 import { chromium } from '@playwright/test';
@@ -16,8 +16,8 @@ const cameraMode = tracking ? 'tracking' : 'flow';
 const label = process.argv.find((arg) => arg.startsWith('--label='))?.slice(8) ?? 'after';
 if (!['before', 'after'].includes(label)) throw new Error('Expected --label=before or --label=after.');
 const output = process.argv.find((arg) => arg.startsWith('--output='))?.slice(9)
-  ?? `artifacts/g4a1/production-${label}-${cameraMode}-${mobile ? 'emulated-mobile-' : ''}${count}.json`;
-const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173';
+  ?? `test-results/atlas-evidence/g4a1/production-${label}-${cameraMode}-${mobile ? 'emulated-mobile-' : ''}${count}.json`;
+const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173/atlas';
 const browser = await chromium.launch({ headless: true,
   ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH } : {}),
   args: ['--enable-webgl', '--ignore-gpu-blocklist'],

@@ -1,5 +1,15 @@
 # GHOUL ATLAS — Observatório Anatômico 3D
 
+> **UI-R2 — Observatório Corpo.** O palco anatômico ocupa a área central de `/atlas`. Estruturas,
+> camadas, ficha e varredura são ferramentas sob demanda; em telas estreitas, usam uma folha
+> inferior. O renderer, o catálogo e as simulações continuam na mesma base. Veja [UI-R2: aceite](docs/UI_R2_ACCEPTANCE.md).
+
+> **UI-R1 — Vitrine e navegação.** A entrada `/` é uma apresentação editorial com captura original
+> do Rinkaku. Abra o observatório em `/atlas`, a simulação em `/atlas/rinkaku` ou o fluxo vascular
+> em `/atlas/vascular`. `/estudos` reúne as três experiências; `/fontes` reúne metodologia, fontes
+> e créditos. A vitrine não carrega o renderer. Os avisos de checkpoint abaixo descrevem a evolução
+> técnica das cenas; o layout de trabalho permanece o do G4A.1 nesta etapa. Veja [UI-R1: aceite](docs/UI_R1_ACCEPTANCE.md).
+
 > **ATUAL — checkpoint G4A/G4A.1 aprovado como P1 técnico e visual com ressalvas:** o usuário aprovou a experiência e autorizou commit e push em `main`. Este estado integra o checkpoint G4A/G4A.1 em `main`; sua identidade é o commit que introduz [G4A_CHECKPOINT](docs/G4A_CHECKPOINT.md), consultável por `git log -1 -- docs/G4A_CHECKPOINT.md`. O encerramento verifica o SHA remoto e a limpeza da working tree; compare o Git local e remoto ao retomar. A base `717f4069c5e662f78ea8b28e7d13e0636ab0c5dd` é o precedente histórico. Parede esquemática, marcador fino, hemácia simplificada e composição mobile apertada permanecem ressalvas aceitas; arte final P2/Blender continua pendente. Não há G4A.2 neste checkpoint. A próxima etapa planejada é **G4B, ainda não iniciada**; G4B/G5/G2B/G3B não são implementados por este checkpoint. Deploy não foi autorizado.
 
 > **Registro histórico — fechamento técnico G4A.1 antes da aprovação humana:** tracking por obstáculos, seleção externa que preserva a cor RC, materiais mate e composição compacta. Validados 203 testes unitários, 22 Python, catálogo, TypeScript, lint, build, 62 E2E e seis cenários rechecados após o último ajuste de layout; doze perfis nos budgets originais. [Revisão técnica](docs/G4A1_REFINEMENT.md), [comparativos e vídeo reais](artifacts/gates/G4A1-review/INDEX.md), [desempenho](artifacts/gates/G4A1-review/PERFORMANCE.md) e [parecer crítico](artifacts/gates/G4A1-review/REPORT.md). Naquele momento, a aprovação artística estava pendente e o trabalho estava sem commit, push ou deploy. Os registros G4A/G3A abaixo permanecem históricos quanto aos seus materiais e resultados de execução.

@@ -40,8 +40,8 @@ try {
     console.log(JSON.stringify({ count, seed, hashes: trajectoryHashesMatch, before: pair[0].meanVisible, after: pair[1].meanVisible, improvement: pair[1].meanVisible - pair[0].meanVisible }));
   }
   const meanImprovement = records.reduce((sum, record) => sum + record.improvement, 0) / records.length;
-  await mkdir('artifacts/g4a1', { recursive: true });
-  await writeFile(resolve('artifacts/g4a1/occlusion-study.json'), `${JSON.stringify({ createdAt: new Date().toISOString(),
+  await mkdir('test-results/atlas-evidence/g4a1', { recursive: true });
+  await writeFile(resolve('test-results/atlas-evidence/g4a1/occlusion-study.json'), `${JSON.stringify({ createdAt: new Date().toISOString(),
     method: 'Actual selected-cell triangle silhouettes sampled on a9x9 image-space grid; wall and other cell triangles raycast after conservative sphere broadphase. Static absolute camera references, paired same seed/id/time/profile/FOV. Not pixel-perfect area or physiology.',
     sampleIntervalSeconds: .5, interval: [0, 40], initialTargetMeanImprovement: .1, meanImprovement,
     durationsNote: 'Run durations have0.5s resolution and include endpoints; not continuous exact event timings.', records }, null, 2)}\n`);

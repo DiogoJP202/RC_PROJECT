@@ -1,3 +1,5 @@
+import { chooseStructure, openBodyTool } from './body-tools';
+import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
@@ -24,8 +26,8 @@ interface SceneSnapshot {
 }
 interface SceneApi { snapshot(): SceneSnapshot }
 
-const REVIEW = 'artifacts/gates/G3A1-review';
-const RESULTS = 'artifacts/g3a1';
+const REVIEW = `${evidenceRoot}/gates/G3A1-review`;
+const RESULTS = `${evidenceRoot}/g3a1`;
 const PHASES = [
   ['rest', .04], ['activation', .14], ['release', .275], ['growth', .53],
   ['fixation', .76], ['active', .9], ['retract', .98],
@@ -45,7 +47,7 @@ async function settle(page: Page) {
   await page.evaluate(() => new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
 }
 async function open(page: Page, query = '') {
-  await page.goto(`/${query}`);
+  await page.goto(`/atlas${query}`);
   await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
   await expect(page.locator('canvas')).toBeVisible();
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_SCENE__?: SceneApi }).__ATLAS_SCENE__));
@@ -82,6 +84,7 @@ test('all seven deterministic phases support 1–4 appendages and preserve the s
   test.setTimeout(120_000);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await open(page);
+  await openBodyTool(page, 'layers');
   await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('1');
   await enter(page);
   const camera = (await scene(page)).camera;
@@ -123,6 +126,7 @@ test('lumbar implantation is captured at growth, active and retraction for every
   test.setTimeout(120_000);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await open(page);
+  await openBodyTool(page, 'layers');
   await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('1');
   await enter(page);
   const captures = [];
@@ -150,6 +154,7 @@ test('growth and retraction sequences, phase boundaries and timeline revisits ke
   test.setTimeout(120_000);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await open(page);
+  await openBodyTool(page, 'layers');
   await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('1');
   await enter(page);
   const initial = await scrub(page, .9);
@@ -224,7 +229,7 @@ test('the existing kakuhou presentation is suppressed only during manifestation 
 test('selection, layers and preexisting isolation stay functional while the original observer presentation is restored', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await open(page);
-  await page.getByTestId('structure-ghoul.kakuhou.rinkaku').click();
+  await chooseStructure(page, 'ghoul.kakuhou.rinkaku');
   await page.getByTestId('isolate-selection').click();
   const isolated = await scene(page);
   await enter(page);
@@ -233,17 +238,22 @@ test('selection, layers and preexisting isolation stay functional while the orig
   expect(active.layers).toEqual(isolated.layers);
   expect(active.rinkaku.adapter?.visible).toBe(true);
   await page.getByTestId('rinkaku-toggle').click();
+  await expect(page.getByTestId('inspector-toggle')).toBeVisible();
+  await openBodyTool(page, 'inspect');
   await expect(page.getByTestId('isolate-selection')).toHaveAttribute('aria-pressed', 'true');
   expect((await scene(page)).layers).toEqual(isolated.layers);
   await enter(page);
   await scrub(page, .9);
+  await openBodyTool(page, 'layers');
   await page.getByTestId('layer-internal').click();
   await expect.poll(async () => (await scene(page)).rinkaku.adapter?.visible).toBe(false);
+  await openBodyTool(page, 'layers');
   await page.getByTestId('layer-internal').click();
   await expect.poll(async () => (await scene(page)).rinkaku.adapter?.visible).toBe(true);
-  await page.getByTestId('structure-human.thorax').click();
+  await chooseStructure(page, 'human.thorax');
   expect((await scene(page)).selectedId).toBe('human.thorax');
   await page.getByTestId('rinkaku-toggle').click();
+  await openBodyTool(page, 'inspect');
   await expect(page.getByTestId('inspector')).toHaveAttribute('data-selected-id', 'human.thorax');
   expect(lumbarNodes(await scene(page)).some((node) => node.visible)).toBe(true);
 });
@@ -254,7 +264,9 @@ for (const viewport of [{ width: 390, height: 844 }, { width: 430, height: 932 }
     const page = await context.newPage();
     try {
       await open(page);
+      await openBodyTool(page, 'layers');
       await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('1');
+      await page.getByTestId('body-panel-close').tap();
       await enter(page);
       const initial = await scrub(page, .53);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

@@ -1,3 +1,5 @@
+import { chooseStructure, openBodyTool } from './body-tools';
+import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 
@@ -53,7 +55,7 @@ const distance = (a: number[], b: number[]) => Math.hypot(...a.map((value, i) =>
 const cameraDistance = (a: Camera, b: Camera) => distance(a.position, b.position) + distance(a.target, b.target);
 
 async function open(page: Page, query = '') {
-  await page.goto(`/${query}`);
+  await page.goto(`/atlas${query}`);
   await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
   await expect(page.locator('canvas')).toBeVisible();
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_SCENE__?: SceneApi }).__ATLAS_SCENE__));
@@ -75,7 +77,7 @@ async function scrub(page: Page, t: number) {
 test('absolute manual timeline reproduces geometry, keeps resources and records the five phase captures', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await open(page);
-  await page.getByTestId('structure-ghoul.kakuhou.rinkaku').click();
+  await chooseStructure(page, 'ghoul.kakuhou.rinkaku');
   const before = await scene(page);
   await enter(page);
   const initial = await scene(page);
@@ -103,14 +105,14 @@ test('absolute manual timeline reproduces geometry, keeps resources and records 
     expect(state.rinkaku.snapshot.phase).toBe(phase);
     expect(state.rinkaku.adapter?.disclosure).toContain('PROXY / CONCEPTUAL MODEL');
     expect(state.rinkaku.adapter?.disposed).toBe(false);
-    await page.screenshot({ path: `artifacts/gates/G3A1-regression-${name}.png` });
-    captures.push({ file: `artifacts/gates/G3A1-regression-${name}.png`, t, phase, config: state.rinkaku.config, camera: state.camera, adapter: state.rinkaku.adapter });
+    await page.screenshot({ path: `${evidenceRoot}/gates/G3A1-regression-${name}.png` });
+    captures.push({ file: `${evidenceRoot}/gates/G3A1-regression-${name}.png`, t, phase, config: state.rinkaku.config, camera: state.camera, adapter: state.rinkaku.adapter });
   }
   const sequence = [];
-  await mkdir('artifacts/gates/G3A1-review/compat-sequence', { recursive: true });
+  await mkdir(`${evidenceRoot}/gates/G3A1-review/compat-sequence`, { recursive: true });
   for (const t of [.35, .4, .45, .5, .55, .6, .65, .7]) {
     const state = await scrub(page, t);
-    const file = `artifacts/gates/G3A1-review/compat-sequence/growth-t${Math.round(t * 1000).toString().padStart(3, '0')}.png`;
+    const file = `${evidenceRoot}/gates/G3A1-review/compat-sequence/growth-t${Math.round(t * 1000).toString().padStart(3, '0')}.png`;
     await page.getByTestId('stage').screenshot({ path: file });
     sequence.push({ file, t, phase: state.rinkaku.snapshot.phase, config: state.rinkaku.config, positionHash: state.rinkaku.adapter?.positionHash });
   }
@@ -121,13 +123,13 @@ test('absolute manual timeline reproduces geometry, keeps resources and records 
   expect(reset.rinkaku.snapshot.rootExposure).toBe(0);
   expect(reset.rinkaku.config).toEqual(initial.rinkaku.config);
   expect(reset.rinkaku.adapter?.resourceIds).toEqual(initial.rinkaku.adapter?.resourceIds);
-  await mkdir('artifacts/g3a1', { recursive: true });
-  await writeFile('artifacts/g3a1/compat-visual-captures.json', `${JSON.stringify({ viewport: { width: 1440, height: 900 }, reducedMotion: true, captures, sequence }, null, 2)}\n`);
+  await mkdir(`${evidenceRoot}/g3a1`, { recursive: true });
+  await writeFile(`${evidenceRoot}/g3a1/compat-visual-captures.json`, `${JSON.stringify({ viewport: { width: 1440, height: 900 }, reducedMotion: true, captures, sequence }, null, 2)}\n`);
 });
 
 test('play, pause, reverse and rapid scrubbing use one timeline while selection and the scan remain stable', async ({ page }) => {
   await open(page);
-  await page.getByTestId('structure-human.thorax').click();
+  await chooseStructure(page, 'human.thorax');
   await enter(page);
   const atStart = await scrub(page, .5);
   await page.getByTestId('rinkaku-play').click();
@@ -166,6 +168,7 @@ test('play, pause, reverse and rapid scrubbing use one timeline while selection 
   expect(end.scanT).toBe(atStart.scanT);
   expect(cameraDistance(end.camera, atStart.camera)).toBeLessThan(.0001);
   await page.getByTestId('rinkaku-toggle').click();
+  await openBodyTool(page, 'inspect');
   await expect(page.getByTestId('inspector')).toHaveAttribute('data-selected-id', 'human.thorax');
   await expect.poll(async () => (await scene(page)).rinkaku.adapter).toBeNull();
 });
@@ -214,8 +217,8 @@ test('ten full manual cycles keep geometry identities and warmed renderer resour
     expect((await scene(page)).metrics?.geometries).toBe(unmounted.metrics?.geometries);
     expect((await scene(page)).metrics?.textures).toBe(unmounted.metrics?.textures);
   }
-  await mkdir('artifacts/g3a1', { recursive: true });
-  await writeFile('artifacts/g3a1/compat-ten-cycles.json', `${JSON.stringify({ method: 'Ten complete 0→1 timeline cycles, manually sampling every phase and all phase boundaries; active pose repeated between cycles. Three additional mount/unmount cycles check disposal. This is scrub validation, not ten wall-clock playback cycles.', warmed, samples, final, unmounted, errors, limitations: ['Renderer counters and resource identities do not measure VRAM or certify absence of all leaks.'] }, null, 2)}\n`);
+  await mkdir(`${evidenceRoot}/g3a1`, { recursive: true });
+  await writeFile(`${evidenceRoot}/g3a1/compat-ten-cycles.json`, `${JSON.stringify({ method: 'Ten complete 0→1 timeline cycles, manually sampling every phase and all phase boundaries; active pose repeated between cycles. Three additional mount/unmount cycles check disposal. This is scrub validation, not ten wall-clock playback cycles.', warmed, samples, final, unmounted, errors, limitations: ['Renderer counters and resource identities do not measure VRAM or certify absence of all leaks.'] }, null, 2)}\n`);
 });
 
 test('ten complete automatic 21-second playback cycles retain stable resources without context loss', async ({ page }) => {
@@ -257,8 +260,8 @@ test('ten complete automatic 21-second playback cycles retain stable resources w
     console.log(`G3A automatic playback ${cycle}/10 complete in ${elapsedMs} ms; geometries=${end.metrics?.geometries}; textures=${end.metrics?.textures}`);
   }
   const final = await scene(page);
-  await mkdir('artifacts/g3a1', { recursive: true });
-  await writeFile('artifacts/g3a1/compat-ten-playback-cycles.json', `${JSON.stringify({ method: 'Ten real complete automatic 21-second timeline cycles through reset/play UI. No clock override, accelerated duration, scrub injection or synthetic advance API during playback.', warmed, cycles, final, errors, limitations: ['Resource identities and renderer geometry/texture counters are observable diagnostics, not a GPU VRAM measurement or universal proof of leak absence.'] }, null, 2)}\n`);
+  await mkdir(`${evidenceRoot}/g3a1`, { recursive: true });
+  await writeFile(`${evidenceRoot}/g3a1/compat-ten-playback-cycles.json`, `${JSON.stringify({ method: 'Ten real complete automatic 21-second timeline cycles through reset/play UI. No clock override, accelerated duration, scrub injection or synthetic advance API during playback.', warmed, cycles, final, errors, limitations: ['Resource identities and renderer geometry/texture counters are observable diagnostics, not a GPU VRAM measurement or universal proof of leak absence.'] }, null, 2)}\n`);
 });
 
 test('counts, particles and quality replace visual settings without detaching the root, and GLB sockets stay authoritative', async ({ page }) => {
@@ -330,7 +333,7 @@ test('posterior, lateral and lumbar focus are explicit and reduced motion keeps 
 });
 
 test('without WebGL the manifestation offers truthful static timeline controls and the original inspection remains available', async ({ page }) => {
-  await page.goto('/?webgl=off');
+  await page.goto('/atlas?webgl=off');
   await expect(page.getByTestId('scene-fallback')).toBeVisible();
   await page.getByTestId('rinkaku-toggle').click();
   await expect(page.getByTestId('rinkaku-inspector')).toBeVisible();
@@ -344,13 +347,14 @@ test('without WebGL the manifestation offers truthful static timeline controls a
   await expect(page.getByTestId('rinkaku-play')).toHaveAttribute('aria-pressed', 'false');
   await expect(page.getByTestId('scene-fallback')).toContainText(/textual|esquema/i);
   await page.getByTestId('rinkaku-toggle').click();
-  await page.getByTestId('structure-ghoul.kakuhou.rinkaku').click();
+  await chooseStructure(page, 'ghoul.kakuhou.rinkaku');
+  await openBodyTool(page, 'inspect');
   await expect(page.getByTestId('inspector')).toContainText(/kakuhou/i);
 });
 
 test('loss of the real WebGL context pauses an active manifestation and keeps manual inspection available', async ({ page }) => {
   await open(page);
-  await page.getByTestId('structure-ghoul.kakuhou.rinkaku').click();
+  await chooseStructure(page, 'ghoul.kakuhou.rinkaku');
   await enter(page);
   await scrub(page, .7);
   await page.getByTestId('rinkaku-play').click();
@@ -368,6 +372,7 @@ test('loss of the real WebGL context pauses an active manifestation and keeps ma
   await page.getByTestId('rinkaku-time').fill('0.53');
   await expect(page.getByTestId('rinkaku-phase-label')).toHaveText('Crescimento');
   await page.getByTestId('rinkaku-toggle').click();
+  await openBodyTool(page, 'inspect');
   await expect(page.getByTestId('inspector')).toHaveAttribute('data-selected-id', 'ghoul.kakuhou.rinkaku');
 });
 
@@ -385,9 +390,9 @@ test('mobile touch controls stay usable and capture the actual procedural manife
       expect(box!.height).toBeGreaterThanOrEqual(44);
     }
     await page.getByTestId('stage').scrollIntoViewIfNeeded();
-    await page.screenshot({ path: 'artifacts/gates/G3A1-regression-mobile.png' });
+    await page.screenshot({ path: `${evidenceRoot}/gates/G3A1-regression-mobile.png` });
     await page.getByTestId('rinkaku-time').scrollIntoViewIfNeeded();
-    await page.screenshot({ path: 'artifacts/gates/G3A1-regression-mobile-controls.png' });
+    await page.screenshot({ path: `${evidenceRoot}/gates/G3A1-regression-mobile-controls.png` });
     await page.getByTestId('rinkaku-reset').tap();
     await expect.poll(async () => (await scene(page)).rinkaku.t).toBe(0);
   } finally { await context.close(); }
