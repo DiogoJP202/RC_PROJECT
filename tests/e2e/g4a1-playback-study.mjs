@@ -129,8 +129,8 @@ try {
     'src/scene/vascular/ProceduralVascularAdapter.ts', 'src/scene/vascular/camera.ts',
     'src/scene/vascular/tracking.ts', 'src/scene/vascular/visibility.ts', 'src/simulation/vascular.ts',
   ].map(sourceDigest));
-  await mkdir('artifacts/g4a1', { recursive: true });
-  await writeFile(resolve('artifacts/g4a1/playback-occlusion-study.json'), `${JSON.stringify({ createdAt: new Date().toISOString(),
+  await mkdir('test-results/atlas-evidence/g4a1', { recursive: true });
+  await writeFile(resolve('test-results/atlas-evidence/g4a1/playback-occlusion-study.json'), `${JSON.stringify({ createdAt: new Date().toISOString(),
     method: 'Paired actual eased tracking playback at 60 Hz, with each version initialized to its static t=0 tracking pose. Identical seed, entity, time, population, FOV and viewport. Actual selected-cell triangle silhouette rays sampled every 30 playback frames on the same 9x9 image-space grid. Camera distances use actual instance-matrix centers and conservative full-cell bounding radii, not requested camera targets.',
     limitations: 'CPU diagnostic, not GPU FPS, pixel-perfect area, continuous occlusion timing or physiology. Negative bound gap means overlap of the conservative bounding sphere, not a proven surface intersection. Initial t=0 is included in minima and visibility means; duration bins exclude the final t=40 endpoint. Visibility durations have 0.5 s resolution. Motion and near-camera duration measurements use all 2400 playback steps at 60 Hz.',
     fps: HZ, interval: [0, DURATION], probeEveryFrames: PROBE_EVERY, sampleIntervalSeconds: PROBE_EVERY / HZ,

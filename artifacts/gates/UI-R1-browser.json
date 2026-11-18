@@ -1,0 +1,184 @@
+{
+  "browser": "157.0.8103.79",
+  "results": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "summary": {
+        "image": "/assets/ui-r1/rinkaku-hero-1440.webp",
+        "width": 835,
+        "height": 607,
+        "webgl": 0,
+        "transferBytes": 196621,
+        "encodedBodyBytes": 193711,
+        "documentWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "requests": [
+        "/",
+        "/assets/index-BWA8XK37.js",
+        "/assets/jsx-runtime-Wy9s6hX0.js",
+        "/assets/index-Bpz4myx0.css",
+        "/atlas-mark.svg",
+        "/assets/ui-r1/rinkaku-hero-1440.webp",
+        "/assets/fonts/IBMPlexMono-Regular-Latin1.woff2",
+        "/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+        "/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+        "/assets/fonts/IBMPlexSans-Medium-Latin1.woff2"
+      ]
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "summary": {
+        "image": "/assets/ui-r1/rinkaku-hero-768.webp",
+        "width": 366,
+        "height": 266,
+        "webgl": 0,
+        "transferBytes": 184841,
+        "encodedBodyBytes": 181931,
+        "documentWidth": 390,
+        "viewportWidth": 390
+      },
+      "requests": [
+        "/",
+        "/assets/index-BWA8XK37.js",
+        "/assets/jsx-runtime-Wy9s6hX0.js",
+        "/assets/index-Bpz4myx0.css",
+        "/atlas-mark.svg",
+        "/assets/ui-r1/rinkaku-hero-768.webp",
+        "/assets/fonts/IBMPlexMono-Regular-Latin1.woff2",
+        "/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+        "/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+        "/assets/fonts/IBMPlexSans-Medium-Latin1.woff2"
+      ]
+    },
+    {
+      "name": "430",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "summary": {
+        "image": "/assets/ui-r1/rinkaku-hero-768.webp",
+        "width": 404,
+        "height": 294,
+        "webgl": 0,
+        "transferBytes": 184841,
+        "encodedBodyBytes": 181931,
+        "documentWidth": 430,
+        "viewportWidth": 430
+      },
+      "requests": [
+        "/",
+        "/assets/index-BWA8XK37.js",
+        "/assets/jsx-runtime-Wy9s6hX0.js",
+        "/assets/index-Bpz4myx0.css",
+        "/atlas-mark.svg",
+        "/assets/ui-r1/rinkaku-hero-768.webp",
+        "/assets/fonts/IBMPlexMono-Regular-Latin1.woff2",
+        "/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+        "/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+        "/assets/fonts/IBMPlexSans-Medium-Latin1.woff2"
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "file": "UI-R1-home-desktop.png",
+      "bytes": 140305,
+      "sha256": "5bd833ddae26d930156565249fbd01f5720a53481460f9a4c47160e195b685b7"
+    },
+    {
+      "file": "UI-R1-home-full.png",
+      "bytes": 178642,
+      "sha256": "4474dc4f625e2526d692b744e567321ebe04f8133e6ef355470e42a7c5fb6489"
+    },
+    {
+      "file": "UI-R1-atlas-desktop.png",
+      "bytes": 194029,
+      "sha256": "9c0963fd13c68788122c926f83b8554056ec9053a177425a747423b978489ac1"
+    },
+    {
+      "file": "UI-R1-studies-desktop.png",
+      "bytes": 51645,
+      "sha256": "f120a4ed07f6651d36074240fd8512db920e22724f11a3f960f1cc874d50a79a"
+    },
+    {
+      "file": "UI-R1-sources-desktop.png",
+      "bytes": 69118,
+      "sha256": "c365131e86a42cdfd5560e4030584a6e5d79050185823e2fce2ee6312b8cf429"
+    },
+    {
+      "file": "UI-R1-home-mobile.png",
+      "bytes": 58254,
+      "sha256": "d2b42cd2dfe4a98b8a0a9cbea98a630555aac1279024510dd87f0c4cd48813d7"
+    },
+    {
+      "file": "UI-R1-atlas-mobile.png",
+      "bytes": 77657,
+      "sha256": "5610863f2047d1c6be88ec25687cd60934799e6bceb044419aa61c6b2e0b7f72"
+    },
+    {
+      "file": "UI-R1-home-430.png",
+      "bytes": 65758,
+      "sha256": "f699448f0db150c80b68d797b8eb4526f150fae4ec4411fd798d5c56e827604a"
+    }
+  ],
+  "http": {
+    "/": {
+      "status": 200,
+      "type": "text/html"
+    },
+    "/estudos": {
+      "status": 200,
+      "type": "text/html"
+    },
+    "/fontes": {
+      "status": 200,
+      "type": "text/html"
+    },
+    "/atlas": {
+      "status": 200,
+      "type": "text/html"
+    },
+    "/atlas/rinkaku": {
+      "status": 200,
+      "type": "text/html"
+    },
+    "/atlas/vascular": {
+      "status": 200,
+      "type": "text/html"
+    },
+    "/atlas/comparar": {
+      "status": 200,
+      "type": "text/html"
+    },
+    "/atlas/cell/rc%3A17%3A0": {
+      "status": 200,
+      "type": "text/html"
+    },
+    "/catalog.json": {
+      "status": 200,
+      "type": "application/json"
+    },
+    "/assets/fixtures/atlas-static-v1.glb": {
+      "status": 200,
+      "type": "model/gltf-binary"
+    },
+    "/catalog-unavailable.json": {
+      "status": 404,
+      "type": null
+    },
+    "/assets/models/body/missing.glb": {
+      "status": 404,
+      "type": null
+    }
+  }
+}

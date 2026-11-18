@@ -1,0 +1,93 @@
+{
+  "sourceRev": "1bcecb0f50a7c4ae59abc06f64fc9ac72e976fb4",
+  "browser": "157.0.8103.52",
+  "origin": "Captura original do canvas pela interface: HUD oculto somente na captura (sem mudar pose), recorte, redimensionamento e compressão WebP. Nenhuma edição de geometria ou imagem externa.",
+  "renders": [
+    {
+      "width": 768,
+      "height": 559
+    },
+    {
+      "width": 1440,
+      "height": 1048
+    }
+  ],
+  "view": {
+    "camera": {
+      "position": [
+        3.1805143753585217,
+        1.3367821484599076,
+        -4.39755635785322
+      ],
+      "target": [
+        0,
+        1.1380000000000001,
+        -0.5710000000000001
+      ],
+      "moving": false,
+      "quaternion": [
+        -0.006783941792717435,
+        0.9403016254453055,
+        0.01877508063595443,
+        0.33975627686002047
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "enableDamping": false,
+      "projection": {
+        "near": 0.025,
+        "far": 40,
+        "zoom": 1,
+        "fov": 36,
+        "aspect": 1.4267100977198697,
+        "filmGauge": 35,
+        "filmOffset": 0
+      }
+    },
+    "pose": 0.88,
+    "config": {
+      "appendageCount": 4,
+      "seed": 17,
+      "particles": false,
+      "quality": "standard"
+    },
+    "viewport": {
+      "width": 876,
+      "height": 614,
+      "dpr": 1.5
+    },
+    "modelStatus": "conceptual_proxy",
+    "renderer": null
+  },
+  "recorded": [
+    {
+      "file": "UI-R1-before-desktop.png",
+      "bytes": 194595,
+      "sha256": "f2c36cc884ad5e0bd7cae6b57fea91952a4ba15a62a884cabeed0073efda1a64"
+    },
+    {
+      "file": "UI-R1-before-mobile.png",
+      "bytes": 77345,
+      "sha256": "85da56845e092b71b04a7b1846c951d4de7e2924046faecb6651dde72503fd0e"
+    },
+    {
+      "file": "rinkaku-hero-768.webp",
+      "bytes": 11712,
+      "sha256": "89f90457c07477515abd9a286ab78cb8c39e6b33300098a39cf20c1d29458895"
+    },
+    {
+      "file": "rinkaku-hero-1440.webp",
+      "bytes": 23492,
+      "sha256": "73b2d780acd0a682e13f2ebfd62f52cdeedb917232aa9620289df316d4ee939c"
+    }
+  ],
+  "crop": {
+    "x": 0.105,
+    "y": 0.09,
+    "w": 0.79,
+    "h": 0.82
+  }
+}

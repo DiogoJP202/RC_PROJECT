@@ -1,3 +1,5 @@
+import { chooseStructure, openBodyTool } from './body-tools';
+import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
@@ -8,7 +10,7 @@ interface Inspection {
   rinkaku: { t: number; playing: boolean; snapshot: { appendageExtension: number; rootExposure: number; kakuhouActivation: number; particleEmission: number };
     adapter: { t: number; visible: boolean; visibleAppendages: number; particleCount: number; resourceIds: unknown } | null };
 }
-const OUTPUT = 'artifacts/gates/G3A1-review/checkpoint';
+const OUTPUT = `${evidenceRoot}/gates/G3A1-review/checkpoint`;
 const scene = (page: Page): Promise<Inspection> => page.evaluate(() => (
   window as unknown as { __ATLAS_SCENE__: { snapshot(): Inspection } }
 ).__ATLAS_SCENE__.snapshot());
@@ -20,8 +22,9 @@ async function scrub(page: Page, t: number) {
   return scene(page);
 }
 async function open(page: Page) {
-  await page.goto('/');
+  await page.goto('/atlas');
   await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await openBodyTool(page, 'layers');
   await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('1');
   await expect.poll(async () => (await scene(page)).metrics?.geometries ?? 0).toBeGreaterThan(0);
   const bodyBaseline = await scene(page);
@@ -104,7 +107,7 @@ test('transparent body picking ignores pooled appendages below an invisible pare
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await open(page);
   await page.getByTestId('rinkaku-count').selectOption('1');
-  await page.getByTestId('structure-human.thorax').click();
+  await chooseStructure(page, 'human.thorax');
   await page.getByTestId('rinkaku-focus').click();
   await expect.poll(async () => (await scene(page)).camera.moving).toBe(false);
   await scrub(page, 1);
@@ -121,6 +124,7 @@ test('terminal surfaces also have no residual pixel footprint through the transp
   test.setTimeout(60_000);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await open(page);
+  await openBodyTool(page, 'layers');
   await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('0.2');
   await mkdir(`${OUTPUT}/terminal-transparent`, { recursive: true });
   const samples = [];

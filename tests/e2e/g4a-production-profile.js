@@ -1,6 +1,6 @@
 /** New G4A production measurement. Build/preview first; run profiles sequentially.
  * node tests/e2e/g4a-production-profile.js --count=100|500|2000 [--mobile]
- * Optional --output=artifacts/g4a/production-500.json and ATLAS_PROFILE_URL.
+ * Optional --output=test-results/atlas-evidence/g4a/production-500.json and ATLAS_PROFILE_URL.
  */
 /* global window, document, requestAnimationFrame, innerWidth, innerHeight, devicePixelRatio */
 import { chromium } from '@playwright/test';
@@ -12,8 +12,8 @@ const count = Number(process.argv.find((arg) => arg.startsWith('--count='))?.sli
 if (![100, 500, 2000].includes(count)) throw new Error('Expected --count=100, --count=500 or --count=2000.');
 const mobile = process.argv.includes('--mobile');
 const output = process.argv.find((arg) => arg.startsWith('--output='))?.slice(9)
-  ?? `artifacts/g4a/production-${mobile ? 'emulated-mobile-' : ''}${count}.json`;
-const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173';
+  ?? `test-results/atlas-evidence/g4a/production-${mobile ? 'emulated-mobile-' : ''}${count}.json`;
+const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173/atlas';
 const browser = await chromium.launch({ headless: true,
   ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH } : {}),
   args: ['--enable-webgl', '--ignore-gpu-blocklist'],

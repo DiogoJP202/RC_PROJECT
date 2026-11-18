@@ -1,3 +1,5 @@
+import { chooseStructure, openBodyTool } from './body-tools';
+import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 
@@ -27,7 +29,7 @@ const micro = (page: Page): Promise<MicroSnapshot> => page.evaluate(() => (windo
 const body = (page: Page): Promise<BodySnapshot> => page.evaluate(() => (window as unknown as { __ATLAS_SCENE__: { snapshot(): BodySnapshot } }).__ATLAS_SCENE__.snapshot());
 const distance = (a: number[], b: number[]) => Math.hypot(...a.map((value, i) => value - b[i]));
 async function open(page: Page) {
-  await page.goto('/'); await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await page.goto('/atlas'); await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_SCENE__?: unknown }).__ATLAS_SCENE__));
 }
 async function enter(page: Page) {
@@ -41,8 +43,8 @@ async function scrub(page: Page, seconds: number) {
   return micro(page);
 }
 async function save(name: string, value: unknown) {
-  await mkdir('artifacts/g4a', { recursive: true });
-  await writeFile(`artifacts/g4a/${name}.json`, `${JSON.stringify(value, null, 2)}\n`);
+  await mkdir(`${evidenceRoot}/g4a`, { recursive: true });
+  await writeFile(`${evidenceRoot}/g4a/${name}.json`, `${JSON.stringify(value, null, 2)}\n`);
 }
 async function pick(page: Page, kind: 'rc' | 'rbc') {
   for (const seconds of [0, 3, 9, 15, 23, 31]) {
@@ -69,7 +71,8 @@ async function pick(page: Page, kind: 'rc' | 'rbc') {
 test('ten Body→Micro→Body transitions restore the manual camera, selection, layers and paused Rinkaku pose', async ({ page }) => {
   test.setTimeout(120_000);
   await page.emulateMedia({ reducedMotion: 'reduce' }); await open(page);
-  await page.getByTestId('structure-human.thorax').click();
+  await chooseStructure(page, 'human.thorax');
+  await openBodyTool(page, 'layers');
   await page.getByTestId('layer-skeletal').click();
   await page.getByTestId('rinkaku-toggle').click();
   await page.getByTestId('rinkaku-time').fill('0.7');
@@ -137,12 +140,13 @@ test('absolute scrubbing, pause, speed, reset and population changes retain dete
 
 test('Micro preserves the rigged GLB lease, sampled socket, isolation and opacity without exposing the hidden asset bench', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/?assets=lab'); await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await page.goto('/atlas?assets=lab'); await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
   await page.getByTestId('asset-select').selectOption('fixture.rigged.v1');
   await expect(page.getByTestId('asset-status')).toContainText('GLB sintético integrado');
   await page.getByTestId('asset-animation-clip').selectOption({ index: 1 });
   await page.getByTestId('asset-animation-time').fill('0.63');
-  await page.getByTestId('structure-human.thorax').click(); await page.getByTestId('isolate-selection').click();
+  await chooseStructure(page, 'human.thorax'); await openBodyTool(page, 'inspect'); await page.getByTestId('isolate-selection').click();
+  await openBodyTool(page, 'layers');
   await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('0.18');
   const before = await body(page);
   await enter(page); await expect(page.getByTestId('asset-select')).toBeHidden();
@@ -287,7 +291,7 @@ test('free observation accepts real orbit and keyboard pan, and camera reset pre
 
 test('a real Micro WebGL context loss leaves textual evidence and the Body bookmark available', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' }); await open(page);
-  await page.getByTestId('structure-human.thorax').click(); const before = await body(page);
+  await chooseStructure(page, 'human.thorax'); const before = await body(page);
   await enter(page);
   const lost = await page.getByTestId('micro-stage').locator('canvas').evaluate((element) => {
     const extension = (element as HTMLCanvasElement).getContext('webgl2')?.getExtension('WEBGL_lose_context');
@@ -307,7 +311,7 @@ test('a real Micro WebGL context loss leaves textual evidence and the Body bookm
 });
 
 test('Micro without WebGL exposes accessible static evidence and a truthful return path', async ({ page }) => {
-  await page.goto('/?webgl=off'); await expect(page.getByTestId('scene-fallback')).toBeVisible();
+  await page.goto('/atlas?webgl=off'); await expect(page.getByTestId('scene-fallback')).toBeVisible();
   await page.getByTestId('mode-micro').click();
   await expect(page.getByTestId('micro-status')).toHaveText('Modo textual');
   await expect(page.getByTestId('micro-play')).toBeDisabled();

@@ -1,7 +1,7 @@
 /**
  * Fresh G3A production measurement; keeps the G1/G2A profiler unchanged.
  * Build, start preview:4173, then run node tests/e2e/g3a-production-profile.js.
- * Optional --quality=low, --output=artifacts/g3a/production-standard.json.
+ * Optional --quality=low, --output=test-results/atlas-evidence/g3a/production-standard.json.
  */
 /* global window, document, requestAnimationFrame, innerWidth, innerHeight, devicePixelRatio */
 import { chromium } from '@playwright/test';
@@ -11,8 +11,8 @@ import os from 'node:os';
 
 const quality = process.argv.includes('--quality=low') ? 'low' : 'standard';
 const output = process.argv.find((arg) => arg.startsWith('--output='))?.slice('--output='.length)
-  ?? `artifacts/g3a/production-${quality}.json`;
-const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173';
+  ?? `test-results/atlas-evidence/g3a/production-${quality}.json`;
+const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173/atlas';
 const browser = await chromium.launch({
   ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH } : {}),
   headless: true, args: ['--enable-webgl', '--ignore-gpu-blocklist'],

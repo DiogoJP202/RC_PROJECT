@@ -28,15 +28,11 @@ function useVisualFrame() {
   return sampleRinkakuAt(playing ? rinkakuClock.t : t, config);
 }
 
-export function RinkakuEntry() {
+export function RinkakuEntry({ onToggle }: { onToggle: () => void }) {
   const enabled = useRinkaku((s) => s.enabled);
   return <button className="manifest-entry" data-testid="rinkaku-toggle" aria-pressed={enabled}
     aria-label={enabled ? 'Voltar à inspeção anatômica' : 'Abrir manifestação Rinkaku'}
-    onClick={() => {
-      useRinkaku.getState().setEnabled(!enabled);
-      useObservatory.getState().setMode('body');
-      if (!enabled) useObservatory.getState().focusOn('posterior');
-    }}><span aria-hidden="true">{enabled ? '←' : '◇'}</span>{enabled ? 'Inspecionar' : 'Manifestar'}</button>;
+    onClick={onToggle}><span aria-hidden="true">{enabled ? '←' : '◇'}</span>{enabled ? 'Inspecionar' : 'Manifestar'}</button>;
 }
 
 export function RinkakuTimeline({ ready }: { ready: boolean }) {

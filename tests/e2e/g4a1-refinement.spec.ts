@@ -1,3 +1,4 @@
+import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 
@@ -20,7 +21,7 @@ interface MicroApi {
   project(id: string): { x: number; y: number; z: number } | null;
   raycast(x: number, y: number): string | null;
 }
-const output = 'artifacts/g4a1';
+const output = `${evidenceRoot}/g4a1`;
 const runtime = new WeakMap<Page, string[]>();
 const micro = (page: Page): Promise<MicroSnapshot> => page.evaluate(() => (window as unknown as { __ATLAS_MICRO__: MicroApi }).__ATLAS_MICRO__.snapshot());
 const distance = (a: number[], b: number[]) => Math.hypot(...a.map((value, index) => value - b[index]));
@@ -44,7 +45,7 @@ async function openMicro(page: Page, seed = 17) {
   const errors: string[] = []; runtime.set(page, errors);
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });
-  await page.goto(`/?microSeed=${seed}`);
+  await page.goto(`/atlas?microSeed=${seed}`);
   await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
   await page.getByTestId('micro-entry').click();
   await expect(page.getByTestId('micro-status')).toContainText('3D conectado');

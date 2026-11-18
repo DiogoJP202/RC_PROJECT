@@ -4,7 +4,7 @@ import { Icon } from './Icon';
 
 const labels: Record<string, string> = { official: 'CANÔNICO', real_anatomy: 'BASE HUMANA', inference: 'INFERÊNCIA', hypothetical_model: 'HIPÓTESE VISUAL', unknown: 'DESCONHECIDO', manga_needs_verification: 'MANGÁ · A CONFERIR' };
 const systemLabels: Record<string, string> = { surface: 'Sistema tegumentar · base humana', muscular: 'Sistema muscular · base humana', skeletal: 'Sistema esquelético · base humana', vascular: 'Sistema cardiovascular · base humana', kakuhou: 'Sistema RC · anatomia ficcional', other: 'Organização corporal · esquema', rc: 'Sistema RC · anatomia ficcional' };
-export function EvidenceInspector({ content }: { content: AtlasContent }) {
+export function EvidenceInspector({ content, onSceneAction, inPanel = false, viewAvailable = true }: { content: AtlasContent; onSceneAction?: () => void; inPanel?: boolean; viewAvailable?: boolean }) {
   const tab = useObservatory((s) => s.inspectorTab);
   const setTab = useObservatory((s) => s.setInspectorTab);
   const selectedId = useObservatory((s) => s.selectedId);
@@ -15,9 +15,12 @@ export function EvidenceInspector({ content }: { content: AtlasContent }) {
   const allClaims = content.claims.filter((c) => structure.claimIds.includes(c.id));
   const claims = allClaims.filter((c) => !canonOnly || c.kind === 'official' || c.kind === 'real_anatomy');
   const citations = content.citations.filter((c) => claims.some((claim) => claim.citationIds.includes(c.id)));
-  const revealStage = () => { if (window.matchMedia('(max-width: 780px)').matches) document.querySelector('.stage')?.scrollIntoView({ block: 'start', behavior: useObservatory.getState().reducedMotion ? 'instant' : 'smooth' }); };
-  return <aside id="anatomy-inspector" className={`inspector ${open ? 'is-open' : ''}`} data-testid="inspector" data-selected-id={selectedId} aria-label="Inspeção anatômica">
-    <div className="panel-eyebrow"><span>02 / INSPEÇÃO</span><button className="icon-button inspector-collapse" data-testid="inspector-toggle" onClick={() => useObservatory.getState().setInspectorOpen(!open)} aria-expanded={open} aria-label={open ? 'Recolher inspeção' : 'Abrir inspeção'}><Icon name={open ? 'close' : 'expand'} /></button></div>
+  const revealStage = () => {
+    if (inPanel) { onSceneAction?.(); return; }
+    if (window.matchMedia('(max-width: 780px)').matches) document.querySelector('.stage')?.scrollIntoView({ block: 'start', behavior: useObservatory.getState().reducedMotion ? 'instant' : 'smooth' });
+  };
+  return <aside id="anatomy-inspector" className={`inspector ${open || inPanel ? 'is-open' : ''}`} data-testid="inspector" data-selected-id={selectedId} aria-label="Inspeção anatômica">
+    {!inPanel ? <div className="panel-eyebrow"><span>02 / INSPEÇÃO</span><button className="icon-button inspector-collapse" data-testid="inspector-toggle" onClick={() => useObservatory.getState().setInspectorOpen(!open)} aria-expanded={open} aria-label={open ? 'Recolher inspeção' : 'Abrir inspeção'}><Icon name={open ? 'close' : 'expand'} /></button></div> : null}
     <div className="inspector-body">
       <div className="specimen-tag"><span className="diamond" /> ESTRUTURA SELECIONADA</div>
       <h2>{structure.label}</h2>
@@ -38,7 +41,7 @@ export function EvidenceInspector({ content }: { content: AtlasContent }) {
           {citations.length ? <div className="source-list"><span className="micro-label">FONTES DA SELEÇÃO</span>{citations.map((source) => <article key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}<Icon name="source" size={13} /></a><p>{source.locator}</p><small>{source.verifiedAt ? `Texto consultado em ${source.verifiedAt}` : 'Conferência primária pendente'}</small><p>{source.note}</p></article>)}</div> : null}
         </div>}
       </div>
-      <div className="inspection-actions"><button className="primary-button" data-testid="focus-selection" onClick={() => { useObservatory.getState().focusOn(selectedId); revealStage(); }}><Icon name="focus" size={16} /> Focar estrutura</button><button className="secondary-button" data-testid="isolate-selection" aria-pressed={isolated} onClick={() => { useObservatory.getState().toggleIsolate(); revealStage(); }}><Icon name="layers" size={16} />{isolated ? 'Restaurar contexto' : 'Isolar estrutura'}</button></div>
+      <div className="inspection-actions"><button className="primary-button" data-testid="focus-selection" disabled={!viewAvailable} onClick={() => { useObservatory.getState().focusOn(selectedId); revealStage(); }}><Icon name="focus" size={16} /> Focar estrutura</button><button className="secondary-button" data-testid="isolate-selection" disabled={!viewAvailable} aria-pressed={isolated} onClick={() => { useObservatory.getState().toggleIsolate(); revealStage(); }}><Icon name="layers" size={16} />{isolated ? 'Restaurar contexto' : 'Isolar estrutura'}</button></div>
       <div className="node-id">REPRESENTAÇÃO / PROXY AUTORAL</div>
     </div>
   </aside>;

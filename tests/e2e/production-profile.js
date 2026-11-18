@@ -13,8 +13,8 @@ import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import os from 'node:os';
 
-const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173';
-const output = process.argv.find((arg) => arg.startsWith('--output='))?.slice('--output='.length) ?? 'artifacts/gates/G1-production-metrics.json';
+const url = process.env.ATLAS_PROFILE_URL ?? 'http://127.0.0.1:4173/atlas';
+const output = process.argv.find((arg) => arg.startsWith('--output='))?.slice('--output='.length) ?? 'test-results/atlas-evidence/gates/G1-production-metrics.json';
 const requestedAsset = process.argv.find((arg) => arg.startsWith('--asset='))?.slice('--asset='.length);
 const chrome = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH
   ?? join(process.env.ProgramFiles ?? '', 'Google', 'Chrome', 'Application', 'chrome.exe');

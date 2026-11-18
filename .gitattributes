@@ -12,6 +12,8 @@ artifacts/gates/G3A1-review/** -text
 artifacts/checkpoint/g3a-*.json -text
 artifacts/checkpoint/gates/G3A-* -text
 *.webm binary
+*.webp binary
+*.woff2 binary
 artifacts/gates/G4A-review/** -text
 artifacts/g4a/** -text
 artifacts/gates/G4A1-review/** -text
