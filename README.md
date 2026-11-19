@@ -1,5 +1,9 @@
 # GHOUL ATLAS — Observatório Anatômico 3D
 
+> **Checkout principal.** UI-R3/UI-R4 estão consolidados na branch `codex/ui-r4`, com o pacote
+> de dez documentos do redesign. O trabalho segue na pasta principal, separado por branches,
+> com commit e push ao concluir cada entrega. Veja o [checkpoint de consolidação](docs/UI_REDESIGN_CHECKPOINT.md).
+
 > **UI-R4 — Mobile e acessibilidade.** Abas das fichas com navegação por teclado, modais com
 > contenção de foco, atalhos de cena configuráveis e controles móveis legíveis. A revisão inclui
 > reflow, cores forçadas, auditoria automatizada e regressões de navegação e desempenho.

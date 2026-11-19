@@ -1,6 +1,6 @@
 # UI-R4 — Mobile, teclado e verificação do redesign
 
-Implementação local sobre o UI-R3 aprovado, na branch `codex/ui-r4`. Os gates UI-R3/UI-R4 ainda são alterações locais sobre o merge `0c287c7`. O snapshot de entrada preserva os arquivos UI-R3 e seus hashes. A entrega fecha a revisão técnica de interface P1 e mantém a classificação conceitual das representações anatômicas.
+Registro técnico da implementação sobre o UI-R3 aprovado, na branch `codex/ui-r4`, inicialmente local sobre o merge `0c287c7`. UI-R3/UI-R4 foram versionados em `e3cc9c7` e transferidos para o checkout principal por instrução posterior do usuário. O [checkpoint de consolidação](UI_REDESIGN_CHECKPOINT.md) registra o estado atual. O snapshot de entrada preserva os arquivos UI-R3 e seus hashes. A entrega fecha a revisão técnica de interface P1 e mantém a classificação conceitual das representações anatômicas.
 
 ## Ajustes
 
