@@ -1,0 +1,24 @@
+{
+  "method": "42 seconds of actual UI playback, 2000 entities, unchanged seed17 and displacement limit 1.5. Periodic RPC returns only camera, selectedId and seconds.",
+  "originalFullRun": {
+    "passed": 78,
+    "total": 79,
+    "failedCameraStep": 2.1558009112143988,
+    "traceSimulationIntervalSeconds": 1.7515,
+    "traceRpcStartIntervalMs": 1790.670000000042
+  },
+  "originalIsolatedRecheck": {
+    "passed": false,
+    "failedCameraStep": 1.5780784631692328
+  },
+  "compactReadRecheck": {
+    "passed": true,
+    "selectedId": "rc:17:104",
+    "observations": 78,
+    "settledObservations": 67,
+    "maxSettledCameraStep": 1.2257215245849797,
+    "maxSimulationIntervalSeconds": 0.5666999999992441,
+    "identityPreserved": true,
+    "missingProfileSelectedPresent": false
+  }
+}

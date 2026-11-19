@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { AtlasContent } from '../content/catalog';
 import { evidenceFor } from '../content/vascularEvidence';
 import { createEntity, createParticles, entityIndexFromId } from '../simulation/vascular';
@@ -6,11 +6,14 @@ import { useVascular, vascularClock } from '../state/vascular';
 import { useObservatory } from '../state/observatory';
 import { SceneBoundary } from '../app/SceneBoundary';
 import { Icon } from './Icon';
+import { BODY_SHEET_QUERY, ExplorerPanel } from './BodyTools';
+import { EvidenceFilter, EvidenceSources } from './EvidenceSources';
+import { InspectionTabs } from './InspectionTabs';
 import './vascular.css';
 
 const Scene = lazy(() => import('../scene/vascular/VascularScene'));
 
-export default function VascularWorkspace({ content, active, onReturn, returnLabel, webglOff = false }: { content: AtlasContent; active: boolean; onReturn: () => void; returnLabel: string; webglOff?: boolean }) {
+export default function VascularWorkspace({ content, active, navigationRevision, onReturn, returnLabel, webglOff = false }: { content: AtlasContent; active: boolean; navigationRevision: number; onReturn: () => void; returnLabel: string; webglOff?: boolean }) {
   const state = useVascular();
   const reduced = useObservatory((s) => s.reducedMotion);
   const canonOnly = useObservatory((s) => s.canonOnly);
@@ -22,6 +25,21 @@ export default function VascularWorkspace({ content, active, onReturn, returnLab
   const [attempt, setAttempt] = useState(0);
   const [tab, setTab] = useState<'structure' | 'evidence'>('structure');
   const [kind, setKind] = useState<'vessel' | 'rbc' | 'rc'>('vessel');
+  const [panel, setPanel] = useState<{ kind: 'controls' | 'inspect'; revision: number; focusOnOpen: boolean } | null>(null);
+  const opener = useRef<HTMLElement | null>(null);
+  const shownPanel = active && panel?.revision === navigationRevision ? panel : null;
+  const dismiss = useCallback(() => {
+    setPanel(null);
+    requestAnimationFrame(() => {
+      const target = opener.current ?? document.querySelector<HTMLElement>('[data-testid="micro-inspector-toggle"]');
+      if (target?.isConnected && !target.closest('[inert]') && !document.querySelector('dialog[open]')) target.focus({ preventScroll: true });
+    });
+  }, []);
+  const openPanel = (kind: 'controls' | 'inspect', button: HTMLElement) => {
+    if (shownPanel?.kind === kind) { dismiss(); return; }
+    opener.current = button;
+    setPanel({ kind, revision: navigationRevision, focusOnOpen: true });
+  };
   const entities = useMemo(() => createParticles(state.config), [state.config]);
   const selected = entities.find((entity) => entity.id === state.selectedId);
   const selectedIndex = state.selectedId ? entityIndexFromId(state.selectedId, state.config.seed) : null;
@@ -43,47 +61,64 @@ export default function VascularWorkspace({ content, active, onReturn, returnLab
     document.addEventListener('visibilitychange', visibility);
     return () => document.removeEventListener('visibilitychange', visibility);
   }, [reduced]);
+  useEffect(() => useVascular.subscribe((next, previous) => {
+    if (!active || !next.selectedId || next.selectedId === previous.selectedId || window.matchMedia(BODY_SHEET_QUERY).matches) return;
+    // Picking announces the selected entity without moving keyboard focus.
+    opener.current = null;
+    setPanel({ kind: 'inspect', revision: navigationRevision, focusOnOpen: false });
+  }), [active, navigationRevision]);
   const selectKind = (next: 'vessel' | 'rbc' | 'rc') => { setKind(next); useVascular.getState().select(null); };
   const labels = { official: 'CANÔNICO · TEXTO', real_anatomy: 'BASE HUMANA', hypothetical_model: 'HIPÓTESE VISUAL', unknown: 'DESCONHECIDO', inference: 'INFERÊNCIA', manga_needs_verification: 'A CONFERIR' };
-  return <div className="micro-workspace" data-testid="micro-workspace">
-    <div className="workspace">
-      <aside className="micro-controls" aria-label="Controles do transporte vascular">
-        <span className="micro-label">01 / TRANSPORTE VASCULAR</span><h2>Uma corrente.<br /><em>Muitas histórias.</em></h2>
+  const controls = <aside className="micro-controls" aria-label="Controles do transporte vascular">
         <p className="micro-intro">Interior de vaso · região de estudo aproximada no tórax. Transição entre cenas; escala ilustrativa.</p>
         <div className="micro-key"><span className="rbc-key" />Hemácia <span className="rc-key" />RC conceitual</div>
         <label className="micro-field">Objetos renderizados<select data-testid="micro-profile" value={state.config.count} onChange={(e) => state.setConfig({ count: Number(e.target.value) as 100 | 500 | 2000 })}><option value="100">100 · inspeção</option><option value="500">500 · corrente</option><option value="2000">2.000 · carga</option></select></label>
         <label className="micro-check"><input data-testid="micro-highlight" type="checkbox" checked={state.highlightRC} onChange={(e) => state.setHighlightRC(e.target.checked)} />Destacar células RC</label><small className="micro-note">Realce didático; não representa fluorescência biológica.</small>
         <label className="micro-field">Selecionar entidade<select data-testid="micro-entity" value={state.selectedId ?? ''} onChange={(e) => state.select(e.target.value || null)}><option value="">Escolha uma célula</option>{state.selectedId && (!selected || selected.kind === 'rbc' && selected.index >= 8) ? <option value={state.selectedId}>{state.selectedId}{!selected ? ' · ausente' : ' · selecionada no visor'}</option> : null}{entities.filter((entity) => entity.kind === 'rc' || entity.index < 8).map((entity) => <option key={entity.id} value={entity.id}>{entity.kind === 'rc' ? 'RC' : 'Hemácia'} · {entity.id}</option>)}</select></label>
-        <div className="micro-camera-modes" role="group" aria-label="Modo de câmera">
+      </aside>;
+  const cameraControls = <><div className="micro-camera-modes" role="group" aria-label="Modo de câmera">
           <button data-testid="micro-camera-free" aria-pressed={state.cameraMode === 'free'} onClick={() => state.setCameraMode('free')}>Livre</button>
           <button data-testid="micro-camera-flow" disabled={reduced || !state.ready} aria-pressed={state.cameraMode === 'flow'} onClick={() => state.setCameraMode('flow')}>Fluxo</button>
           <button data-testid="micro-follow" disabled={!selected || !state.ready} aria-pressed={state.cameraMode === 'tracking'} onClick={() => state.setCameraMode(state.cameraMode === 'tracking' ? 'free' : 'tracking')}>{state.cameraMode === 'tracking' ? 'Soltar célula' : 'Seguir célula'}</button>
         </div>
-        <button data-testid="micro-camera-reset" className="text-button" onClick={() => state.resetCamera()} disabled={!state.ready}><Icon name="reset" />Reenquadrar microcena</button>
-        <button data-testid="micro-return" className="secondary-button" onClick={onReturn}><Icon name="arrow" />{returnLabel}</button>
-        <p className="micro-note">Esc: sair de tracking; depois voltar ao corpo. R: reenquadrar a cena atual.</p>
-      </aside>
-      <section className="stage micro-stage" data-testid="micro-stage" aria-label="Interior vascular tridimensional">
-        <div className="stage-header"><div><span className="micro-label">MICRO / CIRCUITO DIDÁTICO</span><h1>Por dentro <em>da corrente.</em></h1></div><div className="stage-readout"><span className={`status-dot ${error ? 'amber' : ''}`} /><span role="status" data-testid="micro-status">{error ? 'Modo textual' : state.ready ? '3D conectado' : 'Carregando 3D'}</span><small>PROCEDURAL / G4A.1</small></div></div>
-        <div className="scene-container">
-          {error ? <div className="micro-fallback" role="alert"><Icon name="orbit" size={48} /><h2>O estudo continua.</h2><p>{error}</p><div className="micro-schematic" aria-label="Esquema conceitual de fluxo"><span>Hemácia</span><Icon name="arrow" /><span>RC conceitual</span></div><p>Use os seletores e as evidências. Nenhuma dimensão ou trajetória RC é estabelecida por este esquema.</p><button className="secondary-button" data-testid="micro-retry" onClick={() => { setError(''); setAttempt((n) => n + 1); }}>Tentar novamente</button></div> : <SceneBoundary key={attempt} onError={fail}><Suspense fallback={<div className="scene-loading" role="status">Preparando o ambiente vascular…</div>}><Scene onReady={ready} onError={fail} active={active} /></Suspense></SceneBoundary>}
-        </div>
-        <div className="micro-scene-label"><span>{state.cameraMode === 'tracking' ? 'ACOMPANHAMENTO / IDENTIDADE FIXA' : state.cameraMode === 'flow' ? 'OBSERVAÇÃO DO FLUXO' : 'OBSERVAÇÃO LIVRE'}</span><strong>{state.selectedId ?? 'CIRCUITO ILUSTRATIVO'}</strong></div>
-        <div className="stage-bottom"><div className="proxy-stamp"><span>△</span><div><strong>PROXY / CONCEPTUAL MODEL</strong><small>Geometria e transporte simplificados · sem escala RC real</small></div></div></div>
-      </section>
+        <button data-testid="micro-camera-reset" className="icon-button" aria-label="Reenquadrar microcena (R)" title="Reenquadrar microcena (R)" onClick={() => state.resetCamera()} disabled={!state.ready}><Icon name="reset" /></button>
+  </>;
+  const inspector =
       <aside className="inspector is-open micro-inspector" data-testid="micro-inspector" data-selected-id={state.selectedId ?? ''} aria-label="Inspeção vascular">
-        <div className="panel-eyebrow"><span>02 / INSPEÇÃO MICRO</span><Icon name="focus" /></div>
-        <div className="inspector-body"><div className="specimen-tag">{selected ? 'ENTIDADE SELECIONADA' : 'ESTRUTURA / MODELO'}</div><h2>{selected ? selected.kind === 'rc' ? 'Célula RC' : 'Hemácia' : selectedKind === 'rc' ? 'Célula RC' : selectedKind === 'rbc' ? 'Hemácia' : 'Lúmen vascular'}</h2>
+        <div className="inspector-body"><h2>{selected ? selected.kind === 'rc' ? 'Célula RC' : 'Hemácia' : selectedKind === 'rc' ? 'Célula RC' : selectedKind === 'rbc' ? 'Hemácia' : 'Lúmen vascular'}</h2>
           {state.selectedId ? <p className="micro-identity">{state.selectedId}</p> : null}
           {state.selectedId && !selected ? <p className="micro-absent" role="status">Entidade ausente neste perfil. Sua identidade foi preservada; escolha um perfil que a contenha ou selecione outra célula.</p> : null}
           <div className="micro-subjects" role="group" aria-label="Estrutura para inspeção">{(['vessel', 'rbc', 'rc'] as const).map((item) => <button key={item} aria-pressed={selectedKind === item} onClick={() => selectKind(item)}>{item === 'vessel' ? 'Vaso' : item === 'rbc' ? 'Hemácia' : 'RC'}</button>)}</div>
-          <div className="inspection-tabs" role="tablist" aria-label="Detalhes da microcena"><button role="tab" aria-selected={tab === 'structure'} onClick={() => setTab('structure')}>Estrutura</button><button data-testid="micro-evidence" role="tab" aria-selected={tab === 'evidence'} onClick={() => setTab('evidence')}>Evidências</button></div>
+          <InspectionTabs value={tab} onChange={setTab} prefix="micro-" label="Detalhes da microcena" />
           <div className="representation-notice"><span className="notice-symbol">△</span><div><strong>{selectedKind === 'rc' ? 'INTERPRETAÇÃO ARTÍSTICA' : 'MODELO DIDÁTICO'}</strong><p>{selectedKind === 'rc' ? 'Forma original. Histologia, tamanho e dinâmica vascular RC não são estabelecidos pelas fontes consultadas.' : 'Base humana geral; geometria simplificada e proporções ilustrativas.'}</p></div></div>
-          <div role="tabpanel">{tab === 'structure' ? <><p className="structure-description">{selectedKind === 'vessel' ? 'Um circuito curvo permite explorar profundidade e transporte em uma cena separada do corpo. Parede e relevo são formas autorais simplificadas.' : selectedKind === 'rbc' ? 'Disco bicôncavo com espessura e orientação variável. A representação não resolve deformação física nem colisões entre células.' : 'Silhueta orgânica lobulada, distinta das hemácias mesmo sem realce. O desenho não representa organelas ou um modelo visual oficial.'}</p><p className="micro-note">Posição derivada do tempo absoluto, identidade e seed. Seguir altera somente a câmera. Velocidade e quantidade são parâmetros da visualização.</p></> : <>{claims.map((claim) => <article className="evidence-card" key={claim.id}><span className={`evidence-badge ${claim.kind}`}>{labels[claim.kind]}</span><p>{claim.text}</p>{claim.disclaimer ? <p className="claim-disclaimer">{claim.disclaimer}</p> : null}</article>)}{claims.length === 0 ? <p>Nenhuma afirmação elegível para o filtro atual. A forma continua conceitual.</p> : null}{citations.map((citation) => <article className="micro-source" key={citation.id}><a href={citation.url} target="_blank" rel="noopener noreferrer">{citation.title}</a><p>{citation.locator}</p><small>{citation.verifiedAt ? `Texto consultado em ${citation.verifiedAt}` : 'Conferência pendente'}</small></article>)}</>}</div>
-          <p className="node-id">P1 / TRANSPORTE VISUAL · SEM CFD</p>
+          <div id="micro-inspection-content" role="tabpanel" tabIndex={0} aria-labelledby={tab === 'structure' ? 'micro-structure-tab' : 'micro-evidence-tab'}>{tab === 'structure' ? <><p className="structure-description">{selectedKind === 'vessel' ? 'Um circuito curvo permite explorar profundidade e transporte em uma cena separada do corpo. Parede e relevo são formas autorais simplificadas.' : selectedKind === 'rbc' ? 'Disco bicôncavo com espessura e orientação variável. A representação não resolve deformação física nem colisões entre células.' : 'Silhueta orgânica lobulada, distinta das hemácias mesmo sem realce. O desenho não representa organelas ou um modelo visual oficial.'}</p><p className="micro-note">Posição derivada do tempo absoluto, identidade e seed. Seguir altera somente a câmera. Velocidade e quantidade são parâmetros da visualização.</p></> : <>{claims.map((claim) => <article className="evidence-card" key={claim.id}><span className={`evidence-badge ${claim.kind}`}>{labels[claim.kind]}</span><p>{claim.text}</p>{claim.disclaimer ? <p className="claim-disclaimer">{claim.disclaimer}</p> : null}</article>)}{claims.length === 0 ? <p>Nenhuma afirmação elegível para o filtro atual. A forma continua conceitual.</p> : null}<EvidenceSources citations={citations} /></>}</div>
+          <EvidenceFilter />
         </div>
-      </aside>
-    </div>
+      </aside>;
+  return <div className="workspace body-workbench micro-workbench" data-testid="micro-workspace">
+    <header className="body-heading"><div><span>Atlas / Micro / Sistema vascular</span><h1>Transporte de células RC <span>Escala ilustrativa</span></h1></div><p className="body-stage-status" role="status" data-testid="micro-status"><span className={`status-dot ${error ? 'amber' : ''}`} />{error ? 'Modo textual' : state.ready ? '3D conectado' : 'Carregando 3D'}</p></header>
+      <section className="stage micro-stage" data-testid="micro-stage" aria-label="Interior vascular tridimensional">
+        <div className="scene-container">
+          {error ? <div className="micro-fallback" role="alert"><Icon name="orbit" size={48} /><h2>Visualização 3D indisponível</h2><p>{error}</p><div className="micro-schematic" aria-label="Esquema conceitual de fluxo"><span>Hemácia</span><Icon name="arrow" /><span>RC conceitual</span></div><p>Use os seletores e as evidências. Nenhuma dimensão ou trajetória RC é estabelecida por este esquema.</p><button className="secondary-button" data-testid="micro-retry" onClick={() => { setError(''); setAttempt((n) => n + 1); }}>Tentar novamente</button></div> : <SceneBoundary key={attempt} onError={fail}><Suspense fallback={<div className="scene-loading" role="status">Preparando o ambiente vascular…</div>}><Scene onReady={ready} onError={fail} active={active} /></Suspense></SceneBoundary>}
+        </div>
+        <div className="study-disclosure proxy-stamp"><strong>PROXY / CONCEPTUAL MODEL</strong></div>
+      </section>
+      <div className="body-toolbar micro-toolbar">
+        <div className="body-tool-group" role="group" aria-label="Ferramentas da microcena">
+          <button data-testid="micro-controls-toggle" aria-expanded={shownPanel?.kind === 'controls'} aria-controls={shownPanel?.kind === 'controls' ? 'micro-tool-panel' : undefined} onClick={(event) => openPanel('controls', event.currentTarget)}>Células e fluxo</button>
+          <button data-testid="micro-inspector-toggle" aria-expanded={shownPanel?.kind === 'inspect'} aria-controls={shownPanel?.kind === 'inspect' ? 'micro-tool-panel' : undefined} onClick={(event) => openPanel('inspect', event.currentTarget)}>Ficha</button>
+        </div>
+        <div className="body-current" role="status" data-testid="micro-selection"><span>{state.cameraMode === 'tracking' ? 'Seguindo' : state.cameraMode === 'flow' ? 'Fluxo' : 'Seleção'}</span><strong>{state.selectedId ?? 'Interior do vaso'}</strong></div>
+        <div className="body-tool-group body-view-actions">{cameraControls}</div>
+        <div className="body-meta">
+          <span className="body-disclosure"><span aria-hidden="true">△</span><strong>PROXY / CONCEPTUAL MODEL</strong><span> · Sem escala RC real</span></span>
+          <button data-testid="micro-return" onClick={onReturn}><Icon name="arrow" size={15} />{returnLabel}</button>
+          <label><input type="checkbox" checked={reduced} onChange={(event) => useObservatory.getState().setReducedMotion(event.target.checked)} />Movimento reduzido</label>
+        </div>
+      </div>
+      {shownPanel && <ExplorerPanel key={shownPanel.kind} id="micro-tool-panel" testId="micro-panel" kind={shownPanel.kind} title={shownPanel.kind === 'controls' ? 'Células e fluxo' : 'Ficha vascular'} focusOnOpen={shownPanel.focusOnOpen} dismiss={dismiss}>
+        {shownPanel.kind === 'controls' ? controls : inspector}
+      </ExplorerPanel>}
     <section className="micro-timeline" aria-label="Reprodução do transporte vascular">
       <div className="micro-transport"><button data-testid="micro-play" className="icon-button" disabled={!!error || !state.ready || reduced} aria-label={state.playing ? 'Pausar transporte' : 'Reproduzir transporte'} onClick={() => state.playing ? state.pause() : state.play()}><Icon name={state.playing ? 'pause' : 'play'} /></button><button className="icon-button" aria-label="Passo anterior do transporte" onClick={() => state.step(-.5)}><span>−</span></button><button className="icon-button" aria-label="Próximo passo do transporte" onClick={() => state.step(.5)}><span>+</span></button><button data-testid="micro-reset" className="icon-button" aria-label="Reiniciar transporte" onClick={() => state.reset()}><Icon name="reset" /></button></div>
       <label className="micro-time">Tempo do transporte <output>{shownSeconds.toFixed(2)} s · animação</output><input data-testid="micro-time" aria-label="Tempo do transporte" type="range" min="0" max={Math.max(120, Math.ceil(shownSeconds / 60) * 60)} step="0.01" value={shownSeconds} onChange={(e) => { const next = Number(e.target.value); state.scrub(next); setSeconds(next); }} /></label>

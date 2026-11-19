@@ -7,7 +7,7 @@ const layerLabels: Record<LayerId, string> = { surface: 'Superfície', muscular:
 const subtitles: Record<string, string> = { 'human.surface': 'Forma externa', 'human.head': 'Região craniana', 'human.muscular': 'Volumes musculares', 'human.skeletal': 'Arcabouço estrutural', 'human.thorax': 'Região torácica', 'ghoul.kakuhou.rinkaku': 'Órgão de reserva RC' };
 export function StructureButtons({ content, onSelect }: { content: AtlasContent; onSelect: (id: AnatomyId) => void }) {
   const selectedId = useObservatory((s) => s.selectedId);
-  return <div className="structure-list">{content.structures.map((structure, index) => <button key={structure.id} data-testid={`structure-${structure.id}`} className={`structure-button ${selectedId === structure.id ? 'selected' : ''}`} aria-pressed={selectedId === structure.id} onClick={() => onSelect(structure.id)}><span className="structure-number">{(index + 1).toString().padStart(2, '0')}</span><span><strong>{structure.label}</strong><small>{subtitles[structure.id]}</small></span><Icon name="chevron" size={13} /></button>)}</div>;
+  return <div className="structure-list">{content.structures.map((structure) => <button key={structure.id} data-testid={`structure-${structure.id}`} className={`structure-button ${selectedId === structure.id ? 'selected' : ''}`} aria-pressed={selectedId === structure.id} onClick={() => onSelect(structure.id)}><span className="structure-copy"><strong>{structure.label}</strong><small>{subtitles[structure.id]}</small></span><Icon name="chevron" size={13} /></button>)}</div>;
 }
 
 export function LayerControls() {

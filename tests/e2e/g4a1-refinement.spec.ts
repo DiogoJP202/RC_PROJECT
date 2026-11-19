@@ -1,3 +1,4 @@
+import { openMicroTool, closeStudyTool, changeMicroSelect, setMicroHighlight } from './study-tools';
 import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
@@ -32,9 +33,9 @@ async function settle(page: Page) {
   await page.evaluate(() => new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
 }
 async function overlayLayout(page: Page) {
-  return page.getByTestId('micro-stage').evaluate((element) => {
-    const label = element.querySelector('.micro-scene-label')?.getBoundingClientRect();
-    const disclosure = element.querySelector('.proxy-stamp')?.getBoundingClientRect();
+  return page.getByTestId('micro-workspace').evaluate((element) => {
+    const label = element.querySelector('[data-testid="micro-selection"]')?.getBoundingClientRect();
+    const disclosure = element.querySelector('.body-meta')?.getBoundingClientRect();
     if (!label || !disclosure) throw new Error('Micro identity and conceptual disclosure must both have geometry.');
     return { identity: { top: label.top, bottom: label.bottom, left: label.left, right: label.right },
       disclosure: { top: disclosure.top, bottom: disclosure.bottom, left: disclosure.left, right: disclosure.right },
@@ -58,7 +59,7 @@ async function scrub(page: Page, seconds: number) {
   await settle(page); return micro(page);
 }
 async function follow(page: Page, seed = 17) {
-  await page.getByTestId('micro-entity').selectOption(`rc:${seed}:0`);
+  await changeMicroSelect(page, 'micro-entity', `rc:${seed}:0`);
   if ((await micro(page)).cameraMode !== 'tracking') await page.getByTestId('micro-follow').click();
   await expect.poll(async () => (await micro(page)).cameraMode).toBe('tracking');
 }
@@ -98,12 +99,12 @@ test('every explicit scrub, including sub-threshold steps, gives a repeatable tr
 test('selection, visual highlight and camera modes preserve the absolute transport and real visibility diagnostics', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' }); await openMicro(page);
   const first = await scrub(page, 11);
-  await page.getByTestId('micro-entity').selectOption('rc:17:0'); await settle(page);
+  await changeMicroSelect(page, 'micro-entity', 'rc:17:0'); await settle(page);
   const selected = await micro(page);
   expect(selected.adapter.positionHash).toBe(first.adapter.positionHash);
   expect(selected.adapter.selection).toMatchObject({ id: 'rc:17:0', visible: true, kind: 'external-brackets', depthTest: true, preservesBaseColor: true });
   expectSameCamera(selected.camera, first.camera);
-  await page.getByTestId('micro-highlight').check(); await settle(page);
+  await setMicroHighlight(page, true); await settle(page);
   const highlighted = await micro(page);
   expect(highlighted.selectedId).toBe('rc:17:0'); expect(highlighted.adapter.positionHash).toBe(first.adapter.positionHash);
   expectSameCamera(highlighted.camera, first.camera);
@@ -139,7 +140,7 @@ test('selection, visual highlight and camera modes preserve the absolute transpo
 
 test('Flow, Tracking and Free transitions retain identity and release the current camera without an entrance reset', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' }); await openMicro(page);
-  await page.getByTestId('micro-entity').selectOption('rc:17:0'); await scrub(page, 24);
+  await changeMicroSelect(page, 'micro-entity', 'rc:17:0'); await scrub(page, 24);
   const modes = [];
   for (const mode of ['flow', 'tracking'] as const) {
     if (mode === 'flow') await page.getByTestId('micro-camera-flow').click(); else await follow(page);
@@ -178,7 +179,7 @@ for (const viewport of [{ width: 390, height: 844 }, { width: 430, height: 932 }
       await openMicro(page); await follow(page); await scrub(page, 11);
       await page.getByTestId('micro-stage').scrollIntoViewIfNeeded();
       const layout = await page.getByTestId('micro-stage').evaluate((element) => {
-        const stage = element.getBoundingClientRect(), title = element.querySelector('h1')?.getBoundingClientRect();
+        const stage = element.getBoundingClientRect(), title = element.closest('[data-testid="micro-workspace"]')?.querySelector('h1')?.getBoundingClientRect();
         const disclosure = element.querySelector('.proxy-stamp')?.getBoundingClientRect();
         const box = (rect: DOMRect | undefined) => rect ? { x: rect.x, y: rect.y, width: rect.width, height: rect.height, bottom: rect.bottom, right: rect.right } : null;
         return { stage: box(stage)!, title: box(title), disclosure: box(disclosure), documentWidth: document.documentElement.scrollWidth, viewportWidth: innerWidth };
@@ -191,9 +192,11 @@ for (const viewport of [{ width: 390, height: 844 }, { width: 430, height: 932 }
       const overlays = await overlayLayout(page);
       expect(overlays.identity.bottom).toBeLessThanOrEqual(overlays.disclosure.top);
       for (const id of ['micro-profile', 'micro-entity', 'micro-follow', 'micro-camera-free', 'micro-camera-reset', 'micro-return', 'micro-play', 'micro-reset']) {
+        if (['micro-profile', 'micro-entity'].includes(id)) await openMicroTool(page, 'controls');
         const box = await page.getByTestId(id).boundingBox(); expect(box).not.toBeNull(); expect(box!.height, id).toBeGreaterThanOrEqual(44);
+        await closeStudyTool(page);
       }
-      await page.getByTestId('micro-evidence').tap(); await expect(page.getByTestId('micro-inspector')).toContainText('HIPÓTESE VISUAL');
+      await openMicroTool(page, 'inspect'); await page.getByTestId('micro-evidence').tap(); await expect(page.getByTestId('micro-inspector')).toContainText('HIPÓTESE VISUAL');
       await expect(page.getByTestId('micro-inspector')).toHaveAttribute('data-selected-id', 'rc:17:0');
       await save(`mobile-${viewport.width}-layout`, { viewport, layout, overlays, state: compact(await micro(page)) });
       expect(runtime.get(page) ?? []).toEqual([]);

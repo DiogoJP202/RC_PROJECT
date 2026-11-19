@@ -1,3 +1,4 @@
+import { changeRinkakuSelect, changeRinkakuView, closeStudyTool } from './study-tools';
 import { chooseStructure, openBodyTool } from './body-tools';
 import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
@@ -65,7 +66,7 @@ async function scrub(page: Page, t: number) {
   return scene(page);
 }
 async function view(page: Page, name: 'posterior' | 'lateral' | 'oblique' | 'focus') {
-  await page.getByTestId(`rinkaku-${name}`).click();
+  await changeRinkakuView(page, `rinkaku-${name}`);
   await expect.poll(async () => (await scene(page)).camera.moving).toBe(false);
   await settle(page);
 }
@@ -90,7 +91,7 @@ test('all seven deterministic phases support 1–4 appendages and preserve the s
   const camera = (await scene(page)).camera;
   const samples = [], captures = [];
   for (const count of [1, 2, 3, 4]) {
-    await page.getByTestId('rinkaku-count').selectOption(String(count));
+    await changeRinkakuSelect(page, 'rinkaku-count', String(count));
     const phaseHashes = [];
     for (const [phase, t] of PHASES) {
       const state = await scrub(page, t);
@@ -131,7 +132,7 @@ test('lumbar implantation is captured at growth, active and retraction for every
   await enter(page);
   const captures = [];
   for (const count of [1, 2, 3, 4]) {
-    await page.getByTestId('rinkaku-count').selectOption(String(count));
+    await changeRinkakuSelect(page, 'rinkaku-count', String(count));
     for (const name of ['posterior', 'lateral', 'oblique'] as const) {
       await view(page, name);
       const camera = (await scene(page)).camera;
@@ -271,9 +272,11 @@ for (const viewport of [{ width: 390, height: 844 }, { width: 430, height: 932 }
       const initial = await scrub(page, .53);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       for (const id of ['rinkaku-toggle', 'rinkaku-reset', 'rinkaku-step-back', 'rinkaku-step-forward', 'rinkaku-posterior', 'rinkaku-lateral', 'rinkaku-oblique', 'rinkaku-focus']) {
+        if (['rinkaku-posterior', 'rinkaku-lateral', 'rinkaku-oblique', 'rinkaku-focus'].includes(id)) await openBodyTool(page, 'simulation');
         const box = await page.getByTestId(id).boundingBox();
         expect(box).not.toBeNull();
         expect(box!.height).toBeGreaterThanOrEqual(44);
+        await closeStudyTool(page);
       }
       await scrub(page, .9);
       expect(cameraDistance((await scene(page)).camera, initial.camera)).toBeLessThan(.0001);

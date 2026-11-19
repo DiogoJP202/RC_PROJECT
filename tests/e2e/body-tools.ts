@@ -1,8 +1,8 @@
 import type { Page } from '@playwright/test';
 
-const controls = { structures: 'body-structures', layers: 'body-layers', inspect: 'inspector-toggle', scan: 'body-scan' } as const;
+const controls = { structures: 'body-structures', layers: 'body-layers', inspect: 'inspector-toggle', scan: 'body-scan', simulation: 'rinkaku-settings' } as const;
 
-// Rinkaku keeps its original panels during R2. Only the Body shell has this rail.
+// Body and Rinkaku share tools while retaining their own scene state.
 export async function openBodyTool(page: Page, tool: keyof typeof controls) {
   if (!await page.getByTestId('body-structures').isVisible()) return;
   const button = page.getByTestId(controls[tool]);

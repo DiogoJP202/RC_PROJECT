@@ -1,29 +1,34 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef, type ReactNode } from 'react';
 import type { AtlasContent } from '../content/catalog';
 import { useObservatory } from '../state/observatory';
 import { EvidenceInspector } from './EvidenceInspector';
 import { Icon } from './Icon';
 import { LayerControls, StructureButtons } from './SystemsIndex';
 import { Timeline } from './Timeline';
+import { RinkakuInspector } from './RinkakuControls';
+import { EvidenceFilter } from './EvidenceSources';
+import { containDialogTab } from './dialogKeys';
 import './body-workbench.css';
+import './study-workbench.css';
 
-export type BodyPanel = 'structures' | 'layers' | 'inspect' | 'scan';
+export type BodyPanel = 'structures' | 'layers' | 'inspect' | 'scan' | 'simulation';
 export const BODY_SHEET_QUERY = '(max-width: 780px)';
 const titles: Record<BodyPanel, string> = {
-  structures: 'Estruturas anatômicas', layers: 'Camadas', inspect: 'Ficha anatômica', scan: 'Varredura visual',
+  structures: 'Estruturas anatômicas', layers: 'Camadas', inspect: 'Ficha anatômica', scan: 'Varredura visual', simulation: 'Manifestação Rinkaku',
 };
 
 type PanelRequest = (next: BodyPanel, opener: HTMLElement) => void;
 
-export function BodyToolbar({ selected, panel, ready, open, enterMicro }: {
-  selected: string; panel: BodyPanel | null; ready: boolean; open: PanelRequest; enterMicro: () => void;
+export function BodyToolbar({ selected, panel, ready, open, enterMicro, rinkaku = false }: {
+  selected: string; panel: BodyPanel | null; ready: boolean; open: PanelRequest; enterMicro: () => void; rinkaku?: boolean;
 }) {
   const reduced = useObservatory((state) => state.reducedMotion);
   return <div className="body-toolbar">
     <div className="body-tool-group" aria-label="Ferramentas do corpo" role="group">
       <button data-testid="body-structures" aria-expanded={panel === 'structures'} aria-controls={panel === 'structures' ? 'body-tool-panel' : undefined} onClick={(event) => open('structures', event.currentTarget)}><Icon name="layers" size={17} /> Estruturas</button>
       <button data-testid="body-layers" aria-expanded={panel === 'layers'} aria-controls={panel === 'layers' ? 'body-tool-panel' : undefined} onClick={(event) => open('layers', event.currentTarget)}>Camadas</button>
-      <button data-testid="body-scan" disabled={!ready} aria-expanded={panel === 'scan'} aria-controls={panel === 'scan' ? 'body-tool-panel' : undefined} onClick={(event) => open('scan', event.currentTarget)}>Varredura</button>
+      {rinkaku ? <button data-testid="rinkaku-settings" aria-expanded={panel === 'simulation'} aria-controls={panel === 'simulation' ? 'body-tool-panel' : undefined} onClick={(event) => open('simulation', event.currentTarget)}>Simulação</button>
+        : <button data-testid="body-scan" disabled={!ready} aria-expanded={panel === 'scan'} aria-controls={panel === 'scan' ? 'body-tool-panel' : undefined} onClick={(event) => open('scan', event.currentTarget)}>Varredura</button>}
     </div>
     <div className="body-current" role="status" data-testid="body-selection"><span>Seleção</span><strong>{selected}</strong></div>
     <div className="body-tool-group body-view-actions" aria-label="Ações da cena" role="group">
@@ -39,12 +44,11 @@ export function BodyToolbar({ selected, panel, ready, open, enterMicro }: {
   </div>;
 }
 
-export function BodyToolPanel({ kind, content, ready, dismiss, inspect, focusOnOpen }: {
-  kind: BodyPanel; content: AtlasContent; ready: boolean; dismiss: () => void; inspect: () => void; focusOnOpen: boolean;
+export function ExplorerPanel({ id, title, kind, dismiss, focusOnOpen = true, children, testId = 'body-panel' }: {
+  id: string; title: string; kind: string; dismiss: () => void; focusOnOpen?: boolean; children: ReactNode; testId?: string;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const close = useRef<HTMLButtonElement>(null);
-  const canonOnly = useObservatory((state) => state.canonOnly);
 
   useLayoutEffect(() => {
     const node = dialog.current;
@@ -62,13 +66,30 @@ export function BodyToolPanel({ kind, content, ready, dismiss, inspect, focusOnO
     return () => { query.removeEventListener('change', update); if (node.open) node.close(); };
   }, [focusOnOpen]);
 
-  return <dialog ref={dialog} id="body-tool-panel" className={`body-panel body-panel--${kind}`} data-testid="body-panel"
-    aria-labelledby="body-panel-title" onCancel={(event) => { event.preventDefault(); dismiss(); }}>
+  useEffect(() => {
+    const escape = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape' || !dialog.current?.open || document.querySelector('dialog:modal')) return;
+      event.preventDefault();
+      dismiss();
+    };
+    window.addEventListener('keydown', escape);
+    return () => window.removeEventListener('keydown', escape);
+  }, [dismiss]);
+
+  return <dialog ref={dialog} id={id} className={`body-panel body-panel--${kind}`} data-testid={testId}
+    aria-labelledby={`${id}-title`} onKeyDown={containDialogTab} onCancel={(event) => { event.preventDefault(); dismiss(); }}>
     <header className="body-panel-head">
-      <h2 id="body-panel-title">{titles[kind]}</h2>
-      <button type="button" ref={close} onClick={dismiss} aria-label="Fechar painel" data-testid="body-panel-close"><Icon name="close" /></button>
+      <h2 id={`${id}-title`}>{title}</h2>
+      <button type="button" ref={close} onClick={dismiss} aria-label="Fechar painel" data-testid={`${testId}-close`}><Icon name="close" /></button>
     </header>
-    <div className="body-panel-content" key={kind}>
+    <div className="body-panel-content">{children}</div>
+  </dialog>;
+}
+
+export function BodyToolPanel({ kind, content, ready, dismiss, inspect, focusOnOpen }: {
+  kind: BodyPanel; content: AtlasContent; ready: boolean; dismiss: () => void; inspect: () => void; focusOnOpen: boolean;
+}) {
+  return <ExplorerPanel id="body-tool-panel" kind={kind} title={titles[kind]} dismiss={dismiss} focusOnOpen={focusOnOpen}>
       {kind === 'structures' && <>
         <StructureButtons content={content} onSelect={(id) => {
           useObservatory.getState().select(id);
@@ -79,9 +100,9 @@ export function BodyToolPanel({ kind, content, ready, dismiss, inspect, focusOnO
       {kind === 'layers' && <LayerControls />}
       {kind === 'inspect' && <>
         <EvidenceInspector content={content} inPanel viewAvailable={ready} onSceneAction={() => { if (window.matchMedia(BODY_SHEET_QUERY).matches) dismiss(); }} />
-        <label className="body-evidence-filter"><input type="checkbox" data-testid="canon-filter" checked={canonOnly} onChange={(event) => useObservatory.getState().setCanonOnly(event.target.checked)} /><span>Somente afirmações com fonte verificada<small>O filtro não altera o status do modelo.</small></span></label>
+        <EvidenceFilter />
       </>}
       {kind === 'scan' && <Timeline ready={ready} />}
-    </div>
-  </dialog>;
+      {kind === 'simulation' && <><RinkakuInspector content={content} ready={ready} onSceneAction={() => { if (window.matchMedia(BODY_SHEET_QUERY).matches) dismiss(); }} /><EvidenceFilter /></>}
+  </ExplorerPanel>;
 }

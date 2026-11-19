@@ -1,0 +1,28 @@
+[
+  {
+    "mode": "rinkaku",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "stage": {
+      "x": 28.796875,
+      "y": 122,
+      "width": 1382.40625,
+      "height": 632
+    }
+  },
+  {
+    "mode": "vascular",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "stage": {
+      "x": 28.796875,
+      "y": 122,
+      "width": 1382.40625,
+      "height": 632
+    }
+  }
+]

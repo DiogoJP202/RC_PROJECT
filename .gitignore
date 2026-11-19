@@ -30,6 +30,10 @@ artifacts/gates/*
 !artifacts/gates/UI-R1-*.json
 !artifacts/gates/UI-R2-*.png
 !artifacts/gates/UI-R2-*.json
+!artifacts/gates/UI-R3-*.png
+!artifacts/gates/UI-R3-*.json
+!artifacts/gates/UI-R4-*.png
+!artifacts/gates/UI-R4-*.json
 !artifacts/gates/G4A-review/
 !artifacts/gates/G4A-review/**
 !artifacts/gates/G4A1-review/

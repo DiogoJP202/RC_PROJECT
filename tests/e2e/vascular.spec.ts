@@ -1,3 +1,4 @@
+import { openMicroTool, closeStudyTool, changeMicroSelect, setMicroHighlight } from './study-tools';
 import { chooseStructure, openBodyTool } from './body-tools';
 import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
@@ -47,6 +48,7 @@ async function save(name: string, value: unknown) {
   await writeFile(`${evidenceRoot}/g4a/${name}.json`, `${JSON.stringify(value, null, 2)}\n`);
 }
 async function pick(page: Page, kind: 'rc' | 'rbc') {
+  await closeStudyTool(page);
   for (const seconds of [0, 3, 9, 15, 23, 31]) {
     await scrub(page, seconds);
     const hit = await page.evaluate((kind) => {
@@ -83,7 +85,7 @@ test('ten Body→Micro→Body transitions restore the manual camera, selection, 
   await page.waitForTimeout(2500);
   const before = await body(page); const cycles = [];
   for (let cycle = 1; cycle <= 10; cycle++) {
-    await enter(page); await page.getByTestId('micro-profile').selectOption('100');
+    await enter(page); await changeMicroSelect(page, 'micro-profile', '100');
     await scrub(page, 7.5);
     const inside = await micro(page);
     expect(inside.adapter.counts.total).toBe(100);
@@ -120,7 +122,7 @@ test('absolute scrubbing, pause, speed, reset and population changes retain dete
   expect(repeated.adapter.resourceIds).toEqual(first.adapter.resourceIds);
   expect(repeated.particles).toEqual(first.particles);
   for (const count of [100, 2000, 500]) {
-    await page.getByTestId('micro-profile').selectOption(String(count));
+    await changeMicroSelect(page, 'micro-profile', String(count));
     await expect.poll(async () => (await micro(page)).adapter.counts.total).toBe(count);
     const changed = await micro(page);
     expect(changed.seconds).toBe(32); expect(changed.adapter.resourceIds).toEqual(first.adapter.resourceIds);
@@ -163,45 +165,57 @@ test('Micro preserves the rigged GLB lease, sampled socket, isolation and opacit
 
 test('real RC and RBC picking reaches the stable inspector identity and evidence remains classified', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' }); await open(page); await enter(page);
-  await page.getByTestId('micro-profile').selectOption('100');
+  await changeMicroSelect(page, 'micro-profile', '100');
   const rc = await pick(page, 'rc');
+  await openMicroTool(page, 'controls');
   await expect(page.getByTestId('micro-entity')).toHaveValue(rc);
-  await page.getByTestId('micro-evidence').click();
+  await closeStudyTool(page);
+  await openMicroTool(page, 'inspect');
+  await openMicroTool(page, 'inspect'); await page.getByTestId('micro-evidence').click();
   await expect(page.getByTestId('micro-inspector')).toContainText('HIPÓTESE VISUAL');
   await expect(page.getByTestId('micro-inspector')).toContainText('DESCONHECIDO');
   await expect(page.getByTestId('micro-inspector').getByRole('link', { name: /Young Jump/ })).toHaveAttribute('href', 'https://youngjump.jp/tokyoghoul/tg/data/');
   const rbc = await pick(page, 'rbc');
+  await openMicroTool(page, 'controls');
   await expect(page.getByTestId('micro-entity')).toHaveValue(rbc);
+  await closeStudyTool(page);
+  await openMicroTool(page, 'inspect');
   await expect(page.getByTestId('micro-inspector')).toContainText('BASE HUMANA');
   await expect(page.getByTestId('micro-inspector').getByRole('link', { name: /18.3 Erythrocytes/ })).toHaveAttribute('href', 'https://openstax.org/books/anatomy-and-physiology-2e/pages/18-3-erythrocytes');
   const before = await micro(page);
-  await page.getByTestId('micro-highlight').check();
+  await setMicroHighlight(page, true);
   expect((await micro(page)).selectedId).toBe(rbc);
   expect((await micro(page)).adapter.positionHash).toBe(before.adapter.positionHash);
+  await openMicroTool(page, 'controls');
   await expect(page.getByText('Realce didático; não representa fluorescência biológica.')).toBeVisible();
 });
 
 test('tracking keeps one identity through real playback, while profile removal is explicit and keyboard exits in two steps', async ({ page }) => {
   test.setTimeout(80_000);
-  await open(page); await enter(page); await page.getByTestId('micro-profile').selectOption('2000');
+  await open(page); await enter(page); await changeMicroSelect(page, 'micro-profile', '2000');
   const id = (await micro(page)).particles.find((item) => item.kind === 'rc' && item.index > 100)!.id;
-  await page.getByTestId('micro-entity').selectOption(id); await page.getByTestId('micro-follow').click();
+  await changeMicroSelect(page, 'micro-entity', id); await page.getByTestId('micro-follow').click();
   await expect.poll(async () => (await micro(page)).cameraMode).toBe('tracking');
   const initial = await micro(page); await page.getByTestId('micro-play').click();
   // A complete illustrative circuit is about38–40s at default speed; this
   // intentionally observes real playback rather than advancing the clock API.
   const observations = []; const started = Date.now();
-  let previous = initial;
+  let previous = initial.camera;
   while (Date.now() - started < 42_000) {
     await page.waitForTimeout(500);
-    const current = await micro(page);
+    // Transfer only the observed fields. Serializing the entire 2,000-entity
+    // snapshot delayed each RPC and stretched a 500ms observation to ~1.8s.
+    const current = await page.evaluate(() => {
+      const { camera, selectedId, seconds } = (window as unknown as { __ATLAS_MICRO__: MicroApi }).__ATLAS_MICRO__.snapshot();
+      return { camera, selectedId, seconds };
+    });
     expect(current.selectedId).toBe(id);
-    const cameraStep = distance(current.camera.position, previous.camera.position);
+    const cameraStep = distance(current.camera.position, previous.position);
     // Initial mode transfer is intentionally eased along the tube. Once settled,
     // normal tracking cannot jump to another region at the closed-loop seam.
     if (Date.now() - started > 6000) expect(cameraStep).toBeLessThan(1.5);
     observations.push({ elapsedMs: Date.now() - started, seconds: current.seconds, camera: current.camera, cameraStep, selectedId: current.selectedId });
-    previous = current;
+    previous = current.camera;
   }
   const moving = await micro(page);
   expect(moving.selectedId).toBe(id); expect(moving.selectedPresent).toBe(true);
@@ -209,12 +223,13 @@ test('tracking keeps one identity through real playback, while profile removal i
   expect(moving.cameraMode).toBe('tracking');
   expect(distance(moving.camera.position, initial.camera.position)).toBeGreaterThan(.1);
   await page.getByTestId('micro-play').click();
-  await page.getByTestId('micro-profile').selectOption('100');
+  await changeMicroSelect(page, 'micro-profile', '100');
+  await openMicroTool(page, 'inspect');
   await expect(page.getByTestId('micro-inspector')).toContainText('Entidade ausente neste perfil');
   const missing = await micro(page);
   expect(missing.selectedId).toBe(id); expect(missing.selectedPresent).toBe(false); expect(missing.cameraMode).toBe('free');
   await expect(page.getByTestId('micro-follow')).toBeDisabled();
-  await page.getByTestId('micro-profile').selectOption('2000');
+  await changeMicroSelect(page, 'micro-profile', '2000');
   await page.getByTestId('micro-follow').click();
   await page.getByTestId('micro-stage').click({ position: { x: 20, y: 20 } });
   await page.keyboard.press('Escape'); await expect.poll(async () => (await micro(page)).cameraMode).toBe('free');
@@ -224,16 +239,16 @@ test('tracking keeps one identity through real playback, while profile removal i
 
 test('releasing tracking by button, missing profile or first Escape retains the actual camera pose', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' }); await open(page); await enter(page);
-  await page.getByTestId('micro-profile').selectOption('2000'); await scrub(page, 24);
-  await page.getByTestId('micro-entity').selectOption('rc:17:104');
+  await changeMicroSelect(page, 'micro-profile', '2000'); await scrub(page, 24);
+  await changeMicroSelect(page, 'micro-entity', 'rc:17:104');
   const poses = [];
   for (const action of ['button', 'profile', 'Escape'] as const) {
-    await page.getByTestId('micro-profile').selectOption('2000');
+    await changeMicroSelect(page, 'micro-profile', '2000');
     await page.getByTestId('micro-follow').click();
     await expect.poll(async () => (await micro(page)).cameraMode).toBe('tracking');
     await page.waitForTimeout(80); const before = await micro(page);
     if (action === 'button') await page.getByTestId('micro-follow').click();
-    else if (action === 'profile') await page.getByTestId('micro-profile').selectOption('100');
+    else if (action === 'profile') await changeMicroSelect(page, 'micro-profile', '100');
     else await page.keyboard.press('Escape');
     await expect.poll(async () => (await micro(page)).cameraMode).toBe('free');
     await page.waitForTimeout(80); const after = await micro(page);
@@ -268,7 +283,7 @@ test('reduced motion keeps manual transport and camera/selection controls availa
   await expect.poll(async () => (await micro(page)).seconds).toBeGreaterThan(7);
   const still = await micro(page); await page.waitForTimeout(160);
   expect((await micro(page)).adapter.positionHash).toBe(still.adapter.positionHash);
-  await page.getByTestId('micro-entity').selectOption('rc:17:0'); await page.getByTestId('micro-follow').click();
+  await changeMicroSelect(page, 'micro-entity', 'rc:17:0'); await page.getByTestId('micro-follow').click();
   expect((await micro(page)).cameraMode).toBe('tracking'); expect((await micro(page)).playing).toBe(false);
   await page.getByTestId('micro-camera-reset').click();
   await expect.poll(async () => (await micro(page)).cameraMode).toBe('free');
@@ -300,7 +315,7 @@ test('a real Micro WebGL context loss leaves textual evidence and the Body bookm
   expect(lost).toBe(true);
   await expect(page.getByTestId('micro-status')).toHaveText('Modo textual');
   await expect(page.getByTestId('micro-play')).toBeDisabled();
-  await page.getByTestId('micro-entity').selectOption('rc:17:0'); await page.getByTestId('micro-evidence').click();
+  await changeMicroSelect(page, 'micro-entity', 'rc:17:0'); await openMicroTool(page, 'inspect'); await page.getByTestId('micro-evidence').click();
   await expect(page.getByTestId('micro-inspector')).toContainText('HIPÓTESE VISUAL');
   await page.getByTestId('micro-retry').click();
   await expect(page.getByTestId('micro-status')).toHaveText('3D conectado');
@@ -315,7 +330,8 @@ test('Micro without WebGL exposes accessible static evidence and a truthful retu
   await page.getByTestId('mode-micro').click();
   await expect(page.getByTestId('micro-status')).toHaveText('Modo textual');
   await expect(page.getByTestId('micro-play')).toBeDisabled();
-  await page.getByTestId('micro-entity').selectOption('rc:17:0');
+  await changeMicroSelect(page, 'micro-entity', 'rc:17:0');
+  await openMicroTool(page, 'inspect');
   await page.getByTestId('micro-evidence').click();
   await expect(page.getByTestId('micro-inspector')).toContainText('DESCONHECIDO');
   await page.getByTestId('micro-time').fill('12'); await expect(page.getByTestId('micro-time')).toHaveValue('12');
@@ -334,12 +350,16 @@ test('mobile Micro has usable touch controls, no overflow and readable selection
     expect(disclosureBox!.y + disclosureBox!.height).toBeLessThanOrEqual(stageBox!.y + stageBox!.height);
     for (const id of ['micro-entry', 'micro-profile', 'micro-entity', 'micro-follow', 'micro-camera-free', 'micro-camera-reset', 'micro-return', 'micro-play', 'micro-reset']) {
       if (id === 'micro-entry') continue;
+      if (['micro-profile', 'micro-entity'].includes(id)) await openMicroTool(page, 'controls');
       const box = await page.getByTestId(id).boundingBox(); expect(box).not.toBeNull(); expect(box!.height).toBeGreaterThanOrEqual(44);
+      await closeStudyTool(page);
     }
-    await page.getByTestId('micro-entity').selectOption('rc:17:0'); await page.getByTestId('micro-follow').tap();
+    await changeMicroSelect(page, 'micro-entity', 'rc:17:0'); await page.getByTestId('micro-follow').tap();
+    await openMicroTool(page, 'inspect');
     await page.getByTestId('micro-inspector').scrollIntoViewIfNeeded();
     await expect(page.getByTestId('micro-inspector')).toHaveAttribute('data-selected-id', 'rc:17:0');
-    await page.getByTestId('micro-evidence').tap(); await expect(page.getByTestId('micro-inspector')).toContainText('HIPÓTESE VISUAL');
+    await openMicroTool(page, 'inspect'); await page.getByTestId('micro-evidence').tap(); await expect(page.getByTestId('micro-inspector')).toContainText('HIPÓTESE VISUAL');
+    await closeStudyTool(page);
     await page.getByTestId('micro-return').tap(); await expect(page.getByTestId('mode-body')).toHaveAttribute('aria-current', 'page');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   } finally { await context.close(); }
