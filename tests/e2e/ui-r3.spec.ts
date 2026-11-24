@@ -6,11 +6,12 @@ import { evidenceRoot } from './evidence-path';
 
 const output = `${evidenceRoot}/ui-r3`;
 interface Snapshot {
-  camera: Record<string, unknown>;
+  camera: Record<string, unknown> & { moving: boolean };
+  frames: number;
   selectedId: string | null;
   seconds: number;
   cameraMode: string;
-  rinkaku: { t: number; adapter: { resourceIds: unknown; positionHash: string } };
+  rinkaku: { t: number; adapter: { t: number; resourceIds: unknown; positionHash: string } | null };
   assets: { activeId: string; cache: unknown };
   adapter: { positionHash: string; resourceIds: unknown };
 }
@@ -30,11 +31,32 @@ test('Rinkaku tools preserve the canvas, GLB lease and exact paused pose', async
   await page.getByTestId('asset-select').selectOption('fixture.rigged.v1');
   await expect(page.getByTestId('asset-status')).toContainText('GLB sintético integrado');
   await page.getByTestId('rinkaku-time').fill('0.88');
-  await expect.poll(async () => (await snapshot(page)).rinkaku.t).toBe(.88);
   const stage = page.getByTestId('stage');
+  // Record the paused reference after the real renderer has applied the pose
+  // and OrbitControls has settled through successive frames.
+  const reference: { current?: Snapshot } = {};
+  await expect.poll(async () => {
+    const stable = await page.evaluate(async () => {
+      const atlas = (window as unknown as Record<string, { snapshot(): Snapshot }>).__ATLAS_SCENE__;
+      let previous = atlas.snapshot();
+      for (let frame = 0; frame < 4; frame++) {
+        await new Promise<number>((resolve) => requestAnimationFrame(resolve));
+        const next = atlas.snapshot();
+        if (next.frames <= previous.frames || next.camera.moving
+          || next.rinkaku.t !== .88 || next.rinkaku.adapter?.t !== .88 || !next.rinkaku.adapter.positionHash
+          || next.assets.activeId !== 'fixture.rigged.v1'
+          || JSON.stringify(next.camera) !== JSON.stringify(previous.camera)) return undefined;
+        previous = next;
+      }
+      return previous;
+    });
+    reference.current = stable;
+    return Boolean(stable);
+  }, { message: 'paused Rinkaku and the rigged fixture are rendered with a stable camera' }).toBe(true);
+  const before = reference.current;
+  if (!before) throw new Error('Missing rendered reference state.');
   const box = await stage.boundingBox();
   const canvas = await stage.locator('canvas').elementHandle();
-  const before = await snapshot(page);
   for (const kind of ['structures', 'layers', 'inspect', 'simulation'] as const) {
     await openBodyTool(page, kind);
     await expect(page.getByTestId('body-panel')).toBeVisible();

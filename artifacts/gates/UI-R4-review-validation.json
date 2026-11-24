@@ -1,0 +1,2194 @@
+{
+  "verifiedAt": "2026-11-24T18:40:38.847Z",
+  "checkout": "primary",
+  "branch": "codex/ui-r4",
+  "applicationCommit": "e272b50a0795900d3aab60120f45b8b2f71c6f3e",
+  "baseCommit": "0c287c7768b4d1607274d9e1e9e6a186f0904e92",
+  "testedE2EFile": {
+    "file": "tests/e2e/ui-r3.spec.ts",
+    "sha256": "00b7e2868a6b15a99c77be0f6d5795d66105d3812c5d5d164e2b9c71885c80f7"
+  },
+  "browser": "157.0.8103.80",
+  "renderer": "Chrome headless, WebGL enabled",
+  "browserViewport": "1440 × 900 plus mobile emulation",
+  "staticChecks": [
+    {
+      "command": "npm.cmd run typecheck",
+      "result": "passed",
+      "localEvidence": "artifacts/local/ui-r4-integration/run-typecheck-final.log",
+      "sha256": "08f6123eef1d115b5d3529e5c83bb74069b63f98411804d1a5357a71251c8be3"
+    },
+    {
+      "command": "npm.cmd run lint",
+      "result": "passed",
+      "localEvidence": "artifacts/local/ui-r4-integration/run-lint-final.log",
+      "sha256": "c578567735d514a87774970638b81dcb36632df9231240b2b1b39d95db661acb"
+    },
+    {
+      "command": "npm.cmd test -- --maxWorkers=2",
+      "tests": 206,
+      "files": 22,
+      "result": "passed",
+      "localEvidence": "artifacts/local/ui-r4-integration/test---.log",
+      "sha256": "3c0170e52d5fe8290b8b61aee3c107939acbdb426c2bea6b83bfa18bbdd25153"
+    },
+    {
+      "command": "npm.cmd run test:catalog",
+      "tests": 22,
+      "result": "passed",
+      "localEvidence": "artifacts/local/ui-r4-integration/python.log",
+      "sha256": "dca1ce272c9d159bf6a41a63f96b5d93dc89e9e2477b8daca864fa7b7cb52d94"
+    },
+    {
+      "command": "npm.cmd run validate:catalog",
+      "result": "passed",
+      "localEvidence": "artifacts/local/ui-r4-integration/catalog.log",
+      "sha256": "7f67896751bc751fb1fe3c8c018393df7dac3e8e74bbbdd582983460e6c6f672"
+    },
+    {
+      "command": "npm.cmd run build",
+      "result": "passed",
+      "localEvidence": "artifacts/local/ui-r4-integration/run-build.log",
+      "sha256": "dda26638801326b408e7ef9dadc62d431fbd824bfbc29e0187a3d22f7cb8a9ce"
+    }
+  ],
+  "buildHashes": [
+    {
+      "file": "dist/assets/AtlasWorkspace-BkiLpW6V.css",
+      "sha256": "0cf1c560aaeb6ff6515d21fa862cc0a7959a4172da5dba072682c020e13e904a"
+    },
+    {
+      "file": "dist/assets/AtlasWorkspace-CyErvkIy.js",
+      "sha256": "c84c2edf8e15deec8b11efb00659d94c37ba73b43d0754dd2bc5d56b9ad024b3"
+    },
+    {
+      "file": "dist/assets/index-BozWDWSF.js",
+      "sha256": "cde07d13b35c7c534b1899e254854534c323cf077d5330087781ba4bccb5de0d"
+    },
+    {
+      "file": "dist/assets/index-CN_A8G34.css",
+      "sha256": "9327e8df2d954cf42d2f946e778eb04047ff95ae5b0b1ec481d25c4b73bf530a"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-BpSOKySz.js",
+      "sha256": "c81f0efa027f80997130a61f88d793f2eb0e0c76c83bc18458a5aafdf80a1b9a"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-Dk9kFNXi.css",
+      "sha256": "282aef9b152c7abab2dbd224eaa8b424863b356d9f5f66fadbf58649ea7bd525"
+    }
+  ],
+  "initialE2E": {
+    "validatedCommit": "e272b50a0795900d3aab60120f45b8b2f71c6f3e",
+    "stats": {
+      "startTime": "2026-11-24T18:11:54.002Z",
+      "duration": 766492.078,
+      "expected": 87,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "failure": "UI-R3 desktop Rinkaku with GLB. Comparison at camera state after closing a tool differed by at most 4.45e-16 in position and 5.56e-17 in quaternion.",
+    "localReport": "artifacts/local/ui-r4-integration/e2e.json",
+    "reportSha256": "29ffa6e9afb6009a406ea9fcc95de19e9a36e75c2bf3c98c6b7e5ed78bb0951f"
+  },
+  "focusedRecheck": {
+    "stats": {
+      "startTime": "2026-11-24T18:24:49.576Z",
+      "duration": 47062.25,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "target": "Rinkaku tools preserve the canvas, GLB lease and exact paused pose",
+    "localReport": "artifacts/local/ui-r4-integration/focused.json",
+    "reportSha256": "96cbe8b4aa8315bdcd462bc4720185cf8d846760944a4c39902d4ca178dae2a6"
+  },
+  "e2e": {
+    "command": "npm.cmd run test:e2e -- --reporter=list,json",
+    "result": "passed",
+    "workers": 1,
+    "retries": 0,
+    "browser": "157.0.8103.80",
+    "preview": true,
+    "stats": {
+      "startTime": "2026-11-24T18:26:10.105Z",
+      "duration": 823052.039,
+      "expected": 88,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "regression": {
+      "spec": "430px sheets contain scrolling and keyboard focus while keeping each scene intact",
+      "file": "ui-r4.spec.ts",
+      "line": 108,
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": [
+        {
+          "status": "passed",
+          "duration": 10917,
+          "retry": 0
+        }
+      ]
+    },
+    "tracking": {
+      "spec": "tracking keeps one identity through real playback, while profile removal is explicit and keyboard exits in two steps",
+      "file": "vascular.spec.ts",
+      "line": 193,
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": [
+        {
+          "status": "passed",
+          "duration": 48742,
+          "retry": 0
+        }
+      ],
+      "entities": 2000,
+      "playbackSeconds": 42.184500000000796,
+      "samples": 78,
+      "maxCameraStepAfterSettle": 1.091060190844589,
+      "maxCameraStepExclusiveLimit": 1.5
+    },
+    "scenarios": [
+      {
+        "spec": "disk GLB loads asynchronously and replaces only its three stable anatomical bindings",
+        "file": "g2a-assets.spec.ts",
+        "line": 65,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3663,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "a loaded mesh receives real pointer hits and keeps anatomical evidence identity",
+        "file": "g2a-assets.spec.ts",
+        "line": 114,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4077,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "asset replacement preserves selection, layers, isolation, opacity and camera context",
+        "file": "g2a-assets.spec.ts",
+        "line": 133,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4670,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "HTTP failure automatically shows available proxies and retry loads the real asset",
+        "file": "g2a-assets.spec.ts",
+        "line": 167,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2716,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "a slow superseded asset cannot overwrite the later model or anatomical selection",
+        "file": "g2a-assets.spec.ts",
+        "line": 192,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3536,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "repeated GLB swaps release leases and dispose unused templates without retained cache entries",
+        "file": "g2a-assets.spec.ts",
+        "line": 213,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4331,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "rigged GLB exposes skin and clip, moves a bone-attached socket and respects reduced motion",
+        "file": "g2a-assets.spec.ts",
+        "line": 234,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3148,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "G2A desktop capture preserves the observatory and labels the synthetic integration",
+        "file": "g2a-assets.spec.ts",
+        "line": 267,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4983,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mobile exploration remains touch accessible with GLB and produces a real capture",
+        "file": "g2a-assets.spec.ts",
+        "line": 289,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3258,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "the mobile drawer supports touch, keyboard, native dismissal and explicit evidence reopening",
+        "file": "g2a-assets.spec.ts",
+        "line": 316,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4018,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "terminal retraction settles before the visibility cutoff and leaves no rendered residue for 1–4 appendages",
+        "file": "g3a-checkpoint.spec.ts",
+        "line": 38,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 38587,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "real terminal playback stops at one, keeps replay resources stable and releases them on exit",
+        "file": "g3a-checkpoint.spec.ts",
+        "line": 79,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 12532,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "transparent body picking ignores pooled appendages below an invisible parent at the endpoint",
+        "file": "g3a-checkpoint.spec.ts",
+        "line": 107,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 6358,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "terminal surfaces also have no residual pixel footprint through the transparent body",
+        "file": "g3a-checkpoint.spec.ts",
+        "line": 124,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 19235,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "absolute manual timeline reproduces geometry, keeps resources and records the five phase captures",
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 78,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 6550,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "play, pause, reverse and rapid scrubbing use one timeline while selection and the scan remain stable",
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 131,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 7616,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "ten full manual cycles keep geometry identities and warmed renderer resources bounded",
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 177,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 29878,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "ten complete automatic 21-second playback cycles retain stable resources without context loss",
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 225,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 220309,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "counts, particles and quality replace visual settings without detaching the root, and GLB sockets stay authoritative",
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 268,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5999,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "posterior, lateral and lumbar focus are explicit and reduced motion keeps manual keyboard inspection",
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 305,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4078,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "without WebGL the manifestation offers truthful static timeline controls and the original inspection remains available",
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 336,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2662,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "loss of the real WebGL context pauses an active manifestation and keeps manual inspection available",
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 358,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5269,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mobile touch controls stay usable and capture the actual procedural manifestation",
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 382,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4031,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "all seven deterministic phases support 1–4 appendages and preserve the same absolute pose after arbitrary scrubbing",
+        "file": "g3a1-refinement.spec.ts",
+        "line": 84,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 12002,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "lumbar implantation is captured at growth, active and retraction for every count in posterior, lateral and oblique views",
+        "file": "g3a1-refinement.spec.ts",
+        "line": 126,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 20991,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "growth and retraction sequences, phase boundaries and timeline revisits keep a stable camera and preallocated resources",
+        "file": "g3a1-refinement.spec.ts",
+        "line": 154,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 10117,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "the existing kakuhou presentation is suppressed only during manifestation and restored for proxy and both GLB fixtures",
+        "file": "g3a1-refinement.spec.ts",
+        "line": 193,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5065,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "selection, layers and preexisting isolation stay functional while the original observer presentation is restored",
+        "file": "g3a1-refinement.spec.ts",
+        "line": 230,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4280,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mobile 390×844 keeps a stable usable view and captures real growth playback",
+        "file": "g3a1-refinement.spec.ts",
+        "line": 263,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 14895,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mobile 430×932 keeps a stable usable view and captures real growth playback",
+        "file": "g3a1-refinement.spec.ts",
+        "line": 263,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 15107,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "every explicit scrub, including sub-threshold steps, gives a repeatable tracking camera for three seeds",
+        "file": "g4a1-refinement.spec.ts",
+        "line": 75,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 20487,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "selection, visual highlight and camera modes preserve the absolute transport and real visibility diagnostics",
+        "file": "g4a1-refinement.spec.ts",
+        "line": 99,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 7729,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "Flow, Tracking and Free transitions retain identity and release the current camera without an entrance reset",
+        "file": "g4a1-refinement.spec.ts",
+        "line": 141,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5061,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "reduced motion freezes the selected presentation while manual steps and keyboard remain available",
+        "file": "g4a1-refinement.spec.ts",
+        "line": 161,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3969,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mobile390 compacts the title, reserves an inspection area and retains touch/accessibility",
+        "file": "g4a1-refinement.spec.ts",
+        "line": 175,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5402,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mobile430 compacts the title, reserves an inspection area and retains touch/accessibility",
+        "file": "g4a1-refinement.spec.ts",
+        "line": 175,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 6071,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "catalog loading is real and delays anatomy UI until data arrives",
+        "file": "observatory.spec.ts",
+        "line": 50,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2016,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "3D click raycasts an actual scene structure and synchronizes the inspector",
+        "file": "observatory.spec.ts",
+        "line": 67,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2778,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "independent scene layers can be toggled and isolation restores the prior combination",
+        "file": "observatory.spec.ts",
+        "line": 87,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3355,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mouse orbit and wheel zoom change the real camera",
+        "file": "observatory.spec.ts",
+        "line": 115,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2406,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "camera focus changes its actual pose and reset restores an overview",
+        "file": "observatory.spec.ts",
+        "line": 134,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2355,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "opacity and scan controls affect the renderer; pausing and scrub are stable",
+        "file": "observatory.spec.ts",
+        "line": 146,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3742,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "micro and future comparison preserve context and canon filter never hides the reconstruction disclosure",
+        "file": "observatory.spec.ts",
+        "line": 173,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5363,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "keyboard alternatives work, range keys stay local and reduced motion pauses scan",
+        "file": "observatory.spec.ts",
+        "line": 210,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2587,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "failure ?webgl=off preserves content and selection without WebGL",
+        "file": "observatory.spec.ts",
+        "line": 246,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2404,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "failure ?asset=missing preserves content and selection without WebGL",
+        "file": "observatory.spec.ts",
+        "line": 246,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 1999,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "a lost real WebGL context opens an accessible fallback",
+        "file": "observatory.spec.ts",
+        "line": 259,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2240,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "catalog errors have a visible recovery action",
+        "file": "observatory.spec.ts",
+        "line": 273,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 1817,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "desktop and silhouette gate captures include the real rendered scene",
+        "file": "observatory.spec.ts",
+        "line": 282,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4807,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "touch-sized mobile remains usable without hover or horizontal overflow",
+        "file": "observatory.spec.ts",
+        "line": 305,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2569,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "cold vitrine renders real media without loading the atlas runtime",
+        "file": "ui-r1.spec.ts",
+        "line": 55,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2145,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "study links navigate to the actual paused demonstration and browser Back returns to studies",
+        "file": "ui-r1.spec.ts",
+        "line": 95,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2242,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "credits deep links focus the section without waiting for the bibliography",
+        "file": "ui-r1.spec.ts",
+        "line": 114,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 1828,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "legacy route preserves diagnostics and keeps unreleased modes honest",
+        "file": "ui-r1.spec.ts",
+        "line": 150,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2198,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "leaving Rinkaku for Fontes suspends the same canvas and restores the exact inspected state",
+        "file": "ui-r1.spec.ts",
+        "line": 177,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4164,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "editorial navigation pauses a playing Micro session without changing identity, pose or renderer",
+        "file": "ui-r1.spec.ts",
+        "line": 221,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3543,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "Back during the initial vascular transition cancels the pending entry",
+        "file": "ui-r1.spec.ts",
+        "line": 260,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2159,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mobile vitrine puts the title and CTA before the real media without horizontal overflow",
+        "file": "ui-r1.spec.ts",
+        "line": 278,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 765,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "Body stage dominates desktop and panels preserve the real canvas, camera and GLB lease",
+        "file": "ui-r2.spec.ts",
+        "line": 17,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5367,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "scan rests without a dock and closing the tool pauses without resetting the sample",
+        "file": "ui-r2.spec.ts",
+        "line": 66,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2353,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "Body tools are a modal sheet on 390px without resizing the stage",
+        "file": "ui-r2.spec.ts",
+        "line": 86,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2882,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "Body tools are a modal sheet on 430px without resizing the stage",
+        "file": "ui-r2.spec.ts",
+        "line": 86,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3090,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "Rinkaku tools preserve the canvas, GLB lease and exact paused pose",
+        "file": "ui-r3.spec.ts",
+        "line": 27,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3697,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "Micro panels preserve identity, tracking camera and transport resources",
+        "file": "ui-r3.spec.ts",
+        "line": 84,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2972,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "both studies use the desktop stage and retain contextual timelines",
+        "file": "ui-r3.spec.ts",
+        "line": 126,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3576,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "studies on 390px keep modal focus and the exact selected pose",
+        "file": "ui-r3.spec.ts",
+        "line": 151,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4646,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "studies on 430px keep modal focus and the exact selected pose",
+        "file": "ui-r3.spec.ts",
+        "line": 151,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4880,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "body inspector tabs support arrows, Home, End and a single tab stop",
+        "file": "ui-r4.spec.ts",
+        "line": 50,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2344,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "vascular inspector tabs support arrows, Home, End and a single tab stop",
+        "file": "ui-r4.spec.ts",
+        "line": 50,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2013,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "scene shortcuts can be disabled while native controls and contextual Escape remain available",
+        "file": "ui-r4.spec.ts",
+        "line": 80,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4283,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "390px sheets contain scrolling and keyboard focus while keeping each scene intact",
+        "file": "ui-r4.spec.ts",
+        "line": 108,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 14077,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "430px sheets contain scrolling and keyboard focus while keeping each scene intact",
+        "file": "ui-r4.spec.ts",
+        "line": 108,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 10917,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mobile menu dismissal takes priority over scene reset and closes on an outside pointer",
+        "file": "ui-r4.spec.ts",
+        "line": 190,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2496,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "reflow, landscape and forced colors retain reachable controls",
+        "file": "ui-r4.spec.ts",
+        "line": 208,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 19324,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "desktop captures retain the approved anatomical and temporal states",
+        "file": "ui-r4.spec.ts",
+        "line": 232,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 7222,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "skip navigation focuses real content on mobile and during catalog failure",
+        "file": "ui-r4.spec.ts",
+        "line": 258,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2424,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "ten Body→Micro→Body transitions restore the manual camera, selection, layers and paused Rinkaku pose",
+        "file": "vascular.spec.ts",
+        "line": 73,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 14776,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "absolute scrubbing, pause, speed, reset and population changes retain deterministic instanced transport",
+        "file": "vascular.spec.ts",
+        "line": 116,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 7006,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "Micro preserves the rigged GLB lease, sampled socket, isolation and opacity without exposing the hidden asset bench",
+        "file": "vascular.spec.ts",
+        "line": 143,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 4312,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "real RC and RBC picking reaches the stable inspector identity and evidence remains classified",
+        "file": "vascular.spec.ts",
+        "line": 166,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5750,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "tracking keeps one identity through real playback, while profile removal is explicit and keyboard exits in two steps",
+        "file": "vascular.spec.ts",
+        "line": 193,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 48742,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "releasing tracking by button, missing profile or first Escape retains the actual camera pose",
+        "file": "vascular.spec.ts",
+        "line": 240,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 7816,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "enabling reduced motion inside Micro overrides the saved Body orbit inertia on return",
+        "file": "vascular.spec.ts",
+        "line": 265,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 3947,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "reduced motion keeps manual transport and camera/selection controls available without continuous playback",
+        "file": "vascular.spec.ts",
+        "line": 275,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5729,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "free observation accepts real orbit and keyboard pan, and camera reset preserves the absolute transport pose",
+        "file": "vascular.spec.ts",
+        "line": 292,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5477,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "a real Micro WebGL context loss leaves textual evidence and the Body bookmark available",
+        "file": "vascular.spec.ts",
+        "line": 307,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 6149,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "Micro without WebGL exposes accessible static evidence and a truthful return path",
+        "file": "vascular.spec.ts",
+        "line": 328,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 2598,
+            "retry": 0
+          }
+        ]
+      },
+      {
+        "spec": "mobile Micro has usable touch controls, no overflow and readable selection/evidence",
+        "file": "vascular.spec.ts",
+        "line": 341,
+        "status": "expected",
+        "expectedStatus": "passed",
+        "attempts": [
+          {
+            "status": "passed",
+            "duration": 5867,
+            "retry": 0
+          }
+        ]
+      }
+    ],
+    "localReport": "artifacts/local/ui-r4-integration/e2e-final.json",
+    "reportSha256": "693b7d285bef4b433a044ef272fe89dea148dab1b1325bd950102ca90cd619a1",
+    "localLog": "artifacts/local/ui-r4-integration/e2e-final.log",
+    "logSha256": "52c1abd00841ac67117713d31290edaf95aaf3afd173f643b08e0b7598e443de"
+  },
+  "stageLayout": [
+    {
+      "mode": "body",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bounds": {
+        "x": 28.796875,
+        "y": 134,
+        "width": 1382.40625,
+        "height": 675
+      }
+    },
+    {
+      "mode": "rinkaku",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bounds": {
+        "x": 28.796875,
+        "y": 122,
+        "width": 1382.40625,
+        "height": 632
+      }
+    },
+    {
+      "mode": "vascular",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bounds": {
+        "x": 28.796875,
+        "y": 122,
+        "width": 1382.40625,
+        "height": 632
+      }
+    }
+  ],
+  "captures": [
+    {
+      "route": "/",
+      "state": "home",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 1387
+      },
+      "sha256": "5bd833ddae26d930156565249fbd01f5720a53481460f9a4c47160e195b685b7",
+      "file": "artifacts/gates/UI-R4-review-home-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/estudos",
+      "state": "estudos",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": true,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "sha256": "f120a4ed07f6651d36074240fd8512db920e22724f11a3f960f1cc874d50a79a",
+      "file": "artifacts/gates/UI-R4-review-estudos-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/fontes",
+      "state": "fontes",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 3577
+      },
+      "sha256": "c365131e86a42cdfd5560e4030584a6e5d79050185823e2fce2ee6312b8cf429",
+      "file": "artifacts/gates/UI-R4-review-fontes-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/atlas/comparar",
+      "state": "comparar",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "sha256": "e42aac2a071107ea4cdd3aa50025e274a5048468231f0ea9fb1969b8fcefa7d3",
+      "file": "artifacts/gates/UI-R4-review-comparar-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "state": "celular",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "sha256": "891368cb947dad2f2db23a0afc023175c93a63318f9d07b3aec037214b4d6df6",
+      "file": "artifacts/gates/UI-R4-review-celular-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/atlas",
+      "state": "estruturas",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "sha256": "f83c3e6e1c07a764149e61f71399b86e43102df285582ddd11fb64b667a09028",
+      "file": "artifacts/gates/UI-R4-review-estruturas-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/atlas",
+      "state": "camadas",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "sha256": "14aefcfbbe49dff6f9367cc59088daf46bebb98833fa41360b65bcc1de20374f",
+      "file": "artifacts/gates/UI-R4-review-camadas-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/atlas",
+      "state": "varredura",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "sha256": "2a77333d94e74f0554e1b01e02f12115134fb44ebbedc7f7874aa1297d0bed79",
+      "file": "artifacts/gates/UI-R4-review-varredura-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/atlas/vascular",
+      "state": "fluxo-controles",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "sha256": "453e5aa0c9ad2bd75066666d682a54a0c83faa2e4dc70dfe3357a180367fe9c7",
+      "file": "artifacts/gates/UI-R4-review-fluxo-controles-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/atlas/rinkaku",
+      "state": "rinkaku-simulacao",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 900
+      },
+      "sha256": "0eaa752cc2b3e36a4b3e5622aa67e67244ccf32f2a8fa390bc88abf7031b67c6",
+      "file": "artifacts/gates/UI-R4-review-rinkaku-simulacao-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "route": "/",
+      "state": "home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 1654
+      },
+      "sha256": "d2b42cd2dfe4a98b8a0a9cbea98a630555aac1279024510dd87f0c4cd48813d7",
+      "file": "artifacts/gates/UI-R4-review-home-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "route": "/",
+      "state": "menu",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 1654
+      },
+      "sha256": "ef92b203ed1e34f36d343250e2e68c142a495daae6c851121f9a54b3360af347",
+      "file": "artifacts/gates/UI-R4-review-menu-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "route": "/estudos",
+      "state": "estudos",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": true,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 875
+      },
+      "sha256": "8fb19dafa14d5ee7b87969e2056a570d8edf3d4b3974d6fcca5875e77181f09f",
+      "file": "artifacts/gates/UI-R4-review-estudos-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 875
+      }
+    },
+    {
+      "route": "/fontes",
+      "state": "fontes",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 4777
+      },
+      "sha256": "49c9bff9e2805bd08abc2e0df97214cee09c726bd95c1bf9efcc30fa8f8b1ac1",
+      "file": "artifacts/gates/UI-R4-review-fontes-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "route": "/atlas/comparar",
+      "state": "comparar",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 1546
+      },
+      "sha256": "6b1bada5b0388200c9c89177c3a53346a182d12a5bb25d9700c19f70f78654d3",
+      "file": "artifacts/gates/UI-R4-review-comparar-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "state": "celular",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 844
+      },
+      "sha256": "e51ec3fc6339ae29a5ee344511f2c9a94a10e12af33f88c300b235be3494b8a4",
+      "file": "artifacts/gates/UI-R4-review-celular-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "route": "/atlas",
+      "state": "estruturas",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 844
+      },
+      "sha256": "a2a283ed8b1a282c2fe7e4287cc6078add759ab70d86efbb57fda457647a60a1",
+      "file": "artifacts/gates/UI-R4-review-estruturas-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "route": "/atlas",
+      "state": "camadas",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 844
+      },
+      "sha256": "efa3ecef07c8742610417d6c85444eedc1c2b129f66ed50226cc4ccd68fa701b",
+      "file": "artifacts/gates/UI-R4-review-camadas-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "route": "/atlas",
+      "state": "varredura",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 844
+      },
+      "sha256": "994ef2516ca3994ab513ffee3c0f63d2bd907c95e01ed92f2e369ea71ff976f4",
+      "file": "artifacts/gates/UI-R4-review-varredura-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "route": "/atlas/vascular",
+      "state": "fluxo-controles",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 951
+      },
+      "sha256": "7f50a22c249b39e70a868b9b667f6571cbcfa75312ba3ef85583716d7573e655",
+      "file": "artifacts/gates/UI-R4-review-fluxo-controles-390.png",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "route": "/",
+      "state": "home",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 430,
+        "height": 932,
+        "scrollWidth": 430,
+        "scrollHeight": 1684
+      },
+      "sha256": "f699448f0db150c80b68d797b8eb4526f150fae4ec4411fd798d5c56e827604a",
+      "file": "artifacts/gates/UI-R4-review-home-430.png",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "route": "/",
+      "state": "menu",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 430,
+        "height": 932,
+        "scrollWidth": 430,
+        "scrollHeight": 1684
+      },
+      "sha256": "829fc6693d376a8e0030308e7dd12e94fa5d9115508f5ec14d0b1144a3fd85f2",
+      "file": "artifacts/gates/UI-R4-review-menu-430.png",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "route": "/estudos",
+      "state": "estudos",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": true,
+      "layout": {
+        "width": 430,
+        "height": 932,
+        "scrollWidth": 430,
+        "scrollHeight": 932
+      },
+      "sha256": "3ab67882303bbed3e1ebab322b1b8c8b6644db7094714035d32c02ca6ef05702",
+      "file": "artifacts/gates/UI-R4-review-estudos-430.png",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "route": "/fontes",
+      "state": "fontes",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 430,
+        "height": 932,
+        "scrollWidth": 430,
+        "scrollHeight": 4424
+      },
+      "sha256": "d19fc063e276b68547cff8832dffaec47064d25ce216b8f81507a1546d44dce1",
+      "file": "artifacts/gates/UI-R4-review-fontes-430.png",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "route": "/atlas/comparar",
+      "state": "comparar",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 430,
+        "height": 932,
+        "scrollWidth": 430,
+        "scrollHeight": 1546
+      },
+      "sha256": "0adf6c98a117be66cd8e2e8eeb23587542855661aae3850a8cdc71397f80be19",
+      "file": "artifacts/gates/UI-R4-review-comparar-430.png",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "state": "celular",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 430,
+        "height": 932,
+        "scrollWidth": 430,
+        "scrollHeight": 932
+      },
+      "sha256": "6db3315ad7263cf5431d103ac4eb90da1a1769880a36097df6a38d53d38ede0d",
+      "file": "artifacts/gates/UI-R4-review-celular-430.png",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "route": "/fontes",
+      "state": "bibliografia",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 3577
+      },
+      "sha256": "12ec6f8c3941efc4e4262fc74ec371409cf7f31fdd2ae9839540085167c136e5",
+      "file": "artifacts/gates/UI-R4-review-bibliografia-desktop.png",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "viewport": "desktop",
+      "file": "artifacts/gates/UI-R4-review-body-desktop.png",
+      "sha256": "df4fbee657285015773b29920df72a750db3e6ef6c20eae3692731efba8454cd",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "viewport": "desktop",
+      "file": "artifacts/gates/UI-R4-review-rinkaku-desktop.png",
+      "sha256": "c438615eb6e6861f9b0c0c0a94871087acb6447138b7c77c080f9f5cfab1564a",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "viewport": "desktop",
+      "file": "artifacts/gates/UI-R4-review-vascular-desktop.png",
+      "sha256": "27efcb8f2daafa489544b052bb1b9709626d08f9f3b4aa0d574f6c1a3ee71c71",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "viewport": "390",
+      "file": "artifacts/gates/UI-R4-review-body-390.png",
+      "sha256": "175555a4622b2bf10c28e241b842b64bacdc62d42e12b864dd0939ffee29074f",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "viewport": "390",
+      "file": "artifacts/gates/UI-R4-review-rinkaku-390.png",
+      "sha256": "6c80501be5e931f20ccbeff1d7e3ac831336e1c8ee910d80f3434cd4035984b7",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "viewport": "390",
+      "file": "artifacts/gates/UI-R4-review-vascular-390.png",
+      "sha256": "3d83e136b67ec7f90245da777710e9edb9b7114bb12ce526bdfd182a39345960",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "viewport": "430",
+      "file": "artifacts/gates/UI-R4-review-body-430.png",
+      "sha256": "8dbf6277be14ca70c593f2ddd48881b8f9388f7df66ef38621060cb0bef00c80",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "viewport": "430",
+      "file": "artifacts/gates/UI-R4-review-rinkaku-430.png",
+      "sha256": "321e4a0ab9c90902ebb24f766489ba9c85b9e95811a479d16807fe1f596588c5",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "viewport": "430",
+      "file": "artifacts/gates/UI-R4-review-vascular-430.png",
+      "sha256": "326c27e11bbcdee25dbed3af84f24366c07313dca109826a4d9d5f03377b4201",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "source": "ui-r2.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-body-ficha-desktop.png",
+      "sha256": "3fb2637546c449fb2506401840da92f77b8350f972e04bd915074d3e404f5bff",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-body-ficha-390.png",
+      "sha256": "635f39f6b9ff1aaa41117e8bc5f254063c45f6f0b47fd7d0ea2e5f1271a8b43e",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-body-ficha-430.png",
+      "sha256": "b49d63307040726e9b7db2b2cd3c314f0b88b5e708e8e20e56a1cc1410fdf724",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-rinkaku-simulacao-390.png",
+      "sha256": "31afe6ce963aea8ed88b0cd20eab57658aacec056b144ffa3d642eafcccf2caf",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-rinkaku-simulacao-430.png",
+      "sha256": "4ce98e90eb65af9cb98c04ab3dc8d93f97038eace6a8649609a1cffcddc23ece",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "source": "ui-r3.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-vascular-ficha-desktop.png",
+      "sha256": "f0741bfef727fc30ed736fa7613d2b6fa174bd2a771388808eefae88eeb32db0",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-vascular-ficha-390.png",
+      "sha256": "2a23daf906cdaf539d10add7e9d1621f8cf953c75f620c09153a609ecd071445",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-vascular-ficha-430.png",
+      "sha256": "6db0123fe660692c06da2c35ef115382dd28f48516fe7fd798887ad371544b5b",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-help-desktop.png",
+      "sha256": "9415bf00a4607f1616d0004d845f8e3b7c8a4e0a1f77811c772dc46c924fd753",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-help-390.png",
+      "sha256": "8623d08e26e11fdb404583d86b8e8b661bb7b8bfe8b16bc9b2f523f2d4235241",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "source": "ui-r4.spec.ts",
+      "file": "artifacts/gates/UI-R4-review-help-430.png",
+      "sha256": "0f6dc12832a23992976beb41987ddab72ee4b507fdb31ad08f396ade9c52de28",
+      "dimensions": {
+        "width": 430,
+        "height": 932
+      }
+    }
+  ]
+}
