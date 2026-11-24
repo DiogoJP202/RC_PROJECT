@@ -1,0 +1,766 @@
+{
+  "base": "0c0916b5605230360dd7456ad45ba1b8bf7940ec",
+  "buildEntries": [
+    {
+      "file": "dist/assets/AtlasWorkspace-Bm9hUAOt.css",
+      "sha256": "6d9e82e64f3abe3f2498602b57739787780974e8e5b2385bbc6be44de5d45136"
+    },
+    {
+      "file": "dist/assets/AtlasWorkspace-DMHI-_ZZ.js",
+      "sha256": "35c6699fda4e4b0f4a4adcd8cb26ff87738daf4b1374ac08479b58dd855e44a6"
+    },
+    {
+      "file": "dist/assets/catalog-I3yOUMpt.js",
+      "sha256": "28a3ef328fc24eb39009556f3a19741fb58299c39f56bb8f6e65607ca590aed5"
+    },
+    {
+      "file": "dist/assets/GLTFLoader-lxYHl8Ax.js",
+      "sha256": "035e4801939b9c054cff7d3aba0f895e34e6e39d24f8c86caeca86a7ae82b495"
+    },
+    {
+      "file": "dist/assets/index-BcZqfMU2.css",
+      "sha256": "f8f8b3cef10aca0592ee6be961706b8ec745f0cd56efc9e0d02e889f7b3aaafe"
+    },
+    {
+      "file": "dist/assets/index-CeGbn8Ag.js",
+      "sha256": "db80064527777e276d1d7e8054e9a6447f0c03e215890e16aec84798dc7b910b"
+    },
+    {
+      "file": "dist/assets/jsx-runtime-Wy9s6hX0.js",
+      "sha256": "bcb9f6586cd973c2fb2faa4a2d38d4b06660e2fe2806aaa0de1c39306ff0f69a"
+    },
+    {
+      "file": "dist/assets/observatory-BSd6F253.js",
+      "sha256": "9bb202912a82b58737fb45eb89266e2fb0139c9823db1ac2446572660f0e3efc"
+    },
+    {
+      "file": "dist/assets/ObservatoryScene-D4UUnGLT.js",
+      "sha256": "098b9e27b6f3fff3868210093df78c8ffe7730d45133cd6fd5f108056fa07acf"
+    },
+    {
+      "file": "dist/assets/OrbitControls-Oy8mqjAP.js",
+      "sha256": "0f2a93319950deccf994dfad5c44a8cbc47e7a0b771e4f2d848bbef164fdc665"
+    },
+    {
+      "file": "dist/assets/rinkaku-CLQ9yvLZ.js",
+      "sha256": "b7223fbf46446dc849582142ac1edfd7312d4d1125b1207fcfa35582d51835e8"
+    },
+    {
+      "file": "dist/assets/RinkakuScene-zCJ9xpPO.js",
+      "sha256": "2223d7bd7dbed24146ed0205639f4c96f3b2097ae6edaeed3f6cbeeec088e4e1"
+    },
+    {
+      "file": "dist/assets/SourcesPage-Cav74MBs.js",
+      "sha256": "0b128e87fea2612dd5d768d02f3ae3678f6939c4cde911d67c6f17289872249d"
+    },
+    {
+      "file": "dist/assets/three.core-Dp-eO7LC.js",
+      "sha256": "10ce628f40c24012f66cb3aeb5fe1533a45dfc4e43d8a4eebfda5f554c9fb7cd"
+    },
+    {
+      "file": "dist/assets/vascularEvidence-C3SB6GZq.js",
+      "sha256": "453d530757df460e1fba713eaa9541a24ea2f1acbfb2114c322516a37b6a3e86"
+    },
+    {
+      "file": "dist/assets/VascularScene-faunVQmi.js",
+      "sha256": "19d6202717faf82c11f1fe647628e95befa5e34efe4c848e062d6ea1fbe9cccd"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-BOLh92ji.js",
+      "sha256": "4f48950034d90e42a594e28593084358ab47cceaaa1c11e4ce5f3541395c748f"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-Dk9kFNXi.css",
+      "sha256": "282aef9b152c7abab2dbd224eaa8b424863b356d9f5f66fadbf58649ea7bd525"
+    },
+    {
+      "file": "dist/index.html",
+      "sha256": "cb46b05905ac7884a55eb3b00ca747d8a31d69a00b6ea98dd3da6f229d6d6e98"
+    }
+  ],
+  "checks": [
+    {
+      "check": "TypeScript",
+      "command": "npm.cmd run typecheck",
+      "logSha256": "08f6123eef1d115b5d3529e5c83bb74069b63f98411804d1a5357a71251c8be3",
+      "exitCode": 0
+    },
+    {
+      "check": "Lint",
+      "command": "npm.cmd run lint",
+      "logSha256": "c578567735d514a87774970638b81dcb36632df9231240b2b1b39d95db661acb",
+      "exitCode": 0
+    },
+    {
+      "check": "Unidades",
+      "command": "npm.cmd test -- --maxWorkers=2",
+      "logSha256": "e5fc1d74091ba6a852fb7f3ba0071ee9612fd8ca6a881ae0a4d586a9179f0f02",
+      "exitCode": 0
+    },
+    {
+      "check": "Python",
+      "command": "npm.cmd run test:catalog",
+      "logSha256": "94b9f67a614e2fc59d4c23faae4b31707004f3bb557ad0a839beb2961940ec4a",
+      "exitCode": 0
+    },
+    {
+      "check": "Catálogo",
+      "command": "npm.cmd run validate:catalog",
+      "logSha256": "7f67896751bc751fb1fe3c8c018393df7dac3e8e74bbbdd582983460e6c6f672",
+      "exitCode": 0
+    },
+    {
+      "check": "Build",
+      "command": "npm.cmd run build",
+      "logSha256": "e406e698516ab678516cc46d0ec9559b1c89e9958fe8d4f59fbb8cd3811935bc",
+      "exitCode": 0
+    }
+  ],
+  "playwright": {
+    "stats": {
+      "startTime": "2026-11-24T19:25:11.147Z",
+      "duration": 820937.9,
+      "expected": 88,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "originalReportSha256": "2d80f31f00a7b23b26e2f92e6f1ed5ac33e1af366f23e576c2b443caeb4582cc",
+    "results": [
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 65,
+        "title": "disk GLB loads asynchronously and replaces only its three stable anatomical bindings",
+        "status": "passed",
+        "durationMs": 2732
+      },
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 114,
+        "title": "a loaded mesh receives real pointer hits and keeps anatomical evidence identity",
+        "status": "passed",
+        "durationMs": 2849
+      },
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 133,
+        "title": "asset replacement preserves selection, layers, isolation, opacity and camera context",
+        "status": "passed",
+        "durationMs": 4291
+      },
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 167,
+        "title": "HTTP failure automatically shows available proxies and retry loads the real asset",
+        "status": "passed",
+        "durationMs": 2621
+      },
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 192,
+        "title": "a slow superseded asset cannot overwrite the later model or anatomical selection",
+        "status": "passed",
+        "durationMs": 2792
+      },
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 213,
+        "title": "repeated GLB swaps release leases and dispose unused templates without retained cache entries",
+        "status": "passed",
+        "durationMs": 3061
+      },
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 234,
+        "title": "rigged GLB exposes skin and clip, moves a bone-attached socket and respects reduced motion",
+        "status": "passed",
+        "durationMs": 2936
+      },
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 267,
+        "title": "G2A desktop capture preserves the observatory and labels the synthetic integration",
+        "status": "passed",
+        "durationMs": 5492
+      },
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 289,
+        "title": "mobile exploration remains touch accessible with GLB and produces a real capture",
+        "status": "passed",
+        "durationMs": 3554
+      },
+      {
+        "file": "g2a-assets.spec.ts",
+        "line": 316,
+        "title": "the mobile drawer supports touch, keyboard, native dismissal and explicit evidence reopening",
+        "status": "passed",
+        "durationMs": 3336
+      },
+      {
+        "file": "g3a-checkpoint.spec.ts",
+        "line": 38,
+        "title": "terminal retraction settles before the visibility cutoff and leaves no rendered residue for 1–4 appendages",
+        "status": "passed",
+        "durationMs": 24918
+      },
+      {
+        "file": "g3a-checkpoint.spec.ts",
+        "line": 79,
+        "title": "real terminal playback stops at one, keeps replay resources stable and releases them on exit",
+        "status": "passed",
+        "durationMs": 11597
+      },
+      {
+        "file": "g3a-checkpoint.spec.ts",
+        "line": 107,
+        "title": "transparent body picking ignores pooled appendages below an invisible parent at the endpoint",
+        "status": "passed",
+        "durationMs": 5668
+      },
+      {
+        "file": "g3a-checkpoint.spec.ts",
+        "line": 124,
+        "title": "terminal surfaces also have no residual pixel footprint through the transparent body",
+        "status": "passed",
+        "durationMs": 14805
+      },
+      {
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 78,
+        "title": "absolute manual timeline reproduces geometry, keeps resources and records the five phase captures",
+        "status": "passed",
+        "durationMs": 6165
+      },
+      {
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 131,
+        "title": "play, pause, reverse and rapid scrubbing use one timeline while selection and the scan remain stable",
+        "status": "passed",
+        "durationMs": 7635
+      },
+      {
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 177,
+        "title": "ten full manual cycles keep geometry identities and warmed renderer resources bounded",
+        "status": "passed",
+        "durationMs": 27566
+      },
+      {
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 225,
+        "title": "ten complete automatic 21-second playback cycles retain stable resources without context loss",
+        "status": "passed",
+        "durationMs": 220922
+      },
+      {
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 268,
+        "title": "counts, particles and quality replace visual settings without detaching the root, and GLB sockets stay authoritative",
+        "status": "passed",
+        "durationMs": 5669
+      },
+      {
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 305,
+        "title": "posterior, lateral and lumbar focus are explicit and reduced motion keeps manual keyboard inspection",
+        "status": "passed",
+        "durationMs": 3756
+      },
+      {
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 336,
+        "title": "without WebGL the manifestation offers truthful static timeline controls and the original inspection remains available",
+        "status": "passed",
+        "durationMs": 1574
+      },
+      {
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 358,
+        "title": "loss of the real WebGL context pauses an active manifestation and keeps manual inspection available",
+        "status": "passed",
+        "durationMs": 4862
+      },
+      {
+        "file": "g3a-rinkaku.spec.ts",
+        "line": 382,
+        "title": "mobile touch controls stay usable and capture the actual procedural manifestation",
+        "status": "passed",
+        "durationMs": 3850
+      },
+      {
+        "file": "g3a1-refinement.spec.ts",
+        "line": 84,
+        "title": "all seven deterministic phases support 1–4 appendages and preserve the same absolute pose after arbitrary scrubbing",
+        "status": "passed",
+        "durationMs": 11803
+      },
+      {
+        "file": "g3a1-refinement.spec.ts",
+        "line": 126,
+        "title": "lumbar implantation is captured at growth, active and retraction for every count in posterior, lateral and oblique views",
+        "status": "passed",
+        "durationMs": 21704
+      },
+      {
+        "file": "g3a1-refinement.spec.ts",
+        "line": 154,
+        "title": "growth and retraction sequences, phase boundaries and timeline revisits keep a stable camera and preallocated resources",
+        "status": "passed",
+        "durationMs": 9495
+      },
+      {
+        "file": "g3a1-refinement.spec.ts",
+        "line": 193,
+        "title": "the existing kakuhou presentation is suppressed only during manifestation and restored for proxy and both GLB fixtures",
+        "status": "passed",
+        "durationMs": 4195
+      },
+      {
+        "file": "g3a1-refinement.spec.ts",
+        "line": 230,
+        "title": "selection, layers and preexisting isolation stay functional while the original observer presentation is restored",
+        "status": "passed",
+        "durationMs": 3916
+      },
+      {
+        "file": "g3a1-refinement.spec.ts",
+        "line": 263,
+        "title": "mobile 390×844 keeps a stable usable view and captures real growth playback",
+        "status": "passed",
+        "durationMs": 14154
+      },
+      {
+        "file": "g3a1-refinement.spec.ts",
+        "line": 263,
+        "title": "mobile 430×932 keeps a stable usable view and captures real growth playback",
+        "status": "passed",
+        "durationMs": 13886
+      },
+      {
+        "file": "g4a1-refinement.spec.ts",
+        "line": 75,
+        "title": "every explicit scrub, including sub-threshold steps, gives a repeatable tracking camera for three seeds",
+        "status": "passed",
+        "durationMs": 16531
+      },
+      {
+        "file": "g4a1-refinement.spec.ts",
+        "line": 99,
+        "title": "selection, visual highlight and camera modes preserve the absolute transport and real visibility diagnostics",
+        "status": "passed",
+        "durationMs": 8120
+      },
+      {
+        "file": "g4a1-refinement.spec.ts",
+        "line": 141,
+        "title": "Flow, Tracking and Free transitions retain identity and release the current camera without an entrance reset",
+        "status": "passed",
+        "durationMs": 5251
+      },
+      {
+        "file": "g4a1-refinement.spec.ts",
+        "line": 161,
+        "title": "reduced motion freezes the selected presentation while manual steps and keyboard remain available",
+        "status": "passed",
+        "durationMs": 4201
+      },
+      {
+        "file": "g4a1-refinement.spec.ts",
+        "line": 175,
+        "title": "mobile390 compacts the title, reserves an inspection area and retains touch/accessibility",
+        "status": "passed",
+        "durationMs": 5810
+      },
+      {
+        "file": "g4a1-refinement.spec.ts",
+        "line": 175,
+        "title": "mobile430 compacts the title, reserves an inspection area and retains touch/accessibility",
+        "status": "passed",
+        "durationMs": 5270
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 50,
+        "title": "catalog loading is real and delays anatomy UI until data arrives",
+        "status": "passed",
+        "durationMs": 1753
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 67,
+        "title": "3D click raycasts an actual scene structure and synchronizes the inspector",
+        "status": "passed",
+        "durationMs": 2644
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 87,
+        "title": "independent scene layers can be toggled and isolation restores the prior combination",
+        "status": "passed",
+        "durationMs": 3568
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 115,
+        "title": "mouse orbit and wheel zoom change the real camera",
+        "status": "passed",
+        "durationMs": 2453
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 134,
+        "title": "camera focus changes its actual pose and reset restores an overview",
+        "status": "passed",
+        "durationMs": 2369
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 146,
+        "title": "opacity and scan controls affect the renderer; pausing and scrub are stable",
+        "status": "passed",
+        "durationMs": 3742
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 173,
+        "title": "micro and future comparison preserve context and canon filter never hides the reconstruction disclosure",
+        "status": "passed",
+        "durationMs": 5328
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 210,
+        "title": "keyboard alternatives work, range keys stay local and reduced motion pauses scan",
+        "status": "passed",
+        "durationMs": 2839
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 246,
+        "title": "failure ?webgl=off preserves content and selection without WebGL",
+        "status": "passed",
+        "durationMs": 3382
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 246,
+        "title": "failure ?asset=missing preserves content and selection without WebGL",
+        "status": "passed",
+        "durationMs": 2112
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 259,
+        "title": "a lost real WebGL context opens an accessible fallback",
+        "status": "passed",
+        "durationMs": 2571
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 273,
+        "title": "catalog errors have a visible recovery action",
+        "status": "passed",
+        "durationMs": 1780
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 282,
+        "title": "desktop and silhouette gate captures include the real rendered scene",
+        "status": "passed",
+        "durationMs": 5169
+      },
+      {
+        "file": "observatory.spec.ts",
+        "line": 305,
+        "title": "touch-sized mobile remains usable without hover or horizontal overflow",
+        "status": "passed",
+        "durationMs": 2834
+      },
+      {
+        "file": "ui-r1.spec.ts",
+        "line": 55,
+        "title": "cold vitrine renders real media without loading the atlas runtime",
+        "status": "passed",
+        "durationMs": 2212
+      },
+      {
+        "file": "ui-r1.spec.ts",
+        "line": 97,
+        "title": "study links navigate to the actual paused demonstration and browser Back returns to studies",
+        "status": "passed",
+        "durationMs": 2248
+      },
+      {
+        "file": "ui-r1.spec.ts",
+        "line": 116,
+        "title": "credits deep links focus the section without waiting for the bibliography",
+        "status": "passed",
+        "durationMs": 1567
+      },
+      {
+        "file": "ui-r1.spec.ts",
+        "line": 152,
+        "title": "legacy route preserves diagnostics and keeps unreleased modes honest",
+        "status": "passed",
+        "durationMs": 1535
+      },
+      {
+        "file": "ui-r1.spec.ts",
+        "line": 180,
+        "title": "leaving Rinkaku for Fontes suspends the same canvas and restores the exact inspected state",
+        "status": "passed",
+        "durationMs": 3698
+      },
+      {
+        "file": "ui-r1.spec.ts",
+        "line": 224,
+        "title": "editorial navigation pauses a playing Micro session without changing identity, pose or renderer",
+        "status": "passed",
+        "durationMs": 3702
+      },
+      {
+        "file": "ui-r1.spec.ts",
+        "line": 263,
+        "title": "Back during the initial vascular transition cancels the pending entry",
+        "status": "passed",
+        "durationMs": 2080
+      },
+      {
+        "file": "ui-r1.spec.ts",
+        "line": 281,
+        "title": "mobile vitrine puts the title and CTA before the real media without horizontal overflow",
+        "status": "passed",
+        "durationMs": 688
+      },
+      {
+        "file": "ui-r2.spec.ts",
+        "line": 17,
+        "title": "Body stage dominates desktop and panels preserve the real canvas, camera and GLB lease",
+        "status": "passed",
+        "durationMs": 5530
+      },
+      {
+        "file": "ui-r2.spec.ts",
+        "line": 66,
+        "title": "scan rests without a dock and closing the tool pauses without resetting the sample",
+        "status": "passed",
+        "durationMs": 2339
+      },
+      {
+        "file": "ui-r2.spec.ts",
+        "line": 86,
+        "title": "Body tools are a modal sheet on 390px without resizing the stage",
+        "status": "passed",
+        "durationMs": 2890
+      },
+      {
+        "file": "ui-r2.spec.ts",
+        "line": 86,
+        "title": "Body tools are a modal sheet on 430px without resizing the stage",
+        "status": "passed",
+        "durationMs": 3073
+      },
+      {
+        "file": "ui-r3.spec.ts",
+        "line": 27,
+        "title": "Rinkaku tools preserve the canvas, GLB lease and exact paused pose",
+        "status": "passed",
+        "durationMs": 3605
+      },
+      {
+        "file": "ui-r3.spec.ts",
+        "line": 84,
+        "title": "Micro panels preserve identity, tracking camera and transport resources",
+        "status": "passed",
+        "durationMs": 3198
+      },
+      {
+        "file": "ui-r3.spec.ts",
+        "line": 126,
+        "title": "both studies use the desktop stage and retain contextual timelines",
+        "status": "passed",
+        "durationMs": 4106
+      },
+      {
+        "file": "ui-r3.spec.ts",
+        "line": 151,
+        "title": "studies on 390px keep modal focus and the exact selected pose",
+        "status": "passed",
+        "durationMs": 5464
+      },
+      {
+        "file": "ui-r3.spec.ts",
+        "line": 151,
+        "title": "studies on 430px keep modal focus and the exact selected pose",
+        "status": "passed",
+        "durationMs": 5205
+      },
+      {
+        "file": "ui-r4.spec.ts",
+        "line": 50,
+        "title": "body inspector tabs support arrows, Home, End and a single tab stop",
+        "status": "passed",
+        "durationMs": 2454
+      },
+      {
+        "file": "ui-r4.spec.ts",
+        "line": 50,
+        "title": "vascular inspector tabs support arrows, Home, End and a single tab stop",
+        "status": "passed",
+        "durationMs": 2064
+      },
+      {
+        "file": "ui-r4.spec.ts",
+        "line": 80,
+        "title": "scene shortcuts can be disabled while native controls and contextual Escape remain available",
+        "status": "passed",
+        "durationMs": 4443
+      },
+      {
+        "file": "ui-r4.spec.ts",
+        "line": 108,
+        "title": "390px sheets contain scrolling and keyboard focus while keeping each scene intact",
+        "status": "passed",
+        "durationMs": 11446
+      },
+      {
+        "file": "ui-r4.spec.ts",
+        "line": 108,
+        "title": "430px sheets contain scrolling and keyboard focus while keeping each scene intact",
+        "status": "passed",
+        "durationMs": 12374
+      },
+      {
+        "file": "ui-r4.spec.ts",
+        "line": 190,
+        "title": "mobile menu dismissal takes priority over scene reset and closes on an outside pointer",
+        "status": "passed",
+        "durationMs": 2127
+      },
+      {
+        "file": "ui-r4.spec.ts",
+        "line": 208,
+        "title": "reflow, landscape and forced colors retain reachable controls",
+        "status": "passed",
+        "durationMs": 16223
+      },
+      {
+        "file": "ui-r4.spec.ts",
+        "line": 232,
+        "title": "desktop captures retain the approved anatomical and temporal states",
+        "status": "passed",
+        "durationMs": 5760
+      },
+      {
+        "file": "ui-r4.spec.ts",
+        "line": 258,
+        "title": "skip navigation focuses real content on mobile and during catalog failure",
+        "status": "passed",
+        "durationMs": 2296
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 73,
+        "title": "ten Body→Micro→Body transitions restore the manual camera, selection, layers and paused Rinkaku pose",
+        "status": "passed",
+        "durationMs": 13248
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 116,
+        "title": "absolute scrubbing, pause, speed, reset and population changes retain deterministic instanced transport",
+        "status": "passed",
+        "durationMs": 6415
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 143,
+        "title": "Micro preserves the rigged GLB lease, sampled socket, isolation and opacity without exposing the hidden asset bench",
+        "status": "passed",
+        "durationMs": 3600
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 166,
+        "title": "real RC and RBC picking reaches the stable inspector identity and evidence remains classified",
+        "status": "passed",
+        "durationMs": 5871
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 193,
+        "title": "tracking keeps one identity through real playback, while profile removal is explicit and keyboard exits in two steps",
+        "status": "passed",
+        "durationMs": 49119
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 240,
+        "title": "releasing tracking by button, missing profile or first Escape retains the actual camera pose",
+        "status": "passed",
+        "durationMs": 7593
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 265,
+        "title": "enabling reduced motion inside Micro overrides the saved Body orbit inertia on return",
+        "status": "passed",
+        "durationMs": 3821
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 275,
+        "title": "reduced motion keeps manual transport and camera/selection controls available without continuous playback",
+        "status": "passed",
+        "durationMs": 4191
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 292,
+        "title": "free observation accepts real orbit and keyboard pan, and camera reset preserves the absolute transport pose",
+        "status": "passed",
+        "durationMs": 3864
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 307,
+        "title": "a real Micro WebGL context loss leaves textual evidence and the Body bookmark available",
+        "status": "passed",
+        "durationMs": 4101
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 328,
+        "title": "Micro without WebGL exposes accessible static evidence and a truthful return path",
+        "status": "passed",
+        "durationMs": 1883
+      },
+      {
+        "file": "vascular.spec.ts",
+        "line": 341,
+        "title": "mobile Micro has usable touch controls, no overflow and readable selection/evidence",
+        "status": "passed",
+        "durationMs": 4937
+      }
+    ],
+    "firstRun": {
+      "stats": {
+        "startTime": "2026-11-24T19:01:11.226Z",
+        "duration": 830951.576,
+        "expected": 87,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "originalReportSha256": "026001d2c2fbee5e84d3bb68901e0a4f4ad63c73f3068bdc42facef1e39873ae"
+    }
+  },
+  "accessibility": {
+    "states": 54,
+    "violations": 0,
+    "incompleteNodes": {
+      "color-contrast": 68
+    }
+  }
+}

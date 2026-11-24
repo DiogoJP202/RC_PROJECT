@@ -57,7 +57,7 @@ const cameraDistance = (a: Camera, b: Camera) => distance(a.position, b.position
 
 async function open(page: Page, query = '') {
   await page.goto(`/atlas${query}`);
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await expect(page.locator('canvas')).toBeVisible();
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_SCENE__?: SceneApi }).__ATLAS_SCENE__));
 }
@@ -254,7 +254,7 @@ test('ten complete automatic 21-second playback cycles retain stable resources w
     expect(end.metrics?.textures).toBe(warmed.metrics?.textures);
     expect(end.selectedId).toBe(warmed.selectedId);
     expect(end.layers).toEqual(warmed.layers);
-    await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+    await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
     expect(errors).toEqual([]);
     const elapsedMs = Date.now() - startedAt;
     cycles.push({ cycle, elapsedMs, t: end.rinkaku.t, phase: end.rinkaku.snapshot.phase, adapter: end.rinkaku.adapter, metrics: end.metrics });

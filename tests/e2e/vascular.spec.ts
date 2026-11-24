@@ -30,12 +30,12 @@ const micro = (page: Page): Promise<MicroSnapshot> => page.evaluate(() => (windo
 const body = (page: Page): Promise<BodySnapshot> => page.evaluate(() => (window as unknown as { __ATLAS_SCENE__: { snapshot(): BodySnapshot } }).__ATLAS_SCENE__.snapshot());
 const distance = (a: number[], b: number[]) => Math.hypot(...a.map((value, i) => value - b[i]));
 async function open(page: Page) {
-  await page.goto('/atlas'); await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await page.goto('/atlas'); await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_SCENE__?: unknown }).__ATLAS_SCENE__));
 }
 async function enter(page: Page) {
   await page.getByTestId('micro-entry').click();
-  await expect(page.getByTestId('micro-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('micro-status')).toContainText('Cena 3D pronta');
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_MICRO__?: MicroApi }).__ATLAS_MICRO__?.snapshot().adapter));
 }
 async function scrub(page: Page, seconds: number) {
@@ -142,7 +142,7 @@ test('absolute scrubbing, pause, speed, reset and population changes retain dete
 
 test('Micro preserves the rigged GLB lease, sampled socket, isolation and opacity without exposing the hidden asset bench', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/atlas?assets=lab'); await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await page.goto('/atlas?assets=lab'); await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await page.getByTestId('asset-select').selectOption('fixture.rigged.v1');
   await expect(page.getByTestId('asset-status')).toContainText('GLB sintético integrado');
   await page.getByTestId('asset-animation-clip').selectOption({ index: 1 });
@@ -318,10 +318,10 @@ test('a real Micro WebGL context loss leaves textual evidence and the Body bookm
   await changeMicroSelect(page, 'micro-entity', 'rc:17:0'); await openMicroTool(page, 'inspect'); await page.getByTestId('micro-evidence').click();
   await expect(page.getByTestId('micro-inspector')).toContainText('HIPÓTESE VISUAL');
   await page.getByTestId('micro-retry').click();
-  await expect(page.getByTestId('micro-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('micro-status')).toHaveText('Cena 3D pronta');
   expect((await micro(page)).selectedId).toBe('rc:17:0');
   await page.getByTestId('micro-return').click();
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   expect((await body(page)).selectedId).toBe(before.selectedId); expect((await body(page)).layers).toEqual(before.layers);
 });
 

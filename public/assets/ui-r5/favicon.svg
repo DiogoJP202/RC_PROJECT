@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <title>Ghoul Atlas</title>
+  <rect width="16" height="16" rx="3" fill="#100D11"/>
+  <path d="M2 9q5-6 12-2M2 9q6 4 12-2" fill="none" stroke="#F0EBE4" stroke-width="1.25" stroke-linecap="round"/>
+  <circle cx="9" cy="8" r="2.25" fill="#E47784"/>
+  <circle cx="9.6" cy="7.55" r=".65" fill="#100D11"/>
+  <path d="M11 13h3v-2" fill="none" stroke="#B7AEB6"/>
+</svg>

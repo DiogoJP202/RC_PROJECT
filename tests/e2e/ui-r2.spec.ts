@@ -19,7 +19,7 @@ test('Body stage dominates desktop and panels preserve the real canvas, camera a
   const catalogRequests: string[] = [];
   page.on('request', (request) => { if (request.url().endsWith('/catalog.json')) catalogRequests.push(request.url()); });
   await page.goto('/atlas');
-  await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
   await expect(page.getByRole('heading', { name: /Espécime 001/ })).toBeVisible();
   await expect(page.getByTestId('body-panel')).toHaveCount(0);
   await expect(page.getByTestId('scan-toggle')).toHaveCount(0);
@@ -39,7 +39,7 @@ test('Body stage dominates desktop and panels preserve the real canvas, camera a
   await page.screenshot({ path: `${capture}/UI-R2-ficha-desktop.png` });
 
   await page.goto('/atlas?assets=lab');
-  await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
   await page.getByTestId('asset-select').selectOption('fixture.rigged.v1');
   await expect.poll(async () => (await snapshot(page)).assets.activeId).toBe('fixture.rigged.v1');
   await expect.poll(async () => (await snapshot(page)).camera.moving).toBe(false);
@@ -65,7 +65,7 @@ test('Body stage dominates desktop and panels preserve the real canvas, camera a
 
 test('scan rests without a dock and closing the tool pauses without resetting the sample', async ({ page }) => {
   await page.goto('/atlas');
-  await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
   const initial = await snapshot(page);
   expect(initial.paused).toBe(true);
   await expect(page.getByTestId('scan-toggle')).toHaveCount(0);
@@ -87,7 +87,7 @@ for (const viewport of [{ width: 390, height: 844 }, { width: 430, height: 932 }
     const page = await browser.newPage({ viewport, deviceScaleFactor: 1, isMobile: true, hasTouch: true, reducedMotion: 'reduce' });
     try {
       await page.goto('/atlas');
-      await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+      await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
       const stage = await page.getByTestId('stage').boundingBox();
       expect(stage!.height / viewport.height).toBeGreaterThanOrEqual(0.55);
       expect(stage!.height / viewport.height).toBeLessThanOrEqual(0.65);

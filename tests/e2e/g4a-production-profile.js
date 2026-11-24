@@ -48,7 +48,7 @@ try {
   await page.evaluate(() => performance.mark('g4a-profile-entry'));
   const entryStart = Date.now();
   await page.getByTestId('micro-entry').click();
-  await page.getByTestId('micro-status').filter({ hasText: '3D conectado' }).waitFor({ timeout: 30_000 });
+  await page.getByTestId('micro-status').filter({ hasText: 'Cena 3D pronta' }).waitFor({ timeout: 30_000 });
   await page.waitForFunction(() => Boolean(window.__ATLAS_MICRO__?.snapshot().adapter));
   const readyObservedMs = Date.now() - entryStart;
   const micro = await page.evaluate(() => {
@@ -100,7 +100,7 @@ try {
   const metrics = sampled.observations.map((item) => item.metrics);
   const range = (key) => { const values = metrics.map((item) => item[key]).filter(Number.isFinite); return { min: Math.min(...values), max: Math.max(...values) }; };
   const resourcesStable = sampled.observations.every((item) => JSON.stringify(item.adapter.resourceIds) === JSON.stringify(sampled.initial.adapter.resourceIds));
-  const noSceneFailure = sampled.observations.every((item) => item.readyText?.includes('3D conectado') && item.playing && item.adapter.counts.total === count);
+  const noSceneFailure = sampled.observations.every((item) => item.readyText?.includes('Cena 3D pronta') && item.playing && item.adapter.counts.total === count);
   const result = { gate: 'G4A', measuredAt: new Date().toISOString(), target: url, build: 'Fresh production Vite preview; HTTP cache disabled; no previous gate measurements reused.',
     scenario: { count, seed: 17, cameraMode: 'flow', highlightRC: false, normalizedSpeed: 3 / 7, mobileEmulation: mobile,
       bodyRemainsMountedForContext: true, microLazy: true, readyObservedMs, readyMs: micro.readyMs,

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghoul Atlas — Estudos de identidade</title>
+<style>
+@font-face{font-family:Plex;src:url(../../public/assets/fonts/IBMPlexSans-Regular-Latin1.woff2)}
+@font-face{font-family:Condensed;src:url(../../public/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2)}
+*{box-sizing:border-box}body{margin:0;background:#100d11;color:#f0ebe4;font:16px/1.55 Plex,sans-serif}
+h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-family:Condensed,sans-serif;line-height:1}
+main{max-width:1380px;margin:auto;padding:52px 5vw}
+h1{font-size:54px;margin-block:10px 20px} h2{font-size:32px;margin-block:52px 20px}h3{font-size:34px}
+small,p{color:#b7aeb6}small{font-size:13px}.logotypes{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.logo{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:center;background:#1a151b;padding:24px}
+.logo p,.logo strong{grid-column:1/-1}.logo img{display:block}.logo img:first-child{background:#100d11}
+.palette{display:flex;flex-wrap:wrap;gap:12px}.palette span{padding:16px 12px;border-top:14px solid var(--swatch);background:#1a151b}
+.ideas{display:grid;grid-template-columns:1fr 1fr;gap:24px}.idea{background:#100d11;border-top:1px solid #443942;overflow:hidden;position:relative}
+.idea .head{display:flex;align-items:center;gap:8px;margin:12px 0;color:#b7aeb6}.head img{width:25px}
+.hero-a{min-height:340px;display:grid;align-items:center;isolation:isolate;position:relative}
+.hero-a>img{position:absolute;width:94%;height:100%;right:-8%;object-fit:cover;z-index:-1;mask-image:linear-gradient(90deg,transparent,black 37%)}
+.hero-a .copy{padding:22px;max-width:52%;background:#100d11e8;margin:0 10px}
+.hero-b .copy{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:end;padding:14px 18px}
+.hero-b>img{object-fit:cover;object-position:60% 45%;width:100%;height:214px;display:block}
+.cta{display:inline-block;background:#762735;color:#f0ebe4;padding:8px 10px;font-size:13px;margin-top:12px}
+figcaption{font-size:14px;padding:10px 0;color:#b7aeb6} figcaption strong{color:#f0ebe4}
+@media(max-width:700px){main{padding:24px 20px}.ideas,.logotypes{grid-template-columns:1fr}h1{font-size:42px}}
+</style>
+<main>
+  <small>Ghoul Atlas · UI-R5</small>
+  <h1>Marca, cor e composição</h1>
+  <p>Estudos de identidade para o atlas anatômico ficcional. Os pôsteres usam capturas do próprio modelo conceitual.</p>
+  <h2>Kakugan em escala</h2>
+  <div class="logotypes">
+    <div class="logo"><img src="UI-R5-eye-limiar.svg" width="100" alt=""><img src="UI-R5-eye-limiar.svg" width="32" alt=""><img src="UI-R5-eye-limiar.svg" width="16" alt=""><strong>Limiar</strong><p>Olho assimétrico, pupila deslocada e dois cantos fora da abertura.</p></div>
+    <div class="logo"><img src="UI-R5-eye-incisao.svg" width="100" alt=""><img src="UI-R5-eye-incisao.svg" width="32" alt=""><img src="UI-R5-eye-incisao.svg" width="16" alt=""><strong>Incisão</strong><p>Pálpebras abertas e pupila em fenda. O recorte sugere uma lâmina iluminada.</p></div>
+  </div>
+  <h2>Paleta</h2>
+  <div class="palette">
+    <span style="--swatch:#100d11">Grafite · #100D11</span><span style="--swatch:#1a151b">Superfície · #1A151B</span>
+    <span style="--swatch:#f0ebe4">Marfim · #F0EBE4</span><span style="--swatch:#e47784">Íris · #E47784</span>
+    <span style="--swatch:#762735">Carmim · #762735</span><span style="--swatch:#a6c8c2">Foco · #A6C8C2</span>
+    <span style="--swatch:#dab47c">Conceitual · #DAB47C</span>
+  </div>
+  <h2>Duas aberturas para a vitrine</h2>
+  <div class="ideas">
+    <figure class="idea">
+      <div class="head"><img src="UI-R5-eye-limiar.svg" alt="">Ghoul Atlas</div>
+      <div class="hero-a"><img src="../../public/assets/ui-r5/rinkaku-wide.webp" alt="Vista oblíqua conceitual de Rinkaku">
+        <div class="copy"><h3>Atlas anatômico ghoul</h3><p>Inspecione o kakuhou e explore duas simulações conceituais.</p><span class="cta">Abrir observatório</span></div>
+      </div>
+      <figcaption><strong>A · Espécime em campo contínuo.</strong> O título ocupa a sombra. A silhueta conduz ao palco da experiência.</figcaption>
+    </figure>
+    <figure class="idea">
+      <div class="head"><img src="UI-R5-eye-incisao.svg" alt="">Ghoul Atlas</div>
+      <div class="hero-b">
+        <div class="copy"><h3>Atlas anatômico ghoul</h3><div><p>Inspecione o kakuhou e explore duas simulações conceituais.</p><span class="cta">Abrir observatório</span></div></div>
+        <img src="../../public/assets/ui-r5/rinkaku-study.webp" alt="Recorte conceitual da raiz e dos apêndices Rinkaku">
+      </div>
+      <figcaption><strong>B · Corte em faixa.</strong> A imagem centraliza a implantação lombar. O texto abre a página em uma faixa própria.</figcaption>
+    </figure>
+  </div>
+</main>
+</html>

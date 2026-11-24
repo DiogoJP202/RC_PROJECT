@@ -47,9 +47,9 @@ async function openMicro(page: Page, seed = 17) {
   page.on('pageerror', (error) => errors.push(error.message));
   page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });
   await page.goto(`/atlas?microSeed=${seed}`);
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await page.getByTestId('micro-entry').click();
-  await expect(page.getByTestId('micro-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('micro-status')).toContainText('Cena 3D pronta');
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_MICRO__?: MicroApi }).__ATLAS_MICRO__?.snapshot().adapter));
   expect((await micro(page)).config.seed).toBe(seed);
 }

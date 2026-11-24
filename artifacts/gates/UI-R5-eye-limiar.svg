@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Limiar">
+  <path fill="#F0EBE4" d="M7 33c7-10 16-15 25-15 10 0 19 4 25 11-8 10-16 15-27 15-9 0-17-4-23-11Z"/>
+  <path fill="#100D11" d="M12 33c5-6 12-10 20-10 7 0 14 2 20 7-6 6-13 9-22 9-7 0-13-2-18-6Z"/>
+  <circle cx="36" cy="31" r="8" fill="#E47784"/>
+  <circle cx="37.5" cy="30" r="3.1" fill="#100D11"/>
+  <path d="M8 23v-8h10m28 34h10v-8" fill="none" stroke="#B7AEB6" stroke-width="2.5" stroke-linecap="square"/>
+</svg>

@@ -70,7 +70,7 @@ function SourceLibrary({ library, retry }: { library: Library; retry: () => void
             {item.id !== primary.id ? <strong>{item.title}</strong> : null}
             <p className="ga-source-meta">{sourceLabels[item.sourceType]} <span aria-hidden="true">·</span> {item.verifiedAt ? 'Conferida em ' + item.verifiedAt.split('-').reverse().join('/') : 'Verificação pendente'}</p>
             {item.locator ? <p>{item.locator}</p> : null}
-            {item.note ? <p>{item.note}</p> : null}
+            {item.note ? <details className="ga-source-note"><summary>Registro de conferência</summary><p>{item.note}</p></details> : null}
           </div>)}
         </li>
       ))}
@@ -97,9 +97,9 @@ export default function SourcesPage({ creditsRequest }: { creditsRequest?: numbe
     <div className="ga-editorial">
       <main className="ga-editorial-wrap ga-inner-page" id="editorial-content" tabIndex={-1}>
         <div className="ga-page-intro">
-          <p className="ga-kicker">Procedência</p>
           <h1>Fontes e metodologia</h1>
-          <p>As referências documentam afirmações específicas. Elas não validam a forma, a escala ou o movimento dos modelos conceituais do observatório.</p>
+          <p>As fontes sustentam afirmações específicas. As fichas indicam quais partes dos modelos foram reconstruídas, inclusive forma, escala e movimento.</p>
+          <a className="ga-inline-link ga-source-jump" href="#ga-bibliography-title">Ir às referências</a>
         </div>
         <section className="ga-source-section" aria-labelledby="ga-classes-title">
           <div className="ga-section-head"><h2 id="ga-classes-title">Como ler as evidências</h2></div>
@@ -113,7 +113,7 @@ export default function SourcesPage({ creditsRequest }: { creditsRequest?: numbe
           </dl>
         </section>
         <section className="ga-source-section" aria-labelledby="ga-bibliography-title">
-          <div className="ga-section-head"><h2 id="ga-bibliography-title">Referências do observatório</h2></div>
+          <div className="ga-section-head"><h2 id="ga-bibliography-title" tabIndex={-1}>Referências do observatório</h2></div>
           <SourceLibrary library={library} retry={retry} />
         </section>
         <section className="ga-source-section ga-credits" id="creditos" ref={credits} tabIndex={-1} aria-labelledby="ga-credits-title">

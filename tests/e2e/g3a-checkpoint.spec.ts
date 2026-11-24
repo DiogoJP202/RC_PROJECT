@@ -24,7 +24,7 @@ async function scrub(page: Page, t: number) {
 }
 async function open(page: Page) {
   await page.goto('/atlas');
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await openBodyTool(page, 'layers');
   await page.getByRole('slider', { name: 'Opacidade da superfície', exact: true }).fill('1');
   await expect.poll(async () => (await scene(page)).metrics?.geometries ?? 0).toBeGreaterThan(0);

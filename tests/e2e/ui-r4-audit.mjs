@@ -44,14 +44,19 @@ try {
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }, { width: 430, height: 932 }]) {
     const page = await browser.newPage({ viewport, reducedMotion: 'reduce', deviceScaleFactor: 1 });
     try {
-      for (const route of ['/', '/estudos', '/fontes', '/atlas', '/atlas/rinkaku', '/atlas/vascular', '/atlas?webgl=off', '/atlas?catalog=missing']) {
+      for (const route of ['/', '/estudos', '/fontes', '/atlas', '/atlas/rinkaku', '/atlas/vascular', '/atlas?webgl=off', '/atlas?catalog=missing', '/atlas/comparar', '/atlas/cell/rc%3A17%3A0']) {
         await page.goto(base + route);
         if (route.includes('webgl=off')) await page.getByTestId('scene-fallback').waitFor();
         else if (route.includes('catalog=missing')) await page.getByTestId('catalog-error').waitFor();
-        else if (route.startsWith('/atlas')) await page.getByTestId(route.endsWith('vascular') ? 'micro-status' : 'scene-status').filter({ hasText: '3D conectado' }).waitFor();
+        else if (route === '/atlas/comparar' || route.startsWith('/atlas/cell/')) await page.getByRole('heading', { name: /indisponível/ }).waitFor();
+        else if (route.startsWith('/atlas')) await page.getByTestId(route.endsWith('vascular') ? 'micro-status' : 'scene-status').filter({ hasText: 'Cena 3D pronta' }).waitFor();
         else await page.getByRole('heading', { level: 1 }).waitFor();
         if (route === '/fontes') await page.locator('.ga-source-library').waitFor();
         await inspect(page, viewport, route, 'rest');
+        if (route === '/fontes') {
+          await page.getByText('Registro de conferência', { exact: true }).first().click();
+          await inspect(page, viewport, route, 'source-note');
+        }
         if (route === '/atlas') {
           for (const tool of ['body-structures', 'body-layers', 'inspector-toggle']) {
             await page.getByTestId(tool).click();

@@ -1,0 +1,1483 @@
+{
+  "base": "0c0916b5605230360dd7456ad45ba1b8bf7940ec",
+  "buildEntries": [
+    {
+      "file": "dist/assets/AtlasWorkspace-Bm9hUAOt.css",
+      "sha256": "6d9e82e64f3abe3f2498602b57739787780974e8e5b2385bbc6be44de5d45136"
+    },
+    {
+      "file": "dist/assets/AtlasWorkspace-DMHI-_ZZ.js",
+      "sha256": "35c6699fda4e4b0f4a4adcd8cb26ff87738daf4b1374ac08479b58dd855e44a6"
+    },
+    {
+      "file": "dist/assets/catalog-I3yOUMpt.js",
+      "sha256": "28a3ef328fc24eb39009556f3a19741fb58299c39f56bb8f6e65607ca590aed5"
+    },
+    {
+      "file": "dist/assets/GLTFLoader-lxYHl8Ax.js",
+      "sha256": "035e4801939b9c054cff7d3aba0f895e34e6e39d24f8c86caeca86a7ae82b495"
+    },
+    {
+      "file": "dist/assets/index-BcZqfMU2.css",
+      "sha256": "f8f8b3cef10aca0592ee6be961706b8ec745f0cd56efc9e0d02e889f7b3aaafe"
+    },
+    {
+      "file": "dist/assets/index-CeGbn8Ag.js",
+      "sha256": "db80064527777e276d1d7e8054e9a6447f0c03e215890e16aec84798dc7b910b"
+    },
+    {
+      "file": "dist/assets/jsx-runtime-Wy9s6hX0.js",
+      "sha256": "bcb9f6586cd973c2fb2faa4a2d38d4b06660e2fe2806aaa0de1c39306ff0f69a"
+    },
+    {
+      "file": "dist/assets/observatory-BSd6F253.js",
+      "sha256": "9bb202912a82b58737fb45eb89266e2fb0139c9823db1ac2446572660f0e3efc"
+    },
+    {
+      "file": "dist/assets/ObservatoryScene-D4UUnGLT.js",
+      "sha256": "098b9e27b6f3fff3868210093df78c8ffe7730d45133cd6fd5f108056fa07acf"
+    },
+    {
+      "file": "dist/assets/OrbitControls-Oy8mqjAP.js",
+      "sha256": "0f2a93319950deccf994dfad5c44a8cbc47e7a0b771e4f2d848bbef164fdc665"
+    },
+    {
+      "file": "dist/assets/rinkaku-CLQ9yvLZ.js",
+      "sha256": "b7223fbf46446dc849582142ac1edfd7312d4d1125b1207fcfa35582d51835e8"
+    },
+    {
+      "file": "dist/assets/RinkakuScene-zCJ9xpPO.js",
+      "sha256": "2223d7bd7dbed24146ed0205639f4c96f3b2097ae6edaeed3f6cbeeec088e4e1"
+    },
+    {
+      "file": "dist/assets/SourcesPage-Cav74MBs.js",
+      "sha256": "0b128e87fea2612dd5d768d02f3ae3678f6939c4cde911d67c6f17289872249d"
+    },
+    {
+      "file": "dist/assets/three.core-Dp-eO7LC.js",
+      "sha256": "10ce628f40c24012f66cb3aeb5fe1533a45dfc4e43d8a4eebfda5f554c9fb7cd"
+    },
+    {
+      "file": "dist/assets/vascularEvidence-C3SB6GZq.js",
+      "sha256": "453d530757df460e1fba713eaa9541a24ea2f1acbfb2114c322516a37b6a3e86"
+    },
+    {
+      "file": "dist/assets/VascularScene-faunVQmi.js",
+      "sha256": "19d6202717faf82c11f1fe647628e95befa5e34efe4c848e062d6ea1fbe9cccd"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-BOLh92ji.js",
+      "sha256": "4f48950034d90e42a594e28593084358ab47cceaaa1c11e4ce5f3541395c748f"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-Dk9kFNXi.css",
+      "sha256": "282aef9b152c7abab2dbd224eaa8b424863b356d9f5f66fadbf58649ea7bd525"
+    },
+    {
+      "file": "dist/index.html",
+      "sha256": "cb46b05905ac7884a55eb3b00ca747d8a31d69a00b6ea98dd3da6f229d6d6e98"
+    }
+  ],
+  "profiles": [
+    {
+      "name": "body",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chrome 157.0.8103.80",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "measuredAt": "2026-11-24T19:20:42.465Z",
+      "reportSha256": "99391d18c24d4167efee1ce774cf7e5b5f6ac3b4486e50203cc1499b9bed843f",
+      "scenario": {
+        "requestedAsset": "proxy",
+        "assetActivationMs": null,
+        "animated": false,
+        "transferScope": "Body initial transfer only."
+      },
+      "protocol": {
+        "warmupAfterInteractiveMs": 10000,
+        "requestedSamplingMs": 30000,
+        "fpsMethod": "Percentiles of reciprocal requestAnimationFrame intervals; same visible desktop page renders R3F every frame.",
+        "sceneSampleIntervalMs": 1000
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol Network.emulateNetworkConditions",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "nominalUploadMbps": 20,
+        "latencyNote": "latency=50ms is the CDP request latency setting; this does not certify a symmetric physical 50ms RTT.",
+        "transferredCdpBytes": 475288,
+        "transferredPerformanceBytes": 474263,
+        "responseEncodings": [
+          {
+            "url": "http://127.0.0.1:4173/atlas",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-BcZqfMU2.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/jsx-runtime-Wy9s6hX0.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-CeGbn8Ag.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-Bm9hUAOt.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "contentLength": "424",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/catalog-I3yOUMpt.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/rinkaku-CLQ9yvLZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/observatory-BSd6F253.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-DMHI-_ZZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/mark.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "contentLength": "526",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/catalog.json",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "application/json"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "contentLength": "20984",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "contentLength": "21988",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ObservatoryScene-D4UUnGLT.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexMono-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "contentLength": "17544",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "contentLength": "21960",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/three.core-Dp-eO7LC.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/OrbitControls-Oy8mqjAP.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "contentLength": null,
+            "mimeType": "text/javascript"
+          }
+        ],
+        "encodingNote": "Measured encoded transfer bytes include server compression and protocol overhead. GET response headers identify the actual content encoding; raw dist file sizes are a separate quantity."
+      },
+      "transferBytes": 474263,
+      "uiR4TransferBytes": 475021,
+      "bodyInteractiveMs": 1464.7000000476837,
+      "studyReadyMs": null,
+      "durationMs": 30011.900000095367,
+      "frames": 1800,
+      "fpsP50": 59.880239520968516,
+      "fpsP10": 59.17159763314374,
+      "maximumDrawCalls": 23,
+      "observables": null,
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "rinkaku",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.80",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "measuredAt": "2026-11-24T19:21:25.390Z",
+      "reportSha256": "d85485a0b07ae3aba6cb70cc9c8855bcf0adc64c91ac989df0867ebcd41683c7",
+      "scenario": {
+        "quality": "standard",
+        "appendageCount": 4,
+        "seed": 17,
+        "particlesSetting": true,
+        "particlesRendered": true,
+        "mobileEmulation": false,
+        "activationMs": 160,
+        "activationAdditionalTransferBytes": 6314,
+        "bootPlusManifestTransferBytes": 480577,
+        "sequence": "Full 21 s cinematic transport, including 3.4 s retraction. Same normalized seven phase intervals and sampler motionTime as G3A. Restart through reset/play UI; 10 s warm-up then 30 s rAF sample."
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSamplingMs": 30000,
+        "playbackDurationSeconds": 21,
+        "retractionDurationSeconds": 3.4,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals.",
+        "metricIntervalMs": 1000,
+        "diagnosticReadIntervalMs": 500,
+        "comparison": "G3A used a linear 18 s cycle. Hardware/viewport/network/warm-up/sample remain the same for desktop; pose residence time differs intentionally. These values must not be presented as identical motion workloads."
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "latency=50 ms is a CDP request setting, not measured symmetric physical RTT.",
+        "transferredCdpBytes": 481641,
+        "transferredPerformanceBytes": 474263,
+        "transferScope": "Initial Performance bytes are Body boot; lazy manifestation and combined transfer are separate scenario fields.",
+        "responseEncodings": [
+          {
+            "url": "http://127.0.0.1:4173/atlas",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/html"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-BcZqfMU2.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/jsx-runtime-Wy9s6hX0.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-CeGbn8Ag.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/observatory-BSd6F253.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-Bm9hUAOt.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/catalog-I3yOUMpt.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/rinkaku-CLQ9yvLZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-DMHI-_ZZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/mark.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/catalog.json",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "application/json"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ObservatoryScene-D4UUnGLT.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexMono-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/three.core-Dp-eO7LC.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/OrbitControls-Oy8mqjAP.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/RinkakuScene-zCJ9xpPO.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          }
+        ]
+      },
+      "transferBytes": 480577,
+      "uiR4TransferBytes": 481300,
+      "bodyInteractiveMs": 1395.2000000476837,
+      "studyReadyMs": 160,
+      "durationMs": 30010.699999928474,
+      "frames": 1800,
+      "fpsP50": 59.880239520968516,
+      "fpsP10": 59.17159763314374,
+      "maximumDrawCalls": 22,
+      "observables": {
+        "maxDrawCalls": 22,
+        "maxTriangles": 148814,
+        "geometryRange": {
+          "min": 20,
+          "max": 20
+        },
+        "textureRange": {
+          "min": 3,
+          "max": 3
+        },
+        "adapterResourceIdsStable": true
+      },
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true,
+        "bodyPlusManifestUnder8MiB": true,
+        "allSevenPhasesSampled": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "flow",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.80",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "measuredAt": "2026-11-24T19:22:10.037Z",
+      "reportSha256": "2e62d93f7a3fa97259586c61ca7d69d0feb27b7e587b7a8632af009f55a0de8e",
+      "scenario": {
+        "count": 500,
+        "seed": 17,
+        "cameraMode": "flow",
+        "selectedId": null,
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": false,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1655,
+        "readyMs": 1410.2000000476837,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 20924,
+        "bootPlusMicroTransferBytes": 495187
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSampleMs": 30000,
+        "readDiagnosticsIntervalMs": 1000,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals. Diagnostics once per second, never every frame.",
+        "profileMeaning": "Counts are rendered entities, not physiological concentrations; each count/mode is a separate fresh context.",
+        "readinessMeaning": "Entry readyMs always measures DEFAULT500 before changing the measured population. Flow protocol matches G4A; Tracking is a separate cost scenario.",
+        "diagnosticScope": "Renderer counters cover Micro only; Body remains resident. One owned bump texture is distinct from renderer texture count. Visibility raycasts are not sampled during FPS measurement."
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "50 ms is a CDP setting, not measured physical RTT.",
+        "transferredCdpBytes": 496456,
+        "responseEncodings": [
+          {
+            "url": "http://127.0.0.1:4173/atlas",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/html"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-BcZqfMU2.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/jsx-runtime-Wy9s6hX0.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-CeGbn8Ag.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-Bm9hUAOt.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/catalog-I3yOUMpt.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/rinkaku-CLQ9yvLZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/observatory-BSd6F253.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-DMHI-_ZZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/mark.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/catalog.json",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "application/json"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ObservatoryScene-D4UUnGLT.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexMono-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/three.core-Dp-eO7LC.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/OrbitControls-Oy8mqjAP.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/VascularWorkspace-Dk9kFNXi.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/vascularEvidence-C3SB6GZq.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/VascularWorkspace-BOLh92ji.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/VascularScene-faunVQmi.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          }
+        ]
+      },
+      "transferBytes": 495187,
+      "uiR4TransferBytes": 495907,
+      "bodyInteractiveMs": 1425.5999999046326,
+      "studyReadyMs": 1410.2000000476837,
+      "durationMs": 30011.100000023842,
+      "frames": 1800,
+      "fpsP50": 59.880239520968516,
+      "fpsP10": 59.171597633131,
+      "maximumDrawCalls": 3,
+      "observables": {
+        "drawCalls": {
+          "min": 3,
+          "max": 3
+        },
+        "triangles": {
+          "min": 214432,
+          "max": 214432
+        },
+        "geometries": {
+          "min": 3,
+          "max": 3
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "tracking",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.80",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "measuredAt": "2026-11-24T19:22:54.809Z",
+      "reportSha256": "46ec0c68ed5dd60e39ba8b1b32638345011d24c667110309a78c4c0f50c22792",
+      "scenario": {
+        "count": 2000,
+        "seed": 17,
+        "cameraMode": "tracking",
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": false,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1588,
+        "readyMs": 1402.2999999523163,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 20924,
+        "bootPlusMicroTransferBytes": 495187
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSampleMs": 30000,
+        "readDiagnosticsIntervalMs": 1000,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals. Diagnostics once per second, never every frame.",
+        "profileMeaning": "Counts are rendered entities, not physiological concentrations; each count/mode is a separate fresh context.",
+        "readinessMeaning": "Entry readyMs always measures DEFAULT500 before changing the measured population. Flow protocol matches G4A; Tracking is a separate cost scenario.",
+        "diagnosticScope": "Renderer counters cover Micro only; Body remains resident. One owned bump texture is distinct from renderer texture count. Visibility raycasts are not sampled during FPS measurement."
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "50 ms is a CDP setting, not measured physical RTT.",
+        "transferredCdpBytes": 496456,
+        "responseEncodings": [
+          {
+            "url": "http://127.0.0.1:4173/atlas",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/html"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-BcZqfMU2.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/jsx-runtime-Wy9s6hX0.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-CeGbn8Ag.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-Bm9hUAOt.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/observatory-BSd6F253.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/catalog-I3yOUMpt.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/rinkaku-CLQ9yvLZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-DMHI-_ZZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/mark.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/catalog.json",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "application/json"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ObservatoryScene-D4UUnGLT.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexMono-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/three.core-Dp-eO7LC.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/OrbitControls-Oy8mqjAP.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/VascularWorkspace-Dk9kFNXi.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/vascularEvidence-C3SB6GZq.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/VascularWorkspace-BOLh92ji.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/VascularScene-faunVQmi.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          }
+        ]
+      },
+      "transferBytes": 495187,
+      "uiR4TransferBytes": 495907,
+      "bodyInteractiveMs": 1410.0999999046326,
+      "studyReadyMs": 1402.2999999523163,
+      "durationMs": 30012,
+      "frames": 1800,
+      "fpsP50": 59.880239520968516,
+      "fpsP10": 59.17159763313737,
+      "maximumDrawCalls": 4,
+      "observables": {
+        "drawCalls": {
+          "min": 4,
+          "max": 4
+        },
+        "triangles": {
+          "min": 808384,
+          "max": 808384
+        },
+        "geometries": {
+          "min": 4,
+          "max": 4
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "rinkaku-mobile",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.80",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        }
+      },
+      "measuredAt": "2026-11-24T19:23:38.111Z",
+      "reportSha256": "006e918d81b02cabe68240cd29e39d203c3b73dd4685c6c9846def47f16826e0",
+      "scenario": {
+        "quality": "standard",
+        "appendageCount": 4,
+        "seed": 17,
+        "particlesSetting": true,
+        "particlesRendered": true,
+        "mobileEmulation": true,
+        "activationMs": 381,
+        "activationAdditionalTransferBytes": 6314,
+        "bootPlusManifestTransferBytes": 480577,
+        "sequence": "Full 21 s cinematic transport, including 3.4 s retraction. Same normalized seven phase intervals and sampler motionTime as G3A. Restart through reset/play UI; 10 s warm-up then 30 s rAF sample."
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSamplingMs": 30000,
+        "playbackDurationSeconds": 21,
+        "retractionDurationSeconds": 3.4,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals.",
+        "metricIntervalMs": 1000,
+        "diagnosticReadIntervalMs": 500,
+        "comparison": "G3A used a linear 18 s cycle. Hardware/viewport/network/warm-up/sample remain the same for desktop; pose residence time differs intentionally. These values must not be presented as identical motion workloads."
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "latency=50 ms is a CDP request setting, not measured symmetric physical RTT.",
+        "transferredCdpBytes": 481641,
+        "transferredPerformanceBytes": 474263,
+        "transferScope": "Initial Performance bytes are Body boot; lazy manifestation and combined transfer are separate scenario fields.",
+        "responseEncodings": [
+          {
+            "url": "http://127.0.0.1:4173/atlas",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/html"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-BcZqfMU2.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/jsx-runtime-Wy9s6hX0.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-CeGbn8Ag.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-Bm9hUAOt.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/observatory-BSd6F253.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/catalog-I3yOUMpt.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/rinkaku-CLQ9yvLZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-DMHI-_ZZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/mark.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/catalog.json",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "application/json"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ObservatoryScene-D4UUnGLT.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexMono-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/three.core-Dp-eO7LC.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/OrbitControls-Oy8mqjAP.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/RinkakuScene-zCJ9xpPO.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          }
+        ]
+      },
+      "transferBytes": 480577,
+      "uiR4TransferBytes": 481300,
+      "bodyInteractiveMs": 1440,
+      "studyReadyMs": 381,
+      "durationMs": 30009.899999976158,
+      "frames": 1800,
+      "fpsP50": 59.880239520968516,
+      "fpsP10": 59.523809523799216,
+      "maximumDrawCalls": 22,
+      "observables": {
+        "maxDrawCalls": 22,
+        "maxTriangles": 148834,
+        "geometryRange": {
+          "min": 20,
+          "max": 20
+        },
+        "textureRange": {
+          "min": 3,
+          "max": 3
+        },
+        "adapterResourceIdsStable": true
+      },
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true,
+        "bodyPlusManifestUnder8MiB": true,
+        "allSevenPhasesSampled": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "tracking-mobile",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.80",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        }
+      },
+      "measuredAt": "2026-11-24T19:24:23.424Z",
+      "reportSha256": "1c10999232cb8bbd6c5b8cbdd76e39adac95e16d0a2cf64b8e5c9818e815c7c3",
+      "scenario": {
+        "count": 500,
+        "seed": 17,
+        "cameraMode": "tracking",
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": true,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1697,
+        "readyMs": 1449.6000000238419,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 20924,
+        "bootPlusMicroTransferBytes": 495187
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSampleMs": 30000,
+        "readDiagnosticsIntervalMs": 1000,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals. Diagnostics once per second, never every frame.",
+        "profileMeaning": "Counts are rendered entities, not physiological concentrations; each count/mode is a separate fresh context.",
+        "readinessMeaning": "Entry readyMs always measures DEFAULT500 before changing the measured population. Flow protocol matches G4A; Tracking is a separate cost scenario.",
+        "diagnosticScope": "Renderer counters cover Micro only; Body remains resident. One owned bump texture is distinct from renderer texture count. Visibility raycasts are not sampled during FPS measurement."
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "50 ms is a CDP setting, not measured physical RTT.",
+        "transferredCdpBytes": 496456,
+        "responseEncodings": [
+          {
+            "url": "http://127.0.0.1:4173/atlas",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/html"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-BcZqfMU2.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/jsx-runtime-Wy9s6hX0.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/index-CeGbn8Ag.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-Bm9hUAOt.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/observatory-BSd6F253.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/catalog-I3yOUMpt.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/rinkaku-CLQ9yvLZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/AtlasWorkspace-DMHI-_ZZ.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/mark.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/catalog.json",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "application/json"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ObservatoryScene-D4UUnGLT.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexMono-Regular-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "font/woff2"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/three.core-Dp-eO7LC.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/OrbitControls-Oy8mqjAP.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/ui-r5/favicon.svg",
+            "status": 200,
+            "contentEncoding": "identity",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/VascularWorkspace-Dk9kFNXi.css",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/css"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/vascularEvidence-C3SB6GZq.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/VascularWorkspace-BOLh92ji.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/VascularScene-faunVQmi.js",
+            "status": 200,
+            "contentEncoding": "gzip",
+            "mimeType": "text/javascript"
+          }
+        ]
+      },
+      "transferBytes": 495187,
+      "uiR4TransferBytes": 495907,
+      "bodyInteractiveMs": 1473.7000000476837,
+      "studyReadyMs": 1449.6000000238419,
+      "durationMs": 30015.900000095367,
+      "frames": 1800,
+      "fpsP50": 59.880239520968516,
+      "fpsP10": 59.523809523812105,
+      "maximumDrawCalls": 4,
+      "observables": {
+        "drawCalls": {
+          "min": 4,
+          "max": 4
+        },
+        "triangles": {
+          "min": 214432,
+          "max": 214432
+        },
+        "geometries": {
+          "min": 4,
+          "max": 4
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    }
+  ]
+}

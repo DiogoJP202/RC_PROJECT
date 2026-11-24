@@ -48,8 +48,8 @@ export function AtlasHeader({ current, atlasHref = '/atlas', onHelp, atlasContro
       <div className="ga-header-bar">
         <a className="ga-logo" href="/" aria-label="Ghoul Atlas início"
           aria-current={current === 'home' ? 'page' : undefined}>
-          <img src="/atlas-mark.svg" width="30" height="30" alt="" />
-          <span>Ghoul Atlas<small>Arquivo Anatômico</small></span>
+          <img src="/assets/ui-r5/mark.svg" width="36" height="36" alt="" />
+          <span>Ghoul Atlas</span>
         </a>
         <nav className="ga-primary-nav" aria-label="Navegação principal">{links()}</nav>
         {atlasControls ? <div className="ga-header-atlas-tools">{atlasControls}</div> : null}

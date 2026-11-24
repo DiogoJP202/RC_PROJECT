@@ -14,9 +14,9 @@ export function AssetLab() {
     return () => window.clearInterval(interval);
   }, [state.playing, reduced]);
   return <aside className="asset-lab" aria-label="Bancada de integração GLB">
-    <div><strong>Bancada GLB / G2A</strong><small>FIXTURES SINTÉTICAS · SEM VALOR ANATÔMICO</small></div>
+    <div><strong>Inspeção de modelos GLB</strong><small>Modelos sintéticos de teste</small></div>
     <label>Recurso de teste<select data-testid="asset-select" value={state.requestedId} onChange={(e) => state.choose(e.target.value)}>
-      <option value="proxy">Proxy G1</option><option value="fixture.static.v1">GLB modular</option><option value="fixture.rigged.v1">GLB articulado</option>
+      <option value="proxy">Modelo conceitual</option><option value="fixture.static.v1">GLB modular</option><option value="fixture.rigged.v1">GLB articulado</option>
     </select></label>
     <span role="status" data-testid="asset-status">{state.status === 'loading' ? 'Carregando GLB; proxy disponível' : state.status === 'ready' ? 'GLB sintético integrado' : state.status === 'error' ? 'Falha de GLB; proxy restaurado' : 'Proxy original ativo'}</span>
     {state.status === 'error' ? <><p className="asset-error">{state.message}</p><button className="secondary-button" data-testid="asset-retry" onClick={state.retry}>Tentar GLB novamente</button></> : null}
