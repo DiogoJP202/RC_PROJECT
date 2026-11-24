@@ -1,0 +1,90 @@
+{
+  "build": "UI-R2, tree of c74deda / merge 0c287c7",
+  "method": "Real renderer; UI-only scrub and entity selection; reduced motion; no camera or store injection",
+  "captures": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mode": "rinkaku",
+      "stage": {
+        "x": 240,
+        "y": 108,
+        "width": 876,
+        "height": 626
+      },
+      "file": "artifacts/gates/UI-R3-before-rinkaku-1440.png"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "mode": "vascular",
+      "stage": {
+        "x": 250,
+        "y": 108,
+        "width": 896,
+        "height": 649
+      },
+      "file": "artifacts/gates/UI-R3-before-vascular-1440.png"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "rinkaku",
+      "stage": {
+        "x": 0,
+        "y": 135,
+        "width": 390,
+        "height": 497.953125
+      },
+      "file": "artifacts/gates/UI-R3-before-rinkaku-390.png"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "vascular",
+      "stage": {
+        "x": 0,
+        "y": 135,
+        "width": 390,
+        "height": 520
+      },
+      "file": "artifacts/gates/UI-R3-before-vascular-390.png"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "mode": "rinkaku",
+      "stage": {
+        "x": 0,
+        "y": 135,
+        "width": 430,
+        "height": 520
+      },
+      "file": "artifacts/gates/UI-R3-before-rinkaku-430.png"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "mode": "vascular",
+      "stage": {
+        "x": 0,
+        "y": 135,
+        "width": 430,
+        "height": 520
+      },
+      "file": "artifacts/gates/UI-R3-before-vascular-430.png"
+    }
+  ]
+}

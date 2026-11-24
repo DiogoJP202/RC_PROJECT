@@ -1,0 +1,163 @@
+[
+  {
+    "mode": "body",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "bounds": {
+      "x": 28.796875,
+      "y": 134,
+      "width": 1382.40625,
+      "height": 675
+    },
+    "state": {
+      "camera": {
+        "position": [
+          1.1722353472476335,
+          0.9799999999999995,
+          4.019092619134743
+        ],
+        "target": [
+          0,
+          0.94,
+          0
+        ],
+        "moving": false,
+        "quaternion": [
+          -0.004729022558323591,
+          0.14141974260650694,
+          0.0006755746511890846,
+          0.9899381982455485
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "enableDamping": false,
+        "projection": {
+          "near": 0.025,
+          "far": 40,
+          "zoom": 1,
+          "fov": 36,
+          "aspect": 2.0511236998514115,
+          "filmGauge": 35,
+          "filmOffset": 0
+        }
+      },
+      "selectedId": "human.surface",
+      "layers": {
+        "surface": true,
+        "muscular": false,
+        "skeletal": false,
+        "internal": true
+      },
+      "time": 0,
+      "playing": false
+    }
+  },
+  {
+    "mode": "rinkaku",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "bounds": {
+      "x": 28.796875,
+      "y": 122,
+      "width": 1382.40625,
+      "height": 632
+    },
+    "state": {
+      "camera": {
+        "position": [
+          -1.59025718767926,
+          1.3119343799024197,
+          -5.292076025922804
+        ],
+        "target": [
+          0,
+          1.1380000000000001,
+          -0.5710000000000001
+        ],
+        "moving": false,
+        "quaternion": [
+          0.0028222328761230457,
+          0.9866833311887101,
+          0.01721956290452732,
+          -0.1617143333453167
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "enableDamping": false,
+        "projection": {
+          "near": 0.025,
+          "far": 40,
+          "zoom": 1,
+          "fov": 36,
+          "aspect": 2.191121031746032,
+          "filmGauge": 35,
+          "filmOffset": 0
+        }
+      },
+      "selectedId": "human.surface",
+      "layers": {
+        "surface": true,
+        "muscular": false,
+        "skeletal": false,
+        "internal": true
+      },
+      "time": 0.88,
+      "playing": false,
+      "appliedTime": 0.88,
+      "pose": "413feb58"
+    }
+  },
+  {
+    "mode": "vascular",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "bounds": {
+      "x": 28.796875,
+      "y": 122,
+      "width": 1382.40625,
+      "height": 632
+    },
+    "state": {
+      "camera": {
+        "position": [
+          -3.8211300705253315,
+          -0.25123806175248065,
+          5.874613972939488
+        ],
+        "quaternion": [
+          -0.24132170395592648,
+          0.5975916416405055,
+          0.17981498323731068,
+          0.7431787381542745
+        ],
+        "target": [
+          -4.862871458868053,
+          -0.9968197059243303,
+          5.654558869912273
+        ],
+        "up": [
+          -0.05156144818732638,
+          0.9981128933395198,
+          -0.03334770172347609
+        ]
+      },
+      "selectedId": "rc:17:0",
+      "time": 11.25,
+      "playing": false,
+      "appliedTime": 11.25,
+      "pose": "a3204563"
+    }
+  }
+]

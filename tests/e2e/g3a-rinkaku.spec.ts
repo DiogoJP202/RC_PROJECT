@@ -1,3 +1,4 @@
+import { changeRinkakuSelect, setRinkakuParticles, changeRinkakuView, closeStudyTool } from './study-tools';
 import { chooseStructure, openBodyTool } from './body-tools';
 import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
@@ -270,18 +271,18 @@ test('counts, particles and quality replace visual settings without detaching th
   await enter(page);
   const proxy = await scrub(page, .7);
   for (const count of [1, 4, 2, 3, 4]) {
-    await page.getByTestId('rinkaku-count').selectOption(String(count));
+    await changeRinkakuSelect(page, 'rinkaku-count', String(count));
     await expect.poll(async () => (await scene(page)).rinkaku.adapter?.appendageCount).toBe(count);
     expect((await scene(page)).rinkaku.adapter?.root).toEqual(proxy.rinkaku.adapter?.root);
   }
-  await page.getByTestId('rinkaku-particles').uncheck();
+  await setRinkakuParticles(page, false);
   await expect.poll(async () => (await scene(page)).rinkaku.adapter?.particleCount).toBe(0);
   expect((await scene(page)).rinkaku.snapshot.particleEmission).toBe(0);
-  await page.getByTestId('rinkaku-particles').check();
-  await page.getByTestId('rinkaku-quality').selectOption('low');
+  await setRinkakuParticles(page, true);
+  await changeRinkakuSelect(page, 'rinkaku-quality', 'low');
   await expect.poll(async () => (await scene(page)).rinkaku.config.quality).toBe('low');
   await expect.poll(async () => (await scene(page)).rinkaku.adapter?.particleCount).toBe(0);
-  await page.getByTestId('rinkaku-quality').selectOption('standard');
+  await changeRinkakuSelect(page, 'rinkaku-quality', 'standard');
   for (const asset of ['fixture.static.v1', 'fixture.rigged.v1', 'proxy']) {
     await page.getByTestId('asset-select').selectOption(asset);
     await expect.poll(async () => (await scene(page)).assets.activeId).toBe(asset);
@@ -307,12 +308,12 @@ test('posterior, lateral and lumbar focus are explicit and reduced motion keeps 
   await enter(page);
   await expect(page.getByTestId('rinkaku-play')).toBeDisabled();
   const posterior = (await scene(page)).camera;
-  await page.getByTestId('rinkaku-lateral').click();
+  await changeRinkakuView(page, 'rinkaku-lateral');
   await expect.poll(async () => cameraDistance((await scene(page)).camera, posterior)).toBeGreaterThan(.1);
   const lateral = (await scene(page)).camera;
-  await page.getByTestId('rinkaku-focus').click();
+  await changeRinkakuView(page, 'rinkaku-focus');
   await expect.poll(async () => cameraDistance((await scene(page)).camera, lateral)).toBeGreaterThan(.1);
-  await page.getByTestId('rinkaku-posterior').click();
+  await changeRinkakuView(page, 'rinkaku-posterior');
   await expect.poll(async () => cameraDistance((await scene(page)).camera, posterior)).toBeLessThan(.001);
   for (const phase of ['rest', 'activation', 'release', 'growth', 'fixation', 'active', 'retract']) {
     await page.getByTestId('rinkaku-phase').selectOption(phase);
@@ -336,7 +337,9 @@ test('without WebGL the manifestation offers truthful static timeline controls a
   await page.goto('/atlas?webgl=off');
   await expect(page.getByTestId('scene-fallback')).toBeVisible();
   await page.getByTestId('rinkaku-toggle').click();
+  await openBodyTool(page, 'simulation');
   await expect(page.getByTestId('rinkaku-inspector')).toBeVisible();
+  await closeStudyTool(page);
   await expect(page.getByTestId('rinkaku-play')).toBeDisabled();
   await page.getByTestId('rinkaku-phase').selectOption('active');
   await expect(page.getByTestId('rinkaku-time')).toHaveValue('0.9');
@@ -385,9 +388,11 @@ test('mobile touch controls stay usable and capture the actual procedural manife
     await scrub(page, .9);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     for (const id of ['rinkaku-toggle', 'rinkaku-reset', 'rinkaku-step-back', 'rinkaku-step-forward', 'rinkaku-posterior', 'rinkaku-lateral', 'rinkaku-focus']) {
+      if (['rinkaku-posterior', 'rinkaku-lateral', 'rinkaku-oblique', 'rinkaku-focus'].includes(id)) await openBodyTool(page, 'simulation');
       const box = await page.getByTestId(id).boundingBox();
       expect(box).not.toBeNull();
       expect(box!.height).toBeGreaterThanOrEqual(44);
+      await closeStudyTool(page);
     }
     await page.getByTestId('stage').scrollIntoViewIfNeeded();
     await page.screenshot({ path: `${evidenceRoot}/gates/G3A1-regression-mobile.png` });

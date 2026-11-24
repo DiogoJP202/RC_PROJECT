@@ -62,7 +62,9 @@ try {
   await page.getByTestId('rinkaku-toggle').click();
   await page.waitForFunction(() => Boolean(window.__ATLAS_SCENE__?.snapshot().rinkaku?.adapter));
   const activationMs = Date.now() - activationStart;
+  await page.getByTestId('rinkaku-settings').click();
   await page.getByTestId('rinkaku-quality').selectOption(quality);
+  await page.getByTestId('body-panel-close').click();
   // Keep the body selection and initial surface opacity (.94) of the original
   // production protocol; visual comparisons use separate opacity=1 captures.
   const manifestTransferBytes = await page.evaluate(() => performance.getEntriesByType('navigation')[0].transferSize

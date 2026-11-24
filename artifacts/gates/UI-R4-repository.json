@@ -1,0 +1,164 @@
+{
+  "checkedAt": "2026-11-19T19:08:13.579Z",
+  "branch": "codex/ui-r4",
+  "head": "0c287c7768b4d1607274d9e1e9e6a186f0904e92",
+  "originMain": "0c287c7768b4d1607274d9e1e9e6a186f0904e92",
+  "startingSnapshotFiles": 46,
+  "protectedPaths": [
+    "src/scene",
+    "src/simulation",
+    "src/state",
+    "src/content",
+    "contracts",
+    "research",
+    "references",
+    "public",
+    "package.json",
+    "package-lock.json",
+    "artifacts"
+  ],
+  "protectedTrackedDiffEmpty": true,
+  "protectedUntrackedFilesEmpty": true,
+  "indexEmpty": true,
+  "trackedHistoricalArtifacts": 1082,
+  "approvedUIR3Evidence": [
+    {
+      "file": "artifacts/gates/UI-R3-baseline.json",
+      "expectedSha256": "3d06753facca1818a94c7b01caf60f7fb480c50253ae759770736f2f11c55d14",
+      "currentSha256": "3d06753facca1818a94c7b01caf60f7fb480c50253ae759770736f2f11c55d14"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-before-rinkaku-1440.png",
+      "expectedSha256": "d52cb6634894fb3dbee058193758c63f1315426b6556558ebaa3e8818fc49e62",
+      "currentSha256": "d52cb6634894fb3dbee058193758c63f1315426b6556558ebaa3e8818fc49e62"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-before-rinkaku-390.png",
+      "expectedSha256": "9c50d131ec3782486c47d3603363aa1b7c4ef1827d9d13f96b76df19efc9d726",
+      "currentSha256": "9c50d131ec3782486c47d3603363aa1b7c4ef1827d9d13f96b76df19efc9d726"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-before-rinkaku-430.png",
+      "expectedSha256": "9168ba14a0362283befbe11b216f87ea514a7849c3f6293d61a254a80031424f",
+      "currentSha256": "9168ba14a0362283befbe11b216f87ea514a7849c3f6293d61a254a80031424f"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-before-vascular-1440.png",
+      "expectedSha256": "7d7deffae22d9435b8476785375be3f6a51ff589d1d442d51256d4ecd74cc075",
+      "currentSha256": "7d7deffae22d9435b8476785375be3f6a51ff589d1d442d51256d4ecd74cc075"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-before-vascular-390.png",
+      "expectedSha256": "e53470707dcce6f4e463935b8e39dfe136d2a2849c9f3d100e82b085191c8aad",
+      "currentSha256": "e53470707dcce6f4e463935b8e39dfe136d2a2849c9f3d100e82b085191c8aad"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-before-vascular-430.png",
+      "expectedSha256": "a8a81e5f2bd3f9202668c1c8dd285dc46a9472f72c958e3930b96b5ca1bcdc31",
+      "currentSha256": "a8a81e5f2bd3f9202668c1c8dd285dc46a9472f72c958e3930b96b5ca1bcdc31"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-layout.json",
+      "expectedSha256": "4ea60d11433305d573925876cd5ffcda1940c82b3b700913d717902b1570aa94",
+      "currentSha256": "4ea60d11433305d573925876cd5ffcda1940c82b3b700913d717902b1570aa94"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-performance.json",
+      "expectedSha256": "2acd2752772a9deb5ba57e395a0eb235397c46fa921cea352e6bb35890cbe505",
+      "currentSha256": "2acd2752772a9deb5ba57e395a0eb235397c46fa921cea352e6bb35890cbe505"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-rinkaku-390.png",
+      "expectedSha256": "b9704f0fb189db4a200aec0f317c68b93e3295ac0cae4ab42235e289478578c2",
+      "currentSha256": "b9704f0fb189db4a200aec0f317c68b93e3295ac0cae4ab42235e289478578c2"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-rinkaku-430.png",
+      "expectedSha256": "25968a8e4efaec0978329f3d9a4ca7e2e77077d41ce6cecc8cba027c7b7a1edd",
+      "currentSha256": "25968a8e4efaec0978329f3d9a4ca7e2e77077d41ce6cecc8cba027c7b7a1edd"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-rinkaku-desktop.png",
+      "expectedSha256": "2c00153d93e4b28c414c123f05b2ac9dda7f8baf7d28468bb17b91eeb7a5af7b",
+      "currentSha256": "2c00153d93e4b28c414c123f05b2ac9dda7f8baf7d28468bb17b91eeb7a5af7b"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-rinkaku-ficha-390.png",
+      "expectedSha256": "47602e2b198d5e76c6f6222b5aa3f6b390200f132ae7757a4c89599e0410fe84",
+      "currentSha256": "47602e2b198d5e76c6f6222b5aa3f6b390200f132ae7757a4c89599e0410fe84"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-rinkaku-ficha-430.png",
+      "expectedSha256": "e5c7aa02d1aa2ed0305ba676aba08ce986797a59bc29b008db2249803db55ca5",
+      "currentSha256": "e5c7aa02d1aa2ed0305ba676aba08ce986797a59bc29b008db2249803db55ca5"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-tracking.json",
+      "expectedSha256": "abb006dd4d1c3dc481a3feecfb02bb195c7e4bdd3375dddd71a203f35b3fd01c",
+      "currentSha256": "abb006dd4d1c3dc481a3feecfb02bb195c7e4bdd3375dddd71a203f35b3fd01c"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-vascular-390.png",
+      "expectedSha256": "c44af21daf059a3541d7945ffd4a901d02ae7801c032e16fb4f65e219b61d7a2",
+      "currentSha256": "c44af21daf059a3541d7945ffd4a901d02ae7801c032e16fb4f65e219b61d7a2"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-vascular-430.png",
+      "expectedSha256": "6508997e96e5346e64d930c1d75192d37592d4bf911279095f9dbdf07047b427",
+      "currentSha256": "6508997e96e5346e64d930c1d75192d37592d4bf911279095f9dbdf07047b427"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-vascular-desktop.png",
+      "expectedSha256": "8b054edd743dce75c12d9be857dd142e2268ed7c0077ce1a251e889aeffe017a",
+      "currentSha256": "8b054edd743dce75c12d9be857dd142e2268ed7c0077ce1a251e889aeffe017a"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-vascular-ficha-390.png",
+      "expectedSha256": "5abb83bc77d4f752a59ea2ff23eab6b0fca255aceff4aa88208b28ec6e469530",
+      "currentSha256": "5abb83bc77d4f752a59ea2ff23eab6b0fca255aceff4aa88208b28ec6e469530"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-vascular-ficha-430.png",
+      "expectedSha256": "1446e5b796051d3a0ee2020fd61794f7b011561846c3e43c1089f96bf00ccf25",
+      "currentSha256": "1446e5b796051d3a0ee2020fd61794f7b011561846c3e43c1089f96bf00ccf25"
+    },
+    {
+      "file": "artifacts/gates/UI-R3-vascular-ficha-desktop.png",
+      "expectedSha256": "7af0ae55c27fcaac24dc63d415b4c368b42b1f5f41ddcc8571cc886cd6ab9cce",
+      "currentSha256": "7af0ae55c27fcaac24dc63d415b4c368b42b1f5f41ddcc8571cc886cd6ab9cce"
+    }
+  ],
+  "sourceTreeSha256": "83f506a0b024b95dd1f5c0fecd1e3ccbf9b09b67c77c798da9cfd0b784498dee",
+  "sourceFileCount": 92,
+  "buildEntries": [
+    {
+      "file": "dist/assets/AtlasWorkspace-BkiLpW6V.css",
+      "sha256": "0cf1c560aaeb6ff6515d21fa862cc0a7959a4172da5dba072682c020e13e904a"
+    },
+    {
+      "file": "dist/assets/AtlasWorkspace-CyErvkIy.js",
+      "sha256": "c84c2edf8e15deec8b11efb00659d94c37ba73b43d0754dd2bc5d56b9ad024b3"
+    },
+    {
+      "file": "dist/assets/index-BozWDWSF.js",
+      "sha256": "cde07d13b35c7c534b1899e254854534c323cf077d5330087781ba4bccb5de0d"
+    },
+    {
+      "file": "dist/assets/index-CN_A8G34.css",
+      "sha256": "9327e8df2d954cf42d2f946e778eb04047ff95ae5b0b1ec481d25c4b73bf530a"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-BpSOKySz.js",
+      "sha256": "c81f0efa027f80997130a61f88d793f2eb0e0c76c83bc18458a5aafdf80a1b9a"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-Dk9kFNXi.css",
+      "sha256": "282aef9b152c7abab2dbd224eaa8b424863b356d9f5f66fadbf58649ea7bd525"
+    }
+  ],
+  "mainCheckout": {
+    "head": "0c287c7768b4d1607274d9e1e9e6a186f0904e92",
+    "status": "## main...origin/main\n?? ghoul_atlas_ui_redesign/"
+  },
+  "scope": "Local UI-R3/UI-R4 work, no staging, commit, push or deployment in this gate."
+}

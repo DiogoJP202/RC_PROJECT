@@ -1,3 +1,4 @@
+import { changeMicroSelect, changeRinkakuView } from './study-tools';
 import { openBodyTool } from './body-tools';
 import { expect, test, type Page } from '@playwright/test';
 
@@ -185,7 +186,7 @@ test('leaving Rinkaku for Fontes suspends the same canvas and restores the exact
   await expect.poll(() => new URL(page.url()).pathname).toBe('/atlas/rinkaku');
   await page.getByTestId('rinkaku-time').fill('0.64');
   await expect.poll(async () => (await body(page)).rinkaku.t).toBeCloseTo(.64, 6);
-  await page.getByTestId('rinkaku-lateral').click();
+  await changeRinkakuView(page, 'rinkaku-lateral');
   await expect.poll(async () => (await body(page)).camera.moving).toBe(false);
 
   const canvas = page.getByTestId('stage').locator('canvas');
@@ -222,7 +223,7 @@ test('editorial navigation pauses a playing Micro session without changing ident
   await expect(page.getByTestId('micro-status')).toHaveText('3D conectado');
   const canvas = page.getByTestId('micro-stage').locator('canvas');
   const originalCanvas = await canvas.elementHandle();
-  await page.getByTestId('micro-entity').selectOption('rc:17:0');
+  await changeMicroSelect(page, 'micro-entity', 'rc:17:0');
   await page.getByTestId('micro-follow').click();
   await page.getByTestId('micro-time').fill('11');
   await expect.poll(async () => (await micro(page)).adapter.positionHash).toBeTruthy();

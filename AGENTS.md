@@ -23,6 +23,8 @@ Mas não use essa ordem para justificar uma interface feia: a experiência visua
 
 ## Workflow para cada tarefa
 
+- Trabalhar na pasta principal do projeto, identificada pela primeira entrada de `git worktree list --porcelain`. Se o chat iniciar em um worktree, usar explicitamente a pasta principal como diretório de trabalho.
+- Separar tarefas por branches, sem criar novos worktrees ou cópias de desenvolvimento. Ao concluir uma entrega, fazer commit e push na branch de trabalho, preservando alterações de terceiros e sem force push.
 - Leia os documentos pertinentes; confirme o estado real do repositório e caminhos antes de propor substituições.
 - Explicite no `docs/IMPLEMENTATION_LOG.md`: hipótese, arquivos tocados, riscos, escolhas e limitações.
 - Faça alterações pequenas e coesas. Não reescreva tudo porque um módulo precisou ser ajustado.

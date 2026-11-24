@@ -61,11 +61,15 @@ try {
       combinedTransferBytes: nav.transferSize + entries.reduce((sum, item) => sum + item.transferSize, 0),
       resourceUrls: entries.map((entry) => entry.name) };
   });
+  await page.getByTestId('micro-controls-toggle').click();
   await page.getByTestId('micro-profile').selectOption(String(count));
+  await page.getByTestId('micro-panel-close').click();
   await page.waitForFunction((expected) => window.__ATLAS_MICRO__.snapshot().adapter.counts.total === expected, count);
   await page.getByTestId('micro-reset').click();
   if (tracking) {
+    await page.getByTestId('micro-controls-toggle').click();
     await page.getByTestId('micro-entity').selectOption('rc:17:0');
+    await page.getByTestId('micro-panel-close').click();
     await page.getByTestId('micro-follow').click();
   } else await page.getByTestId('micro-camera-flow').click();
   await page.waitForFunction((mode) => window.__ATLAS_MICRO__.snapshot().cameraMode === mode, cameraMode);

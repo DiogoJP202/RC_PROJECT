@@ -1,5 +1,19 @@
 # GHOUL ATLAS — Observatório Anatômico 3D
 
+> **Checkout principal.** UI-R3/UI-R4 estão consolidados na branch `codex/ui-r4`, com o pacote
+> de dez documentos do redesign. O trabalho segue na pasta principal, separado por branches,
+> com commit e push ao concluir cada entrega. Veja o [checkpoint de consolidação](docs/UI_REDESIGN_CHECKPOINT.md).
+
+> **UI-R4 — Mobile e acessibilidade.** Abas das fichas com navegação por teclado, modais com
+> contenção de foco, atalhos de cena configuráveis e controles móveis legíveis. A revisão inclui
+> reflow, cores forçadas, auditoria automatizada e regressões de navegação e desempenho.
+> Veja [UI-R4: aceite e limites](docs/UI_R4_ACCEPTANCE.md).
+
+> **UI-R3 — Rinkaku e Micro.** Os três modos compartilham a composição do observatório,
+> com palco dominante, ferramentas sob demanda e fontes apresentadas pelo mesmo componente.
+> Rinkaku e transporte vascular conservam suas timelines e seus estados de simulação.
+> Veja [UI-R3: aceite e evidências](docs/UI_R3_ACCEPTANCE.md).
+
 > **UI-R2 — Observatório Corpo.** O palco anatômico ocupa a área central de `/atlas`. Estruturas,
 > camadas, ficha e varredura são ferramentas sob demanda; em telas estreitas, usam uma folha
 > inferior. O renderer, o catálogo e as simulações continuam na mesma base. Veja [UI-R2: aceite](docs/UI_R2_ACCEPTANCE.md).
@@ -8,7 +22,7 @@
 > do Rinkaku. Abra o observatório em `/atlas`, a simulação em `/atlas/rinkaku` ou o fluxo vascular
 > em `/atlas/vascular`. `/estudos` reúne as três experiências; `/fontes` reúne metodologia, fontes
 > e créditos. A vitrine não carrega o renderer. Os avisos de checkpoint abaixo descrevem a evolução
-> técnica das cenas; o layout de trabalho permanece o do G4A.1 nesta etapa. Veja [UI-R1: aceite](docs/UI_R1_ACCEPTANCE.md).
+> técnica das cenas; UI-R2/UI-R3 registram a composição atual do observatório. Veja [UI-R1: aceite](docs/UI_R1_ACCEPTANCE.md).
 
 > **ATUAL — checkpoint G4A/G4A.1 aprovado como P1 técnico e visual com ressalvas:** o usuário aprovou a experiência e autorizou commit e push em `main`. Este estado integra o checkpoint G4A/G4A.1 em `main`; sua identidade é o commit que introduz [G4A_CHECKPOINT](docs/G4A_CHECKPOINT.md), consultável por `git log -1 -- docs/G4A_CHECKPOINT.md`. O encerramento verifica o SHA remoto e a limpeza da working tree; compare o Git local e remoto ao retomar. A base `717f4069c5e662f78ea8b28e7d13e0636ab0c5dd` é o precedente histórico. Parede esquemática, marcador fino, hemácia simplificada e composição mobile apertada permanecem ressalvas aceitas; arte final P2/Blender continua pendente. Não há G4A.2 neste checkpoint. A próxima etapa planejada é **G4B, ainda não iniciada**; G4B/G5/G2B/G3B não são implementados por este checkpoint. Deploy não foi autorizado.
 

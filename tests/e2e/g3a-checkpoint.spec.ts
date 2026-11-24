@@ -1,3 +1,4 @@
+import { changeRinkakuSelect, changeRinkakuView } from './study-tools';
 import { chooseStructure, openBodyTool } from './body-tools';
 import { evidenceRoot } from './evidence-path';
 import { expect, test, type Page } from '@playwright/test';
@@ -41,9 +42,9 @@ test('terminal retraction settles before the visibility cutoff and leaves no ren
   await mkdir(`${OUTPUT}/terminal`, { recursive: true });
   const samples = [];
   for (const count of [1, 2, 3, 4]) {
-    await page.getByTestId('rinkaku-count').selectOption(String(count));
+    await changeRinkakuSelect(page, 'rinkaku-count', String(count));
     for (const view of ['focus', 'lateral']) {
-      await page.getByTestId(`rinkaku-${view}`).click();
+      await changeRinkakuView(page, `rinkaku-${view}`);
       await expect.poll(async () => (await scene(page)).camera.moving).toBe(false);
       const rest = await scrub(page, 0);
       const restPng = await page.getByTestId('stage').screenshot();
@@ -106,9 +107,9 @@ test('real terminal playback stops at one, keeps replay resources stable and rel
 test('transparent body picking ignores pooled appendages below an invisible parent at the endpoint', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await open(page);
-  await page.getByTestId('rinkaku-count').selectOption('1');
+  await changeRinkakuSelect(page, 'rinkaku-count', '1');
   await chooseStructure(page, 'human.thorax');
-  await page.getByTestId('rinkaku-focus').click();
+  await changeRinkakuView(page, 'rinkaku-focus');
   await expect.poll(async () => (await scene(page)).camera.moving).toBe(false);
   await scrub(page, 1);
   expect((await scene(page)).selectedId).toBe('human.thorax');
@@ -129,9 +130,9 @@ test('terminal surfaces also have no residual pixel footprint through the transp
   await mkdir(`${OUTPUT}/terminal-transparent`, { recursive: true });
   const samples = [];
   for (const count of [1, 2, 3, 4]) {
-    await page.getByTestId('rinkaku-count').selectOption(String(count));
+    await changeRinkakuSelect(page, 'rinkaku-count', String(count));
     for (const view of ['focus', 'lateral']) {
-      await page.getByTestId(`rinkaku-${view}`).click();
+      await changeRinkakuView(page, `rinkaku-${view}`);
       await expect.poll(async () => (await scene(page)).camera.moving).toBe(false);
       await scrub(page, 0);
       const restSha256 = sha(await page.getByTestId('stage').screenshot());

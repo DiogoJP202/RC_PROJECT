@@ -1,0 +1,77 @@
+{
+  "measurements": [
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "mode": "body",
+      "pageWidth": 320
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "mode": "rinkaku",
+      "pageWidth": 320
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "mode": "vascular",
+      "pageWidth": 320
+    },
+    {
+      "viewport": {
+        "width": 720,
+        "height": 450
+      },
+      "mode": "body",
+      "pageWidth": 720
+    },
+    {
+      "viewport": {
+        "width": 720,
+        "height": 450
+      },
+      "mode": "rinkaku",
+      "pageWidth": 720
+    },
+    {
+      "viewport": {
+        "width": 720,
+        "height": 450
+      },
+      "mode": "vascular",
+      "pageWidth": 720
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "body",
+      "pageWidth": 844
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "rinkaku",
+      "pageWidth": 844
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "vascular",
+      "pageWidth": 844
+    }
+  ],
+  "note": "720×450 CSS px at DPR2 exercises the layout equivalent to a 1440×900 viewport at 200%; no physical phone measured."
+}

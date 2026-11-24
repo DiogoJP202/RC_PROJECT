@@ -1,0 +1,59 @@
+{
+  "browser": "157.0.8103.79",
+  "observations": [
+    {
+      "state": "Micro controls, 390px",
+      "noteOverlapsNeighbor": false,
+      "field": {
+        "fontSize": "16px",
+        "border": "rgb(113, 131, 136)",
+        "background": "rgb(29, 36, 39)",
+        "panel": "rgb(20, 25, 28)",
+        "borderToField": 3.9764742549983922,
+        "borderToPanel": 4.473965825262181
+      }
+    },
+    {
+      "state": "Help, 430px",
+      "blocks": [
+        {
+          "tag": "H2",
+          "top": 81.21875,
+          "bottom": 116.015625
+        },
+        {
+          "tag": "P",
+          "top": 133.015625,
+          "bottom": 193.796875
+        },
+        {
+          "tag": "DL",
+          "top": 218.796875,
+          "bottom": 596.796875
+        },
+        {
+          "tag": "LABEL",
+          "top": 621.796875,
+          "bottom": 665.796875
+        },
+        {
+          "tag": "P",
+          "top": 665.796875,
+          "bottom": 688.59375
+        },
+        {
+          "tag": "P",
+          "top": 706.59375,
+          "bottom": 797.765625
+        },
+        {
+          "tag": "BUTTON",
+          "top": 823.765625,
+          "bottom": 867.765625
+        }
+      ],
+      "flowOverlap": false,
+      "closeGuideHeight": 44
+    }
+  ]
+}

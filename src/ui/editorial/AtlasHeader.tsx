@@ -1,4 +1,4 @@
-import { useRef, type ReactNode } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react';
 import { Icon } from '../Icon';
 import './editorial.css';
 
@@ -13,6 +13,20 @@ interface AtlasHeaderProps {
 
 export function AtlasHeader({ current, atlasHref = '/atlas', onHelp, atlasControls }: AtlasHeaderProps) {
   const menu = useRef<HTMLDetailsElement>(null);
+  useEffect(() => {
+    const outside = (event: PointerEvent) => {
+      if (event.target instanceof Node && menu.current?.open && !menu.current.contains(event.target)) menu.current.open = false;
+    };
+    const escape = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape' || !menu.current?.open || document.querySelector('dialog:modal')) return;
+      event.preventDefault();
+      menu.current.open = false;
+      menu.current.querySelector('summary')?.focus();
+    };
+    document.addEventListener('pointerdown', outside, { passive: true });
+    document.addEventListener('keydown', escape);
+    return () => { document.removeEventListener('pointerdown', outside); document.removeEventListener('keydown', escape); };
+  }, []);
   const items = [
     { href: atlasHref, label: 'Atlas', area: 'atlas' },
     { href: '/estudos', label: 'Estudos', area: 'studies' },

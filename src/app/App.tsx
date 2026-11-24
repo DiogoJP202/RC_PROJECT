@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useLayoutEffect, useRef, useSta
 import { AtlasHeader } from '../ui/editorial/AtlasHeader';
 import { HomePage, StudiesPage } from '../ui/editorial/EditorialPage';
 import { Icon } from '../ui/Icon';
+import { containDialogTab } from '../ui/dialogKeys';
 import { atlasHref, atlasPaths, isBodyView, readRoute, type AppRoute, type AtlasRoute, type NavigationKind } from './routes';
 
 const Workspace = lazy(() => import('./AtlasWorkspace'));
@@ -44,6 +45,7 @@ export default function App() {
     return { route, workspace: route.section === 'atlas' ? route : null, bodyVisited: route.section === 'atlas' && isBodyView(route.view), kind: 'initial', revision: 0 };
   });
   const help = useRef<HTMLDialogElement>(null);
+  const [shortcutsEnabled, setShortcutsEnabled] = useState(true);
   const backPending = useRef(false);
   const atlasScroll = useRef(0);
   const previousSection = useRef<AppRoute['section']>(state.route.section);
@@ -149,10 +151,10 @@ export default function App() {
       style={active ? undefined : { visibility: 'hidden', pointerEvents: 'none', position: 'fixed', inset: 0, overflow: 'clip' }}>
       <Suspense fallback={<main role="status">Carregando observatório…</main>}>
         <Workspace route={state.workspace} active={active} bodyVisited={state.bodyVisited} navigationKind={state.kind} navigationRevision={state.revision}
-          navigate={navigate} returnFromVascular={returnFromVascular} returnsToRinkaku={returnsToRinkaku} onHelp={openHelp} />
+          navigate={navigate} returnFromVascular={returnFromVascular} returnsToRinkaku={returnsToRinkaku} onHelp={openHelp} shortcutsEnabled={shortcutsEnabled} />
       </Suspense>
     </div> : null}
-    <dialog ref={help} className="help-dialog" aria-labelledby="help-title">
+    <dialog ref={help} className="help-dialog" aria-labelledby="help-title" onKeyDown={containDialogTab}>
       <button className="icon-button dialog-close" aria-label="Fechar ajuda" onClick={() => help.current?.close()}><Icon name="close" /></button>
       <h2 id="help-title">Controles e navegação</h2>
       <p>Arraste para girar. Role ou use dois dedos para aproximar. Selecione na cena ou na lista.</p>
@@ -162,7 +164,10 @@ export default function App() {
         <div><dt>1 / 2</dt><dd>Corpo / Micro.</dd></div>
         <div><dt>Espaço</dt><dd>Reproduzir ou pausar uma simulação. No Corpo, abra Varredura para acessar os controles.</dd></div>
         <div><dt>Tab / Enter</dt><dd>Navegar e selecionar na interface.</dd></div>
+        <div><dt>Setas</dt><dd>Alternar Estrutura e Evidências nas fichas. Home e End acessam a primeira e a última aba.</dd></div>
       </dl>
+      <label className="shortcut-preference"><input data-testid="keyboard-shortcuts" type="checkbox" checked={shortcutsEnabled} onChange={(event) => setShortcutsEnabled(event.target.checked)} />Ativar atalhos de cena</label>
+      <p className="shortcut-hint">Controle os atalhos R, teclas numéricas e Espaço no observatório.</p>
       <p className="claim-disclaimer">Use as fichas para consultar fontes e limites. Uma afirmação verificável não torna a geometria canônica.</p>
       <button className="primary-button" onClick={() => help.current?.close()}>Fechar guia</button>
     </dialog>

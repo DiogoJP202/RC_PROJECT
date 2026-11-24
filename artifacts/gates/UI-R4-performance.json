@@ -1,0 +1,786 @@
+{
+  "gate": "UI-R4",
+  "generatedAt": "2026-11-19T19:11:39.602Z",
+  "sourceTreeSha256": "83f506a0b024b95dd1f5c0fecd1e3ccbf9b09b67c77c798da9cfd0b784498dee",
+  "buildEntries": [
+    {
+      "file": "dist/assets/AtlasWorkspace-BkiLpW6V.css",
+      "sha256": "0cf1c560aaeb6ff6515d21fa862cc0a7959a4172da5dba072682c020e13e904a"
+    },
+    {
+      "file": "dist/assets/AtlasWorkspace-CyErvkIy.js",
+      "sha256": "c84c2edf8e15deec8b11efb00659d94c37ba73b43d0754dd2bc5d56b9ad024b3"
+    },
+    {
+      "file": "dist/assets/index-BozWDWSF.js",
+      "sha256": "cde07d13b35c7c534b1899e254854534c323cf077d5330087781ba4bccb5de0d"
+    },
+    {
+      "file": "dist/assets/index-CN_A8G34.css",
+      "sha256": "9327e8df2d954cf42d2f946e778eb04047ff95ae5b0b1ec481d25c4b73bf530a"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-BpSOKySz.js",
+      "sha256": "c81f0efa027f80997130a61f88d793f2eb0e0c76c83bc18458a5aafdf80a1b9a"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-Dk9kFNXi.css",
+      "sha256": "282aef9b152c7abab2dbd224eaa8b424863b356d9f5f66fadbf58649ea7bd525"
+    }
+  ],
+  "profiles": [
+    {
+      "name": "body",
+      "measuredAt": "2026-11-19T19:07:22.048Z",
+      "rawReport": {
+        "file": "artifacts/local/ui-r4-body-profile.json",
+        "sha256": "2e255e10a254f647d8aac998ebd0d5d5f3aa305db9c286de4f15983177a1f45b"
+      },
+      "scenario": {
+        "mode": "body",
+        "selectedId": "human.surface",
+        "assetProfile": {
+          "requestedAsset": "proxy",
+          "assetActivationMs": null,
+          "animated": false,
+          "transferScope": "Body initial transfer only."
+        },
+        "mobileEmulation": false
+      },
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chrome 157.0.8103.79",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol Network.emulateNetworkConditions",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "latency=50ms is the CDP request latency setting; this does not certify a symmetric physical 50ms RTT.",
+        "transferredCdpBytes": 476026
+      },
+      "protocol": {
+        "warmupAfterInteractiveMs": 10000,
+        "requestedSamplingMs": 30000,
+        "fpsMethod": "Percentiles of reciprocal requestAnimationFrame intervals; same visible desktop page renders R3F every frame.",
+        "sceneSampleIntervalMs": 1000
+      },
+      "bodyInteractiveMs": 1479.2999999970198,
+      "studyReadyMs": null,
+      "combinedTransferBytes": 475021,
+      "sample": {
+        "durationMs": 30015.20000000298,
+        "frames": 1800,
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.17159763314374,
+        "documentVisibility": "visible"
+      },
+      "observables": {
+        "drawCalls": {
+          "min": 23,
+          "max": 23
+        },
+        "triangles": {
+          "min": 150682,
+          "max": 150682
+        },
+        "geometries": {
+          "min": 15,
+          "max": 15
+        },
+        "textures": {
+          "min": 3,
+          "max": 3
+        }
+      },
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "limitations": [
+        "Single desktop run on this workstation, no claim about other GPUs.",
+        "Mobile layout is emulated separately; no physical mobile FPS measured.",
+        "Production anatomy/rig fidelity remains blocked by missing final licensed assets."
+      ]
+    },
+    {
+      "name": "rinkaku",
+      "measuredAt": "2026-11-19T19:08:05.292Z",
+      "rawReport": {
+        "file": "artifacts/local/ui-r4-rinkaku-profile.json",
+        "sha256": "fabc2266eb43ea2757d7f946c43fc02ac8a202f2c43dc86bcd53196ce7bb0211"
+      },
+      "scenario": {
+        "quality": "standard",
+        "appendageCount": 4,
+        "seed": 17,
+        "particlesSetting": true,
+        "particlesRendered": true,
+        "mobileEmulation": false,
+        "activationMs": 398,
+        "activationAdditionalTransferBytes": 6279,
+        "bootPlusManifestTransferBytes": 481300,
+        "sequence": "Full 21 s cinematic transport, including 3.4 s retraction. Same normalized seven phase intervals and sampler motionTime as G3A. Restart through reset/play UI; 10 s warm-up then 30 s rAF sample."
+      },
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.79",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "latency=50 ms is a CDP request setting, not measured symmetric physical RTT.",
+        "transferredCdpBytes": 482344
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSamplingMs": 30000,
+        "playbackDurationSeconds": 21,
+        "retractionDurationSeconds": 3.4,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals.",
+        "metricIntervalMs": 1000,
+        "diagnosticReadIntervalMs": 500,
+        "comparison": "G3A used a linear 18 s cycle. Hardware/viewport/network/warm-up/sample remain the same for desktop; pose residence time differs intentionally. These values must not be presented as identical motion workloads."
+      },
+      "bodyInteractiveMs": 1488,
+      "studyReadyMs": 398,
+      "combinedTransferBytes": 481300,
+      "sample": {
+        "durationMs": 30016.5,
+        "frames": 1800,
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.17159763315647,
+        "documentVisibility": "visible"
+      },
+      "observables": {
+        "maxDrawCalls": 22,
+        "maxTriangles": 148834,
+        "geometryRange": {
+          "min": 20,
+          "max": 20
+        },
+        "textureRange": {
+          "min": 3,
+          "max": 3
+        },
+        "adapterResourceIdsStable": true
+      },
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true,
+        "bodyPlusManifestUnder8MiB": true,
+        "allSevenPhasesSampled": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "limitations": [
+        "Single run per declared profile on this workstation.",
+        "Emulated mobile on workstation GPU is not physical mobile FPS.",
+        "Renderer counters are not VRAM; variable GC affects heap deltas.",
+        "Procedural shapes and seven phases are artistic hypothetical_model, subject to final human visual approval."
+      ]
+    },
+    {
+      "name": "flow-500",
+      "measuredAt": "2026-11-19T19:08:49.688Z",
+      "rawReport": {
+        "file": "artifacts/local/ui-r4-flow-500-profile.json",
+        "sha256": "bf74e151f61f3d80cfbdf0fb88985e47dbb1942ef780defb6a9b400019e22c7c"
+      },
+      "scenario": {
+        "count": 500,
+        "seed": 17,
+        "cameraMode": "flow",
+        "selectedId": null,
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": false,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1568,
+        "readyMs": 1423.7000000029802,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 20886,
+        "bootPlusMicroTransferBytes": 495907
+      },
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.79",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "50 ms is a CDP setting, not measured physical RTT.",
+        "transferredCdpBytes": 497156
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSampleMs": 30000,
+        "readDiagnosticsIntervalMs": 1000,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals. Diagnostics once per second, never every frame.",
+        "profileMeaning": "Counts are rendered entities, not physiological concentrations; each count/mode is a separate fresh context.",
+        "readinessMeaning": "Entry readyMs always measures DEFAULT500 before changing the measured population. Flow protocol matches G4A; Tracking is a separate cost scenario.",
+        "diagnosticScope": "Renderer counters cover Micro only; Body remains resident. One owned bump texture is distinct from renderer texture count. Visibility raycasts are not sampled during FPS measurement."
+      },
+      "bodyInteractiveMs": 1440.4000000059605,
+      "studyReadyMs": 1423.7000000029802,
+      "combinedTransferBytes": 495907,
+      "sample": {
+        "durationMs": 30014,
+        "frames": 1800,
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.171597633131,
+        "documentVisibility": "visible"
+      },
+      "observables": {
+        "drawCalls": {
+          "min": 3,
+          "max": 3
+        },
+        "triangles": {
+          "min": 214432,
+          "max": 214432
+        },
+        "geometries": {
+          "min": 3,
+          "max": 3
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "limitations": [
+        "One run of this declared profile/mode/build on the workstation; before/after must use identical hardware, seed17, count and mode.",
+        "Emulated mobile uses workstation GPU and does not certify a physical phone.",
+        "rAF percentiles are not GPU frame timings; heap/resource identities do not prove universal leak absence.",
+        "Artistic human review is independent of numeric budgets."
+      ]
+    },
+    {
+      "name": "tracking-2000",
+      "measuredAt": "2026-11-19T19:09:34.215Z",
+      "rawReport": {
+        "file": "artifacts/local/ui-r4-tracking-2000-profile.json",
+        "sha256": "da135b9a22cedec49c09ad89991f84be51e74b1f7a07199e3eaa0a1d3d09f589"
+      },
+      "scenario": {
+        "count": 2000,
+        "seed": 17,
+        "cameraMode": "tracking",
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": false,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1541,
+        "readyMs": 1395.7999999970198,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 20886,
+        "bootPlusMicroTransferBytes": 495907
+      },
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.79",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "50 ms is a CDP setting, not measured physical RTT.",
+        "transferredCdpBytes": 497156
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSampleMs": 30000,
+        "readDiagnosticsIntervalMs": 1000,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals. Diagnostics once per second, never every frame.",
+        "profileMeaning": "Counts are rendered entities, not physiological concentrations; each count/mode is a separate fresh context.",
+        "readinessMeaning": "Entry readyMs always measures DEFAULT500 before changing the measured population. Flow protocol matches G4A; Tracking is a separate cost scenario.",
+        "diagnosticScope": "Renderer counters cover Micro only; Body remains resident. One owned bump texture is distinct from renderer texture count. Visibility raycasts are not sampled during FPS measurement."
+      },
+      "bodyInteractiveMs": 1448,
+      "studyReadyMs": 1395.7999999970198,
+      "combinedTransferBytes": 495907,
+      "sample": {
+        "durationMs": 30016.20000000298,
+        "frames": 1800,
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "documentVisibility": "visible"
+      },
+      "observables": {
+        "drawCalls": {
+          "min": 4,
+          "max": 4
+        },
+        "triangles": {
+          "min": 808384,
+          "max": 808384
+        },
+        "geometries": {
+          "min": 4,
+          "max": 4
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "limitations": [
+        "One run of this declared profile/mode/build on the workstation; before/after must use identical hardware, seed17, count and mode.",
+        "Emulated mobile uses workstation GPU and does not certify a physical phone.",
+        "rAF percentiles are not GPU frame timings; heap/resource identities do not prove universal leak absence.",
+        "Artistic human review is independent of numeric budgets."
+      ]
+    },
+    {
+      "name": "rinkaku-mobile",
+      "measuredAt": "2026-11-19T19:10:17.388Z",
+      "rawReport": {
+        "file": "artifacts/local/ui-r4-rinkaku-mobile-profile.json",
+        "sha256": "17da2f071eaa10345ce799a93584912b9765a73eff168ac5c46089bdbdb93e0d"
+      },
+      "scenario": {
+        "quality": "standard",
+        "appendageCount": 4,
+        "seed": 17,
+        "particlesSetting": true,
+        "particlesRendered": true,
+        "mobileEmulation": true,
+        "activationMs": 184,
+        "activationAdditionalTransferBytes": 6279,
+        "bootPlusManifestTransferBytes": 481300,
+        "sequence": "Full 21 s cinematic transport, including 3.4 s retraction. Same normalized seven phase intervals and sampler motionTime as G3A. Restart through reset/play UI; 10 s warm-up then 30 s rAF sample."
+      },
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.79",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        }
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "latency=50 ms is a CDP request setting, not measured symmetric physical RTT.",
+        "transferredCdpBytes": 482344
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSamplingMs": 30000,
+        "playbackDurationSeconds": 21,
+        "retractionDurationSeconds": 3.4,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals.",
+        "metricIntervalMs": 1000,
+        "diagnosticReadIntervalMs": 500,
+        "comparison": "G3A used a linear 18 s cycle. Hardware/viewport/network/warm-up/sample remain the same for desktop; pose residence time differs intentionally. These values must not be presented as identical motion workloads."
+      },
+      "bodyInteractiveMs": 1443.5999999940395,
+      "studyReadyMs": 184,
+      "combinedTransferBytes": 481300,
+      "sample": {
+        "durationMs": 30018.89999999106,
+        "frames": 1800,
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "documentVisibility": "visible"
+      },
+      "observables": {
+        "maxDrawCalls": 22,
+        "maxTriangles": 148814,
+        "geometryRange": {
+          "min": 20,
+          "max": 20
+        },
+        "textureRange": {
+          "min": 3,
+          "max": 3
+        },
+        "adapterResourceIdsStable": true
+      },
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true,
+        "bodyPlusManifestUnder8MiB": true,
+        "allSevenPhasesSampled": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "limitations": [
+        "Single run per declared profile on this workstation.",
+        "Emulated mobile on workstation GPU is not physical mobile FPS.",
+        "Renderer counters are not VRAM; variable GC affects heap deltas.",
+        "Procedural shapes and seven phases are artistic hypothetical_model, subject to final human visual approval."
+      ]
+    },
+    {
+      "name": "tracking-mobile",
+      "measuredAt": "2026-11-19T19:11:02.079Z",
+      "rawReport": {
+        "file": "artifacts/local/ui-r4-tracking-mobile-profile.json",
+        "sha256": "484b3383879260dfba5b37a4896985cbb8ab88abeb37602457615b533887f466"
+      },
+      "scenario": {
+        "count": 500,
+        "seed": 17,
+        "cameraMode": "tracking",
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": true,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1557,
+        "readyMs": 1405,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 20886,
+        "bootPlusMicroTransferBytes": 495907
+      },
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 157.0.8103.79",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        }
+      },
+      "network": {
+        "method": "Chromium DevTools Protocol",
+        "cdp": {
+          "offline": false,
+          "latency": 50,
+          "downloadThroughput": 2500000,
+          "uploadThroughput": 2500000,
+          "connectionType": "ethernet"
+        },
+        "nominalDownloadMbps": 20,
+        "latencyNote": "50 ms is a CDP setting, not measured physical RTT.",
+        "transferredCdpBytes": 497156
+      },
+      "protocol": {
+        "warmupMs": 10000,
+        "requestedSampleMs": 30000,
+        "readDiagnosticsIntervalMs": 1000,
+        "fpsMethod": "Percentiles of reciprocal visible requestAnimationFrame intervals. Diagnostics once per second, never every frame.",
+        "profileMeaning": "Counts are rendered entities, not physiological concentrations; each count/mode is a separate fresh context.",
+        "readinessMeaning": "Entry readyMs always measures DEFAULT500 before changing the measured population. Flow protocol matches G4A; Tracking is a separate cost scenario.",
+        "diagnosticScope": "Renderer counters cover Micro only; Body remains resident. One owned bump texture is distinct from renderer texture count. Visibility raycasts are not sampled during FPS measurement."
+      },
+      "bodyInteractiveMs": 1493.199999988079,
+      "studyReadyMs": 1405,
+      "combinedTransferBytes": 495907,
+      "sample": {
+        "durationMs": 30008.5,
+        "frames": 1800,
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523812105,
+        "documentVisibility": "visible"
+      },
+      "observables": {
+        "drawCalls": {
+          "min": 4,
+          "max": 4
+        },
+        "triangles": {
+          "min": 214432,
+          "max": 214432
+        },
+        "geometries": {
+          "min": 4,
+          "max": 4
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "limitations": [
+        "One run of this declared profile/mode/build on the workstation; before/after must use identical hardware, seed17, count and mode.",
+        "Emulated mobile uses workstation GPU and does not certify a physical phone.",
+        "rAF percentiles are not GPU frame timings; heap/resource identities do not prove universal leak absence.",
+        "Artistic human review is independent of numeric budgets."
+      ]
+    }
+  ],
+  "comparisonsWithApprovedUIR3": [
+    {
+      "name": "rinkaku",
+      "baselineEvidence": "artifacts/gates/UI-R3-performance.json",
+      "sameEnvironment": true,
+      "sameNetworkSettings": true,
+      "before": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.17159763313737,
+        "maxDrawCalls": 22,
+        "combinedTransferBytes": 479788
+      },
+      "after": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.17159763315647,
+        "maxDrawCalls": 22,
+        "combinedTransferBytes": 481300
+      },
+      "payloadDeltaBytes": 1512
+    },
+    {
+      "name": "flow-500",
+      "baselineEvidence": "artifacts/gates/UI-R3-performance.json",
+      "sameEnvironment": true,
+      "sameNetworkSettings": true,
+      "before": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.17159763314374,
+        "maxDrawCalls": 3,
+        "combinedTransferBytes": 494448
+      },
+      "after": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.171597633131,
+        "maxDrawCalls": 3,
+        "combinedTransferBytes": 495907
+      },
+      "payloadDeltaBytes": 1459
+    },
+    {
+      "name": "tracking-2000",
+      "baselineEvidence": "artifacts/gates/UI-R3-performance.json",
+      "sameEnvironment": true,
+      "sameNetworkSettings": true,
+      "before": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "maxDrawCalls": 4,
+        "combinedTransferBytes": 494448
+      },
+      "after": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "maxDrawCalls": 4,
+        "combinedTransferBytes": 495907
+      },
+      "payloadDeltaBytes": 1459
+    },
+    {
+      "name": "rinkaku-mobile",
+      "baselineEvidence": "artifacts/gates/UI-R3-performance.json",
+      "sameEnvironment": true,
+      "sameNetworkSettings": true,
+      "before": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.17159763314374,
+        "maxDrawCalls": 22,
+        "combinedTransferBytes": 479788
+      },
+      "after": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523799216,
+        "maxDrawCalls": 22,
+        "combinedTransferBytes": 481300
+      },
+      "payloadDeltaBytes": 1512
+    },
+    {
+      "name": "tracking-mobile",
+      "baselineEvidence": "artifacts/gates/UI-R3-performance.json",
+      "sameEnvironment": true,
+      "sameNetworkSettings": true,
+      "before": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.17159763315647,
+        "maxDrawCalls": 4,
+        "combinedTransferBytes": 494448
+      },
+      "after": {
+        "fpsP50": 59.880239520968516,
+        "fpsP10": 59.523809523812105,
+        "maxDrawCalls": 4,
+        "combinedTransferBytes": 495907
+      },
+      "payloadDeltaBytes": 1459
+    }
+  ],
+  "allBudgetsPass": true,
+  "runtimeErrors": 0,
+  "limitations": [
+    "Each profile is a single sequential run on this workstation with 10 s warmup and a 30 s sample, 1800 rAF frames.",
+    "390 px mobile profiles emulate layout on the workstation GPU; no physical phone measured.",
+    "rAF cadence is not GPU frame timing. Renderer counters are not VRAM.",
+    "Body remains resident with rendering suspended during Micro. Micro ready time measures DEFAULT500 before switching the benchmark population.",
+    "CDP 20 Mbps and latency 50 ms are emulated settings, not a physical connection measurement.",
+    "UI-R3 comparisons are individual observations, not a statistical equivalence test. No same-gate UI-R3 Body baseline was measured.",
+    "Final licensed anatomy and rigs are still missing; procedural representations remain conceptual."
+  ]
+}
