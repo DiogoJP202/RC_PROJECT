@@ -1,6 +1,6 @@
 # UI-R5 — Identidade, vitrine e revisão artística
 
-A entrega parte de `0c0916b5605230360dd7456ad45ba1b8bf7940ec`. A direção aprovada em [UI_R5_PROPOSAL](UI_R5_PROPOSAL.md) orientou a implementação. A revisão anterior, as fontes e os resultados de UI-R1 a UI-R4 seguem no histórico. A aprovação artística desta entrega é humana.
+A entrega parte de `0c0916b5605230360dd7456ad45ba1b8bf7940ec`. A direção aprovada em [UI_R5_PROPOSAL](UI_R5_PROPOSAL.md) orientou a implementação. A revisão anterior, as fontes e os resultados de UI-R1 a UI-R4 seguem no histórico. A UI-R5 foi aprovada pelo usuário e integrada à `main` pelo [PR #3](https://github.com/DiogoJP202/RC_PROJECT/pull/3), merge `7085f1c2f6237724baad4f73d1d1f6f7a8aa5204`. O [checkpoint](UI_REDESIGN_CHECKPOINT.md) registra o encerramento do redesign.
 
 ## Marca e abertura
 
@@ -110,6 +110,7 @@ A comparação com `0c0916b` confirma que `src/scene`, `src/simulation`, `src/st
 - [x] `npm.cmd run test:e2e -- --reporter=list,json` aprovou **88/88** em 13,7 min, sem retries ou skips. Inclui o cenário de 430 px que havia falhado na UI-R4 e a navegação de Estudos corrigida nesta etapa.
 - [x] Auditoria axe-core em 54 estados sem violações nas regras executadas. Seis perfis cumpriram os orçamentos originais.
 - [x] Preservação verificada dos motores, simulações, estados, contratos, catálogo, GLB e das 972 evidências históricas em `artifacts/gates`.
-- [ ] Aprovação artística humana. Avaliação em telefone físico, Safari/iOS e leitores de tela pendente.
+- [x] Aprovação artística humana da UI-R5 no escopo do redesign.
+- [ ] Avaliação em telefone físico, Safari/iOS e leitores de tela.
 
 [Comandos, execução completa e hashes](../artifacts/gates/UI-R5-validation.json).

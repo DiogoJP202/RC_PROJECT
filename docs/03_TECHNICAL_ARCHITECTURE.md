@@ -87,13 +87,11 @@ Bookmarked camera poses em espaço local do espécime; API `cameraDirector.focus
 - Medir `FPS p50/p10`, draws, triangles, JS heap se disponível, total transferido e tempo até ação real.
 - Orçamento inicial de engenharia (ajustável pelo profiling): body initial payload <= 8 MB comprimidos e draws da cena principal preferencialmente abaixo de ~150 em desktop; NÃO são fatos técnicos universais e não justificam descartar anatomia essencial.
 
-## URLs / modelo de conteúdo
+## URLs e arquitetura de continuidade
 
-- `/` → observatório/visor, modo default.
-- `/?mode=body&specimen=rinkaku&select=kakuhou-rinkaku` → deep link interpretado após load.
-- `/?mode=micro&select=rc-cell` → microescala.
-- JSON/TS de anatomia local versionado inicialmente, sem API de produção.
-- Endereços/codificação não servem para buscar imagem/modelo proprietário.
+Na base UI-R5, `/` é a Home sem WebGL. `/estudos` e `/fontes` são páginas editoriais. `/atlas`, `/atlas/rinkaku` e `/atlas/vascular` abrem as experiências funcionais. `/atlas/comparar` e `/atlas/cell/:entityId` têm estados informativos. Os aliases legados ainda são normalizados pelo roteador. Consulte o [checkpoint do redesign](UI_REDESIGN_CHECKPOINT.md) para a navegação, os painéis sob demanda e a suspensão da bancada.
+
+As pastas reais são `src/app`, `src/ui`, `src/scene`, `src/simulation`, `src/state`, `src/content` e `src/visuals/assets`. A árvore acima registra a proposta inicial. A implementação usa CSS local com tokens compartilhados e catálogo runtime `public/catalog.json` v2. O [plano G4B](G4B_PLAN.md) especifica a futura bancada celular e a integração com o contexto vascular estacionado.
 
 ## Testes automatizados
 
