@@ -1,20 +1,17 @@
 import { lazy, Suspense, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { loadCatalog, type AtlasContent } from '../content/catalog';
 import { useObservatory } from '../state/observatory';
-import { Icon } from '../ui/Icon';
-import { SystemsIndex } from '../ui/SystemsIndex';
-import { EvidenceInspector } from '../ui/EvidenceInspector';
 import { BODY_SHEET_QUERY, BodyToolbar, BodyToolPanel, type BodyPanel } from '../ui/BodyTools';
 import { SceneFallback } from '../ui/Fallback';
 import { SceneBoundary } from './SceneBoundary';
 import { AssetLab } from '../ui/AssetLab';
-import { MobileExplorer } from '../ui/MobileExplorer';
 import { RinkakuEntry, RinkakuTimeline } from '../ui/RinkakuControls';
 import { useRinkaku } from '../state/rinkaku';
 import { anatomyIds, type AnatomyId, type Mode } from './types';
 import { bodySceneBridge } from '../scene/bodyContext';
 import { useVascular } from '../state/vascular';
 import { useAssets } from '../state/assets';
+import { EditorialStatus } from '../ui/editorial/EditorialPage';
 import { AtlasHeader } from '../ui/editorial/AtlasHeader';
 import { atlasHref, type AtlasRoute, type NavigationKind } from './routes';
 
@@ -61,14 +58,12 @@ export default function AtlasWorkspace({ route, active, bodyVisited, navigationK
   const parkedBody = useRef(false);
   const appliedQuery = useRef<{ selected: string | null; seed: string | null } | null>(null);
   const mode = useObservatory((s) => s.mode);
-  const canonOnly = useObservatory((s) => s.canonOnly);
   const reduced = useObservatory((s) => s.reducedMotion);
   const selectedId = useObservatory((s) => s.selectedId);
   const rinkakuEnabled = useRinkaku((s) => s.enabled);
   const [bodyPanel, setBodyPanel] = useState<{ kind: BodyPanel; revision: number; focusOnOpen: boolean } | null>(null);
   const panelOpener = useRef<HTMLElement | null>(null);
-  const bodyDesign = mode !== 'compare';
-  const showBodyTools = bodyDesign && mode === 'body';
+  const showBodyTools = mode === 'body';
   const shownPanel = showBodyTools && active && bodyPanel?.revision === navigationRevision ? bodyPanel.kind : null;
   const dismissBodyPanel = useCallback(() => {
     setBodyPanel(null);
@@ -286,39 +281,78 @@ export default function AtlasWorkspace({ route, active, bodyVisited, navigationK
 
   const retryScene = () => { setSceneError(''); setReady(false); setSceneAttempt((value) => value + 1); };
   const selected = content?.structures.find((s) => s.id === selectedId);
-  return <main className={`observatory ${query.has('silhouette') ? 'silhouette-mode' : ''} ${rinkakuEnabled && mode !== 'micro' ? 'rinkaku-mode' : ''} ${mode === 'micro' ? 'micro-mode' : ''} ${bodyDesign ? 'body-mode-r2' : ''}`} data-testid="observatory" data-reduced-motion={reduced || undefined}>
-    <a className="skip-link" href={content && !catalogError ? '#workspace' : '#catalog-status'}>Ir para o observatório</a>
-    <AtlasHeader current="atlas" atlasHref={route.view === 'compare' ? atlasHref('body', route.search) : route.href} onHelp={onHelp} atlasControls={<>
-      <nav className="mode-nav" aria-label="Modos do observatório">{(['body', 'micro'] as const).map((item) => <button key={item} data-testid={'mode-' + item} className={mode === item ? 'active' : ''} aria-current={mode === item ? 'page' : undefined} onClick={() => changeMode(item)}>{modeLabels[item]}</button>)}</nav>
-      {content && mode === 'body' ? <RinkakuEntry onToggle={toggleRinkaku} /> : null}
-    </>} />
-    {!bodyDesign && <section className="specimen-bar"><div><span className="status-dot" /> AMBIENTE DE INVESTIGAÇÃO <span className="bar-divider">/</span><span className="specimen-caption">ESPÉCIME NEUTRO · RINKAKU</span></div><label className="canon-toggle"><input type="checkbox" data-testid="canon-filter" checked={canonOnly} onChange={(e) => useObservatory.getState().setCanonOnly(e.target.checked)} /><span className="toggle-track" /> Evidência verificada</label></section>}
-    {catalogError ? <section className="catalog-error" id="catalog-status" tabIndex={-1} data-testid="catalog-error" role="alert"><h1>Catálogo indisponível</h1><p>{catalogError}</p><button className="primary-button" data-testid="catalog-retry" onClick={() => setCatalogAttempt((value) => value + 1)}>Tentar novamente</button></section> : !content ? <section className="catalog-loading" id="catalog-status" tabIndex={-1} role="status"><span className="loading-orbit" /><h1>Preparando o observatório</h1><p>Carregando catálogo e verificando evidências.</p></section> : <>
-      {query.get('assets') === 'lab' ? <div hidden={mode === 'micro'} inert={mode === 'micro' ? true : undefined}><AssetLab /></div> : null}
-      <div className="workspace-shell" id="workspace" tabIndex={-1}>
-      {bodyVisited || mode === 'compare' ? <div className={`workspace body-workspace ${bodyDesign ? 'body-workbench' : ''} ${bodyDesign && rinkakuEnabled ? 'rinkaku-workbench' : ''}`} style={mode === 'micro' ? { visibility: 'hidden', pointerEvents: 'none', position: 'absolute', inset: 0 } : undefined} aria-hidden={mode === 'micro'} inert={mode === 'micro' ? true : undefined}>
-        {bodyDesign ? <header className="body-heading"><div><span>{rinkakuEnabled ? 'Atlas / Corpo / Rinkaku' : 'Atlas / Corpo'}</span><h1>{rinkakuEnabled ? <>Manifestação Rinkaku <span>Simulação visual</span></> : <>Espécime 001 <span>Anatomia ghoul</span></>}</h1></div><p className="body-stage-status" data-testid="scene-status" role="status"><span className={ready && !sceneError ? 'status-dot' : 'status-dot amber'} />{sceneError ? 'Modo textual' : ready ? '3D conectado' : 'Carregando 3D'}</p></header> : <SystemsIndex content={content} />}
-        <section className={`stage ${bodyDesign ? 'body-stage' : ''}`} data-testid="stage" aria-label="Visor anatômico tridimensional">
-          {!bodyDesign && <div className="stage-header"><div><span className="micro-label">{rinkakuEnabled ? 'ESTUDO CINEMÁTICO / RINKAKU' : 'ATLAS EXPERIMENTAL / 001'}</span><h1>{rinkakuEnabled ? <>Matéria<br /><em>em movimento.</em></> : <>O que nos torna<br /><em>diferentes?</em></>}</h1></div><div className="stage-readout"><span className={ready && !sceneError ? 'status-dot' : 'status-dot amber'} /><span data-testid="scene-status" role="status">{sceneError ? 'Modo textual' : ready ? '3D conectado' : 'Carregando 3D'}</span><small>{rinkakuEnabled ? 'PROCEDURAL / G3A' : 'PROTÓTIPO G1'}</small></div></div>}
-          <div className="scene-container" style={mode !== 'body' ? { visibility: 'hidden', pointerEvents: 'none' } : undefined} aria-hidden={mode !== 'body'}>
-            {sceneError ? <SceneFallback message={sceneError} onRetry={retryScene} /> : <SceneBoundary key={sceneAttempt} onError={onSceneError}><Suspense fallback={<div className="scene-loading" role="status"><span className="loading-orbit" />Carregando o renderizador 3D…</div>}>{bodyVisited ? <Scene onReady={onReady} onError={onSceneError} active={active} onAnatomyHit={notifyBodyHit} /> : null}</Suspense></SceneBoundary>}
-          </div>
-          {bodyDesign && rinkakuEnabled && <div className="study-disclosure proxy-stamp"><strong>PROXY / CONCEPTUAL MODEL</strong></div>}
-          {!bodyDesign ? <button className="secondary-button vascular-body-entry" data-testid="micro-entry" onClick={enterMicro}><Icon name="orbit" />Explorar transporte vascular</button> : null}
-          {mode === 'compare' ? <div className="future-mode"><span className="micro-label">LEITURA COMPARADA / G6</span><Icon name="layers" size={48} /><h2>Comparação em desenvolvimento</h2><p>A comparação entre humano e ghoul ainda não está disponível.</p><span className="future-status">EM DESENVOLVIMENTO</span><button className="secondary-button" data-testid="mode-return" onClick={() => changeMode('body')}><Icon name="arrow" /> Voltar ao atlas</button></div> : null}
-          {!bodyDesign && <><div className="stage-bottom"><div className="proxy-stamp"><span>△</span><div><strong>PROXY / CONCEPTUAL MODEL</strong><small>Geometria provisória · escala de cena ilustrativa</small></div></div><div className="scene-tools"><button className="icon-button" data-testid="camera-posterior" aria-label="Vista posterior" title="Vista posterior" disabled={!!sceneError || !showBodyTools} onClick={() => useObservatory.getState().focusOn('posterior')}><Icon name="orbit" /></button><button className="icon-button" data-testid="camera-reset" aria-label="Reenquadrar corpo (R)" title="Reenquadrar corpo (R)" disabled={!!sceneError || !showBodyTools} onClick={() => useObservatory.getState().reset()}><Icon name="reset" /></button></div></div>
-          <div className="stage-caption"><span>{modeLabels[mode]}</span><span>ARRASTE PARA ORBITAR <i /> ROLE PARA APROXIMAR</span></div></>}
+  const comparing = mode === 'compare';
+  const bodyHidden = mode !== 'body';
+  const destination = comparing ? '#compare-status' : content && !catalogError ? '#workspace' : '#catalog-status';
+  return (
+    <main className={`observatory body-mode-r2 ${query.has('silhouette') ? 'silhouette-mode' : ''} ${rinkakuEnabled && mode === 'body' ? 'rinkaku-mode' : ''} ${mode === 'micro' ? 'micro-mode' : ''}`}
+      data-testid="observatory" data-reduced-motion={reduced || undefined}>
+      <a className="skip-link" href={destination}>Ir para o observatório</a>
+      <AtlasHeader current="atlas" atlasHref={route.view === 'compare' ? atlasHref('body', route.search) : route.href} onHelp={onHelp} atlasControls={<>
+        <nav className="mode-nav" aria-label="Modos do observatório">
+          {(['body', 'micro'] as const).map((item) => (
+            <button key={item} data-testid={'mode-' + item} className={mode === item ? 'active' : ''}
+              aria-current={mode === item ? 'page' : undefined} onClick={() => changeMode(item)}>{modeLabels[item]}</button>
+          ))}
+        </nav>
+        {content && mode === 'body' ? <RinkakuEntry onToggle={toggleRinkaku} /> : null}
+      </>} />
+      {comparing && <EditorialStatus id="compare-status" title="Comparação indisponível"
+        action={<button className="ga-action" data-testid="mode-return" onClick={() => changeMode('body')}>Voltar ao atlas</button>}>
+        A comparação entre humano e ghoul ainda não está disponível. A inspeção do espécime está no atlas.
+      </EditorialStatus>}
+      {!content || catalogError ? comparing ? null : (
+        <section className={catalogError ? 'catalog-error' : 'catalog-loading'} id="catalog-status" tabIndex={-1}
+          data-testid={catalogError ? 'catalog-error' : undefined} role={catalogError ? 'alert' : 'status'}>
+          <h1>{catalogError ? 'Catálogo indisponível' : 'Preparando o observatório'}</h1>
+          <p>{catalogError || 'Carregando estruturas e evidências.'}</p>
+          {catalogError && <button className="ga-action" data-testid="catalog-retry"
+            onClick={() => setCatalogAttempt((value) => value + 1)}>Tentar novamente</button>}
         </section>
-        {bodyDesign ? <BodyToolbar selected={selected?.label ?? 'Nenhuma estrutura'} panel={shownPanel} open={openBodyPanel} enterMicro={enterMicro} ready={ready && !sceneError} rinkaku={rinkakuEnabled} />
-          : <EvidenceInspector content={content} />}
-        {bodyDesign && rinkakuEnabled && <RinkakuTimeline ready={ready && !sceneError && mode === 'body'} />}
-        {shownPanel && <BodyToolPanel key={shownPanel} kind={shownPanel} content={content} ready={ready && !sceneError} dismiss={dismissBodyPanel}
-          focusOnOpen={bodyPanel?.focusOnOpen ?? true} inspect={() => setBodyPanel({ kind: 'inspect', revision: navigationRevision, focusOnOpen: true })} />}
-      </div> : null}
-      {mode === 'micro' ? <Suspense fallback={<div className="scene-loading" role="status">Carregando o estudo vascular…</div>}><MicroWorkspace content={content} active={active} navigationRevision={navigationRevision} onReturn={returnFromVascular} returnLabel={returnsToRinkaku ? 'Voltar ao Rinkaku' : 'Voltar ao Corpo'} webglOff={webglOff} /></Suspense> : null}
-      </div>
-      {mode !== 'micro' && !bodyDesign && <MobileExplorer content={content} />}
-    </>}
-    {!bodyDesign && <footer className="statusbar"><span><span className="status-dot small" /> GHOUL ATLAS <span className="footer-divider">/</span> ESTUDO FICCIONAL INDEPENDENTE</span><label><input type="checkbox" checked={reduced} onChange={(e) => useObservatory.getState().setReducedMotion(e.target.checked)} /> Movimento reduzido</label><span className="status-metrics">FONTES E RECONSTRUÇÕES IDENTIFICADAS</span></footer>}
-  </main>;
+      ) : <>
+        {query.get('assets') === 'lab' ? <div hidden={bodyHidden} inert={bodyHidden || undefined}><AssetLab /></div> : null}
+        <div className="workspace-shell" id="workspace" tabIndex={-1} aria-hidden={comparing || undefined} inert={comparing || undefined}>
+          {bodyVisited ? (
+            <div className={`workspace body-workspace body-workbench ${rinkakuEnabled ? 'rinkaku-workbench' : ''}`}
+              style={bodyHidden ? { visibility: 'hidden', pointerEvents: 'none', position: 'absolute', inset: 0 } : undefined}
+              aria-hidden={bodyHidden} inert={bodyHidden || undefined}>
+              <header className="body-heading">
+                <div><span>{rinkakuEnabled ? 'Atlas / Corpo / Rinkaku' : 'Atlas / Corpo'}</span>
+                  <h1>{rinkakuEnabled ? <>Manifestação Rinkaku <span>Simulação visual</span></> : <>Anatomia ghoul <span>Espécime 001</span></>}</h1>
+                </div>
+                <p className="body-stage-status" data-testid="scene-status" role="status">
+                  <span className={ready && !sceneError ? 'status-dot' : 'status-dot amber'} />
+                  {sceneError ? 'Modo textual' : ready ? 'Cena 3D pronta' : 'Carregando 3D'}
+                </p>
+              </header>
+              <section className="stage body-stage" data-testid="stage" aria-label="Visor anatômico tridimensional">
+                <div className="scene-container">
+                  {sceneError ? <SceneFallback message={sceneError} onRetry={retryScene} /> : (
+                    <SceneBoundary key={sceneAttempt} onError={onSceneError}>
+                      <Suspense fallback={<div className="scene-loading" role="status">Preparando a cena 3D…</div>}>
+                        <Scene onReady={onReady} onError={onSceneError} active={active} onAnatomyHit={notifyBodyHit} />
+                      </Suspense>
+                    </SceneBoundary>
+                  )}
+                </div>
+                {rinkakuEnabled && <div className="study-disclosure proxy-stamp"><strong>PROXY / CONCEPTUAL MODEL</strong></div>}
+              </section>
+              <BodyToolbar selected={selected?.label ?? 'Nenhuma estrutura'} panel={shownPanel} open={openBodyPanel}
+                enterMicro={enterMicro} ready={ready && !sceneError} rinkaku={rinkakuEnabled} />
+              {rinkakuEnabled && <RinkakuTimeline ready={ready && !sceneError && mode === 'body'} />}
+              {shownPanel && <BodyToolPanel key={shownPanel} kind={shownPanel} content={content} ready={ready && !sceneError}
+                dismiss={dismissBodyPanel} focusOnOpen={bodyPanel?.focusOnOpen ?? true}
+                inspect={() => setBodyPanel({ kind: 'inspect', revision: navigationRevision, focusOnOpen: true })} />}
+            </div>
+          ) : null}
+          {mode === 'micro' ? (
+            <Suspense fallback={<div className="scene-loading" role="status">Carregando o estudo vascular…</div>}>
+              <MicroWorkspace content={content} active={active} navigationRevision={navigationRevision} onReturn={returnFromVascular}
+                returnLabel={returnsToRinkaku ? 'Voltar ao Rinkaku' : 'Voltar ao Corpo'} webglOff={webglOff} />
+            </Suspense>
+          ) : null}
+        </div>
+      </>}
+    </main>
+  );
 }

@@ -21,7 +21,7 @@
 }
 .body-heading h1 { margin: 4px 0 0; font: 600 27px/1.05 var(--ga-display); color: var(--ga-paper); }
 .body-heading h1 span { margin-left: 9px; font: 400 14px/1.2 var(--ga-body); color: var(--ga-muted); }
-.body-stage-status { display: flex; align-items: center; gap: 7px; font: 11px/1.3 var(--ga-data); margin: 0; white-space: nowrap; }
+.body-stage-status { display: flex; align-items: center; gap: 7px; font: 12px/1.3 var(--ga-body); margin: 0; white-space: nowrap; color: var(--ga-muted); }
 .body-workbench .stage.body-stage { min-height: 0; height: auto; border: 1px solid var(--ga-trace); border-radius: 3px; }
 .body-workbench .stage.body-stage .scene-fallback { inset: 18px; }
 .body-toolbar { min-width: 0; display: grid; grid-template-columns: auto minmax(0,1fr) auto; grid-template-rows: 50px minmax(0,1fr); column-gap: 20px; align-items: center; }
@@ -32,7 +32,7 @@
   font-size: 13px; color: var(--ga-paper); border: 1px solid transparent; border-radius: 3px;
 }
 .body-tool-group > button:hover:not(:disabled), .body-panel-head button:hover { border-color: var(--ga-trace); background: var(--ga-surface); }
-.body-tool-group > button[aria-expanded='true'], .body-tool-group > .body-sheet-trigger { border-color: #58666a; }
+.body-tool-group > button[aria-expanded='true'], .body-tool-group > .body-sheet-trigger { border-color: var(--ga-control); }
 .body-tool-group > button[aria-expanded='true'] { color: var(--ga-clinical); background: var(--ga-elevated); }
 .body-current { justify-self: center; min-width: 0; }
 .body-current strong { display: block; color: var(--ga-paper); font-size: 15px; line-height: 1.2; overflow-wrap: anywhere; }
@@ -42,7 +42,7 @@
 .body-disclosure { display: flex; gap: 7px; align-items: center; font: 11px/1.35 var(--ga-data); color: var(--ga-muted); }
 .body-disclosure strong, .body-disclosure [aria-hidden] { color: var(--ga-hypothesis); font-weight: 400; }
 .body-panel {
-  color: var(--ga-paper); background: var(--ga-surface); border: 1px solid #506067; border-radius: 5px; padding: 0; margin: 0;
+  color: var(--ga-paper); background: var(--ga-surface); border: 1px solid var(--ga-trace); border-top-color: var(--ga-control); border-radius: 5px; padding: 0; margin: 0;
   position: absolute; inset: calc(var(--body-head) + 12px) auto calc(var(--body-toolbar-height) + 12px) calc(var(--body-gutter) + 12px);
   width: min(350px, calc(100% - var(--body-gutter) * 2 - 24px)); height: auto; max-width: none;
   max-height: max(100px,calc(100% - var(--body-head) - var(--body-toolbar-height) - 24px)); z-index: 6; overflow: hidden;
@@ -68,6 +68,11 @@
 .body-panel .inspector h2 { font: 600 27px/1.1 var(--ga-display); color: var(--ga-paper); }
 .body-panel .specimen-tag { display: none; }
 .body-panel .inspection-tabs button { min-height: 44px; font-size: 13px; }
+.body-panel .inspection-tabs button[aria-selected='true'] { color: var(--ga-paper); border-bottom-color: var(--ga-clinical); }
+.body-panel .inspection-tabs button[aria-selected='false'] { color: var(--ga-muted); }
+.body-panel .representation-notice { border-color: var(--ga-trace); border-left-color: var(--ga-hypothesis); background: var(--ga-ink); }
+.body-panel .representation-notice strong, .body-panel .representation-notice p { color: var(--ga-hypothesis); }
+.body-panel .system-label, .body-panel .anatomy-details dt { color: var(--ga-muted); }
 .body-panel .anatomy-details dd, .body-panel .structure-description, .body-panel .claim-preview p { font-size: 13px; line-height: 1.55; }
 .body-panel .inspection-actions button { min-height: 44px; }
 .body-panel .source-list, .body-panel .evidence-content { overflow-wrap: anywhere; }
@@ -89,7 +94,7 @@
   .workspace.body-workbench { --body-gutter: 14px; --body-head: 66px; grid-template-rows: var(--body-head) clamp(440px,58svh,620px) auto; }
   .body-heading h1 { font-size: 23px; }
   .body-heading h1 span { font-size: 12px; margin-left: 5px; }
-  .body-stage-status { font-size: 10px; }
+  .body-stage-status { font-size: 11px; }
   .body-toolbar { grid-template-columns: minmax(0,1fr) auto; grid-template-rows: auto; gap: 0 5px; padding-block: 3px max(9px,env(safe-area-inset-bottom)); }
   .body-current { grid-column: 1/-1; grid-row: 1; justify-self: start; display: flex; gap: 7px; align-items: baseline; padding: 9px 0 3px; }
   .body-current strong { font-size: 13px; }

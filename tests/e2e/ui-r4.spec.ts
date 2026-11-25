@@ -20,7 +20,7 @@ const read = (page: Page, micro = false) => page.evaluate((micro) => {
 }, micro);
 async function open(page: Page, mode: 'body' | 'rinkaku' | 'vascular') {
   await page.goto(mode === 'body' ? '/atlas?select=ghoul.kakuhou.rinkaku' : `/atlas/${mode}`);
-  await expect(page.getByTestId(mode === 'vascular' ? 'micro-status' : 'scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId(mode === 'vascular' ? 'micro-status' : 'scene-status')).toHaveText('Cena 3D pronta');
   if (mode === 'rinkaku') await expect.poll(async () => (await read(page)).pose).toBeTruthy();
 }
 async function capture(page: Page, name: string) {
@@ -99,7 +99,7 @@ test('scene shortcuts can be disabled while native controls and contextual Escap
   await page.keyboard.press('Escape');
   await page.locator('#workspace').focus();
   await page.keyboard.press('2');
-  await expect(page.getByTestId('micro-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('micro-status')).toHaveText('Cena 3D pronta');
   await page.keyboard.press('Escape');
   await expect(page).toHaveURL(/\/atlas\/rinkaku$/);
 });
@@ -169,7 +169,7 @@ for (const viewport of [{ width: 390, height: 844 }, { width: 430, height: 932 }
         await canvas?.dispose();
       }
       await page.goto('/atlas');
-      await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+      await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
       await capture(page, `body-${viewport.width}`);
       await page.getByRole('button', { name: 'Ajuda', exact: true }).tap();
       const help = (await page.locator('.help-dialog').boundingBox())!;
@@ -235,7 +235,7 @@ test('desktop captures retain the approved anatomical and temporal states', asyn
   for (const mode of ['body', 'rinkaku', 'vascular'] as const) {
     await page.goto(mode === 'body' ? '/atlas' : `/atlas/${mode}`);
     const micro = mode === 'vascular';
-    await expect(page.getByTestId(micro ? 'micro-status' : 'scene-status')).toHaveText('3D conectado');
+    await expect(page.getByTestId(micro ? 'micro-status' : 'scene-status')).toHaveText('Cena 3D pronta');
     if (micro) {
       await changeMicroSelect(page, 'micro-entity', 'rc:17:0');
       await page.getByTestId('micro-time').fill('11.25');
@@ -266,7 +266,7 @@ test('skip navigation focuses real content on mobile and during catalog failure'
     await expect(page.locator(failure ? '#catalog-status' : '#workspace')).toBeFocused();
     if (failure) {
       await page.getByTestId('catalog-retry').click();
-      await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+      await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
     }
   }
 });

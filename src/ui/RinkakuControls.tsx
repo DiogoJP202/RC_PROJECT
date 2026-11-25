@@ -7,13 +7,13 @@ import { Icon } from './Icon';
 import { EvidenceSources } from './EvidenceSources';
 
 const descriptions: Record<RinkakuPhase, string> = {
-  rest: 'A forma permanece recolhida junto à conexão lombar.',
-  activation: 'O material responde ao redor da conexão lombar.',
-  release: 'A raiz se revela. As primeiras formas ganham volume.',
-  growth: 'A matéria se alonga, se curva e se desdobra.',
-  fixation: 'As pregas se definem e a rigidez visual aumenta.',
-  active: 'A silhueta está formada. O movimento permanece controlado.',
-  retract: 'A forma se recolhe até retornar ao repouso.',
+  rest: 'A raiz lombar está recolhida neste quadro.',
+  activation: 'O contorno começa a mudar na região lombar.',
+  release: 'A raiz lombar e a base dos apêndices ficam visíveis.',
+  growth: 'Os apêndices se alongam e mudam de curvatura.',
+  fixation: 'As pregas ficam mais pronunciadas na superfície do modelo.',
+  active: 'Os apêndices alcançam a extensão máxima da animação.',
+  retract: 'Os apêndices encurtam e voltam ao repouso.',
 };
 
 function useVisualFrame() {
@@ -43,7 +43,7 @@ export function RinkakuTimeline({ ready }: { ready: boolean }) {
   const frame = useVisualFrame();
   const phase = PHASES.find((p) => p.key === frame.phase)!;
   return <section className="rinkaku-timeline" aria-label="Timeline de manifestação Rinkaku" data-testid="rinkaku-timeline">
-    <div className="rinkaku-timeline-title"><span className="micro-label">FASE DA SIMULAÇÃO</span><strong data-testid="rinkaku-phase-label">{phase.label}</strong><small>PARÂMETROS VISUAIS NORMALIZADOS</small></div>
+    <div className="rinkaku-timeline-title"><span className="micro-label">Fase da simulação</span><strong data-testid="rinkaku-phase-label">{phase.label}</strong></div>
     <div className="rinkaku-transport" role="group" aria-label="Reprodução da manifestação">
       <button data-testid="rinkaku-reset" className="icon-button" aria-label="Reiniciar manifestação" onClick={() => useRinkaku.getState().reset()}><Icon name="reset" size={17} /></button>
       <button data-testid="rinkaku-step-back" className="icon-button" aria-label="Voltar um passo na manifestação" onClick={() => useRinkaku.getState().step(-0.02)}>−</button>
@@ -60,7 +60,7 @@ export function RinkakuTimeline({ ready }: { ready: boolean }) {
       <button data-testid="rinkaku-step-forward" className="icon-button" aria-label="Avançar um passo na manifestação" onClick={() => useRinkaku.getState().step(0.02)}>+</button>
     </div>
     <label className="rinkaku-phase-select">Ir para fase<select data-testid="rinkaku-phase" aria-label="Fase da manifestação" value={frame.phase} onChange={(e) => useRinkaku.getState().selectPhase(e.target.value as RinkakuPhase)}>{PHASES.map((p) => <option key={p.key} value={p.key}>{p.label}</option>)}</select></label>
-    <div className="rinkaku-scrubber"><label htmlFor="rinkaku-timeline-input"><span>{reduced ? 'MOVIMENTO REDUZIDO · QUADRO MANUAL' : !ready ? '3D INDISPONÍVEL · LEITURA MANUAL' : playing ? direction === -1 ? 'REPRODUÇÃO REVERSA' : 'REPRODUÇÃO AUTOMÁTICA' : 'PAUSADO · CONTROLE MANUAL'}</span><output data-testid="rinkaku-progress">t {frame.t.toFixed(3)}</output></label>
+    <div className="rinkaku-scrubber"><label htmlFor="rinkaku-timeline-input"><span>{reduced ? 'Movimento reduzido · Quadro manual' : !ready ? '3D indisponível · Quadro manual' : playing ? direction === -1 ? 'Reprodução reversa' : 'Em reprodução' : 'Pausado · Quadro manual'}</span><output data-testid="rinkaku-progress">t {frame.t.toFixed(3)}</output></label>
       <input id="rinkaku-timeline-input" data-testid="rinkaku-time" aria-label="Progresso da manifestação Rinkaku" type="range" min="0" max="1" step="0.001" value={frame.t} onChange={(e) => useRinkaku.getState().scrub(Number(e.target.value))} />
       <div className="rinkaku-phase-track" aria-hidden="true">{PHASES.map((p) => <span className={p.key === frame.phase ? 'current' : ''} key={p.key} style={{ flexGrow: p.end - p.start }}>{p.label}</span>)}</div>
     </div>

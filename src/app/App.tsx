@@ -1,6 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useLayoutEffect, useRef, useState, type MouseEvent } from 'react';
 import { AtlasHeader } from '../ui/editorial/AtlasHeader';
-import { HomePage, StudiesPage } from '../ui/editorial/EditorialPage';
+import { EditorialStatus, HomePage, StudiesPage } from '../ui/editorial/EditorialPage';
 import { Icon } from '../ui/Icon';
 import { containDialogTab } from '../ui/dialogKeys';
 import { atlasHref, atlasPaths, isBodyView, readRoute, type AppRoute, type AtlasRoute, type NavigationKind } from './routes';
@@ -32,11 +32,14 @@ function currentBookmark(): AtlasHistory | undefined {
 }
 
 function RouteStatus({ cell }: { cell: boolean }) {
-  return <main id="editorial-content" className="ga-route-status">
-    <h1>{cell ? 'Inspeção celular indisponível' : 'Página não encontrada'}</h1>
-    <p>{cell ? 'O acompanhamento de células RC está disponível no estudo de transporte vascular.' : 'O endereço solicitado não corresponde a uma página do atlas.'}</p>
-    <a href={cell ? atlasPaths.vascular : '/'}>{cell ? 'Voltar ao fluxo' : 'Voltar à vitrine'}</a>
-  </main>;
+  return (
+    <main>
+      <EditorialStatus id="editorial-content" title={cell ? 'Inspeção celular indisponível' : 'Página não encontrada'}
+        action={<a className="ga-action" href={cell ? atlasPaths.vascular : '/'}>{cell ? 'Voltar ao fluxo' : 'Voltar à vitrine'}</a>}>
+        {cell ? 'Você pode acompanhar uma célula RC conceitual no estudo de transporte.' : 'O endereço solicitado não corresponde a uma página do atlas.'}
+      </EditorialStatus>
+    </main>
+  );
 }
 
 export default function App() {
@@ -161,14 +164,14 @@ export default function App() {
       <dl>
         <div><dt>R</dt><dd>Reenquadrar a cena atual.</dd></div>
         <div><dt>Esc</dt><dd>Fechar um diálogo, soltar o acompanhamento ou retornar ao contexto anterior.</dd></div>
-        <div><dt>1 / 2</dt><dd>Corpo / Micro.</dd></div>
+        <div><dt>1 / 2</dt><dd>Abrir Corpo ou Micro.</dd></div>
         <div><dt>Espaço</dt><dd>Reproduzir ou pausar uma simulação. No Corpo, abra Varredura para acessar os controles.</dd></div>
         <div><dt>Tab / Enter</dt><dd>Navegar e selecionar na interface.</dd></div>
         <div><dt>Setas</dt><dd>Alternar Estrutura e Evidências nas fichas. Home e End acessam a primeira e a última aba.</dd></div>
       </dl>
       <label className="shortcut-preference"><input data-testid="keyboard-shortcuts" type="checkbox" checked={shortcutsEnabled} onChange={(event) => setShortcutsEnabled(event.target.checked)} />Ativar atalhos de cena</label>
       <p className="shortcut-hint">Controle os atalhos R, teclas numéricas e Espaço no observatório.</p>
-      <p className="claim-disclaimer">Use as fichas para consultar fontes e limites. Uma afirmação verificável não torna a geometria canônica.</p>
+      <p className="claim-disclaimer">As fichas indicam quais afirmações têm fonte e quais partes foram reconstruídas para a visualização.</p>
       <button className="primary-button" onClick={() => help.current?.close()}>Fechar guia</button>
     </dialog>
   </div>;

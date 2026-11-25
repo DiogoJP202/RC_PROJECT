@@ -34,6 +34,10 @@ artifacts/gates/*
 !artifacts/gates/UI-R3-*.json
 !artifacts/gates/UI-R4-*.png
 !artifacts/gates/UI-R4-*.json
+!artifacts/gates/UI-R5-*.png
+!artifacts/gates/UI-R5-*.json
+!artifacts/gates/UI-R5-*.svg
+!artifacts/gates/UI-R5-concepts.html
 !artifacts/gates/G4A-review/
 !artifacts/gates/G4A-review/**
 !artifacts/gates/G4A1-review/

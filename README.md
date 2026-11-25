@@ -1,8 +1,11 @@
 # GHOUL ATLAS — Observatório Anatômico 3D
 
-> **Checkout principal.** UI-R3/UI-R4 estão consolidados na branch `codex/ui-r4`, com o pacote
-> de dez documentos do redesign. O trabalho segue na pasta principal, separado por branches,
-> com commit e push ao concluir cada entrega. Veja o [checkpoint de consolidação](docs/UI_REDESIGN_CHECKPOINT.md).
+> **Checkout principal.** UI-R1 a UI-R4 estão integrados na `main`. O trabalho segue na pasta
+> principal, separado por branches. Veja o [checkpoint de consolidação](docs/UI_REDESIGN_CHECKPOINT.md).
+
+> **UI-R5 — Identidade e vitrine.** Nova marca kakugan, imagens originais do próprio observatório,
+> composições desktop e mobile, entradas diretas para três estudos e linguagem editorial revisada.
+> A etapa está em revisão artística na branch `codex/ui-r5`. Veja [decisões, capturas e aceite](docs/UI_R5_REVIEW.md).
 
 > **UI-R4 — Mobile e acessibilidade.** Abas das fichas com navegação por teclado, modais com
 > contenção de foco, atalhos de cena configuráveis e controles móveis legíveis. A revisão inclui
@@ -24,7 +27,7 @@
 > e créditos. A vitrine não carrega o renderer. Os avisos de checkpoint abaixo descrevem a evolução
 > técnica das cenas; UI-R2/UI-R3 registram a composição atual do observatório. Veja [UI-R1: aceite](docs/UI_R1_ACCEPTANCE.md).
 
-> **ATUAL — checkpoint G4A/G4A.1 aprovado como P1 técnico e visual com ressalvas:** o usuário aprovou a experiência e autorizou commit e push em `main`. Este estado integra o checkpoint G4A/G4A.1 em `main`; sua identidade é o commit que introduz [G4A_CHECKPOINT](docs/G4A_CHECKPOINT.md), consultável por `git log -1 -- docs/G4A_CHECKPOINT.md`. O encerramento verifica o SHA remoto e a limpeza da working tree; compare o Git local e remoto ao retomar. A base `717f4069c5e662f78ea8b28e7d13e0636ab0c5dd` é o precedente histórico. Parede esquemática, marcador fino, hemácia simplificada e composição mobile apertada permanecem ressalvas aceitas; arte final P2/Blender continua pendente. Não há G4A.2 neste checkpoint. A próxima etapa planejada é **G4B, ainda não iniciada**; G4B/G5/G2B/G3B não são implementados por este checkpoint. Deploy não foi autorizado.
+> **Checkpoint G4A/G4A.1 aprovado como P1 técnico e visual com ressalvas:** o usuário aprovou a experiência e autorizou commit e push em `main`. Este estado integra o checkpoint G4A/G4A.1 em `main`; sua identidade é o commit que introduz [G4A_CHECKPOINT](docs/G4A_CHECKPOINT.md), consultável por `git log -1 -- docs/G4A_CHECKPOINT.md`. O encerramento verifica o SHA remoto e a limpeza da working tree; compare o Git local e remoto ao retomar. A base `717f4069c5e662f78ea8b28e7d13e0636ab0c5dd` é o precedente histórico. Parede esquemática, marcador fino, hemácia simplificada e composição mobile apertada permanecem ressalvas aceitas; arte final P2/Blender continua pendente. Não há G4A.2 neste checkpoint. A próxima etapa planejada é **G4B, ainda não iniciada**; G4B/G5/G2B/G3B não são implementados por este checkpoint. Deploy não foi autorizado.
 
 > **Registro histórico — fechamento técnico G4A.1 antes da aprovação humana:** tracking por obstáculos, seleção externa que preserva a cor RC, materiais mate e composição compacta. Validados 203 testes unitários, 22 Python, catálogo, TypeScript, lint, build, 62 E2E e seis cenários rechecados após o último ajuste de layout; doze perfis nos budgets originais. [Revisão técnica](docs/G4A1_REFINEMENT.md), [comparativos e vídeo reais](artifacts/gates/G4A1-review/INDEX.md), [desempenho](artifacts/gates/G4A1-review/PERFORMANCE.md) e [parecer crítico](artifacts/gates/G4A1-review/REPORT.md). Naquele momento, a aprovação artística estava pendente e o trabalho estava sem commit, push ou deploy. Os registros G4A/G3A abaixo permanecem históricos quanto aos seus materiais e resultados de execução.
 

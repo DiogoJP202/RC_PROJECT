@@ -1,0 +1,1329 @@
+{
+  "measuredAt": "2026-11-24T19:19:25.093Z",
+  "browser": "157.0.8103.80",
+  "axeSha256": "e9e5863c33a874f09bc01acd9234b7e3c871479f5eef8802fa582544465e6d01",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "wcag22aa",
+    "best-practice"
+  ],
+  "states": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 39,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/estudos",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 38,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/fontes",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 42,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/fontes",
+      "state": "source-note",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 42,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".body-disclosure > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas",
+      "state": "body-structures",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".body-disclosure > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas",
+      "state": "body-layers",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".body-disclosure > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas",
+      "state": "inspector-toggle",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".body-disclosure > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#evidence-tab > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".notice-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 45,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas",
+      "state": "help",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 23,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas/rinkaku",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".body-disclosure > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-testid=\"rinkaku-step-back\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 42,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas/rinkaku",
+      "state": "simulation",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".body-disclosure > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[data-testid=\"rinkaku-step-back\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 47,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas/vascular",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Passo anterior do transporte\"] > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas/vascular",
+      "state": "controls",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Passo anterior do transporte\"] > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 43,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas/vascular",
+      "state": "evidence",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".notice-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Passo anterior do transporte\"] > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 45,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas?webgl=off",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".micro-label"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".scene-fallback > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(5)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".secondary-button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".body-disclosure > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 40,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas?catalog=missing",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 37,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas/comparar",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 33,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 35,
+      "documentWidth": 1440,
+      "viewportWidth": 1440
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/estudos",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 39,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/fontes",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 42,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/fontes",
+      "state": "source-note",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 42,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".body-disclosure > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 42,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas",
+      "state": "body-structures",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 19,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas",
+      "state": "body-layers",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 22,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas",
+      "state": "inspector-toggle",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#evidence-tab > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".notice-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 32,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas",
+      "state": "help",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 24,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas/rinkaku",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".study-disclosure > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "button[data-testid=\"rinkaku-step-back\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 43,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas/rinkaku",
+      "state": "simulation",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 30,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas/vascular",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".study-disclosure > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Passo anterior do transporte\"] > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 42,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas/vascular",
+      "state": "controls",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ]
+        }
+      ],
+      "passedRules": 25,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas/vascular",
+      "state": "evidence",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".notice-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 32,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas?webgl=off",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".micro-label"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".scene-fallback > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(5)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".secondary-button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".body-disclosure > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas?catalog=missing",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 38,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas/comparar",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 34,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 36,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/estudos",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 39,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/fontes",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 42,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/fontes",
+      "state": "source-note",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 42,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".body-disclosure > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 42,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas",
+      "state": "body-structures",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 19,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas",
+      "state": "body-layers",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 22,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas",
+      "state": "inspector-toggle",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "#evidence-tab > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".notice-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 32,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas",
+      "state": "help",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "p:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".claim-disclaimer"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ]
+        }
+      ],
+      "passedRules": 23,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas/rinkaku",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".study-disclosure > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "button[data-testid=\"rinkaku-step-back\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 43,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas/rinkaku",
+      "state": "simulation",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 30,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas/vascular",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".study-disclosure > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Passo anterior do transporte\"] > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 42,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas/vascular",
+      "state": "controls",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ]
+        }
+      ],
+      "passedRules": 25,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas/vascular",
+      "state": "evidence",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".notice-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 32,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas?webgl=off",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".manifest-entry > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".micro-label"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".scene-fallback > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(5)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".secondary-button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".body-disclosure > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passedRules": 41,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas?catalog=missing",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 38,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas/comparar",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 34,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "state": "rest",
+      "axeVersion": "4.11.0",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 36,
+      "documentWidth": 430,
+      "viewportWidth": 430
+    }
+  ]
+}

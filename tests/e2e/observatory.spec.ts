@@ -31,7 +31,7 @@ const cameraDistance = (a: CameraSnapshot, b: CameraSnapshot) => Math.hypot(
 async function openObservatory(page: Page, query = '') {
   await page.goto(`/atlas${query}`);
   await expect(page.getByTestId('observatory')).toBeVisible();
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await expect(page.locator('canvas')).toBeVisible();
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_SCENE__?: AtlasScene }).__ATLAS_SCENE__));
 }
@@ -61,7 +61,7 @@ test('catalog loading is real and delays anatomy UI until data arrives', async (
   await expect(page.getByRole('heading', { name: 'Preparando o observatório' })).toBeVisible();
   await expect(page.locator('canvas')).toHaveCount(0);
   release?.();
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
 });
 
 test('3D click raycasts an actual scene structure and synchronizes the inspector', async ({ page }) => {
@@ -188,10 +188,10 @@ test('micro and future comparison preserve context and canon filter never hides 
     if (mode === 'micro') {
       // G4A replaces the informational placeholder with an actual lazy scene;
       // the original Body-context invariant remains the purpose of this test.
-      await expect(page.getByTestId('micro-status')).toHaveText('3D conectado');
+      await expect(page.getByTestId('micro-status')).toHaveText('Cena 3D pronta');
       await page.getByTestId('micro-return').click();
     } else {
-      await expect(page.getByText(/em desenvolvimento/i).first()).toBeVisible();
+      await expect(page.getByRole('heading', { name: 'Comparação indisponível', exact: true })).toBeVisible();
       await page.getByTestId('mode-return').click();
     }
     await openBodyTool(page, 'inspect');
@@ -252,7 +252,7 @@ for (const query of ['?webgl=off', '?asset=missing']) {
     await expect(page.getByTestId('inspector')).toContainText(/kakuhou/i);
     await expect(page.getByText('PROXY / CONCEPTUAL MODEL', { exact: true }).first()).toBeVisible();
     await page.getByTestId('scene-retry').click();
-    await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+    await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   });
 }
 
@@ -276,7 +276,7 @@ test('catalog errors have a visible recovery action', async ({ page }) => {
   const retry = page.getByTestId('catalog-error').getByRole('button');
   await expect(retry).toBeEnabled();
   await retry.click();
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
 });
 
 test('desktop and silhouette gate captures include the real rendered scene', async ({ page }) => {
@@ -298,7 +298,7 @@ test('desktop and silhouette gate captures include the real rendered scene', asy
   await expect.poll(async () => (await scene(page)).camera.position[2]).toBeLessThan(0);
   await page.screenshot({ path: `${evidenceRoot}/gates/G1-focus.png` });
   await page.goto('/atlas?silhouette=1');
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await page.screenshot({ path: `${evidenceRoot}/gates/G1-silhouette.png` });
 });
 

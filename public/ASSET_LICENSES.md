@@ -65,3 +65,18 @@ IBM Plex™ é tipografia da IBM Corp., distribuída sob a **SIL Open Font Licen
 | [Plex Sans Medium 1.1.0](https://registry.npmjs.org/@ibm/plex-sans/-/plex-sans-1.1.0.tgz) | `b5610af04d0d4b5a14a621d96d974b993e945a065db1a8861918f69ef9321934` |
 | [Plex Sans Condensed SemiBold 2.0.0](https://registry.npmjs.org/@ibm/plex-sans-condensed/-/plex-sans-condensed-2.0.0.tgz) | `6738b1096fd433204a070db0b4a9b1172ad3e6bdff8aad5f05f7351e7c157d06` |
 | [Plex Mono Regular 2.5.0](https://registry.npmjs.org/@ibm/plex-mono/-/plex-mono-2.5.0.tgz) | `e8993d946649b9d01abb1ed06d574b19d8ea3e66b5c3948602db335c44c18e56` |
+
+## UI-R5 — Marca e capturas editoriais
+
+O olho **Limiar**, o estudo **Incisão**, a assinatura, o favicon, os ícones raster e a composição de compartilhamento são `PROJECT_ORIGINAL`, produzidos para o Ghoul Atlas. O favicon tem geometria própria para 16/32 px. O SVG de assinatura embute o mesmo subconjunto IBM Plex Sans Condensed Semibold e conserva a atribuição e a licença [OFL 1.1](assets/fonts/OFL-IBM-Plex.txt) registradas acima. Não foram incorporados logotipos, imagens, malhas ou figuras de *Tokyo Ghoul*, da CCG ou de terceiros. A inspiração do kakugan está documentada na [proposta](../docs/UI_R5_PROPOSAL.md).
+
+| Arquivo em `assets/ui-r5` | Dimensões | Origem |
+|---|---|---|
+| `rinkaku-wide.webp` | 1440 × 930 | Render do espécime e do Rinkaku procedural em t=0,88, em vista posterior oblíqua, com luz e câmera editoriais |
+| `rinkaku-portrait.webp` | 720 × 830 | Mesmo estado do Rinkaku com enquadramento vertical próprio |
+| `rinkaku-study.webp` | 880 × 570 | Mesmo estado, recorte lateral da implantação lombar |
+| `anatomia-study.webp` | 900 × 680 | Corpo conceitual com kakuhou selecionado e direção de luz para o pôster |
+| `micro-study.webp` | 960 × 490 | Vaso procedural, tempo 11,25 s e acompanhamento de `rc:17:0` |
+| `share.jpg` | 1200 × 630 | Composição tipográfica e recorte de `rinkaku-wide.webp` |
+
+As imagens carregam a classificação visual de modelo conceitual na interface. Tempos e escolhas de câmera pertencem à visualização. A ferramenta [capture_ui_r5_art](../tools/capture_ui_r5_art.mjs) usa Vite dev na porta 5175 e aplica os ajustes de luz e câmera na sessão descartável; a geometria e as simulações são as do Atlas. Os PNGs resultantes foram convertidos com Pillow, WebP `quality=85, method=6`. A ferramenta [export_ui_r5_identity](../tools/export_ui_r5_identity.mjs) gera ícones e cartão a partir dos recursos do projeto. A aplicação serve a arte estática da vitrine sem inicializar WebGL.

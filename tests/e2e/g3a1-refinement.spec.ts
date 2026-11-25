@@ -49,7 +49,7 @@ async function settle(page: Page) {
 }
 async function open(page: Page, query = '') {
   await page.goto(`/atlas${query}`);
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await expect(page.locator('canvas')).toBeVisible();
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_SCENE__?: SceneApi }).__ATLAS_SCENE__));
 }

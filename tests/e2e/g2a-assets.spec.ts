@@ -44,7 +44,7 @@ const cameraDistance = (a: Camera, b: Camera) => distance(a.position, b.position
 
 async function openLab(page: Page) {
   await page.goto('/atlas?assets=lab');
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await expect(page.locator('canvas')).toBeVisible();
   await expect(page.getByTestId('asset-select')).toBeVisible();
   await page.waitForFunction(() => Boolean((window as unknown as { __ATLAS_SCENE__?: SceneApi }).__ATLAS_SCENE__?.snapshot().assets));
@@ -267,7 +267,7 @@ test('rigged GLB exposes skin and clip, moves a bone-attached socket and respect
 test('G2A desktop capture preserves the observatory and labels the synthetic integration', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/atlas');
-  await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
   await expect(page.getByTestId('asset-select')).toHaveCount(0);
   await page.screenshot({ path: `${evidenceRoot}/gates/G2A-desktop-default.png` });
   await openLab(page);
@@ -318,7 +318,7 @@ test('the mobile drawer supports touch, keyboard, native dismissal and explicit 
   const page = await context.newPage();
   try {
     await page.goto('/atlas');
-    await expect(page.getByTestId('scene-status')).toContainText('3D conectado');
+    await expect(page.getByTestId('scene-status')).toContainText('Cena 3D pronta');
     await expect(page.getByTestId('asset-select')).toHaveCount(0);
     const explore = page.getByTestId('body-structures');
     await expect(explore).toBeInViewport();

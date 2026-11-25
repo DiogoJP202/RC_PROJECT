@@ -25,16 +25,22 @@
 .body-workbench .rinkaku-timeline-title { grid-row: auto; }
 .body-workbench .rinkaku-timeline-title strong { font: 600 24px/1.1 var(--ga-display); margin: 4px 0; }
 .body-workbench .rinkaku-timeline-title small { display: none; }
-.body-workbench .rinkaku-timeline-title .micro-label { color: var(--ga-muted); font-size: 10px; letter-spacing: 0; }
+.body-workbench .rinkaku-timeline-title .micro-label { color: var(--ga-muted); font: 12px/1.1 var(--ga-body); letter-spacing: 0; }
 .body-workbench .rinkaku-transport { flex-wrap: nowrap; gap: 3px; }
 .body-workbench .rinkaku-transport button, .micro-transport button { min-height: 44px; min-width: 44px; padding-inline: 9px; font-size: 13px; }
 .body-workbench .rinkaku-scrubber { grid-column: 3; grid-row: 1; min-width: 0; }
-.body-workbench .rinkaku-scrubber label { font-size: 9px; }
+.body-workbench .rinkaku-scrubber label { font: 12px/1.1 var(--ga-body); color: var(--ga-muted); }
+.body-workbench .rinkaku-scrubber input { accent-color: var(--ga-rc-ink); }
 .body-workbench .rinkaku-scrubber output { color: var(--ga-paper); }
 .body-workbench .rinkaku-phase-select { grid-column: 4; grid-row: 1; font-size: 0; gap: 0; color: var(--ga-muted); }
 .body-workbench .rinkaku-phase-select select { min-height: 44px; font-size: 13px; background: var(--ga-surface); }
 .body-workbench .rinkaku-phase-track { margin-top: 1px; }
-.body-workbench .rinkaku-phase-track span { font-size: 8px; }
+.body-workbench .rinkaku-phase-track span { font: 10px/1 var(--ga-body); color: var(--ga-muted); border-color: var(--ga-trace); padding-top: 3px; }
+.body-workbench .rinkaku-phase-track span.current { color: var(--ga-paper); border-color: var(--ga-rc-ink); }
+.body-workbench .rinkaku-transport button:not([data-testid='rinkaku-play']) { color: var(--ga-paper); background: var(--ga-elevated); border-color: var(--ga-trace); }
+.body-workbench .rinkaku-transport [data-testid='rinkaku-play'] { color: var(--ga-paper); background: var(--ga-rc-deep); border-color: var(--ga-rc-deep); }
+.body-mode-r2 .manifest-entry { color: var(--ga-paper); background: var(--ga-rc-deep); border-color: var(--ga-rc-deep); }
+.body-mode-r2 .manifest-entry[aria-pressed='true'] { color: var(--ga-paper); background: var(--ga-elevated); border-color: var(--ga-control); }
 .study-disclosure { display: none; }
 .body-panel .rinkaku-inspector h2 { margin: 0 0 10px; font-size: 24px; }
 .body-panel .rinkaku-phase-description, .body-panel .rinkaku-disclosure p { font-size: 13px; min-height: 0; }

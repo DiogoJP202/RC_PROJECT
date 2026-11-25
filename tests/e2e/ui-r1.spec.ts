@@ -72,6 +72,8 @@ test('cold vitrine renders real media without loading the atlas runtime', async 
   await expect(page.getByRole('link', { name: 'Abrir observatório', exact: true })).toHaveAttribute('href', '/atlas');
   await expect(page.getByRole('link', { name: 'Ver estudos', exact: true })).toHaveAttribute('href', '/estudos');
   await expect(page.getByText('Modelo conceitual', { exact: true }).first()).toBeVisible();
+  await expect(page.locator('link[rel="icon"][type="image/svg+xml"]')).toHaveAttribute('href', '/assets/ui-r5/favicon.svg');
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', /\/assets\/ui-r5\/share\.jpg$/);
   const hero = page.locator('main picture img');
   await expect(hero).toBeVisible();
   await expect.poll(() => hero.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
@@ -86,7 +88,7 @@ test('cold vitrine renders real media without loading the atlas runtime', async 
 
   await page.getByRole('link', { name: 'Abrir observatório', exact: true }).click();
   await expect(page).toHaveURL(/\/atlas$/);
-  await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
   expect(await page.evaluate(() => (window as unknown as {
     __UI_R1_CANVAS_PROBE__: { webglContextsRequested: number };
   }).__UI_R1_CANVAS_PROBE__.webglContextsRequested)).toBeGreaterThan(0);
@@ -97,18 +99,18 @@ test('study links navigate to the actual paused demonstration and browser Back r
   await page.goto('/');
   await page.getByRole('link', { name: 'Ver estudos', exact: true }).click();
   await expect(page).toHaveURL(/\/estudos$/);
-  await expect(page.getByRole('link', { name: 'Anatomia do ghoul', exact: true })).toHaveAttribute('href', '/atlas');
-  await expect(page.getByRole('link', { name: 'Transporte de células RC', exact: true })).toHaveAttribute('href', '/atlas/vascular');
+  await expect(page.getByRole('link', { name: 'Inspecionar o Corpo', exact: true })).toHaveAttribute('href', '/atlas');
+  await expect(page.getByRole('link', { name: 'Explorar a circulação', exact: true })).toHaveAttribute('href', '/atlas/vascular');
   await expect(page.getByRole('link', { name: 'Comparar', exact: true })).toHaveCount(0);
   await expect(page.getByRole('link', { name: 'Inspecionar célula', exact: true })).toHaveCount(0);
-  await page.getByRole('link', { name: 'Manifestação Rinkaku', exact: true }).click();
+  await page.getByRole('link', { name: 'Abrir simulação Rinkaku', exact: true }).click();
   await expect(page).toHaveURL(/\/atlas\/rinkaku$/);
   await expect(page.getByTestId('rinkaku-time')).toHaveValue('0');
-  await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
   expect((await body(page)).rinkaku).toMatchObject({ enabled: true, playing: false, t: 0 });
   await page.goBack();
   await expect(page).toHaveURL(/\/estudos$/);
-  await expect(page.getByRole('link', { name: 'Manifestação Rinkaku', exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Abrir simulação Rinkaku', exact: true })).toBeVisible();
 });
 
 test('credits deep links focus the section without waiting for the bibliography', async ({ page }) => {
@@ -164,7 +166,8 @@ test('legacy route preserves diagnostics and keeps unreleased modes honest', asy
 
   await page.goto('/?mode=compare');
   await expect.poll(() => new URL(page.url()).pathname).toBe('/atlas/comparar');
-  await expect(page.getByText(/compara[cç][aã]o em desenvolvimento/i).first()).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Comparação indisponível', exact: true })).toBeVisible();
+  await expect(page.locator('canvas')).toHaveCount(0);
   await page.getByTestId('mode-return').click();
   await expect.poll(() => new URL(page.url()).pathname).toBe('/atlas');
 
@@ -177,7 +180,7 @@ test('legacy route preserves diagnostics and keeps unreleased modes honest', asy
 test('leaving Rinkaku for Fontes suspends the same canvas and restores the exact inspected state', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/atlas?select=ghoul.kakuhou.rinkaku');
-  await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
   await openBodyTool(page, 'layers');
   await page.getByTestId('layer-skeletal').click();
   await openBodyTool(page, 'layers');
@@ -220,7 +223,7 @@ test('leaving Rinkaku for Fontes suspends the same canvas and restores the exact
 
 test('editorial navigation pauses a playing Micro session without changing identity, pose or renderer', async ({ page }) => {
   await page.goto('/atlas/vascular?microSeed=17');
-  await expect(page.getByTestId('micro-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('micro-status')).toHaveText('Cena 3D pronta');
   const canvas = page.getByTestId('micro-stage').locator('canvas');
   const originalCanvas = await canvas.elementHandle();
   await changeMicroSelect(page, 'micro-entity', 'rc:17:0');
@@ -253,13 +256,13 @@ test('editorial navigation pauses a playing Micro session without changing ident
   expectCamera(returned.camera, suspended.camera);
   await page.getByTestId('micro-return').click();
   await expect(page).toHaveURL(/\/atlas(?:\?|$)/);
-  await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
   await originalCanvas.dispose();
 });
 
 test('Back during the initial vascular transition cancels the pending entry', async ({ page }) => {
   await page.goto('/atlas');
-  await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
   const before = await body(page);
   const requestedPath = await page.getByTestId('micro-entry').evaluate((button: HTMLElement) => {
     button.click();

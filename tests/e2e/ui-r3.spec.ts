@@ -27,7 +27,7 @@ async function capture(page: Page, name: string) {
 test('Rinkaku tools preserve the canvas, GLB lease and exact paused pose', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/atlas/rinkaku?assets=lab');
-  await expect(page.getByTestId('scene-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('scene-status')).toHaveText('Cena 3D pronta');
   await page.getByTestId('asset-select').selectOption('fixture.rigged.v1');
   await expect(page.getByTestId('asset-status')).toContainText('GLB sintético integrado');
   await page.getByTestId('rinkaku-time').fill('0.88');
@@ -84,7 +84,7 @@ test('Rinkaku tools preserve the canvas, GLB lease and exact paused pose', async
 test('Micro panels preserve identity, tracking camera and transport resources', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/atlas/vascular');
-  await expect(page.getByTestId('micro-status')).toHaveText('3D conectado');
+  await expect(page.getByTestId('micro-status')).toHaveText('Cena 3D pronta');
   await changeMicroSelect(page, 'micro-entity', 'rc:17:0');
   await page.getByTestId('micro-follow').click();
   await page.getByTestId('micro-time').fill('11.25');
@@ -129,7 +129,7 @@ test('both studies use the desktop stage and retain contextual timelines', async
   for (const mode of ['rinkaku', 'vascular'] as const) {
     await page.goto(`/atlas/${mode}`);
     const micro = mode === 'vascular';
-    await expect(page.getByTestId(micro ? 'micro-status' : 'scene-status')).toHaveText('3D conectado');
+    await expect(page.getByTestId(micro ? 'micro-status' : 'scene-status')).toHaveText('Cena 3D pronta');
     await expect(page.locator('dialog[open]')).toHaveCount(0);
     await page.getByTestId(micro ? 'micro-time' : 'rinkaku-time').fill(micro ? '11.25' : '0.88');
     if (micro) {
@@ -154,7 +154,7 @@ for (const viewport of [{ width: 390, height: 844 }, { width: 430, height: 932 }
       for (const mode of ['rinkaku', 'vascular'] as const) {
         const micro = mode === 'vascular';
         await page.goto(`/atlas/${mode}`);
-        await expect(page.getByTestId(micro ? 'micro-status' : 'scene-status')).toHaveText('3D conectado');
+        await expect(page.getByTestId(micro ? 'micro-status' : 'scene-status')).toHaveText('Cena 3D pronta');
         await page.getByTestId(micro ? 'micro-time' : 'rinkaku-time').fill(micro ? '11.25' : '0.88');
         if (micro) {
           await changeMicroSelect(page, 'micro-entity', 'rc:17:0');

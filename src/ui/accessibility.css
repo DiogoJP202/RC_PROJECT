@@ -20,7 +20,7 @@ html:has(dialog:modal) { overflow: hidden; }
 .observatory .body-panel .source-list small, .observatory .body-panel .rinkaku-settings small { font-size: 12px; }
 .observatory .body-toolbar .body-tool-group > button { font-size: 14px; }
 .observatory .body-panel .source-list a { min-height: 44px; align-items: center; }
-.observatory .body-panel select, .body-workbench .rinkaku-phase-select select { border-color: #718388; }
+.observatory .body-panel select, .body-workbench .rinkaku-phase-select select { border-color: var(--ga-control); }
 .observatory input[type='range']:focus-visible { outline-offset: -2px; }
 .observatory .body-panel [role='tabpanel']:focus-visible,
 .observatory .body-panel select:focus-visible,
@@ -33,6 +33,14 @@ html:has(dialog:modal) { overflow: hidden; }
 .help-dialog .dialog-close { min-height: 44px; min-width: 44px; }
 .help-dialog button { min-height: 44px; font-size: 14px; }
 .help-dialog p:not(.shortcut-hint), .help-dialog dd { font-size: 16px; }
+.help-dialog { font-family: var(--ga-body); color: var(--ga-paper); background: var(--ga-surface); border-color: var(--ga-control); }
+.help-dialog h2 { font: 600 30px/1.1 var(--ga-display); color: var(--ga-paper); }
+.help-dialog p, .help-dialog dd { color: var(--ga-muted); }
+.help-dialog dt { color: var(--ga-clinical); }
+.help-dialog dl > div { border-color: var(--ga-trace); }
+.help-dialog .primary-button { background: var(--ga-rc-deep); border-color: var(--ga-rc-deep); color: var(--ga-paper); }
+.observatory :is(.catalog-loading, .catalog-error) { font-family: var(--ga-body); color: var(--ga-muted); }
+.observatory :is(.catalog-loading, .catalog-error) h1 { font: 600 30px/1.15 var(--ga-display); color: var(--ga-paper); }
 .observatory .scene-fallback { overflow-y: auto; padding: 12px; }
 .observatory .scene-fallback h2 { font: 600 24px/1.2 var(--ga-display); }
 .observatory .scene-fallback p, .observatory .micro-fallback p { font-size: 16px; }

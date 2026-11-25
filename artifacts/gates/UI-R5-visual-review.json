@@ -1,0 +1,916 @@
+{
+  "measuredAt": "2026-11-24T19:18:48.492Z",
+  "browser": "157.0.8103.80",
+  "captures": [
+    {
+      "file": "UI-R5-home-desktop.png",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "58d933d83c52e259d47a79dacdda64ecc5323a8a4da394f3feaa3f6c51d5525c"
+    },
+    {
+      "file": "UI-R5-home-integral-desktop.png",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": true,
+      "height": 2053,
+      "sha256": "bf7ef5a1bfa983b5070861fdcf6cea125e79410e2456431f048a2015ecc93061"
+    },
+    {
+      "file": "UI-R5-estudos-desktop.png",
+      "route": "/estudos",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": true,
+      "height": 1723,
+      "sha256": "f8e3014168f9bc317ea6e7569e986e86fc4988a4d5256765680b3940c8fad6e4"
+    },
+    {
+      "file": "UI-R5-fontes-desktop.png",
+      "route": "/fontes",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "b5ff8301be85e686e25ee6e767d92a8ed4c2798c14c8a5ba28c61bdf5882f2bf"
+    },
+    {
+      "file": "UI-R5-referencias-desktop.png",
+      "route": "/fontes#ga-bibliography-title",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "0d5a435d2ddf7e3df1831d36ed8bee81b34a44648462929fcf3717ca05842915"
+    },
+    {
+      "file": "UI-R5-corpo-desktop.png",
+      "route": "/atlas",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "5c3cfd46dfb10c95a9ebb99123c1ef8a616487e80c0564b06cbb805a89a648cf"
+    },
+    {
+      "file": "UI-R5-camadas-desktop.png",
+      "route": "/atlas",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "f4aa1608b8f1d7c505f12f28b25fb147b62393dedf2f05b527f4a96413a05ede"
+    },
+    {
+      "file": "UI-R5-ficha-desktop.png",
+      "route": "/atlas?select=ghoul.kakuhou.rinkaku",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "2429987262ffe85f9e95d587774a892838c0ed9965f3b924bcdea36a349df097"
+    },
+    {
+      "file": "UI-R5-rinkaku-desktop.png",
+      "route": "/atlas/rinkaku",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "a31ebcb7652cedd7350fdddc02fa3a5693c8feb52bcd2da09f54eb4ab30cdab8"
+    },
+    {
+      "file": "UI-R5-simulacao-desktop.png",
+      "route": "/atlas/rinkaku",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "4ffdc4b7655357170bfb4eebece79efece62d154b62bd37e4d2752ec2f9a94a9"
+    },
+    {
+      "file": "UI-R5-micro-controles-desktop.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "1244c4a76fa726b5b789359525729d19fa4d2a4c98e907b9f77b54cfa9ceef79"
+    },
+    {
+      "file": "UI-R5-micro-desktop.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "1ebd662724af9d43101022786e9bd61e732e854b8bf3fe0280d288ab1eddffb3"
+    },
+    {
+      "file": "UI-R5-micro-ficha-desktop.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "b45bf1f1b63cbbab03b63a48d3d07a37c77e4d121e8d9f70a5d5ef2d22e499ec"
+    },
+    {
+      "file": "UI-R5-comparar-desktop.png",
+      "route": "/atlas/comparar",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "6b8e3dbdb1d7435b6ed78843ce514af31e02b9e157ef42c2d9baaa16fca18dfc"
+    },
+    {
+      "file": "UI-R5-celular-desktop.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "d9a8f7bb2ad934019471b03e81decb4200a4c9eea2cef06cbb1a9b682ef76cb9"
+    },
+    {
+      "file": "UI-R5-fallback-desktop.png",
+      "route": "/atlas?webgl=off",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "8bdc95da230d465af743f52a6c6e497fdc70e291c53e862bcd29ab463061c818"
+    },
+    {
+      "file": "UI-R5-ajuda-desktop.png",
+      "route": "/atlas?webgl=off",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "4bb8f0ace791f6f9a19b83b122a4b5599b6f9a1d71ba872ff581f5c199b9476a"
+    },
+    {
+      "file": "UI-R5-erro-catalogo-desktop.png",
+      "route": "/atlas?catalog=missing",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "fullPage": false,
+      "height": 900,
+      "sha256": "1acb88d52a23f684c8059d39d30423aee5bed0b483a999d85163c2f47611adef"
+    },
+    {
+      "file": "UI-R5-home-390.png",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "072324829b80c07110fdb2ec02b8ce44e18ea85517935adc292b561ee8eb5a78"
+    },
+    {
+      "file": "UI-R5-home-integral-390.png",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": true,
+      "height": 2429,
+      "sha256": "b9d4cbff6e8296f1001d19af0269f882597e6f24f59d2894170c372fdd9cefe1"
+    },
+    {
+      "file": "UI-R5-estudos-390.png",
+      "route": "/estudos",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": true,
+      "height": 1649,
+      "sha256": "473966b5b9d02d49a2374fdd72ba54abc39ab25bd0183a814a02823614a3c8e5"
+    },
+    {
+      "file": "UI-R5-fontes-390.png",
+      "route": "/fontes",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "34800ec7fa66030b817f7b0cf6f59c4fcb0a552872f2726d68278e11694166ed"
+    },
+    {
+      "file": "UI-R5-corpo-390.png",
+      "route": "/atlas",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "bd5e28e58cf80999cd9dddf5c2e42c6d3ef00dbc6180d89bb55b62fd764a6dfb"
+    },
+    {
+      "file": "UI-R5-camadas-390.png",
+      "route": "/atlas",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "5b7cd162832a5176dd756a5991676143378b414f996d86402ac39a50bec0a09d"
+    },
+    {
+      "file": "UI-R5-ficha-390.png",
+      "route": "/atlas?select=ghoul.kakuhou.rinkaku",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "113466692a28fc93dbc43c6afb519ec1f84f83d4acc667f9e60f220dacfdd550"
+    },
+    {
+      "file": "UI-R5-rinkaku-390.png",
+      "route": "/atlas/rinkaku",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "9c353839ea4a3ae647e78300cf0297d13fd9ba365a3fc1da7d9f9486182ccbe5"
+    },
+    {
+      "file": "UI-R5-simulacao-390.png",
+      "route": "/atlas/rinkaku",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "48e910335eb310655818a8073ae79fe9360c1587ca6a127874333f80a7afaaee"
+    },
+    {
+      "file": "UI-R5-micro-controles-390.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "e35c2304310e0714b25744157a1c71baf0734a09a9f0716fd48fb7ff4f4c8ccd"
+    },
+    {
+      "file": "UI-R5-micro-390.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "584ebe9144e161f5c365c92c49aa74892ce526db33a888c2356cc6a327cf2355"
+    },
+    {
+      "file": "UI-R5-micro-ficha-390.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "1c141f5bb8401a2265711dbe2d8f8d2f72918b73e718078ac3a2c2517a66bd98"
+    },
+    {
+      "file": "UI-R5-comparar-390.png",
+      "route": "/atlas/comparar",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "35a81c95e6f5f745bd2699605ae44104909d3ae002711e3e2b504dd78a3f1a83"
+    },
+    {
+      "file": "UI-R5-celular-390.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "9a77b7068b1a6614254713eebe1bd4d06ed0155abe35333c9f0df5d39ac4092f"
+    },
+    {
+      "file": "UI-R5-fallback-390.png",
+      "route": "/atlas?webgl=off",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "a824d394a90fa0a3f0f28620b89116293011869660d9b7d4ef0f54fda5dddc38"
+    },
+    {
+      "file": "UI-R5-ajuda-390.png",
+      "route": "/atlas?webgl=off",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "70f5dab2fbb3bce5de60344923899df9c5be0a1d7672ff080f29d8d2086cbbee"
+    },
+    {
+      "file": "UI-R5-erro-catalogo-390.png",
+      "route": "/atlas?catalog=missing",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "height": 844,
+      "sha256": "fe7e503a6f71b9b014380058d8a02d35cf37a0159afbf2cdd8ef36aa75b10e25"
+    },
+    {
+      "file": "UI-R5-home-430.png",
+      "route": "/",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "797c0965622749e2d52af3f37f95880dd1346c2b1439cfc0c33afdedfa5a922b"
+    },
+    {
+      "file": "UI-R5-home-integral-430.png",
+      "route": "/",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": true,
+      "height": 2494,
+      "sha256": "09bdfbbfed13b53f159a99a4b2f79eace6a7d836e3c1c0e80db93d5caa5c5333"
+    },
+    {
+      "file": "UI-R5-estudos-430.png",
+      "route": "/estudos",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": true,
+      "height": 1659,
+      "sha256": "2faa97ede61fc53945da89a956408e5a07b210873001360bcb4b3c5b4bf2d914"
+    },
+    {
+      "file": "UI-R5-fontes-430.png",
+      "route": "/fontes",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "d7f9f5f6442c5b231ee8c81a1c8fd788cd5ffb8d2371e742040c5793a42d8f2a"
+    },
+    {
+      "file": "UI-R5-corpo-430.png",
+      "route": "/atlas",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "b483ba95ebb9243fd36d0740cf2706d182a9314d79187e3a766816395e561c26"
+    },
+    {
+      "file": "UI-R5-camadas-430.png",
+      "route": "/atlas",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "bac59ca07dcb09edc64e548c31bdc2373f3f81d6bff704a87584bc9fcda6adc7"
+    },
+    {
+      "file": "UI-R5-ficha-430.png",
+      "route": "/atlas?select=ghoul.kakuhou.rinkaku",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "6719e5d02f6f740ced15ce75b0f6a864a5ebbdb158ff2e88940ed4e561ea8381"
+    },
+    {
+      "file": "UI-R5-rinkaku-430.png",
+      "route": "/atlas/rinkaku",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "2adae167e26ead0ab3b49e6a1e0cbb7b0838717de67bb2995f97b8b1bd02d715"
+    },
+    {
+      "file": "UI-R5-simulacao-430.png",
+      "route": "/atlas/rinkaku",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "5b29eb99c3d73e72d641a605d773c7883635a72801984856df635e4b7e4dda59"
+    },
+    {
+      "file": "UI-R5-micro-controles-430.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "c1551b9cd95dbc90cd6327bb7cfb2bdb5a055fb4d2e547e9689bcce689206920"
+    },
+    {
+      "file": "UI-R5-micro-430.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "9bf394b3654c8113484c8fb293cfaf21048564da5d9153e02f23da77a3c5da84"
+    },
+    {
+      "file": "UI-R5-micro-ficha-430.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "2d8ef6fb4c50fbbf7d6c008ed9b35cbfc9aafdc600621037c11982fc4de8d68f"
+    },
+    {
+      "file": "UI-R5-comparar-430.png",
+      "route": "/atlas/comparar",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "da0d61b6d77a555bc3e91e5a7d643863c14d6c58c5dcdb6cd1a541d2b852ba86"
+    },
+    {
+      "file": "UI-R5-celular-430.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "70ac3f7c157cedf99305d08f72135e7326ac43da580972286c22940bda7c0fb6"
+    },
+    {
+      "file": "UI-R5-fallback-430.png",
+      "route": "/atlas?webgl=off",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "142676c0b07fc34ea3c3a40c7c507f8a6441c98dfce4179968b278c64ffe3a12"
+    },
+    {
+      "file": "UI-R5-ajuda-430.png",
+      "route": "/atlas?webgl=off",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "66fc4002b3b24acafb5f51964d2facd92e072e4cc1eda7ba55271cc264e6d587"
+    },
+    {
+      "file": "UI-R5-erro-catalogo-430.png",
+      "route": "/atlas?catalog=missing",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "fullPage": false,
+      "height": 932,
+      "sha256": "31392534bfd939c3b5b215ab58e1519b307d0b87004447b24029df890a8c2a3c"
+    }
+  ],
+  "home": [
+    {
+      "width": 1440,
+      "webgl": 0,
+      "bytes": 201291,
+      "resources": [
+        {
+          "file": "/assets/index-CeGbn8Ag.js",
+          "transferSize": 72126
+        },
+        {
+          "file": "/assets/jsx-runtime-Wy9s6hX0.js",
+          "transferSize": 3683
+        },
+        {
+          "file": "/assets/index-BcZqfMU2.css",
+          "transferSize": 12872
+        },
+        {
+          "file": "/assets/ui-r5/mark.svg",
+          "transferSize": 826
+        },
+        {
+          "file": "/assets/ui-r5/rinkaku-wide.webp",
+          "transferSize": 15864
+        },
+        {
+          "file": "/assets/ui-r5/favicon.svg",
+          "transferSize": 724
+        },
+        {
+          "file": "/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+          "transferSize": 21284
+        },
+        {
+          "file": "/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+          "transferSize": 22288
+        },
+        {
+          "file": "/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+          "transferSize": 22260
+        },
+        {
+          "file": "/assets/ui-r5/anatomia-study.webp",
+          "transferSize": 7550
+        },
+        {
+          "file": "/assets/ui-r5/rinkaku-study.webp",
+          "transferSize": 11774
+        },
+        {
+          "file": "/assets/ui-r5/micro-study.webp",
+          "transferSize": 8976
+        }
+      ],
+      "hero": "/assets/ui-r5/rinkaku-wide.webp",
+      "withStudies": {
+        "width": 1440,
+        "webgl": 0,
+        "bytes": 201291,
+        "resources": [
+          {
+            "file": "/assets/index-CeGbn8Ag.js",
+            "transferSize": 72126
+          },
+          {
+            "file": "/assets/jsx-runtime-Wy9s6hX0.js",
+            "transferSize": 3683
+          },
+          {
+            "file": "/assets/index-BcZqfMU2.css",
+            "transferSize": 12872
+          },
+          {
+            "file": "/assets/ui-r5/mark.svg",
+            "transferSize": 826
+          },
+          {
+            "file": "/assets/ui-r5/rinkaku-wide.webp",
+            "transferSize": 15864
+          },
+          {
+            "file": "/assets/ui-r5/favicon.svg",
+            "transferSize": 724
+          },
+          {
+            "file": "/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+            "transferSize": 21284
+          },
+          {
+            "file": "/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+            "transferSize": 22288
+          },
+          {
+            "file": "/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+            "transferSize": 22260
+          },
+          {
+            "file": "/assets/ui-r5/anatomia-study.webp",
+            "transferSize": 7550
+          },
+          {
+            "file": "/assets/ui-r5/rinkaku-study.webp",
+            "transferSize": 11774
+          },
+          {
+            "file": "/assets/ui-r5/micro-study.webp",
+            "transferSize": 8976
+          }
+        ],
+        "hero": "/assets/ui-r5/rinkaku-wide.webp"
+      }
+    },
+    {
+      "width": 390,
+      "webgl": 0,
+      "bytes": 199969,
+      "resources": [
+        {
+          "file": "/assets/index-CeGbn8Ag.js",
+          "transferSize": 72126
+        },
+        {
+          "file": "/assets/jsx-runtime-Wy9s6hX0.js",
+          "transferSize": 3683
+        },
+        {
+          "file": "/assets/index-BcZqfMU2.css",
+          "transferSize": 12872
+        },
+        {
+          "file": "/assets/ui-r5/mark.svg",
+          "transferSize": 826
+        },
+        {
+          "file": "/assets/ui-r5/rinkaku-portrait.webp",
+          "transferSize": 14542
+        },
+        {
+          "file": "/assets/ui-r5/favicon.svg",
+          "transferSize": 724
+        },
+        {
+          "file": "/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+          "transferSize": 22288
+        },
+        {
+          "file": "/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+          "transferSize": 21284
+        },
+        {
+          "file": "/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+          "transferSize": 22260
+        },
+        {
+          "file": "/assets/ui-r5/anatomia-study.webp",
+          "transferSize": 7550
+        },
+        {
+          "file": "/assets/ui-r5/rinkaku-study.webp",
+          "transferSize": 11774
+        },
+        {
+          "file": "/assets/ui-r5/micro-study.webp",
+          "transferSize": 8976
+        }
+      ],
+      "hero": "/assets/ui-r5/rinkaku-portrait.webp",
+      "withStudies": {
+        "width": 390,
+        "webgl": 0,
+        "bytes": 199969,
+        "resources": [
+          {
+            "file": "/assets/index-CeGbn8Ag.js",
+            "transferSize": 72126
+          },
+          {
+            "file": "/assets/jsx-runtime-Wy9s6hX0.js",
+            "transferSize": 3683
+          },
+          {
+            "file": "/assets/index-BcZqfMU2.css",
+            "transferSize": 12872
+          },
+          {
+            "file": "/assets/ui-r5/mark.svg",
+            "transferSize": 826
+          },
+          {
+            "file": "/assets/ui-r5/rinkaku-portrait.webp",
+            "transferSize": 14542
+          },
+          {
+            "file": "/assets/ui-r5/favicon.svg",
+            "transferSize": 724
+          },
+          {
+            "file": "/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+            "transferSize": 22288
+          },
+          {
+            "file": "/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+            "transferSize": 21284
+          },
+          {
+            "file": "/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+            "transferSize": 22260
+          },
+          {
+            "file": "/assets/ui-r5/anatomia-study.webp",
+            "transferSize": 7550
+          },
+          {
+            "file": "/assets/ui-r5/rinkaku-study.webp",
+            "transferSize": 11774
+          },
+          {
+            "file": "/assets/ui-r5/micro-study.webp",
+            "transferSize": 8976
+          }
+        ],
+        "hero": "/assets/ui-r5/rinkaku-portrait.webp"
+      }
+    },
+    {
+      "width": 430,
+      "webgl": 0,
+      "bytes": 199969,
+      "resources": [
+        {
+          "file": "/assets/index-CeGbn8Ag.js",
+          "transferSize": 72126
+        },
+        {
+          "file": "/assets/jsx-runtime-Wy9s6hX0.js",
+          "transferSize": 3683
+        },
+        {
+          "file": "/assets/index-BcZqfMU2.css",
+          "transferSize": 12872
+        },
+        {
+          "file": "/assets/ui-r5/mark.svg",
+          "transferSize": 826
+        },
+        {
+          "file": "/assets/ui-r5/rinkaku-portrait.webp",
+          "transferSize": 14542
+        },
+        {
+          "file": "/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+          "transferSize": 22288
+        },
+        {
+          "file": "/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+          "transferSize": 21284
+        },
+        {
+          "file": "/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+          "transferSize": 22260
+        },
+        {
+          "file": "/assets/ui-r5/anatomia-study.webp",
+          "transferSize": 7550
+        },
+        {
+          "file": "/assets/ui-r5/rinkaku-study.webp",
+          "transferSize": 11774
+        },
+        {
+          "file": "/assets/ui-r5/micro-study.webp",
+          "transferSize": 8976
+        },
+        {
+          "file": "/assets/ui-r5/favicon.svg",
+          "transferSize": 724
+        }
+      ],
+      "hero": "/assets/ui-r5/rinkaku-portrait.webp",
+      "withStudies": {
+        "width": 430,
+        "webgl": 0,
+        "bytes": 199969,
+        "resources": [
+          {
+            "file": "/assets/index-CeGbn8Ag.js",
+            "transferSize": 72126
+          },
+          {
+            "file": "/assets/jsx-runtime-Wy9s6hX0.js",
+            "transferSize": 3683
+          },
+          {
+            "file": "/assets/index-BcZqfMU2.css",
+            "transferSize": 12872
+          },
+          {
+            "file": "/assets/ui-r5/mark.svg",
+            "transferSize": 826
+          },
+          {
+            "file": "/assets/ui-r5/rinkaku-portrait.webp",
+            "transferSize": 14542
+          },
+          {
+            "file": "/assets/fonts/IBMPlexSansCondensed-SemiBold-Latin1.woff2",
+            "transferSize": 22288
+          },
+          {
+            "file": "/assets/fonts/IBMPlexSans-Regular-Latin1.woff2",
+            "transferSize": 21284
+          },
+          {
+            "file": "/assets/fonts/IBMPlexSans-Medium-Latin1.woff2",
+            "transferSize": 22260
+          },
+          {
+            "file": "/assets/ui-r5/anatomia-study.webp",
+            "transferSize": 7550
+          },
+          {
+            "file": "/assets/ui-r5/rinkaku-study.webp",
+            "transferSize": 11774
+          },
+          {
+            "file": "/assets/ui-r5/micro-study.webp",
+            "transferSize": 8976
+          },
+          {
+            "file": "/assets/ui-r5/favicon.svg",
+            "transferSize": 724
+          }
+        ],
+        "hero": "/assets/ui-r5/rinkaku-portrait.webp"
+      }
+    }
+  ]
+}
