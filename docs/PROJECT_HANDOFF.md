@@ -1,14 +1,16 @@
 # GHOUL ATLAS — Handoff de produto, engenharia e technical art
 
-> **ATUAL — G4A/G4A.1 aprovados pelo usuário como P1 técnico e visual com ressalvas:** parede esquemática, marcador fino, hemácia simplificada e mobile apertado permanecem limites aceitos; arte final P2/Blender continua pendente. Passaram **203 unidades, 22 Python e a suíte completa de 62 E2E**; os mesmos seis cenários de refinamento foram rechecados após o CSS final, sem somá-los como 68 testes distintos. TypeScript, lint, catálogo, build e os 12 perfis finais nos budgets originais também passaram. Este estado integra o checkpoint G4A/G4A.1 em `main`, com commit/push autorizados; sua identidade é o commit que introduz [G4A_CHECKPOINT](G4A_CHECKPOINT.md), consultável por `git log -1 -- docs/G4A_CHECKPOINT.md`. O encerramento verifica o SHA remoto e a limpeza da working tree; compare o Git local e remoto ao retomar. A base `717f4069c5e662f78ea8b28e7d13e0636ab0c5dd` é o precedente histórico. Deploy permanece fora do escopo. Não iniciar G4A.2; **G4B é a próxima etapa planejada, ainda não iniciada**, e G4B/G5/G2B/G3B não são implementados por este checkpoint.
+> **Base da retomada.** A `main` local e `origin/main` foram sincronizadas em `7085f1c2f6237724baad4f73d1d1f6f7a8aa5204`, merge do PR #3. UI-R0 a UI-R5 está encerrada no escopo aprovado. Consulte o [checkpoint](UI_REDESIGN_CHECKPOINT.md) e a [revisão UI-R5](UI_R5_REVIEW.md).
 
-O estado para continuidade é o [checkpoint G4A](G4A_CHECKPOINT.md), o [aceite G4A](G4A_ACCEPTANCE.md), o [refinamento G4A.1](G4A1_REFINEMENT.md) e seu [índice de revisão](../artifacts/gates/G4A1-review/INDEX.md). Body→Micro→Body, transporte absoluto, seleção por instância/HTML e câmeras livre/fluxo/tracking existem. O G4A.1 acrescenta planejamento de enquadramento por volumes, transporte de câmera com correções limitadas, seleção externa que conserva a cor-base, materiais mais mates e composição compacta. A aprovação P1 não declara G4 completo: metabolismo, progressão posterior e arte definitiva continuam fora deste escopo.
+No observatório atual, Corpo, Rinkaku e Micro compartilham cabeçalho Limiar, palco dominante, ferramentas sob demanda e fichas com evidências. O acesso celular direto ainda é um estado informativo. Micro implementa seleção por instância/HTML, transporte absoluto e câmeras Livre/Fluxo/Tracking. G4A/G4A.1 têm aceite P1 com ressalvas e os modelos permanecem conceituais. [Aceite vascular](G4A_ACCEPTANCE.md) · [Refinamento](G4A1_REFINEMENT.md).
 
-O [comparativo final de desempenho](../artifacts/gates/G4A1-review/PERFORMANCE.md) e seus [dados de origem](../artifacts/g4a1/performance-comparison.json) separam seis perfis anteriores e seis atuais após o ajuste de CSS: FPS p50 de 59,88 em todos; p10 anterior de 59,52 e atual entre 58,82–59,52. Fluxo conserva três draws; Tracking usa quatro com o marcador. São observações desta estação, sem certificação de telefone físico ou aprovação artística automática.
+O [plano G4B](G4B_PLAN.md) é o próximo trabalho para aprovação. Ele descreve o bookmark vascular, a cena celular lazy, representação esquemática e interpretativa, corte e comparação de forma com hemácia. Implementação futura em `codex/g4b`, na pasta principal, com commit, push e PR.
+
+A [baseline técnica UI-R5](../artifacts/gates/UI-R5-validation.json) reúne 206 unidades, 22 Python, 88 E2E e auditoria automatizada. Os [perfis UI-R5](../artifacts/gates/UI-R5-performance.json) cobrem a interface aprovada. Os [dados G4A.1](../artifacts/gates/G4A1-review/PERFORMANCE.md) continuam referência do motor vascular. Telefone físico, Safari/iOS, leitores de tela e assets anatômicos P2 mantêm verificação própria.
 
 ## Registros anteriores preservados
 
-As notas e tabelas históricas abaixo registram checkpoints anteriores a G4A. Afirmações de “G4A planejado/não implementado”, “Micro informativo”, publicação G3A ainda por confirmar e aprovações P1 anteriormente pendentes pertencem àqueles momentos; o aviso **ATUAL** acima prevalece. A restrição anterior de commit/push de G4A/G4A.1 foi substituída pela autorização de checkpoint, sem autorizar deploy ou novas fases. Comandos e contratos preservados continuam úteis, mas seus resultados históricos não substituem as evidências atuais.
+As notas a seguir registram a evolução anterior à base atual. Use as datas e os gates para distinguir estados do projeto e permissões de publicação de cada execução.
 
 > **Registro histórico — autorização do checkpoint G3A, 25/10/2026:** G3A/G3A.1 aprovados pelo usuário como **P1 técnico e visual com ressalvas**. A consolidação e publicação de um checkpoint em `main` estão autorizadas; o SHA será confirmado no encerramento, sem presumir sincronização antes do push. Isso não autoriza deploy. Arte final P2, G2B e G3B permanecem pendentes. O próximo trabalho planejado é **G4A: simulação de circulação e transporte visual RC**, ainda não implementado; G4 completo também permanece pendente. Os avisos anteriores de aprovação/publicação pendentes abaixo ficam preservados como histórico.
 
@@ -45,7 +47,7 @@ As invariantes de `AGENTS.md` continuam obrigatórias. Separar `official`, `mang
 
 G1 recebeu autorização específica para antecipar interação de camadas que o roadmap G0 distribuía em G2. G2A entregou a infraestrutura GLB, mas isso não conclui G2: ainda não houve ingresso de corpo segmentado definitivo validado. A divisão **G2A/G2B** separa infraestrutura de disponibilidade artística. G5–G7 e o backlog de `09_NEXT_MODULES.md` também permanecem futuros.
 
-## Arquitetura que existe no código
+## Arquitetura do checkpoint anterior a G4A
 
 Aplicativo estático no browser, Vite + React + TypeScript strict, sem backend, contas, banco ou serviço externo necessário para executar. `src/main.tsx` monta React em `StrictMode`; `App` carrega conteúdo por fetch, observa preferência de movimento, integra os painéis e importa a cena com `React.lazy`/`Suspense`.
 
@@ -247,7 +249,7 @@ As oito capturas G1 e as capturas G2A próprias são adequadas à preservação.
 
 `node_modules`, `dist`, caches, `.env` privados e relatórios transitórios do Playwright não são backup do projeto: recriar com instalação/build/testes. Credenciais de GitHub, configurações globais de Git e binários Node/Python/browser não pertencem ao repositório; configurar legitimamente no novo computador. Os dois GLBs sintéticos G2A estão versionados; não existe GLB anatômico definitivo oculto a recuperar de cache.
 
-## Próximas etapas propostas — exigem nova autorização
+## Propostas históricas anteriores a G4A
 
 **Registro histórico — proposta G2A anterior à implementação:** ler a baseline e o contrato, evoluir o seam, validar arquivo/recursos/nodes/meshes/bounds/anchors, ownership/abort/retry e fallback; provar importação com fixture original, preservando IDs, catálogo, UI, estado e jornadas. Essa infraestrutura já foi entregue e publicada; não reexecutar o prompt G2A. O [aceite G2A](G2A_ACCEPTANCE.md) contém resultados e limites efetivos.
 

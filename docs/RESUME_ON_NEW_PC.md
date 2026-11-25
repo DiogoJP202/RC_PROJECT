@@ -1,14 +1,14 @@
 # GHOUL ATLAS — Retomar em outro computador
 
-> **ATUAL — G4A/G4A.1 aprovados pelo usuário como P1 técnico e visual com ressalvas:** parede esquemática, marcador fino, hemácia simplificada e mobile apertado permanecem limites aceitos; arte final P2/Blender continua pendente. Passaram **203 unidades, 22 Python e a suíte completa de 62 E2E**; os mesmos seis cenários de refinamento passaram novamente após o CSS final, sem representar 68 testes distintos. TypeScript, lint, catálogo, build e os 12 perfis nos budgets originais passaram. Este estado integra o checkpoint G4A/G4A.1 em `main`, com commit/push autorizados; sua identidade é o commit que introduz [G4A_CHECKPOINT](G4A_CHECKPOINT.md), consultável por `git log -1 -- docs/G4A_CHECKPOINT.md`. O encerramento verifica o SHA remoto e a limpeza da working tree; compare o Git local e remoto antes de transferir. A base `717f4069c5e662f78ea8b28e7d13e0636ab0c5dd` é o precedente histórico e não contém G4A/G4A.1. Deploy não está autorizado. Não iniciar G4A.2; **G4B é a próxima etapa planejada, ainda não iniciada**, e este checkpoint não implementa G4B/G5/G2B/G3B.
+> **Base atual.** UI-R0 a UI-R5 encerrada no escopo aprovado. `main` e `origin/main` em `7085f1c2f6237724baad4f73d1d1f6f7a8aa5204`, merge do PR #3 no momento da retomada. Confirme as refs antes de transferir.
 
-Para retomar o trabalho atual, leia primeiro [G4A_CHECKPOINT](G4A_CHECKPOINT.md), [G4A_ACCEPTANCE](G4A_ACCEPTANCE.md), [G4A1_REFINEMENT](G4A1_REFINEMENT.md) e o [pacote G4A.1](../artifacts/gates/G4A1-review/INDEX.md). Preserve também código não versionado, metadados e capturas próprias; os backups brutos e o snapshot anterior ficam em `artifacts/local/`, fora do Git. Confirme o estado real do repositório antes de copiar ou publicar. A dependência de runtimes internos do Codex, diagnosticada abaixo, continua pendente até uma validação independente; esta execução não instalou ferramentas globais.
+Comece por [AGENTS.md](../AGENTS.md), [handoff](PROJECT_HANDOFF.md), [checkpoint do redesign](UI_REDESIGN_CHECKPOINT.md) e [revisão UI-R5](UI_R5_REVIEW.md). Para o próximo trabalho, consulte o [plano G4B](G4B_PLAN.md) e o [aceite G4A](G4A_ACCEPTANCE.md). A implementação aguarda aprovação e usará `codex/g4b` na pasta principal, com commit, push e PR.
 
-O resultado atual de performance está no [comparativo final](../artifacts/gates/G4A1-review/PERFORMANCE.md), com [metadados e deltas](../artifacts/g4a1/performance-comparison.json): seis execuções antes e seis depois do refinamento, com os perfis atuais renovados após o CSS final. Não substituir essas medições por números históricos G1/G4A nem extrapolar o hardware da estação para o computador que receber o projeto.
+Use a [baseline UI-R5](../artifacts/gates/UI-R5-validation.json) para a suíte e os [perfis](../artifacts/gates/UI-R5-performance.json) como comparação da estação. Os [estudos G4A.1](../artifacts/gates/G4A1-review/PERFORMANCE.md) registram o perfil vascular histórico. Conserve arquivos não versionados que pertençam a trabalho do usuário e os relatórios brutos em `artifacts/local/`. A instalação, os testes e os perfis na máquina nova precisam de evidência própria.
 
 ## Registros históricos e procedimentos de restauração
 
-Os avisos seguintes preservam a migração e a autorização anteriores a G4A. Trechos que apresentam G4A como próximo trabalho, Micro como futuro, o checkpoint G3A como ainda não publicado ou aprovação P1 ainda pendente descrevem aqueles checkpoints, não o estado **ATUAL** acima. A autorização atual de commit/push de G4A/G4A.1 substitui a restrição anterior, preservada como histórico; não autoriza deploy nem novas fases. Os comandos de instalação/verificação continuam sendo procedimentos; contagens antigas não são os resultados desta revisão.
+Os avisos seguintes conservam as decisões das respectivas etapas. As contagens de testes e o estado de publicação correspondem à data indicada em cada registro.
 
 > **Registro histórico — autorização do checkpoint G3A, 25/10/2026:** G3A/G3A.1 aprovados pelo usuário como **P1 técnico e visual com ressalvas**, com consolidação/publicação em `main` autorizadas. Arte final P2, G2B e G3B continuam pendentes; não há autorização de deploy. Após publicar, confirmar o SHA remoto e a árvore limpa no registro de encerramento. O próximo trabalho planejado é **G4A: simulação de circulação e transporte visual RC**, ainda não implementado; G4 completo permanece pendente. As notas abaixo sobre trabalho exclusivamente local descrevem o período anterior a esta autorização e não substituem a conferência do Git atual.
 
@@ -18,9 +18,9 @@ Os avisos seguintes preservam a migração e a autorização anteriores a G4A. T
 
 > Baseline de código verificada na retomada de **24/10/2026**: G2A está publicado em `main`, no commit [`0e53c1e31c366a05642501bef312d0fe5d5575b6`](https://github.com/DiogoJP202/RC_PROJECT/commit/0e53c1e31c366a05642501bef312d0fe5d5575b6). Naquele momento, `git fetch` e `git ls-remote origin main` confirmaram `HEAD = origin/main = GitHub main`; a árvore estava limpa antes das atualizações documentais. O checkpoint pós-migração consolida essas notas e evidências sem alterar o código; seu HEAD documental pode ser posterior à baseline. Veja [aceite G2A](G2A_ACCEPTANCE.md), [contrato Blender → Web](BLENDER_WEB_INTEGRATION.md) e [log](IMPLEMENTATION_LOG.md). Os registros G0/G1 abaixo são históricos. Não refaça G0, G1 ou G2A; G2B/G3 continuam pendentes.
 
-Comece por `AGENTS.md`, depois [PROJECT_HANDOFF](PROJECT_HANDOFF.md), este guia e [README](../README.md). G0/G1/G2A estão entregues; o motor e refinamento G3A/G3A.1 receberam aprovação P1 técnica/visual com ressalvas e autorização de checkpoint em `main`. Anatomia continua proxy P0 e arte final P2 permanece pendente. G2B/G3B e G4 não foram implementados; o próximo trabalho planejado é G4A. Confirme o SHA remoto antes de transferir para garantir que o clone inclui o checkpoint G3A/G3A.1. O ingresso artístico [G2B](../prompts/G2B_ASSETS_DEFINITIVOS.md) continua pendente do pacote/revisão.
-
 ## Identidade do checkpoint
+
+- Base publicada desta retomada: `7085f1c2f6237724baad4f73d1d1f6f7a8aa5204` (UI-R5).
 
 - Checkpoint G3A/G3A.1: aprovação P1 com ressalvas e publicação em `main` autorizadas em 25/10/2026; SHA final a confirmar no Git e no registro de encerramento. Base anterior: `84e6e1f36b8558d225ae4baf82a8f79ddb35c124`.
 - Repositório privado: [DiogoJP202/RC_PROJECT](https://github.com/DiogoJP202/RC_PROJECT).
@@ -29,7 +29,7 @@ Comece por `AGENTS.md`, depois [PROJECT_HANDOFF](PROJECT_HANDOFF.md), este guia 
 - Referência imutável da baseline G0/G1: tag `ghoul-atlas-g1-checkpoint`.
 - SHA da baseline: [`8fac8f7bba9a6891d5306cc14d6e86abbd4ea699`](https://github.com/DiogoJP202/RC_PROJECT/commit/8fac8f7bba9a6891d5306cc14d6e86abbd4ea699).
 
-A tag identifica somente o código G0/G1 validado naquele checkpoint; ela não representa G2A nem G3A/G3A.1. O novo checkpoint deve acrescentar G3A/G3A.1 a `main`, preservando G2A e a documentação de transferência. Confira sempre o HEAD remoto com os comandos abaixo; esta identificação não substitui executar os checks na máquina nova.
+A tag identifica a baseline histórica G0/G1. Compare o HEAD do checkout principal com `origin/main` e o remoto antes de usar o plano.
 
 ## Clone, instalação e inicialização
 
@@ -38,8 +38,11 @@ Confirme Git, Node **22.12+ na linha 22 ou 24.x**, npm e Python **3.10+** antes 
 ```powershell
 git clone --branch main https://github.com/DiogoJP202/RC_PROJECT.git
 cd RC_PROJECT
+git worktree list --porcelain
 git status --short --branch
 git fetch origin
+git switch main
+git merge --ff-only origin/main
 git rev-parse HEAD
 git rev-parse origin/main
 git ls-remote origin refs/heads/main
@@ -129,7 +132,7 @@ Execute em um terminal externo sem perfil/overrides do Codex, confirme caminhos 
 ```powershell
 npm run typecheck
 npm run lint
-npm test
+npm test -- --maxWorkers=2
 npm run test:catalog
 npm run validate:catalog
 npm run build
@@ -165,6 +168,6 @@ Auditorias JSON/TXT brutas de `artifacts/gates/` e a cópia local `IMPLEMENTATIO
 
 ## Próxima execução — orientação histórica anterior a G4A
 
-A recomendação anterior de seguir diretamente para [G2B_ASSETS_DEFINITIVOS](../prompts/G2B_ASSETS_DEFINITIVOS.md) e a orientação posterior de preparar o motor Rinkaku ficam preservadas como histórico da retomada. Essa preparação foi implementada como G3A/G3A.1 e aprovada em P1 com ressalvas; consulte o [aceite](G3A_ACCEPTANCE.md) e o [refinamento](G3A1_REFINEMENT.md) antes de iniciar outra fase. O próximo trabalho planejado é **G4A: simulação de circulação e transporte visual RC**, ainda não implementado. O prompt [G2A_INTEGRACAO_GLB](../prompts/G2A_INTEGRACAO_GLB.md) é histórico de uma fase entregue; não é uma instrução para reexecutá-la. G2B continua dependente de arte/licenças/revisão; G3B, arte final P2 de G3 e G4 completo permanecem futuros. A consolidação deste checkpoint não autoriza implementá-los.
+A recomendação anterior de seguir diretamente para [G2B_ASSETS_DEFINITIVOS](../prompts/G2B_ASSETS_DEFINITIVOS.md) e a orientação posterior de preparar o motor Rinkaku ficam preservadas como histórico da retomada. Essa preparação foi implementada como G3A/G3A.1 e aprovada em P1 com ressalvas; consulte o [aceite](G3A_ACCEPTANCE.md) e o [refinamento](G3A1_REFINEMENT.md) antes de iniciar outra fase. Naquele checkpoint, o próximo trabalho planejado era G4A. A circulação está atualmente entregue e aprovada em P1. O prompt [G2A_INTEGRACAO_GLB](../prompts/G2A_INTEGRACAO_GLB.md) é histórico de uma fase entregue; não é uma instrução para reexecutá-la. G2B continua dependente de arte/licenças/revisão; G3B, arte final P2 de G3 e G4 completo permanecem futuros. A consolidação deste checkpoint não autoriza implementá-los.
 
 Preserve e evolua a implementação existente: observatório/UI, seis IDs, quatro camadas/isolar, picking, câmera, store/contexto, scan, catálogo v2, validador, fallbacks, acessibilidade e testes. Não reinicialize scaffold, não trate o roadmap G0 como fotografia atual e não reimplemente a aplicação. Sem modelo final, mantenha `PROXY / CONCEPTUAL MODEL`; reconstrução própria não se torna ciência oficial com uma malha mais detalhada.

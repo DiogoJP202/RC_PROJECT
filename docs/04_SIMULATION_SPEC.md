@@ -26,11 +26,11 @@ A regra de ouro é separar "a obra mostra que X acontece" de "nossa interpolaç�
 
 **Gate:** 100, 500 e 2.000 partículas não reconstroem React tree; frame rate medido; o clique em uma RC sempre mostra o mesmo registro de evidência.
 
-## B — RC em microescala (MVP)
+## B — RC em microescala (plano G4B)
 
-**Modos:** `diagrammatic` com célula esquemática, `interpretive` com superfície orgânica, estruturas internas explicitamente hipotéticas. Cada legenda tem selo próprio. Controle de rotação e escala; botão de volta. Na ausência de material autorizado, renderizar modelo original estilizado e avisar.
+A proposta pós-UI-R5 está em [G4B_PLAN](G4B_PLAN.md). A inspeção amplia a identidade escolhida no fluxo, oferece representações esquemática e interpretativa, superfície, corte conceitual e comparação de forma com hemácia. O relógio e a câmera vascular retornam ao quadro capturado antes da pausa. As decisões ficam sujeitas ao aceite do plano.
 
-**Microinterações:** oscilação discreta, foco nas bordas, comparação com hemácia humanizada, ligação visual entre células (modo `STRUCTURAL ASSEMBLY`) com linhas/volumes; cada uma é conceptualização, não histologia oficial.
+A ideia original de montagem entre células fica no backlog. Formas artificiais, cortes e aproximações continuam rotulados. Histologia, organelas, dimensões e composição de RC continuam sem validação nas fontes consultadas.
 
 ## C — Kakuhou (MVP)
 
