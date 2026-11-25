@@ -1,6 +1,6 @@
 # 01 — Roadmap revisado após a auditoria G0
 
-> **Estado atual.** O redesign UI-R0 a UI-R5 foi encerrado no escopo aprovado. A base da retomada é a `main` em `7085f1c`. A experiência vascular G4A/G4A.1 tem aceite P1 com ressalvas. O [plano G4B — Observatório celular RC](G4B_PLAN.md) aguarda aprovação. Arte P2 e os demais gates funcionais seguem com seus próprios pré-requisitos. [Checkpoint do redesign](UI_REDESIGN_CHECKPOINT.md) · [Checkpoint vascular](G4A_CHECKPOINT.md).
+> **Estado atual.** O redesign UI-R0 a UI-R5 foi encerrado no escopo aprovado. A base da implementação G4B é a `main` em `987ef43`. A experiência vascular G4A/G4A.1 tem aceite P1 com ressalvas. O [observatório celular RC](G4B_ACCEPTANCE.md) está implementado em `codex/g4b` para revisão. Arte P2 e os demais gates funcionais seguem com seus próprios pré-requisitos. [Checkpoint do redesign](UI_REDESIGN_CHECKPOINT.md) · [Checkpoint vascular](G4A_CHECKPOINT.md).
 
 > **Registro histórico — fechamento técnico G4A.1, 25/10/2026:** planner por volumes, apresentação temporal limitada, marcador externo, materiais e composição refinados, mantendo sampler/IDs/contexto e contratos. Passaram 203 unidades, 22 Python, catálogo, TypeScript, lint, build, 62 E2E completos e os mesmos seis cenários rechecados após o último CSS; doze perfis nos budgets anteriores. [Decisões e validação](G4A1_REFINEMENT.md), [comparativos e vídeo](../artifacts/gates/G4A1-review/INDEX.md) e [limitações medidas](../artifacts/gates/G4A1-review/REPORT.md). Naquele momento, a aprovação artística humana ainda estava pendente e nenhum commit/push/deploy havia sido realizado. P2 e G4 completo continuavam pendentes; G4B/G5/G2B/G3B não haviam sido iniciados.
 
@@ -115,9 +115,9 @@ Entrada: G2, geradores/assets RBC/RC, texto de circulação humana e disclaimer 
 
 Aceite: duas cenas/contextos conservam espécime/seleção/câmera de retorno por dez idas/voltas. `instanceId→entityId` estável; selecionar/seguir RC conserva evidência durante movimento. Células não atravessam sistematicamente a parede do vaso; sem escala micrométrica RC inventada. Medir perfis de **100, 500 e 2.000** partículas por 30 s após warm-up; registrar FPS p50/p10, draws e memória quando acessível. Não criar componente React por partícula. Captura `G4-micro.png`, micro sem WebGL/falha de asset e modo reduzido testados.
 
-### G4B — Observatório celular RC, plano em revisão
+### G4B — Observatório celular RC, P1 em revisão humana
 
-Entrada: Micro G4A/G4A.1 validado e interface UI-R5 aprovada. Saída proposta: selecionar/seguir RC no fluxo, entrar em cena lazy, inspecionar superfície e corte, comparar forma com hemácia e voltar ao quadro vascular, câmera e seleção da origem. Usar proxy autoral P1 com escala ilustrativa. O [plano G4B](G4B_PLAN.md) detalha contratos, critérios de aceite e dependências de Blender. A comparação celular é local a este estudo. A comparação geral pertence a G6.
+O [aceite técnico](G4B_ACCEPTANCE.md) documenta a seleção/seguimento da RC, a inspeção 3D sob demanda, o corte conceitual e a comparação morfológica normalizada com hemácia. O retorno recompõe o primeiro quadro vascular antes de exibi-lo e aguarda retomada explícita. A comparação celular é local a este estudo. A comparação de organismos pertence a G6. As dependências de Blender e os requisitos de medição constam do [plano aprovado](G4B_PLAN.md).
 
 ## G5 — Um estado de simulação visual
 

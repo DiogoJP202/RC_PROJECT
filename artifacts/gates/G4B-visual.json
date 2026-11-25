@@ -1,0 +1,851 @@
+{
+  "browser": "158.0.8127.37",
+  "generatedAt": "2026-11-25T13:57:29.883Z",
+  "captures": [
+    {
+      "file": "G4B-vascular-before.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "750ff72214c8e21d78ff77d0b6b0f817407a201133fd25148e94b03b35dd0e13",
+      "model": null
+    },
+    {
+      "file": "G4B-desktop.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "9b2d713a7caaf0dfc7e2b075d2fe28b36deac52ec02d7010e02348c726a5c01d",
+      "model": {
+        "frames": 2,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 1,
+        "triangles": 15904,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 2,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-esquematico-desktop.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "ebd2c6941cfc60a9d2d6a5b14d04b972ad1bb09244c464eb41d818b729791787",
+      "model": {
+        "frames": 3,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 1,
+        "triangles": 6768,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 3,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": false
+            },
+            {
+              "min": [
+                -1,
+                -0.8479291796684265,
+                -0.8182244896888733
+              ],
+              "max": [
+                1,
+                0.8479291796684265,
+                0.8182244896888733
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-lateral-desktop.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "87f6e403b459a36dc4e8ff5c7a7321ccc547390056181ac386295b49c94cdf26",
+      "model": {
+        "frames": 7,
+        "camera": [
+          4.9,
+          3.0003846579110154e-16,
+          3.0003846579110154e-16
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 1,
+        "triangles": 15904,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 3,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": true
+            },
+            {
+              "min": [
+                -1,
+                -0.8479291796684265,
+                -0.8182244896888733
+              ],
+              "max": [
+                1,
+                0.8479291796684265,
+                0.8182244896888733
+              ],
+              "visible": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-corte-desktop.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "d61581e8826da8ffba64da71dd86f9a4db05d65cff4b92657de70335167b1044",
+      "model": {
+        "frames": 11,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 2,
+        "triangles": 15904,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 3,
+          "contourVertices": 852,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": true
+            },
+            {
+              "min": [
+                -1,
+                -0.8479291796684265,
+                -0.8182244896888733
+              ],
+              "max": [
+                1,
+                0.8479291796684265,
+                0.8182244896888733
+              ],
+              "visible": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-comparacao-desktop.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "f897de6bfaea57fb4b234ff8f9c66b682d900be8c4d0673c0c0c5b2c9ee995e1",
+      "model": {
+        "frames": 12,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 2,
+        "triangles": 22672,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 4,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": true
+            },
+            {
+              "min": [
+                -1,
+                -0.8479291796684265,
+                -0.8182244896888733
+              ],
+              "max": [
+                1,
+                0.8479291796684265,
+                0.8182244896888733
+              ],
+              "visible": false
+            },
+            {
+              "min": [
+                -1,
+                -1,
+                -0.23892608284950256
+              ],
+              "max": [
+                1,
+                1,
+                0.23892608284950256
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-ficha-desktop.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "adf610a56c8f7308293f48341d5355145c57aa725a2bbd77e6bdefc80e5036ce",
+      "model": {
+        "frames": 13,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 2,
+        "triangles": 22672,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 4,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": true
+            },
+            {
+              "min": [
+                -1,
+                -0.8479291796684265,
+                -0.8182244896888733
+              ],
+              "max": [
+                1,
+                0.8479291796684265,
+                0.8182244896888733
+              ],
+              "visible": false
+            },
+            {
+              "min": [
+                -1,
+                -1,
+                -0.23892608284950256
+              ],
+              "max": [
+                1,
+                1,
+                0.23892608284950256
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-vascular-return.png",
+      "route": "/atlas/vascular",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "11e321e445e4498cdf47ad146e4d8d3b1208124959bc55e6cf5e38f4f46c43a0",
+      "model": null
+    },
+    {
+      "file": "G4B-fallback-desktop.png",
+      "route": "/atlas/cell/rc%3A17%3A0?webgl=off",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "29ae48e475a8aa46e8078de751b6370cf41b12363d81bc29df668b66f2378958",
+      "model": null
+    },
+    {
+      "file": "G4B-mobile-390.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "6322b46bf1ee1c496a1b8cbaa8be807ec0cb5399587be8dc20fecfe869254096",
+      "model": {
+        "frames": 2,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 1,
+        "triangles": 15904,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 2,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-corte-mobile-390.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "53e2817715f56db9a3da39c1e8db250cd87511298063410cbe3186d86ac8f746",
+      "model": {
+        "frames": 5,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 2,
+        "triangles": 15904,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 2,
+          "contourVertices": 852,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-comparacao-mobile-390.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "bd129340539b689c5a44c0bc4ed74a538ba9413fc2baca7d531cfbfa56d0031e",
+      "model": {
+        "frames": 7,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 1,
+        "triangles": 6768,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 3,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": false
+            },
+            {
+              "min": [
+                -1,
+                -1,
+                -0.23892608284950256
+              ],
+              "max": [
+                1,
+                1,
+                0.23892608284950256
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-ficha-mobile-390.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "9de35ceaffd6807ecc25a7ec57cf64d9bc800190661a2be640284cd2bdfd653c",
+      "model": {
+        "frames": 8,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 1,
+        "triangles": 6768,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 3,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": false
+            },
+            {
+              "min": [
+                -1,
+                -1,
+                -0.23892608284950256
+              ],
+              "max": [
+                1,
+                1,
+                0.23892608284950256
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-fallback-mobile-390.png",
+      "route": "/atlas/cell/rc%3A17%3A0?webgl=off",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "b033f9e138b3a7eee6c8da8ec5cdad7cf8085c9770d463ec1d89981040c181f0",
+      "model": null
+    },
+    {
+      "file": "G4B-mobile-430.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sha256": "7c0f288230e8feccc1f87a1750acc96e08bce7562a4b13e6ddd18c94891edaf9",
+      "model": {
+        "frames": 2,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 1,
+        "triangles": 15904,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 2,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-corte-mobile-430.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sha256": "ced3c6c44d44844a1ef72da32a8dce8643728625db10d153669dac8bcb3e8295",
+      "model": {
+        "frames": 5,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 2,
+        "triangles": 15904,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 2,
+          "contourVertices": 852,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-comparacao-mobile-430.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sha256": "73677f16cfd1cbbfac5c78b611cf352599bbf332f4b990497c0009fa4e4649c6",
+      "model": {
+        "frames": 7,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 1,
+        "triangles": 6768,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 3,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": false
+            },
+            {
+              "min": [
+                -1,
+                -1,
+                -0.23892608284950256
+              ],
+              "max": [
+                1,
+                1,
+                0.23892608284950256
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-ficha-mobile-430.png",
+      "route": "/atlas/cell/rc%3A17%3A0",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sha256": "ee4455753401a9c256b155b870a06a5e2a59833b23fe63ca5e154096457484c3",
+      "model": {
+        "frames": 8,
+        "camera": [
+          1.6,
+          0.8500000000000004,
+          4.55
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "draws": 1,
+        "triangles": 6768,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "surface": {
+          "geometries": 3,
+          "contourVertices": 0,
+          "bounds": [
+            {
+              "min": [
+                -1,
+                -0.8476632833480835,
+                -0.8163647651672363
+              ],
+              "max": [
+                1,
+                0.8476632833480835,
+                0.8163647651672363
+              ],
+              "visible": false
+            },
+            {
+              "min": [
+                -1,
+                -1,
+                -0.23892608284950256
+              ],
+              "max": [
+                1,
+                1,
+                0.23892608284950256
+              ],
+              "visible": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "G4B-fallback-mobile-430.png",
+      "route": "/atlas/cell/rc%3A17%3A0?webgl=off",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "sha256": "f37580b2c73f05ac1a67c2333cd34b1f8f0c8b24c895fcc0e52ac280cfd66725",
+      "model": null
+    }
+  ],
+  "video": {
+    "file": "G4B-percurso.webm",
+    "bytes": 2177594,
+    "frameSize": {
+      "width": 1280,
+      "height": 800
+    },
+    "sha256": "df4dd2e316cb523231fc2977879866c8300b1c02e60a0dda2634468b28885adc",
+    "durationSeconds": 12.4,
+    "codec": "VP9",
+    "fps": 25
+  },
+  "pairedVascularFrames": {
+    "captureFiles": [
+      "G4B-vascular-before.png",
+      "G4B-vascular-return.png"
+    ],
+    "viewport": [
+      1440,
+      900
+    ],
+    "rectangle": [
+      42,
+      160,
+      1398,
+      700
+    ],
+    "encoding": "RGB bytes in row-major order",
+    "identicalPixels": 732240,
+    "sha256": "19e9491203fd309c87dbf90d083570820d213d3053260e1afa3e7dc6b1d0531e",
+    "data": {
+      "sameScene": true,
+      "vesselSeconds": 11.25,
+      "entityId": "rc:17:0"
+    }
+  }
+}

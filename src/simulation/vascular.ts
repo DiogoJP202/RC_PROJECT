@@ -1,6 +1,8 @@
+import { entityIndexFromId, normalizedVascularSeed, type VascularKind } from './vascularIdentity';
+export { entityIndexFromId, type VascularKind } from './vascularIdentity';
+
 /** Original didactic transport. Scene units, counts and speeds are not clinical or RC measurements. */
 export type VascularCount = 100 | 500 | 2000;
-export type VascularKind = 'rbc' | 'rc';
 export interface VascularConfig { count: VascularCount; seed: number }
 export const DEFAULT_VASCULAR_CONFIG: Readonly<VascularConfig> = Object.freeze({ count: 500, seed: 17 });
 export const VESSEL_RADIUS = 2.25;
@@ -44,13 +46,10 @@ export interface VascularSample extends VesselFrame {
 }
 
 function fraction(value: number): number { return value - Math.floor(value); }
-function normalizedSeed(value: unknown): number {
-  return typeof value === 'number' && Number.isFinite(value) ? Math.max(0, Math.min(0xffffffff, Math.trunc(value))) : 17;
-}
 export function normalizeVascularConfig(value: unknown): VascularConfig {
   const input = value !== null && typeof value === 'object' && !Array.isArray(value) ? value as Record<string, unknown> : {};
   return { count: input.count === 100 || input.count === 2000 || input.count === 500 ? input.count : 500,
-    seed: normalizedSeed(input.seed) };
+    seed: normalizedVascularSeed(input.seed) };
 }
 /** Stateless integer mixing; identity and all authored parameters are independent of pool size. */
 function random(index: number, seed: number, channel: number): number {
@@ -61,7 +60,7 @@ function random(index: number, seed: number, channel: number): number {
 }
 export function createEntity(index: number, seed = 17): VascularEntity {
   const ordinal = Number.isFinite(index) ? Math.max(0, Math.min(1999, Math.trunc(index))) : 0;
-  const normalized = normalizedSeed(seed);
+  const normalized = normalizedVascularSeed(seed);
   const kind: VascularKind = ordinal % 8 === 0 ? 'rc' : 'rbc';
   const scale = kind === 'rc' ? .20 + random(ordinal, normalized, 0) * .08 : .14 + random(ordinal, normalized, 0) * .08;
   return { id: `${kind}:${normalized}:${ordinal}`, kind, index: ordinal, seed: normalized,
@@ -72,13 +71,6 @@ export function createEntity(index: number, seed = 17): VascularEntity {
 }
 export function createParticles(config: VascularConfig): VascularEntity[] {
   return Array.from({ length: config.count }, (_, index) => createEntity(index, config.seed));
-}
-export function entityIndexFromId(id: string, seed = 17): number | null {
-  const match = /^(rbc|rc):(\d+):(\d+)$/.exec(id);
-  if (!match || match[2] !== String(normalizedSeed(seed))) return null;
-  const index = Number(match[3]);
-  if (!Number.isInteger(index) || index < 0 || index > 1999 || String(index) !== match[3]) return null;
-  return (index % 8 === 0 ? 'rc' : 'rbc') === match[1] ? index : null;
 }
 export function entityPresent(id: string, count: VascularCount, seed = 17): boolean {
   const index = entityIndexFromId(id, seed);

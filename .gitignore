@@ -26,6 +26,9 @@ artifacts/gates/*
 !artifacts/gates/G3A1-review/
 !artifacts/gates/G3A1-review/**
 !artifacts/gates/G4A-*.png
+!artifacts/gates/G4B-*.png
+!artifacts/gates/G4B-*.json
+!artifacts/gates/G4B-percurso.webm
 !artifacts/gates/UI-R1-*.png
 !artifacts/gates/UI-R1-*.json
 !artifacts/gates/UI-R2-*.png

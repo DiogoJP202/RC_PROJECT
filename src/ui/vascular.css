@@ -24,3 +24,14 @@
 .micro-fallback h2 { font: 600 24px/1.2 var(--ga-display); }
 .micro-fallback p { max-width: 420px; font-size: 13px; line-height: 1.6; }
 .micro-schematic { display: flex; align-items: center; gap: 20px; padding: 15px; font-size: 13px; color: var(--ga-muted); }
+/* The CTA belongs to the vascular toolbar, before the cellular chunk is loaded. */
+.micro-toolbar .body-tool-group > .micro-inspect-cell {
+  background: var(--ga-rc-deep);
+  color: var(--ga-paper);
+  font-size: 13px;
+}
+.micro-toolbar .body-tool-group > .micro-inspect-cell:hover:not(:disabled) { background: #8a3544; }
+@media (max-width: 780px) {
+  .micro-toolbar .body-tool-group:first-child { flex-wrap: wrap; }
+  .micro-toolbar .body-tool-group > .micro-inspect-cell { padding-inline: 9px; }
+}

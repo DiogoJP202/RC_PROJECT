@@ -2,7 +2,7 @@
 
 > **Checkpoint atual.** O ciclo UI-R0 a UI-R5 foi encerrado no escopo aprovado. A UI-R5 está integrada à `main` pelo PR #3, no merge [7085f1c](https://github.com/DiogoJP202/RC_PROJECT/commit/7085f1c2f6237724baad4f73d1d1f6f7a8aa5204). A identidade Limiar e as ferramentas sob demanda são a base da retomada. [Checkpoint do redesign](docs/UI_REDESIGN_CHECKPOINT.md) · [Revisão UI-R5](docs/UI_R5_REVIEW.md).
 
-> **Próxima etapa.** O [plano G4B — Observatório celular RC](docs/G4B_PLAN.md) aguarda aprovação. No checkpoint atual, `/atlas/cell/:entityId` apresenta indisponibilidade e oferece volta à circulação. Após aprovação, a implementação ocorre em `codex/g4b`, na pasta principal.
+> **G4B — Observatório celular RC.** Entrega P1 em `codex/g4b`, a partir da `main` no merge do plano aprovado pelo PR #4. Em Micro, selecione uma RC e use **Inspecionar célula** para abrir superfície, corte conceitual e comparação morfológica com hemácia. O retorno pausa no quadro vascular capturado. [Aceite, capturas e limites](docs/G4B_ACCEPTANCE.md) · [Vídeo do percurso](artifacts/gates/G4B-percurso.webm).
 
 > **UI-R4 — Mobile e acessibilidade.** Abas das fichas com navegação por teclado, modais com
 > contenção de foco, atalhos de cena configuráveis e controles móveis legíveis. A revisão inclui
@@ -34,7 +34,7 @@ Laboratório anatômico ficcional em PT-BR inspirado em *Tokyo Ghoul*, com inter
 
 Para retomar, leia [AGENTS.md](AGENTS.md), [PROJECT_HANDOFF](docs/PROJECT_HANDOFF.md) e [RESUME_ON_NEW_PC](docs/RESUME_ON_NEW_PC.md). Os registros históricos de implementação e validação permanecem no [log](docs/IMPLEMENTATION_LOG.md). A arte anatômica P2 segue condicionada à entrega licenciada e à revisão Blender/web.
 
-**G4A/G4A.1 entregam circulação e transporte visual RC**, preservando a classificação hipotética do transporte ficcional. Entre em **Micro** pelo menu ou por **Explorar transporte vascular**. Use o seletor de entidade ou clique numa célula, escolha **Seguir célula** e controle a reprodução na timeline. `Esc` sai primeiro de tracking e depois retorna ao contexto Body; `R` reenquadra a cena atual. A proposta G4B cobre a inspeção ampliada com retorno ao quadro da circulação. Comparar e G5 continuam escopos futuros.
+**G4A/G4A.1 entregam circulação e transporte visual RC**, preservando a classificação hipotética do transporte ficcional. Entre em **Micro** pelo menu ou por **Explorar transporte vascular**. Use o seletor de entidade ou clique numa célula, escolha **Seguir célula** e controle a reprodução na timeline. `Esc` sai primeiro de tracking e depois retorna ao contexto Body; `R` reenquadra a cena atual. No G4B, **Inspecionar célula** abre a bancada mantendo a mesma identidade RC. **Voltar à circulação** devolve o quadro pausado com a câmera e a seleção de origem. Use **Retomar reprodução** para continuar. A comparação de organismos e o estado unificado de simulação pertencem a G6 e G5, respectivamente.
 
 O [registro do checkpoint G3A/G3A.1](docs/G3A_CHECKPOINT.md) separa o aceite P1 da arte P2 e reúne as verificações finais:139 unidades,22 Python,catálogo,build e44 E2E aprovados, incluindo a correção do último trecho da retração. Os pacotes de revisão anteriores continuam preservados como histórico.
 

@@ -36,4 +36,4 @@ O [relatório de consolidação](../artifacts/checkpoint/ui-redesign-consolidati
 
 ## Continuidade
 
-Continue na pasta principal usando branches. A identidade Limiar, o palco dominante e as ferramentas sob demanda são a base aprovada para a continuação. A implementação G4B depende do aceite do plano. Arte P2 exige assets licenciados e revisão própria.
+Continue na pasta principal usando branches. A identidade Limiar, o palco dominante e as ferramentas sob demanda são a base aprovada para a continuação. O plano G4B foi aprovado após este checkpoint. O [aceite da implementação](G4B_ACCEPTANCE.md) registra as provas e a revisão pendente. Arte P2 exige assets licenciados e revisão própria.
