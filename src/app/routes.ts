@@ -1,3 +1,4 @@
+import { parseVascularIdentity, type VascularIdentity } from '../simulation/vascularIdentity';
 import { anatomyIds, type AnatomyId } from './types';
 
 export const atlasPaths = {
@@ -16,7 +17,30 @@ export interface AtlasRoute {
   search: string;
   href: string;
 }
-export type AppRoute = AtlasRoute | { section: EditorialSection | 'cell' | 'not-found'; href: string };
+export type CellEntityRef = VascularIdentity<'rc'>;
+export interface CellRoute { section: 'cell'; href: string; entity: CellEntityRef | null; webglOff: boolean }
+export type AppRoute = AtlasRoute | CellRoute | { section: EditorialSection | 'not-found'; href: string };
+
+export function cellHref(id: string, webglOff = false): string {
+  return '/atlas/cell/' + encodeURIComponent(id) + (webglOff ? '?webgl=off' : '');
+}
+
+export function coldVascularHref(entity: CellEntityRef | null, webglOff = false): string {
+  const query = new URLSearchParams();
+  if (entity) {
+    query.set('microSeed', String(entity.seed));
+    query.set('microSelect', entity.id);
+  }
+  if (webglOff) query.set('webgl', 'off');
+  return atlasHref('vascular', query.toString());
+}
+
+export function coldVascularSelection(query: URLSearchParams) {
+  const identity = parseVascularIdentity(query.get('microSelect') ?? '');
+  if (identity?.kind !== 'rc' || String(identity.seed) !== query.get('microSeed')) return null;
+  const count = identity.index < 100 ? 100 : identity.index < 500 ? 500 : 2000;
+  return { identity, count } as const;
+}
 
 function rootLegacyView(query: URLSearchParams): AtlasView | undefined {
   switch (query.get('mode')) {
@@ -57,7 +81,15 @@ export function readRoute(url: URL): AppRoute {
   const href = path + url.search + url.hash;
   if (path === '/estudos') return { section: 'studies', href };
   if (path === '/fontes') return { section: 'sources', href };
-  if (/^\/atlas\/cell\/[^/]+$/.test(path)) return { section: 'cell', href };
+  const segment = /^\/atlas\/cell(?:\/([^/]+))?$/.exec(path);
+  if (segment) {
+    let entity: CellEntityRef | null = null;
+    try {
+      const identity = parseVascularIdentity(decodeURIComponent(segment[1] ?? ''));
+      if (identity?.kind === 'rc') entity = { ...identity, kind: 'rc' };
+    } catch { /* An invalid encoding is an unavailable cell, not a navigation failure. */ }
+    return { section: 'cell', href, entity, webglOff: url.searchParams.get('webgl') === 'off' };
+  }
   return { section: 'not-found', href };
 }
 

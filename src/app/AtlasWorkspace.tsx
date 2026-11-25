@@ -13,7 +13,9 @@ import { useVascular } from '../state/vascular';
 import { useAssets } from '../state/assets';
 import { EditorialStatus } from '../ui/editorial/EditorialPage';
 import { AtlasHeader } from '../ui/editorial/AtlasHeader';
-import { atlasHref, type AtlasRoute, type NavigationKind } from './routes';
+import { atlasHref, coldVascularSelection, type AtlasRoute, type NavigationKind } from './routes';
+
+import type { VascularInspectionSnapshot } from './vascularInspection';
 
 const Scene = lazy(() => import('../scene/ObservatoryScene'));
 const MicroWorkspace = lazy(() => import('../ui/VascularWorkspace'));
@@ -35,12 +37,14 @@ interface WorkspaceProps {
   navigationRevision: number;
   navigate: (href: string) => void;
   returnFromVascular: () => void;
+  onInspectCell: (id: string, webglOff: boolean) => void;
+  vascularReturn?: VascularInspectionSnapshot;
   returnsToRinkaku: boolean;
   onHelp: () => void;
   shortcutsEnabled: boolean;
 }
 
-export default function AtlasWorkspace({ route, active, bodyVisited, navigationKind, navigationRevision, navigate, returnFromVascular, returnsToRinkaku, onHelp, shortcutsEnabled }: WorkspaceProps) {
+export default function AtlasWorkspace({ route, active, bodyVisited, navigationKind, navigationRevision, navigate, returnFromVascular, onInspectCell, vascularReturn, returnsToRinkaku, onHelp, shortcutsEnabled }: WorkspaceProps) {
   const query = useMemo(() => new URLSearchParams(route.search), [route.search]);
   const catalogMissing = query.get('catalog') === 'missing';
   const assetMissing = query.get('asset') === 'missing';
@@ -56,6 +60,7 @@ export default function AtlasWorkspace({ route, active, bodyVisited, navigationK
   const journey = useRef({ stage: 'body' as 'body' | 'entering' | 'vascular', bookmark: false });
   const wasActive = useRef(false);
   const parkedBody = useRef(false);
+  const appliedMicroEntry = useRef<string | null>(null);
   const appliedQuery = useRef<{ selected: string | null; seed: string | null } | null>(null);
   const mode = useObservatory((s) => s.mode);
   const reduced = useObservatory((s) => s.reducedMotion);
@@ -154,6 +159,15 @@ export default function AtlasWorkspace({ route, active, bodyVisited, navigationK
       state.select(selected as AnatomyId);
     }
     appliedQuery.current = { selected, seed };
+    const directSelection = route.view === 'vascular' ? coldVascularSelection(query) : null;
+    if (directSelection && appliedMicroEntry.current !== route.href && !vascularReturn) {
+      const flow = useVascular.getState();
+      flow.setConfig({ seed: directSelection.identity.seed, count: directSelection.count });
+      flow.scrub(0);
+      flow.setCameraMode('free');
+      flow.select(directSelection.identity.id);
+    }
+    appliedMicroEntry.current = directSelection ? route.href : null;
 
     if (route.view === 'vascular') {
       if (journey.current.stage !== 'body') return;
@@ -189,7 +203,7 @@ export default function AtlasWorkspace({ route, active, bodyVisited, navigationK
       manifestation.setEnabled(enabled);
       if (enabled && previouslyVisible && navigationKind === 'link') state.focusOn('posterior');
     }
-  }, [active, bodyVisited, navigationKind, query, restoreJourney, route.view]);
+  }, [active, bodyVisited, navigationKind, query, restoreJourney, route.href, route.view, vascularReturn]);
 
   useEffect(() => {
     bodySceneBridge.requestEntry = active ? enterMicro : null;
@@ -347,7 +361,7 @@ export default function AtlasWorkspace({ route, active, bodyVisited, navigationK
           ) : null}
           {mode === 'micro' ? (
             <Suspense fallback={<div className="scene-loading" role="status">Carregando o estudo vascular…</div>}>
-              <MicroWorkspace content={content} active={active} navigationRevision={navigationRevision} onReturn={returnFromVascular}
+              <MicroWorkspace content={content} active={active} navigationRevision={navigationRevision} onReturn={returnFromVascular} onInspectCell={onInspectCell}
                 returnLabel={returnsToRinkaku ? 'Voltar ao Rinkaku' : 'Voltar ao Corpo'} webglOff={webglOff} />
             </Suspense>
           ) : null}

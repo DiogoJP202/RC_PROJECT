@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { AtlasContent } from '../content/catalog';
 import { evidenceFor } from '../content/vascularEvidence';
 import { createEntity, createParticles, entityIndexFromId } from '../simulation/vascular';
@@ -9,11 +9,20 @@ import { Icon } from './Icon';
 import { BODY_SHEET_QUERY, ExplorerPanel } from './BodyTools';
 import { EvidenceFilter, EvidenceSources } from './EvidenceSources';
 import { InspectionTabs } from './InspectionTabs';
+import { vascularInspection, type VascularInspectionController, type VascularInspectionSnapshot } from '../app/vascularInspection';
+import { vascularInspectionCamera } from '../scene/vascular/inspectionCamera';
 import './vascular.css';
 
 const Scene = lazy(() => import('../scene/vascular/VascularScene'));
 
-export default function VascularWorkspace({ content, active, navigationRevision, onReturn, returnLabel, webglOff = false }: { content: AtlasContent; active: boolean; navigationRevision: number; onReturn: () => void; returnLabel: string; webglOff?: boolean }) {
+interface VascularWorkspaceProps {
+  content: AtlasContent; active: boolean; navigationRevision: number;
+  onReturn: () => void; returnLabel: string; webglOff?: boolean;
+  onInspectCell: (id: string, webglOff: boolean) => void;
+}
+export default function VascularWorkspace({
+  content, active, navigationRevision, onReturn, returnLabel, webglOff = false, onInspectCell,
+}: VascularWorkspaceProps) {
   const state = useVascular();
   const reduced = useObservatory((s) => s.reducedMotion);
   const canonOnly = useObservatory((s) => s.canonOnly);
@@ -26,8 +35,51 @@ export default function VascularWorkspace({ content, active, navigationRevision,
   const [tab, setTab] = useState<'structure' | 'evidence'>('structure');
   const [kind, setKind] = useState<'vessel' | 'rbc' | 'rc'>('vessel');
   const [panel, setPanel] = useState<{ kind: 'controls' | 'inspect'; revision: number; focusOnOpen: boolean } | null>(null);
+  const owner = useRef({});
+  const [resumeAvailable, setResumeAvailable] = useState(false);
   const opener = useRef<HTMLElement | null>(null);
   const shownPanel = active && panel?.revision === navigationRevision ? panel : null;
+  useLayoutEffect(() => {
+    const controller: VascularInspectionController = {
+      owner: owner.current,
+      capture: () => {
+        if (!active) return null;
+        const flow = useVascular.getState();
+        const view = error ? null : vascularInspectionCamera.controller?.capture();
+        if (view === undefined) return undefined;
+        const snapshot: VascularInspectionSnapshot = {
+          seconds: vascularClock.seconds, wasPlaying: flow.playing, speed: flow.speed, multiplier: vascularClock.speed,
+          config: { ...flow.config }, selectedId: flow.selectedId, highlightRC: flow.highlightRC, cameraMode: flow.cameraMode,
+          cameraRevision: flow.cameraRevision, camera: view, scroll: window.scrollY, panel: shownPanel?.kind ?? null, tab,
+        };
+        flow.pause();
+        return snapshot;
+      },
+      restore: (snapshot) => {
+        const current = useVascular.getState();
+        vascularClock.seconds = snapshot.seconds;
+        vascularClock.speed = snapshot.multiplier;
+        vascularClock.revision++;
+        useVascular.setState({
+          seconds: snapshot.seconds, playing: false, speed: snapshot.speed, revision: vascularClock.revision,
+          config: current.config.seed === snapshot.config.seed && current.config.count === snapshot.config.count ? current.config : { ...snapshot.config },
+          selectedId: snapshot.selectedId, highlightRC: snapshot.highlightRC, cameraMode: snapshot.cameraMode,
+          cameraRevision: snapshot.cameraRevision,
+        });
+        if (snapshot.camera) vascularInspectionCamera.controller?.restore(snapshot.camera);
+        setTab(snapshot.tab);
+        setPanel(snapshot.panel ? { kind: snapshot.panel, revision: navigationRevision + 1, focusOnOpen: false } : null);
+        setResumeAvailable(snapshot.wasPlaying);
+      },
+    };
+    vascularInspection.controller = controller;
+    return () => { if (vascularInspection.controller === controller) vascularInspection.controller = null; };
+  }, [active, error, navigationRevision, shownPanel, tab]);
+
+  useEffect(() => useVascular.subscribe((next, last) => {
+    if ((next.playing || next.seconds !== last.seconds) && resumeAvailable) setResumeAvailable(false);
+  }), [resumeAvailable]);
+
   const dismiss = useCallback(() => {
     setPanel(null);
     requestAnimationFrame(() => {
@@ -107,9 +159,12 @@ export default function VascularWorkspace({ content, active, navigationRevision,
         <div className="body-tool-group" role="group" aria-label="Ferramentas da microcena">
           <button data-testid="micro-controls-toggle" aria-expanded={shownPanel?.kind === 'controls'} aria-controls={shownPanel?.kind === 'controls' ? 'micro-tool-panel' : undefined} onClick={(event) => openPanel('controls', event.currentTarget)}>Células e fluxo</button>
           <button data-testid="micro-inspector-toggle" aria-expanded={shownPanel?.kind === 'inspect'} aria-controls={shownPanel?.kind === 'inspect' ? 'micro-tool-panel' : undefined} onClick={(event) => openPanel('inspect', event.currentTarget)}>Ficha</button>
+          {selected?.kind === 'rc' && <button type="button" className="ga-action micro-inspect-cell" data-testid="micro-inspect-cell"
+          disabled={!state.ready && !error} onClick={() => onInspectCell(selected.id, webglOff && Boolean(error))}>Inspecionar célula</button>}
         </div>
-        <div className="body-current" role="status" data-testid="micro-selection"><span>{state.cameraMode === 'tracking' ? 'Seguindo' : state.cameraMode === 'flow' ? 'Fluxo' : 'Seleção'}</span><strong>{state.selectedId ?? 'Interior do vaso'}</strong></div>
+        <div className="body-current" role="status" data-testid="micro-selection" tabIndex={-1}><span>{state.cameraMode === 'tracking' ? 'Seguindo' : state.cameraMode === 'flow' ? 'Fluxo' : 'Seleção'}</span><strong>{state.selectedId ?? 'Interior do vaso'}</strong></div>
         <div className="body-tool-group body-view-actions">{cameraControls}</div>
+
         <div className="body-meta">
           <span className="body-disclosure"><span aria-hidden="true">△</span><strong>PROXY / CONCEPTUAL MODEL</strong><span> · Sem escala RC real</span></span>
           <button data-testid="micro-return" onClick={onReturn}><Icon name="arrow" size={15} />{returnLabel}</button>
@@ -120,7 +175,7 @@ export default function VascularWorkspace({ content, active, navigationRevision,
         {shownPanel.kind === 'controls' ? controls : inspector}
       </ExplorerPanel>}
     <section className="micro-timeline" aria-label="Reprodução do transporte vascular">
-      <div className="micro-transport"><button data-testid="micro-play" className="icon-button" disabled={!!error || !state.ready || reduced} aria-label={state.playing ? 'Pausar transporte' : 'Reproduzir transporte'} onClick={() => state.playing ? state.pause() : state.play()}><Icon name={state.playing ? 'pause' : 'play'} /></button><button className="icon-button" aria-label="Passo anterior do transporte" onClick={() => state.step(-.5)}><span>−</span></button><button className="icon-button" aria-label="Próximo passo do transporte" onClick={() => state.step(.5)}><span>+</span></button><button data-testid="micro-reset" className="icon-button" aria-label="Reiniciar transporte" onClick={() => state.reset()}><Icon name="reset" /></button></div>
+      <div className="micro-transport"><button data-testid="micro-play" className="icon-button" disabled={!!error || !state.ready || reduced} aria-label={state.playing ? 'Pausar transporte' : resumeAvailable ? 'Retomar reprodução' : 'Reproduzir transporte'} onClick={() => state.playing ? state.pause() : state.play()}><Icon name={state.playing ? 'pause' : 'play'} /></button><button className="icon-button" aria-label="Passo anterior do transporte" onClick={() => state.step(-.5)}><span>−</span></button><button className="icon-button" aria-label="Próximo passo do transporte" onClick={() => state.step(.5)}><span>+</span></button><button data-testid="micro-reset" className="icon-button" aria-label="Reiniciar transporte" onClick={() => state.reset()}><Icon name="reset" /></button></div>
       <label className="micro-time">Tempo do transporte <output>{shownSeconds.toFixed(2)} s · animação</output><input data-testid="micro-time" aria-label="Tempo do transporte" type="range" min="0" max={Math.max(120, Math.ceil(shownSeconds / 60) * 60)} step="0.01" value={shownSeconds} onChange={(e) => { const next = Number(e.target.value); state.scrub(next); setSeconds(next); }} /></label>
       <label className="micro-speed">Velocidade visual <output>{state.speed.toFixed(2)} / 1</output><input data-testid="micro-speed" aria-label="Velocidade visual normalizada" type="range" min="0" max="1" step="0.01" value={state.speed} onChange={(e) => state.setSpeed(Number(e.target.value))} /></label>
       {reduced ? <p className="micro-reduced">Movimento reduzido. Ajuste o tempo pelo controle ou em passos.</p> : null}

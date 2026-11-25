@@ -9,6 +9,8 @@ import { createVascularSample, createVesselFrame, writeVascularAt } from '../../
 import { ProceduralVascularAdapter } from './ProceduralVascularAdapter';
 import { vascularLifecycle } from './lifecycle';
 import { constrainVascularCamera, VascularCameraRig } from './camera';
+import { captureBodyCamera, restoreBodyCamera } from '../bodyContext';
+import { vascularInspectionCamera } from './inspectionCamera';
 import { VascularVisibilityProbe, type VisibilityResult } from './visibility';
 
 interface Props { onReady: () => void; onError: (message: string) => void; active: boolean }
@@ -31,9 +33,13 @@ function VascularContents({ onReady, onError, active }: Props) {
   }), []);
   const lifetime = useRef({ epoch: 0, registered: false });
   const lighting = useRef<Group>(null);
-  const last = useRef({ seconds: NaN, selected: '', highlight: false, mode: '', revision: -1, ready: false, reset: -1 });
+  const last = useRef({ seconds: NaN, selected: '', highlight: false, mode: '', revision: -1, ready: false, reset: -1, clock: -1, config });
   const metric = useRef({ frames: 0, durations: new Float32Array(2400), cursor: 0, renderer: '', calls: 0, triangles: 0, geometries: 0, textures: 0 });
   const parkedCamera = useRef(false);
+  const inspectionHold = useRef<number | null>(null);
+  const returnFrame = useRef<{ pending: boolean; first: ReturnType<typeof captureBodyCamera> | null; seconds: number; frames: number }>({
+    pending: false, first: null, seconds: 0, frames: 0,
+  });
   const heldCamera = useRef<{ clockRevision: number; cameraRevision: number; cameraMode: string; selectedId: string | null; reduced: boolean } | null>(null);
   useLayoutEffect(() => {
     if (!active) { parkedCamera.current = true; return; }
@@ -44,6 +50,30 @@ function VascularContents({ onReady, onError, active }: Props) {
     heldCamera.current = { clockRevision: vascularClock.revision, cameraRevision: state.cameraRevision,
       cameraMode: state.cameraMode, selectedId: state.selectedId, reduced };
   }, [active, reduced]);
+  useLayoutEffect(() => {
+    const controller = {
+      capture: () => {
+        const state = useVascular.getState(), applied = last.current;
+        if (!controls.current || !applied.ready || applied.clock !== vascularClock.revision
+          || applied.mode !== state.cameraMode || applied.selected !== (state.selectedId ?? '')
+          || applied.highlight !== state.highlightRC || applied.reset !== state.cameraRevision || applied.config !== state.config) return;
+        return captureBodyCamera(camera, controls.current);
+      },
+      restore: (snapshot: ReturnType<typeof captureBodyCamera>) => {
+        const orbit = controls.current;
+        if (!orbit) return;
+        const aspect = (camera as PerspectiveCamera).aspect;
+        restoreBodyCamera(camera, orbit, snapshot);
+        const lens = camera as PerspectiveCamera;
+        lens.aspect = aspect;
+        lens.updateProjectionMatrix();
+        inspectionHold.current = vascularClock.revision;
+        returnFrame.current = { pending: true, first: null, frames: 0, seconds: vascularClock.seconds };
+      },
+    };
+    vascularInspectionCamera.controller = controller;
+    return () => { if (vascularInspectionCamera.controller === controller) vascularInspectionCamera.controller = null; };
+  }, [camera]);
   const advanceOptions = useRef({ reducedMotion: false, hidden: false, available: true, active: true });
 
   useEffect(() => { resources.adapter.setConfig(config); last.current.seconds = NaN; }, [config, resources]);
@@ -87,6 +117,7 @@ function VascularContents({ onReady, onError, active }: Props) {
           selectedId: state.selectedId, selectedPresent: resources.adapter.entities.some((item) => item.id === state.selectedId),
           cameraMode: state.cameraMode, highlightRC: state.highlightRC, reducedMotion: useObservatory.getState().reducedMotion,
           camera: { position: camera.position.toArray(), quaternion: camera.quaternion.toArray(), target: controls.current?.target.toArray(), up: camera.up.toArray() },
+          inspectionReturn: { ...returnFrame.current },
           particles: resources.adapter.entities.map((item) => ({ id: item.id, kind: item.kind, index: item.index })),
           adapter: resources.adapter.inspect(), lifecycle: { ...vascularLifecycle }, metrics: { frames: m.frames, calls: m.calls, triangles: m.triangles,
             geometries: m.geometries, textures: m.textures, renderer: m.renderer, fpsP50: fps[Math.floor(count * .5)] ?? 0, fpsP10: fps[Math.floor(count * .1)] ?? 0 },
@@ -107,6 +138,7 @@ function VascularContents({ onReady, onError, active }: Props) {
       if (!orbit?.enabled || useVascular.getState().cameraMode !== 'free' || event.ctrlKey || event.metaKey || event.altKey) return;
       const horizontal = event.code === 'ArrowLeft' || event.code === 'ArrowRight';
       if (!horizontal && event.code !== 'ArrowUp' && event.code !== 'ArrowDown') return;
+      inspectionHold.current = null;
       const sign = event.code === 'ArrowLeft' || event.code === 'ArrowDown' ? -1 : 1;
       const step = 2 * camera.position.distanceTo(orbit.target) * Math.tan((camera as PerspectiveCamera).fov * Math.PI / 360) * 7 / Math.max(1, canvas.clientHeight);
       resources.point.setFromMatrixColumn(camera.matrixWorld, horizontal ? 0 : 1).multiplyScalar(sign * step);
@@ -136,8 +168,11 @@ function VascularContents({ onReady, onError, active }: Props) {
     const held = heldCamera.current;
     const unchanged = held && !state.playing && held.clockRevision === vascularClock.revision && held.cameraRevision === state.cameraRevision
       && held.cameraMode === state.cameraMode && held.selectedId === state.selectedId && held.reduced === reduced;
+    const parked = inspectionHold.current === vascularClock.revision && last.current.mode === state.cameraMode
+      && last.current.reset === state.cameraRevision && last.current.selected === (state.selectedId ?? '');
+    if (!parked) inspectionHold.current = null;
     if (!unchanged) heldCamera.current = null;
-    if (!unchanged && (state.cameraMode !== 'free' || reset)) {
+    if (!parked && !unchanged && (state.cameraMode !== 'free' || reset)) {
       if (last.current.ready && last.current.mode === 'free' && state.cameraMode !== 'free') resources.cameraRig.seed(camera.position, controls.current?.target ?? resources.target);
       const pose = resources.cameraRig.update(delta, state.cameraMode === 'tracking' ? 'tracking' : 'flow', state.cameraMode === 'free' ? 0 : seconds,
         state.cameraMode === 'tracking' && selected ? resources.sample : null, reduced,
@@ -150,10 +185,15 @@ function VascularContents({ onReady, onError, active }: Props) {
     if (controls.current) {
       controls.current.enabled = state.cameraMode === 'free';
       controls.current.enableDamping = !reduced && state.cameraMode === 'free';
-      controls.current.update();
+      if (!parked) controls.current.update();
     }
-    constrainVascularCamera(camera.position, resources.frame);
-    if (state.cameraMode === 'free' && controls.current) constrainVascularCamera(controls.current.target, resources.frame, .1);
+    if (!parked) {
+      constrainVascularCamera(camera.position, resources.frame);
+      if (state.cameraMode === 'free' && controls.current) constrainVascularCamera(controls.current.target, resources.frame, .1);
+    }
+    if (returnFrame.current.pending && active && controls.current) {
+      returnFrame.current = { pending: false, first: captureBodyCamera(camera, controls.current), seconds, frames: metric.current.frames + 1 };
+    }
     if (lighting.current) { lighting.current.position.copy(camera.position); lighting.current.quaternion.copy(camera.quaternion); }
     const m = metric.current; m.frames++; m.durations[m.cursor++ % m.durations.length] = delta;
     m.calls = gl.info.render.calls; m.triangles = gl.info.render.triangles;
@@ -161,6 +201,7 @@ function VascularContents({ onReady, onError, active }: Props) {
     if (!last.current.ready) { last.current.ready = true; useVascular.getState().setReady(true); onReady(); }
     last.current.seconds = seconds; last.current.selected = state.selectedId ?? ''; last.current.highlight = state.highlightRC;
     last.current.mode = state.cameraMode; last.current.reset = state.cameraRevision;
+    last.current.clock = vascularClock.revision; last.current.config = state.config;
   });
 
   const select = (event: ThreeEvent<MouseEvent>) => {
@@ -178,7 +219,7 @@ function VascularContents({ onReady, onError, active }: Props) {
     <group ref={lighting}><pointLight position={[0, .6, .8]} color="#ffe6d5" intensity={3.5} distance={18} decay={2} /><pointLight position={[0, 1.2, -3]} color="#c4c9d4" intensity={3} distance={16} decay={2} /></group>
     <primitive object={resources.adapter.group} dispose={null} onClick={select} />
     <OrbitControls ref={controls} makeDefault enableDamping dampingFactor={.1} rotateSpeed={.5} zoomSpeed={.5} panSpeed={.4}
-      minDistance={.3} maxDistance={7} enablePan onStart={() => { /* User orbit only; automatic cameras disable controls. */ }} />
+      minDistance={.3} maxDistance={7} enablePan onStart={() => { inspectionHold.current = null; heldCamera.current = null; }} />
   </>;
 }
 

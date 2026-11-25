@@ -80,3 +80,9 @@ O olho **Limiar**, o estudo **Incisão**, a assinatura, o favicon, os ícones ra
 | `share.jpg` | 1200 × 630 | Composição tipográfica e recorte de `rinkaku-wide.webp` |
 
 As imagens carregam a classificação visual de modelo conceitual na interface. Tempos e escolhas de câmera pertencem à visualização. A ferramenta [capture_ui_r5_art](../tools/capture_ui_r5_art.mjs) usa Vite dev na porta 5175 e aplica os ajustes de luz e câmera na sessão descartável; a geometria e as simulações são as do Atlas. Os PNGs resultantes foram convertidos com Pillow, WebP `quality=85, method=6`. A ferramenta [export_ui_r5_identity](../tools/export_ui_r5_identity.mjs) gera ícones e cartão a partir dos recursos do projeto. A aplicação serve a arte estática da vitrine sem inicializar WebGL.
+
+## G4B — Representações do observatório celular
+
+As malhas de RC e hemácia, as cores por vértice, os esquemas do fallback e o plano de corte são `PROJECT_ORIGINAL`. A superfície é calculada em `src/simulation/cellular.ts` e montada em `src/scene/inspection/InspectionRendererAdapter.ts`. A seção é a interseção com a malha autoral; as pregas não correspondem a histologia nem estabelecem escala real RC. A hemácia usa a referência textual de disco bicôncavo no registro OpenStax já citado em G4A. As figuras do livro não foram incorporadas.
+
+As capturas e o vídeo G4B registram o renderer do projeto. IBM Plex e o símbolo Limiar conservam as origens e licenças já registradas. O ingresso de geometria Blender definitiva exige arquivo, identidade, licença, autoria, revisão e testes próprios.

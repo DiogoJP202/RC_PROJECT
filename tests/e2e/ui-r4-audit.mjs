@@ -44,15 +44,31 @@ try {
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }, { width: 430, height: 932 }]) {
     const page = await browser.newPage({ viewport, reducedMotion: 'reduce', deviceScaleFactor: 1 });
     try {
-      for (const route of ['/', '/estudos', '/fontes', '/atlas', '/atlas/rinkaku', '/atlas/vascular', '/atlas?webgl=off', '/atlas?catalog=missing', '/atlas/comparar', '/atlas/cell/rc%3A17%3A0']) {
+      for (const route of ['/', '/estudos', '/fontes', '/atlas', '/atlas/rinkaku', '/atlas/vascular', '/atlas?webgl=off', '/atlas?catalog=missing', '/atlas/comparar', '/atlas/cell/rc%3A17%3A0', '/atlas/cell/rc%3A17%3A0?webgl=off']) {
         await page.goto(base + route);
-        if (route.includes('webgl=off')) await page.getByTestId('scene-fallback').waitFor();
+        if (route.startsWith('/atlas/cell/') && route.includes('webgl=off')) await page.getByTestId('cell-fallback').waitFor();
+        else if (route.includes('webgl=off')) await page.getByTestId('scene-fallback').waitFor();
         else if (route.includes('catalog=missing')) await page.getByTestId('catalog-error').waitFor();
-        else if (route === '/atlas/comparar' || route.startsWith('/atlas/cell/')) await page.getByRole('heading', { name: /indisponível/ }).waitFor();
+        else if (route === '/atlas/comparar') await page.getByRole('heading', { name: /indisponível/ }).waitFor();
+        else if (route.startsWith('/atlas/cell/')) await page.getByTestId('cell-status').filter({ hasText: 'Cena 3D pronta' }).waitFor();
         else if (route.startsWith('/atlas')) await page.getByTestId(route.endsWith('vascular') ? 'micro-status' : 'scene-status').filter({ hasText: 'Cena 3D pronta' }).waitFor();
         else await page.getByRole('heading', { level: 1 }).waitFor();
         if (route === '/fontes') await page.locator('.ga-source-library').waitFor();
         await inspect(page, viewport, route, 'rest');
+        if (route.startsWith('/atlas/cell/')) {
+          const closeTool = () => page.getByTestId('cell-panel-close').click();
+          if (!route.includes('webgl=off')) {
+            await page.getByRole('button', { name: 'Corte', exact: true }).click();
+            await inspect(page, viewport, route, 'cell-cut');
+            await closeTool();
+            await page.getByTestId('cell-compare').click();
+            await inspect(page, viewport, route, 'cell-compare');
+          }
+          await page.getByRole('button', { name: 'Ficha', exact: true }).click();
+          await page.getByRole('tab', { name: 'Evidências' }).click();
+          await inspect(page, viewport, route, 'cell-evidence');
+          await closeTool();
+        }
         if (route === '/fontes') {
           await page.getByText('Registro de conferência', { exact: true }).first().click();
           await inspect(page, viewport, route, 'source-note');

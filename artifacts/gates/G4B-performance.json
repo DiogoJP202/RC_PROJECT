@@ -1,0 +1,1083 @@
+{
+  "baseline": "987ef434050fa2fa8e2c29ff8509c3242f6b3364",
+  "preview": "Vite production preview on Windows",
+  "buildEntries": [
+    {
+      "file": "dist/index.html",
+      "sha256": "1485ba6020581db54900bf061431dd2fdb6c89db8435b10de9168cbe353d1193"
+    },
+    {
+      "file": "dist/assets/AtlasWorkspace-Cfjzve2j.js",
+      "sha256": "0104809f8f43b95e779b86d967a8fb5ba7f2d44fc53e5db510e807bdd8586e42"
+    },
+    {
+      "file": "dist/assets/catalog-Dx_GEHoG.js",
+      "sha256": "d841d58331baf7d05ab7745ed5b8b43db9b8f1a1c40636b93806334b6dedf46d"
+    },
+    {
+      "file": "dist/assets/CellWorkspace--9Z5xvLg.css",
+      "sha256": "cfd787a5682abc0ada246d503ce12087eb9a56c665b80634b494959623fcfa74"
+    },
+    {
+      "file": "dist/assets/CellWorkspace-C-aUCCP8.js",
+      "sha256": "f55db118da1dc746872c7c873592e3d4706c5c386cd4f7e02fa89d516bbbcbb5"
+    },
+    {
+      "file": "dist/assets/GLTFLoader-DjtAMhpG.js",
+      "sha256": "b0bb5e383dc2922444fe894b76bc7f0553a6567bc6868270c52219d1421f9a31"
+    },
+    {
+      "file": "dist/assets/index-BcZqfMU2.css",
+      "sha256": "f8f8b3cef10aca0592ee6be961706b8ec745f0cd56efc9e0d02e889f7b3aaafe"
+    },
+    {
+      "file": "dist/assets/index-jNsyaFkQ.js",
+      "sha256": "221eb54ea8b8c8294b53de3758916ba35760626d22a490620d007b6050775042"
+    },
+    {
+      "file": "dist/assets/InspectionScene-D3-1zcIK.js",
+      "sha256": "3e4c84e19c325888dd057adf69b63a21cc91b814ed0e1d8d446c270018eaa9b0"
+    },
+    {
+      "file": "dist/assets/jsx-runtime-Wy9s6hX0.js",
+      "sha256": "bcb9f6586cd973c2fb2faa4a2d38d4b06660e2fe2806aaa0de1c39306ff0f69a"
+    },
+    {
+      "file": "dist/assets/ObservatoryScene-BzvZG1yH.js",
+      "sha256": "dfaba8ad7c2f1e2a893154d2c7524c108fda8eb888a1d4d1859e0aab6f7171ed"
+    },
+    {
+      "file": "dist/assets/OrbitControls-ClP1rqGs.js",
+      "sha256": "2e2b45f3249496f9fe830efb56b7e6d655a94440b6eae1c5679307dc51d3ac70"
+    },
+    {
+      "file": "dist/assets/RinkakuScene-d2zP8gEw.js",
+      "sha256": "bc45ba0ab6899e79a2f84bd9b343bc8ff4188d8c4c45fb4afa257b6128437ef5"
+    },
+    {
+      "file": "dist/assets/SceneBoundary-Bm9hUAOt.css",
+      "sha256": "6d9e82e64f3abe3f2498602b57739787780974e8e5b2385bbc6be44de5d45136"
+    },
+    {
+      "file": "dist/assets/SceneBoundary-C0VnwdAH.js",
+      "sha256": "4c351e408a9e8952f8666fba668ffd0b712a27e282c534c2d78645fa05872770"
+    },
+    {
+      "file": "dist/assets/SourcesPage-Czb9I9xu.js",
+      "sha256": "29cc81f21cb70ee0984fda59df43719e387d57fb8f4b77afacbdad48bae526f3"
+    },
+    {
+      "file": "dist/assets/three.core-Dp-eO7LC.js",
+      "sha256": "10ce628f40c24012f66cb3aeb5fe1533a45dfc4e43d8a4eebfda5f554c9fb7cd"
+    },
+    {
+      "file": "dist/assets/vascularEvidence-CgNT469b.js",
+      "sha256": "b011d47b3cf7982087131d2e712c961b815331730b44a82ee14f35f5633cbfce"
+    },
+    {
+      "file": "dist/assets/VascularScene-B1LEBf4E.js",
+      "sha256": "eb50c0deeaaf4b9cf4a815ae326976951a38b8452c5cb6b8996a46ed57cf884c"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-CSIpivAM.js",
+      "sha256": "8d3b5c756e926f2c4eccc6cc02b2463ac957fd7a92e0495625c9b6c5bc078b42"
+    },
+    {
+      "file": "dist/assets/VascularWorkspace-DWhGUcwm.css",
+      "sha256": "909154832b2fec5acd51bf22178b766c10429bf5d759336c48c954b68e5ca0b3"
+    }
+  ],
+  "protocol": {
+    "network": "CDP 20 Mbps / 50 ms, HTTP cache disabled",
+    "warmupMs": 10000,
+    "sampleMs": 30000,
+    "DPR": 1,
+    "percentiles": "FPS p50 and p10 from reciprocals of rAF intervals during active configured workload",
+    "caveats": [
+      "Emulated mobile on workstation GPU.",
+      "JS heap and renderer counters are not VRAM.",
+      "Transfer includes measured protocol overhead."
+    ]
+  },
+  "profiles": [
+    {
+      "scenario": "cell-surface",
+      "originalSha256": "232ac2b06aeb435fa3ffff02e425853a15c362c413825264b2a4ea8df0e58bd5",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "158.0.8127.37"
+      },
+      "coldEntry": {
+        "homeBytes": 202626,
+        "microBytes": 477330,
+        "cell": {
+          "bytes": 452014,
+          "milliseconds": 694
+        }
+      },
+      "microToCell": {
+        "bytes": 11815,
+        "milliseconds": 438.2,
+        "requested": [
+          {
+            "path": "/assets/CellWorkspace-C-aUCCP8.js",
+            "transferSize": 5728
+          },
+          {
+            "path": "/assets/CellWorkspace--9Z5xvLg.css",
+            "transferSize": 1778
+          },
+          {
+            "path": "/assets/ui-r5/favicon.svg",
+            "transferSize": 724
+          },
+          {
+            "path": "/assets/InspectionScene-D3-1zcIK.js",
+            "transferSize": 3585
+          }
+        ]
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 1,
+        "triangles": 15904,
+        "geometries": {
+          "min": 2,
+          "max": 2
+        },
+        "nRafIntervals": 1800,
+        "renderedFrames": 1798,
+        "sampleMs": 30000.9,
+        "sampleHeapBytes": 12630377
+      },
+      "budgets": {
+        "homeColdUnder500KiB": true,
+        "incrementalUnder250KiB": true,
+        "entryUnder5s": true,
+        "directUnder5s": true,
+        "directUnder8MiB": true,
+        "p50": true,
+        "p10": true,
+        "drawsAtMost30": true,
+        "actualRendererDoesWork": true,
+        "restingInvalidationsStopped": true
+      },
+      "runtime": {
+        "errors": [],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "scenario": "cell-cut",
+      "originalSha256": "37f9d3e1b179d0ec492fba90b809dd8c9f9d35aac707717c7a7c809badf474fb",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "158.0.8127.37"
+      },
+      "coldEntry": {
+        "homeBytes": 193650,
+        "microBytes": 477330,
+        "cell": {
+          "bytes": 452014,
+          "milliseconds": 698.6000000238419
+        }
+      },
+      "microToCell": {
+        "bytes": 11815,
+        "milliseconds": 490.1,
+        "requested": [
+          {
+            "path": "/assets/CellWorkspace-C-aUCCP8.js",
+            "transferSize": 5728
+          },
+          {
+            "path": "/assets/CellWorkspace--9Z5xvLg.css",
+            "transferSize": 1778
+          },
+          {
+            "path": "/assets/ui-r5/favicon.svg",
+            "transferSize": 724
+          },
+          {
+            "path": "/assets/InspectionScene-D3-1zcIK.js",
+            "transferSize": 3585
+          }
+        ]
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 2,
+        "triangles": 15904,
+        "geometries": {
+          "min": 2,
+          "max": 2
+        },
+        "nRafIntervals": 1800,
+        "renderedFrames": 1799,
+        "sampleMs": 30001.2,
+        "sampleHeapBytes": 13231480
+      },
+      "budgets": {
+        "homeColdUnder500KiB": true,
+        "incrementalUnder250KiB": true,
+        "entryUnder5s": true,
+        "directUnder5s": true,
+        "directUnder8MiB": true,
+        "p50": true,
+        "p10": true,
+        "drawsAtMost30": true,
+        "actualRendererDoesWork": true,
+        "restingInvalidationsStopped": true
+      },
+      "runtime": {
+        "errors": [],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "scenario": "cell-compare",
+      "originalSha256": "28588ea8d39ebff44e929d8afa2d66c62e0576a989bf247160c841610adc920a",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "158.0.8127.37"
+      },
+      "coldEntry": {
+        "homeBytes": 174326,
+        "microBytes": 477330,
+        "cell": {
+          "bytes": 452014,
+          "milliseconds": 693.0999999046326
+        }
+      },
+      "microToCell": {
+        "bytes": 11815,
+        "milliseconds": 434,
+        "requested": [
+          {
+            "path": "/assets/CellWorkspace-C-aUCCP8.js",
+            "transferSize": 5728
+          },
+          {
+            "path": "/assets/CellWorkspace--9Z5xvLg.css",
+            "transferSize": 1778
+          },
+          {
+            "path": "/assets/ui-r5/favicon.svg",
+            "transferSize": 724
+          },
+          {
+            "path": "/assets/InspectionScene-D3-1zcIK.js",
+            "transferSize": 3585
+          }
+        ]
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 2,
+        "triangles": 22672,
+        "geometries": {
+          "min": 3,
+          "max": 3
+        },
+        "nRafIntervals": 1800,
+        "renderedFrames": 1799,
+        "sampleMs": 30000.8,
+        "sampleHeapBytes": 12858901
+      },
+      "budgets": {
+        "homeColdUnder500KiB": true,
+        "incrementalUnder250KiB": true,
+        "entryUnder5s": true,
+        "directUnder5s": true,
+        "directUnder8MiB": true,
+        "p50": true,
+        "p10": true,
+        "drawsAtMost30": true,
+        "actualRendererDoesWork": true,
+        "restingInvalidationsStopped": true
+      },
+      "runtime": {
+        "errors": [],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "scenario": "cell-compare-mobile",
+      "originalSha256": "ec9e724496a1c09596837a04d7aba8fb7dd2789d16a8d54071bee07c196f7c15",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        },
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "158.0.8127.37"
+      },
+      "coldEntry": {
+        "homeBytes": 173004,
+        "microBytes": 477330,
+        "cell": {
+          "bytes": 452014,
+          "milliseconds": 642.7000000476837
+        }
+      },
+      "microToCell": {
+        "bytes": 11815,
+        "milliseconds": 444.1,
+        "requested": [
+          {
+            "path": "/assets/CellWorkspace-C-aUCCP8.js",
+            "transferSize": 5728
+          },
+          {
+            "path": "/assets/CellWorkspace--9Z5xvLg.css",
+            "transferSize": 1778
+          },
+          {
+            "path": "/assets/ui-r5/favicon.svg",
+            "transferSize": 724
+          },
+          {
+            "path": "/assets/InspectionScene-D3-1zcIK.js",
+            "transferSize": 3585
+          }
+        ]
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 1,
+        "triangles": 6768,
+        "geometries": {
+          "min": 3,
+          "max": 3
+        },
+        "nRafIntervals": 1800,
+        "renderedFrames": 1800,
+        "sampleMs": 30000.6,
+        "sampleHeapBytes": 13426478
+      },
+      "budgets": {
+        "homeColdUnder500KiB": true,
+        "incrementalUnder250KiB": true,
+        "entryUnder5s": true,
+        "directUnder5s": true,
+        "directUnder8MiB": true,
+        "p50": true,
+        "p10": true,
+        "drawsAtMost30": true,
+        "actualRendererDoesWork": true,
+        "restingInvalidationsStopped": true
+      },
+      "runtime": {
+        "errors": [],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "scenario": "cell-compare-mobile-430",
+      "originalSha256": "dfbdf8369bc536490a3ed70802dc35a3cb330263bb0bba9fbc2a6cabcf000d54",
+      "environment": {
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 430,
+          "height": 932,
+          "dpr": 1
+        },
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "158.0.8127.37"
+      },
+      "coldEntry": {
+        "homeBytes": 173004,
+        "microBytes": 477330,
+        "cell": {
+          "bytes": 452014,
+          "milliseconds": 633.7999999523163
+        }
+      },
+      "microToCell": {
+        "bytes": 11815,
+        "milliseconds": 449.1,
+        "requested": [
+          {
+            "path": "/assets/CellWorkspace-C-aUCCP8.js",
+            "transferSize": 5728
+          },
+          {
+            "path": "/assets/CellWorkspace--9Z5xvLg.css",
+            "transferSize": 1778
+          },
+          {
+            "path": "/assets/ui-r5/favicon.svg",
+            "transferSize": 724
+          },
+          {
+            "path": "/assets/InspectionScene-D3-1zcIK.js",
+            "transferSize": 3585
+          }
+        ]
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 1,
+        "triangles": 6768,
+        "geometries": {
+          "min": 3,
+          "max": 3
+        },
+        "nRafIntervals": 1800,
+        "renderedFrames": 1800,
+        "sampleMs": 30000.6,
+        "sampleHeapBytes": 12772554
+      },
+      "budgets": {
+        "homeColdUnder500KiB": true,
+        "incrementalUnder250KiB": true,
+        "entryUnder5s": true,
+        "directUnder5s": true,
+        "directUnder8MiB": true,
+        "p50": true,
+        "p10": true,
+        "drawsAtMost30": true,
+        "actualRendererDoesWork": true,
+        "restingInvalidationsStopped": true
+      },
+      "runtime": {
+        "errors": [],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "scenario": "vascular-flow-100",
+      "originalSha256": "7f4c5e911b8bf32e1e28a847995cec30a2a90c7bc4b00905069cca5fbd274a3a",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 158.0.8127.37",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "scenarioConfig": {
+        "count": 100,
+        "seed": 17,
+        "cameraMode": "flow",
+        "selectedId": null,
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": false,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1654,
+        "readyMs": 1455.1999999284744,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 21847,
+        "bootPlusMicroTransferBytes": 497565
+      },
+      "coldEntry": {
+        "bodyInteractiveMs": 1499.7,
+        "bodyBytes": 475718
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 3,
+        "sampleMs": 30010.8,
+        "nRafIntervals": 1800
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "resources": {
+        "drawCalls": {
+          "min": 3,
+          "max": 3
+        },
+        "triangles": {
+          "min": 56032,
+          "max": 56032
+        },
+        "geometries": {
+          "min": 3,
+          "max": 3
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      }
+    },
+    {
+      "scenario": "vascular-flow-500",
+      "originalSha256": "130441dc787af51aa17e2712cc1aba9ce84fabcf9c8f523d7a5dd1ed0ad79b95",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 158.0.8127.37",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "scenarioConfig": {
+        "count": 500,
+        "seed": 17,
+        "cameraMode": "flow",
+        "selectedId": null,
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": false,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1627,
+        "readyMs": 1413.1000000238419,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 21847,
+        "bootPlusMicroTransferBytes": 497565
+      },
+      "coldEntry": {
+        "bodyInteractiveMs": 1490.9,
+        "bodyBytes": 475718
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 3,
+        "sampleMs": 30012.7,
+        "nRafIntervals": 1800
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "resources": {
+        "drawCalls": {
+          "min": 3,
+          "max": 3
+        },
+        "triangles": {
+          "min": 214432,
+          "max": 214432
+        },
+        "geometries": {
+          "min": 3,
+          "max": 3
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      }
+    },
+    {
+      "scenario": "vascular-flow-2000",
+      "originalSha256": "d884a076413c5d01037f58b737650164c0aa937a0a5c3bb4222c2b2fd1b8758b",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 158.0.8127.37",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "scenarioConfig": {
+        "count": 2000,
+        "seed": 17,
+        "cameraMode": "flow",
+        "selectedId": null,
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": false,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1681,
+        "readyMs": 1465.2999999523163,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 21847,
+        "bootPlusMicroTransferBytes": 497565
+      },
+      "coldEntry": {
+        "bodyInteractiveMs": 1499.7,
+        "bodyBytes": 475718
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.52,
+        "draws": 3,
+        "sampleMs": 30009.3,
+        "nRafIntervals": 1799
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "resources": {
+        "drawCalls": {
+          "min": 3,
+          "max": 3
+        },
+        "triangles": {
+          "min": 808384,
+          "max": 808384
+        },
+        "geometries": {
+          "min": 3,
+          "max": 3
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      }
+    },
+    {
+      "scenario": "vascular-tracking-2000",
+      "originalSha256": "7cbd06aef51f3922767c1f7662b1b716888e200c87b4bd34a7b669b31cb98c80",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 158.0.8127.37",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "scenarioConfig": {
+        "count": 2000,
+        "seed": 17,
+        "cameraMode": "tracking",
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": false,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 1656,
+        "readyMs": 1426.5999999046326,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 21847,
+        "bootPlusMicroTransferBytes": 497565
+      },
+      "coldEntry": {
+        "bodyInteractiveMs": 1494.2,
+        "bodyBytes": 475718
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 4,
+        "sampleMs": 30017,
+        "nRafIntervals": 1800
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "resources": {
+        "drawCalls": {
+          "min": 4,
+          "max": 4
+        },
+        "triangles": {
+          "min": 808384,
+          "max": 808384
+        },
+        "geometries": {
+          "min": 4,
+          "max": 4
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      }
+    },
+    {
+      "scenario": "vascular-tracking-mobile",
+      "originalSha256": "d3df60d768d25c87d6553b6d1eb32df9a0be234af9498237e175c327f1dfda01",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 158.0.8127.37",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        }
+      },
+      "scenarioConfig": {
+        "count": 500,
+        "seed": 17,
+        "cameraMode": "tracking",
+        "selectedId": "rc:17:0",
+        "highlightRC": false,
+        "normalizedSpeed": 0.42857142857142855,
+        "mobileEmulation": true,
+        "bodyRemainsMountedForContext": true,
+        "microLazy": true,
+        "readyObservedMs": 2009,
+        "readyMs": 1484.8000000715256,
+        "readyInitialProfile": 500,
+        "microAdditionalTransferBytes": 21847,
+        "bootPlusMicroTransferBytes": 497565
+      },
+      "coldEntry": {
+        "bodyInteractiveMs": 1513.7,
+        "bodyBytes": 475718
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.52,
+        "draws": 4,
+        "sampleMs": 30008.8,
+        "nRafIntervals": 1800
+      },
+      "budgets": {
+        "bodyInteractiveUnder5s": true,
+        "microReadyUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "initialPayloadUnder8MiB": true,
+        "bodyPlusMicroUnder8MiB": true,
+        "resourceIdsStable": true,
+        "noSceneFailure": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "resources": {
+        "drawCalls": {
+          "min": 4,
+          "max": 4
+        },
+        "triangles": {
+          "min": 214432,
+          "max": 214432
+        },
+        "geometries": {
+          "min": 4,
+          "max": 4
+        },
+        "textures": {
+          "min": 2,
+          "max": 2
+        },
+        "resourceIdsStable": true,
+        "materialAndEffects": "Read adapter/resources and scene implementation: no claim that counts measure material cost or VRAM."
+      }
+    },
+    {
+      "scenario": "body",
+      "originalSha256": "f03b4213d4d43b15342df84fa542c70f0d048c55553900fa6e87addd8c050cdc",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chrome 158.0.8127.37",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "scenarioConfig": {},
+      "coldEntry": {
+        "bodyInteractiveMs": 1502.6,
+        "bodyBytes": 475718
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.52,
+        "draws": 23,
+        "sampleMs": 30014.4,
+        "nRafIntervals": 1800
+      },
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "scenario": "rinkaku",
+      "originalSha256": "213b1ce640d007191e6ca4db95e2114d0c52f4a3d987ac67b118ef772d85e357",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 158.0.8127.37",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        }
+      },
+      "scenarioConfig": {
+        "quality": "standard",
+        "appendageCount": 4,
+        "seed": 17,
+        "particlesSetting": true,
+        "particlesRendered": true,
+        "mobileEmulation": false,
+        "activationMs": 423,
+        "activationAdditionalTransferBytes": 6306,
+        "bootPlusManifestTransferBytes": 482024,
+        "sequence": "Full 21 s cinematic transport, including 3.4 s retraction. Same normalized seven phase intervals and sampler motionTime as G3A. Restart through reset/play UI; 10 s warm-up then 30 s rAF sample."
+      },
+      "coldEntry": {
+        "bodyInteractiveMs": 1521.7,
+        "bodyBytes": 475718
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 22,
+        "sampleMs": 30013.8,
+        "nRafIntervals": 1800
+      },
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true,
+        "bodyPlusManifestUnder8MiB": true,
+        "allSevenPhasesSampled": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "resources": {
+        "maxDrawCalls": 22,
+        "maxTriangles": 148854,
+        "geometryRange": {
+          "min": 20,
+          "max": 20
+        },
+        "textureRange": {
+          "min": 3,
+          "max": 3
+        },
+        "adapterResourceIdsStable": true
+      }
+    },
+    {
+      "scenario": "rinkaku-mobile",
+      "originalSha256": "8a834b4be3c487a443aba615376a4caa26f3d6a106da9ad654ed2e90b9df1fa5",
+      "environment": {
+        "os": "win32 10.0.26200 x64",
+        "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "ramBytes": 16885276672,
+        "browser": "Chromium 158.0.8127.37",
+        "headless": true,
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x00009A49) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        }
+      },
+      "scenarioConfig": {
+        "quality": "standard",
+        "appendageCount": 4,
+        "seed": 17,
+        "particlesSetting": true,
+        "particlesRendered": true,
+        "mobileEmulation": true,
+        "activationMs": 381,
+        "activationAdditionalTransferBytes": 6306,
+        "bootPlusManifestTransferBytes": 482024,
+        "sequence": "Full 21 s cinematic transport, including 3.4 s retraction. Same normalized seven phase intervals and sampler motionTime as G3A. Restart through reset/play UI; 10 s warm-up then 30 s rAF sample."
+      },
+      "coldEntry": {
+        "bodyInteractiveMs": 1435.7,
+        "bodyBytes": 475718
+      },
+      "metrics": {
+        "p50": 59.88,
+        "p10": 59.17,
+        "draws": 22,
+        "sampleMs": 30015.5,
+        "nRafIntervals": 1800
+      },
+      "budgets": {
+        "interactionUnder5s": true,
+        "fpsP50AtLeast50": true,
+        "fpsP10AtLeast30": true,
+        "drawsUnder150": true,
+        "measuredInitialPayloadUnder8MiB": true,
+        "bodyPlusManifestUnder8MiB": true,
+        "allSevenPhasesSampled": true
+      },
+      "runtime": {
+        "errors": [],
+        "warnings": [
+          "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+        ],
+        "failedRequests": [],
+        "httpErrors": []
+      },
+      "resources": {
+        "maxDrawCalls": 22,
+        "maxTriangles": 148834,
+        "geometryRange": {
+          "min": 20,
+          "max": 20
+        },
+        "textureRange": {
+          "min": 3,
+          "max": 3
+        },
+        "adapterResourceIdsStable": true
+      }
+    }
+  ]
+}

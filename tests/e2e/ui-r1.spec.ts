@@ -172,8 +172,15 @@ test('legacy route preserves diagnostics and keeps unreleased modes honest', asy
   await expect.poll(() => new URL(page.url()).pathname).toBe('/atlas');
 
   await page.goto('/atlas/cell/' + encodeURIComponent('rc:17:0'));
-  await expect(page.getByRole('heading', { name: 'Inspeção celular indisponível', exact: true })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Voltar ao fluxo', exact: true })).toHaveAttribute('href', '/atlas/vascular');
+  await expect(page.getByRole('heading', { name: 'Observatório celular', exact: true })).toBeVisible();
+  await expect(page.getByTestId('cell-status')).toHaveText('Cena 3D pronta');
+  await expect(page.locator('canvas')).toHaveCount(1);
+  await expect(page.getByTestId('micro-stage')).toHaveCount(0);
+  await page.getByTestId('cell-return').click();
+  await expect(page).toHaveURL(/\/atlas\/vascular\?microSeed=17&microSelect=rc%3A17%3A0$/);
+  await expect(page.getByTestId('micro-selection')).toContainText('rc:17:0');
+  await page.goto('/atlas/cell/rbc%3A17%3A1');
+  await expect(page.getByRole('heading', { name: 'Célula indisponível' })).toBeVisible();
   await expect(page.locator('canvas')).toHaveCount(0);
 });
 

@@ -26,9 +26,9 @@ A regra de ouro é separar "a obra mostra que X acontece" de "nossa interpolaç�
 
 **Gate:** 100, 500 e 2.000 partículas não reconstroem React tree; frame rate medido; o clique em uma RC sempre mostra o mesmo registro de evidência.
 
-## B — RC em microescala (plano G4B)
+## B — RC em microescala (G4B)
 
-A proposta pós-UI-R5 está em [G4B_PLAN](G4B_PLAN.md). A inspeção amplia a identidade escolhida no fluxo, oferece representações esquemática e interpretativa, superfície, corte conceitual e comparação de forma com hemácia. O relógio e a câmera vascular retornam ao quadro capturado antes da pausa. As decisões ficam sujeitas ao aceite do plano.
+O observatório amplia a identidade escolhida no fluxo, oferece representações esquemática e interpretativa, superfície, corte conceitual e comparação de forma com hemácia em escala visual normalizada. A geometria é determinística por identidade e revisão. O relógio e a câmera vascular retornam ao quadro capturado antes da pausa. [Plano](G4B_PLAN.md) · [Aceite técnico](G4B_ACCEPTANCE.md)
 
 A ideia original de montagem entre células fica no backlog. Formas artificiais, cortes e aproximações continuam rotulados. Histologia, organelas, dimensões e composição de RC continuam sem validação nas fontes consultadas.
 

@@ -89,9 +89,9 @@ Bookmarked camera poses em espaço local do espécime; API `cameraDirector.focus
 
 ## URLs e arquitetura de continuidade
 
-Na base UI-R5, `/` é a Home sem WebGL. `/estudos` e `/fontes` são páginas editoriais. `/atlas`, `/atlas/rinkaku` e `/atlas/vascular` abrem as experiências funcionais. `/atlas/comparar` e `/atlas/cell/:entityId` têm estados informativos. Os aliases legados ainda são normalizados pelo roteador. Consulte o [checkpoint do redesign](UI_REDESIGN_CHECKPOINT.md) para a navegação, os painéis sob demanda e a suspensão da bancada.
+`/` é a Home sem WebGL. `/estudos` e `/fontes` são páginas editoriais. `/atlas`, `/atlas/rinkaku` e `/atlas/vascular` abrem as experiências funcionais. `/atlas/cell/:entityId` carrega a cena G4B para uma identidade RC válida. `/atlas/comparar` mantém o estado informativo. O roteador normaliza os aliases legados. Consulte o [checkpoint do redesign](UI_REDESIGN_CHECKPOINT.md) para a navegação, os painéis sob demanda e a suspensão da bancada.
 
-As pastas reais são `src/app`, `src/ui`, `src/scene`, `src/simulation`, `src/state`, `src/content` e `src/visuals/assets`. A árvore acima registra a proposta inicial. A implementação usa CSS local com tokens compartilhados e catálogo runtime `public/catalog.json` v2. O [plano G4B](G4B_PLAN.md) especifica a futura bancada celular e a integração com o contexto vascular estacionado.
+As pastas reais são `src/app`, `src/ui`, `src/scene`, `src/simulation`, `src/state`, `src/content` e `src/visuals/assets`. A árvore acima registra a proposta inicial. A implementação usa CSS local com tokens compartilhados e catálogo runtime `public/catalog.json` v2. A bancada G4B reutiliza a suspensão das sessões. A transação de origem vive no roteador, o controller captura a pose vascular aplicada, e o adapter de inspeção gerencia geometria e recursos por sessão. [Arquitetura G4B](G4B_ACCEPTANCE.md#arquitetura-e-decisões)
 
 ## Testes automatizados
 

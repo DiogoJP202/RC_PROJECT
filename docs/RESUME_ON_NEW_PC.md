@@ -1,8 +1,8 @@
 # GHOUL ATLAS — Retomar em outro computador
 
-> **Base atual.** UI-R0 a UI-R5 encerrada no escopo aprovado. `main` e `origin/main` em `7085f1c2f6237724baad4f73d1d1f6f7a8aa5204`, merge do PR #3 no momento da retomada. Confirme as refs antes de transferir.
+> **Base atual.** UI-R0 a UI-R5 encerrada no escopo aprovado. `main` e `origin/main` em `987ef434050fa2fa8e2c29ff8509c3242f6b3364` ao iniciar a implementação G4B. Confirme as refs antes de transferir.
 
-Comece por [AGENTS.md](../AGENTS.md), [handoff](PROJECT_HANDOFF.md), [checkpoint do redesign](UI_REDESIGN_CHECKPOINT.md) e [revisão UI-R5](UI_R5_REVIEW.md). Para o próximo trabalho, consulte o [plano G4B](G4B_PLAN.md) e o [aceite G4A](G4A_ACCEPTANCE.md). A implementação aguarda aprovação e usará `codex/g4b` na pasta principal, com commit, push e PR.
+Comece por [AGENTS.md](../AGENTS.md), [handoff](PROJECT_HANDOFF.md), [checkpoint do redesign](UI_REDESIGN_CHECKPOINT.md) e [revisão UI-R5](UI_R5_REVIEW.md). Para revisar a implementação, use `codex/g4b` na pasta principal e consulte o [aceite G4B](G4B_ACCEPTANCE.md), o [plano aprovado](G4B_PLAN.md) e o [aceite G4A](G4A_ACCEPTANCE.md).
 
 Use a [baseline UI-R5](../artifacts/gates/UI-R5-validation.json) para a suíte e os [perfis](../artifacts/gates/UI-R5-performance.json) como comparação da estação. Os [estudos G4A.1](../artifacts/gates/G4A1-review/PERFORMANCE.md) registram o perfil vascular histórico. Conserve arquivos não versionados que pertençam a trabalho do usuário e os relatórios brutos em `artifacts/local/`. A instalação, os testes e os perfis na máquina nova precisam de evidência própria.
 
@@ -20,11 +20,11 @@ Os avisos seguintes conservam as decisões das respectivas etapas. As contagens 
 
 ## Identidade do checkpoint
 
-- Base publicada desta retomada: `7085f1c2f6237724baad4f73d1d1f6f7a8aa5204` (UI-R5).
+- Base da implementação G4B em `main`: `987ef434050fa2fa8e2c29ff8509c3242f6b3364` (PR #4). Para o código de G4B consulte `origin/codex/g4b`.
 
 - Checkpoint G3A/G3A.1: aprovação P1 com ressalvas e publicação em `main` autorizadas em 25/10/2026; SHA final a confirmar no Git e no registro de encerramento. Base anterior: `84e6e1f36b8558d225ae4baf82a8f79ddb35c124`.
 - Repositório privado: [DiogoJP202/RC_PROJECT](https://github.com/DiogoJP202/RC_PROJECT).
-- Branch: `main`.
+- Branch de produção: `main`. Branch de revisão do observatório celular: `codex/g4b`.
 - Baseline de código publicada e validada em 24/10/2026, incluindo G2A: [`0e53c1e31c366a05642501bef312d0fe5d5575b6`](https://github.com/DiogoJP202/RC_PROJECT/commit/0e53c1e31c366a05642501bef312d0fe5d5575b6); commits documentais posteriores não substituem esta identidade do código testado.
 - Referência imutável da baseline G0/G1: tag `ghoul-atlas-g1-checkpoint`.
 - SHA da baseline: [`8fac8f7bba9a6891d5306cc14d6e86abbd4ea699`](https://github.com/DiogoJP202/RC_PROJECT/commit/8fac8f7bba9a6891d5306cc14d6e86abbd4ea699).

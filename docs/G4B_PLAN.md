@@ -1,6 +1,6 @@
 # G4B — RC Cellular Observatory
 
-**Plano para aprovação · 25/11/2026 · base `main` `7085f1c2f6237724baad4f73d1d1f6f7a8aa5204`.** A UI-R0 a UI-R5 está encerrada no escopo aprovado. A implementação G4B é uma etapa futura em `codex/g4b`, na pasta principal. O aceite técnico e visual desta etapa será próprio e terá como alvo um protótipo interativo P1.
+**Plano aprovado · 25/11/2026 · elaborado sobre `7085f1c2f6237724baad4f73d1d1f6f7a8aa5204`.** O PR #4 integrou o plano em `987ef434050fa2fa8e2c29ff8509c3242f6b3364`. O [aceite G4B](G4B_ACCEPTANCE.md) registra a implementação P1 subsequente em `codex/g4b` e suas verificações.
 
 ## Base recuperada
 

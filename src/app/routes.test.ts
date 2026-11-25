@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { atlasHref, readRoute } from './routes';
+import { atlasHref, cellHref, coldVascularHref, coldVascularSelection, readRoute } from './routes';
 
 const read = (path: string) => readRoute(new URL(path, 'http://localhost:5173'));
 
@@ -14,6 +14,19 @@ describe('atlas route compatibility', () => {
     expect(read('/atlas/comparar')).toMatchObject({ section: 'atlas', view: 'compare' });
     expect(read('/atlas/cell/rc%3A17%3A0').section).toBe('cell');
     expect(read('/inexistente').section).toBe('not-found');
+  });
+
+  it('decodes a canonical RC identity once and bounds cold returns', () => {
+    const route = read(cellHref('rc:4294967295:1992', true));
+    expect(route).toMatchObject({ section: 'cell', entity: { kind: 'rc', id: 'rc:4294967295:1992', index: 1992, seed: 4294967295 }, webglOff: true });
+    if (route.section !== 'cell' || !route.entity) throw Error('Valid identity expected');
+    const next = new URL(coldVascularHref(route.entity, route.webglOff), 'http://localhost');
+    expect(next.pathname).toBe('/atlas/vascular');
+    expect(coldVascularSelection(next.searchParams)).toEqual({ identity: route.entity, count: 2000 });
+    for (const id of ['', 'rbc:17:1', 'rc:17:1', 'rc:17:2000', 'rc:4294967296:8', 'rc:017:0', 'rc:17:008', 'rc%253A17%253A0', '%E0%A4%A', '%2F']) {
+      expect(read('/atlas/cell/' + id)).toMatchObject({ section: 'cell', entity: null });
+    }
+    expect(coldVascularSelection(new URLSearchParams('microSeed=31&microSelect=rc:17:0'))).toBeNull();
   });
 
   it('normalizes old URLs with valid identifiers and keeps diagnostic options', () => {
